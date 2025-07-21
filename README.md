@@ -1,4 +1,4 @@
-# Deep-learning-Sihua
+# Deep-learning-Sihua-English
 
 # Deep Learning Course from simple code：
 - 初级
