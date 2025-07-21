@@ -1,4 +1,4 @@
-## FCN(MLP)
+## Beginner: FCN(MLP)
 **Fully Connected Neural Network (MLP)**
 
 **Importance**: This is a foundational model in deep learning, and understanding it helps grasp core neural network concepts (e.g., neurons, weights, activation functions, gradient descent).  
