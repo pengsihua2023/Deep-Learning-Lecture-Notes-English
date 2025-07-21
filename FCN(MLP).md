@@ -9,5 +9,6 @@
 - Training involves adjusting weights through "trial and error" to make predictions closer to actual values (using gradient descent).  
 - Applications: House price prediction, classification tasks (e.g., determining if an image is a cat or a dog).  
 
-**Why Teach**: MLP is the foundation of all deep learning models, helping students understand the core mechanisms of neural networks.
+**Why Teach**: MLP is the foundation of all deep learning models, helping students understand the core mechanisms of neural networks.  
+
 <img width="850" height="253" alt="image" src="https://github.com/user-attachments/assets/4f07aa2a-dd72-4e95-8543-7f71810d8023" />  
