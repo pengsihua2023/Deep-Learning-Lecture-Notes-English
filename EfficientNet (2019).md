@@ -1,1 +1,0 @@
-## EfficientNet (2019)
