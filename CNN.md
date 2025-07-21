@@ -14,7 +14,7 @@
 <img width="708" height="353" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />  
 
 ### Code
-
+```
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -121,7 +121,7 @@ if __name__ == "__main__":
     train_model(num_epochs=10)
     print("\nTesting started...")
     test_model()
-
+```
 
 ### Training Results
 Epoch [10/10], Step [600], Loss: 0.4115  
