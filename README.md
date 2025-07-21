@@ -1,8 +1,8 @@
 # Deep-learning-Sihua-English
 # Deep Learning Course from simple code：
 - Beginner
-  - [FCN: Fully Connected Network](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%3A%20%20FCN(MLP).md) 
-  - [CNN: Convolutional Network]([https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9ACNN.md](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/CNN.md)
+  - [FCN: Fully Connected Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/FCN(MLP).md)
+  - [CNN: Convolutional Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/CNN.md)
   - [Regression Problem: Regression Problem](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9A%E5%9B%9E%E5%BD%92%E9%97%AE%E9%A2%98.md)
   - [RNN: Recurrent Network](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9ARNN.md)
   - [LSTN: Long Short-Term Memory Network](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9ALSTM.md)   
