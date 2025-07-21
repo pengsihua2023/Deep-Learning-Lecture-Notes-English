@@ -14,7 +14,7 @@
 <img width="850" height="253" alt="image" src="https://github.com/user-attachments/assets/4f07aa2a-dd72-4e95-8543-7f71810d8023" />  
 
 
-## 代码（pytorch）
+## code（pytorch）
 ```
 import torch
 import torch.nn as nn
@@ -23,16 +23,16 @@ import torchvision
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 
-# 设置随机种子以确保结果可重复
+# Set the random seed to ensure reproducible results
 torch.manual_seed(42)
 
-# 1. 数据准备
+# 1. Data preparation
 transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.5,), (0.5,))
 ])
 
-# 加载Fashion MNIST数据集
+# Loading the Fashion MNIST dataset
 trainset = torchvision.datasets.FashionMNIST(
     root='./data', 
     train=True,
@@ -49,14 +49,14 @@ testset = torchvision.datasets.FashionMNIST(
 )
 testloader = DataLoader(testset, batch_size=64, shuffle=False)
 
-# 2. 定义神经网络模型
+# 2. Defining the Neural Network Model
 class FashionMNISTClassifier(nn.Module):
     def __init__(self):
         super(FashionMNISTClassifier, self).__init__()
         self.flatten = nn.Flatten()
-        self.fc1 = nn.Linear(28 * 28, 128)  # 输入层到隐藏层
+        self.fc1 = nn.Linear(28 * 28, 128)  # Input layer to hidden layer
         self.relu = nn.ReLU()
-        self.fc2 = nn.Linear(128, 10)      # 隐藏层到输出层（10个类别）
+        self.fc2 = nn.Linear(128, 10)      # Hidden layer to output layer (10 categories)
         
     def forward(self, x):
         x = self.flatten(x)
@@ -65,13 +65,13 @@ class FashionMNISTClassifier(nn.Module):
         x = self.fc2(x)
         return x
 
-# 3. 初始化模型、损失函数和优化器
+# 3. Initialize the model, loss function, and optimizer
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = FashionMNISTClassifier().to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-# 4. 训练模型
+# 4. Training model
 def train_model(num_epochs=5):
     model.train()
     for epoch in range(num_epochs):
@@ -79,11 +79,11 @@ def train_model(num_epochs=5):
         for i, (images, labels) in enumerate(trainloader):
             images, labels = images.to(device), labels.to(device)
             
-            # 前向传播
+            # Forward Propagation
             outputs = model(images)
             loss = criterion(outputs, labels)
             
-            # 反向传播和优化
+            # Backpropagation and Optimization
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
@@ -93,7 +93,7 @@ def train_model(num_epochs=5):
                 print(f'Epoch [{epoch+1}/{num_epochs}], Step [{i+1}], Loss: {running_loss/100:.4f}')
                 running_loss = 0.0
 
-# 5. 测试模型
+# 5. Testing model
 def test_model():
     model.eval()
     correct = 0
@@ -109,7 +109,7 @@ def test_model():
     accuracy = 100 * correct / total
     print(f'Test Accuracy: {accuracy:.2f}%')
 
-# 6. 执行训练和测试
+# 6. Perform training and testing
 if __name__ == "__main__":
     print("Training started...")
     train_model(num_epochs=5)
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     test_model()
 
 ```
-## 训练结果
+## Training Resukts
 Epoch [5/5], Step [800], Loss: 0.3124   
 Epoch [5/5], Step [900], Loss: 0.2941   
 
