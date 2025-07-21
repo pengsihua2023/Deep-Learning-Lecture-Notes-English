@@ -3,12 +3,12 @@
 - Beginner
   - [FCN: Fully Connected Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/FCN(MLP).md)
   - [CNN: Convolutional Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/CNN.md)
-  - [Regression Problem: Regression Problem](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9A%E5%9B%9E%E5%BD%92%E9%97%AE%E9%A2%98.md)
-  - [RNN: Recurrent Network](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9ARNN.md)
-  - [LSTN: Long Short-Term Memory Network](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9ALSTM.md)   
-  - [Autoencoder](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9AAutoencoder.md)
-  - [VAE(Variational Autoencoder): Variational Autoencoder](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9AVAE.md)
-  - [GAN: Generative Adversarial Network](https://github.com/pengsihua2023/AI-learning/blob/main/%E5%88%9D%E7%BA%A7%EF%BC%9AGAN.md) 
+  - [Regression Problem: Regression Problem]()
+  - [RNN: Recurrent Network]()
+  - [LSTN: Long Short-Term Memory Network]()   
+  - [Autoencoder]()
+  - [VAE(Variational Autoencoder): Variational Autoencoder]()
+  - [GAN: Generative Adversarial Network]() 
     
 - Intermediate
   - [Attention-based Models](https://github.com/pengsihua2023/AI-learning/blob/main/%E4%B8%AD%E7%BA%A7%EF%BC%9AAttention-based%20Models.md)
