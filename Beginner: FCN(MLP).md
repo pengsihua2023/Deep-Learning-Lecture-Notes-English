@@ -117,7 +117,7 @@ if __name__ == "__main__":
     test_model()
 
 ```
-## Training Resukts
+## Training Results
 Epoch [5/5], Step [800], Loss: 0.3124   
 Epoch [5/5], Step [900], Loss: 0.2941   
 
