@@ -7,7 +7,7 @@
   A graph consists of nodes (vertices) and edges (connections). GNNs use "message passing" to allow nodes to aggregate information from their neighbors, learning both the graph's structure and features.  
   **Analogy**: Like "information spreading in a social circle," each node (person) updates its state based on information from friends.  
 - **Applications**: Recommendation systems (e.g., Netflix recommendations), molecular design (drug discovery), traffic network analysis.
-- 
+
 <img width="700" height="363" alt="image" src="https://github.com/user-attachments/assets/47f67caf-be26-42b4-928e-b8db05f1afab" />  
 
 Write a minimal Graph Neural Network (GNN) example based on PyTorch and PyTorch Geometric, using a real dataset (Cora dataset, a common benchmark for graph classification). The model will implement a simple Graph Convolutional Network (GCN) for node classification. Results will be demonstrated by visualizing node embeddings (using t-SNE dimensionality reduction) and evaluating classification accuracy.
