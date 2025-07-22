@@ -16,7 +16,7 @@
   - [Graph Neural Network(GNN）](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Graph%20Neural%20Network(GNN).md)
   - [Transfer Learning]()
   - [Contrastive Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Contrastive%20Learning.md)
-  - [Knowledge Distillation]()
+  - [Knowledge Distillation](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Knowledge%20Distillation.md)
   - [Multi-Task Learning]()      
     
 - Advanced
