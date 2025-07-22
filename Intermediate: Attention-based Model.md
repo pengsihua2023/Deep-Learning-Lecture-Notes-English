@@ -13,7 +13,7 @@ The image above effectively illustrates the attention mechanism, showing how hum
 ## Code  
 Add visualization of attention weights using a heatmap to display the attention weight matrix for the first sample, aiding in intuitively understanding how the attention mechanism focuses on relationships between different words. The code is based on the IMDb dataset and implements a simple Scaled Dot-Product Attention using PyTorch. Since you requested visualization, a heatmap will be generated to show the attention weights.
 
-```python
+```
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -50,20 +50,20 @@ def plot_attention_weights(attention_weights, tokens, title="Attention Weights H
     print("Attention heatmap saved as 'attention_heatmap.png'")
 
 def main():
-    # 加载IMDb数据集
-    dataset = load_dataset("imdb", split="train[:1000]")  # 使用前1000条评论
+    # Load IMDb dataset
+    dataset = load_dataset("imdb", split="train[:1000]")  # Use the first 1000 reviews
     batch_size = 32
-    max_length = 20  # 缩短序列长度以便可视化
+    max_length = 20  # Shorten sequence length for visualization
     embed_dim = 64
 
-    # 构建词汇表
+    # Build vocabulary
     vocab = build_vocab_from_iterator(yield_tokens(dataset), specials=['<pad>', '<unk>'])
     vocab.set_default_index(vocab['<unk>'])
 
-    # 创建词嵌入层
+    # Create word embedding layer
     embedding = nn.Embedding(len(vocab), embed_dim)
 
-    # 将文本转换为索引
+    # Convert text to indices
     def text_pipeline(text):
         tokens = text.lower().split()[:max_length]
         tokens += ['<pad>'] * (max_length - len(tokens))
@@ -71,13 +71,13 @@ def main():
 
     input_ids = torch.tensor([text_pipeline(example['text']) for example in dataset], dtype=torch.long)
     
-    # 获取词嵌入
+    # Get word embeddings
     embedded = embedding(input_ids)  # [num_samples, max_length, embed_dim]
     
-    # 初始化Attention模型
+    # Initialize Attention model
     model = SimpleAttention(embed_dim)
     
-    # 分批处理
+    # Process in batches
     outputs = []
     attention_weights_list = []
     
@@ -90,13 +90,13 @@ def main():
     outputs = torch.cat(outputs, dim=0)
     attention_weights = torch.cat(attention_weights_list, dim=0)
     
-    # 打印基本信息
+    # Print basic information
     print("Dataset size:", len(dataset))
     print("Sample text:", dataset[0]['text'][:100] + "...")
     print("Output shape:", outputs.shape)
     print("Attention weights shape:", attention_weights.shape)
     
-    # 可视化第一个样本的注意力权重
+    # Visualize attention weights for the first sample
     first_attention = attention_weights[0].detach().numpy()  # [max_length, max_length]
     first_tokens = dataset[0]['text'].lower().split()[:max_length]
     first_tokens += ['<pad>'] * (max_length - len(first_tokens))
