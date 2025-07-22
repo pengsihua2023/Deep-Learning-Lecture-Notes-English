@@ -13,10 +13,8 @@ This image appears to illustrate the concept of a Generative Adversarial Network
 In a GAN, the generator and discriminator are trained simultaneously through a competitive process: the generator improves by attempting to deceive the discriminator, while the discriminator improves by better distinguishing real data from fake data. This iterative process continues until the generator can produce highly realistic data.  
 
 ## Code(Pytorch)
-```
-Here's the code with Chinese comments translated to English, keeping the code unchanged:
 
-```python
+```
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -185,7 +183,7 @@ if __name__ == "__main__":
     print("\nGenerating final visualization...")
     plot_final_results()
 ```
-```
+
 ## Training results
 Epoch [45/50], D Loss: 0.3414, G Loss: 2.7712   
 Epoch [50/50], D Loss: 0.3680, G Loss: 2.7854   
