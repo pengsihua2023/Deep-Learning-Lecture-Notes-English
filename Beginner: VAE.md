@@ -176,11 +176,11 @@ if __name__ == "__main__":
 ```
 
 
-### 训练结果
+### Training results
 
   <img width="934" height="478" alt="image" src="https://github.com/user-attachments/assets/ecda78c7-6330-4a20-9a9c-e62bdbd035d7" />    
 
-图一 训练和验证损失曲线    
+Figure 1. Training and validation loss curves      
 <img width="286" height="109" alt="image" src="https://github.com/user-attachments/assets/344ba28c-ea33-492c-afd4-7b352fecc93e" />    
 
-图2 原始图像（上）和生成图像（下）的比较   
+Figure 2 Comparison of the original image (top) and the generated image (bottom)    
