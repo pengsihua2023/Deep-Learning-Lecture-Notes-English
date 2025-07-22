@@ -1,25 +1,25 @@
 ## Beginner: Autoencoder
-## Autoencoder 
-Autoencoder（自编码器）
-- 重要性：
-Autoencoder 是一种无监督学习模型，用于数据压缩、降噪或特征学习。  
-它是生成模型（如 GAN）的先驱，广泛用于数据预处理和异常检测。  
-- 核心概念：
-Autoencoder 包含编码器（压缩数据）和解码器（重构数据），目标是让输出尽可能接近输入。  
-比喻：像一个“数据压缩机”，把大文件压缩后再解压，尽量保持原样。  
-- 应用：图像去噪、数据压缩、异常检测（如信用卡欺诈检测）。
+
+Autoencoder
+- Importance:
+An Autoencoder is an unsupervised learning model used for data compression, denoising, or feature learning.  
+It is a precursor to generative models (e.g., GANs) and is widely used in data preprocessing and anomaly detection.  
+- Core Concept:
+An Autoencoder consists of an encoder (compresses data) and a decoder (reconstructs data), with the goal of making the output as close as possible to the input.  
+Analogy: Like a "data compressor," it compresses a large file and then decompresses it, striving to preserve the original.  
+- Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).
 <img width="1400" height="797" alt="image" src="https://github.com/user-attachments/assets/28b89fa6-5c8b-460f-8385-4cd46c7c47cd" />  
 
-图1 第一种表示   
+Figure 1 The first representation  
 <img width="700" height="220" alt="image" src="https://github.com/user-attachments/assets/f20e1904-4878-4950-a91f-cbe0d2336f50" />  
 
-图2 第二种表示  
+Figure 2 The second representation  
 
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/dbd389b4-042e-44bf-a62f-ef736bbebd89" />  
 
-图3 第三种表示  
+Figure 3 The third representation  
 
-## 代码 （Pytorch）
+## Code （Pytorch）
 ```
 import torch
 import torch.nn as nn
@@ -171,7 +171,7 @@ if __name__ == "__main__":
         plt.savefig(f'results/loss_curve_{epoch}.png')
         plt.close()
 ```
-## 运行结果
+## Results
 ====> Epoch: 9 Average training loss: 69.1569  
 ====> Test set loss: 69.0569 
 Train Epoch: 10 [0/60000 (0%)]  Loss: 71.628830  
@@ -184,8 +184,8 @@ Train Epoch: 10 [51200/60000 (85%)]     Loss: 69.532722
 
 <img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/8d28cf45-b977-4de8-a857-d62f8893be0f" />    
 
-图4 loss曲线  
+Figure 4 loss curve  
 <img width="274" height="108" alt="image" src="https://github.com/user-attachments/assets/d5769c88-f37c-4d0a-94b9-fb627129abfd" />  
 
 
-图5 输入与输出图像比较
+Figure 5 Comparison of input and output images  
