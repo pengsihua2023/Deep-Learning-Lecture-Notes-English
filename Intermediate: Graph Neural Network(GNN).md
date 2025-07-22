@@ -25,7 +25,7 @@ from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 
-# 定义简单的GCN模型
+# Define a simple GCN model
 class SimpleGCN(nn.Module):
     def __init__(self, in_channels, hidden_channels, out_channels):
         super(SimpleGCN, self).__init__()
@@ -40,7 +40,7 @@ class SimpleGCN(nn.Module):
         x = self.conv2(x, edge_index)
         return x
 
-# 可视化节点嵌入
+# Visualize node embeddings
 def visualize_embeddings(embeddings, labels, num_classes, title="t-SNE Visualization of Node Embeddings"):
     tsne = TSNE(n_components=2, random_state=42)
     embeddings_2d = tsne.fit_transform(embeddings)
@@ -55,7 +55,7 @@ def visualize_embeddings(embeddings, labels, num_classes, title="t-SNE Visualiza
     plt.close()
     print("t-SNE visualization saved as 'cora_embeddings.png'")
 
-# 训练和评估
+# Train and evaluate
 def train_and_evaluate(model, data, epochs=200):
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01, weight_decay=5e-4)
     criterion = nn.CrossEntropyLoss()
@@ -76,7 +76,7 @@ def train_and_evaluate(model, data, epochs=200):
             print(f'Epoch [{epoch+1}/{epochs}], Loss: {loss.item():.4f}, Validation Accuracy: {acc:.4f}')
             model.train()
     
-    # 测试集评估
+    # Test set evaluation
     model.eval()
     with torch.no_grad():
         out = model(data)
@@ -84,26 +84,27 @@ def train_and_evaluate(model, data, epochs=200):
         test_acc = accuracy_score(data.y[data.test_mask].cpu(), pred[data.test_mask].cpu())
         print(f'\nTest Accuracy: {test_acc:.4f}')
         
-        # 获取嵌入（最后一层输出）
+        # Obtain embeddings (final layer output)
         embeddings = out.cpu().numpy()
         labels = data.y.cpu().numpy()
         visualize_embeddings(embeddings, labels, num_classes=data.num_classes)
 
 def main():
-    # 加载Cora数据集
+    # Load the Cora dataset
     dataset = Planetoid(root='./data', name='Cora')
     data = dataset[0]
     data = data.to(device)
     
-    # 初始化模型
+    # Initialize the model
     model = SimpleGCN(in_channels=dataset.num_features, hidden_channels=16, out_channels=dataset.num_classes).to(device)
     
-    # 训练和评估
+    # Train and evaluate
     train_and_evaluate(model, data)
 
 if __name__ == "__main__":
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     main()
+
 ```
 
 ### Code Description:
