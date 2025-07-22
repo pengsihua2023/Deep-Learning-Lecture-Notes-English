@@ -36,7 +36,7 @@ Transfer Learning is a machine learning approach that involves applying knowledg
 - **Transfer Learning**: Focuses on reusing knowledge from a pre-trained model, typically in a one-way process (from source to target task).
 - **Meta-Learning**: Aims to learn "how to learn," training on multiple tasks to enable rapid adaptation to new tasks, emphasizing generalization of learning strategies.
 
-### Simple Code Example (Transfer Learning with PyTorch)
+### Simple Code Example (PyTorch)
 Below is an example of transfer learning using a pre-trained ResNet18 for image classification:  
 
 ```python
