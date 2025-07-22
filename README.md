@@ -13,7 +13,7 @@
 - Intermediate
   - [Attention-based Models](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Attention-based%20Model.md)
   - [Transformer](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Transformer.md)
-  - [Graph Neural Network(GNN）]()
+  - [Graph Neural Network(GNN）](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Graph%20Neural%20Network(GNN).md)
   - [Transfer Learning]()
   - [Contrastive Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Contrastive%20Learning.md)
   - [Knowledge Distillation]()
