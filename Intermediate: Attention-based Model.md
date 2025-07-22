@@ -106,22 +106,21 @@ if __name__ == "__main__":
     main()
 ```
 
-### 修改内容：
-1. **数据集**：继续使用IMDb数据集的前1000条评论，序列长度缩短至20，以便热图更易读。
-2. **可视化**：添加`plot_attention_weights`函数，使用`seaborn`绘制第一个样本的注意力权重热图，保存为`attention_heatmap.png`。
-3. **热图内容**：
-   - X轴和Y轴显示输入句子的词（或`<pad>`）。
-   - 颜色深浅表示注意力权重大小（通过`viridis`颜色映射）。
-   - 热图直观展示哪些词在Attention机制中对其他词的关注程度更高。
-4. **依赖**：需安装`datasets`、`torchtext`、`matplotlib`和`seaborn`（`pip install datasets torchtext matplotlib seaborn`）。
+### Summary:
+1. **Dataset**: Continues using the first 1000 reviews from the IMDb dataset, with sequence length reduced to 20 for clearer heatmap visualization.
+2. **Visualization**: Adds a `plot_attention_weights` function, using `seaborn` to draw a heatmap of attention weights for the first sample, saved as `attention_heatmap.png`.
+3. **Heatmap Content**:
+   - X-axis and Y-axis display the words in the input sentence (or `<pad>`).
+   - Color intensity represents the magnitude of attention weights (using the `viridis` color map).
+   - The heatmap intuitively shows which words the Attention mechanism focuses on more in relation to others.
+4. **Dependencies**: Requires installation of `datasets`, `torchtext`, `matplotlib`, and `seaborn` (`pip install datasets torchtext matplotlib seaborn`).
 
-### 运行结果：
-- 程序将处理1000条IMDb评论，输出数据集信息、输出张量形状和注意力权重形状。
-- 生成一个热图文件`attention_heatmap.png`，展示第一个评论的注意力权重矩阵。
-- 热图中的每个单元格表示query词对key词的注意力权重，颜色越亮表示权重越大。
+### Execution Results:
+- The program processes 1000 IMDb reviews, outputting dataset information, tensor shapes, and attention weight shapes.
+- Generates a heatmap file `attention_heatmap.png`, displaying the attention weight matrix for the first review.
+- Each cell in the heatmap represents the attention weight of a query word for a key word, with brighter colors indicating larger weights.
 
-### 注意：
-- 热图文件保存在运行目录下，可用图像查看器打开。
-- 由于序列长度限制为20，热图显示前20个词的注意力关系，适合直观分析。
-
+### Notes:
+- The heatmap file is saved in the working directory and can be opened with an image viewer.
+- With the sequence length limited to 20, the heatmap shows attention relationships for the first 20 words, making it suitable for intuitive analysis.
 
