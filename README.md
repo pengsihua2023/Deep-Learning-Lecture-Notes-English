@@ -15,7 +15,7 @@
   - [Transformer]()
   - [Graph Neural Network(GNN）]()
   - [Transfer Learning]()
-  - [Contrastive Learning]()
+  - [Contrastive Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Contrastive%20Learning.md)
   - [Knowledge Distillation]()
   - [Multi-Task Learning]()      
     
