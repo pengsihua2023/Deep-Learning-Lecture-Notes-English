@@ -10,10 +10,8 @@
 <img width="904" height="703" alt="image" src="https://github.com/user-attachments/assets/431b0bba-466e-4a24-b27b-8ac0372e5d5e" />  
 
 ## A Transformer with only an encoder
-<img width="753" height="263" alt="image" src="https://github.com/user-attachments/assets/a9203ca4-71c3-4184-89db-8b2b551d0042" />  
 
 ```
-```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
