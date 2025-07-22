@@ -20,7 +20,7 @@
   - [Multi-Task Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Multi-Task%20Learning.md)      
     
 - Advanced
-  - [Meta-Learning]()
+  - [Meta-Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Advanced:%20Meta-Learning.md)
   - [Reinforcement Learning]()
   - [Federated Learning]()
   - [Large language model fine tuning]()
