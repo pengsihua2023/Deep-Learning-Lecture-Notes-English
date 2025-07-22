@@ -163,7 +163,8 @@ Training is over, batch testing begins...
 Batch test accuracy: 98.71%  
 
 <img width="785" height="388" alt="image" src="https://github.com/user-attachments/assets/983ef728-8e77-4cb7-9553-43494e967bda" /> 
-**Figure 2: Training Loss Curve**
+
+Figure 2: Training Loss Curve  
 
 ## Code Functionality Explanation
 
