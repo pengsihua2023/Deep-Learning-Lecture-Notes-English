@@ -17,10 +17,10 @@ LSTM uses "gate mechanisms" (input gate, forget gate, output gate) to control th
    - LSTM manages information flow through these gates, mitigating the vanishing gradient problem. 
 
 ## Code （Pytorch）
-```
+
 Here's the code with Chinese comments translated to English, keeping the code unchanged:
 
-```python
+```
 import os
 import urllib.request
 import zipfile
@@ -151,7 +151,7 @@ if __name__ == "__main__":
     batch_test(test_data, test_labels, model)
     plot_loss_curve(loss_list)
 ```
-```
+
 ## Results
 Begin to training...  
 Epoch [2/10], Loss: 0.0628  
