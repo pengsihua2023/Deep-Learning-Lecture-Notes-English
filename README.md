@@ -17,7 +17,7 @@
   - [Transfer Learning]()
   - [Contrastive Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Contrastive%20Learning.md)
   - [Knowledge Distillation](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Knowledge%20Distillation.md)
-  - [Multi-Task Learning]()      
+  - [Multi-Task Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Multi-Task%20Learning.md)      
     
 - Advanced
   - [Meta-Learning]()
