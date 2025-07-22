@@ -3,15 +3,15 @@
 - Beginner
   - [FCN: Fully Connected Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20FCN(MLP).md)
   - [CNN: Convolutional Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20CNN.md)
-  - [Regression Problem: Regression Problem]()
-  - [RNN: Recurrent Network]()
-  - [LSTN: Long Short-Term Memory Network]()   
-  - [Autoencoder]()
-  - [VAE(Variational Autoencoder): Variational Autoencoder]()
-  - [GAN: Generative Adversarial Network]() 
+  - [Regression Problem: Regression Problem](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20Regression%20Problem.md)
+  - [RNN: Recurrent Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20RNN.md)
+  - [LSTM: Long Short-Term Memory Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20LSTM.md)   
+  - [Autoencoder](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20Autoencoder.md)
+  - [VAE(Variational Autoencoder): Variational Autoencoder](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20VAE.md)
+  - [GAN: Generative Adversarial Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20GAN.md) 
     
 - Intermediate
-  - [Attention-based Models]()
+  - [Attention-based Models](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Intermediate:%20Attention-based%20Model.md)
   - [Transformer]()
   - [Graph Neural Network(GNN）]()
   - [Transfer Learning]()
