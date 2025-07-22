@@ -18,8 +18,6 @@ LSTM uses "gate mechanisms" (input gate, forget gate, output gate) to control th
 
 ## Code （Pytorch）
 
-Here's the code with Chinese comments translated to English, keeping the code unchanged:
-
 ```
 import os
 import urllib.request
