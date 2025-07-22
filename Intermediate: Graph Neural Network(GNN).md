@@ -7,6 +7,7 @@
   A graph consists of nodes (vertices) and edges (connections). GNNs use "message passing" to allow nodes to aggregate information from their neighbors, learning both the graph's structure and features.  
   **Analogy**: Like "information spreading in a social circle," each node (person) updates its state based on information from friends.  
 - **Applications**: Recommendation systems (e.g., Netflix recommendations), molecular design (drug discovery), traffic network analysis.
+  
 
 <img width="700" height="363" alt="image" src="https://github.com/user-attachments/assets/47f67caf-be26-42b4-928e-b8db05f1afab" />  
 
