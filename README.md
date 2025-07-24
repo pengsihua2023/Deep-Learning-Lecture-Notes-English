@@ -24,7 +24,7 @@
   - [Reinforcement Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Advanced%3A%20Reinforcement%20Learning.md)
   - [Federated Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Advanced%3A%20Federated%20Learning.md)
   - [Large language model fine tuning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Advanced:%20Large%20language%20model%20fine%20tuning.md)
-  - [Model pruning and quantization]()
+  - [Model pruning and quantization](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Advanced:%20Model%20pruning%20and%20quantization.md)
     
 - Research 
   - [Neural Architecture Search (NAS)]()
