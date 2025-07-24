@@ -36,7 +36,7 @@
     - [LeNet (1998)]()
     - [AlexNet (2012)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20AlexNet%20(2012).md)
     - [VGG (2014)]()
-    - [Inception (GoogleNet, 2014)]()
+    - [Inception (GoogleNet, 2014)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20Inception%20(GoogleNet,%202014).md)
     - [ResNet（2015）]()
     - [U-Net (2015)]()
     - [YOLO (2016)]()
