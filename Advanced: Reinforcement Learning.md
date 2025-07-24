@@ -11,6 +11,7 @@ RL learns optimal strategies through "trial and error," with neural networks (e.
 Write a minimal PyTorch-based Reinforcement Learning (RL) example using the DQN (Deep Q-Network) algorithm in the CartPole-v1 environment for a node classification task, ensuring the code is concise and meets requirements. The code uses real-time interaction data (generated through agent-environment interactions in CartPole), satisfying the "real data" requirement. The results are visualized through a reward curve and evaluated on a test set to demonstrate model performance. 
 Below is the complete code and detailed explanations in English.  
 ## Code
+
 ```python
 import torch
 import torch.nn as nn
@@ -21,7 +22,7 @@ import matplotlib.pyplot as plt
 from collections import deque
 import random
 
-# 定义DQN模型
+# Define the DQN model
 class DQN(nn.Module):
     def __init__(self, state_dim, action_dim):
         super(DQN, self).__init__()
@@ -36,10 +37,10 @@ class DQN(nn.Module):
     def forward(self, x):
         return self.net(x)
 
-# 经验回放缓冲区
+# Experience replay buffer
 class ReplayBuffer:
     def __init__(self, capacity):
-        self.buffer =德que(maxlen=capacity)
+        self.buffer = deque(maxlen=capacity)
     
     def push(self, state, action, reward, next_state, done):
         self.buffer.append((state, action, reward, next_state, done))
@@ -52,7 +53,7 @@ class ReplayBuffer:
     def __len__(self):
         return len(self.buffer)
 
-# 训练DQN
+# Train the DQN
 def train_dqn(env, model, episodes=300, gamma=0.99, epsilon_start=1.0, epsilon_end=0.02, epsilon_decay=0.995, batch_size=32, buffer_capacity=10000):
     optimizer = optim.Adam(model.parameters(), lr=0.001)
     criterion = nn.MSELoss()
@@ -102,11 +103,11 @@ def train_dqn(env, model, episodes=300, gamma=0.99, epsilon_start=1.0, epsilon_e
         epsilon = max(epsilon_end, epsilon * epsilon_decay)
         
         if (episode + 1) % 50 == 0:
-            print(f'回合 [{episode+1}/{episodes}]，奖励: {total_reward:.2f}，Epsilon: {epsilon:.4f}')
+            print(f'Episode [{episode+1}/{episodes}], Reward: {total_reward:.2f}, Epsilon: {epsilon:.4f}')
     
     return rewards
 
-# 评估模型
+# Evaluate the model
 def evaluate_model(model, env, episodes=10):
     model.eval()
     rewards = []
@@ -128,20 +129,20 @@ def evaluate_model(model, env, episodes=10):
         rewards.append(total_reward)
     
     avg_reward = np.mean(rewards)
-    print(f'\n测试 {episodes} 回合的平均奖励: {avg_reward:.2f}')
+    print(f'\nAverage reward over {episodes} test episodes: {avg_reward:.2f}')
     return rewards
 
-# 可视化奖励曲线
-def plot_rewards(rewards, title="训练回合奖励曲线"):
+# Visualize the reward curve
+def plot_rewards(rewards, title="Training Episode Reward Curve"):
     plt.figure(figsize=(10, 6))
-    plt.plot(rewards, label='回合奖励')
-    plt.xlabel('回合')
-    plt.ylabel('奖励')
+    plt.plot(rewards, label='Episode Reward')
+    plt.xlabel('Episode')
+    plt.ylabel('Reward')
     plt.title(title)
     plt.legend()
     plt.savefig('cartpole_rewards.png')
     plt.close()
-    print("奖励曲线已保存为 'cartpole_rewards.png'")
+    print("Reward curve saved as 'cartpole_rewards.png'")
 
 def main():
     global device
@@ -152,10 +153,10 @@ def main():
     action_dim = env.action_space.n
     model = DQN(state_dim, action_dim).to(device)
     
-    print("开始训练DQN...")
+    print("Starting DQN training...")
     rewards = train_dqn(env, model, episodes=300)
     
-    print("\n评估DQN...")
+    print("\nEvaluating DQN...")
     eval_rewards = evaluate_model(model, env, episodes=10)
     
     plot_rewards(rewards)
@@ -165,8 +166,6 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
----
 
 ### Explanation in English
 
