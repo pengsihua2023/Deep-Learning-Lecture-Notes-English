@@ -176,14 +176,14 @@ if __name__ == "__main__":
 - **Data**: The code automatically downloads the MNIST dataset.
 
 ### Output Example
-Upon running, the program will output something like:
-```
-Starting Federated Learning...
-Round 1 completed
-Round 2 completed
-...
-Test Accuracy: 0.8923
-```
+Upon running, the program will output something like:  
+
+Starting Federated Learning...  
+Round 1 completed  
+Round 2 completed  
+
+Test Accuracy: 0.8923  
+
 This indicates the global model's classification accuracy on the test set.
 
 ### Extensions
