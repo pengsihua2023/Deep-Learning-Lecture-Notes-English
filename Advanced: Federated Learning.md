@@ -49,7 +49,7 @@ Federated Learning is a distributed machine learning approach that enables multi
 ### Simple Code Example (Horizontal Federated Learning with PyTorch)
 Below is a simple example of horizontal federated learning, simulating multiple clients collaboratively training a classification model.
 ## Code
-```python
+
 ```python
 import torch
 import torch.nn as nn
@@ -160,7 +160,7 @@ if __name__ == "__main__":
     accuracy = test_model(global_model, testloader)
     print(f"Test Accuracy: {accuracy:.4f}")
 ```
-```
+
 
 ### Code Explanation
 1. **Task**: Perform handwritten digit classification on the MNIST dataset, simulating federated learning with 10 clients.
