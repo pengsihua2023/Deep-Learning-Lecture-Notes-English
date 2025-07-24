@@ -1,5 +1,5 @@
 ## Research: Neural Architecture Search (NAS)
-## Neural Architecture Search
+
 <img width="1400" height="644" alt="image" src="https://github.com/user-attachments/assets/033aa71c-7a94-40d5-8003-51504694a7fa" />
 Neural Architecture Search (NAS) is an advanced technique in deep learning aimed at automatically designing neural network architectures without manual tuning of structures (e.g., number of layers, neurons, or connections). Assuming familiarity with MLP, CNN, RNN/LSTM, GAN, Transformer, GNN, Diffusion Models, contrastive learning, and fine-tuning techniques based on ESM-2, NAS is a cutting-edge and compelling topic, particularly for optimizing protein language models like ESM-2 for bioinformatics tasks.
 
