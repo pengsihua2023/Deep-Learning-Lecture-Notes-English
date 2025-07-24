@@ -27,7 +27,7 @@
   - [Model pruning and quantization](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Advanced:%20Model%20pruning%20and%20quantization.md)
     
 - Research 
-  - [Neural Architecture Search (NAS)]()
+  - [Neural Architecture Search (NAS)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Research:%20Neural%20Architecture%20Search%20(NAS).md)
   - [AI agent](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Research:%20AI%20agent.md)
   - [AI4science：AI for Scienc]()
   - [World Model]()
