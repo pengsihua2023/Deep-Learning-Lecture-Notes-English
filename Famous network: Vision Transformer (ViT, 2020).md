@@ -5,7 +5,7 @@
 **Key Points to Master**: Self-attention mechanism, image patch processing.  
 <img width="642" height="488" alt="image" src="https://github.com/user-attachments/assets/c3611f64-f4e1-4f03-bbd6-efd480e0cc6e" />
 
-## Code
+## Code description
 ```
 Main Functionalities
 1. Vision Transformer Model Implementation
