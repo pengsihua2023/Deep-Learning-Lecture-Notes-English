@@ -29,7 +29,7 @@
 - Research 
   - [Neural Architecture Search (NAS)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Research:%20Neural%20Architecture%20Search%20(NAS).md)
   - [AI agent](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Research:%20AI%20agent.md)
-  - [AI4science：AI for Scienc]()
+  - [AI4science：AI for Scienc](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Research:%20AI4science:%20AI%20for%20Scienc.md)
   - [World Model]()
 
 - Famous network architecture
