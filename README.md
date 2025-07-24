@@ -22,7 +22,7 @@
 - Advanced
   - [Meta-Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Advanced:%20Meta-Learning.md)
   - [Reinforcement Learning]()
-  - [Federated Learning]()
+  - [Federated Learning](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Advanced%3A%20Federated%20Learning.md)
   - [Large language model fine tuning]()
   - [Model pruning and quantization]()
     
