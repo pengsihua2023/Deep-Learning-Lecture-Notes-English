@@ -33,7 +33,7 @@
   - [World Model](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Research:%20World%20Model.md)
 
 - Famous network architecture
-    - [LeNet (1998)]()
+    - [LeNet (1998)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20LeNet%20(1998).md)
     - [AlexNet (2012)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20AlexNet%20(2012).md)
     - [VGG (2014)]()
     - [Inception (GoogleNet, 2014)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20Inception%20(GoogleNet,%202014).md)
