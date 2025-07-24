@@ -42,4 +42,4 @@
     - [YOLO (2016)]()
     - [EfficientNet (2019)]()
     - [Vision Transformer (ViT, 2020)]()
-    - [Diffusion Models（2020s）]()
+    - [Diffusion Models（2020s）](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20Diffusion%20Models(2020s).md)
