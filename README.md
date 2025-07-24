@@ -28,7 +28,7 @@
     
 - Research 
   - [Neural Architecture Search (NAS)]()
-  - [AI agent]()
+  - [AI agent](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Research:%20AI%20agent.md)
   - [AI4science：AI for Scienc]()
   - [World Model]()
 
