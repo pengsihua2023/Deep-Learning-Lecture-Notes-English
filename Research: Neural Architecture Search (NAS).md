@@ -166,6 +166,6 @@ plt.show()
 # Evaluate best architecture
 best_model = nas_model.export_model()
 best_model.evaluate(val_inputs, val_labels)
-```
+
 ```
 
