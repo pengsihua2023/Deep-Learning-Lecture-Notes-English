@@ -86,7 +86,7 @@ Model quantization reduces model size and inference time by lowering the precisi
 ### Simple Code Example (Pruning and Quantization with PyTorch)
 
 Below is an example combining weight pruning and post-training quantization, optimizing a simple convolutional neural network using PyTorch on the MNIST dataset.
-
+## Code
 ```python
 import torch
 import torch.nn as nn
