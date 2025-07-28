@@ -4,7 +4,8 @@
 **Applications**: Image classification, feature extraction, foundation for transfer learning.  
 **Key Points to Master**: Deep CNN design, overfitting control.  
 <img width="1459" height="775" alt="image" src="https://github.com/user-attachments/assets/5bd0deb5-051a-43ba-95f7-931fcd671b32" />
-
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/e27296cb-2aee-4389-a119-7c2ac8120d4d" />  
+<img width="1339" height="503" alt="image" src="https://github.com/user-attachments/assets/7b145c0e-205a-4c61-ad7f-b477203e8db6" />    
 ### Code
 This code implements a **simplified AlexNet convolutional neural network** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
 
