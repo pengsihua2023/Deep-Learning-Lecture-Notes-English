@@ -3,7 +3,7 @@
 **Features**: Introduced ReLU activation function, Dropout regularization, data augmentation, and GPU acceleration, significantly improving performance in the ImageNet competition.  
 **Applications**: Image classification, feature extraction, foundation for transfer learning.  
 **Key Points to Master**: Deep CNN design, overfitting control.  
-<img width="3179" height="1385" alt="image" src="https://github.com/user-attachments/assets/e81cb10e-cf86-423e-8518-0a103288c71e" />
+<img width="1459" height="775" alt="image" src="https://github.com/user-attachments/assets/5bd0deb5-051a-43ba-95f7-931fcd671b32" />
 
 ### Code
 This code implements a **simplified AlexNet convolutional neural network** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
