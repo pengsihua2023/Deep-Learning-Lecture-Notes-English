@@ -4,30 +4,21 @@ Meta-Learning, also known as "Learning to Learn," is a branch of machine learnin
 ### Core Concepts
 - **Objective**: Instead of optimizing for a specific task, meta-learning focuses on learning how to learn efficiently. For example, it automatically adjusts model parameters, hyperparameters, or learning rules.
 - **Key Feature**: Meta-learning typically involves training on a "task set," where each task includes a support set (for rapid learning) and a query set (for performance evaluation).
-<argument name="citation_id">7</argument>
-</grok:render>
 
 ### Main Methods of Meta-Learning
-1. **Optimization-Based Methods**: Such as MAML (Model-Agnostic Meta-Learning), which optimizes initial model parameters to adapt to new tasks with few gradient updates.<grok:render type="render_inline_citation">
-<argument name="citation_id">3</argument>
-</grok:render>
+1. **Optimization-Based Methods**: Such as MAML (Model-Agnostic Meta-Learning), which optimizes initial model parameters to adapt to new tasks with few gradient updates.
+
 2. **Metric-Based Methods**: Such as Prototypical Networks, which perform classification by learning similarities between data points.
-3. **Model-Based Methods**: Utilize memory mechanisms or recurrent networks to store learning experiences.<grok:render type="render_inline_citation">
-<argument name="citation_id">5</argument>
-</grok:render>
+3. **Model-Based Methods**: Utilize memory mechanisms or recurrent networks to store learning experiences.
 
 ### Application Scenarios
 - **Few-Shot Learning**: Completing classification or regression tasks with only a few samples.
 - **Transfer Learning**: Rapid adaptation to new environments, such as robot control or personalized recommendations.
-- **Hyperparameter Optimization**: Automatically tuning hyperparameters like learning rate.<grok:render type="render_inline_citation">
-<argument name="citation_id">4</argument>
-</grok:render>
+- **Hyperparameter Optimization**: Automatically tuning hyperparameters like learning rate.
 
 ### Advantages and Challenges
 - **Advantages**: Enables rapid adaptation in data-scarce scenarios, mimicking human learning capabilities.
-- **Challenges**: High computational cost, limited task generalization, and integration with large-scale pre-trained models requires further exploration.<grok:render type="render_inline_citation">
-<argument name="citation_id">9</argument>
-</grok:render>
+- **Challenges**: High computational cost, limited task generalization, and integration with large-scale pre-trained models requires further exploration.
 
 Below is an example implementation of Few-Shot classification using Python, PyTorch, and Prototypical Networks. Prototypical Networks is a metric-based meta-learning method suitable for Few-Shot classification tasks. This example uses a simple 2D point classification task to demonstrate how meta-learning achieves Few-Shot classification.
 
