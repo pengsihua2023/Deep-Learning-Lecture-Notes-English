@@ -43,4 +43,4 @@
     - [EfficientNet (2019)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20EfficientNet%20(2019).md)
     - [Vision Transformer (ViT, 2020)](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20Vision%20Transformer%20(ViT,%202020).md)
     - [Diffusion Models（2020s）](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Famous%20network:%20Diffusion%20Models(2020s).md)
-公式: $ \sigma(x) = \frac{1}{1 + e^{-x}} $
+
