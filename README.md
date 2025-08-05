@@ -1,4 +1,4 @@
-# Deep-learning-Sihua-English
+# Deep-Learning-Lecture-Notes-English
 ### Deep Learning Course based on the simple code：
 - Beginner
   - [FCN: Fully Connected Network](https://github.com/pengsihua2023/Deep-learning-Sihua-English/blob/main/Beginner%3A%20FCN(MLP).md)
