@@ -123,4 +123,5 @@ Epoch [5/5], Step [900], Loss: 0.2941
 
 Testing started...   
 Test Accuracy: 87.24%   
-$\begin{pmatrix} a & b \\ c & d \end{pmatrix}$  
+  
+$\begin{pmatrix} a & b \\ c & d \end{pmatrix}$   
