@@ -1,1 +1,84 @@
 
+Integration of Deep Learning Model Training Techniques
+
+* Key Technologies and Techniques
+
+  * Automatic Mixed Precision (AMP)
+  * Curriculum Learning
+  * Optuna Hyperparameter Optimization Method
+  * Ray Tune Hyperparameter Optimization Method
+  * Handling Class Imbalance Methods
+  * Min-Max Normalization
+  * Z-score Standardization
+  * Accelerating with float16 (Mixed Precision Training)
+  * Multi-GPU Parallel Training (Distributed Data Parallel, DDP)
+  * Gradient Clipping (clip_grad_norm_)
+  * Gradient Accumulation
+  * Efficient Attention Computation (Flash Attention)
+  * Hyperparameter Search (Bayesian Optimization)
+  * Multi-Model Ensemble (Ensemble Learning)
+
+* Overview of Regularization Techniques
+
+  * L1 Norm Regularization (L1 Regularization)
+  * L2 Norm Regularization (L2 Regularization, Weight Decay)
+  * Batch Normalization
+  * Layer Normalization
+  * Early Stopping
+  * Noise Injection to Inputs/Weights
+  * Dropout (Randomly Dropping Neurons)
+
+* Overview of Learning Rate Adjustment Methods
+
+  * Dynamic Learning Rate Adjustment (Learning Rate Scheduling)
+  * Automatic Learning Rate Reduction Based on Loss Monitoring (ReduceLROnPlateau)
+  * Adaptive Learning Rate (Adam Optimizer)
+  * Adaptive Learning Rate (RMSprop)
+
+* Overview of Optimizers
+
+  * Adam Optimizer
+  * Adam Variant (AdamW)
+  * SGD Optimizer (Stochastic Gradient Descent)
+  * RMSProp Optimizer (Root Mean Square Propagation)
+  * Adagrad Optimizer (Adaptive Gradient Algorithm)
+  * Adadelta Optimizer
+  * AMSGrad Optimizer
+  * Nadam Optimizer
+  * L-BFGS Optimizer (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)
+  * Rprop Optimizer (Resilient Backpropagation)
+  * SparseAdam Optimizer
+  * ASGD Optimizer (Averaged Stochastic Gradient Descent)
+
+* Overview of Initialization Methods
+
+  * Uniform/Normal Distribution Initialization (Xavier/Glorot Initialization)
+  * Initialization Considering ReLU Variance (He Initialization)
+  * Uniform Distribution Initialization
+  * Normal Distribution Initialization
+  * Uniform Variant of He Initialization (Kaiming Uniform)
+  * Layer-Sequential Unit-Variance Initialization (LSUV)
+  * Zero Initialization
+
+* Overview of Model Fine-Tuning Techniques
+
+  * Low-Rank Adaptation (LoRA)
+  * Prompt Tuning
+  * Restarted LoRA (ReLoRA)
+  * Quantization + LoRA (QLoRA)
+  * Differential Pruning (Diff Pruning)
+  * Adding Small Adapter Layers (Adapter Modules)
+  * Model Pruning (Removing Unimportant Weights)
+
+* Summary of Model Evaluation Methods
+
+* Overview of Model Interpretation Methods
+
+  * SHAP
+  * LIME
+  * Saliency Maps
+  * Integrated Gradients
+  * Grad-CAM
+  * DeepLIFT
+  * t-SNE
+  * Attention Visualization
