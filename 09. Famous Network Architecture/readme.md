@@ -6,7 +6,7 @@
     - [ResNet（2015）]()
     - [U-Net (2015)]()
     - [YOLO (2016)]()
-    - [EfficientNet (2019)]()
+    - [EfficientNet (2019)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20EfficientNet%20(2019).md)
     - [Vision Transformer (ViT, 2020)]()
     - [Diffusion Models（2020s）](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20Diffusion%20Models(2020s).md)  
 
