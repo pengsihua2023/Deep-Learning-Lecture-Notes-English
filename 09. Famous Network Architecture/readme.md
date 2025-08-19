@@ -1,6 +1,6 @@
 - 著名网络架构
     - [LeNet (1998)]()
-    - [AlexNet (2012)]()
+    - [AlexNet (2012)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20AlexNet%20(2012).md)
     - [VGG (2014)]()
     - [Inception (GoogleNet, 2014)]()
     - [ResNet（2015）]()
