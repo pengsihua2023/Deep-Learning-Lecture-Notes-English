@@ -1,4 +1,3 @@
-## MNIST
 ## Dataset Introduction: MNIST Dataset
 The MNIST (Modified National Institute of Standards and Technology) dataset is a classic dataset in the fields of deep learning and computer vision. Created by Yann LeCun and others in 1998, it is widely used for introductory teaching in image classification tasks and as a benchmark for algorithms. It contains handwritten digit images and has become a standard dataset for machine learning research due to its simplicity, moderate scale, and high-quality annotations.
 
