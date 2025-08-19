@@ -1,4 +1,3 @@
-## ImageNet
 ## Dataset Introduction: ImageNet Dataset
 The ImageNet dataset is a large-scale image dataset initiated in 2009 by Professor Fei-Fei Li’s team at Stanford University and continuously maintained. It is widely used for tasks such as image classification, object detection, and image segmentation in computer vision. As a key benchmark in computer vision research, ImageNet significantly advanced the development of deep learning, particularly convolutional neural networks (CNNs), gaining prominence due to AlexNet’s breakthrough in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2012.
 
