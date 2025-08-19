@@ -4,7 +4,7 @@ Integration of Deep Learning Model Training Techniques
 * Key Technologies and Techniques
 
   * [Automatic Mixed Precision (AMP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Automatic%20Mixed%20Precision%20(AMP).md)
-  * Curriculum Learning
+  * [Curriculum Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Curriculum%20Learning.md)
   * Optuna Hyperparameter Optimization Method
   * Ray Tune Hyperparameter Optimization Method
   * Handling Class Imbalance Methods
