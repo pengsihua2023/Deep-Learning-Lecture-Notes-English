@@ -6,7 +6,7 @@
 - [Intermediate](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/05.%20Intermediate)     
 - [Advanced](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/06.%20Advanced)    
 - [Research level](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/07.%20Research%20Level)
-- [Model training technology integration]()
+- [Model training technology integration](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/08.%20Model%20training%20technology%20integration)
 - [Famous network architecture](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/09.%20Famous%20Network%20Architecture)
 - [Commonly used datasets](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/10.%20Commonly%20used%20datasets)
 
