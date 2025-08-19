@@ -16,7 +16,7 @@ Integration of Deep Learning Model Training Techniques
   * Gradient Accumulation
   * Efficient Attention Computation (Flash Attention)
   * Hyperparameter Search (Bayesian Optimization)
-  * Multi-Model Ensemble (Ensemble Learning)
+  * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
 
 * Overview of Regularization Techniques
 
