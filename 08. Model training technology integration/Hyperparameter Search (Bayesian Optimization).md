@@ -1,5 +1,4 @@
 ## Hyperparameter Search (Bayesian Optimization)
-## Hyperparameter Search (Bayesian Optimization)
 ### What is Bayesian Optimization?
 Bayesian Optimization is a probabilistic model-based global optimization algorithm commonly used for hyperparameter tuning in machine learning. It is particularly suited for scenarios where evaluating the target function is computationally expensive, such as training a deep learning model. Unlike grid search or random search, Bayesian optimization builds a surrogate model (typically a Gaussian Process) to model the distribution of the target function and uses an acquisition function (e.g., Expected Improvement) to intelligently select the next hyperparameter point to evaluate, efficiently exploring the hyperparameter space.
 #### Core Principle
