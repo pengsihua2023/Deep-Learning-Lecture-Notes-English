@@ -1,7 +1,7 @@
 - 著名网络架构
     - [LeNet (1998)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20LeNet%20(1998).md)
     - [AlexNet (2012)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20AlexNet%20(2012).md)
-    - [VGG (2014)]()
+    - [VGG (2014)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20VGG%20(2014).md)
     - [Inception (GoogleNet, 2014)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20Inception%20(GoogleNet%2C%202014).md)
     - [ResNet（2015）](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20ResNet(2015).md)
     - [U-Net (2015)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20U-Net%20(2015).md)
