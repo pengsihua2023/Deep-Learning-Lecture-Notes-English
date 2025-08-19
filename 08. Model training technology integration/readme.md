@@ -7,7 +7,7 @@ Integration of Deep Learning Model Training Techniques
   * [Curriculum Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Curriculum%20Learning.md)
   * [Optuna Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Optuna%20Hyperparameter%20Optimization%20Method.md)
   * [Ray Tune Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Ray%20Tune%20Hyperparameter%20Optimization%20Method.md)
-  * [Two methods for dealing with class imbalance: weighted loss function and oversampling]()
+  * [Two methods for dealing with class imbalance: weighted loss function and oversampling](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Two%20methods%20for%20dealing%20with%20class%20imbalance%3A%20weighted%20loss%20function%20and%20oversampling.md)
   * Min-Max Normalization
   * Z-score Standardization
   * Accelerating with float16 (Mixed Precision Training)
