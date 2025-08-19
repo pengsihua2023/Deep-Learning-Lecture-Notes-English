@@ -1,6 +1,4 @@
-## Overview of Fundamental Theoretical Knowledge of Deep Learning
 ## Overview of Fundamental Theoretical Knowledge in Deep Learning
-### Overview of Fundamental Theoretical Knowledge in Deep Learning
 Deep learning, as a subfield of machine learning, draws its foundational theoretical knowledge from mathematics, statistics, and computer science. These concepts are essential for understanding model construction, training mechanisms, generalization capabilities, and potential limitations. Based on authoritative sources and the latest guidelines, mastering these theories is critical for both beginners and advanced practitioners. Below, I categorize these knowledge points into core areas and present them in a table format, including key concepts, their importance, and learning suggestions. The content is summarized based on the latest resources from 2025, such as mathematical foundation guides and Coursera courses.
 
 | Category | Key Concepts | Why Important | Learning Suggestions |
