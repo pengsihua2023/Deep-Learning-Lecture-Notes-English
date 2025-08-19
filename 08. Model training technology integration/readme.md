@@ -12,7 +12,7 @@ Integration of Deep Learning Model Training Techniques
   * [Z-score Standardization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Z-score%20Standardization.md)
   * [Mixed Precision Training](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Mixed%20Precision%20Training.md)
   * [Multi-GPU Parallel Training (Distributed Data Parallel, DDP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Multi-GPU%20Parallel%20Training%20(Distributed%20Data%20Parallel%2C%20DDP).md)
-  * Gradient Clipping (clip_grad_norm_)
+  * [Gradient Clipping]()
   * Gradient Accumulation
   * Efficient Attention Computation (Flash Attention)
   * Hyperparameter Search (Bayesian Optimization)
