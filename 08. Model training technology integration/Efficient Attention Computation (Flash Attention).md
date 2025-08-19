@@ -1,5 +1,5 @@
 ## Efficient Attention Computation (Flash Attention)
-## Efficient Attention Computation (Flash Attention)
+
 ### What is Flash Attention?
 Flash Attention is an optimized algorithm for the self-attention mechanism in Transformer models, proposed by Tri Dao et al. in 2022 and further improved in subsequent versions (e.g., FlashAttention-2 and FlashAttention-3). It addresses the bottleneck of standard attention computation for long sequences: standard attention has a time and memory complexity of \( O(n^2) \) for sequence length \( n \), resulting in high memory overhead and slow speed when training or inferring large models (e.g., LLMs) on GPUs.
 #### Core Principle
