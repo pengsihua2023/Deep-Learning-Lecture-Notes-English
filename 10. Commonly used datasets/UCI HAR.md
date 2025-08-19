@@ -1,4 +1,3 @@
-## UCI HAR
 ### Dataset Introduction: UCI HAR Dataset
 The UCI HAR (Human Activity Recognition) dataset is a public dataset for human activity recognition research, collected and published in 2012 by Davide Anguita and colleagues from the University of Genoa, Italy, and hosted on the UCI Machine Learning Repository. It records motion data from 30 participants aged 19 to 48 performing daily activities, captured using a Samsung Galaxy SII smartphone’s accelerometer and gyroscope sensors. The dataset is widely used for time-series data classification and machine learning research. [](https://machinelearningmastery.com/how-to-model-human-activity-from-smartphone-data/)[](https://archive.ics.uci.edu/ml/datasets/Human%2BActivity%2BRecognition%2BUsing%2BSmartphones)
 
