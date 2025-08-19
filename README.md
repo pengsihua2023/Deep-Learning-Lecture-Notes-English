@@ -1,6 +1,5 @@
 # Deep-Learning-Lecture-Notes-English
-### Deep Learning Course based on the simple code：
-- [Python Basics]()
+- [Python Basics](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/01.%20Python%20Basics)
 - [Basic Mathematics]()
 - [Basics of Deep Learning]()
 - [Beginner](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/04.%20Beginner)    
