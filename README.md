@@ -1,6 +1,6 @@
 # Deep-Learning-Lecture-Notes-English
 - [Python Basics](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/01.%20Python%20Basics)
-- [Basic Mathematics]()
+- [Basic Mathematics](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/02.%20Basic%20Mathematics)
 - [Basics of Deep Learning]()
 - [Beginner](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/04.%20Beginner)    
 - [Intermediate](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/05.%20Intermediate)     
