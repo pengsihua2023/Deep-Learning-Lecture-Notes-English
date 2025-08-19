@@ -1,5 +1,4 @@
 ## Gradient Clipping
-## Gradient Clipping
 ### What is Gradient Clipping?
 Gradient Clipping is a common optimization technique in deep learning model training used to prevent the problem of gradient explosion. Gradient explosion refers to gradients becoming excessively large during backpropagation, leading to unstable model parameter updates and affecting model convergence or performance.
 Gradient clipping avoids excessive gradient updates by limiting the maximum norm of the gradients (typically the L2 norm). Common methods include:
