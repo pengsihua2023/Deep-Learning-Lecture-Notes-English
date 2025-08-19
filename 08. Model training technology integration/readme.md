@@ -9,7 +9,7 @@ Integration of Deep Learning Model Training Techniques
   * [Ray Tune Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Ray%20Tune%20Hyperparameter%20Optimization%20Method.md)
   * [Two methods for dealing with class imbalance: weighted loss function and oversampling](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Two%20methods%20for%20dealing%20with%20class%20imbalance%3A%20weighted%20loss%20function%20and%20oversampling.md)
   * [Min-Max Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Min-Max%20Normalization.md)
-  * Z-score Standardization
+  * [Z-score Standardization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Z-score%20Standardization.md)
   * Accelerating with float16 (Mixed Precision Training)
   * Multi-GPU Parallel Training (Distributed Data Parallel, DDP)
   * Gradient Clipping (clip_grad_norm_)
