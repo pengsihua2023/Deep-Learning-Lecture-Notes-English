@@ -8,5 +8,5 @@
     - [YOLO (2016)]()
     - [EfficientNet (2019)]()
     - [Vision Transformer (ViT, 2020)]()
-    - [Diffusion Models（2020s）]()  
+    - [Diffusion Models（2020s）](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/09.%20Famous%20Network%20Architecture/Famous%20network%3A%20Diffusion%20Models(2020s).md)  
 
