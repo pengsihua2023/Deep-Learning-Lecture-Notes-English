@@ -1,5 +1,4 @@
 ## Mixed Precision Training
-## Mixed Precision Training
 ### What is Mixed Precision Training?
 **Mixed Precision Training (MPT)** is a deep learning training technique that combines low-precision (e.g., half-precision floating-point, FP16) and high-precision (e.g., single-precision floating-point, FP32) computations to accelerate training, reduce memory usage, and maintain model accuracy and stability as much as possible. It is particularly effective on hardware that supports FP16 computations, such as NVIDIA GPUs.
 #### Core Features:
