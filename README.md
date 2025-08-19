@@ -2,7 +2,7 @@
 ### Deep Learning Course based on the simple code：
 - [Python Basics]()
 - [Basic Mathematics]()
-- 
+- [Basics of Deep Learning]()
 - [Beginner](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/04.%20Beginner)    
 - [Intermediate](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/05.%20Intermediate)     
 - [Advanced](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/06.%20Advanced)    
