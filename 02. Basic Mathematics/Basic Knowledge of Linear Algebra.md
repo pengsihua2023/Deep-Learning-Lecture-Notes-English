@@ -1,5 +1,4 @@
 ## Basic Knowledge of Linear Algebra
-## Mathematics Basics: Linear Algebra Fundamentals
 ### Key Points to Master Linear Algebra in Deep Learning
 Linear algebra is one of the foundational mathematical tools for deep learning, enabling us to understand data representation, model parameters, and computational processes. In deep learning, neural networks fundamentally process data through matrix and vector operations. For example, input data can be represented as vectors or matrices, weight parameters are in matrix form, and backpropagation involves matrix multiplication and derivative calculations. Without a solid foundation in linear algebra, it’s challenging to deeply understand a model’s internal mechanisms or debug issues. Below, I will discuss the core concepts to master, organized from basic to advanced, explaining their importance and applications in deep learning with examples. The content is based on a synthesis of authoritative sources, such as the book *Deep Learning* and related online tutorials.
 
