@@ -1,6 +1,4 @@
 
-Basic Knowledge of Mathematics
-
 * Basic Knowledge of Mathematics
 
   * Basic Knowledge of Linear Algebra
