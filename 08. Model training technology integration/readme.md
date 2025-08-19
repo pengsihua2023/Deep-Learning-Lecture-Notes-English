@@ -15,7 +15,7 @@ Integration of Deep Learning Model Training Techniques
   * [Gradient Clipping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Gradient%20Clipping.md)
   * [Gradient Accumulation](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Gradient%20Accumulation.md)
   * [Efficient Attention Computation (Flash Attention)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Efficient%20Attention%20Computation%20(Flash%20Attention).md)
-  * Hyperparameter Search (Bayesian Optimization)
+  * [Hyperparameter Search (Bayesian Optimization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Hyperparameter%20Search%20(Bayesian%20Optimization).md)
   * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
 
 * Overview of Regularization Techniques
