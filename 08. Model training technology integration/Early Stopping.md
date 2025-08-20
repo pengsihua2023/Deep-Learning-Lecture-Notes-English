@@ -1,5 +1,4 @@
 ## Early Stopping
-## Training Early Stopping
 ### What is Early Stopping?
 Early Stopping is a regularization technique commonly used in deep learning training to prevent overfitting and save computational resources. Its core idea is to monitor performance metrics on a validation set (such as validation loss or accuracy) and terminate training early if the performance does not improve for a certain number of epochs (referred to as the "patience" parameter), typically saving the model parameters with the best validation performance.
 
