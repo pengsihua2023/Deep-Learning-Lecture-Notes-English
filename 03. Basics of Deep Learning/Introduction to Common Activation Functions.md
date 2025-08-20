@@ -335,6 +335,90 @@ print(output_batch)
 ## 5. Tanh activation function
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/39f4bd79-59bc-437d-8e55-242656ca9ce2" />  
   
+### Mathematical Definition of Tanh
 
+The Tanh (Hyperbolic Tangent) activation function is a non-linear function commonly used in neural networks to introduce non-linearity. It maps input values to the range \((-1, 1)\). The Tanh function is defined as:
+
+<img width="1158" height="653" alt="image" src="https://github.com/user-attachments/assets/81212078-62b3-4d41-b7c4-dab6459be247" />  
+  
+
+### Code Implementation in Python
+
+Below is a simple implementation of the Tanh function using NumPy, suitable for deep learning applications.
+
+```python
+import numpy as np
+
+def tanh(x):
+    """
+    Tanh activation function.
+    
+    Parameters:
+    - x: Input array (numpy array or scalar)
+    
+    Returns:
+    - Output array after applying Tanh
+    """
+    return np.tanh(x)
+```
+
+### Example Usage
+
+```python
+# Example inputs
+x = np.array([-2.0, -1.0, 0.0, 1.0, 2.0])
+
+# Apply Tanh
+output = tanh(x)
+print(output)
+# Output: [-0.96402758 -0.76159416  0.          0.76159416  0.96402758]
+```
+
+### Implementation in Deep Learning Frameworks
+
+#### TensorFlow/Keras
+In TensorFlow, Tanh is available as a built-in function or layer:
+
+```python
+import tensorflow as tf
+
+# Tanh function
+x = tf.constant([-2.0, -1.0, 0.0, 1.0, 2.0])
+output = tf.nn.tanh(x)
+print(output)
+# Output: [-0.9640276 -0.7615942  0.         0.7615942  0.9640276]
+
+# As a layer in a model
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(64, input_shape=(10,)),
+    tf.keras.layers.Activation('tanh')
+])
+```
+
+#### PyTorch
+In PyTorch, Tanh is available as a module or functional API:
+
+```python
+import torch
+import torch.nn as nn
+
+# Tanh function
+x = torch.tensor([-2.0, -1.0, 0.0, 1.0, 2.0])
+output = torch.tanh(x)
+print(output)
+# Output: tensor([-0.9640, -0.7616,  0.0000,  0.7616,  0.9640])
+
+# As a module
+tanh = nn.Tanh()
+output = tanh(x)
+print(output)
+# Output: tensor([-0.9640, -0.7616,  0.0000,  0.7616,  0.9640])
+```
+
+### Notes
+- **Characteristics**: Tanh is zero-centered, which can make optimization easier compared to Sigmoid, but it may still suffer from vanishing gradients for large \( |x| \).
+- **Use Case**: Tanh is often used in hidden layers of neural networks, particularly in recurrent neural networks (RNNs) like LSTMs, though ReLU variants are more common in modern feedforward networks.
+- **Numerical Stability**: The NumPy and framework implementations handle numerical stability internally, but care should be taken with very large inputs to avoid overflow in custom implementations.
+- Frameworks like TensorFlow and PyTorch optimize Tanh for GPU acceleration and support batched inputs efficiently.  
 
 
