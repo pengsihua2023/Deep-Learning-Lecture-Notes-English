@@ -1,3 +1,4 @@
+## Basic Knowledge of Norms
 In mathematics and related fields, a **norm** is a function that assigns a non-negative value to a vector, measuring its "size" or "length" in a vector space. Norms are used in various areas like linear algebra, machine learning, and functional analysis to quantify distances or magnitudes. A norm must satisfy three properties:
 1. **Non-negativity**: The norm is zero only for the zero vector, and positive otherwise.
 2. **Scalability**: Scaling a vector by a constant scales the norm by the absolute value of that constant.
