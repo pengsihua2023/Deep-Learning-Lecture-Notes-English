@@ -34,7 +34,7 @@ from torch.utils.data import DataLoader
 
 # Step 1: Define a neural network with Dropout
 class DropoutNet(nn.Module):
-    def __init__(self, dropout_rate=0.5):
+    def __init__(self, dropout_rate=0.5):
         super(DropoutNet, self).__init__()
         self.fc1 = nn.Linear(28 * 28, 128)  # Input: 28x28 pixels
         self.dropout = nn.Dropout(p=dropout_rate)  # Dropout layer, rate 0.5
