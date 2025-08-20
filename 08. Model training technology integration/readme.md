@@ -20,7 +20,7 @@
   * [Automatically reduce learning rate based on loss monitoring (ReduceLROnPlateau)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Automatically%20reduce%20learning%20rate%20based%20on%20loss%20monitoring%20(ReduceLROnPlateau).md)
 
 
-* [Overview of Regularization Techniques]
+* [Overview of Regularization Techniques](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Overview%20of%20Regularization%20Techniques.md)
 
   * [L1 Norm Regularization (L1 Regularization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/L1%20Norm%20Regularization.md)
   * [L2 Norm Regularization (L2 Regularization, Weight Decay)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/L2%20Norm%20Regularization.md)
