@@ -22,13 +22,13 @@
 
 * [Overview of Regularization Techniques]
 
-  * [L1 Norm Regularization (L1 Regularization)]
-  * [L2 Norm Regularization (L2 Regularization, Weight Decay)]
+  * [L1 Norm Regularization (L1 Regularization)]()
+  * [L2 Norm Regularization (L2 Regularization, Weight Decay)]()
   * Batch Normalization
   * Layer Normalization
-  * [Early Stopping]
-  * [Noise Injection to Inputs/Weights]
-  * [Dropout (Randomly Dropping Neurons)]
+  * [Early Stopping]()
+  * [Noise Injection to Inputs/Weights]()
+  * [Dropout (Randomly Dropping Neurons)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Dropout.md)
 * Overview of Learning Rate Adjustment Methods
 
   * Dynamic Learning Rate Adjustment (Learning Rate Scheduling)
