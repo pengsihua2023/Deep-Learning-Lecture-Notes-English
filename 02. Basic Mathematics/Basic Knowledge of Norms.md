@@ -6,18 +6,8 @@ In mathematics and related fields, a **norm** is a function that assigns a non-n
 Here’s a simple explanation with code examples in Python to illustrate common norms for a vector \( v = [v_1, v_2, ..., v_n] \).
 
 ### Common Norms
-1. **L1 Norm (Manhattan Norm)**: Sum of absolute values of the vector components.
-   \[
-   ||v||_1 = |v_1| + |v_2| + ... + |v_n|
-   \]
-2. **L2 Norm (Euclidean Norm)**: Square root of the sum of squared components (like the length of a vector in Euclidean space).
-   \[
-   ||v||_2 = \sqrt{v_1^2 + v_2^2 + ... + v_n^2}
-   \]
-3. **Infinity Norm (Max Norm)**: The maximum absolute value of the vector components.
-   \[
-   ||v||_\infty = \max(|v_1|, |v_2|, ..., |v_n|)
-   \]
+<img width="950" height="378" alt="image" src="https://github.com/user-attachments/assets/e8bbe6bf-2cfc-40b6-8c0c-cc65e2f1a6dd" />
+
 
 ### Simple Python Code to Compute Norms
 ```python
@@ -46,9 +36,7 @@ print("Infinity Norm:", inf_norm(vector)) # Output: 5
 ```
 
 ### Explanation of Code
-- **Input**: The vector is a list of numbers (e.g., `[3, -4, 5]`).
-- **L1 Norm**: Adds the absolute values: \( |3| + |-4| + |5| = 3 + 4 + 5 = 12 \).
-- **L2 Norm**: Computes the square root of the sum of squares: \( \sqrt{3^2 + (-4)^2 + 5^2} = \sqrt{9 + 16 + 25} = \sqrt{50} \approx 7.071 \).
-- **Infinity Norm**: Takes the maximum absolute value: \( \max(|3|, |-4|, |5|) = 5 \).
+<img width="824" height="216" alt="image" src="https://github.com/user-attachments/assets/551582aa-eefe-4774-bac8-9e399483e15f" />
+
 
 This code keeps it simple and demonstrates how norms work for a vector. Norms are foundational in measuring distances (e.g., in machine learning for error calculations) or ensuring stability in numerical methods. If you want a deeper dive into a specific norm or application, let me know!
