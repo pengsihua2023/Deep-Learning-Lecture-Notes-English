@@ -1,5 +1,4 @@
 ## Automatic Mixed Precision (AMP)
-## Automatic Mixed Precision (AMP) Training
 "Automatic Mixed Precision (AMP)" is a technique in deep learning that **automatically uses different numerical precisions (FP16 and FP32) for computation**, aiming to **accelerate training and reduce memory usage while maintaining model accuracy**.
 
 ---
