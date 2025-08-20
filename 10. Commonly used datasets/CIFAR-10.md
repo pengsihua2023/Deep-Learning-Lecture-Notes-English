@@ -8,15 +8,15 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
   - Divided into 10 categories, with 6,000 images per category.
 - **Categories**:
   - 1.Airplane
-  2. Automobile
-  3. Bird
-  4. Cat
-  5. Deer
-  6. Dog
-  7. Frog
-  8. Horse
-  9. Ship
-  10. Truck
+  - 2.Automobile
+  - 3.Bird
+  - 4.Cat
+  - 5.Deer
+  - 6.Dog
+  - 7.Frog
+  - 8.Horse
+  - 9.Ship
+  - 10.Truck
 - **Data Split**:
   - Training set: 50,000 images (5,000 per category).
   - Test set: 10,000 images (1,000 per category).
