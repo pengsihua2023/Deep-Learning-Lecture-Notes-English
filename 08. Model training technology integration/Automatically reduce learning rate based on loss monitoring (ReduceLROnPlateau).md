@@ -1,5 +1,4 @@
 ## Automatically reduce learning rate based on loss monitoring (ReduceLROnPlateau)
-## Automatically Reducing Learning Rate Based on Loss Monitoring
 ### What is ReduceLROnPlateau?
 `ReduceLROnPlateau` is a dynamic learning rate scheduling strategy that adjusts the learning rate based on a monitored metric, typically validation loss. If the validation loss does not improve for a specified number of epochs (patience), the learning rate is multiplied by a decay factor (factor), enabling finer optimization, preventing oscillations, or avoiding premature convergence to local optima.
 
