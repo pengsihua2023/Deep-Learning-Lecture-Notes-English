@@ -3,7 +3,7 @@
 
 * Key Technologies and Techniques
 
-  * [Automatic Mixed Precision (AMP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Automatic%20Mixed%20Precision%20(AMP).md)
+  * [Automatic Mixed Precision (AMP)]
   * [Curriculum Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Curriculum%20Learning.md)
   * [Optuna Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Optuna%20Hyperparameter%20Optimization%20Method.md)
   * [Ray Tune Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Ray%20Tune%20Hyperparameter%20Optimization%20Method.md)
@@ -11,10 +11,10 @@
   * [Min-Max Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Min-Max%20Normalization.md)
   * [Z-score Standardization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Z-score%20Standardization.md)
   * [Mixed Precision Training](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Mixed%20Precision%20Training.md)
-  * [Multi-GPU Parallel Training (Distributed Data Parallel, DDP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Multi-GPU%20Parallel%20Training%20(Distributed%20Data%20Parallel%2C%20DDP).md)
-  * [Gradient Clipping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Gradient%20Clipping.md)
-  * [Gradient Accumulation](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Gradient%20Accumulation.md)
-  * [Efficient Attention Computation (Flash Attention)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Efficient%20Attention%20Computation%20(Flash%20Attention).md)
+  * [Multi-GPU Parallel Training (Distributed Data Parallel, DDP)]
+  * [Gradient Clipping]
+  * [Gradient Accumulation]
+  * [Efficient Attention Computation (Flash Attention)]
   * [Hyperparameter Search (Bayesian Optimization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Hyperparameter%20Search%20(Bayesian%20Optimization).md)
   * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
 
@@ -24,10 +24,9 @@
   * [L2 Norm Regularization (L2 Regularization, Weight Decay)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/L2%20Norm%20Regularization.md)
   * Batch Normalization
   * Layer Normalization
-  * [Early Stopping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Early%20Stopping.md)
-  * [Noise Injection to Inputs/Weights](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Noise%20Injection%20to%20Inputs-Weights.md)
-  * [Dropout (Randomly Dropping Neurons)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Dropout%20(Randomly%20Dropping%20Neurons).md)
-
+  * [Early Stopping]
+  * [Noise Injection to Inputs/Weights]
+  * [Dropout (Randomly Dropping Neurons)]
 * Overview of Learning Rate Adjustment Methods
 
   * Dynamic Learning Rate Adjustment (Learning Rate Scheduling)
