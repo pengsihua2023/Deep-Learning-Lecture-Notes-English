@@ -1,4 +1,3 @@
-## Classes in Python
 ## Python Basics: Classes in Python
 Python is an object-oriented programming (OOP) language, and classes (Class) are one of the core concepts of OOP. They allow you to encapsulate data and behavior together, forming a reusable template. Through classes, you can create objects (instances), which can have their own attributes (data) and methods (functions). Below, I will explain the knowledge of classes in Python in detail from basic to advanced, including definitions, attributes, methods, inheritance, special methods, and more. The explanations will be combined with code examples for easy understanding. If you have a Python environment, you can copy the code and run it for testing.
 
