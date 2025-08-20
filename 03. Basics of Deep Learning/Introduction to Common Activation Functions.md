@@ -151,7 +151,96 @@ The ReLU activation function is a cornerstone of modern deep learning due to its
 
 ## 3. Leaky ReLU activation function 
      
-<img width="853" height="482" alt="image" src="https://github.com/user-attachments/assets/79ad6100-1bb7-47de-95df-f546be3edd0b" />  
+<img width="853" height="482" alt="image" src="https://github.com/user-attachments/assets/79ad6100-1bb7-47de-95df-f546be3edd0b" />    
+### Mathematical Definition of Leaky ReLU
+
+The Leaky ReLU (Rectified Linear Unit) is an activation function used in neural networks to introduce non-linearity. Unlike the standard ReLU, which outputs zero for negative inputs, Leaky ReLU allows a small, non-zero gradient for negative inputs to prevent the "dying ReLU" problem. It is defined as:
+
+\[
+f(x) = \begin{cases} 
+x & \text{if } x > 0 \\
+\alpha x & \text{if } x \leq 0 
+\end{cases}
+\]
+
+Where:
+- \( x \) is the input to the function.
+- \( \alpha \) is a small positive constant (e.g., 0.01), controlling the slope for negative inputs.
+
+This ensures that the function is differentiable everywhere, with a gradient of 1 for \( x > 0 \) and \( \alpha \) for \( x \leq 0 \).
+
+### Code Implementation in Python
+
+Below is a simple implementation of the Leaky ReLU activation function using Python with NumPy, suitable for deep learning applications. This can be used in frameworks like TensorFlow or PyTorch or as a standalone function.
+
+```python
+import numpy as np
+
+def leaky_relu(x, alpha=0.01):
+    """
+    Leaky ReLU activation function.
+    
+    Parameters:
+    - x: Input array (numpy array or scalar)
+    - alpha: Slope for negative inputs (default: 0.01)
+    
+    Returns:
+    - Output array after applying Leaky ReLU
+    """
+    return np.where(x > 0, x, alpha * x)
+```
+
+### Example Usage
+
+```python
+# Example inputs
+x = np.array([-2, -1, 0, 1, 2])
+
+# Apply Leaky ReLU
+output = leaky_relu(x, alpha=0.01)
+print(output)
+# Output: [-0.02 -0.01  0.    1.    2.  ]
+```
+
+### Implementation in Deep Learning Frameworks
+
+#### TensorFlow/Keras
+In TensorFlow, Leaky ReLU is available as a built-in layer or function:
+
+```python
+import tensorflow as tf
+
+# Define Leaky ReLU layer
+leaky_relu = tf.keras.layers.LeakyReLU(alpha=0.01)
+
+# Example usage in a model
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(64, input_shape=(10,)),
+    tf.keras.layers.LeakyReLU(alpha=0.01)
+])
+```
+
+#### PyTorch
+In PyTorch, Leaky ReLU is available as a module or functional API:
+
+```python
+import torch
+import torch.nn as nn
+
+# Define Leaky ReLU
+leaky_relu = nn.LeakyReLU(negative_slope=0.01)
+
+# Example input
+x = torch.tensor([-2.0, -1.0, 0.0, 1.0, 2.0])
+output = leaky_relu(x)
+print(output)
+# Output: tensor([-0.0200, -0.0100,  0.0000,  1.0000,  2.0000])
+```
+
+### Notes
+- The default \( \alpha \) (e.g., 0.01) can be adjusted based on the task, but small values are typically used.
+- Leaky ReLU is computationally efficient and helps mitigate issues with vanishing gradients compared to standard ReLU.
+- In practice, frameworks like TensorFlow and PyTorch optimize these operations for GPU acceleration.
   
 ## 4. Softmax activation function
 <img width="384" height="300" alt="image" src="https://github.com/user-attachments/assets/f290108e-edcd-4408-b99e-4a0a35be16a3" />   
