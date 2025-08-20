@@ -102,7 +102,7 @@ print(relu(x))  # Output: [0, 0, 0, 1, 2]
 ```
 
 #### **Characteristics**
-- **Output Range**: \([0, \infty)\), producing non-negative outputs.
+- **Output Range**: (0, infty), producing non-negative outputs.
 - **Non-linearity**: Introduces non-linearity, enabling neural networks to model complex patterns.
 - **Sparsity**: Outputs zero for negative inputs, leading to sparse activations, which can improve computational efficiency and reduce overfitting.
 - **Differentiability**: ReLU is differentiable everywhere except at \( x = 0 \), where the derivative is typically defined as 0 or 1 for practicality in backpropagation (subgradient).
