@@ -67,4 +67,81 @@ print(output)  # Output: tensor([0.1192, 0.2689, 0.5000, 0.7311, 0.8808])
 Due to its limitations, other activation functions like **ReLU** (Rectified Linear Unit) or **tanh** are often preferred in hidden layers of deep neural networks, while Sigmoid remains popular in output layers for binary classification.
 
 #### **Summary**
-The Sigmoid activation function is a fundamental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to \((0, 1)\) makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.
+The Sigmoid activation function is a fun### ReLU Activation Function
+
+The **ReLU (Rectified Linear Unit)** activation function is a widely used non-linear activation function in neural networks, particularly in deep learning models like convolutional neural networks (CNNs) and deep neural networks, due to its simplicity and effectiveness.
+
+#### **Definition**
+The ReLU function outputs the input directly if it is positive; otherwise, it outputs zero. It is defined as:
+
+\[
+f(x) = \max(0, x)
+\]
+
+Where:
+- \( x \): Input value (can be a scalar, vector, or matrix).
+- Output: \( x \) if \( x > 0 \), otherwise \( 0 \).
+
+#### **Implementation in Python**
+Here’s a simple implementation of the ReLU function using `NumPy`:
+
+```python
+import numpy as np
+
+def relu(x):
+    return np.maximum(0, x)
+
+# Example
+x = np.array([-2, -1, 0, 1, 2])
+print(relu(x))  # Output: [0, 0, 0, 1, 2]
+```
+
+#### **Characteristics**
+- **Output Range**: \([0, \infty)\), producing non-negative outputs.
+- **Non-linearity**: Introduces non-linearity, enabling neural networks to model complex patterns.
+- **Sparsity**: Outputs zero for negative inputs, leading to sparse activations, which can improve computational efficiency and reduce overfitting.
+- **Differentiability**: ReLU is differentiable everywhere except at \( x = 0 \), where the derivative is typically defined as 0 or 1 for practicality in backpropagation (subgradient).
+  - Derivative: \( f'(x) = 1 \) if \( x > 0 \), otherwise \( 0 \).
+
+#### **Applications**
+- **Hidden Layers**: ReLU is the default activation function for hidden layers in most deep learning models (e.g., CNNs, fully connected layers) due to its fast convergence and computational efficiency.
+- **Deep Learning Frameworks**: Widely supported in frameworks like `TensorFlow` and `PyTorch` for efficient training.
+- Example in `PyTorch`:
+  ```python
+  import torch
+  import torch.nn as nn
+
+  # Input tensor
+  x = torch.tensor([-2.0, -1.0, 0.0, 1.0, 2.0])
+
+  # Apply ReLU
+  relu = nn.ReLU()
+  output = relu(x)
+  print(output)  # Output: tensor([0., 0., 0., 1., 2.])
+  ```
+
+#### **Advantages**
+- **Fast Convergence**: Unlike Sigmoid or tanh, ReLU avoids vanishing gradient issues for positive inputs, as its gradient is either 0 or 1, leading to faster training.
+- **Computational Efficiency**: The max operation is simpler than the exponential operations in Sigmoid or tanh.
+- **Sparsity**: Zero outputs for negative inputs create sparse representations, which can enhance model efficiency and generalization.
+
+#### **Limitations**
+- **Dying ReLU Problem**: Neurons with negative inputs may output zero consistently, causing them to "die" (stop learning) if weights are not updated properly, especially with high learning rates.
+- **Non-Zero-Centered**: Outputs are always non-negative, which can lead to biased gradient updates in some cases.
+- **Not Differentiable at Zero**: While this is rarely a practical issue, the undefined derivative at \( x = 0 \) requires careful handling in optimization.
+
+#### **Variants of ReLU**
+To address ReLU’s limitations, several variants have been developed:
+- **Leaky ReLU**: \( f(x) = \max(\alpha x, x) \), where \( \alpha \) (e.g., 0.01) allows small negative outputs to prevent dying neurons.
+- **Parametric ReLU (PReLU)**: Similar to Leaky ReLU, but \( \alpha \) is a learnable parameter.
+- **ELU (Exponential Linear Unit)**: Smooths negative inputs with an exponential function for better robustness.
+- Example of Leaky ReLU in `PyTorch`:
+  ```python
+  leaky_relu = nn.LeakyReLU(negative_slope=0.01)
+  output = leaky_relu(x)
+  print(output)  # Small negative values for negative inputs
+  ```
+
+#### **Summary**
+The ReLU activation function is a cornerstone of modern deep learning due to its simplicity, efficiency, and ability to mitigate vanishing gradient issues. It is primarily used in hidden layers of neural networks, transforming negative inputs to zero and preserving positive inputs. While it has limitations like the dying ReLU problem, its variants (e.g., Leaky ReLU) and careful model design can address these issues, making ReLU a preferred choice for most deep learning architectures.damental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to \((0, 1)\) makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.
+## dd
