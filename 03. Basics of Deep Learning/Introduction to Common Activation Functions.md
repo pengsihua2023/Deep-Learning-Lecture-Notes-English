@@ -233,8 +233,105 @@ print(output)
 - In practice, frameworks like TensorFlow and PyTorch optimize these operations for GPU acceleration.
   
 ## 4. Softmax activation function
-<img width="384" height="300" alt="image" src="https://github.com/user-attachments/assets/f290108e-edcd-4408-b99e-4a0a35be16a3" />   
+<img width="384" height="300" alt="image" src="https://github.com/user-attachments/assets/f290108e-edcd-4408-b99e-4a0a35be16a3" />     
+  ### Mathematical Definition of Softmax
+
+<img width="1210" height="649" alt="image" src="https://github.com/user-attachments/assets/d9c5ce72-0b56-4982-b282-34e81ab8547a" />
   
+
+### Code Implementation in Python
+
+Below is a simple implementation of the Softmax function using NumPy, suitable for deep learning applications.
+
+```python
+import numpy as np
+
+def softmax(x):
+    """
+    Softmax activation function.
+    
+    Parameters:
+    - x: Input array (numpy array, typically 1D or 2D for batched inputs)
+    
+    Returns:
+    - Output array with probabilities (same shape as input)
+    """
+    # Subtract the max for numerical stability
+    e_x = np.exp(x - np.max(x, axis=-1, keepdims=True))
+    return e_x / np.sum(e_x, axis=-1, keepdims=True)
+```
+
+### Example Usage
+
+```python
+# Example input (logits)
+x = np.array([2.0, 1.0, 0.1])
+
+# Apply Softmax
+output = softmax(x)
+print(output)
+# Output: [0.65900114 0.24243297 0.09856589]
+print(np.sum(output))  # Should be ~1.0
+# Output: 1.0
+```
+
+For batched inputs (e.g., 2D array where each row is a sample):
+
+```python
+x_batch = np.array([[2.0, 1.0, 0.1], [1.0, 3.0, 0.5]])
+output_batch = softmax(x_batch)
+print(output_batch)
+# Output: [[0.65900114 0.24243297 0.09856589]
+#          [0.19167327 0.70238467 0.10594206]]
+```
+
+### Implementation in Deep Learning Frameworks
+
+#### TensorFlow/Keras
+In TensorFlow, Softmax is available as a function or layer:
+
+```python
+import tensorflow as tf
+
+# Softmax function
+x = tf.constant([2.0, 1.0, 0.1])
+output = tf.nn.softmax(x)
+print(output)
+# Output: [0.65900114 0.24243297 0.09856589]
+
+# As a layer in a model
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(3, input_shape=(10,)),
+    tf.keras.layers.Softmax()
+])
+```
+
+#### PyTorch
+In PyTorch, Softmax is available in the functional API or as a module:
+
+```python
+import torch
+import torch.nn.functional as F
+
+# Softmax function
+x = torch.tensor([2.0, 1.0, 0.1])
+output = F.softmax(x, dim=-1)
+print(output)
+# Output: tensor([0.6590, 0.2424, 0.0986])
+
+# For batched inputs
+x_batch = torch.tensor([[2.0, 1.0, 0.1], [1.0, 3.0, 0.5]])
+output_batch = F.softmax(x_batch, dim=-1)
+print(output_batch)
+# Output: tensor([[0.6590, 0.2424, 0.0986],
+#                 [0.1917, 0.7024, 0.1059]])
+```
+
+### Notes
+- **Numerical Stability**: Subtracting the maximum value from the inputs before exponentiation (as shown in the NumPy implementation) prevents overflow issues with large logits.
+- **Use Case**: Softmax is typically used in the output layer of a neural network for multi-class classification, where the output represents class probabilities.
+- **Gradient**: Softmax is differentiable, making it suitable for backpropagation in neural networks.
+- Frameworks like TensorFlow and PyTorch optimize Softmax for GPU acceleration and handle batched inputs efficiently.
 ## 5. Tanh activation function
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/39f4bd79-59bc-437d-8e55-242656ca9ce2" />  
   
