@@ -17,7 +17,8 @@
   * [Efficient Attention Computation (Flash Attention)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Efficient%20Attention%20Computation%20(Flash%20Attention).md)
   * [Hyperparameter Search](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Hyperparameter%20Search%20(Bayesian%20Optimization).md) 
   * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
-  * [Two methods for dealing with class imbalance: weighted loss function and oversampling](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Two%20methods%20for%20dealing%20with%20class%20imbalance%3A%20weighted%20loss%20function%20and%20oversampling.md)
+  * [Automatically reduce learning rate based on loss monitoring (ReduceLROnPlateau)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Automatically%20reduce%20learning%20rate%20based%20on%20loss%20monitoring%20(ReduceLROnPlateau).md)
+
 
 * [Overview of Regularization Techniques]
 
