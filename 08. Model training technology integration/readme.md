@@ -18,7 +18,7 @@
   * [Hyperparameter Search (Bayesian Optimization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Hyperparameter%20Search%20(Bayesian%20Optimization).md)
   * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
 
-* Overview of Regularization Techniques
+* [Overview of Regularization Techniques](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Overview%20of%20Regularization%20Techniques.md)
 
   * [L1 Norm Regularization (L1 Regularization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/L1%20Norm%20Regularization%20(L1%20Regularization).md)
   * [L2 Norm Regularization (L2 Regularization, Weight Decay)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/L2%20Norm%20Regularization.md)
