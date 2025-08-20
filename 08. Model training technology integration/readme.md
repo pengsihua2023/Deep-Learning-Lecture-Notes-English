@@ -26,7 +26,7 @@
   * Layer Normalization
   * [Early Stopping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Early%20Stopping.md)
   * Noise Injection to Inputs/Weights
-  * Dropout (Randomly Dropping Neurons)
+  * [Dropout (Randomly Dropping Neurons)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Dropout%20(Randomly%20Dropping%20Neurons).md)
 
 * Overview of Learning Rate Adjustment Methods
 
