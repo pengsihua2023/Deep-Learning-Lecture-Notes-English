@@ -3,6 +3,8 @@
 <img width="2054" height="896" alt="image" src="https://github.com/user-attachments/assets/c8e02fb5-bbe2-4a85-8e8c-727f86244505" />
 
 ### Sigmoid Activation Function
+<img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/ffd061a2-165c-486a-83d0-e93fc62d9979" />
+
 The Sigmoid activation function is a commonly used non-linear activation function, widely applied in neural networks, particularly in binary classification problems. Below is an introduction:
 
 #### **Definition**
@@ -67,9 +69,13 @@ print(output)  # Output: tensor([0.1192, 0.2689, 0.5000, 0.7311, 0.8808])
 Due to its limitations, other activation functions like **ReLU** (Rectified Linear Unit) or **tanh** are often preferred in hidden layers of deep neural networks, while Sigmoid remains popular in output layers for binary classification.
 
 #### **Summary**
-The Sigmoid activation function is a fun### ReLU Activation Function
+The Sigmoid activation function is a fundamental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to $(0, 1)$ makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.  
+
+## ReLU Activation Function
 
 The **ReLU (Rectified Linear Unit)** activation function is a widely used non-linear activation function in neural networks, particularly in deep learning models like convolutional neural networks (CNNs) and deep neural networks, due to its simplicity and effectiveness.
+<img width="1387" height="793" alt="image" src="https://github.com/user-attachments/assets/5d1e30fd-7cc9-4b58-a157-04060102b558" />
+
 
 #### **Definition**
 The ReLU function outputs the input directly if it is positive; otherwise, it outputs zero. It is defined as:
@@ -144,4 +150,4 @@ To address ReLU’s limitations, several variants have been developed:
 
 #### **Summary**
 The ReLU activation function is a cornerstone of modern deep learning due to its simplicity, efficiency, and ability to mitigate vanishing gradient issues. It is primarily used in hidden layers of neural networks, transforming negative inputs to zero and preserving positive inputs. While it has limitations like the dying ReLU problem, its variants (e.g., Leaky ReLU) and careful model design can address these issues, making ReLU a preferred choice for most deep learning architectures.damental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to \((0, 1)\) makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.
-## dd
+
