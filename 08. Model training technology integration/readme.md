@@ -3,25 +3,26 @@
 
 * Key Technologies and Techniques
 
-  * [Automatic Mixed Precision (AMP)]
-  * [Curriculum Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Curriculum%20Learning.md)
-  * [Optuna Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Optuna%20Hyperparameter%20Optimization%20Method.md)
-  * [Ray Tune Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Ray%20Tune%20Hyperparameter%20Optimization%20Method.md)
-  * [Two methods for dealing with class imbalance: weighted loss function and oversampling](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Two%20methods%20for%20dealing%20with%20class%20imbalance%3A%20weighted%20loss%20function%20and%20oversampling.md)
-  * [Min-Max Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Min-Max%20Normalization.md)
-  * [Z-score Standardization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Z-score%20Standardization.md)
-  * [Mixed Precision Training](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Mixed%20Precision%20Training.md)
-  * [Multi-GPU Parallel Training (Distributed Data Parallel, DDP)]
-  * [Gradient Clipping]
-  * [Gradient Accumulation]
-  * [Efficient Attention Computation (Flash Attention)]
-  * [Hyperparameter Search (Bayesian Optimization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Hyperparameter%20Search%20(Bayesian%20Optimization).md)
-  * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
+  * [Automatic Mixed Precision (AMP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Automatic%20Mixed%20Precision%20(AMP).md)
+  * [Curriculum Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Curriculum%20Learning.md)
+  * [Optuna Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Optuna%20Hyperparameter%20Optimization%20Method.md)
+  * [Ray Tune Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Ray%20Tune%20Hyperparameter%20Optimization%20Method.md)
+  * [Two methods for dealing with class imbalance: weighted loss function and oversampling]()
+  * [Min-Max Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Min-Max%20Normalization.md)
+  * [Z-score Standardization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Z-score%20Standardization.md)
+  * [Mixed Precision Training](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Mixed%20Precision%20Training.md)
+  * [Multi-GPU Parallel Training (Distributed Data Parallel, DDP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Multi-GPU%20Parallel%20Training%20(Distributed%20Data%20Parallel%2C%20DDP).md)
+  * [Gradient Clipping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Gradient%20Clipping.md)
+  * [Gradient Accumulation](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Gradient%20Accumulation.md)
+  * [Efficient Attention Computation (Flash Attention)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Efficient%20Attention%20Computation%20(Flash%20Attention).md)
+  * [Hyperparameter Search](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Hyperparameter%20Search%20(Bayesian%20Optimization).md) 
+  * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
+  * [Two methods for dealing with class imbalance: weighted loss function and oversampling](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Two%20methods%20for%20dealing%20with%20class%20imbalance%3A%20weighted%20loss%20function%20and%20oversampling.md)
 
-* [Overview of Regularization Techniques](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Overview%20of%20Regularization%20Techniques.md)
+* [Overview of Regularization Techniques]
 
-  * [L1 Norm Regularization (L1 Regularization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/L1%20Norm%20Regularization%20(L1%20Regularization).md)
-  * [L2 Norm Regularization (L2 Regularization, Weight Decay)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/L2%20Norm%20Regularization.md)
+  * [L1 Norm Regularization (L1 Regularization)]
+  * [L2 Norm Regularization (L2 Regularization, Weight Decay)]
   * Batch Normalization
   * Layer Normalization
   * [Early Stopping]
