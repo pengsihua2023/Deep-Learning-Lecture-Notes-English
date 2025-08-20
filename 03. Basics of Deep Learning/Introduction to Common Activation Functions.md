@@ -149,12 +149,12 @@ To address ReLU’s limitations, several variants have been developed:
 #### **Summary**
 The ReLU activation function is a cornerstone of modern deep learning due to its simplicity, efficiency, and ability to mitigate vanishing gradient issues. It is primarily used in hidden layers of neural networks, transforming negative inputs to zero and preserving positive inputs. While it has limitations like the dying ReLU problem, its variants (e.g., Leaky ReLU) and careful model design can address these issues, making ReLU a preferred choice for most deep learning architectures.damental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to \((0, 1)\) makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.
 
-## 3. Leaky ReLU activation function
-<img width="853" height="482" alt="image" src="https://github.com/user-attachments/assets/79ad6100-1bb7-47de-95df-f546be3edd0b" />
+## 3. Leaky ReLU activation function 
+<img width="853" height="482" alt="image" src="https://github.com/user-attachments/assets/79ad6100-1bb7-47de-95df-f546be3edd0b" />  
 ## 4. Softmax activation function
-<img width="384" height="300" alt="image" src="https://github.com/user-attachments/assets/f290108e-edcd-4408-b99e-4a0a35be16a3" /> 
-## 5.<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/39f4bd79-59bc-437d-8e55-242656ca9ce2" />
- Tanh activation function
+<img width="384" height="300" alt="image" src="https://github.com/user-attachments/assets/f290108e-edcd-4408-b99e-4a0a35be16a3" />   
+## 5. Tanh activation function
+<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/39f4bd79-59bc-437d-8e55-242656ca9ce2" /> 
 
 
 
