@@ -7,7 +7,7 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
   - Contains 60,000 32x32 pixel color images (RGB format).
   - Divided into 10 categories, with 6,000 images per category.
 - **Categories**:
-  1. Airplane
+  - 1. Airplane
   2. Automobile
   3. Bird
   4. Cat
