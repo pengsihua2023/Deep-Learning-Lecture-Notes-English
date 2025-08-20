@@ -2,7 +2,7 @@
 
 <img width="2054" height="896" alt="image" src="https://github.com/user-attachments/assets/c8e02fb5-bbe2-4a85-8e8c-727f86244505" />
 
-### 1. Sigmoid Activation Function
+## 1. Sigmoid Activation Function
 <img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/ffd061a2-165c-486a-83d0-e93fc62d9979" />
 
 The Sigmoid activation function is a commonly used non-linear activation function, widely applied in neural networks, particularly in binary classification problems. Below is an introduction:
@@ -70,7 +70,7 @@ Due to its limitations, other activation functions like **ReLU** (Rectified Line
 #### **Summary**
 The Sigmoid activation function is a fundamental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to $(0, 1)$ makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.  
 
-## 2. ReLU Activation Function
+## 2. ReLU Activation Function  
 
 The **ReLU (Rectified Linear Unit)** activation function is a widely used non-linear activation function in neural networks, particularly in deep learning models like convolutional neural networks (CNNs) and deep neural networks, due to its simplicity and effectiveness.
 <img width="1387" height="793" alt="image" src="https://github.com/user-attachments/assets/5d1e30fd-7cc9-4b58-a157-04060102b558" />
@@ -331,7 +331,7 @@ print(output_batch)
 - **Numerical Stability**: Subtracting the maximum value from the inputs before exponentiation (as shown in the NumPy implementation) prevents overflow issues with large logits.
 - **Use Case**: Softmax is typically used in the output layer of a neural network for multi-class classification, where the output represents class probabilities.
 - **Gradient**: Softmax is differentiable, making it suitable for backpropagation in neural networks.
-- Frameworks like TensorFlow and PyTorch optimize Softmax for GPU acceleration and handle batched inputs efficiently.
+- Frameworks like TensorFlow and PyTorch optimize Softmax for GPU acceleration and handle batched inputs efficiently.  
 ## 5. Tanh activation function
 <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/39f4bd79-59bc-437d-8e55-242656ca9ce2" />  
   
