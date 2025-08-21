@@ -67,7 +67,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
     $\hat{\rho}_j$ is the average activation of the $j$-th neuron.  
     $\lambda$ is the regularization coefficient.
 
-* **Denoising Autoencoder**: Add noise to the input $\tilde{x} = x + \epsilon$ (e.g., $\epsilon \sim \mathcal{N}(0, \sigma^2)$), and optimize:
+* **Denoising Autoencoder**: Add noise to the input $\tilde{x} = x + \epsilon$ (e.g., $$\epsilon \sim \mathcal{N}(0, \sigma^2)$$), and optimize:
 
   $$\mathcal{L}(x, g(f(\tilde{x})))$$
 ```
