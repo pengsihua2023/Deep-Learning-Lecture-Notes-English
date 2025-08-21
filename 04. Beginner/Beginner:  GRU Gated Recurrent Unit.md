@@ -9,8 +9,7 @@ GRU controls the flow and forgetting of information through an update gate and a
 
 ### GRU Working Mechanism
 <img width="801" height="874" alt="image" src="https://github.com/user-attachments/assets/59d92294-65c9-4a36-9d51-91e59337ea1d" />
-<img width="1229" height="866" alt="image" src="https://github.com/user-attachments/assets/0c326801-56ce-4125-adec-ca7403e67332" />
-
+  
 ### GRU Characteristics
 - **Simplified Structure**: Compared to LSTM, GRU has only two gates (update gate and reset gate), fewer parameters, and higher computational efficiency.
 - **Long-Term Dependencies**: Through its gating mechanism, GRU effectively captures dependencies in long sequences, mitigating the vanishing gradient problem.
