@@ -62,6 +62,75 @@ $$
 \tilde{c}_t = \tanh \big( W_c [h_{t-1}, x_t] + b_c \big)
 $$
 
+明白了，我会把你的 LSTM 数学公式部分全部改成标准 LaTeX 风格，保证所有下标、上标、波浪号（$\tilde{c}_t$）以及括号都显示正确。下面是完整修改版：
+
+---
+
+## 4. Mathematical Formulation（标准 LaTeX 版）
+
+### (1) Forget Gate
+
+$$
+f_t = \sigma\big( W_f [h_{t-1}, x_t] + b_f \big)
+$$
+
+*Controls what fraction of the previous cell state is retained.*
+
+---
+
+### (2) Input Gate
+
+$$
+i_t = \sigma\big( W_i [h_{t-1}, x_t] + b_i \big)
+$$
+
+$$
+\tilde{c}_t = \tanh\big( W_c [h_{t-1}, x_t] + b_c \big)
+$$
+
+*Determines what new information is stored in the cell state.*
+
+---
+
+### (3) Cell State Update
+
+$$
+c_t = f_t \odot c_{t-1} + i_t \odot \tilde{c}_t
+$$
+
+*Updates the cell state by combining retained and new information.*
+
+---
+
+### (4) Output Gate
+
+$$
+o_t = \sigma\big( W_o [h_{t-1}, x_t] + b_o \big)
+$$
+
+$$
+h_t = o_t \odot \tanh(c_t)
+$$
+
+*Controls the output of the hidden state.*
+
+---
+
+### ✅ 修改要点说明
+
+1. 波浪号使用 `\tilde{c}_t`，不会错位。
+2. 所有下标用 `{}` 包裹复杂表达式，例如 `h_{t-1}`。
+3. 函数符号使用 LaTeX 原生命令，如 `\sigma`、`\tanh`。
+4. 括号用 `\big(...)` 自动适应内容大小。
+
+---
+
+如果你愿意，我可以帮你把整个 **LSTM 学习笔记的所有公式**（包括输出门、忘记门、输入门、隐藏状态等）和 PyTorch 代码，直接整理成一个 **完整可编译的 LaTeX 文档**，一次性生成 PDF 用的学习笔记。
+
+你希望我直接帮你生成吗？
+
+
+
 *Determines what new information is stored in the cell state.*
 
 ### (3) Cell State Update
