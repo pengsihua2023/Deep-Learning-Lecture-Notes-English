@@ -10,12 +10,12 @@
 
 Figure 1: Autoencoder architecture diagram
 
-Mathematical Description of Autoencoder
+### 1. Mathematical Description of Autoencoder
 
 Basic StructureAn Autoencoder consists of an Encoder and a Decoder:  
 * **Encoder**: Map the input $x \in \mathbb{R}^d$ to a low-dimensional latent representation $z \in \mathbb{R}^m$ (usually $m < d$).
 * **Decoder**: Reconstruct $z$ into output $\hat{x} \in \mathbb{R}^d$, with the goal that $\hat{x} \approx x$.
-2. Mathematical Expression  
+### 2. Mathematical Expression  
 
 Here’s the English translation of the Chinese text, keeping the formulas in LaTeX unchanged:
 
@@ -35,7 +35,7 @@ $$
 
 where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th elements of the input and the reconstructed output, respectively.  
 
-3. Parameterization  
+### 3. Parameterization  
 
 * **Encoder**: $f(x) = \sigma(W_e x + b_e)$
 
@@ -48,7 +48,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 * **Optimization**: Adjust parameters $\theta = $
     { $\{W_e, b_e, W_d, b_d}$ } via gradient descent to minimize $\mathcal{L}$.
 
-4. Regularization Variants
+### 4. Regularization Variants
   
   - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in $z$.  
 
@@ -65,7 +65,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 
   $$\mathcal{L}(x, g(f(\tilde{x})))$$
 
-5. Optimization  
+### 5. Optimization  
   
 Optimized via backpropagation:   
   
@@ -73,7 +73,7 @@ $$
 \theta^{*} = \arg \min_{\theta} \frac{1}{n} \sum_{i=1}^{n} \mathcal{L}\bigl(x_i, g(f(x_i))\bigr)
 $$
 
-6. Applications  
+### 6. Applications  
  
  
 
@@ -82,7 +82,7 @@ $$
 * **Denoising**: Recover $x$ from $\tilde{x}$.
 * **Anomaly detection**: Samples with large reconstruction error may be anomalies.
 
-
+## Code
 ```
 import torch
 import torch.nn as nn
