@@ -56,7 +56,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 
 4. Regularization Variants
   
-  - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in z.  
+  - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in $z$.  
 
   - Loss function:
 
