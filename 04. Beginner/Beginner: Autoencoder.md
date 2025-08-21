@@ -29,9 +29,7 @@ Here’s the English translation of the Chinese text, keeping the formulas in La
 * **Decoding**: $\hat{x} = g(z) = g(f(x))$
 * **Loss function**: Minimize the reconstruction error, usually the mean squared error (MSE):
 
-明白！可能是渲染器对 `\| \cdot \|` 或行内数学不太友好。下面给出几种等价、易渲染的 LaTeX 写法（用 `$$ ... $$` 作为块级公式）：
 
-**常用写法（含范数等价式）**
 
 $$
 \mathcal{L}(x,\hat{x})=\lVert x-\hat{x}\rVert_2^2
