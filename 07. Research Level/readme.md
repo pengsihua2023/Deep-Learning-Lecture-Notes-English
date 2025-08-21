@@ -21,8 +21,8 @@
 
     * [Applications of the QuTiP Library in Quantum Optics](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Physics%20Topics/Applications%20of%20the%20QuTiP%20Library%20in%20Quantum%20Optics.md)
     * [Study of Open Quantum Two-Qubit Systems Based on the QuTiP Library](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Physics%20Topics/Study%20of%20Open%20Quantum%20Two-Qubit%20Systems%20Based%20on%20the%20QuTiP%20Library.md)
-    * [Study of Harmonic Oscillator Dynamics Evolution Based on the QuTiP Library]()
-    * [Simulation of the Dicke Model Based on the QuTiP Library]()
+    * [Study of Harmonic Oscillator Dynamics Evolution Based on the QuTiP Library](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Physics%20Topics/Study%20of%20Harmonic%20Oscillator%20Dynamics%20Evolution%20Based%20on%20the%20QuTiP%20Library.md)
+    * [Simulation of the Dicke Model Based on the QuTiP Library](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Physics%20Topics/Simulating%20Dicke%20model%20based%20on%20QuTiP%20library.md)
 
   * Biology and Medicine Topics
 
