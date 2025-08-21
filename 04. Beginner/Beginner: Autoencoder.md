@@ -49,7 +49,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 
 * **Encoder**: $f(x) = \sigma(W_e x + b_e)$
 
-  * $W_e \in \mathbb{R}^{m \times d},\; b_e \in \mathbb{R}^m$, $\sigma$ is an activation function (e.g., ReLU, Sigmoid).
+  * $W_e \in \mathbb{R}^{m \times d},\ b_e \in \mathbb{R}^m$, $\sigma$ is an activation function (e.g., ReLU, Sigmoid).
 
 * **Decoder**: $g(z) = \sigma'(W_d z + b_d)$
 
