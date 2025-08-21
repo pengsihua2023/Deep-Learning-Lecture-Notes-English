@@ -1,8 +1,3 @@
-Great! I’ll prepare a clean, well-structured **English study note** version for you.
-It will keep all the math in LaTeX style, structure the content with clear sections, and remove redundancy so it reads like a concise tutorial.
-
-Here’s the draft:
-
 ---
 
 # Long Short-Term Memory (LSTM) Study Notes
@@ -145,9 +140,5 @@ The training loss steadily decreases, confirming model convergence.
 
 ---
 
-✨ With these notes, you now have both the **mathematical foundation** and a **hands-on implementation** for LSTM.
 
----
-
-Would you like me to also format this into a **ready-to-use LaTeX document** (so you can compile it into a PDF study note)?
 
