@@ -180,4 +180,4 @@ if __name__ == "__main__":
         plt.close()
 
 Results
-====> Epoch: 9 Average training loss: 69.1569====> Test set loss: 69.0569Train Epoch: 10 [0/60000 (0%)] Loss: 71.628830Train Epoch: 10 [12800/60000 (21%)] Loss: 65.910645Train Epoch: 10 [25600/60000 (43%)] Loss: 68.564079Train Epoch: 10 [38400/60000 (64%)] Loss: 70.579895Train Epoch: 10 [51200/60000 (85%)] Loss: 69.532722====> Epoch: 10 Average training loss: 68.6832====> Test set loss: 68.4474<img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/8d28cf45-b977-4de8-a857-d62f8893be0
+====> Epoch: 9 Average training loss: 69.1569====> Test set loss: 69.0569Train Epoch: 10 [0/60000 (0%)] Loss: 71.628830Train Epoch: 10 [12800/60000 (21%)] Loss: 65.910645Train Epoch: 10 [25600/60000 (43%)] Loss: 68.564079Train Epoch: 10 [38400/60000 (64%)] Loss: 70.579895Train Epoch: 10 [51200/60000 (85%)] Loss: 69.532722====> Epoch: 10 Average training loss: 68.6832====> Test set loss: 68.4474Figure 4: Loss CurveFigure 5: Comparison of Input and Output Images
