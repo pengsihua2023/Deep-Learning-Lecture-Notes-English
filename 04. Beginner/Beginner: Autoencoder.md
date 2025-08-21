@@ -4,17 +4,12 @@ Autoencoder
 Importance:An Autoencoder is an unsupervised learning model used for data compression, denoising, or feature learning.It is a precursor to generative models (e.g., GANs) and is widely used in data preprocessing and anomaly detection.
 Core Concept:An Autoencoder consists of an encoder (compresses data) and a decoder (reconstructs data), with the goal of making the output as close as possible to the input.Analogy: Like a "data compressor," it compresses a large file and then decompresses it, striving to preserve the original.
 Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).
-<img width="1400" height="797" alt="image" src="https://github.com/user-attachments/assets/44c3b2df-579f-418e-ad1c-8d77ba3a7621" />  
+
   
 
-Figure 1: First Representation  
-  
-<img width="700" height="220" alt="image" src="https://github.com/user-attachments/assets/1a227a27-c26d-4f11-965d-44f95cbfea61" />  
-  
-Figure 2: Second Representation  
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/f6e08480-a20a-488d-af52-be84c7c6a392" />  
 
-Figure 3: Third Representation
+Figure 1: Autoencoder architecture diagram
 
 Mathematical Description of Autoencoder
 
