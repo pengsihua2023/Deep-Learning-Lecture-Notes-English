@@ -19,14 +19,8 @@ Figure 3: Third Representation
 Mathematical Description of Autoencoder
 
 Basic StructureAn Autoencoder consists of an Encoder and a Decoder:  
-<img width="1072" height="144" alt="image" src="https://github.com/user-attachments/assets/18448061-c597-4236-a8f5-979e693e55ae" />  
-Here’s the English translation of the Chinese text in the image, keeping the formulas unchanged:
-
 * **Encoder**: Map the input $x \in \mathbb{R}^d$ to a low-dimensional latent representation $z \in \mathbb{R}^m$ (usually $m < d$).
 * **Decoder**: Reconstruct $z$ into output $\hat{x} \in \mathbb{R}^d$, with the goal that $\hat{x} \approx x$.
-
-
-
 2. Mathematical Expression  
 <img width="1022" height="465" alt="image" src="https://github.com/user-attachments/assets/fcb07a67-3615-413f-8aa9-1a04e72193b3" />
 
