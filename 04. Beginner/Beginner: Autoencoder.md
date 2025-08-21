@@ -4,11 +4,14 @@ Autoencoder
 Importance:An Autoencoder is an unsupervised learning model used for data compression, denoising, or feature learning.It is a precursor to generative models (e.g., GANs) and is widely used in data preprocessing and anomaly detection.
 Core Concept:An Autoencoder consists of an encoder (compresses data) and a decoder (reconstructs data), with the goal of making the output as close as possible to the input.Analogy: Like a "data compressor," it compresses a large file and then decompresses it, striving to preserve the original.
 Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).
+<img width="1400" height="797" alt="image" src="https://github.com/user-attachments/assets/44c3b2df-579f-418e-ad1c-8d77ba3a7621" />
 
 
 Figure 1: First Representation
+<img width="700" height="220" alt="image" src="https://github.com/user-attachments/assets/1a227a27-c26d-4f11-965d-44f95cbfea61" />
 
 Figure 2: Second Representation
+<img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/f6e08480-a20a-488d-af52-be84c7c6a392" />
 
 Figure 3: Third Representation
 
@@ -180,4 +183,7 @@ if __name__ == "__main__":
         plt.close()
 ```
 ## Results
-====> Epoch: 9 Average training loss: 69.1569====> Test set loss: 69.0569Train Epoch: 10 [0/60000 (0%)] Loss: 71.628830Train Epoch: 10 [12800/60000 (21%)] Loss: 65.910645Train Epoch: 10 [25600/60000 (43%)] Loss: 68.564079Train Epoch: 10 [38400/60000 (64%)] Loss: 70.579895Train Epoch: 10 [51200/60000 (85%)] Loss: 69.532722====> Epoch: 10 Average training loss: 68.6832====> Test set loss: 68.4474Figure 4: Loss CurveFigure 5: Comparison of Input and Output Images
+====> Epoch: 9 Average training loss: 69.1569====> Test set loss: 69.0569Train Epoch: 10 [0/60000 (0%)] Loss: 71.628830Train Epoch: 10 [12800/60000 (21%)] Loss: 65.910645Train Epoch: 10 [25600/60000 (43%)] Loss: 68.564079Train Epoch: 10 [38400/60000 (64%)] Loss: 70.579895Train Epoch: 10 [51200/60000 (85%)] Loss: 69.532722====> Epoch: 10 Average training loss: 68.6832====> Test set loss: 68.4474Figure 4: Loss CurveFigure 5: Comparison of Input and 
+  
+<img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/2eac166e-59fe-4528-bb38-4eb4c7cf8c87" />  
+
