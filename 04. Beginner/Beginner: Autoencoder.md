@@ -56,6 +56,28 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 
 4. Regularization Variants  
 <img width="1275" height="515" alt="image" src="https://github.com/user-attachments/assets/b84a7c3e-8710-49ed-a661-89dcc7b2622c" />
+好的！以下是把图中中文翻译成英文并保留 LaTeX 公式的结果，格式适合放在 GitHub Markdown 文件中显示：
+
+```markdown
+- **Sparse Autoencoder**: Add a sparsity penalty to encourage fewer neuron activations in \( z \):
+
+\[
+\mathcal{L}_{\text{sparse}} = \mathcal{L}(x, \hat{x}) + \lambda \sum_j \text{KL}(\rho \parallel \hat{\rho}_j)
+\]
+
+where KL is the Kullback-Leibler divergence,  
+\(\rho\) is the target sparsity,  
+\(\hat{\rho}_j\) is the average activation of the \( j \)-th neuron,  
+and \(\lambda\) is the regularization coefficient.
+
+- **Denoising Autoencoder**: Add noise to the input \(\tilde{x} = x + \epsilon\) (e.g., \(\epsilon \sim \mathcal{N}(0, \sigma^2)\)), and optimize:
+
+\[
+\mathcal{L}(x, g(f(\tilde{x})))
+\]
+```
+
+要不要我帮你直接生成一个 `README.md` 文件下载？
 
 5. Optimization  
 Optimized via backpropagation:  
