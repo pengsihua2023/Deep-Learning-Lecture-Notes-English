@@ -23,6 +23,17 @@ Basic StructureAn Autoencoder consists of an Encoder and a Decoder:
 * **Decoder**: Reconstruct $z$ into output $\hat{x} \in \mathbb{R}^d$, with the goal that $\hat{x} \approx x$.
 2. Mathematical Expression  
 <img width="1022" height="465" alt="image" src="https://github.com/user-attachments/assets/fcb07a67-3615-413f-8aa9-1a04e72193b3" />
+Here’s the English translation of the Chinese text, keeping the formulas in LaTeX unchanged:
+
+* **Encoding**: $z = f(x)$
+* **Decoding**: $\hat{x} = g(z) = g(f(x))$
+* **Loss function**: Minimize the reconstruction error, usually the mean squared error (MSE):
+
+$$
+\mathcal{L}(x, \hat{x}) = \|x - \hat{x}\|_2^2 = \frac{1}{n} \sum_{i=1}^n (x_i - \hat{x}_i)^2
+$$
+
+where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th elements of the input and the reconstructed output, respectively.
 
 3. Parameterization  
 <img width="1030" height="380" alt="image" src="https://github.com/user-attachments/assets/9a72c301-261b-4b41-92e6-93dc805d2661" />
