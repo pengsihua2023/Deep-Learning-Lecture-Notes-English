@@ -56,13 +56,13 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 
 4. Regularization Variants  
 <img width="1275" height="515" alt="image" src="https://github.com/user-attachments/assets/b84a7c3e-8710-49ed-a661-89dcc7b2622c" />
-* Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in $/z$.  
+  - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in $/z$.  
 
-  * Loss function:
+  - Loss function:
 
     $$\mathcal{L}_{\text{sparse}} = \mathcal{L}(x, \hat{x}) + \lambda \sum_j \text{KL}(\rho \parallel \hat{\rho}_j)$$
 
-  * KL is the Kullback–Leibler divergence.  
+  - KL is the Kullback–Leibler divergence.  
     $\rho$ is the target sparsity.  
     $\hat{\rho}_j$ is the average activation of the $j$-th neuron.  
     $\lambda$ is the regularization coefficient.
