@@ -64,6 +64,11 @@ $$
 $$
 \tilde{c}_t  
 $$
+
+$$
+\tilde{c}_t = \tanh \big( W_c [h_{t-1}, x_t] + b_c \big)
+$$
+  
 *Determines what new information is stored in the cell state.*
 
 ### (3) Cell State Update
