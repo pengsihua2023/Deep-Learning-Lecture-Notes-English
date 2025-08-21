@@ -58,6 +58,10 @@ $$
 c_t = \tanh \big( W_c [h_{t-1}, x_t] + b_c \big)  
 $$
 
+$$
+\tilde{c}
+$$
+
 *Determines what new information is stored in the cell state.*
 
 ### (3) Cell State Update
