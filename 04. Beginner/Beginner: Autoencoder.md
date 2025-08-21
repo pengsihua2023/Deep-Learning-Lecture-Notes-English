@@ -18,20 +18,26 @@ Figure 3: Third Representation
 
 Mathematical Description of Autoencoder
 
-Basic StructureAn Autoencoder consists of an Encoder and a Decoder:
+Basic StructureAn Autoencoder consists of an Encoder and a Decoder:  
+<img width="1072" height="144" alt="image" src="https://github.com/user-attachments/assets/18448061-c597-4236-a8f5-979e693e55ae" />  
 
 
-2. Mathematical Expression
+2. Mathematical Expression  
+<img width="1022" height="465" alt="image" src="https://github.com/user-attachments/assets/fcb07a67-3615-413f-8aa9-1a04e72193b3" />
 
-3. Parameterization
+3. Parameterization  
+<img width="1030" height="380" alt="image" src="https://github.com/user-attachments/assets/9a72c301-261b-4b41-92e6-93dc805d2661" />
 
-4. Regularization Variants
+4. Regularization Variants  
+<img width="1275" height="515" alt="image" src="https://github.com/user-attachments/assets/b84a7c3e-8710-49ed-a661-89dcc7b2622c" />
 
-5. Optimization
-Optimized via backpropagation:
+5. Optimization  
+Optimized via backpropagation:  
+<img width="633" height="150" alt="image" src="https://github.com/user-attachments/assets/58822023-69b6-4c43-a835-dd494d2c7b23" />
 
-6. Applications
-
+6. Applications  
+<img width="693" height="234" alt="image" src="https://github.com/user-attachments/assets/d11696c3-35b2-4290-a5ff-784f808f67fe" />  
+  
 
 ```
 import torch
