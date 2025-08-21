@@ -43,6 +43,19 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 
 3. Parameterization  
 <img width="1030" height="380" alt="image" src="https://github.com/user-attachments/assets/9a72c301-261b-4b41-92e6-93dc805d2661" />
+好的，这里是将图中中文翻译成英文后的版本，所有公式部分保持 LaTeX：
+
+---
+
+* **Encoder**: $f(x) = \sigma(W_e x + b_e)$
+
+  * $W_e \in \mathbb{R}^{m \times d},\; b_e \in \mathbb{R}^m$, $\sigma$ is an activation function (e.g., ReLU, Sigmoid).
+
+* **Decoder**: $g(z) = \sigma'(W_d z + b_d)$
+
+  * $W_d \in \mathbb{R}^{d \times m},\; b_d \in \mathbb{R}^d$, $\sigma'$ is an activation function.
+
+* **Optimization**: Adjust parameters $\theta = \{W_e, b_e, W_d, b_d\}$ via gradient descent to minimize $\mathcal{L}$.
 
 4. Regularization Variants  
 <img width="1275" height="515" alt="image" src="https://github.com/user-attachments/assets/b84a7c3e-8710-49ed-a661-89dcc7b2622c" />
