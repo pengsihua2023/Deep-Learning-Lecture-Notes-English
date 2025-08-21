@@ -38,21 +38,7 @@ $$
 =\frac{1}{n}\sum_{i=1}^{n}\bigl(x_i-\hat{x}_i\bigr)^2
 $$
 
-**如果 `\lVert` 不支持，可改为**
 
-$$
-\mathcal{L}(x,\hat{x})=\left\|x-\hat{x}\right\|_2^{2}
-=\frac{1}{n}\sum_{i=1}^{n}(x_i-\hat{x}_i)^2
-$$
-
-另外，若你希望 $n$ 表示“样本数”，请用样本上求和的记号以避免歧义：
-
-$$
-\mathcal{L}
-=\frac{1}{n}\sum_{i=1}^{n}\left\|x^{(i)}-\hat{x}^{(i)}\right\|_2^{2}
-$$
-
-而若 $n$ 表示“向量维度”，则上一条的求和索引应改为维度索引（如 $j=1\ldots d$）。
 
 
 where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th elements of the input and the reconstructed output, respectively.  
