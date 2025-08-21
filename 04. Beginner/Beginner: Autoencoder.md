@@ -55,7 +55,6 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
     { $\{W_e, b_e, W_d, b_d}$ } via gradient descent to minimize $\mathcal{L}$.
 
 4. Regularization Variants  
-<img width="1275" height="515" alt="image" src="https://github.com/user-attachments/assets/b84a7c3e-8710-49ed-a661-89dcc7b2622c" />  
   - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in z.  
 
   - Loss function:
@@ -70,10 +69,6 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 * **Denoising Autoencoder**: Add noise to the input $\tilde{x} = x + \epsilon$ (e.g., $$\epsilon \sim \mathcal{N}(0, \sigma^2)$$), and optimize:
 
   $$\mathcal{L}(x, g(f(\tilde{x})))$$
-```
-
-要不要我帮你继续把 **稀疏/去噪 autoencoder** 都加上和你示例里一样的 **参数说明**（像 \$W\_e, b\_e\$ 那样）？
-
 
 5. Optimization  
 Optimized via backpropagation:  
