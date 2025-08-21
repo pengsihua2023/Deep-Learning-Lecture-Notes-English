@@ -54,7 +54,8 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 * **Optimization**: Adjust parameters $\theta = $
     { $\{W_e, b_e, W_d, b_d}$ } via gradient descent to minimize $\mathcal{L}$.
 
-4. Regularization Variants  
+4. Regularization Variants
+  
   - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in z.  
 
   - Loss function:
@@ -71,14 +72,16 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
   $$\mathcal{L}(x, g(f(\tilde{x})))$$
 
 5. Optimization  
-Optimized via backpropagation:  
+  
+Optimized via backpropagation:   
 <img width="633" height="150" alt="image" src="https://github.com/user-attachments/assets/58822023-69b6-4c43-a835-dd494d2c7b23" />
   
 $$
 \theta^{*} = \arg \min_{\theta} \frac{1}{n} \sum_{i=1}^{n} \mathcal{L}\bigl(x_i, g(f(x_i))\bigr)
 $$
 
-7. Applications  
+6. Applications  
+  
 <img width="693" height="234" alt="image" src="https://github.com/user-attachments/assets/d11696c3-35b2-4290-a5ff-784f808f67fe" />  
   
 
