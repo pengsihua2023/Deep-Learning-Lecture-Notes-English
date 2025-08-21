@@ -1,5 +1,3 @@
----
-
 # Long Short-Term Memory (LSTM) Study Notes
 
 ## 1. Introduction
