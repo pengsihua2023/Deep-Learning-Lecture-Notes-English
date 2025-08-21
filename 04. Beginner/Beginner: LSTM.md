@@ -61,7 +61,9 @@ $$
 $$
 \tilde{c}
 $$
-
+$$
+\tilde{c}_t
+$$
 *Determines what new information is stored in the cell state.*
 
 ### (3) Cell State Update
