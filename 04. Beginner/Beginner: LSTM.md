@@ -69,7 +69,7 @@ E = mc^2
 
 
 $$
-\tilde{c}_t = \tanh ( W_c h_{t-1}, x_t + b_c )
+\tilde{c}_t = \tanh ( W_c h_{t-1} + b_c )
 $$
 
 *Determines what new information is stored in the cell state.*
