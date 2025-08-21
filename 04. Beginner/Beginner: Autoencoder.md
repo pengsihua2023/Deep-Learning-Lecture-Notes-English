@@ -61,9 +61,9 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 ```markdown
 - **Sparse Autoencoder**: Add a sparsity penalty to encourage fewer neuron activations in \( z \):
 
-\[
+$
 \mathcal{L}_{\text{sparse}} = \mathcal{L}(x, \hat{x}) + \lambda \sum_j \text{KL}(\rho \parallel \hat{\rho}_j)
-\]
+$
 
 where KL is the Kullback-Leibler divergence,  
 \(\rho\) is the target sparsity,  
@@ -72,9 +72,9 @@ and \(\lambda\) is the regularization coefficient.
 
 - **Denoising Autoencoder**: Add noise to the input \(\tilde{x} = x + \epsilon\) (e.g., \(\epsilon \sim \mathcal{N}(0, \sigma^2)\)), and optimize:
 
-\[
+$
 \mathcal{L}(x, g(f(\tilde{x})))
-\]
+$
 ```
 
 要不要我帮你直接生成一个 `README.md` 文件下载？
