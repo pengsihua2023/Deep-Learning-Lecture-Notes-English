@@ -1,7 +1,4 @@
 ## Basics of Deep Learning: Introduction to Common Activation Functions
-
-<img width="2054" height="896" alt="image" src="https://github.com/user-attachments/assets/c8e02fb5-bbe2-4a85-8e8c-727f86244505" />
-
 ## 1. Sigmoid Activation Function
 <img width="1200" height="800" alt="image" src="https://github.com/user-attachments/assets/ffd061a2-165c-486a-83d0-e93fc62d9979" />
 
