@@ -1,7 +1,7 @@
 
 * Advanced Level
 
-  * [Self-supervised Learning]()
+  * [Self-supervised Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/06.%20Advanced/Self-supervised%20Learning.md)
   * [Meta-Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/06.%20Advanced/Advanced%3A%20Meta-Learning.md)
   * [Reinforcement Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/06.%20Advanced/Advanced%3A%20Reinforcement%20Learning.md)
   * [Federated Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/06.%20Advanced/Advanced%3A%20Federated%20Learning.md)
