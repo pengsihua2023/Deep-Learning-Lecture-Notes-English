@@ -31,5 +31,5 @@
 
   * Chemistry and Materials Science Topics
 
-    * [DeepMD-kit Library for Simulating Macroscopic Thermo-Mechanical Processes of Copper Metal()
+    * [DeepMD-kit Library for Simulating Macroscopic Thermo-Mechanical Processes of Copper Metal(https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Chemistry%20and%20Materials%20Science%20Topics/DeepMD-kit%20Library%20for%20Simulating%20Macroscopic%20Thermo-Mechanical%20Processes%20of%20Copper%20Metal.md)
     * [DeepMD-kit Library for Simulating Molecular Dynamics of Gas-Phase Water Molecules (H₂O)]()
