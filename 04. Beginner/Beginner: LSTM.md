@@ -54,7 +54,7 @@ $$
 i_t = \sigma \big( W_i [h_{t-1}, x_t] + b_i \big)
 $$
 
-\tilde{c}_t = \tanh \big( W_c [h_{t-1}, x_t] + b_c \big)  
+{c}_t = \tanh \big( W_c [h_{t-1}, x_t] + b_c \big)  
 
 
 *Determines what new information is stored in the cell state.*
