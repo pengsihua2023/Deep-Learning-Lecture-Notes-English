@@ -20,6 +20,10 @@ Mathematical Description of Autoencoder
 
 Basic StructureAn Autoencoder consists of an Encoder and a Decoder:  
 <img width="1072" height="144" alt="image" src="https://github.com/user-attachments/assets/18448061-c597-4236-a8f5-979e693e55ae" />  
+\begin{itemize}
+  \item \textbf{Encoder:} Map the input $x \in \mathbb{R}^d$ to a low-dimensional latent representation $z \in \mathbb{R}^m$ (usually $m < d$).
+  \item \textbf{Decoder:} Reconstruct $z$ into the output $\hat{x} \in \mathbb{R}^d$, with the goal that $\hat{x} \approx x$.
+\end{itemize}
 
 
 2. Mathematical Expression  
