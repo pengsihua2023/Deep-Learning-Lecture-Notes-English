@@ -55,7 +55,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
     { $\{W_e, b_e, W_d, b_d}$ } via gradient descent to minimize $\mathcal{L}$.
 
 4. Regularization Variants  
-<img width="1275" height="515" alt="image" src="https://github.com/user-attachments/assets/b84a7c3e-8710-49ed-a661-89dcc7b2622c" />
+<img width="1275" height="515" alt="image" src="https://github.com/user-attachments/assets/b84a7c3e-8710-49ed-a661-89dcc7b2622c" />  
   - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in z.  
 
   - Loss function:
