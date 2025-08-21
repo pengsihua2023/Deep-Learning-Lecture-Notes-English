@@ -75,7 +75,7 @@ Optimized via backpropagation:
 <img width="633" height="150" alt="image" src="https://github.com/user-attachments/assets/58822023-69b6-4c43-a835-dd494d2c7b23" />
   
 $$
-\theta^{*} = \arg \min_{\theta} \; \frac{1}{n} \sum_{i=1}^{n} \mathcal{L}\bigl(x_i, g(f(x_i))\bigr)
+\theta^{*} = \arg \min_{\theta} \frac{1}{n} \sum_{i=1}^{n} \mathcal{L}\bigl(x_i, g(f(x_i))\bigr)
 $$
 
 7. Applications  
