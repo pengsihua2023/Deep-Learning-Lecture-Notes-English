@@ -55,7 +55,7 @@ i_t = \sigma \big( W_i [h_{t-1}, x_t] + b_i \big)
 $$
 
 $$
-\tilde{c} = \tanh \big( W_c [h_{t-1}, x_t] + b_c \big)  
+\tilde{c}_t = \tanh \big( W_c [h_{t-1}, x_t] + b_c \big)  
 $$
 
   
