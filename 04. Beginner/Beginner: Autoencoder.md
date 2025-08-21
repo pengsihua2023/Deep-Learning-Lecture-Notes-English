@@ -42,9 +42,6 @@ $$
 where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th elements of the input and the reconstructed output, respectively.  
 
 3. Parameterization  
-<img width="1030" height="380" alt="image" src="https://github.com/user-attachments/assets/9a72c301-261b-4b41-92e6-93dc805d2661" />
-好的，这里是将图中中文翻译成英文后的版本，所有公式部分保持 LaTeX：
-
 ---
 
 * **Encoder**: $f(x) = \sigma(W_e x + b_e)$
