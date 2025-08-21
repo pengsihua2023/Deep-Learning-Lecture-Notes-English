@@ -83,7 +83,12 @@ $$
 6. Applications  
   
 <img width="693" height="234" alt="image" src="https://github.com/user-attachments/assets/d11696c3-35b2-4290-a5ff-784f808f67fe" />  
-  
+
+
+* **Dimensionality reduction**: $z$ is used for feature extraction or data compression.
+* **Denoising**: Recover $x$ from $\tilde{x}$.
+* **Anomaly detection**: Samples with large reconstruction error may be anomalies.
+
 
 ```
 import torch
