@@ -62,6 +62,10 @@ $$
 $$  
 
 $\tilde{c}_t = \tanh \left( W_c [h_{t-1}, x_t] + b_c \right)$  
+
+$$  
+E = mc^2
+  $$  
 *Determines what new information is stored in the cell state.*
 
 ### (3) Cell State Update
