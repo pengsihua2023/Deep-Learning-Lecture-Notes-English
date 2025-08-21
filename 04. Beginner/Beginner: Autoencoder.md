@@ -1,3 +1,15 @@
+The provided text is already in English, so no translation is needed. It describes an autoencoder, its importance, core concepts, applications, and includes a PyTorch code implementation for training an autoencoder on the MNIST dataset. It also presents results and visualizations, including loss curves and comparisons of input/output images. If you meant to translate specific parts or have another request, please clarify!
+
+
+
+
+
+
+
+
+
+
+
 ## Beginner: Autoencoder
 
 Autoencoder
