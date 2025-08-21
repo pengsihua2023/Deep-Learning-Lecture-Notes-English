@@ -1,38 +1,35 @@
-The provided text is already in English, so no translation is needed. It describes an autoencoder, its importance, core concepts, applications, and includes a PyTorch code implementation for training an autoencoder on the MNIST dataset. It also presents results and visualizations, including loss curves and comparisons of input/output images. If you meant to translate specific parts or have another request, please clarify!
-
-
-
-
-
-
-
-
-
-
-
-## Beginner: Autoencoder
-
 Autoencoder
-- Importance:
-An Autoencoder is an unsupervised learning model used for data compression, denoising, or feature learning.  
-It is a precursor to generative models (e.g., GANs) and is widely used in data preprocessing and anomaly detection.  
-- Core Concept:
-An Autoencoder consists of an encoder (compresses data) and a decoder (reconstructs data), with the goal of making the output as close as possible to the input.  
-Analogy: Like a "data compressor," it compresses a large file and then decompresses it, striving to preserve the original.  
-- Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).
-<img width="1400" height="797" alt="image" src="https://github.com/user-attachments/assets/28b89fa6-5c8b-460f-8385-4cd46c7c47cd" />  
+Autoencoder
 
-Figure 1 The first representation  
-<img width="700" height="220" alt="image" src="https://github.com/user-attachments/assets/f20e1904-4878-4950-a91f-cbe0d2336f50" />  
+Importance:An Autoencoder is an unsupervised learning model used for data compression, denoising, or feature learning.It is a precursor to generative models (e.g., GANs) and is widely used in data preprocessing and anomaly detection.
+Core Concept:An Autoencoder consists of an encoder (compresses data) and a decoder (reconstructs data), with the goal of making the output as close as possible to the input.Analogy: Like a "data compressor," it compresses a large file and then decompresses it, striving to preserve the original.
+Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).
 
-Figure 2 The second representation  
 
-<img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/dbd389b4-042e-44bf-a62f-ef736bbebd89" />  
+Figure 1: First Representation
 
-Figure 3 The third representation  
+Figure 2: Second Representation
 
-## Code （Pytorch）
-```
+Figure 3: Third Representation
+
+Mathematical Description of Autoencoder
+
+Basic StructureAn Autoencoder consists of an Encoder and a Decoder:
+
+
+2. Mathematical Expression
+
+3. Parameterization
+
+4. Regularization Variants
+
+5. Optimization
+Optimized via backpropagation:
+
+6. Applications
+
+
+Code (PyTorch)
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -97,7 +94,6 @@ transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize((0.5,), (0.5,))
 ])
-
 train_dataset = datasets.MNIST(root='./data', train=True, transform=transform, download=True)
 test_dataset = datasets.MNIST(root='./data', train=False, transform=transform, download=True)
 train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
@@ -175,29 +171,13 @@ if __name__ == "__main__":
         # Plot loss curve
         plt.figure(figsize=(10, 5))
         plt.plot(train_losses, label='Training Loss')
-        plt.plot(test_losses, label='Test Loss')
+        plt.plot(test_losses, --label='Test Loss')
         plt.title('Training and Test Loss')
         plt.xlabel('Epoch')
         plt.ylabel('Loss')
         plt.legend()
         plt.savefig(f'results/loss_curve_{epoch}.png')
         plt.close()
-```
-## Results
-====> Epoch: 9 Average training loss: 69.1569  
-====> Test set loss: 69.0569 
-Train Epoch: 10 [0/60000 (0%)]  Loss: 71.628830  
-Train Epoch: 10 [12800/60000 (21%)]     Loss: 65.910645  
-Train Epoch: 10 [25600/60000 (43%)]     Loss: 68.564079  
-Train Epoch: 10 [38400/60000 (64%)]     Loss: 70.579895  
-Train Epoch: 10 [51200/60000 (85%)]     Loss: 69.532722  
-====> Epoch: 10 Average training loss: 68.6832  
-====> Test set loss: 68.4474  
 
-<img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/8d28cf45-b977-4de8-a857-d62f8893be0f" />    
-
-Figure 4 loss curve  
-<img width="274" height="108" alt="image" src="https://github.com/user-attachments/assets/d5769c88-f37c-4d0a-94b9-fb627129abfd" />  
-
-
-Figure 5 Comparison of input and output images  
+Results
+====> Epoch: 9 Average training loss: 69.1569====> Test set loss: 69.0569Train Epoch: 10 [0/60000 (0%)] Loss: 71.628830Train Epoch: 10 [12800/60000 (21%)] Loss: 65.910645Train Epoch: 10 [25600/60000 (43%)] Loss: 68.564079Train Epoch: 10 [38400/60000 (64%)] Loss: 70.579895Train Epoch: 10 [51200/60000 (85%)] Loss: 69.532722====> Epoch: 10 Average training loss: 68.6832====> Test set loss: 68.4474<img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/8d28cf45-b977-4de8-a857-d62f8893be0
