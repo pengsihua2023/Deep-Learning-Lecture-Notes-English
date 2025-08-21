@@ -42,7 +42,6 @@ $$
 where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th elements of the input and the reconstructed output, respectively.  
 
 3. Parameterization  
----
 
 * **Encoder**: $f(x) = \sigma(W_e x + b_e)$
 
