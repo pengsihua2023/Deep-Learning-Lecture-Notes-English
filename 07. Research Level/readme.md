@@ -2,9 +2,8 @@
 
   * [Neural Architecture Search (NAS)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Research%20level%3A%20Neural%20Architecture%20Search%20(NAS).md)
   * [AI4Science: AI for Science: Artificial Intelligence Applied to Science](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Research%20level%3A%20AI4science%3A%20AI%20for%20Scienc.md)
-  * [AI Agent](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Research%20level%3A%20AI%20agent.md)
-  * [An example of n8n workflow support for AI Agenet]()
-  * [An Example of n8n Workflow Support for AI Agents]()
+  * [AI Agent](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Research%20level%3A%20AI%20agent.md) 
+  * [An Example of n8n Workflow Support for AI Agents](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/An%20example%20of%20n8n%20workflow%20support%20for%20AI%20Agenet.md)
   * [World Model](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Research%20level%3A%20World%20Model.md)
   * [Collection of Important Python Libraries for Deep Learning in Scientific Research]()
 
