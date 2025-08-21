@@ -49,7 +49,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 
 * **Decoder**: $g(z) = \sigma'(W_d z + b_d)$
 
-  * $W_d \in \mathbb{R}^{d \times m},\; b_d \in \mathbb{R}^d$, $\sigma'$ is an activation function.
+  * $W_d \in \mathbb{R}^{d \times m}, b_d \in \mathbb{R}^d$, $\sigma'$ is an activation function.
 
 * **Optimization**: Adjust parameters $\theta = $
     { $\{W_e, b_e, W_d, b_d}$ } via gradient descent to minimize $\mathcal{L}$.
