@@ -61,6 +61,10 @@ $W(P, Q) = \inf_{\gamma \in \Pi(P,Q)} \mathbb{E}_{(x,y) \sim \gamma} \big[ \lVer
 * **$\|x-y\|$**: The "distance" from point $x$ to point $y$ (usually Euclidean distance).  
 * **Explanation**: The Wasserstein distance measures the minimal cost required to "transport" one distribution into another.  
 
+## Summary
+* **KL divergence**: An asymmetric measure of distributional difference, widely used in information theory and probabilistic modeling.  
+* **JS divergence**: A symmetrized variant of KL divergence, commonly employed to quantify similarity between two distributions.  
+* **Wasserstein distance**: A distributional metric based on optimal transport cost, frequently applied in Generative Adversarial Networks (WGANs).  
 
 ---
 
