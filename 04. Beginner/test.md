@@ -35,7 +35,7 @@ $$
 The log-likelihood has the variational lower bound:
 
 $$
-\log p_\theta(x) \;\geq\;
+log \p_\theta(x) \;\geq\;
 \mathbb{E}_{q_\phi(z \mid x)} \big[ \log p_\theta(x \mid z) \big]
 - D_{\mathrm{KL}}\!\left( q_\phi(z \mid x) \;\|\; p(z) \right)
 $$
@@ -70,7 +70,7 @@ $$
 
 ---
 
-Would you like me to also prepare a **full GitHub-ready `README.md` template** (with MathJax script included), so that the formulas render properly on GitHub Pages as well?
+
 
 
 
