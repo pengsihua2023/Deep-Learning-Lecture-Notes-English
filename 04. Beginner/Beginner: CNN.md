@@ -13,7 +13,7 @@
 
 <img width="708" height="353" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />  
 
-## mathematical description of a Convolutional Neural Network (CNN)
+## Mathematical description of a Convolutional Neural Network (CNN)
 
 
 ### 1. Convolution Layer
