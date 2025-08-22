@@ -31,7 +31,7 @@ Continuous case:
 
 $D_{\mathrm{KL}}(P \parallel Q) = \int P(x) \log \frac{P(x)}{Q(x)} \, dx$
 
----
+
 
 ### (2) Jensen–Shannon Divergence (JS Divergence)
 
@@ -39,7 +39,7 @@ $D_{\mathrm{JS}}(P \Vert Q) = \tfrac{1}{2} D_{\mathrm{KL}}(P \Vert M) + \tfrac{1
 
 **Properties:** symmetric, bounded.
 
----
+
 
 ### (3) Wasserstein Distance (Earth Mover’s Distance)
 
@@ -57,7 +57,7 @@ Cross-entropy loss:
 
 $H(P,Q) = H(P) + D_{\mathrm{KL}}(P \parallel Q)$
 
----
+
 
 ### (2) Generative Models
 
@@ -70,7 +70,7 @@ $\mathcal{L}_{VAE} = \mathbb{E}_{q_\phi(z \mid x)} \left[ \log p_\theta(x \mid z
 * Original GAN: minimizes JS divergence
 * WGAN: minimizes Wasserstein distance
 
----
+
 
 ### (3) Distribution Matching
 
@@ -80,7 +80,7 @@ $\min_\theta D_{\mathrm{KL}}(P \parallel Q)$
 
 where \$P\$ is the teacher distribution and \$Q\$ is the student distribution.
 
----
+
 
 ### (4) Reinforcement Learning
 
@@ -88,5 +88,5 @@ In policy optimization methods (e.g., TRPO, PPO), KL divergence is often used to
 
 $D_{\mathrm{KL}}(\pi_{\text{old}} \parallel \pi_{\text{new}}) \leq \delta$
 
----
+
 
