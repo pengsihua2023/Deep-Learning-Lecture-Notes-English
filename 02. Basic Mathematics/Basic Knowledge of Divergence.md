@@ -70,8 +70,6 @@ $$\mathcal{L_VAE} \= \mathcal{E_{q_\phi(z \mid x)}} \left[ \log p_\theta(x \mid 
 * Original GAN: minimizes JS divergence
 * WGAN: minimizes Wasserstein distance
 
-$$\mathcal{L_VAE} \= \mathcal{E_{q_\phi(z \mid x)}} \left[ \log p_\theta(x \mid z) \right] - D_{\mathrm{KL}}\left( q_\phi(z \mid x) \Vert p(z) \right) $$
-
 
 ### (3) Distribution Matching
 
