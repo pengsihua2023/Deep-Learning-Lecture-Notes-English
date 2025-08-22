@@ -89,4 +89,17 @@ In policy optimization methods (e.g., TRPO, PPO), KL divergence is often used to
 $D_{\mathrm{KL}}(\pi_{\text{old}} \parallel \pi_{\text{new}}) \leq \delta$
 
 
+---
+
+## 3. Comparison of Divergences
+
+| Divergence                | Formula                                                                                                                                            | Properties                                                   | Advantages                                          | Limitations                                                | Applications                                                     |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Kullback–Leibler (KL)** | $D_{\mathrm{KL}}(P \,\Vert\, Q) = \sum_x P(x)\log\frac{P(x)}{Q(x)}$                                                                                | Non-negative, asymmetric; =0 iff $P=Q$                       | Intuitive, easy to compute; linked to cross-entropy | Infinite if $Q(x)=0$ while $P(x)>0$; not symmetric         | Classification (cross-entropy loss), VAE, knowledge distillation |
+| **Jensen–Shannon (JS)**   | $D_{\mathrm{JS}}(P \,\Vert\, Q) = \tfrac{1}{2}D_{\mathrm{KL}}(P \,\Vert\, M) + \tfrac{1}{2}D_{\mathrm{KL}}(Q \,\Vert\, M), \; M=\tfrac{1}{2}(P+Q)$ | Symmetric, bounded (between 0 and $\log 2$)                  | Symmetry, stability                                 | Gradient vanishing when distributions have no overlap      | Original GAN                                                     |
+| **Wasserstein Distance**  | $W(P,Q)=\inf_{\gamma \in \Pi(P,Q)} \mathbb{E}_{(x,y)\sim\gamma}\left[\lVert x-y\rVert\right]$                                                      | Metric; captures geometric differences between distributions | Smooth gradients even with disjoint distributions   | Computationally more expensive (optimal transport problem) | WGAN, distribution alignment                                     |
+
+---
+
+
 
