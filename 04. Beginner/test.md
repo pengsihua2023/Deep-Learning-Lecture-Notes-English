@@ -1,50 +1,62 @@
-# Mathematical Description
+好的 ✅ 我把刚才的全连接网络（FCN）数学描述翻译成中文版，并保持你给的公式展示风格（`$$ ... $$`），方便在 GitHub Pages 或 MathJax 插件环境下渲染。
 
-A **fully connected network** (dense network) consists of multiple layers of neurons.  
-Each neuron in one layer is connected to **all** neurons in the next layer.
+---
 
+```markdown
+# 全连接神经网络（数学描述）
 
+**全连接网络**（也称为 **全连接层 / Dense 网络**）由多层神经元组成。  
+在这种结构中，一层的每个神经元都与下一层的所有神经元相连接。
 
-### (1) Input
+---
+
+### (1) 输入层
 
 $$
 \mathbf{x} \in \mathbb{R}^{d}
 $$
 
-*The input vector with dimension $d$.*
+*输入向量，维度为 $d$。*
 
+---
 
-
-### (2) Linear Transformation
+### (2) 线性变换
 
 $$
 \mathbf{z}^{(l)} = W^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}, 
 \quad \mathbf{a}^{(0)} = \mathbf{x}
 $$
 
-*Computes the pre-activation for layer $l$.*
+*计算第 $l$ 层的线性组合（预激活值）。*
 
+---
 
-
-### (3) Activation
+### (3) 激活函数
 
 $$
 \mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
 $$
 
-*Applies the activation function elementwise.*
+*对线性结果逐元素施加激活函数。*
 
+---
 
-
-### (4) Output
+### (4) 输出层
 
 $$
 \mathbf{y} = \mathbf{a}^{(L)}
 $$
 
-*Final output of the network.*  
+*网络的最终输出。*  
 
-- For **regression**: $\sigma$ may be the identity function.  
-- For **binary classification**: $\sigma$ is often sigmoid.  
-- For **multi-class classification**: $\sigma$ is typically softmax.  
+- 在 **回归任务** 中，最后一层常用恒等函数作为激活；  
+- 在 **二分类任务** 中，最后一层通常使用 sigmoid 激活；  
+- 在 **多分类任务** 中，最后一层一般使用 softmax 激活。  
+```
+
+---
+
+👉 这样你就有了一个 **中文+公式版** 的最小 `README.md` 示例。
+
+要不要我帮你整理一个 **双语对照版（中英对照 README）**，方便在 GitHub 上同时展示两种语言？
 
