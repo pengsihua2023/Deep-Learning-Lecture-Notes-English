@@ -188,5 +188,10 @@ $$
 
 ---
 
+✅ You can copy this block directly into a **GitHub README.md** and the math will render properly if GitHub’s math rendering is enabled (via KaTeX/MathJax).
+
+Would you like me to also provide a **full end-to-end CNN pipeline equation** (input → conv → activation → pooling → fully connected → softmax) in a single compact formula, or keep it modular like above?
+
+
 
 
