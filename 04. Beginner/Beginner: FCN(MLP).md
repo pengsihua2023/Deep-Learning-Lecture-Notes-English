@@ -1,7 +1,8 @@
 ## Beginner: FCN(MLP)
-### **Fully Connected Neural Network (MLP)**
+### **Fully Connected Neural Network (MLP)**  
 
-### **Importance**: This is a foundational model in deep learning, and understanding it helps grasp core neural network concepts (e.g., neurons, weights, activation functions, gradient descent).  
+### **Importance**: 
+This is a foundational model in deep learning, and understanding it helps grasp core neural network concepts (e.g., neurons, weights, activation functions, gradient descent).  
 
 ### **Core Concepts**:  
 - A neural network consists of an input layer, hidden layers, and an output layer, functioning like neurons in the brain.  
