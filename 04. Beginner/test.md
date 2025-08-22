@@ -186,6 +186,10 @@ $$
 \hat{y}_j 
 = \frac{\exp(f_j)}{\sum_{k=1}^{M} \exp(f_k)}
 $$
+$$
+\hat{y}_j = \frac{\exp(f_j)}{\sum_{k=1}^{M} \exp(f_k)}
+$$
+
 
 ---
 
