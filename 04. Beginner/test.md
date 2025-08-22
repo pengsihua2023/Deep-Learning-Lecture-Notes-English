@@ -1,42 +1,45 @@
-下面给出全连接神经网络（Fully Connected Neural Network，简称 FCNN 或 MLP）的数学描述：
+好的 ✅，我已经把内容中的中文部分翻译成了英文，并且保留了 LaTeX 公式不变：
+
+```markdown
+Here is the mathematical description of a Fully Connected Neural Network (FCNN or MLP):
 
 ---
 
-## 1. 网络结构
+## 1. Network Structure
 
-一个典型的全连接神经网络由若干 **层 (layers)** 构成：
+A typical fully connected neural network consists of several **layers**:
 
-* 输入层（input layer）
-* 一个或多个隐藏层（hidden layers）
-* 输出层（output layer）
+* Input layer
+* One or more hidden layers
+* Output layer
 
-在全连接结构中，**每一层的每个神经元都与上一层的所有神经元相连**。
+In a fully connected structure, **each neuron in one layer is connected to all neurons in the previous layer**.
 
 ---
 
-## 2. 数学符号
+## 2. Mathematical Notation
 
-设：
+Let:
 
-* 输入向量为
+* Input vector:
 
 $$
 \mathbf{x} \in \mathbb{R}^{d}
 $$
 
-* 第 $l$ 层有 $n_l$ 个神经元，输出记为
+* The $l$-th layer has $n_l$ neurons, with output:
 
 $$
 \mathbf{h}^{(l)} \in \mathbb{R}^{n_l}
 $$
 
-* 权重矩阵与偏置为
+* Weight matrix and bias:
 
 $$
 \mathbf{W}^{(l)} \in \mathbb{R}^{n_l \times n_{l-1}}, \quad \mathbf{b}^{(l)} \in \mathbb{R}^{n_l}
 $$
 
-* 激活函数为
+* Activation function:
 
 $$
 \sigma(\cdot)
@@ -44,29 +47,29 @@ $$
 
 ---
 
-## 3. 前向传播 (Forward Propagation)
+## 3. Forward Propagation
 
-输入层记为
+The input layer is denoted as:
 
 $$
 \mathbf{h}^{(0)} = \mathbf{x}
 $$
 
-对于第 $l$ 层 ($l=1,2,\dots,L$)，有：
+For the $l$-th layer ($l=1,2,\dots,L$):
 
-1. **线性变换：**
+1. **Linear transformation:**
 
 $$
 \mathbf{z}^{(l)} = \mathbf{W}^{(l)} \mathbf{h}^{(l-1)} + \mathbf{b}^{(l)}
 $$
 
-2. **非线性激活：**
+2. **Non-linear activation:**
 
 $$
 \mathbf{h}^{(l)} = \sigma\left(\mathbf{z}^{(l)}\right)
 $$
 
-最终，输出层结果为：
+Finally, the output layer result is:
 
 $$
 \hat{\mathbf{y}} = \mathbf{h}^{(L)}
@@ -74,17 +77,17 @@ $$
 
 ---
 
-## 4. 损失函数 (Loss Function)
+## 4. Loss Function
 
-训练时，给定目标输出 $\mathbf{y}$，常用损失函数包括：
+During training, given the target output $\mathbf{y}$, common loss functions include:
 
-* **回归问题：** 均方误差（MSE）
+* **Regression problem:** Mean Squared Error (MSE)
 
 $$
 \mathcal{L}(\hat{\mathbf{y}}, \mathbf{y}) = \frac{1}{N}\sum_{i=1}^N \|\hat{\mathbf{y}}^{(i)} - \mathbf{y}^{(i)}\|^2
 $$
 
-* **分类问题：** 交叉熵损失（Cross-Entropy）
+* **Classification problem:** Cross-Entropy Loss
 
 $$
 \mathcal{L}(\hat{\mathbf{y}}, \mathbf{y}) = - \sum_{k=1}^K y_k \log \hat{y}_k
@@ -92,15 +95,15 @@ $$
 
 ---
 
-## 5. 参数更新 (Backpropagation + Gradient Descent)
+## 5. Parameter Update (Backpropagation + Gradient Descent)
 
-通过反向传播 (Backpropagation) 计算损失函数对参数的梯度：
+Using backpropagation to compute gradients of the loss function with respect to parameters:
 
 $$
 \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{(l)}}, \quad \frac{\partial \mathcal{L}}{\partial \mathbf{b}^{(l)}}
 $$
 
-再用梯度下降或其变种（如 Adam, SGD, RMSProp）更新：
+Then update parameters using gradient descent or its variants (such as Adam, SGD, RMSProp):
 
 $$
 \mathbf{W}^{(l)} \leftarrow \mathbf{W}^{(l)} - \eta \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{(l)}}
@@ -110,19 +113,23 @@ $$
 \mathbf{b}^{(l)} \leftarrow \mathbf{b}^{(l)} - \eta \frac{\partial \mathcal{L}}{\partial \mathbf{b}^{(l)}}
 $$
 
-其中 $\eta$ 为学习率。
+where $\eta$ is the learning rate.
 
 ---
 
-✅ 总结来说，全连接神经网络可以抽象为：
+✅ In summary, a fully connected neural network can be abstracted as:
 
 $$
 \hat{\mathbf{y}} = f(\mathbf{x}; \Theta) = \sigma^{(L)}\Big(\mathbf{W}^{(L)} \sigma^{(L-1)}(\cdots \sigma^{(1)}(\mathbf{W}^{(1)} \mathbf{x} + \mathbf{b}^{(1)}) \cdots ) + \mathbf{b}^{(L)}\Big)
 $$
 
-其中 $\Theta = \{\mathbf{W}^{(l)}, \mathbf{b}^{(l)} \mid l=1,\dots,L\}$ 为模型参数。
+where $\Theta = \{\mathbf{W}^{(l)}, \mathbf{b}^{(l)} \mid l=1,\dots,L\}$ are the model parameters.
 
 ---
 
-要不要我再帮你画一个**MLP的结构示意图**（包含输入层、隐藏层、输出层和连接关系）？
+Would you like me to also create a **diagram of the MLP structure** (including input layer, hidden layers, output layer, and connections) in Markdown/TikZ style?
+```
+
+要不要我直接帮你改成 **GitHub README 友好格式（带公式转图片保证显示）**？
+
 
