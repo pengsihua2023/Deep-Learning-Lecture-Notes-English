@@ -9,7 +9,7 @@
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/f6e08480-a20a-488d-af52-be84c7c6a392" />  
 
 $$
-\text{Figure 1: Autoencoder architecture diagram}
+\text{Figure 1 Autoencoder architecture diagram}
 $$
 
 ### 1. Mathematical Description of Autoencoder
