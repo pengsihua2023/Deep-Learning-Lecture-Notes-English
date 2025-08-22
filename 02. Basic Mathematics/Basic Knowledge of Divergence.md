@@ -40,6 +40,11 @@ $D_{\mathrm{KL}}(P \parallel Q) = \int P(x) \log \frac{P(x)}{Q(x)} \, dx$
 
 $D_{\mathrm{JS}}(P \Vert Q) = \tfrac{1}{2} D_{\mathrm{KL}}(P \Vert M) + \tfrac{1}{2} D_{\mathrm{KL}}(Q \Vert M), \quad M = \tfrac{1}{2}(P+Q)$
 
+* **$P, Q$**: Two probability distributions.  
+* **$M = \frac{1}{2}(P+Q)$**: Mixture distribution, i.e., the average of the two distributions.  
+* **Explanation**: The JS divergence is a symmetrized version based on KL divergence, ensuring **symmetry** (i.e., $D_{JS}(P\|Q) = D_{JS}(Q\|P)$) and **boundedness** (values lie within \[0, 1] when using log base 2).  
+
+
 **Properties:** symmetric, bounded.
 
 
