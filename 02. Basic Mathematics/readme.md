@@ -14,3 +14,4 @@
   * [Basic Knowledge of Matrices](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/02.%20Basic%20Mathematics/Basic%20Knowledge%20of%20Matrices.md)
 
   * [Conversion Between Matrices and Tensors](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/02.%20Basic%20Mathematics/Conversion%20Between%20Matrices%20and%20Tensors.md)
+  * [Basic Knowledge of Divergence]()
