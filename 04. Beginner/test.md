@@ -1,6 +1,4 @@
-Got it ✅ — I’ll give you a clean **mathematical description of Variational Autoencoders (VAE)** and all the formulas in **LaTeX**, ready to paste into a GitHub README.
 
-Since GitHub’s README files don’t natively render math everywhere, I’ll format them in **`$$ ... $$`** blocks so they render properly in Discussions/Issues/PRs (or with MathJax/KaTeX if you enable them in your repo/Pages).
 
 ---
 
