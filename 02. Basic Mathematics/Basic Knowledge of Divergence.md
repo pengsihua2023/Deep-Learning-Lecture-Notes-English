@@ -63,7 +63,6 @@ $H(P,Q) = H(P) + D_{\mathrm{KL}}(P \parallel Q)$
 
 **Variational Autoencoder (VAE):**
 
-
 $$\mathcal{L_VAE} \= \mathcal{E_{q_\phi(z \mid x)}} \left[ \log p_\theta(x \mid z) \right] - D_{\mathrm{KL}}\left( q_\phi(z \mid x) \Vert p(z) \right) $$
 
 **Generative Adversarial Networks (GAN):**
