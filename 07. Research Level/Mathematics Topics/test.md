@@ -29,7 +29,7 @@ $$
 s_i(t) = H\big(u_i(t) - \theta_i(t)\big)
 $$
 
-其中 $H(\cdot)$ 为 Heaviside 阶跃函数，$ \{theta_i} (t)$ 是动态阈值。
+其中 $H(\cdot)$ 为 Heaviside 阶跃函数，$ \{{theta}_i} (t)$ 是动态阈值。
 
 ---
 
