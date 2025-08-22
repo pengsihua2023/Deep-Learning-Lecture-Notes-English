@@ -1,6 +1,3 @@
-太好了 ✅ 我已经把你之前的内容翻译成英文，并整理成一个 **完整的 GitHub README 风格文档**（带目录、分节、LaTeX 公式全兼容）。你可以直接复制到 `README.md` 使用。
-
----
 
 # Divergence and Its Applications in Deep Learning
 
@@ -93,8 +90,3 @@ $D_{\mathrm{KL}}(\pi_{\text{old}} \parallel \pi_{\text{new}}) \leq \delta$
 
 ---
 
-✨ 完成！
-
-这样你就有了一个完整的 **英文版 GitHub README 教程**，排版、目录和公式都已经整理好了。
-
-要不要我再帮你加一张 **三种散度对比表格 (KL / JS / Wasserstein)** 放到 README 里，方便快速总结？
