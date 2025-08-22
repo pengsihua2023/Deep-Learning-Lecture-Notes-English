@@ -12,7 +12,56 @@
 **Why Teach**: MLP is the foundation of all deep learning models, helping students understand the core mechanisms of neural networks.  
 
 <img width="850" height="253" alt="image" src="https://github.com/user-attachments/assets/4f07aa2a-dd72-4e95-8543-7f71810d8023" />  
+## ttt
+# Mathematical Description
 
+A **fully connected network** (dense network) consists of multiple layers of neurons.  
+Each neuron in one layer is connected to **all** neurons in the next layer.
+
+
+
+### (1) Input
+
+$$
+\mathbf{x} \in \mathbb{R}^{d}
+$$
+
+*The input vector with dimension $d$.*
+
+
+
+### (2) Linear Transformation
+
+$$
+\mathbf{z}^{(l)} = W^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}, 
+\quad \mathbf{a}^{(0)} = \mathbf{x}
+$$
+
+*Computes the pre-activation for layer $l$.*
+
+
+
+### (3) Activation
+
+$$
+\mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
+$$
+
+*Applies the activation function elementwise.*
+
+
+
+### (4) Output
+
+$$
+\mathbf{y} = \mathbf{a}^{(L)}
+$$
+
+*Final output of the network.*  
+
+- For **regression**: $\sigma$ may be the identity function.  
+- For **binary classification**: $\sigma$ is often sigmoid.  
+- For **multi-class classification**: $\sigma$ is typically softmax.  
 
 ## code（pytorch）
 ```
