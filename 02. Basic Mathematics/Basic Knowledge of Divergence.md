@@ -55,6 +55,13 @@ Described as “the minimum cost of transporting one distribution to another.”
 
 $W(P, Q) = \inf_{\gamma \in \Pi(P,Q)} \mathbb{E}_{(x,y) \sim \gamma} \big[ \lVert x - y \rVert \big]$
 
+* **$P, Q$**: Two probability distributions.  
+* **$\Pi(P, Q)$**: All possible joint distributions (couplings), with marginals $P$ and $Q$.  
+* **$E(x,y) \sim \gamma$**: Expectation under the joint distribution $\gamma$.  
+* **$\|x-y\|$**: The "distance" from point $x$ to point $y$ (usually Euclidean distance).  
+* **Explanation**: The Wasserstein distance measures the minimal cost required to "transport" one distribution into another.  
+
+
 ---
 
 ## 2. Applications in Deep Learning
