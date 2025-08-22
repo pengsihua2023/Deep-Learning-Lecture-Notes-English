@@ -249,3 +249,7 @@ Train Epoch: 10 [51200/60000 (85%)]     Loss: 69.532722
 $$
 Figure \hspace{0.1cm}  2 \hspace{0.1cm} Loss \hspace{0.1cm} curve  
 $$ 
+
+$$
+\{Figure 2 Loss curve}  
+$$ 
