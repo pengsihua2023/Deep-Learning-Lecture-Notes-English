@@ -251,5 +251,5 @@ Figure \hspace{0.1cm}  2 \hspace{0.1cm} Loss \hspace{0.1cm} curve
 $$ 
 
 $$
-\{Figure 2 Loss curve}  
+\text{Figure 2 Loss curve}  
 $$ 
