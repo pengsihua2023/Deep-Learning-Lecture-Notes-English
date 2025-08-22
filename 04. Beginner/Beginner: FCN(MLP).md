@@ -12,55 +12,130 @@ This is a foundational model in deep learning, and understanding it helps grasp 
 
 <img width="850" height="253" alt="image" src="https://github.com/user-attachments/assets/4f07aa2a-dd72-4e95-8543-7f71810d8023" />  
   
-### Mathematical Description
+## Mathematical Description
 
-A **fully connected network** (dense network) consists of multiple layers of neurons.  
-Each neuron in one layer is connected to **all** neurons in the next layer.
+### 1. Network Structure
+
+A typical fully connected neural network consists of several **layers**:
+
+* Input layer  
+* One or more hidden layers  
+* Output layer  
+
+In a fully connected structure, **each neuron in a given layer is connected to all neurons in the previous layer**.
 
 
 
-### (1) Input
+### 2. Mathematical Notation
+
+Let:
+
+* Input vector:
 
 $$
 \mathbf{x} \in \mathbb{R}^{d}
 $$
 
-The input vector with dimension $d$.  
-
-
-
-### (2) Linear Transformation
+* The $l$-th layer has $n_l$ neurons, with output:
 
 $$
-\mathbf{z}^{(l)} = W^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}, 
-\quad \mathbf{a}^{(0)} = \mathbf{x}
+\mathbf{h}^{(l)} \in \mathbb{R}^{n_l}
 $$
 
-Computes the pre-activation for layer $l$.  
-
-
-
-### (3) Activation
+* Weight matrix and bias:
 
 $$
-\mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
+\mathbf{W}^{(l)} \in \mathbb{R}^{n_l \times n_{l-1}}, \quad \mathbf{b}^{(l)} \in \mathbb{R}^{n_l}
 $$
 
-*Applies the activation function elementwise.*
-
-
-
-### (4) Output
+* Activation function:
 
 $$
-\mathbf{y} = \mathbf{a}^{(L)}
+\sigma(\cdot)
 $$
 
-*Final output of the network.*  
 
-- For **regression**: $\sigma$ may be the identity function.  
-- For **binary classification**: $\sigma$ is often sigmoid.  
-- For **multi-class classification**: $\sigma$ is typically softmax.  
+
+### 3. Forward Propagation
+
+The input layer is defined as:
+
+$$
+\mathbf{h}^{(0)} = \mathbf{x}
+$$
+
+For the $l$-th layer ($l=1,2,\dots,L$):
+
+1. **Linear transformation:**
+
+$$
+\mathbf{z}^{(l)} = \mathbf{W}^{(l)} \mathbf{h}^{(l-1)} + \mathbf{b}^{(l)}
+$$
+
+2. **Nonlinear activation:**
+
+$$
+\mathbf{h}^{(l)} = \sigma\left(\mathbf{z}^{(l)}\right)
+$$
+
+Finally, the output layer result is:
+
+$$
+\hat{\mathbf{y}} = \mathbf{h}^{(L)}
+$$
+
+
+
+### 4. Loss Function
+
+During training, given target output $\mathbf{y}$, common loss functions include:
+
+* **Regression (MSE):**
+
+$$
+\mathcal{L}(\hat{\mathbf{y}}, \mathbf{y}) = \frac{1}{N}\sum_{i=1}^N \|\hat{\mathbf{y}}^{(i)} - \mathbf{y}^{(i)}\|^2
+$$
+
+* **Classification (Cross-Entropy):**
+
+$$
+\mathcal{L}(\hat{\mathbf{y}}, \mathbf{y}) = - \sum_{k=1}^K y_k \log \hat{y}_k
+$$
+
+
+
+### 5. Parameter Update (Backpropagation + Gradient Descent)
+
+By backpropagation, we compute the gradients of the loss function with respect to the parameters:
+
+$$
+\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{(l)}}, \quad \frac{\partial \mathcal{L}}{\partial \mathbf{b}^{(l)}}
+$$
+
+Then update them using gradient descent or its variants (e.g., Adam, SGD, RMSProp):
+
+$$
+\mathbf{W}^{(l)} \leftarrow \mathbf{W}^{(l)} - \eta \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{(l)}}
+$$
+
+$$
+\mathbf{b}^{(l)} \leftarrow \mathbf{b}^{(l)} - \eta \frac{\partial \mathcal{L}}{\partial \mathbf{b}^{(l)}}
+$$
+
+where $\eta$ is the learning rate.
+
+
+
+### Summary
+
+In summary, a fully connected neural network can be abstracted as:
+
+$$
+\hat{\mathbf{y}} = f(\mathbf{x}; \Theta) = \sigma^{(L)}\Big(\mathbf{W}^{(L)} \sigma^{(L-1)}(\cdots \sigma^{(1)}(\mathbf{W}^{(1)} \mathbf{x} + \mathbf{b}^{(1)}) \cdots ) + \mathbf{b}^{(L)}\Big)
+$$
+
+where $\Theta = \{\mathbf{W}^{(l)}, \mathbf{b}^{(l)} \mid l=1,\dots,L\}$ represents the set of model parameters.
+
 
 ## code（pytorch）
 ```
