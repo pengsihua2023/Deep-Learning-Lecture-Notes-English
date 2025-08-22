@@ -1,6 +1,5 @@
 
-# Divergence and Its Applications in Deep Learning
-
+# Basics of Divergence
 ## Table of Contents
 
 1. [What is Divergence?](#1-what-is-divergence)
