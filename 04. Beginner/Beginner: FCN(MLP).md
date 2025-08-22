@@ -25,7 +25,7 @@ $$
 \mathbf{x} \in \mathbb{R}^{d}
 $$
 
-*The input vector with dimension $d$.*
+The input vector with dimension $d$.  
 
 
 
