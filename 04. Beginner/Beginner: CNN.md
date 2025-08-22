@@ -12,6 +12,71 @@
 
 
 <img width="708" height="353" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />  
+**mathematical description of a Convolutional Neural Network (CNN)**
+
+
+## **Convolution Layer**
+
+Given an input tensor $X \in \mathbb{R}^{H \times W \times C_{in}}$ (height, width, input channels), a convolutional kernel
+$K \in \mathbb{R}^{k_h \times k_w \times C_{in} \times C_{out}}$, and bias $b \in \mathbb{R}^{C_{out}}$, the convolution operation is:
+
+$$
+Y_{i,j,c} = \sum_{m=0}^{k_h-1} \sum_{n=0}^{k_w-1} \sum_{d=0}^{C_{in}-1} 
+X_{i+m,\, j+n,\, d} \, K_{m,n,d,c} \; + \; b_c
+$$
+
+where
+
+* $(i,j)$ are spatial positions in the output,
+* $c$ is the output channel index,
+* $k_h, k_w$ are kernel height and width.
+
+
+
+## **Activation Function**
+
+After convolution, a nonlinear activation (e.g., ReLU) is applied:
+
+$$
+Z_{i,j,c} = \sigma \big( Y_{i,j,c} \big), \quad 
+\sigma(x) = \max(0, x)
+$$
+
+
+
+## **Pooling Layer**
+
+For max-pooling with window size $p \times p$:
+
+$$
+P_{i,j,c} = \max_{\substack{0 \leq m < p \\ 0 \leq n < p}}
+Z_{\,i \cdot p + m,\, j \cdot p + n,\, c}
+$$
+
+
+
+## **Fully Connected Layer**
+
+Flatten pooled features into a vector $\mathbf{p} \in \mathbb{R}^N$.
+With weight matrix $W \in \mathbb{R}^{M \times N}$ and bias $\mathbf{b} \in \mathbb{R}^M$:
+
+$$
+\mathbf{f} = W \mathbf{p} + \mathbf{b}
+$$
+
+
+
+## **Output (Softmax for Classification)**
+
+For $M$ classes, the probability of class $j$ is:
+
+ 
+  
+$$
+\hat{y_j} = \frac{\exp(f_j)}{\sum_{k=1}^{M} \exp(f_k)}
+$$
+
+
 
 ### Code
 ```
