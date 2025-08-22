@@ -62,11 +62,10 @@ $$
 The loss function (to minimize) is:
 
 $$
-\mathcal{L}(\theta, \phi; x) = 
+\mathcal{L}(\theta, \phi; x) =
 - \mathbb{E}_{q_\phi(z \mid x)} \big[ \log p_\theta(x \mid z) \big]
-+ D_{\mathrm{KL}}\!\left( q_\phi(z \mid x) \,\|\, p(z) \right).
++ D_{\mathrm{KL}}\!\left( q_\phi(z \mid x) \;\|\; p(z) \right)
 $$
-
 ---
 
 👉 With this, you have the **encoder** ($q_\phi(z \mid x)$), **decoder** ($p_\theta(x \mid z)$), and the **training loss** clearly described.
