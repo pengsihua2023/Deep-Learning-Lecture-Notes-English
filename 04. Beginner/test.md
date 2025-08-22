@@ -123,9 +123,10 @@ $$
 where $\Theta = \{\mathbf{W}^{(l)}, \mathbf{b}^{(l)} \mid l=1,\dots,L\}$ represents the set of model parameters.
 
 =========================
-Here’s a compact **mathematical description of a Convolutional Neural Network (CNN)**, with formulas expressed in **LaTeX** so you can paste them directly into a GitHub markdown file (enclosed in `$$ ... $$` for display math mode).
+Here’s a compact 
 
----
+**mathematical description of a Convolutional Neural Network (CNN)**
+
 
 ## **Convolution Layer**
 
@@ -143,7 +144,7 @@ where
 * $c$ is the output channel index,
 * $k_h, k_w$ are kernel height and width.
 
----
+
 
 ## **Activation Function**
 
@@ -154,7 +155,7 @@ Z_{i,j,c} = \sigma \big( Y_{i,j,c} \big), \quad
 \sigma(x) = \max(0, x)
 $$
 
----
+
 
 ## **Pooling Layer**
 
@@ -165,7 +166,7 @@ P_{i,j,c} = \max_{\substack{0 \leq m < p \\ 0 \leq n < p}}
 Z_{\,i \cdot p + m,\, j \cdot p + n,\, c}
 $$
 
----
+
 
 ## **Fully Connected Layer**
 
@@ -176,7 +177,7 @@ $$
 \mathbf{f} = W \mathbf{p} + \mathbf{b}
 $$
 
----
+
 
 ## **Output (Softmax for Classification)**
 
@@ -189,11 +190,7 @@ $$
 $$
 
 
----
 
-✅ You can copy this block directly into a **GitHub README.md** and the math will render properly if GitHub’s math rendering is enabled (via KaTeX/MathJax).
-
-Would you like me to also provide a **full end-to-end CNN pipeline equation** (input → conv → activation → pooling → fully connected → softmax) in a single compact formula, or keep it modular like above?
 
 
 
