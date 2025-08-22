@@ -36,7 +36,7 @@ $$
 \quad \mathbf{a}^{(0)} = \mathbf{x}
 $$
 
-*Computes the pre-activation for layer $l$.*
+Computes the pre-activation for layer $l$.  
 
 
 
