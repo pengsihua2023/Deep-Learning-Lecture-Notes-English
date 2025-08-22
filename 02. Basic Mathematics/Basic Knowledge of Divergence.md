@@ -1,0 +1,100 @@
+太好了 ✅ 我已经把你之前的内容翻译成英文，并整理成一个 **完整的 GitHub README 风格文档**（带目录、分节、LaTeX 公式全兼容）。你可以直接复制到 `README.md` 使用。
+
+---
+
+# Divergence and Its Applications in Deep Learning
+
+## Table of Contents
+
+1. [What is Divergence?](#1-what-is-divergence)
+
+   * (1) Kullback–Leibler Divergence
+   * (2) Jensen–Shannon Divergence
+   * (3) Wasserstein Distance
+2. [Applications in Deep Learning](#2-applications-in-deep-learning)
+
+   * (1) Loss Functions
+   * (2) Generative Models
+   * (3) Distribution Matching
+   * (4) Reinforcement Learning
+
+---
+
+## 1. What is Divergence?
+
+In mathematics and information theory, **divergence** usually refers to a measure of the difference between two probability distributions.
+
+### (1) Kullback–Leibler Divergence (KL Divergence)
+
+Discrete case:
+
+$D_{\mathrm{KL}}(P \parallel Q) = \sum_x P(x) \log \frac{P(x)}{Q(x)}$
+
+Continuous case:
+
+$D_{\mathrm{KL}}(P \parallel Q) = \int P(x) \log \frac{P(x)}{Q(x)} \, dx$
+
+---
+
+### (2) Jensen–Shannon Divergence (JS Divergence)
+
+$D_{\mathrm{JS}}(P \Vert Q) = \tfrac{1}{2} D_{\mathrm{KL}}(P \Vert M) + \tfrac{1}{2} D_{\mathrm{KL}}(Q \Vert M), \quad M = \tfrac{1}{2}(P+Q)$
+
+**Properties:** symmetric, bounded.
+
+---
+
+### (3) Wasserstein Distance (Earth Mover’s Distance)
+
+Described as “the minimum cost of transporting one distribution to another.” Commonly used in Generative Adversarial Networks (WGAN).
+
+$W(P, Q) = \inf_{\gamma \in \Pi(P,Q)} \mathbb{E}_{(x,y) \sim \gamma} \big[ \lVert x - y \rVert \big]$
+
+---
+
+## 2. Applications in Deep Learning
+
+### (1) Loss Functions
+
+Cross-entropy loss:
+
+$H(P,Q) = H(P) + D_{\mathrm{KL}}(P \parallel Q)$
+
+---
+
+### (2) Generative Models
+
+**Variational Autoencoder (VAE):**
+
+$\mathcal{L}_{VAE} = \mathbb{E}_{q_\phi(z \mid x)} \left[ \log p_\theta(x \mid z) \right] - D_{\mathrm{KL}}\!\left( q_\phi(z \mid x) \,\Vert\, p(z) \right)$
+
+**Generative Adversarial Networks (GAN):**
+
+* Original GAN: minimizes JS divergence
+* WGAN: minimizes Wasserstein distance
+
+---
+
+### (3) Distribution Matching
+
+Knowledge Distillation:
+
+$\min_\theta D_{\mathrm{KL}}(P \parallel Q)$
+
+where \$P\$ is the teacher distribution and \$Q\$ is the student distribution.
+
+---
+
+### (4) Reinforcement Learning
+
+In policy optimization methods (e.g., TRPO, PPO), KL divergence is often used to constrain the difference between the old and new policies:
+
+$D_{\mathrm{KL}}(\pi_{\text{old}} \parallel \pi_{\text{new}}) \leq \delta$
+
+---
+
+✨ 完成！
+
+这样你就有了一个完整的 **英文版 GitHub README 教程**，排版、目录和公式都已经整理好了。
+
+要不要我再帮你加一张 **三种散度对比表格 (KL / JS / Wasserstein)** 放到 README 里，方便快速总结？
