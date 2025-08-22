@@ -101,5 +101,25 @@ $$
 Then update them using gradient descent or its variants (e.g., Adam, SGD, RMSProp):
 
 $$
-\mathbf{W}^{(l)} \leftarrow \mathb
+\mathbf{W}^{(l)} \leftarrow \mathbf{W}^{(l)} - \eta \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{(l)}}
+$$
+
+$$
+\mathbf{b}^{(l)} \leftarrow \mathbf{b}^{(l)} - \eta \frac{\partial \mathcal{L}}{\partial \mathbf{b}^{(l)}}
+$$
+
+where $\eta$ is the learning rate.
+
+---
+
+## Summary
+
+In summary, a fully connected neural network can be abstracted as:
+
+$$
+\hat{\mathbf{y}} = f(\mathbf{x}; \Theta) = \sigma^{(L)}\Big(\mathbf{W}^{(L)} \sigma^{(L-1)}(\cdots \sigma^{(1)}(\mathbf{W}^{(1)} \mathbf{x} + \mathbf{b}^{(1)}) \cdots ) + \mathbf{b}^{(L)}\Big)
+$$
+
+where $\Theta = \{\mathbf{W}^{(l)}, \mathbf{b}^{(l)} \mid l=1,\dots,L\}$ represents the set of model parameters.
+
  
