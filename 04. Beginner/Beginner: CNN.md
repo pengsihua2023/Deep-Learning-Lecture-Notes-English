@@ -1,5 +1,4 @@
-## Beginner: CNN
-**Convolutional Neural Network (CNN)**
+## Convolutional Neural Network (CNN)**
 
 **Importance**: CNNs are the cornerstone of computer vision, widely used in image recognition, autonomous driving, and more, ideal for demonstrating the practical power of deep learning.
 
