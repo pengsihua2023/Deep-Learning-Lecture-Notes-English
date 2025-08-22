@@ -247,5 +247,5 @@ Train Epoch: 10 [51200/60000 (85%)]     Loss: 69.532722
 <img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/2eac166e-59fe-4528-bb38-4eb4c7cf8c87" />     
 
 $$
-Figure 2 Loss curve  
+Figure /  2/ Loss/ /curve  
 $$ 
