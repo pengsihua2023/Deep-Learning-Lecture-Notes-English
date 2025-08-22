@@ -16,7 +16,7 @@
 ## mathematical description of a Convolutional Neural Network (CNN)
 
 
-### **Convolution Layer**
+### 1. Convolution Layer
 
 Given an input tensor $X \in \mathbb{R}^{H \times W \times C_{in}}$ (height, width, input channels), a convolutional kernel
 $K \in \mathbb{R}^{k_h \times k_w \times C_{in} \times C_{out}}$, and bias $b \in \mathbb{R}^{C_{out}}$, the convolution operation is:
@@ -34,7 +34,7 @@ where
 
 
 
-### **Activation Function**
+### 2. Activation Function
 
 After convolution, a nonlinear activation (e.g., ReLU) is applied:
 
@@ -45,7 +45,7 @@ $$
 
 
 
-### **Pooling Layer**
+### 3. Pooling Layer
 
 For max-pooling with window size $p \times p$:
 
@@ -56,7 +56,7 @@ $$
 
 
 
-### **Fully Connected Layer**
+### 4. Fully Connected Layer
 
 Flatten pooled features into a vector $\mathbf{p} \in \mathbb{R}^N$.
 With weight matrix $W \in \mathbb{R}^{M \times N}$ and bias $\mathbf{b} \in \mathbb{R}^M$:
@@ -67,7 +67,7 @@ $$
 
 
 
-### **Output (Softmax for Classification)**
+### 5. Output (Softmax for Classification)
 
 For $M$ classes, the probability of class $j$ is:
 
