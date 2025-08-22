@@ -31,6 +31,9 @@ Continuous case:
 
 $D_{\mathrm{KL}}(P \parallel Q) = \int P(x) \log \frac{P(x)}{Q(x)} \, dx$
 
+* **$P(x)$**: True distribution (target / data distribution), representing the true probability of event $x$.
+* **$Q(x)$**: Approximate distribution or model distribution (approximation / model distribution), representing the model's estimated probability of event $x$.
+* **Explanation**: $D_{\mathrm{KL}}(P\|Q)$ measures the amount of information loss when using $Q$ to approximate $P$.
 
 
 ### (2) Jensen–Shannon Divergence (JS Divergence)
