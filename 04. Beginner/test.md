@@ -37,9 +37,9 @@ $$
 The log-likelihood has the variational lower bound:
 
 $$
-\log p_\theta(x) \;\geq\; 
+\log p_\theta(x) \;\geq\;
 \mathbb{E}_{q_\phi(z \mid x)} \big[ \log p_\theta(x \mid z) \big]
-- D_{\mathrm{KL}}\!\left( q_\phi(z \mid x) \,\|\, p(z) \right).
+- D_{\mathrm{KL}}\!\left( q_\phi(z \mid x) \;\|\; p(z) \right)
 $$
 
 This is the **VAE objective**.
