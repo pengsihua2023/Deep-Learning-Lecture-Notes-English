@@ -1,5 +1,5 @@
 
-# Basic Knowledge of of Probability Distribution
+# Basics of Probability Distribution
 
 ## 1. Mathematical Definition
 
