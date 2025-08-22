@@ -1,9 +1,9 @@
-# Fully Connected Neural Network (Mathematical Description)
+# Mathematical Description
 
 A **fully connected network** (dense network) consists of multiple layers of neurons.  
 Each neuron in one layer is connected to **all** neurons in the next layer.
 
----
+
 
 ### (1) Input
 
@@ -13,7 +13,7 @@ $$
 
 *The input vector with dimension $d$.*
 
----
+
 
 ### (2) Linear Transformation
 
@@ -24,7 +24,7 @@ $$
 
 *Computes the pre-activation for layer $l$.*
 
----
+
 
 ### (3) Activation
 
@@ -34,7 +34,7 @@ $$
 
 *Applies the activation function elementwise.*
 
----
+
 
 ### (4) Output
 
