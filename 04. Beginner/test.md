@@ -1,62 +1,50 @@
 # Fully Connected Neural Network (Mathematical Description)
 
-A **fully connected network** (also called a **dense network**) consists of multiple layers of neurons.  
+A **fully connected network** (dense network) consists of multiple layers of neurons.  
 Each neuron in one layer is connected to **all** neurons in the next layer.
 
 ---
 
-## Notation
+### (1) Input
 
-- **Input vector**  
-  $$
-  \mathbf{x} \in \mathbb{R}^{d}
-  $$
-  where $d$ is the input dimension.
+$$
+\mathbf{x} \in \mathbb{R}^{d}
+$$
 
-- **Layers**  
-  Suppose the network has $L$ layers (excluding the input).  
-  The $l$-th layer ($l = 1,2,\dots,L$) has $n_l$ neurons.
-
-- **Parameters**  
-  - Weight matrix for layer $l$:  
-    $$
-    W^{(l)} \in \mathbb{R}^{n_l \times n_{l-1}}
-    $$
-  - Bias vector for layer $l$:  
-    $$
-    \mathbf{b}^{(l)} \in \mathbb{R}^{n_l}
-    $$
-
-- **Activation function (elementwise)**  
-  $$
-  \sigma(\cdot)
-  $$
+*The input vector with dimension $d$.*
 
 ---
 
-## Forward Propagation
+### (2) Linear Transformation
 
-1. **Pre-activation (linear transformation):**
-   $$
-   \mathbf{z}^{(l)} = W^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}, 
-   \quad \mathbf{a}^{(0)} = \mathbf{x}
-   $$
+$$
+\mathbf{z}^{(l)} = W^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}, 
+\quad \mathbf{a}^{(0)} = \mathbf{x}
+$$
 
-2. **Activation:**
-   $$
-   \mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
-   $$
+*Computes the pre-activation for layer $l$.*
 
 ---
 
-## Output
+### (3) Activation
 
-For the last layer $L$, the network output is:
+$$
+\mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
+$$
+
+*Applies the activation function elementwise.*
+
+---
+
+### (4) Output
+
 $$
 \mathbf{y} = \mathbf{a}^{(L)}
 $$
 
-- For **regression**: the last activation may be the identity function.  
-- For **binary classification**: a sigmoid activation is often used.  
-- For **multi-class classification**: a softmax activation is typically applied.
+*Final output of the network.*  
+
+- For **regression**: $\sigma$ may be the identity function.  
+- For **binary classification**: $\sigma$ is often sigmoid.  
+- For **multi-class classification**: $\sigma$ is typically softmax.  
 
