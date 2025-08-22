@@ -10,7 +10,7 @@ A typical fully connected neural network consists of several **layers**:
 
 In a fully connected structure, **each neuron in a given layer is connected to all neurons in the previous layer**.
 
----
+
 
 ### 2. Mathematical Notation
 
@@ -40,7 +40,7 @@ $$
 \sigma(\cdot)
 $$
 
----
+
 
 ### 3. Forward Propagation
 
@@ -70,7 +70,7 @@ $$
 \hat{\mathbf{y}} = \mathbf{h}^{(L)}
 $$
 
----
+
 
 ### 4. Loss Function
 
@@ -88,7 +88,7 @@ $$
 \mathcal{L}(\hat{\mathbf{y}}, \mathbf{y}) = - \sum_{k=1}^K y_k \log \hat{y}_k
 $$
 
----
+
 
 ### 5. Parameter Update (Backpropagation + Gradient Descent)
 
@@ -110,7 +110,7 @@ $$
 
 where $\eta$ is the learning rate.
 
----
+
 
 ### Summary
 
