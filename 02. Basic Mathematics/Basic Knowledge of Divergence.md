@@ -76,7 +76,10 @@ Cross-entropy loss:
 
 $H(P,Q) = H(P) + D_{\mathrm{KL}}(P \parallel Q)$
 
-
+where  
+- $H(P, Q)$ denotes the cross-entropy between distributions $P$ and $Q$;  
+- $H(P)$ is the entropy of $P$;  
+- $D_{\mathrm{KL}}(P \,\|\, Q)$ is the Kullback–Leibler divergence between $P$ and $Q$.
 
 ### (2) Generative Models
 
