@@ -1,135 +1,88 @@
-好的 ✅，我已经把内容中的中文部分翻译成了英文，并且保留了 LaTeX 公式不变：
-
-```markdown
-Here is the mathematical description of a Fully Connected Neural Network (FCNN or MLP):
+Here’s a standard **mathematical description of a fully connected neural network (FCN)** in English:
 
 ---
 
-## 1. Network Structure
+### Structure
 
-A typical fully connected neural network consists of several **layers**:
-
-* Input layer
-* One or more hidden layers
-* Output layer
-
-In a fully connected structure, **each neuron in one layer is connected to all neurons in the previous layer**.
+A fully connected network (also called a **dense network**) consists of multiple layers of neurons. Each neuron in one layer is connected to **all** neurons in the next layer.
 
 ---
 
-## 2. Mathematical Notation
-
-Let:
+### Notation
 
 * Input vector:
 
-$$
-\mathbf{x} \in \mathbb{R}^{d}
-$$
+  $$
+  \mathbf{x} \in \mathbb{R}^{d}
+  $$
 
-* The $l$-th layer has $n_l$ neurons, with output:
+  where $d$ is the input dimension.
 
-$$
-\mathbf{h}^{(l)} \in \mathbb{R}^{n_l}
-$$
+* Layers:
+  Suppose the network has $L$ layers (excluding the input).
+  The $l$-th layer ($l = 1,2,\dots,L$) has $n_l$ neurons.
 
-* Weight matrix and bias:
+* Weights and biases:
 
-$$
-\mathbf{W}^{(l)} \in \mathbb{R}^{n_l \times n_{l-1}}, \quad \mathbf{b}^{(l)} \in \mathbb{R}^{n_l}
-$$
+  * Weight matrix for layer $l$:
 
-* Activation function:
+    $$
+    W^{(l)} \in \mathbb{R}^{n_l \times n_{l-1}}
+    $$
+  * Bias vector for layer $l$:
 
-$$
-\sigma(\cdot)
-$$
+    $$
+    \mathbf{b}^{(l)} \in \mathbb{R}^{n_l}
+    $$
 
----
+* Activation function (elementwise):
 
-## 3. Forward Propagation
-
-The input layer is denoted as:
-
-$$
-\mathbf{h}^{(0)} = \mathbf{x}
-$$
-
-For the $l$-th layer ($l=1,2,\dots,L$):
-
-1. **Linear transformation:**
-
-$$
-\mathbf{z}^{(l)} = \mathbf{W}^{(l)} \mathbf{h}^{(l-1)} + \mathbf{b}^{(l)}
-$$
-
-2. **Non-linear activation:**
-
-$$
-\mathbf{h}^{(l)} = \sigma\left(\mathbf{z}^{(l)}\right)
-$$
-
-Finally, the output layer result is:
-
-$$
-\hat{\mathbf{y}} = \mathbf{h}^{(L)}
-$$
+  $$
+  \sigma(\cdot)
+  $$
 
 ---
 
-## 4. Loss Function
+### Forward Propagation
 
-During training, given the target output $\mathbf{y}$, common loss functions include:
+The output of each layer is computed as follows:
 
-* **Regression problem:** Mean Squared Error (MSE)
+1. **Pre-activation (linear transformation):**
 
-$$
-\mathcal{L}(\hat{\mathbf{y}}, \mathbf{y}) = \frac{1}{N}\sum_{i=1}^N \|\hat{\mathbf{y}}^{(i)} - \mathbf{y}^{(i)}\|^2
-$$
+   $$
+   \mathbf{z}^{(l)} = W^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}
+   $$
 
-* **Classification problem:** Cross-Entropy Loss
+   where $\mathbf{a}^{(0)} = \mathbf{x}$ is the input.
 
-$$
-\mathcal{L}(\hat{\mathbf{y}}, \mathbf{y}) = - \sum_{k=1}^K y_k \log \hat{y}_k
-$$
+2. **Activation:**
 
----
-
-## 5. Parameter Update (Backpropagation + Gradient Descent)
-
-Using backpropagation to compute gradients of the loss function with respect to parameters:
-
-$$
-\frac{\partial \mathcal{L}}{\partial \mathbf{W}^{(l)}}, \quad \frac{\partial \mathcal{L}}{\partial \mathbf{b}^{(l)}}
-$$
-
-Then update parameters using gradient descent or its variants (such as Adam, SGD, RMSProp):
-
-$$
-\mathbf{W}^{(l)} \leftarrow \mathbf{W}^{(l)} - \eta \frac{\partial \mathcal{L}}{\partial \mathbf{W}^{(l)}}
-$$
-
-$$
-\mathbf{b}^{(l)} \leftarrow \mathbf{b}^{(l)} - \eta \frac{\partial \mathcal{L}}{\partial \mathbf{b}^{(l)}}
-$$
-
-where $\eta$ is the learning rate.
+   $$
+   \mathbf{a}^{(l)} = \sigma(\mathbf{z}^{(l)})
+   $$
 
 ---
 
-✅ In summary, a fully connected neural network can be abstracted as:
+### Final Output
+
+For the last layer $L$, the network output is:
 
 $$
-\hat{\mathbf{y}} = f(\mathbf{x}; \Theta) = \sigma^{(L)}\Big(\mathbf{W}^{(L)} \sigma^{(L-1)}(\cdots \sigma^{(1)}(\mathbf{W}^{(1)} \mathbf{x} + \mathbf{b}^{(1)}) \cdots ) + \mathbf{b}^{(L)}\Big)
+\mathbf{y} = \mathbf{a}^{(L)}
 $$
 
-where $\Theta = \{\mathbf{W}^{(l)}, \mathbf{b}^{(l)} \mid l=1,\dots,L\}$ are the model parameters.
+Depending on the task:
+
+* For **regression**, $\sigma$ at the last layer might be the identity function.
+* For **binary classification**, often a sigmoid function.
+* For **multi-class classification**, typically a softmax function.
 
 ---
 
-Would you like me to also create a **diagram of the MLP structure** (including input layer, hidden layers, output layer, and connections) in Markdown/TikZ style?
-```
+👉 Do you want me to also include the **compact matrix form** of the whole network function, like
 
-要不要我直接帮你改成 **GitHub README 友好格式（带公式转图片保证显示）**？
+$$
+f(\mathbf{x}; \theta) = \mathbf{a}^{(L)}
+$$
 
-
+with all parameters $\theta = \{W^{(l)}, \mathbf{b}^{(l)}\}_{l=1}^L$?
