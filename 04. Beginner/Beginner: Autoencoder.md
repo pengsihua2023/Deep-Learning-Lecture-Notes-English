@@ -7,9 +7,9 @@
   
 
 <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/f6e08480-a20a-488d-af52-be84c7c6a392" />  
-
-Figure 1: Autoencoder architecture diagram
-
+$$
+\text{Figure 1: Autoencoder architecture diagram}
+$$
 ### 1. Mathematical Description of Autoencoder
 
 Basic StructureAn Autoencoder consists of an Encoder and a Decoder:  
@@ -245,10 +245,6 @@ Train Epoch: 10 [51200/60000 (85%)]     Loss: 69.532722
 ====> Test set loss: 68.4474    
   
 <img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/2eac166e-59fe-4528-bb38-4eb4c7cf8c87" />     
-
-$$
-Figure \hspace{0.1cm}  2 \hspace{0.1cm} Loss \hspace{0.1cm} curve  
-$$ 
 
 $$
 \text{Figure 2 Loss curve}  
