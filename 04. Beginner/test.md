@@ -1,12 +1,10 @@
-Here’s a standard **mathematical description of a fully connected neural network (FCN)** in English:
+明白了 👍。在 GitHub 上的 README 或文档里，通常需要使用 **行内 `$...$`** 或 **块级公式 `$$...$$`** 的 LaTeX 语法才能正确显示。下面我给你一个 **适合 GitHub 显示的英文版全连接网络数学描述**：
 
 ---
 
-### Structure
+## Fully Connected Neural Network (Mathematical Description)
 
-A fully connected network (also called a **dense network**) consists of multiple layers of neurons. Each neuron in one layer is connected to **all** neurons in the next layer.
-
----
+A fully connected network (also called a dense network) consists of multiple layers of neurons. Each neuron in one layer is connected to all neurons in the next layer.
 
 ### Notation
 
@@ -16,20 +14,20 @@ A fully connected network (also called a **dense network**) consists of multiple
   \mathbf{x} \in \mathbb{R}^{d}
   $$
 
-  where $d$ is the input dimension.
+  where \$d\$ is the input dimension.
 
 * Layers:
-  Suppose the network has $L$ layers (excluding the input).
-  The $l$-th layer ($l = 1,2,\dots,L$) has $n_l$ neurons.
+  Suppose the network has \$L\$ layers (excluding the input).
+  The \$l\$-th layer (\$l = 1,2,\dots,L\$) has \$n\_l\$ neurons.
 
-* Weights and biases:
+* Parameters:
 
-  * Weight matrix for layer $l$:
+  * Weight matrix for layer \$l\$:
 
     $$
     W^{(l)} \in \mathbb{R}^{n_l \times n_{l-1}}
     $$
-  * Bias vector for layer $l$:
+  * Bias vector for layer \$l\$:
 
     $$
     \mathbf{b}^{(l)} \in \mathbb{R}^{n_l}
@@ -45,15 +43,11 @@ A fully connected network (also called a **dense network**) consists of multiple
 
 ### Forward Propagation
 
-The output of each layer is computed as follows:
-
 1. **Pre-activation (linear transformation):**
 
    $$
-   \mathbf{z}^{(l)} = W^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}
+   \mathbf{z}^{(l)} = W^{(l)} \mathbf{a}^{(l-1)} + \mathbf{b}^{(l)}, \quad \mathbf{a}^{(0)} = \mathbf{x}
    $$
-
-   where $\mathbf{a}^{(0)} = \mathbf{x}$ is the input.
 
 2. **Activation:**
 
@@ -63,26 +57,20 @@ The output of each layer is computed as follows:
 
 ---
 
-### Final Output
+### Output
 
-For the last layer $L$, the network output is:
+For the last layer \$L\$, the network output is:
 
 $$
 \mathbf{y} = \mathbf{a}^{(L)}
 $$
 
-Depending on the task:
-
-* For **regression**, $\sigma$ at the last layer might be the identity function.
-* For **binary classification**, often a sigmoid function.
-* For **multi-class classification**, typically a softmax function.
+* For **regression**: the last activation may be the identity function.
+* For **binary classification**: a sigmoid activation is often used.
+* For **multi-class classification**: a softmax activation is typically applied.
 
 ---
 
-👉 Do you want me to also include the **compact matrix form** of the whole network function, like
+这样写的话，在 GitHub 的 Markdown 渲染中会正常显示公式。
 
-$$
-f(\mathbf{x}; \theta) = \mathbf{a}^{(L)}
-$$
-
-with all parameters $\theta = \{W^{(l)}, \mathbf{b}^{(l)}\}_{l=1}^L$?
+要不要我帮你把它整理成一个 **最小的 GitHub README 示例**（带标题和公式），你直接拷贝过去就能用？
