@@ -14,7 +14,7 @@
    * (2) Generative Models
    * (3) Distribution Matching
    * (4) Reinforcement Learning
-
+3. [Divergence comparison](#3. Comparison of Divergences)
 ---
 
 ## 1. What is Divergence?
