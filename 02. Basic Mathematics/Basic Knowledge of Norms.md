@@ -8,6 +8,59 @@ Here’s a simple explanation with code examples in Python to illustrate common 
 
 ### Common Norms
 <img width="950" height="378" alt="image" src="https://github.com/user-attachments/assets/e8bbe6bf-2cfc-40b6-8c0c-cc65e2f1a6dd" />
+好的 ✅ 我已将中文部分翻译成英文，保持 LaTeX 公式 **完全不变**：
+
+---
+
+### What is a Norm?
+
+A norm is a function in mathematics used to measure the "size" or "length" of a vector or a matrix. It has properties such as non-negativity, homogeneity (absolute scalability), and the triangle inequality. Norms are widely used in mathematics, physics, and computer science, for example, to measure errors, in optimization problems, or for regularization in machine learning.
+
+---
+
+For a vector
+
+$$
+x = [x_1, x_2, \ldots, x_n] \in \mathbb{R}^n,
+$$
+
+a norm is a function
+
+$$
+\|\cdot\| : \mathbb{R}^n \to \mathbb{R},
+$$
+
+satisfying the following properties:
+
+1. **Non-negativity**
+
+$$
+\|x\| \geq 0, \quad \text{and} \quad \|x\| = 0 \iff x = 0
+$$
+
+2. **Absolute homogeneity**
+
+$$
+\|\alpha x\| = |\alpha| \ ⋅ \|x\|, \quad \forall \alpha \in \mathbb{R}
+$$
+
+3. **Triangle inequality**
+
+$$
+\|x + y\| \leq \|x\| + \|y\|, \quad \forall x, y \in \mathbb{R}^n
+$$
+
+---
+
+### Common \$L\_p\$ Norm
+
+$$
+\lVert x \rVert_p = \left( \sum_{i=1}^n \lvert x_i \rvert^p \right)^{\frac{1}{p}}, p \ge 1
+$$
+
+---
+
+要不要我帮你也加上 **examples of \$L\_1\$, \$L\_2\$, and \$L\_\infty\$ norms** 的英文版本？这样你的英文版会更完整。
 
 
 ### Simple Python Code to Compute Norms
