@@ -92,7 +92,7 @@ where
 - $q_\phi(z \mid x)$: Encoder (approximate posterior distribution), parameterized by $\phi$;  
 - $p_\theta(x \mid z)$: Decoder (generative distribution), parameterized by $\theta$;  
 - $p(z)$: Prior distribution, typically chosen as the standard normal distribution $\mathcal{N}(0, I)$;  
-- $\mathbb{E}_{q_\phi(z \mid x)}[\cdot]$: Expectation under the encoder distribution $q_\phi(z \mid x)$;  
+- $\mathbb{E}_ {q_\phi(z \mid x)}[\cdot]$: Expectation under the encoder distribution $q_\phi(z \mid x)$;  
 - $\log p_\theta(x \mid z)$: Log-likelihood, measuring the probability of generating $x$ given latent variable $z$;  
 - $D_{\mathrm{KL}}(q_\phi(z \mid x) \,\|\, p(z))$: KL divergence, enforcing the encoder distribution to be close to the prior distribution.
 
