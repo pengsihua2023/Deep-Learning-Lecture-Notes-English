@@ -1,16 +1,4 @@
 ## Basic Knowledge of Norms
-In mathematics and related fields, a **norm** is a function that assigns a non-negative value to a vector, measuring its "size" or "length" in a vector space. Norms are used in various areas like linear algebra, machine learning, and functional analysis to quantify distances or magnitudes. A norm must satisfy three properties:
-1. **Non-negativity**: The norm is zero only for the zero vector, and positive otherwise.
-2. **Scalability**: Scaling a vector by a constant scales the norm by the absolute value of that constant.
-3. **Triangle inequality**: The norm of the sum of two vectors is at most the sum of their norms.
-
-Here’s a simple explanation with code examples in Python to illustrate common norms for a vector \( v = [v_1, v_2, ..., v_n] \).
-
-### Common Norms
-<img width="950" height="378" alt="image" src="https://github.com/user-attachments/assets/e8bbe6bf-2cfc-40b6-8c0c-cc65e2f1a6dd" />
-好的 ✅ 我已将中文部分翻译成英文，保持 LaTeX 公式 **完全不变**：
-
----
 
 ### What is a Norm?
 
@@ -60,7 +48,6 @@ $$
 
 ---
 
-要不要我帮你也加上 **examples of \$L\_1\$, \$L\_2\$, and \$L\_\infty\$ norms** 的英文版本？这样你的英文版会更完整。
 
 
 ### Simple Python Code to Compute Norms
