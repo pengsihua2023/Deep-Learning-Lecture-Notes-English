@@ -1,7 +1,3 @@
-Here’s the English translation of your content:
-
----
-
 ## Libraries Related to PINNs
 
 Physics-Informed Neural Networks (PINNs) libraries and frameworks are mainly used in deep learning and scientific computing for solving partial differential equations (PDEs), ordinary differential equations (ODEs), and other physics-based modeling problems. Commonly used libraries include:
@@ -49,4 +45,3 @@ The following comparison table summarizes commonly used PINN libraries across **
 
 ---
 
-Would you like me to also **add recommendations for beginners, intermediate users, and industrial applications** to make the table more actionable?
