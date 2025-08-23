@@ -1,6 +1,9 @@
-<img width="614" height="614" alt="image" src="https://github.com/user-attachments/assets/ed51a778-660f-4ebc-9a96-ef4cb5180f95" />  
+<img width="539" height="250" alt="image" src="https://github.com/user-attachments/assets/24174fef-9a4d-4165-b575-8ed4db9e336a" />
+
   
-George Em Karniadakis
+Maziar Raissi and George Em Karniadakis
+
+---
 
 Links to the Original Papers
 
