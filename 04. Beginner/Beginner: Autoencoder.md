@@ -85,7 +85,7 @@ $$
 * **Anomaly detection**: Samples with large reconstruction error may be anomalies.
 
 ## Code
-```
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
