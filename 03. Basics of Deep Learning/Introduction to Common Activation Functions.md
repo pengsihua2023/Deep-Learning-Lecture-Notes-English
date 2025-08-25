@@ -151,8 +151,8 @@ The ReLU activation function is a cornerstone of modern deep learning due to its
 
 ## 3. Leaky ReLU activation function 
 <img width="807" height="590" alt="image" src="https://github.com/user-attachments/assets/d74f9e07-ac63-4c29-8005-7941914576bb" />  
-     
-<img width="853" height="482" alt="image" src="https://github.com/user-attachments/assets/79ad6100-1bb7-47de-95df-f546be3edd0b" />    
+ 
+  
 ### Mathematical Definition of Leaky ReLU
 
 The Leaky ReLU (Rectified Linear Unit) is an activation function used in neural networks to introduce non-linearity. Unlike the standard ReLU, which outputs zero for negative inputs, Leaky ReLU allows a small, non-zero gradient for negative inputs to prevent the "dying ReLU" problem. It is defined as:
