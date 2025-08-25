@@ -6,7 +6,7 @@
 
 * **Strengths:** Capable of learning and remembering long-range dependencies in sequential data.
 * **Applications:** Widely used in **speech recognition**, **time series forecasting**, **text generation**, **machine translation**, and more.
-<img width="969" height="304" alt="image" src="https://github.com/user-attachments/assets/696e685c-35f8-4720-9425-b6aae9507d4b" />
+<img width="600" height="190" alt="image" src="https://github.com/user-attachments/assets/696e685c-35f8-4720-9425-b6aae9507d4b" />
 <img width="400" height="3000" alt="image" src="https://github.com/user-attachments/assets/76881c31-2af5-45ce-b881-26dfae4ab2e1" />
 
 ---
