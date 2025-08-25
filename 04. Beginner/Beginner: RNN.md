@@ -12,6 +12,8 @@
 RNN: The basic recurrent neural network unit processes the input \$X\_t\$ and the hidden state \$h(t-1)\$ from the previous time step through a tanh activation function, generating the current hidden state \$h(t)\$. It is simple but prone to the vanishing gradient problem, which limits its ability to handle long sequences.
 RNNs are considered to have "memory" because they transmit information across time steps through the hidden state \$h(t)\$. The hidden state at the current time step depends not only on the current input \$x(t)\$ but also on the hidden state \$h(t-1)\$ of the previous step, thereby "remembering" parts of the previous sequence. This makes them suitable for handling sequential data, such as time series or natural language. However, the memory ability of standard RNNs is limited, and they are easily affected by the vanishing gradient problem, making it difficult to capture long-term dependencies.
 
+---
+
 ### 1. Basic Structure of RNN
 
 RNNs are neural networks specialized in processing sequential data by introducing hidden states to capture temporal dependencies in sequences.
@@ -22,7 +24,7 @@ The core idea: the output at the current time depends not only on the current in
 For time step \$t\$, the RNN computation is as follows:
 Hidden state update
 
----
+
 
 $$
 h_t = \sigma(W_{xh}x_t + W_{hh}h_{t-1} + b_h)
