@@ -1,6 +1,3 @@
-好的 ✅ 我已将代码和说明中的中文翻译成英文，保持了原始结构和 LaTeX 公式不变：
-
----
 
 ## Recurrent Neural Network
 
@@ -221,4 +218,3 @@ This code implements the following functions:
 
 ---
 
-要不要我帮你把最终的英文版整理成一个 **可下载的 PDF 文档**（保留公式和代码格式），方便直接使用？
