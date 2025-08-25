@@ -262,7 +262,7 @@ Actual values: \[18.2 21.4 21.5 36.4 20.2]
 ---
 
 * **Third Version Code**
-```
+```python
 # Build optimized model with reduced regularization
 
 import tensorflow as tf
@@ -328,7 +328,7 @@ Test Loss: 25.8082, Test MAE: 2.9562
 
 * **Fourth Version Code**
 
-```
+```python
 # Build optimized model with even lower L2 and dropout
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
