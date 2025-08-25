@@ -1,10 +1,146 @@
-## Beginner: Regression Problem
+# Beginner: Regression Problem
+## Mathematical Description of Regression
+
+### 1. General Regression Problem
+
+Given the training dataset:
+
+$$
+\mathcal{D} = \{(x_i, y_i)\}_{i=1}^n
+$$
+
+where:
+
+* \$x\_i \in \mathbb{R}^d\$ is the input feature vector;
+* \$y\_i \in \mathbb{R}\$ is the corresponding target output.
+
+Regression model assumption:
+
+$$
+y_i = f(x_i) + \varepsilon_i, \quad \varepsilon_i \sim \mathcal{N}(0, \sigma^2)
+$$
+
+where \$f(\cdot)\$ is the underlying true function and \$\varepsilon\_i\$ is noise.
+
+The learning objective is to find an estimator function \$\hat{f}(\cdot)\$ such that the predicted value:
+
+$$
+\hat{y}_i = \hat{f}(x_i)
+$$
+
+can approximate the true value \$y\_i\$ as closely as possible.
+
+Typically, the solution is obtained by minimizing the Mean Squared Error (MSE):
+
+$$
+\hat{f} = \arg \min_{f \in \mathcal{F}} \frac{1}{n} \sum_{i=1}^n \left( y_i - f(x_i) \right)^2
+$$
+
+---
+
+### 2. Linear Regression
+
 <img width="400" height="264" alt="image" src="https://github.com/user-attachments/assets/3a54ab56-20cb-4780-9d89-7af29f76956f" />    
 
-Figure 1 Linear regression      
+Figure 1 Linear Regression
+
+#### Model Form
+
+Assume the output is a linear combination of input features:
+
+$$
+f(x) = w^\top x + b
+$$
+
+where:
+
+* \$w \in \mathbb{R}^d\$ is the weight vector;
+* \$b \in \mathbb{R}\$ is the bias term.
+
+#### Loss Function
+
+The objective function of linear regression is:
+
+$$
+L(w, b) = \frac{1}{n} \sum_{i=1}^n \left( y_i - (w^\top x_i + b) \right)^2
+$$
+
+#### Optimal Solution (Closed Form)
+
+Let \$X = \[x\_1^\top; x\_2^\top; \dots; x\_n^\top] \in \mathbb{R}^{n \times d}\$,
+\$y = \[y\_1, y\_2, \dots, y\_n]^\top \in \mathbb{R}^n\$,
+then the closed-form solution for the optimal parameter is:
+
+$$
+\hat{w} = (X^\top X)^{-1} X^\top y
+$$
+
+---
+
+### 3. Nonlinear Regression
+
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/27696c25-d662-48ce-8bf2-0d9538119e8d" />     
 
-Figure 2 Nonlinear regression  
+Figure 2 Nonlinear Regression
+
+When the relationship between features and target is not linear, nonlinear functions \$f(\cdot)\$ can be used.
+
+#### 1. Polynomial Regression
+
+Map input to higher-order features:
+
+$$
+f(x) = \sum_{j=0}^p w_j x^j
+$$
+
+The corresponding optimization objective is:
+
+$$
+L(w) = \frac{1}{n} \sum_{i=1}^n \left( y_i - \sum_{j=0}^p w_j (x_i)^j \right)^2
+$$
+
+---
+
+#### 2. Kernel Regression
+
+Using nonlinear feature mapping \$\phi(x)\$, the model is formulated as:
+
+$$
+f(x) = w^\top \phi(x)
+$$
+
+The optimization problem is:
+
+$$
+\hat{w} = \arg \min_w \frac{1}{n} \sum_{i=1}^n \left( y_i - w^\top \phi(x_i) \right)^2
+$$
+
+By introducing the kernel function \$k(x, x') = \phi(x)^\top \phi(x')\$, we can avoid explicitly constructing \$\phi(x)\$.
+
+---
+
+#### 3. Neural Network Regression
+
+Assume the model is a multi-layer nonlinear function:
+
+$$
+f(x) = W^{(L)} \sigma \big( W^{(L-1)} \sigma ( \cdots \sigma(W^{(1)} x + b^{(1)}) \cdots ) + b^{(L-1)} \big) + b^{(L)}
+$$
+
+where:
+
+* \$\sigma(\cdot)\$ is a nonlinear activation function;
+* \${W^{(\ell)}, b^{(\ell)}}\$ are the parameters of the \$\ell\$-th layer.
+
+The loss function is still Mean Squared Error:
+
+$$
+L(\theta) = \frac{1}{n} \sum_{i=1}^n \left( y_i - f(x_i; \theta) \right)^2
+$$
+
+where \$\theta\$ denotes the set of all parameters.
+
+--- 
 
 ## First version of code 
 - First version of code
