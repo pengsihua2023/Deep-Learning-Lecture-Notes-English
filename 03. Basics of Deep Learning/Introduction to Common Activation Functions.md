@@ -367,8 +367,6 @@ print(output_batch)
 
 The Tanh (Hyperbolic Tangent) activation function is a non-linear function commonly used in neural networks to introduce non-linearity. It maps input values to the range \((-1, 1)\). The Tanh function is defined as:
 
-<img width="1158" height="653" alt="image" src="https://github.com/user-attachments/assets/81212078-62b3-4d41-b7c4-dab6459be247" />  
-
 The Tanh (Hyperbolic Tangent) activation function is a non-linear function commonly used in neural networks to introduce non-linearity. It maps input values to the range $(-1, 1)$. The Tanh function is defined as:
 
 $$
