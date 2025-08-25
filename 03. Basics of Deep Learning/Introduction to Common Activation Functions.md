@@ -251,7 +251,22 @@ print(output)
   ### Mathematical Definition of Softmax
 
 <img width="1210" height="649" alt="image" src="https://github.com/user-attachments/assets/d9c5ce72-0b56-4982-b282-34e81ab8547a" />
-  
+ The Softmax activation function is used in neural networks, particularly for multi-class classification, to convert a vector of raw scores (logits) into a probability distribution. For a vector
+$\mathbf{z} = [z_1, z_2, \ldots, z_n]$ of $n$ real numbers, the Softmax function is defined as:
+
+$$
+\text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^n e^{z_j}}
+$$
+
+Where:
+
+* $z_i$ is the $i$-th element of the input vector.
+* $e^{z_i}$ is the exponential of the $i$-th element.
+* The denominator $\sum_{j=1}^n e^{z_j}$ is the sum of exponentials of all elements, ensuring the outputs sum to 1.
+* The output $\text{Softmax}(z_i)$ represents the probability of the $i$-th class.
+
+The function maps the input values to the range $(0, 1)$, and the sum of all outputs is 1, making it ideal for multi-class probability distributions.
+ 
 
 ### Code Implementation in Python
 
@@ -355,21 +370,6 @@ The Tanh (Hyperbolic Tangent) activation function is a non-linear function commo
 
 <img width="1158" height="653" alt="image" src="https://github.com/user-attachments/assets/81212078-62b3-4d41-b7c4-dab6459be247" />  
 
-The Softmax activation function is used in neural networks, particularly for multi-class classification, to convert a vector of raw scores (logits) into a probability distribution. For a vector
-$\mathbf{z} = [z_1, z_2, \ldots, z_n]$ of $n$ real numbers, the Softmax function is defined as:
-
-$$
-\text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^n e^{z_j}}
-$$
-
-Where:
-
-* $z_i$ is the $i$-th element of the input vector.
-* $e^{z_i}$ is the exponential of the $i$-th element.
-* The denominator $\sum_{j=1}^n e^{z_j}$ is the sum of exponentials of all elements, ensuring the outputs sum to 1.
-* The output $\text{Softmax}(z_i)$ represents the probability of the $i$-th class.
-
-The function maps the input values to the range $(0, 1)$, and the sum of all outputs is 1, making it ideal for multi-class probability distributions.
   
 
 ### Code Implementation in Python
