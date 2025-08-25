@@ -1,0 +1,312 @@
+# Regression Problem
+
+---
+
+## Mathematical Description of Regression Problem
+
+### 1. General Regression Problem
+
+Given the training dataset:
+
+$$
+\mathcal{D} = \{(x_i, y_i)\}_{i=1}^n
+$$
+
+where:
+
+* \$x\_i \in \mathbb{R}^d\$ is the input feature vector;
+* \$y\_i \in \mathbb{R}\$ is the corresponding target output.
+
+Regression model assumption:
+
+$$
+y_i = f(x_i) + \varepsilon_i, \quad \varepsilon_i \sim \mathcal{N}(0, \sigma^2)
+$$
+
+where \$f(\cdot)\$ is the underlying true function and \$\varepsilon\_i\$ is noise.
+
+The learning objective is to find an estimator function \$\hat{f}(\cdot)\$ such that the predicted value:
+
+$$
+\hat{y}_i = \hat{f}(x_i)
+$$
+
+can approximate the true value \$y\_i\$ as closely as possible.
+
+Typically, the solution is obtained by minimizing the Mean Squared Error (MSE):
+
+$$
+\hat{f} = \arg \min_{f \in \mathcal{F}} \frac{1}{n} \sum_{i=1}^n \left( y_i - f(x_i) \right)^2
+$$
+
+---
+
+### 2. Linear Regression
+
+<img width="400" height="264" alt="image" src="https://github.com/user-attachments/assets/3a54ab56-20cb-4780-9d89-7af29f76956f" />    
+
+Figure 1 Linear Regression
+
+#### Model Form
+
+Assume the output is a linear combination of input features:
+
+$$
+f(x) = w^\top x + b
+$$
+
+where:
+
+* \$w \in \mathbb{R}^d\$ is the weight vector;
+* \$b \in \mathbb{R}\$ is the bias term.
+
+#### Loss Function
+
+The objective function of linear regression is:
+
+$$
+L(w, b) = \frac{1}{n} \sum_{i=1}^n \left( y_i - (w^\top x_i + b) \right)^2
+$$
+
+#### Optimal Solution (Closed Form)
+
+Let \$X = \[x\_1^\top; x\_2^\top; \dots; x\_n^\top] \in \mathbb{R}^{n \times d}\$,
+\$y = \[y\_1, y\_2, \dots, y\_n]^\top \in \mathbb{R}^n\$,
+then the closed-form solution for the optimal parameter is:
+
+$$
+\hat{w} = (X^\top X)^{-1} X^\top y
+$$
+
+---
+
+### 3. Nonlinear Regression
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/27696c25-d662-48ce-8bf2-0d9538119e8d" />     
+
+Figure 2 Nonlinear Regression
+
+When the relationship between features and target is not linear, nonlinear functions \$f(\cdot)\$ can be used.
+
+#### 1. Polynomial Regression
+
+Map input to higher-order features:
+
+$$
+f(x) = \sum_{j=0}^p w_j x^j
+$$
+
+The corresponding optimization objective is:
+
+$$
+L(w) = \frac{1}{n} \sum_{i=1}^n \left( y_i - \sum_{j=0}^p w_j (x_i)^j \right)^2
+$$
+
+---
+
+#### 2. Kernel Regression
+
+Using nonlinear feature mapping \$\phi(x)\$, the model is formulated as:
+
+$$
+f(x) = w^\top \phi(x)
+$$
+
+The optimization problem is:
+
+$$
+\hat{w} = \arg \min_w \frac{1}{n} \sum_{i=1}^n \left( y_i - w^\top \phi(x_i) \right)^2
+$$
+
+By introducing the kernel function \$k(x, x') = \phi(x)^\top \phi(x')\$, we can avoid explicitly constructing \$\phi(x)\$.
+
+---
+
+#### 3. Neural Network Regression
+
+Assume the model is a multi-layer nonlinear function:
+
+$$
+f(x) = W^{(L)} \sigma \big( W^{(L-1)} \sigma ( \cdots \sigma(W^{(1)} x + b^{(1)}) \cdots ) + b^{(L-1)} \big) + b^{(L)}
+$$
+
+where:
+
+* \$\sigma(\cdot)\$ is a nonlinear activation function;
+* \${W^{(\ell)}, b^{(\ell)}}\$ are the parameters of the \$\ell\$-th layer.
+
+The loss function is still Mean Squared Error:
+
+$$
+L(\theta) = \frac{1}{n} \sum_{i=1}^n \left( y_i - f(x_i; \theta) \right)^2
+$$
+
+where \$\theta\$ denotes the set of all parameters.
+
+---
+
+## Code Implementations
+
+---
+
+* **First Version Code**
+
+```python
+import tensorflow as tf
+from tensorflow.keras import layers, models
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+import numpy as np
+
+# Load Boston Housing dataset
+(X, y), (_, _) = tf.keras.datasets.boston_housing.load_data(test_split=0)
+
+# Data normalization
+scaler = StandardScaler()
+X = scaler.fit_transform(X)
+
+# Split training and testing set
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Build an improved neural network model
+model = models.Sequential([
+    layers.Dense(64, activation='relu', input_shape=(X_train.shape[1],)),  # Hidden layer
+    layers.Dense(32, activation='relu'),  # Second hidden layer
+    layers.Dense(1)  # Output layer
+])
+
+# Compile model with smaller learning rate
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+model.compile(optimizer=optimizer, loss='mse', metrics=['mae'])
+
+# Train model with more epochs and early stopping
+early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
+model.fit(X_train, y_train, epochs=200, batch_size=32, validation_split=0.2, callbacks=[early_stopping], verbose=1)
+
+# Evaluate model
+loss, mae = model.evaluate(X_test, y_test, verbose=0)
+print(f"Test Loss: {loss:.4f}, Test MAE: {mae:.4f}")
+
+# Prediction
+y_pred = model.predict(X_test[:5])
+print("Predictions for first 5 test samples:", y_pred.flatten())
+print("Actual values:", y_test[:5])
+```
+
+### Training Results
+
+11/11 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - loss: 5.4454 - mae: 1.7790 - val\_loss: 7.5367 - val\_mae: 1.9705
+Test Loss: 28.6256, Test MAE: 2.9774
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 30ms/step
+Predictions for first 5 test samples: \[21.798922 21.89294  20.243843 33.85427  21.61176 ]
+Actual values: \[18.2 21.4 21.5 36.4 20.2]
+
+---
+
+* **Second Version Code**
+
+```python
+import tensorflow as tf
+from tensorflow.keras import layers, models, regularizers
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+import numpy as np
+
+# Load Boston Housing dataset
+(X, y), (_, _) = tf.keras.datasets.boston_housing.load_data(test_split=0)
+
+# Data normalization
+scaler = StandardScaler()
+X = scaler.fit_transform(X)
+
+# Split training and testing set
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Build optimized model
+model = models.Sequential([
+    layers.Dense(64, activation='relu', input_shape=(X_train.shape[1],), 
+                 kernel_regularizer=regularizers.l2(0.01)),  # L2 regularization
+    layers.Dropout(0.2),  # Dropout layer
+    layers.Dense(32, activation='relu', kernel_regularizer=regularizers.l2(0.01)),
+    layers.Dropout(0.2),
+    layers.Dense(1)
+])
+
+# Compile model
+optimizer = tf.keras.optimizers.Adam(learning_rate=0.001)
+model.compile(optimizer=optimizer, loss='mse', metrics=['mae'])
+
+# Train model
+early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=20, restore_best_weights=True)
+model.fit(X_train, y_train, epochs=300, batch_size=16, validation_split=0.2, 
+          callbacks=[early_stopping], verbose=1)
+
+# Evaluate model
+loss, mae = model.evaluate(X_test, y_test, verbose=0)
+print(f"Test Loss: {loss:.4f}, Test MAE: {mae:.4f}")
+
+# Prediction
+y_pred = model.predict(X_test[:5])
+print("Predictions for first 5 test samples:", y_pred.flatten())
+print("Actual values:", y_test[:5])
+```
+
+### Training Results
+
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - loss: 15.5459 - mae: 2.9512 - val\_loss: 7.5879 - val\_mae: 1.8665
+Test Loss: 28.6987, Test MAE: 3.1621
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 31ms/step
+Predictions for first 5 test samples: \[19.722134 21.551369 19.76431  34.056454 22.540033]
+Actual values: \[18.2 21.4 21.5 36.4 20.2]
+
+---
+
+* **Third Version Code**
+
+```python
+# Build optimized model with reduced regularization
+...
+```
+
+### Training Results
+
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 5.3365 - mae: 1.8211 - val\_loss: 6.4201 - val\_mae: 1.7893
+Test Loss: 25.8082, Test MAE: 2.9562
+...
+
+---
+
+* **Fourth Version Code**
+
+```python
+# Build optimized model with even lower L2 and dropout
+...
+```
+
+### Training Results
+
+Epoch 87/1000
+41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step - loss: 5.1438 - mae: 1.6906 - val\_loss: 6.9840 - val\_mae: 1.8983
+Test Loss: 26.1492, Test MAE: 3.0013
+...
+
+---
+
+* **Fifth Version Code**
+
+```python
+# Build optimized model with visualization
+...
+```
+
+### Training Results
+
+Epoch 88/1000
+41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - loss: 6.0396 - mae: 1.7683 - val\_loss: 6.8140 - val\_mae: 1.9475
+Test Loss: 27.4981, Test MAE: 3.0507
+...
+
+---
+
+
+要不要我再帮你整理成一个 **对比表格**（各版本的改进点 + Test Loss/MAE）方便总结？
