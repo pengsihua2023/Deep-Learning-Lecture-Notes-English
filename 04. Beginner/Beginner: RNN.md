@@ -103,14 +103,13 @@ Gradients for \$W\_{hh}, W\_{hy}, b\_h, b\_y\$ are calculated similarly.
 
 ---
 
-### Vanishing / Exploding Gradient Problem
+### 5. Vanishing / Exploding Gradient Problem
 
 Since \$h\_t\$ depends on \$h\_{t-1}\$, gradients propagate through repeated multiplications with the matrix \$W\_{hh}\$, which can lead to:
 
 * **Vanishing gradients**: gradients become too small, making it hard to propagate influence from earlier steps.
 * **Exploding gradients**: gradients become too large, leading to unstable training.
 
----
 
 ### Solutions
 
