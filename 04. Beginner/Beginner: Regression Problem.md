@@ -2,7 +2,7 @@
 <img width="400" height="264" alt="image" src="https://github.com/user-attachments/assets/3a54ab56-20cb-4780-9d89-7af29f76956f" />    
 
 Figure 1 Linear regression      
-<img width="583" height="432" alt="image" src="https://github.com/user-attachments/assets/27696c25-d662-48ce-8bf2-0d9538119e8d" />     
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/27696c25-d662-48ce-8bf2-0d9538119e8d" />     
 
 Figure 2 Nonlinear regression  
 
