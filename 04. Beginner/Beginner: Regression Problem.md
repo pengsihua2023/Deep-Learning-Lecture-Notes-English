@@ -85,7 +85,7 @@ Figure 2 Nonlinear Regression
 
 When the relationship between features and target is not linear, nonlinear functions \$f(\cdot)\$ can be used.
 
-#### 1. Polynomial Regression
+#### (1). Polynomial Regression
 
 Map input to higher-order features:
 
@@ -101,7 +101,7 @@ $$
 
 ---
 
-#### 2. Kernel Regression
+#### (2). Kernel Regression
 
 Using nonlinear feature mapping \$\phi(x)\$, the model is formulated as:
 
@@ -119,7 +119,7 @@ By introducing the kernel function \$k(x, x') = \phi(x)^\top \phi(x')\$, we can 
 
 ---
 
-#### 3. Neural Network Regression
+#### (3). Neural Network Regression
 
 Assume the model is a multi-layer nonlinear function:
 
