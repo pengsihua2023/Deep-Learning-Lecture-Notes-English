@@ -7,7 +7,6 @@ The Sigmoid activation function is a commonly used non-linear activation functio
 #### **Definition**
 The Sigmoid function maps any real number to the range (0, 1), making it suitable for tasks requiring probabilistic outputs (e.g., predicting probabilities in binary classification). It is defined as:
 
-<img width="217" height="93" alt="image" src="https://github.com/user-attachments/assets/b7990223-86af-4e09-aeaa-734fb3e577b9" />
 
 $$
 \sigma(x) = \frac{1}{1 + e^{-x}}
