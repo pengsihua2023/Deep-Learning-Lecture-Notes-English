@@ -263,9 +263,8 @@ Epoch \[20/20], Loss: 0.3664
 
 Testing started...
 Test Accuracy: 79.00%
-
-<img width="791" height="385" alt="image" src="https://github.com/user-attachments/assets/ea2bbd16-e1b1-4334-a856-d1e91223a8a7" />  
-  
+<img width="791" height="385" alt="image" src="https://github.com/user-attachments/assets/b3af8586-f2c2-470c-b196-33568f422f24" />
+    
 Figure 2 Training Loss Curve  
 
 <img width="396" height="295" alt="image" src="https://github.com/user-attachments/assets/4c5c3a4d-986f-4b42-8612-9a05ed4e3f87" />    
