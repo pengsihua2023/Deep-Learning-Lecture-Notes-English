@@ -262,10 +262,9 @@ Actual values: \[18.2 21.4 21.5 36.4 20.2]
 ---
 
 * **Third Version Code**
-
-```python
-# Build optimized model with reduced regularization
 ```
+# Build optimized model with reduced regularization
+
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
 from sklearn.model_selection import train_test_split
@@ -317,8 +316,6 @@ print(f"Test Loss: {loss:.4f}, Test MAE: {mae:.4f}")
 y_pred = model.predict(X_test[:5])
 print("Predictions for first 5 test samples:", y_pred.flatten())
 print("Actual values:", y_test[:5])
-
-
 ```
 
 ### Training Results
