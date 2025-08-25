@@ -248,7 +248,8 @@ print(output)
   
 ## 4. Softmax activation function
 <img width="384" height="300" alt="image" src="https://github.com/user-attachments/assets/f290108e-edcd-4408-b99e-4a0a35be16a3" />     
-  ### Mathematical Definition of Softmax
+
+### Mathematical Definition of Softmax
 
 The Softmax activation function is used in neural networks, particularly for multi-class classification, to convert a vector of raw scores (logits) into a probability distribution. For a vector  $\mathbf{z} = [z_1, z_2, \ldots, z_n]$  of $n$ real numbers, the Softmax function is defined as:
 
