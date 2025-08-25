@@ -195,11 +195,11 @@ print("Actual values:", y_test[:5])
 
 ### Training Results
 
-11/11 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - loss: 5.4454 - mae: 1.7790 - val\_loss: 7.5367 - val\_mae: 1.9705
-Test Loss: 28.6256, Test MAE: 2.9774
-1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 30ms/step
-Predictions for first 5 test samples: \[21.798922 21.89294  20.243843 33.85427  21.61176 ]
-Actual values: \[18.2 21.4 21.5 36.4 20.2]
+11/11 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - loss: 5.4454 - mae: 1.7790 - val\_loss: 7.5367 - val\_mae: 1.9705  
+Test Loss: 28.6256, Test MAE: 2.9774  
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 30ms/step  
+Predictions for first 5 test samples: \[21.798922 21.89294  20.243843 33.85427  21.61176 ]  
+Actual values: \[18.2 21.4 21.5 36.4 20.2]  
 
 ---
 
@@ -253,11 +253,11 @@ print("Actual values:", y_test[:5])
 
 ### Training Results
 
-21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - loss: 15.5459 - mae: 2.9512 - val\_loss: 7.5879 - val\_mae: 1.8665
-Test Loss: 28.6987, Test MAE: 3.1621
-1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 31ms/step
-Predictions for first 5 test samples: \[19.722134 21.551369 19.76431  34.056454 22.540033]
-Actual values: \[18.2 21.4 21.5 36.4 20.2]
+21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - loss: 15.5459 - mae: 2.9512 - val\_loss: 7.5879 - val\_mae: 1.8665  
+Test Loss: 28.6987, Test MAE: 3.1621  
+1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 31ms/step  
+Predictions for first 5 test samples: \[19.722134 21.551369 19.76431  34.056454 22.540033]  
+Actual values: \[18.2 21.4 21.5 36.4 20.2]  
 
 ---
 
@@ -285,10 +285,10 @@ Test Loss: 25.8082, Test MAE: 2.9562
 
 ### Training Results
 
-Epoch 87/1000
-41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step - loss: 5.1438 - mae: 1.6906 - val\_loss: 6.9840 - val\_mae: 1.8983
-Test Loss: 26.1492, Test MAE: 3.0013
-...
+Epoch 87/1000  
+41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step - loss: 5.1438 - mae: 1.6906 - val\_loss: 6.9840 - val\_mae: 1.8983  
+Test Loss: 26.1492, Test MAE: 3.0013  
+... 
 
 ---
 
@@ -375,10 +375,10 @@ plt.show()
 
 ### Training Results
 
-Epoch 88/1000
-41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - loss: 6.0396 - mae: 1.7683 - val\_loss: 6.8140 - val\_mae: 1.9475
-Test Loss: 27.4981, Test MAE: 3.0507
-...
+Epoch 88/1000  
+41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - loss: 6.0396 - mae: 1.7683 - val\_loss: 6.8140 - val\_mae: 1.9475  
+Test Loss: 27.4981, Test MAE: 3.0507  
+...  
 
 ---
 
