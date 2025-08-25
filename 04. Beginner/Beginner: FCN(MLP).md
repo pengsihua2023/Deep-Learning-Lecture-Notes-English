@@ -138,7 +138,7 @@ where $\Theta = \{\mathbf{W}^{(l)}, \mathbf{b}^{(l)} \mid l=1,\dots,L\}$ represe
 
 
 ## code（pytorch）
-```
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
