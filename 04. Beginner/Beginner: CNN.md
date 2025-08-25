@@ -10,7 +10,7 @@
 **Applications**: Image classification (e.g., cat vs. dog), facial recognition, medical image analysis.
 
 
-<img width="708" height="353" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />  
+<img width="700" height="350" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />  
 
 ## Mathematical description of a Convolutional Neural Network (CNN)
 
