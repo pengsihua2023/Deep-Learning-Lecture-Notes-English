@@ -267,7 +267,8 @@ Test Accuracy: 79.00%
     
 Figure 2 Training Loss Curve  
 
-<img width="396" height="295" alt="image" src="https://github.com/user-attachments/assets/4c5c3a4d-986f-4b42-8612-9a05ed4e3f87" />    
+<img width="868" height="793" alt="image" src="https://github.com/user-attachments/assets/a867e5ef-40d0-461e-b8ac-b2cfb0724f18" />
+    
   
 Figure 3 Confusion Matrix  
 
