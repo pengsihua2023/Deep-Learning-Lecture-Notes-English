@@ -122,7 +122,7 @@ Since \$h\_t\$ depends on \$h\_{t-1}\$, gradients propagate through repeated mul
 
 ## Code (Pytorch)
 
-```
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
