@@ -8,7 +8,7 @@ Figure 2 Nonlinear regression
 
 ## First version of code 
 - First version of code
-```
+```python
 import tensorflow as tf
 from tensorflow.keras import layers, models
 from sklearn.model_selection import train_test_split
@@ -51,7 +51,7 @@ Test Loss: 28.6256, Test MAE: 2.9774
 Predictions for first 5 test samples: [21.798922 21.89294  20.243843 33.85427  21.61176 ]  
 Actual values: [18.2 21.4 21.5 36.4 20.2]  
 - Second version of code
-```
+```python
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
 from sklearn.model_selection import train_test_split
@@ -94,7 +94,7 @@ Predictions for first 5 test samples: [19.722134 21.551369 19.76431  34.056454 2
 Actual values: [18.2 21.4 21.5 36.4 20.2]  
 
 - Third version of code
-```
+```python
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
 from sklearn.model_selection import train_test_split
@@ -155,7 +155,7 @@ Predictions for first 5 test samples: [19.786161 21.211859 19.15384  34.56086  2
 Actual values: [18.2 21.4 21.5 36.4 20.2]  
 
 - Fourth version of code
-```
+```python
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
 from sklearn.model_selection import train_test_split
@@ -216,7 +216,7 @@ Test Loss: 26.1492, Test MAE: 3.0013
 Predictions for first 5 test samples: [20.502605 21.119947 19.357008 34.657536 21.160563]  
 Actual values: [18.2 21.4 21.5 36.4 20.2]  
 - Fifth version of code
-```
+```python
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
 from sklearn.model_selection import train_test_split
