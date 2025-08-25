@@ -124,44 +124,137 @@ Since \$h\_t\$ depends on \$h\_{t-1}\$, gradients propagate through repeated mul
 
 ## Code (Pytorch)
 
-```python
+```
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib
 matplotlib.rcParams['font.sans-serif'] = ['SimHei']  # Display Chinese
-matplotlib.rcParams['axes.unicode_minus'] = False    # Display minus sign
+matplotlib.rcParams['axes.unicode_minus'] = False    # Display negative sign
 
-# Set random seeds to ensure reproducibility
-...
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+
+# Set random seed to ensure reproducible results
+torch.manual_seed(42)
+np.random.seed(42)
+
+# 1. Generate simple sequence data
+def generate_sequence_data(num_samples, seq_length):
+    data = []
+    labels = []
+    for _ in range(num_samples):
         # Randomly generate sequence (0 or 1)
-        # Label: whether the number of 1s in the sequence is greater than half
-...
+        seq = np.random.randint(0, 2, size=(seq_length,))
+        # Label: Whether the number of 1s in the sequence exceeds half
+        label = 1 if np.sum(seq) > seq_length // 2 else 0
+        data.append(seq)
+        labels.append(label)
+    return torch.FloatTensor(data).unsqueeze(-1), torch.LongTensor(labels)
+
+# Data parameters
+num_samples = 1000
+seq_length = 10
+input_size = 1
+hidden_size = 16
+num_classes = 2
+
+# Generate training and test data
+train_data, train_labels = generate_sequence_data(num_samples, seq_length)
+test_data, test_labels = generate_sequence_data(num_samples // 5, seq_length)
+
+# 2. Define RNN model
+class SimpleRNN(nn.Module):
+    def __init__(self, input_size, hidden_size, num_classes):
+        super(SimpleRNN, self).__init__()
+        self.rnn = nn.RNN(input_size, hidden_size, batch_first=True)
+        self.fc = nn.Linear(hidden_size, num_classes)
+        
+    def forward(self, x):
         # Initialize hidden state
+        h0 = torch.zeros(1, x.size(0), hidden_size).to(x.device)
         # RNN forward propagation
+        out, _ = self.rnn(x, h0)
         # Take the output of the last time step
-...
+        out = self.fc(out[:, -1, :])
+        return out
+
+# 3. Initialize model, loss function, and optimizer
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = SimpleRNN(input_size, hidden_size, num_classes).to(device)
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=0.01)
+
+# 4. Train the model
+def train_model(num_epochs=20):
+    model.train()
     loss_list = []  # Record loss for each epoch
-...
+    for epoch in range(num_epochs):
+        inputs, labels = train_data.to(device), train_labels.to(device)
+        
         # Forward propagation
-        # Backpropagation and optimization
+        outputs = model(inputs)
+        loss = criterion(outputs, labels)
+        
+        # Backward propagation and optimization
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        
         loss_list.append(loss.item())  # Save loss
-...
+        if (epoch + 1) % 5 == 0:
+            print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
     return loss_list  # Return loss list
-...
-        return predicted.cpu().numpy(), labels.cpu().numpy()  # Return predictions and true labels
-...
+
+# 5. Test the model
+def test_model():
+    model.eval()
+    with torch.no_grad():
+        inputs, labels = test_data.to(device), test_labels.to(device)
+        outputs = model(inputs)
+        _, predicted = torch.max(outputs.data, 1)
+        total = labels.size(0)
+        correct = (predicted == labels).sum().item()
+        accuracy = 100 * correct / total
+        print(f'Test Accuracy: {accuracy:.2f}%')
+        return predicted.cpu().numpy(), labels.cpu().numpy()  # Return predicted and true labels
+
+# 6. Visualization functions
 def plot_loss_curve(loss_list):
     """Plot training loss curve"""
-    ...
+    plt.figure(figsize=(8, 4))
+    plt.plot(loss_list, label='Train Loss')
+    plt.xlabel('Epoch')
+    plt.ylabel('Loss')
     plt.title('Training Loss Curve')
-...
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
 def plot_confusion_matrix(pred, true):
     """Plot confusion matrix"""
-    ...
+    cm = confusion_matrix(true, pred)
+    plt.figure(figsize=(4, 3))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=['0', '1'], yticklabels=['0', '1'])
     plt.xlabel('Predicted Label')
     plt.ylabel('True Label')
     plt.title('Confusion Matrix')
-...
-    # Visualization
-```
+    plt.tight_layout()
+    plt.show()
 
+# 7. Execute training and testing
+if __name__ == "__main__":
+    print("Training started...")
+    loss_list = train_model(num_epochs=20)
+    print("\nTesting started...")
+    pred, true = test_model()
+    # Visualization
+    plot_loss_curve(loss_list)
+    plot_confusion_matrix(pred, true)
+```
 ## Training Results
 
 Training started...
