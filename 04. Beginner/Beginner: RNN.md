@@ -1,5 +1,5 @@
-
-## Recurrent Neural Network
+## Beginner: RNN
+### Recurrent Neural Network
 
 Recurrent Neural Network (RNN)
 
@@ -15,7 +15,7 @@ Recurrent Neural Network (RNN)
 RNN: The basic recurrent neural network unit processes the input \$X\_t\$ and the hidden state \$h(t-1)\$ from the previous time step through a tanh activation function, generating the current hidden state \$h(t)\$. It is simple but prone to the vanishing gradient problem, which limits its ability to handle long sequences.
 RNNs are considered to have "memory" because they transmit information across time steps through the hidden state \$h(t)\$. The hidden state at the current time step depends not only on the current input \$x(t)\$ but also on the hidden state \$h(t-1)\$ of the previous step, thereby "remembering" parts of the previous sequence. This makes them suitable for handling sequential data, such as time series or natural language. However, the memory ability of standard RNNs is limited, and they are easily affected by the vanishing gradient problem, making it difficult to capture long-term dependencies.
 
-## 1. Basic Structure of RNN
+### 1. Basic Structure of RNN
 
 RNNs are neural networks specialized in processing sequential data by introducing hidden states to capture temporal dependencies in sequences.
 The core idea: the output at the current time depends not only on the current input but also on the previous hidden state.
@@ -57,7 +57,7 @@ $$
 
 ---
 
-## 2. Forward Propagation
+### 2. Forward Propagation
 
 RNNs iteratively compute hidden states and outputs through time steps. For a sequence \$x\_1, x\_2, \ldots, x\_T\$, the forward propagation process is:
 
@@ -70,7 +70,7 @@ RNNs iteratively compute hidden states and outputs through time steps. For a seq
 
 ---
 
-## 3. Loss Function
+### 3. Loss Function
 
 RNNs typically use a loss function to measure the gap between predicted outputs and true labels. For sequence prediction tasks, cross-entropy loss (classification) or mean squared error (regression) is commonly used. The total loss is the sum of losses over all time steps:
 
@@ -82,7 +82,7 @@ where \$L\_t\$ is the loss at time step \$t\$, \$\hat{y}\_t\$ is the predicted o
 
 ---
 
-## 4. Backpropagation Through Time (BPTT)
+### 4. Backpropagation Through Time (BPTT)
 
 RNN training unfolds along time steps through backpropagation, known as **BPTT**. The goal is to minimize the loss function \$L\$ by updating weights \$W\_{xh}, W\_{hh}, W\_{hy}\$ and biases \$b\_h, b\_y\$ via gradient descent.
 
