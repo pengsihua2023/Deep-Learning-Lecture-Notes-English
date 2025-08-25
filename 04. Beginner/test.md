@@ -265,7 +265,60 @@ Actual values: \[18.2 21.4 21.5 36.4 20.2]
 
 ```python
 # Build optimized model with reduced regularization
-...
+```
+import tensorflow as tf
+from tensorflow.keras import layers, models, regularizers
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+import numpy as np
+
+# Load Boston Housing dataset
+(X, y), (_, _) = tf.keras.datasets.boston_housing.load_data(test_split=0)
+
+# Data standardization
+scaler = StandardScaler()
+X = scaler.fit_transform(X)
+
+# Split training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Build optimized model
+model = models.Sequential([
+    layers.Dense(128, activation='relu', input_shape=(X_train.shape[1],), 
+                 kernel_regularizer=regularizers.l2(0.001)),  # Reduce L2 regularization
+    layers.Dropout(0.1),  # Reduce Dropout rate
+    layers.Dense(64, activation='relu', kernel_regularizer=regularizers.l2(0.001)),
+    layers.Dropout(0.1),
+    layers.Dense(32, activation='relu', kernel_regularizer=regularizers.l2(0.001)),
+    layers.Dense(1)
+])
+
+# Learning rate scheduling
+lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
+    initial_learning_rate=0.001,
+    decay_steps=1000,
+    decay_rate=0.9
+)
+optimizer = tf.keras.optimizers.Adam(learning_rate=lr_schedule)
+
+# Compile model
+model.compile(optimizer=optimizer, loss='mse', metrics=['mae'])
+
+# Train model
+early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=30, restore_best_weights=True)
+model.fit(X_train, y_train, epochs=500, batch_size=16, validation_split=0.2, 
+          callbacks=[early_stopping], verbose=1)
+
+# Evaluate model
+loss, mae = model.evaluate(X_test, y_test, verbose=0)
+print(f"Test Loss: {loss:.4f}, Test MAE: {mae:.4f}")
+
+# Prediction
+y_pred = model.predict(X_test[:5])
+print("Predictions for first 5 test samples:", y_pred.flatten())
+print("Actual values:", y_test[:5])
+
+
 ```
 
 ### Training Results
