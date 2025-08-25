@@ -14,7 +14,7 @@ In a GAN, the generator and discriminator are trained simultaneously through a c
 
 ## Code(Pytorch)
 
-```
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
