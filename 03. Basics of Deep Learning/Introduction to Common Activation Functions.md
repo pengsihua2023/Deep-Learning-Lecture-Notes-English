@@ -369,6 +369,30 @@ The Tanh (Hyperbolic Tangent) activation function is a non-linear function commo
 
 <img width="1158" height="653" alt="image" src="https://github.com/user-attachments/assets/81212078-62b3-4d41-b7c4-dab6459be247" />  
 
+The Tanh (Hyperbolic Tangent) activation function is a non-linear function commonly used in neural networks to introduce non-linearity. It maps input values to the range $(-1, 1)$. The Tanh function is defined as:
+
+$$
+\tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
+$$
+
+Alternatively, it can be expressed in terms of the exponential function:
+
+$$
+\tanh(x) = \frac{2}{1 + e^{-2x}} - 1
+$$
+
+Where:
+
+* $x$ is the input to the function.
+* The output ranges from $-1$ to $1$, with $\tanh(0) = 0$.
+* The function is differentiable, with a derivative of
+
+$$
+\tanh'(x) = 1 - \tanh^2(x),
+$$
+
+making it suitable for gradient-based optimization.
+
   
 
 ### Code Implementation in Python
