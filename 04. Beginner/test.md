@@ -2,7 +2,7 @@
 
 ---
 
-## Mathematical Description of Regression Problem
+## Mathematical Description of Regression
 
 ### 1. General Regression Problem
 
