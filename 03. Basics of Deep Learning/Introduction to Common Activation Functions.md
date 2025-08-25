@@ -252,6 +252,8 @@ print(output)
 - The default \( \alpha \) (e.g., 0.01) can be adjusted based on the task, but small values are typically used.
 - Leaky ReLU is computationally efficient and helps mitigate issues with vanishing gradients compared to standard ReLU.
 - In practice, frameworks like TensorFlow and PyTorch optimize these operations for GPU acceleration.
+
+---
   
 ## 4. Softmax activation function
 <img width="384" height="300" alt="image" src="https://github.com/user-attachments/assets/f290108e-edcd-4408-b99e-4a0a35be16a3" />     
@@ -367,6 +369,9 @@ print(output_batch)
 - **Use Case**: Softmax is typically used in the output layer of a neural network for multi-class classification, where the output represents class probabilities.
 - **Gradient**: Softmax is differentiable, making it suitable for backpropagation in neural networks.
 - Frameworks like TensorFlow and PyTorch optimize Softmax for GPU acceleration and handle batched inputs efficiently.  
+
+---
+
 ## 5. Tanh activation function
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/39f4bd79-59bc-437d-8e55-242656ca9ce2" />  
   
