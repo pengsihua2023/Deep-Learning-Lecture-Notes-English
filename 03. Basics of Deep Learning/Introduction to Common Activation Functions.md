@@ -1,4 +1,7 @@
 ## Basics of Deep Learning: Introduction to Common Activation Functions
+
+---
+
 ## 1. Sigmoid Activation Function
 <img width="400" height="270" alt="image" src="https://github.com/user-attachments/assets/ffd061a2-165c-486a-83d0-e93fc62d9979" />
 
@@ -68,7 +71,9 @@ print(output)  # Output: tensor([0.1192, 0.2689, 0.5000, 0.7311, 0.8808])
 Due to its limitations, other activation functions like **ReLU** (Rectified Linear Unit) or **tanh** are often preferred in hidden layers of deep neural networks, while Sigmoid remains popular in output layers for binary classification.
 
 #### **Summary**
-The Sigmoid activation function is a fundamental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to $(0, 1)$ makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.  
+The Sigmoid activation function is a fundamental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to $(0, 1)$ makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models. 
+
+---
 
 ## 2. ReLU Activation Function  
 
@@ -148,6 +153,8 @@ To address ReLU’s limitations, several variants have been developed:
 
 #### **Summary**
 The ReLU activation function is a cornerstone of modern deep learning due to its simplicity, efficiency, and ability to mitigate vanishing gradient issues. It is primarily used in hidden layers of neural networks, transforming negative inputs to zero and preserving positive inputs. While it has limitations like the dying ReLU problem, its variants (e.g., Leaky ReLU) and careful model design can address these issues, making ReLU a preferred choice for most deep learning architectures.damental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to \((0, 1)\) makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.
+
+---
 
 ## 3. Leaky ReLU activation function 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/d74f9e07-ac63-4c29-8005-7941914576bb" />  
