@@ -9,6 +9,10 @@ The Sigmoid function maps any real number to the range (0, 1), making it suitabl
 
 <img width="217" height="93" alt="image" src="https://github.com/user-attachments/assets/b7990223-86af-4e09-aeaa-734fb3e577b9" />
 
+$$
+\sigma(x) = \frac{1}{1 + e^{-x}}
+$$
+
 
 Where:
 -  x: Input value (can be a scalar, vector, or matrix).
