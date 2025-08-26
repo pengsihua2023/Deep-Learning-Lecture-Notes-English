@@ -2,7 +2,7 @@
 **Proposed by**: Google  
 
 <div align="center">  
-<img width="256" height="233" alt="image" src="https://github.com/user-attachments/assets/5b194e36-40bf-47ca-a03a-fd24faf436ed" />  
+<img width="220" height="213" alt="image" src="https://github.com/user-attachments/assets/5b194e36-40bf-47ca-a03a-fd24faf436ed" />  
   
 First author：Mingxiing Tan   
 </div>
