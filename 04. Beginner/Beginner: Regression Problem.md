@@ -36,7 +36,7 @@ $$
 \hat{f} = \arg \min_{f \in \mathcal{F}} \frac{1}{n} \sum_{i=1}^n \left( y_i - f(x_i) \right)^2
 $$
 
----
+
 
 ### 2. Linear Regression
 <div align="center">
@@ -77,7 +77,7 @@ $$
 \hat{w} = (X^\top X)^{-1} X^\top y
 $$
 
----
+
 
 ### 3. Nonlinear Regression
 <div align="center">
@@ -103,7 +103,7 @@ $$
 L(w) = \frac{1}{n} \sum_{i=1}^n \left( y_i - \sum_{j=0}^p w_j (x_i)^j \right)^2
 $$
 
----
+
 
 #### (2). Kernel Regression
 
@@ -121,7 +121,7 @@ $$
 
 By introducing the kernel function \$k(x, x') = \phi(x)^\top \phi(x')\$, we can avoid explicitly constructing \$\phi(x)\$.
 
----
+
 
 #### (3). Neural Network Regression
 
