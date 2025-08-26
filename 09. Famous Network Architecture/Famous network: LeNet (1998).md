@@ -1,6 +1,10 @@
 ## Famous network: LeNet (1998)
 ## Famous Network Architecture: LeNet (1998)
 **Proposed by**: Yann LeCun  
+<div align="center">
+<img width="270" height="270" alt="image" src="https://github.com/user-attachments/assets/79c9b12d-ec4d-4f94-b441-ce9439c70eeb" />    
+</div>
+
 **Features**: One of the earliest convolutional neural networks (CNNs), consisting of convolutional layers, pooling layers, and fully connected layers, designed for handwritten digit recognition. Simple structure, foundational to CNNs.  
 **Applications**: Simple image classification (e.g., MNIST dataset).  
 **Key Points to Master**: Understanding convolutional operations and pooling mechanisms.  
