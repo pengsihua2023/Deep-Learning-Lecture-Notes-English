@@ -12,8 +12,6 @@ The advantage of VAE lies in its ability to generate a continuous latent space, 
 ![Figure](https://github.com/user-attachments/assets/d8b5e82e-5b83-41d9-8b3c-521a3aeeb38e)
 
 
----
-
 ### Mathematical Description
 
 The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typically intractable to compute directly. Therefore, the Evidence Lower Bound (ELBO) is used as a proxy optimization objective. Assumptions:
@@ -79,10 +77,6 @@ $$
 **Optimization process:** Maximize the ELBO (equivalent to minimizing the negative ELBO) using stochastic gradient descent.
 
 ---
-
-
-
-
 
 ### Code Explanation
 The following is a minimal VAE implementation using PyTorch for the MNIST dataset (28x28 grayscale images). It uses a simple multilayer perceptron (MLP) as the encoder and decoder, with a latent dimension of 2 (for visualization purposes). The code is consolidated into a single module, including model definition, loss function, training loop, and sample generation. Running it requires installing PyTorch and torchvision (`pip install torch torchvision`).  
