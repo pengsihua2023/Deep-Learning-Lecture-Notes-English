@@ -38,7 +38,7 @@ The reset gate controls the degree of combination between the current input and 
 
 $$
 \tilde{h}_t = \tanh  
-(W_h \cdot [r_t \odot h_{t-1}, x_t] + b_h)
+\(W_h \cdot [r_t \odot h_{t-1}, x_t] + b_h)
 $$ 
 
 The candidate hidden state is obtained by adjusting the historical information with the reset gate and combining it with the current input. $\odot$ denotes element-wise multiplication, and $\tanh$ is the activation function.
