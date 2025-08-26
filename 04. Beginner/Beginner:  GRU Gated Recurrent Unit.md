@@ -39,10 +39,10 @@ The reset gate controls the degree of combination between the current input and 
 
 $$
 \tilde{h}_t = \tanh \left(
-\begin{aligned}
+\begin {aligned}
    & W_h \cdot [\, r_t \odot h_{t-1},\; x_t \,] \\
    & + b_h
-\end{aligned}
+\end {aligned}
 \right)
 $$
 
