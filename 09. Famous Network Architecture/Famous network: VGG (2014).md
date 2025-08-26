@@ -4,8 +4,8 @@
 **Applications**: Image classification, pre-trained models for object detection and segmentation.  
 **Key Points to Master**: Advantages and disadvantages of deep networks, applications of pre-trained models.  
 <div align="center">
-<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/50363707-9ec8-4de3-989f-f57b77d63465" />  
-</div>
+<img width="700" height="430" alt="image" src="https://github.com/user-attachments/assets/af706248-9b28-4017-8adf-6604784dcbac" />
+ </div>
 
 ## Code description
 
