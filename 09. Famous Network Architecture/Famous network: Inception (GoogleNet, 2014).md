@@ -5,7 +5,7 @@
 **Applications**: Image classification, feature extraction.  
 **Key Points to Master**: Multi-scale feature extraction, computational efficiency optimization.  
 <div align="center">
-<img width="700" height="160" alt="image" src="https://github.com/user-attachments/assets/7944d7cd-6b8f-4753-a453-38146ed9b160" />  
+<img width="800" height="190" alt="image" src="https://github.com/user-attachments/assets/7944d7cd-6b8f-4753-a453-38146ed9b160" />  
 </div>
 
 ## Code Description
