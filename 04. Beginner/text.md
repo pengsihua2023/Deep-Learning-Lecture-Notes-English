@@ -12,6 +12,77 @@ The advantage of VAE lies in its ability to generate a continuous latent space, 
 ![Figure](https://github.com/user-attachments/assets/d8b5e82e-5b83-41d9-8b3c-521a3aeeb38e)
 
 
+---
+
+### Mathematical Description
+
+The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typically intractable to compute directly. Therefore, the Evidence Lower Bound (ELBO) is used as a proxy optimization objective. Assumptions:
+
+* Prior distribution:
+
+  $$
+  p(z) = N(0, I) \quad \text{(standard normal distribution).}
+  $$
+
+* Approximate posterior:
+
+  $$
+  q(z|x) = N(\mu, \sigma^2 I),
+  $$
+
+  parameterized by the encoder, where $\mu$ and $\sigma$ are computed from $x$ by a neural network.
+
+* Generative model:
+
+  $$
+  p(x|z),
+  $$
+
+  parameterized by the decoder, typically assumed as
+
+  $$
+  p(x|z) = N(\text{decoder output}, I)
+  $$
+
+  or a Bernoulli distribution (for binary data).
+
+---
+
+The ELBO is mathematically expressed as:
+
+$$
+\mathcal{L}(\theta, \phi; x) = \mathbb{E}_{q_\phi(z|x)} [\log p_\theta(x|z)] - D_{KL}(q_\phi(z|x)\|p(z))
+$$
+
+Where:
+
+* $\theta$ represents the decoder parameters, and $\phi$ represents the encoder parameters.
+* The first term is the reconstruction loss: measures the accuracy of reconstructing $x$ from $z$, typically implemented as negative log-likelihood (e.g., MSE for continuous data: $\|x - \hat{x}\|^2 / 2$).
+* The second term is the KL divergence: regularizes $q(z|x)$ to be close to $p(z)$, with the formula (assuming Gaussian distribution):
+
+$$
+D_{KL}(q(z|x)\|p(z)) = -\frac{1}{2} \sum_{j=1}^J \left( 1 + \log(\sigma_j^2) - \mu_j^2 - \sigma_j^2 \right)
+$$
+
+Where $J$ is the dimension of the latent space.
+
+---
+
+To enable gradient propagation, the reparameterization trick is used:
+
+$$
+z = \mu + \sigma \odot \epsilon, \quad \epsilon \sim N(0, I).
+$$
+
+---
+
+**Optimization process:** Maximize the ELBO (equivalent to minimizing the negative ELBO) using stochastic gradient descent.
+
+---
+
+
+
+
 
 ### Code Explanation
 The following is a minimal VAE implementation using PyTorch for the MNIST dataset (28x28 grayscale images). It uses a simple multilayer perceptron (MLP) as the encoder and decoder, with a latent dimension of 2 (for visualization purposes). The code is consolidated into a single module, including model definition, loss function, training loop, and sample generation. Running it requires installing PyTorch and torchvision (`pip install torch torchvision`).  
