@@ -1,7 +1,7 @@
 ## Famous network: Vision Transformer (ViT, 2020)
 **Proposed by**: Google  
 <div align="center">
-<img width="236" height="256" alt="image" src="https://github.com/user-attachments/assets/e8b41203-25a3-4583-978d-46f29ea2f38c" />  
+<img width="220" height="236" alt="image" src="https://github.com/user-attachments/assets/e8b41203-25a3-4583-978d-46f29ea2f38c" />  
 </div>
 
 **Features**: Divides images into patches and processes them with a Transformer, replacing traditional CNNs, suitable for large datasets.  
