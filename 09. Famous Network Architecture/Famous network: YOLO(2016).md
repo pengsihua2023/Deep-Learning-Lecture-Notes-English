@@ -1,5 +1,9 @@
 ## Famous Network: YOLO (2016)
 **Proposed by**: Joseph Redmon et al. (YOLOv1)  
+<div align="center">
+<img width="300" height="2250" alt="image" src="https://github.com/user-attachments/assets/274e55c4-2768-4d82-bd9f-bf7f04b465b6" />  
+</div>
+
 **Features**: Single-stage object detection architecture, fast speed, with versions like YOLOv5/v8 optimizing accuracy and efficiency.  
 **Applications**: Real-time object detection (e.g., autonomous driving, security).  
 **Key Points to Master**: Single-stage detection, anchor box mechanism.  
