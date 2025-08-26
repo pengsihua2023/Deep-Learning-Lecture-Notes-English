@@ -8,7 +8,6 @@ The Gated Recurrent Unit (GRU) is a variant of Recurrent Neural Networks (RNNs) 
 GRU controls the flow and forgetting of information through an update gate and a reset gate, effectively capturing long-term dependencies in sequences. Compared to LSTM, GRU combines the forget gate and input gate into a single update gate, simplifying the structure while retaining strong modeling capabilities.
 
 ### GRU Working Mechanism
-<img width="801" height="874" alt="image" src="https://github.com/user-attachments/assets/59d92294-65c9-4a36-9d51-91e59337ea1d" />
  
 A GRU unit at each time step receives the current input $x_t$ and the hidden state of the previous time step $h_{t-1}$, and outputs a new hidden state $h_t$. Its core formulas are as follows:
 
