@@ -32,9 +32,7 @@ The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typicall
 
 ---
 
-The ELBO is mathematically expressed as:
-
-$\mathcal{L}(\theta, \phi; x) = \mathbb{E}_{q_\phi(z|x)} [\log p_\theta(x|z)] - D_{KL}(q_\phi(z|x)\|p(z))$
+The ELBO is mathematically expressed as: $\mathcal{L}(\theta, \phi; x) = \mathbb{E}_{q_\phi(z|x)} [\log p_\theta(x|z)] - D_{KL}(q_\phi(z|x)\|p(z))$
 
 Where:
 
