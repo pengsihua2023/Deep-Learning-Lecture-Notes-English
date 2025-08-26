@@ -7,9 +7,10 @@
 **Features**: Single-stage object detection architecture, fast speed, with versions like YOLOv5/v8 optimizing accuracy and efficiency.  
 **Applications**: Real-time object detection (e.g., autonomous driving, security).  
 **Key Points to Master**: Single-stage detection, anchor box mechanism.  
-
-<img width="850" height="251" alt="image" src="https://github.com/user-attachments/assets/0a0b8862-4b86-418e-b20a-4f6269e012d7" />  
-<img width="2501" height="1405" alt="image" src="https://github.com/user-attachments/assets/ca70fc85-8658-4286-9002-56b6eb3864ba" />  
+<div align="center">
+<img width="700" height="222" alt="image" src="https://github.com/user-attachments/assets/0a0b8862-4b86-418e-b20a-4f6269e012d7" />  
+<img width="700" height="422" alt="image" src="https://github.com/user-attachments/assets/ca70fc85-8658-4286-9002-56b6eb3864ba" />  
+</div>
 
 ## Code description 
 
