@@ -4,9 +4,9 @@
 - Core Concept:An Autoencoder consists of an encoder (compresses data) and a decoder (reconstructs data), with the goal of making the output as close as possible to the input.Analogy: Like a "data compressor," it compresses a large file and then decompresses it, striving to preserve the original.  
 - Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).  
 
- <div align="center">
+<div align="center">
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/f6e08480-a20a-488d-af52-be84c7c6a392" />  
- </div>
+</div>
 
 $$
 \text{Figure 1 Autoencoder architecture diagram}
@@ -245,12 +245,13 @@ Train Epoch: 10 [38400/60000 (64%)]     Loss: 70.579895
 Train Epoch: 10 [51200/60000 (85%)]     Loss: 69.532722    
 ====> Epoch: 10 Average training loss: 68.6832    
 ====> Test set loss: 68.4474    
- <div align ="center> 
+  
+ <div align="center">
 <img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/2eac166e-59fe-4528-bb38-4eb4c7cf8c87" />     
  Figure 2 Loss curve
  </div>
 
-<div align ="center>
+<div align="center">
 <img width="274" height="108" alt="image" src="https://github.com/user-attachments/assets/d5769c88-f37c-4d0a-94b9-fb627129abfd" />  
 </div>
 
