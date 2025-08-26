@@ -5,7 +5,7 @@
 **Applications**: Simple image classification (e.g., MNIST dataset).  
 **Key Points to Master**: Understanding convolutional operations and pooling mechanisms.  
 
-<img width="1416" height="535" alt="image" src="https://github.com/user-attachments/assets/f2ccce70-ad11-40d2-bf71-3651aa4fd10b" />  
+<img width="700" height="260" alt="image" src="https://github.com/user-attachments/assets/f2ccce70-ad11-40d2-bf71-3651aa4fd10b" />  
 
 ## Code description
 
