@@ -36,16 +36,7 @@ The reset gate controls the degree of combination between the current input and 
 
 ### 3. Candidate Hidden State ($\tilde{h}_t$):
 
-
-$$
-\tilde{h}_t = \tanh \left (
-\begin {aligned}
-   & W_h \cdot [\, r_t \odot h_{t-1},\; x_t \,] \\
-   & + b_h
-\end {aligned}
-\right)
-$$
-
+<img width="555" height="71" alt="image" src="https://github.com/user-attachments/assets/5debf918-f924-4f59-be30-f3094a401580" />  
 
 The candidate hidden state is obtained by adjusting the historical information with the reset gate and combining it with the current input. $\odot$ denotes element-wise multiplication, and $\tanh$ is the activation function.
 
