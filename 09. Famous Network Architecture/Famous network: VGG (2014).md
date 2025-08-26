@@ -3,7 +3,9 @@
 **Features**: Uses multiple stacked 3x3 convolutional kernels to build deep networks (16 or 19 layers), with a large number of parameters but a regular structure.  
 **Applications**: Image classification, pre-trained models for object detection and segmentation.  
 **Key Points to Master**: Advantages and disadvantages of deep networks, applications of pre-trained models.  
-<img width="1043" height="746" alt="image" src="https://github.com/user-attachments/assets/50363707-9ec8-4de3-989f-f57b77d63465" />  
+<div align="center">
+<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/50363707-9ec8-4de3-989f-f57b77d63465" />  
+</div>
 
 ## Code description
 
