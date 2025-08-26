@@ -30,7 +30,7 @@ The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typicall
 
   or a Bernoulli distribution (for binary data).
 
----
+
 
 The ELBO is mathematically expressed as: 
 
@@ -50,7 +50,7 @@ $$
 
 Where $J$ is the dimension of the latent space.
 
----
+
 
 To enable gradient propagation, the reparameterization trick is used:
 
@@ -58,7 +58,7 @@ $$
 z = \mu + \sigma \odot \epsilon, \quad \epsilon \sim N(0, I).
 $$
 
----
+
 
 **Optimization process:** Maximize the ELBO (equivalent to minimizing the negative ELBO) using stochastic gradient descent.
 
