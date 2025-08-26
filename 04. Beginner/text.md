@@ -15,9 +15,7 @@ The advantage of VAE lies in its ability to generate a continuous latent space, 
 
 The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typically intractable to compute directly. Therefore, the Evidence Lower Bound (ELBO) is used as a proxy optimization objective. Assumptions:
 
-* Prior distribution:
-
-  $p(z) = N(0, I) \quad \text{(standard normal distribution).}$
+* Prior distribution: $p(z) = N(0, I) \quad \text{(standard normal distribution).}$ 
 
 * Approximate posterior: $q(z|x) = N(\mu, \sigma^2 I),$  parameterized by the encoder, where $\mu$ and $\sigma$ are computed from $x$ by a neural network.
 
