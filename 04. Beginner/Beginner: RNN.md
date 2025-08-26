@@ -13,7 +13,7 @@
 RNN: The basic recurrent neural network unit processes the input \$X\_t\$ and the hidden state \$h(t-1)\$ from the previous time step through a tanh activation function, generating the current hidden state \$h(t)\$. It is simple but prone to the vanishing gradient problem, which limits its ability to handle long sequences.
 RNNs are considered to have "memory" because they transmit information across time steps through the hidden state \$h(t)\$. The hidden state at the current time step depends not only on the current input \$x(t)\$ but also on the hidden state \$h(t-1)\$ of the previous step, thereby "remembering" parts of the previous sequence. This makes them suitable for handling sequential data, such as time series or natural language. However, the memory ability of standard RNNs is limited, and they are easily affected by the vanishing gradient problem, making it difficult to capture long-term dependencies.
 
----
+
 
 ### 1. Basic Structure of RNN
 
@@ -55,7 +55,7 @@ $$
 o_t = \text{softmax}(y_t)
 $$
 
----
+
 
 ### 2. Forward Propagation
 
@@ -68,7 +68,7 @@ RNNs iteratively compute hidden states and outputs through time steps. For a seq
    * Compute \$y\_t = W\_{hy}h\_t + b\_y\$
 3. Depending on the task, either collect all \$y\_t\$ or use only the final output \$y\_T\$.
 
----
+
 
 ### 3. Loss Function
 
@@ -80,7 +80,7 @@ $$
 
 where \$L\_t\$ is the loss at time step \$t\$, \$\hat{y}\_t\$ is the predicted output, and \$y\_t\$ is the true label.
 
----
+
 
 ### 4. Backpropagation Through Time (BPTT)
 
@@ -104,7 +104,7 @@ $$
 
 Gradients for \$W\_{hh}, W\_{hy}, b\_h, b\_y\$ are calculated similarly.
 
----
+
 
 ### 5. Vanishing / Exploding Gradient Problem
 
