@@ -1,7 +1,7 @@
 ## Famous network: ResNet(2015): Residual Network
 - **Proposed by**: Kaiming He (Microsoft Research)
 <div align="center">
-  <img width="225" height="225" alt="image" src="https://github.com/user-attachments/assets/005ed077-913c-4432-9b16-6e2678626fa7" />
+  <img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/005ed077-913c-4432-9b16-6e2678626fa7" />
 </div>
 
 - **Features**: Introduces residual connections to address the vanishing gradient problem in deep networks, enabling the construction of networks with hundreds of layers.  
