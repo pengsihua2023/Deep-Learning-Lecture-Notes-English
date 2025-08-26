@@ -1,7 +1,8 @@
 ## Variational Autoencoder (VAE)
 The Variational Autoencoder (VAE) is a generative deep learning model proposed by Kingma and Welling in 2013. It is a variant of the Autoencoder but introduces the concept of Variational Inference, enabling it to generate new data rather than only compressing and reconstructing inputs. The main purpose of VAE is to learn a latent representation of the data and generate samples similar to the training data by sampling from the latent space.  
-
+<div align="center">
 ![Figure](https://github.com/user-attachments/assets/d8b5e82e-5b83-41d9-8b3c-521a3aeeb38e)
+</div>
 
 ### Core components of VAE include:
 - **Encoder**: Maps input data $x$ to the distribution parameters of the latent space (typically the mean $\mu$ and variance $\sigma^2$ of a Gaussian distribution).
