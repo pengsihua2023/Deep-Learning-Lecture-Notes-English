@@ -8,8 +8,10 @@ Diffusion models are the latest technology for generating high-quality images, p
 They have surpassed GANs in fields such as image generation and text-to-image, becoming the new benchmark for generative models.  
 - **Core Concept**:  
 Diffusion models learn data distributions through a "noise-adding and denoising" process, first corrupting data into random noise and then progressively reconstructing it.  
-- **Applications**: Image generation (art, game design), video generation, scientific simulations.  
-<img width="2060" height="920" alt="image" src="https://github.com/user-attachments/assets/427d35b9-10d1-4bca-b74c-b5e166d7613d" />
+- **Applications**: Image generation (art, game design), video generation, scientific simulations.
+<div align="center">
+<img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/427d35b9-10d1-4bca-b74c-b5e166d7613d" />
+</div>
 
 ## Code description
 This code implements a simple **Denoising Diffusion Probabilistic Model (DDPM)** using the PyTorch library, with the following main functionalities:  
