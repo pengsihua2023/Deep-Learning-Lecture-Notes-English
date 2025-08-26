@@ -36,12 +36,6 @@ The reset gate controls the degree of combination between the current input and 
 
 ### 3. Candidate Hidden State ($\tilde{h}_t$):
 
-$$
-h_t = 
-    (1 - z_t) \odot h_{t-1} 
-    \;+\; 
-    z_t \odot \tilde{h}_t
-$$
 
 $$
 \tilde{h}_t = \tanh \Big(
