@@ -23,7 +23,7 @@ LSTM introduces a **gating mechanism** that regulates the flow of information:
 
 Through these gates, LSTMs effectively retain useful information and mitigate gradient vanishing.
 
----
+
 
 ## 3. LSTM Cell Structure
 
@@ -40,7 +40,7 @@ The structure consists of:
 * Output Gate
 * Cell State
 
----
+
 
 ## 4. Mathematical Formulation
 
@@ -85,7 +85,7 @@ $$
 
 *Controls the output of the hidden state.*
 
----
+
 
 ## 5. Parameters
 
