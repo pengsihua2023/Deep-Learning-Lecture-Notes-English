@@ -1,5 +1,7 @@
 ## Variational Autoencoder (VAE)
-The Variational Autoencoder (VAE) is a generative deep learning model proposed by Kingma and Welling in 2013. It is a variant of the Autoencoder but introduces the concept of Variational Inference, enabling it to generate new data rather than only compressing and reconstructing inputs. The main purpose of VAE is to learn a latent representation of the data and generate samples similar to the training data by sampling from the latent space.
+The Variational Autoencoder (VAE) is a generative deep learning model proposed by Kingma and Welling in 2013. It is a variant of the Autoencoder but introduces the concept of Variational Inference, enabling it to generate new data rather than only compressing and reconstructing inputs. The main purpose of VAE is to learn a latent representation of the data and generate samples similar to the training data by sampling from the latent space.  
+
+![Figure](https://github.com/user-attachments/assets/d8b5e82e-5b83-41d9-8b3c-521a3aeeb38e)
 
 ### Core components of VAE include:
 - **Encoder**: Maps input data $x$ to the distribution parameters of the latent space (typically the mean $\mu$ and variance $\sigma^2$ of a Gaussian distribution).
@@ -8,9 +10,6 @@ The Variational Autoencoder (VAE) is a generative deep learning model proposed b
 - **Loss Function**: Combines reconstruction loss (e.g., MSE) and KL divergence (Kullback-Leibler divergence) to regularize the latent distribution, making it close to the prior distribution (typically a standard normal distribution).
 
 The advantage of VAE lies in its ability to generate a continuous latent space, supporting interpolation and the creation of new samples. It is commonly used in image generation, data augmentation, and other fields. Compared to GANs (Generative Adversarial Networks), VAE training is more stable, but the generated samples may be blurrier.
-
-![Figure](https://github.com/user-attachments/assets/d8b5e82e-5b83-41d9-8b3c-521a3aeeb38e)
-
 
 ### Mathematical Description
 
