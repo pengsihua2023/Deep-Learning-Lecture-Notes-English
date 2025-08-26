@@ -254,5 +254,6 @@ $$
 
 <div align"center>
 <img width="274" height="108" alt="image" src="https://github.com/user-attachments/assets/d5769c88-f37c-4d0a-94b9-fb627129abfd" />  
+  
 Figure 3 Comparison of input and output images
 </div>
