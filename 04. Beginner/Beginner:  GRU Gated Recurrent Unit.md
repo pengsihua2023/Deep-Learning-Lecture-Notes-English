@@ -44,6 +44,18 @@ h_t =
 $$
 
 $$
+\tilde{h}_t = \tanh \Big(
+      W_h \cdot 
+      \big[
+          r_t \odot h_{t-1},\;
+          x_t
+      \big]
+      + b_h
+\Big)
+$$
+
+
+$$
 \tilde{h}_t = \tanh  
 \(W_h \cdot [r_t \odot h_{t-1}, x_t] + b_h)
 $$ 
