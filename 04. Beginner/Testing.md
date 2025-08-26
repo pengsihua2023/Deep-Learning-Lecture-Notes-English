@@ -1,7 +1,3 @@
-好的，以下是翻译后的版本（保持原有格式，中文部分已翻译为英文）：
-
----
-
 ## CNN
 
 Convolutional Neural Network (CNN)
