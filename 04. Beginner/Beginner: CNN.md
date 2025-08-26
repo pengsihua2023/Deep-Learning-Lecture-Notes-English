@@ -1,80 +1,113 @@
-## Convolutional Neural Network (CNN)
+## CNN
 
-**Importance**: CNNs are the cornerstone of computer vision, widely used in image recognition, autonomous driving, and more, ideal for demonstrating the practical power of deep learning.
+Convolutional Neural Network (CNN)
 
-**Core Concepts**:  
-- CNNs use "convolution" operations, like a "magnifying glass" scanning images to extract features (e.g., edges, shapes).  
-- Pooling layers reduce data size, retain key information, and decrease computational load.  
-- Fully connected layers are used at the end for classification or prediction.  
+* Importance: CNN is the cornerstone of computer vision, widely used in image recognition, autonomous driving, etc. It is suitable for demonstrating the practical power of deep learning.
+* Core concepts:
+  CNN uses the “convolution” operation, like a “magnifying glass” scanning the image to extract features (such as edges, shapes).
+  The pooling layer reduces the size of data, retains important information, and decreases computation.
+  Finally, the fully connected layer is used for classification or prediction.
+* Applications: Image classification (cat vs. dog recognition), face recognition, medical image analysis.
 
-**Applications**: Image classification (e.g., cat vs. dog), facial recognition, medical image analysis.
+  <img width="708" height="353" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />
 
+---
 
-<img width="700" height="350" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />  
+## Mathematical Description of Convolutional Neural Network (CNN)
 
-## Mathematical description of a Convolutional Neural Network (CNN)
+The core of CNN consists of the following basic operations: **Convolutional Layer**, **Activation Function**, **Pooling Layer**, and finally the **Fully Connected Layer**. We describe them one by one.
 
+---
 
-### 1. Convolution Layer
+### 1. Convolutional Layer
 
-Given an input tensor $X \in \mathbb{R}^{H \times W \times C_{in}}$ (height, width, input channels), a convolutional kernel
-$K \in \mathbb{R}^{k_h \times k_w \times C_{in} \times C_{out}}$, and bias $b \in \mathbb{R}^{C_{out}}$, the convolution operation is:
+Let the input feature map be
 
 $$
-Y_{i,j,c} = \sum_{m=0}^{k_h-1} \sum_{n=0}^{k_w-1} \sum_{d=0}^{C_{in}-1} 
-X_{i+m, j+n \, d} \. K_{m,n,d,c}  +  b_c
+\mathbf{X} \in \mathbb{R}^{H \times W \times C_{in}}
 $$
 
-where
+where \$H\$ is the height, \$W\$ is the width, and \$C\_{in}\$ is the number of input channels.
 
-* $(i,j)$ are spatial positions in the output,
-* $c$ is the output channel index,
-* $k_h, k_w$ are kernel height and width.
+The convolution kernel (filter) is
 
+$$
+\mathbf{K} \in \mathbb{R}^{k_h \times k_w \times C_{in} \times C_{out}}
+$$
 
+where \$k\_h, k\_w\$ are the kernel size, and \$C\_{out}\$ is the number of output channels.
+
+The convolution operation is defined as:
+
+$$
+Y_{i,j,c_{out}} = \sum_{m=0}^{k_h-1} \sum_{n=0}^{k_w-1} \sum_{c_{in}=0}^{C_{in}-1} 
+X_{i+m, j+n, c_{in}} \cdot K_{m,n,c_{in},c_{out}} + b_{c_{out}}
+$$
+
+where \$b\_{c\_{out}}\$ is the bias term. The output feature map is
+
+$$
+\mathbf{Y} \in \mathbb{R}^{H' \times W' \times C_{out}}
+$$
+
+The specific dimensions depend on stride and padding.
+
+---
 
 ### 2. Activation Function
 
-After convolution, a nonlinear activation (e.g., ReLU) is applied:
+A commonly used activation function is ReLU (Rectified Linear Unit):
 
 $$
-Z_{i,j,c} = \sigma \big( Y_{i,j,c} \big), \quad 
-\sigma(x) = \max(0, x)
+f(z) = \max(0, z)
 $$
 
+Applied to the convolution output:
 
+$$
+Z_{i,j,c} = f(Y_{i,j,c})
+$$
+
+---
 
 ### 3. Pooling Layer
 
-For max-pooling with window size $p \times p$:
+The pooling operation is used to reduce the size of the feature map.
+For example, in Max Pooling:
 
 $$
-P_{i,j,c} = \max_{\substack{0 \leq m < p \\ 0 \leq n < p}}
-Z_{\,i \cdot p + m,\, j \cdot p + n,\, c}
+P_{i,j,c} = \max_{0 \leq m < p_h,  0 \leq n < p_w} Z_{i \cdot s + m,  j \cdot s + n,  c}
 $$
 
+where \$p\_h, p\_w\$ are the pooling window sizes, and \$s\$ is the stride.
 
+---
 
 ### 4. Fully Connected Layer
 
-Flatten pooled features into a vector $\mathbf{p} \in \mathbb{R}^N$.
-With weight matrix $W \in \mathbb{R}^{M \times N}$ and bias $\mathbf{b} \in \mathbb{R}^M$:
+After several layers of convolution and pooling, we obtain a flattened feature vector:
 
 $$
-\mathbf{f} = W \mathbf{p} + \mathbf{b}
+\mathbf{x} \in \mathbb{R}^d
 $$
 
+The fully connected layer output is:
 
-
-### 5. Output (Softmax for Classification)
-
-For $M$ classes, the probability of class $j$ is:
-
- 
-  
 $$
-\hat{y_j} = \frac{\exp(f_j)}{\sum_{k=1}^{M} \exp(f_k)}
+\mathbf{y} = W \mathbf{x} + \mathbf{b}
 $$
+
+where \$W \in \mathbb{R}^{k \times d}\$, \$\mathbf{b} \in \mathbb{R}^k\$.
+
+---
+
+### 5. Classification Layer (Softmax)
+
+In classification tasks, the final output is a probability distribution through Softmax:
+
+![Softmax formula](https://latex.codecogs.com/png.latex?\hat{y}_i%20=%20\frac{\exp\(y_i\)}{\sum_{j=1}^{k}%20\exp\(y_j\)})
+
+---
 
 
 
