@@ -18,9 +18,7 @@ The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typicall
 
 * Prior distribution:
 
-  $$
-  p(z) = N(0, I) \quad \text{(standard normal distribution).}
-  $$
+  $p(z) = N(0, I) \quad \text{(standard normal distribution).}$
 
 * Approximate posterior:
 
