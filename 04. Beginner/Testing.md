@@ -113,4 +113,3 @@ In classification tasks, the final output is a probability distribution through 
 
 ---
 
-要不要我帮你把 **中英双语对照版** 整理出来？这样可以方便对照学习。
