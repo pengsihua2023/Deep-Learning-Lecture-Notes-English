@@ -16,4 +16,4 @@
   * [Conversion Between Matrices and Tensors](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/02.%20Basic%20Mathematics/Conversion%20Between%20Matrices%20and%20Tensors.md)
   * [Basic Knowledge of Probability Distribution](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/02.%20Basic%20Mathematics/Basic%20Knowledge%20of%20Probability%20Distribution.md)
   * [Basic Knowledge of Divergence](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/02.%20Basic%20Mathematics/Basic%20Knowledge%20of%20Divergence.md)
-  * [Linear transformation]()
+  * [Linear transformation](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/02.%20Basic%20Mathematics/Basic%20Knowledge%20of%20Linear%20transformation.md)
