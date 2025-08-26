@@ -24,17 +24,9 @@ The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typicall
 
   parameterized by the encoder, where $\mu$ and $\sigma$ are computed from $x$ by a neural network.
 
-* Generative model:
+* Generative model: $p(x|z), $
 
-  $$
-  p(x|z),
-  $$
-
-  parameterized by the decoder, typically assumed as
-
-  $$
-  p(x|z) = N(\text{decoder output}, I)
-  $$
+  parameterized by the decoder, typically assumed as $p(x|z) = N(\text{decoder output}, I)$ 
 
   or a Bernoulli distribution (for binary data).
 
