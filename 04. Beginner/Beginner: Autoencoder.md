@@ -246,15 +246,9 @@ Train Epoch: 10 [51200/60000 (85%)]     Loss: 69.532722
 ====> Epoch: 10 Average training loss: 68.6832    
 ====> Test set loss: 68.4474    
   
- <div align="center">
-<img width="960" height="490" alt="image" src="https://github.com/user-attachments/assets/2eac166e-59fe-4528-bb38-4eb4c7cf8c87" />     
- Figure 2 Loss curve
- </div>
-
 <div align="center">
+<img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/2eac166e-59fe-4528-bb38-4eb4c7cf8c87" />     
+ Figure 2 Loss curve
 <img width="274" height="108" alt="image" src="https://github.com/user-attachments/assets/d5769c88-f37c-4d0a-94b9-fb627129abfd" />  
-</div>
-
-<div align ="center>
 Figure 3 Comparison of input and output images
 </div>
