@@ -1,5 +1,9 @@
 ## Famous network: VGG (2014)
 **Proposed by**: Oxford University VGG Team  
+<div align="center">
+<img width="200" height="260" alt="image" src="https://github.com/user-attachments/assets/626157bc-3d32-4b67-b475-0e9c186dd986" />  
+</div>
+
 **Features**: Uses multiple stacked 3x3 convolutional kernels to build deep networks (16 or 19 layers), with a large number of parameters but a regular structure.  
 **Applications**: Image classification, pre-trained models for object detection and segmentation.  
 **Key Points to Master**: Advantages and disadvantages of deep networks, applications of pre-trained models.  
