@@ -16,9 +16,9 @@ A GRU unit at each time step receives the current input $x_t$ and the hidden sta
 
 ### 1. Update Gate ($z_t$):
 
-$$
+$
 z_t = \sigma(W_z \cdot [h_{t-1}, x_t] + b_z)
-$$
+$
 
 The update gate determines how much of the hidden state information from the previous time step is retained, and how much new information is accepted. $\sigma$ is the sigmoid activation function, with outputs in the range $[0, 1]$.
 
@@ -26,9 +26,9 @@ The update gate determines how much of the hidden state information from the pre
 
 ### 2. Reset Gate ($r_t$):
 
-$$
+$
 r_t = \sigma(W_r \cdot [h_{t-1}, x_t] + b_r)
-$$
+$
 
 The reset gate controls the degree of combination between the current input and the previous hidden state, and is used to decide how much past information to forget.
 
