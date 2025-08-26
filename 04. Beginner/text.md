@@ -19,15 +19,9 @@ The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typicall
 
   $p(z) = N(0, I) \quad \text{(standard normal distribution).}$
 
-* Approximate posterior: $q(z|x) = N(\mu, \sigma^2 I),$ 
+* Approximate posterior: $q(z|x) = N(\mu, \sigma^2 I),$  parameterized by the encoder, where $\mu$ and $\sigma$ are computed from $x$ by a neural network.
 
-  parameterized by the encoder, where $\mu$ and $\sigma$ are computed from $x$ by a neural network.
-
-* Generative model: $p(x|z), $
-
-  parameterized by the decoder, typically assumed as $p(x|z) = N(\text{decoder output}, I)$ 
-
-  or a Bernoulli distribution (for binary data).
+* Generative model: $p(x|z), $ parameterized by the decoder, typically assumed as $p(x|z) = N(\text{decoder output}, I)$  or a Bernoulli distribution (for binary data).
 
 
 
