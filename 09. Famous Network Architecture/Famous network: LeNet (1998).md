@@ -4,8 +4,9 @@
 **Features**: One of the earliest convolutional neural networks (CNNs), consisting of convolutional layers, pooling layers, and fully connected layers, designed for handwritten digit recognition. Simple structure, foundational to CNNs.  
 **Applications**: Simple image classification (e.g., MNIST dataset).  
 **Key Points to Master**: Understanding convolutional operations and pooling mechanisms.  
-
+<div align="center">
 <img width="700" height="260" alt="image" src="https://github.com/user-attachments/assets/f2ccce70-ad11-40d2-bf71-3651aa4fd10b" />  
+</div>
 
 ## Code description
 
