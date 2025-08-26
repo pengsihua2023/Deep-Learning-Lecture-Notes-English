@@ -9,7 +9,50 @@ GRU controls the flow and forgetting of information through an update gate and a
 
 ### GRU Working Mechanism
 <img width="801" height="874" alt="image" src="https://github.com/user-attachments/assets/59d92294-65c9-4a36-9d51-91e59337ea1d" />
-  
+ 
+A GRU unit at each time step receives the current input $x_t$ and the hidden state of the previous time step $h_{t-1}$, and outputs a new hidden state $h_t$. Its core formulas are as follows:
+
+---
+
+### 1. Update Gate ($z_t$):
+
+$$
+z_t = \sigma(W_z \cdot [h_{t-1}, x_t] + b_z)
+$$
+
+The update gate determines how much of the hidden state information from the previous time step is retained, and how much new information is accepted. $\sigma$ is the sigmoid activation function, with outputs in the range $[0, 1]$.
+
+---
+
+### 2. Reset Gate ($r_t$):
+
+$$
+r_t = \sigma(W_r \cdot [h_{t-1}, x_t] + b_r)
+$$
+
+The reset gate controls the degree of combination between the current input and the previous hidden state, and is used to decide how much past information to forget.
+
+---
+
+### 3. Candidate Hidden State ($\tilde{h}_t$):
+
+$$
+\tilde{h}_t = \tanh(W_h \cdot [r_t \odot h_{t-1}, x_t] + b_h)
+$$
+
+The candidate hidden state is obtained by adjusting the historical information with the reset gate and combining it with the current input. $\odot$ denotes element-wise multiplication, and $\tanh$ is the activation function.
+
+---
+
+### 4. Final Hidden State ($h_t$):
+
+$$
+h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t
+$$
+
+The final hidden state is obtained by weighting and combining the previous hidden state and the candidate hidden state through the update gate.
+
+
 ### GRU Characteristics
 - **Simplified Structure**: Compared to LSTM, GRU has only two gates (update gate and reset gate), fewer parameters, and higher computational efficiency.
 - **Long-Term Dependencies**: Through its gating mechanism, GRU effectively captures dependencies in long sequences, mitigating the vanishing gradient problem.
