@@ -82,9 +82,10 @@ $$
 ### 3. Nonlinear Regression
 <div align="center">
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/27696c25-d662-48ce-8bf2-0d9538119e8d" />     
-</div>
+
 
 Figure 2 Nonlinear Regression
+</div>
 
 When the relationship between features and target is not linear, nonlinear functions \$f(\cdot)\$ can be used.
 
