@@ -18,5 +18,3 @@ The following is a minimal VAE implementation using PyTorch for the MNIST datase
 - **Sample Generation**: After training, uncomment the `save_image` section to save generated MNIST image samples.  
 
 
-要不要我帮你把这份 VAE 英文版和之前的 GAN 英文版 **合并成一个完整的 GitHub 教程笔记**（统一格式，带公式和代码）？
-
