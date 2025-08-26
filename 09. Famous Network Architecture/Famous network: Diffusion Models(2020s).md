@@ -2,13 +2,13 @@
 ## Diffusion Models
 - **Proposed by**: Multiple researchers (e.g., DDPM)
 <div align="center">
-<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/06fe6aa7-bb8f-45de-9239-c490de348e6e" />  
+<img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/06fe6aa7-bb8f-45de-9239-c490de348e6e" />  
   
 The earliest proponent of the theory：Jascha Sohl-Dickstein  
 </div>
 
 <div align="center">
-<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/ee589462-59e3-432c-b20d-87b11a0ad85d" />  
+<img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/ee589462-59e3-432c-b20d-87b11a0ad85d" />  
    
 DDPM First author：Jonathan Ho  
 </div> 
