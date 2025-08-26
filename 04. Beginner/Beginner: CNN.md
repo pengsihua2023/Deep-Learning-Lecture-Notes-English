@@ -17,7 +17,7 @@ Convolutional Neural Network (CNN)
 
 The core of CNN consists of the following basic operations: **Convolutional Layer**, **Activation Function**, **Pooling Layer**, and finally the **Fully Connected Layer**. We describe them one by one.
 
----
+
 
 ### 1. Convolutional Layer
 
@@ -52,7 +52,7 @@ $$
 
 The specific dimensions depend on stride and padding.
 
----
+
 
 ### 2. Activation Function
 
@@ -68,7 +68,7 @@ $$
 Z_{i,j,c} = f(Y_{i,j,c})
 $$
 
----
+
 
 ### 3. Pooling Layer
 
@@ -81,7 +81,7 @@ $$
 
 where \$p\_h, p\_w\$ are the pooling window sizes, and \$s\$ is the stride.
 
----
+
 
 ### 4. Fully Connected Layer
 
@@ -99,7 +99,7 @@ $$
 
 where \$W \in \mathbb{R}^{k \times d}\$, \$\mathbf{b} \in \mathbb{R}^k\$.
 
----
+
 
 ### 5. Classification Layer (Softmax)
 
