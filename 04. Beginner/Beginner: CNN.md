@@ -22,7 +22,7 @@ $K \in \mathbb{R}^{k_h \times k_w \times C_{in} \times C_{out}}$, and bias $b \i
 
 $$
 Y_{i,j,c} = \sum_{m=0}^{k_h-1} \sum_{n=0}^{k_w-1} \sum_{d=0}^{C_{in}-1} 
-X_{i+m, j+n \, d} \, K_{m,n,d,c}  +  b_c
+X_{i+m, j+n \, d} \. K_{m,n,d,c}  +  b_c
 $$
 
 where
