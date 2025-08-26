@@ -10,7 +10,7 @@ ResNet introduces "residual connections" (skip connections), enabling the networ
 - **Applications**: Image classification, object detection (e.g., object recognition in autonomous driving), facial recognition.
 <div align="center">
 <img width="400" height="260" alt="image" src="https://github.com/user-attachments/assets/4c111489-898f-4412-9e70-336ec2320f03" />  
-<img width="700" height="500" alt="image" src="https://github.com/user-attachments/assets/ee800edc-db6e-4cde-84d9-0d396ca69e58" />  
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/ee800edc-db6e-4cde-84d9-0d396ca69e58" />  
 </div>
 
 ## Code
