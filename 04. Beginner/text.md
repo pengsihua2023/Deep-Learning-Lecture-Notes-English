@@ -10,6 +10,8 @@ The Variational Autoencoder (VAE) is a generative deep learning model proposed b
 The advantage of VAE lies in its ability to generate a continuous latent space, supporting interpolation and the creation of new samples. It is commonly used in image generation, data augmentation, and other fields. Compared to GANs (Generative Adversarial Networks), VAE training is more stable, but the generated samples may be blurrier.
 
 
+
+
 ### Code Explanation
 The following is a minimal VAE implementation using PyTorch for the MNIST dataset (28x28 grayscale images). It uses a simple multilayer perceptron (MLP) as the encoder and decoder, with a latent dimension of 2 (for visualization purposes). The code is consolidated into a single module, including model definition, loss function, training loop, and sample generation. Running it requires installing PyTorch and torchvision (`pip install torch torchvision`).  
 
@@ -17,7 +19,7 @@ The following is a minimal VAE implementation using PyTorch for the MNIST datase
 - **Extensions**: This code is a simplified version for understanding VAE principles. In practice, convolutional neural networks (CNNs) can replace MLPs, the latent dimension can be increased, or hyperparameters can be tuned for better performance.  
 - **Sample Generation**: After training, uncomment the `save_image` section to save generated MNIST image samples.
 
-### code
+### Code
 ```python
 import torch
 import torch.nn as nn
