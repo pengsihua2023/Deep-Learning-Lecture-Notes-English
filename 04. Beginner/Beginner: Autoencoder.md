@@ -4,9 +4,9 @@
 - Core Concept:An Autoencoder consists of an encoder (compresses data) and a decoder (reconstructs data), with the goal of making the output as close as possible to the input.Analogy: Like a "data compressor," it compresses a large file and then decompresses it, striving to preserve the original.  
 - Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).  
 
-  
-
+ <div align="center">
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/f6e08480-a20a-488d-af52-be84c7c6a392" />  
+ </div>
 
 $$
 \text{Figure 1 Autoencoder architecture diagram}
