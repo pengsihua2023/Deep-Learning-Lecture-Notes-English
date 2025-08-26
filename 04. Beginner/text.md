@@ -9,6 +9,7 @@ The Variational Autoencoder (VAE) is a generative deep learning model proposed b
 
 The advantage of VAE lies in its ability to generate a continuous latent space, supporting interpolation and the creation of new samples. It is commonly used in image generation, data augmentation, and other fields. Compared to GANs (Generative Adversarial Networks), VAE training is more stable, but the generated samples may be blurrier.
 
+![Figure](https://github.com/user-attachments/assets/d8b5e82e-5b83-41d9-8b3c-521a3aeeb38e)
 
 
 
