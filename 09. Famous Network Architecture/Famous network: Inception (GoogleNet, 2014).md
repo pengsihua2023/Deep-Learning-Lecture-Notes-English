@@ -4,7 +4,9 @@
 **Features**: Inception module processes multi-scale convolutions in parallel, optimizes computational efficiency, and introduces 1x1 convolutions for dimensionality reduction.  
 **Applications**: Image classification, feature extraction.  
 **Key Points to Master**: Multi-scale feature extraction, computational efficiency optimization.  
-<img width="1703" height="490" alt="image" src="https://github.com/user-attachments/assets/7944d7cd-6b8f-4753-a453-38146ed9b160" />  
+<div align="center">
+<img width="700" height="160" alt="image" src="https://github.com/user-attachments/assets/7944d7cd-6b8f-4753-a453-38146ed9b160" />  
+</div>
 
 ## Code Description
 This code implements a **simplified Inception model** (based on the GoogLeNet Inception architecture) for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
