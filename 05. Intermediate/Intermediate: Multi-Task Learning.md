@@ -1,4 +1,8 @@
 ## Intermediate: Multi-Task Learning （MTL）
+<div align="center">
+<img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/4dd18183-6e9e-4418-ab2b-b0f9e8edb4bb" />
+</div>
+
 
 - **Importance**:  
   Multi-task learning trains ESM-2 simultaneously on multiple protein tasks (e.g., function classification, structure prediction), improving model generalization and efficiency.  
@@ -6,7 +10,7 @@
 - **Core Concept**:  
   The model shares most parameters, with task-specific output heads, jointly optimizing multiple objectives.
      
-  <img width="685" height="494" alt="image" src="https://github.com/user-attachments/assets/4dd18183-6e9e-4418-ab2b-b0f9e8edb4bb" />
+
 
 A minimal PyTorch-based Multi-Task Learning (MTL) example using a real dataset (UCI Wine Quality dataset) to implement two tasks: predicting wine quality (regression task) and predicting whether the wine is high-quality (classification task, quality ≥ 6 is high-quality). Results will be demonstrated through visualization (scatter plot of predicted quality) and evaluation metrics (MSE for regression, accuracy for classification).  
 
