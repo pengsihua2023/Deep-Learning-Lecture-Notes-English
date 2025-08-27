@@ -1,5 +1,8 @@
 ## Intermediate: Contrastive Learning
-## Contrastive Learning
+<div align="center">
+<img width="600" height="360" alt="image" src="https://github.com/user-attachments/assets/5d389da9-c6c7-46d5-a1c5-096422a5328b" />
+</div>
+
 - **Importance**:  
   Contrastive learning is a self-supervised learning method that extracts high-quality feature representations by training models to distinguish between "similar" and "dissimilar" data pairs.  
   It is central to modern unsupervised learning, driving the success of methods like SimCLR, MoCo (computer vision), and CLIP (multimodal learning).  
@@ -14,7 +17,7 @@
 - **Applications**:  
   - Image classification (SimCLR, MoCo): Achieves high accuracy with minimal labeled data.  
   - Multimodal learning (CLIP): Enables image-text search and image generation (e.g., DALL·E).  
-  <img width="1600" height="919" alt="image" src="https://github.com/user-attachments/assets/5d389da9-c6c7-46d5-a1c5-096422a5328b" />
+ 
 
 Write a minimal PyTorch-based Contrastive Learning example using a real dataset (MNIST handwritten digit dataset) to implement contrastive learning for learning image feature embeddings. The model will use a SimCLR-style contrastive loss (NT-Xent), aiming to make embeddings of images of the same digit closer and embeddings of different digits farther apart. Results will be demonstrated by visualizing the embedding space (using t-SNE dimensionality reduction) and evaluating k-NN classification accuracy.
 
