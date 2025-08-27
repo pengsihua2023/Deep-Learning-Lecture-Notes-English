@@ -1,5 +1,5 @@
 
-## A DeepXDE Example of a Second-Order ODE: Simple Harmonic Oscillator
+## A Example of a Second-Order ODE: Simple Harmonic Oscillator
 
 $$
 u''(x) + u(x) = 0,\quad x\in(0, 2\pi),\qquad
