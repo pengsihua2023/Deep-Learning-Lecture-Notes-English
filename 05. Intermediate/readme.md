@@ -8,4 +8,4 @@
   * [Transfer Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate%3A%20Transfer%20Learning.md)
   * [Contrastive Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate%3A%20Contrastive%20Learning.md)
   * [Knowledge Distillation](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate%3A%20Knowledge%20Distillation.md)
-  * [Multi-Task Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate%3A%20Multi-Task%20Learning.md)
+  * [Multi-Task Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate:%20Multi-Task%20Learning.ipynb)
