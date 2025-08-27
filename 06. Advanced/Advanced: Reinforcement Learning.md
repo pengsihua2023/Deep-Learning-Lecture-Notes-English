@@ -6,7 +6,9 @@ It is a cornerstone of AI decision-making, demonstrating the application of neur
 RL learns optimal strategies through "trial and error," with neural networks (e.g., CNN or MLP) used to estimate the value of actions or policies.  
 - **Metaphor**: Like an "AI playing a game," learning to achieve the highest score through continuous attempts.  
 - **Applications**: Game AI (e.g., AlphaGo), robot navigation, autonomous driving.  
+<div align="center">
 <img width="467" height="382" alt="image" src="https://github.com/user-attachments/assets/97836eac-5fb2-4381-82fa-2e44c19d2f34" />  
+</div>
 
 Write a minimal PyTorch-based Reinforcement Learning (RL) example using the DQN (Deep Q-Network) algorithm in the CartPole-v1 environment for a node classification task, ensuring the code is concise and meets requirements. The code uses real-time interaction data (generated through agent-environment interactions in CartPole), satisfying the "real data" requirement. The results are visualized through a reward curve and evaluated on a test set to demonstrate model performance. 
 Below is the complete code and detailed explanations in English.  
