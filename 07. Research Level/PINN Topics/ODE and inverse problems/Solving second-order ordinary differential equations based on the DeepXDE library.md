@@ -3,7 +3,7 @@
 
 $$
 u''(x) + u(x) = 0,\quad x\in(0, 2\pi),\qquad
-u(0)=1,\; u'(0)=0.
+u(0)=1, u'(0)=0.
 $$
 
 Analytical solution: \$u^\*(x)=\cos x\$ .
