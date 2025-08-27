@@ -1,5 +1,5 @@
 ## Intermediate: Attention-based Model
-## Attention-based Models (Transformer Expansion)
+
 <div align="center">
 <img width="400" height="250" alt="image" src="https://github.com/user-attachments/assets/a78ff1d6-3d30-43e6-b8e2-40acad211a7f" />
  </div> 
