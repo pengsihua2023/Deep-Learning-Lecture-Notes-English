@@ -90,7 +90,7 @@ plt.show()
 * Here both conditions \$u(0)=1\$ and \$u'(0)=0\$ are placed at the left endpoint \$x=0\$ (equivalent to an initial value problem).
 * `on_left` is used to impose `DirichletBC` and `NeumannBC` only at the left endpoint; the right endpoint is not affected by these constraints.
 * The training objective is still to satisfy **PDE residual** and **boundary (initial) conditions** simultaneously; no true solution labels are needed.
-* If you want to change it into a boundary value problem (for example \$u(0)=1,,u(L)=\cos L\$), replace the second condition with another `DirichletBC` that only acts at the right endpoint: write an `on_right` function to check \$x\approx L\$.
+* If you want to change it into a boundary value problem (for example \$u(0)=1,u(L)=\cos L\$), replace the second condition with another `DirichletBC` that only acts at the right endpoint: write an `on_right` function to check \$x\approx L\$.
 
 ---
 
