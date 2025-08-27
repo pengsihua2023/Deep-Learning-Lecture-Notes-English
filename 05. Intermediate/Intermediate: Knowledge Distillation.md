@@ -1,6 +1,8 @@
 ## Intermediate: Knowledge Distillation
 
-<img width="2048" height="850" alt="image" src="https://github.com/user-attachments/assets/2a79095f-2443-4a08-a7fa-a1a091bba957" />
+<div align="center">
+<img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/2a79095f-2443-4a08-a7fa-a1a091bba957" />
+</div>
 
 Write a minimal PyTorch-based Knowledge Distillation example using a real dataset (MNIST handwritten digit dataset) to implement knowledge distillation from a larger teacher model (CNN) to a smaller student model (MLP). The task is digit classification, with knowledge distillation guiding the student model’s learning via the teacher model’s soft labels. Results will be demonstrated by evaluating classification accuracy and visualizing the student model’s prediction confusion matrix.  
 
