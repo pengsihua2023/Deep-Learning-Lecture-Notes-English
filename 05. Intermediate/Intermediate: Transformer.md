@@ -1,5 +1,9 @@
 ## Intermediate: Transformer
-## Transformer
+<div align="center">
+<img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/431b0bba-466e-4a24-b27b-8ac0372e5d5e" />  
+<img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/8d064b02-6166-47ec-bfc6-fb031f94192c" />  
+</div>
+
 - **Importance**: Transformers are the core of modern natural language processing (NLP), powering large models like ChatGPT and representing the forefront of deep learning.
 - **Core Concept**:  
   Transformers use an "attention mechanism" to focus on the most important parts of the input (e.g., key words in a sentence).  
@@ -7,9 +11,7 @@
 - **Applications**: Chatbots (e.g., Grok), machine translation, text generation.  
   **Why Teach**: Transformers represent the latest advancements in AI.
 
-<img width="904" height="703" alt="image" src="https://github.com/user-attachments/assets/431b0bba-466e-4a24-b27b-8ac0372e5d5e" />  
-
-<img width="534" height="742" alt="image" src="https://github.com/user-attachments/assets/8d064b02-6166-47ec-bfc6-fb031f94192c" />    
+ 
 
 ## A Transformer with only an encoder
 
