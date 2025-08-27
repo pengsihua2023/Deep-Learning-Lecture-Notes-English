@@ -74,4 +74,3 @@ In this way, you can use **DeepXDE** to obtain a neural network approximation of
 
 ---
 
-要不要我把这个英文版帮你导出为一个 `.md` 文件？
