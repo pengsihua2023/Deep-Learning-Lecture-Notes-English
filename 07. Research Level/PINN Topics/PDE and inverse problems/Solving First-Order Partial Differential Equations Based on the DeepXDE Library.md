@@ -1,7 +1,7 @@
 Here is a complete example using **DeepXDE** (based on PyTorch) to solve a first-order partial differential equation: the linear advection equation
 
 $$
-u_t + c\u_x = 0,\quad (x,t)\in(0,1)\times(0,1],\quad
+u_t + cu_x = 0,\quad (x,t)\in(0,1)\times(0,1],\quad
 u(x,0)=\sin(2\pi x),\ c=1.
 $$
 
