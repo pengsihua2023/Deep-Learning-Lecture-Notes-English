@@ -9,6 +9,6 @@
 - [Model training technology integration](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/08.%20Model%20training%20technology%20integration)
 - [Famous network architecture](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/09.%20Famous%20Network%20Architecture)
 - [Commonly used datasets](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/10.%20Commonly%20used%20datasets)
-<div align="center">
+
 <img width="800" height="270" alt="image" src="https://github.com/user-attachments/assets/b55e4c9a-d57b-4e01-b577-182539d41bd1" />
-</div>
+
