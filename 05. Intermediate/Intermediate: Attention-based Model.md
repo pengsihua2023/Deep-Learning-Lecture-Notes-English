@@ -108,6 +108,34 @@ $$
 \boxed{  \text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right) V  }
 $$
 
+## 8. Self-Attention
+
+Self-Attention is a special case of the attention mechanism where **Query (Q), Key (K), and Value (V) all come from the same sequence** $X$.
+
+Formally:
+
+$$
+Q = XW^Q, \quad K = XW^K, \quad V = XW^V
+$$
+
+The attention output is:
+
+$$
+\text{SelfAttention}(X) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+$$
+
+
+### Intuition
+
+- **Purpose**:  
+  Self-Attention enables each position in the sequence to attend to all other positions, thus capturing contextual dependencies.  
+
+- **Example**:  
+  In a sentence like *“The cat sat on the mat”*, the word *“cat”* can attend to *“sat”* and *“mat”* to better understand the context.  
+
+- **Benefit**:  
+  Unlike recurrent networks, Self-Attention processes all tokens in parallel, making it highly efficient and effective at capturing long-range dependencies.
+
 ---
 
 ## Code  
