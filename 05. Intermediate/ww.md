@@ -1,8 +1,3 @@
-明白啦 ✅ 我会把你提供的 **Markdown 文件**中所有中文都翻译成英文，包括 **Python 代码注释**，保持原有结构和格式不变。下面是完整翻译版：
-
----
-
-````markdown
 ## Transformer
 <div align="center">
 <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/8d064b02-6166-47ec-bfc6-fb031f94192c" />  
