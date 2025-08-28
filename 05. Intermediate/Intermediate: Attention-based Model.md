@@ -17,7 +17,7 @@ The image above effectively illustrates the attention mechanism, showing how hum
 ## Code  
 Add visualization of attention weights using a heatmap to display the attention weight matrix for the first sample, aiding in intuitively understanding how the attention mechanism focuses on relationships between different words. The code is based on the IMDb dataset and implements a simple Scaled Dot-Product Attention using PyTorch. Since you requested visualization, a heatmap will be generated to show the attention weights.
 
-```
+```python
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
