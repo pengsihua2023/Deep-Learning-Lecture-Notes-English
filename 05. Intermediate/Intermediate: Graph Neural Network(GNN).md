@@ -13,7 +13,7 @@
   
 
 
-
+## Code
 Write a minimal Graph Neural Network (GNN) example based on PyTorch and PyTorch Geometric, using a real dataset (Cora dataset, a common benchmark for graph classification). The model will implement a simple Graph Convolutional Network (GCN) for node classification. Results will be demonstrated by visualizing node embeddings (using t-SNE dimensionality reduction) and evaluating classification accuracy.
 
 ```python
