@@ -11,6 +11,81 @@
   **Analogy**: Like "information spreading in a social circle," each node (person) updates its state based on information from friends.  
 - **Applications**: Recommendation systems (e.g., Netflix recommendations), molecular design (drug discovery), traffic network analysis.
   
+---
+## Mathematical Description of Graph Neural Networks
+
+### 1. Basic Structure of a Graph
+
+A graph is defined as a triplet:
+
+$G = (V, E, X)$
+
+where:
+
+* $V = \{1, 2, \dots, N\}$ is the node set, with $N$ nodes in total.
+* $E \subseteq V \times V$ is the edge set.
+* $X \in \mathbb{R}^{N \times d}$ is the node feature matrix, where the $i$-th row $x_i \in \mathbb{R}^d$ represents the initial feature of node $i$.
+
+Adjacency matrix representation: $A \in \mathbb{R}^{N \times N}, \quad A_{ij} \neq 0 \;\Leftrightarrow\; (i,j) \in E$
+
+### 2. Iterative Update of Node Representations
+
+The general form of Message Passing:
+
+<img width="500" height="52" alt="image" src="https://github.com/user-attachments/assets/e3732160-4870-4514-a875-7afaf4907056" />
+
+Explanation:
+
+* $\mathcal{N}(i)$: the neighborhood set of node $i$ (may include itself).
+* $\phi^{(k)}$: aggregation function.
+* $\psi^{(k)}$: update function.
+* Final node embedding:
+
+<img width="160" height="43" alt="image" src="https://github.com/user-attachments/assets/c9628b49-a5b5-42cf-b2d6-f155d10432e1" />
+
+### 3. Graph-Level Representation
+
+If the task requires prediction over the entire graph (e.g., graph classification), the graph representation is defined based on the final layer of node representations:
+
+<img width="220" height="48" alt="image" src="https://github.com/user-attachments/assets/f0325b8f-b158-4ee5-aef0-d67f6c046c4b" />
+
+where $\rho$ is the readout function, typically sum, mean, max pooling, or attention-based methods.
+
+### 4. Examples: Common GNN Implementations
+
+### GCN (Graph Convolutional Network)
+
+$$
+H^{(k)} = \sigma\left(\tilde{D}^{-\tfrac{1}{2}} \tilde{A} \tilde{D}^{-\tfrac{1}{2}} H^{(k-1)} W^{(k)}\right)
+$$
+
+where $\tilde{A} = A + I$, and $\tilde{D}$ is the degree matrix of $\tilde{A}$.
+
+### GraphSAGE
+
+<img width="500" height="52" alt="image" src="https://github.com/user-attachments/assets/e5fa2b76-2764-4686-8a1d-dc873abfb520" />
+
+### GAT (Graph Attention Network)
+
+$$
+h_i^{(k)} = \sigma\left(\sum_{j \in \mathcal{N}(i)} 
+\alpha_{ij}^{(k)} W^{(k)} h_j^{(k-1)}\right)
+$$
+
+where $\alpha_{ij}^{(k)}$ is the attention weight:
+
+### 5. Summary
+
+The general mathematical definition of a GNN can be summarized as:
+
+1. **Input**: Graph $G=(V,E,X)$.
+2. **Propagation Rule**:
+
+<img width="400" height="50" alt="image" src="https://github.com/user-attachments/assets/422ed3a2-ad2e-4800-8cdb-4a6c3e42f741" />
+
+3. **Output**: Node embeddings $H^{(K)}$ or graph embedding $h_G$.
+
+---
 
 
 ## Code
