@@ -337,9 +337,7 @@ plt.show()
 * **Training**: 5000 iterations with loss curve recording.
 * **Visualization**: Loss curve + 2D heatmap of the predicted solution, using `imshow` to display the temperature distribution.
 
----
 
-要不要我也把 **1D Burgers 示例的代码说明** 翻译成英文，和这个一起整理？
 
 
 ## 2. **Inverse Problem Example: Parameter Estimation**
