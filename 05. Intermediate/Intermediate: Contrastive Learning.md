@@ -1,23 +1,75 @@
-## Intermediate: Contrastive Learning
+## Contrastive Learning
 <div align="center">
 <img width="600" height="360" alt="image" src="https://github.com/user-attachments/assets/5d389da9-c6c7-46d5-a1c5-096422a5328b" />
 </div>
 
-- **Importance**:  
-  Contrastive learning is a self-supervised learning method that extracts high-quality feature representations by training models to distinguish between "similar" and "dissimilar" data pairs.  
-  It is central to modern unsupervised learning, driving the success of methods like SimCLR, MoCo (computer vision), and CLIP (multimodal learning).  
-  In scenarios with scarce labeled data (e.g., medical imaging, rare languages), contrastive learning significantly reduces reliance on annotations.  
+- Importance:  
+Contrastive learning is a self-supervised learning method that extracts high-quality feature representations by training the model to distinguish between "similar" and "dissimilar" data pairs.  
+It is the core of modern unsupervised learning, driving the success of methods like SimCLR, MoCo (computer vision), and CLIP (multi-modal learning).  
+In scenarios where labeled data is scarce (e.g., medical imaging, rare languages), contrastive learning can significantly reduce reliance on annotations.  
 
-- **Core Concept**:  
-  The goal of contrastive learning is to make similar data pairs (positive pairs) closer in the feature space while pushing dissimilar data pairs (negative pairs) farther apart.  
-  A contrastive loss function (e.g., InfoNCE loss) is used to optimize feature representations.  
+- Core concept:  
+The goal of contrastive learning is to make similar data pairs (positive pairs) closer in the feature space, and dissimilar data pairs (negative pairs) farther apart.  
+Contrastive loss functions (such as InfoNCE loss) are used to optimize the feature representations.  
 
-- **Analogy**: Like a "find your friends" game, the model learns to group "friends" (similar images/text) together and separate "strangers" (dissimilar data).  
+- Analogy: Like a "find friends game," the model learns to cluster "friends" (similar images/texts) together while separating "strangers" (dissimilar data).  
 
-- **Applications**:  
-  - Image classification (SimCLR, MoCo): Achieves high accuracy with minimal labeled data.  
-  - Multimodal learning (CLIP): Enables image-text search and image generation (e.g., DALL·E).  
- 
+- Applications:  
+Image classification (SimCLR, MoCo): Achieve high-accuracy classification with a small amount of labeled data.  
+Multi-modal learning (CLIP): Image-text retrieval, image generation (e.g., DALL·E).
+
+## Mathematical Description of Contrastive Learning
+The mathematical description of contrastive learning usually starts from the objective of "representation learning." The core idea is: **bring semantically similar samples closer and push semantically dissimilar samples apart**. Below is a more systematic mathematical formalization:
+
+## 1. Representation Function
+
+Suppose we have a sample set $\mathcal{X} = \{x_1, x_2, \dots, x_N\}$  
+
+We use an encoder (e.g., a neural network) $f_\theta: \mathcal{X} \to \mathbb {R}^d$  
+
+to map samples into a feature space: $z_i = f_\theta(x_i), \quad z_i \in \mathbb{R}^d$  
+
+Normalization constraint $\|z_i\|_2 = 1$ is usually applied so that the representations lie on the unit hypersphere.  
+
+## 2. Positive and Negative Samples
+
+* **Positive pair**: comes from the same semantic category or different augmented (data augmentation) versions of the same sample, e.g. $(x_i, x_j^+)$.
+* **Negative pair**: comes from different semantic categories, e.g. $(x_i, x_k^-)$.
+
+## 3. Similarity Measure
+
+A common choice is cosine similarity:
+
+$\text{sim}(z_i, z_j) = \frac{z_i^\top z_j}{\|z_i\|\|z_j\|}$
+
+If normalized, this simplifies to $\text{sim}(z_i, z_j) = z_i^\top z_j$.
+
+## 4. Loss Function (InfoNCE Example)
+
+The commonly used objective in contrastive learning is the **InfoNCE loss**.  
+Let the positive sample for the $i$-th instance be $z_j^+$ and the others be negative samples $\{z_k^-\}$, then the loss is:
+
+<img width="258" height="71" alt="image" src="https://github.com/user-attachments/assets/c8502645-6c4c-4ae2-b370-07e2d4d0e73d" />
+
+where:
+
+* $\tau > 0$ is the **temperature parameter**, controlling the smoothness of the distribution;
+* The numerator corresponds to the **positive pair**;
+* The denominator includes all candidates (positive + negative), usually with **softmax normalization**.
+
+## 5. Overall Loss
+
+For a batch of samples, take the average:
+
+$\mathcal{L} = \frac{1}{N} \sum_{i=1}^N \mathcal{L}_i$
+
+## 6. Summary
+
+* The core mathematical formulation of contrastive learning is the **normalized softmax log-likelihood objective (InfoNCE)**;
+* Optimization goal: maximize similarity of positive pairs, minimize similarity of negative pairs;
+* Extensions: **NT-Xent loss** (SimCLR), **Triplet Loss**, **Margin Loss**, etc.
+
+---
 
 ## Code
 Write a minimal PyTorch-based Contrastive Learning example using a real dataset (MNIST handwritten digit dataset) to implement contrastive learning for learning image feature embeddings. The model will use a SimCLR-style contrastive loss (NT-Xent), aiming to make embeddings of images of the same digit closer and embeddings of different digits farther apart. Results will be demonstrated by visualizing the embedding space (using t-SNE dimensionality reduction) and evaluating k-NN classification accuracy.
