@@ -26,7 +26,7 @@ where:
 * $E \subseteq V \times V$ is the edge set.
 * $X \in \mathbb{R}^{N \times d}$ is the node feature matrix, where the $i$-th row $x_i \in \mathbb{R}^d$ represents the initial feature of node $i$.
 
-Adjacency matrix representation: $A \in \mathbb{R}^{N \times N}, \quad A_{ij} \neq 0 表示 (i,j) \in E$
+Adjacency matrix representation: $A \in \mathbb{R}^{N \times N}, \quad A_{ij} \neq 0  表示  (i,j) \in E$
 
 ### 2. Iterative Update of Node Representations
 
