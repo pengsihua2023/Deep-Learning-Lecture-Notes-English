@@ -328,7 +328,19 @@ plt.tight_layout()
 plt.show()
 ```
 
+
+##### **Code Explanation**
+
+* **Network**: A 3-layer fully connected network using Tanh activation to ensure smoothness.
+* **Loss**: PDE residuals (second-order derivatives) and boundary condition loss, with boundary weight set to 10 to strengthen constraints.
+* **Data**: Randomly sample interior and boundary points to ensure uniform distribution.
+* **Training**: 5000 iterations with loss curve recording.
+* **Visualization**: Loss curve + 2D heatmap of the predicted solution, using `imshow` to display the temperature distribution.
+
 ---
+
+要不要我也把 **1D Burgers 示例的代码说明** 翻译成英文，和这个一起整理？
+
 
 ## 2. **Inverse Problem Example: Parameter Estimation**
 
@@ -457,6 +469,24 @@ plt.close(fig)  # Prevent static display
 ani.save('burgers_animation.gif', writer='imagemagick')  # Save as GIF (requires imagemagick)
 plt.show()
 ```
+
+
+##### **Code Explanation**
+
+* **Network**: Add `self.nu` as a learnable parameter (initialized as 0.1).
+* **Loss**: Add observation loss `loss_obs`, using simulated observation data (true solution + noise).
+* **Training**: Record `nu_history` to estimate nu.
+* **Visualization**: Loss curve, nu estimation curve, and animation of \$u(x, t)\$ (saved as GIF).
+
+#### 3. **Notes and Extensions**
+
+* **Multi-dimensional PDEs**: For 3D or higher dimensions, change the input layer to `nn.Linear(3, ...)` or more, and ensure sampling points are evenly distributed.
+* **Inverse problems**: Observation data can come from experiments or simulations; for more complex parameters (e.g., functional parameters), additional networks can be used.
+* **Visualization**: Use `FuncAnimation` for dynamic PDEs; heatmaps are more suitable for steady-state problems.
+* **Optimization**: If convergence is slow, try L-BFGS optimizer or increase the number of sampling points.
+* **Execution**: Requires PyTorch, NumPy, and Matplotlib. Animation requires imagemagick for GIF output.
+
+
 
 
 
