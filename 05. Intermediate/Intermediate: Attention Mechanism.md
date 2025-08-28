@@ -82,6 +82,9 @@ $$
 $$
 
 ## 6. Self-Attention
+<div align="center">
+<img width="469" height="220" alt="image" src="https://github.com/user-attachments/assets/a1dae221-067b-4f1c-a57f-caf7af22fbb5" />
+</div>
 
 Self-Attention is a special case of the attention mechanism where **Query (Q), Key (K), and Value (V) all come from the same sequence** $X$.
 
