@@ -112,8 +112,10 @@ $$
 - **Benefit**:  
   Unlike recurrent networks, Self-Attention processes all tokens in parallel, making it highly efficient and effective at capturing long-range dependencies.
 
-## 7. Multi-Head Attention (Extended)
-
+## 7. Multi-Head Attention
+<div align="center">
+<img width="560" height="380" alt="image" src="https://github.com/user-attachments/assets/f2c01db3-28ea-4724-9a03-538cda1ebeb3" />
+</div>
 Instead of computing a single attention function, Multi-Head Attention allows the model to jointly attend to information from different representation subspaces at different positions.
 
 Formally:
