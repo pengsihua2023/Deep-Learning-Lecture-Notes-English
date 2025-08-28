@@ -78,12 +78,12 @@ where $\alpha_{ij}^{(k)}$ is the attention weight:
 
 The general mathematical definition of a GNN can be summarized as:
 
-1. **Input**: Graph $G=(V,E,X)$.
-2. **Propagation Rule**:
+- **Input**: Graph $G=(V,E,X)$.
+- **Propagation Rule**:
 
 <img width="400" height="50" alt="image" src="https://github.com/user-attachments/assets/422ed3a2-ad2e-4800-8cdb-4a6c3e42f741" />
 
-3. **Output**: Node embeddings $H^{(K)}$ or graph embedding $h_G$.
+- **Output**: Node embeddings $H^{(K)}$ or graph embedding $h_G$.
 
 ---
 
