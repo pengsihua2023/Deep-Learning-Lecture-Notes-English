@@ -191,9 +191,7 @@ t_test = torch.ones(100, 1) * 0.5  # t = 0.5
 u_pred = model(x_test, t_test)
 print("Prediction shape:", u_pred.shape)  # Output: torch.Size([100, 1])
 ```
-太好了 ✅ 我会把 **2D Laplace 示例** 和 **Inverse Problem 示例** 的 **完整代码和解释** 全部给你，并且**保持代码原样，只翻译注释为英文**。
 
----
 
 ## 1. **Multi-dimensional PDE Example: 2D Heat Conduction (Laplace Equation Variant)**
 
