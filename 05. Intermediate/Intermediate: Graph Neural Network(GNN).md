@@ -1,6 +1,6 @@
 ## Intermediate: Graph Neural Network(GNN)
 <div align="center">
-<img width="500" height="263" alt="image" src="https://github.com/user-attachments/assets/47f67caf-be26-42b4-928e-b8db05f1afab" />  
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/6c67a274-3a8c-4282-80ab-076bf0d47b61" /> 
 </div>
 
 - **Importance**:  
