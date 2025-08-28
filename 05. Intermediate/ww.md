@@ -54,7 +54,7 @@ Each sub-module is followed by a Residual Connection and Layer Normalization.
 - Decoder  
 The decoder is similar to the encoder but includes Masked Self-Attention (to prevent future information leakage) and Encoder-Decoder Attention.  
 
----
+
 
 ### 2. Multi-Head Self-Attention Mechanism 
 Self-attention is the core of the Transformer, allowing the model to focus on other words in the sequence when processing each word.  
@@ -81,7 +81,7 @@ $$
 * $\sqrt{d_k}$ is a scaling factor to prevent large dot products from causing softmax saturation.  
 * The softmax operation normalizes each row, yielding attention weights, applied to the value vector $V$.  
 
----
+
 
 ### Multi-Head Mechanism  
 
@@ -101,7 +101,7 @@ $$
 W_i^Q, W_i^K, W_i^V \in \mathbb{R}^{d \times d_k}, \quad W^O \in \mathbb{R}^{h \cdot d_k \times d}, \quad h \text{ is the number of heads}, d_k = \frac{d}{h}
 $$
 
----
+
 
 ### Masked Self-Attention (Decoder Specific)  
 
@@ -111,7 +111,7 @@ $$
 Attention(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}} + M\right)V
 $$
 
----
+
 
 ### 3. Feed-Forward Neural Network (FFN)  
 Each encoder and decoder layer contains a position-wise feed-forward network, applied to each word vector:  
@@ -122,7 +122,7 @@ $$
 
 Where $W_1 \in \mathbb{R}^{d \times d_{ff}}$, $W_2 \in \mathbb{R}^{d_{ff} \times d}$, and $d_{ff}$ is usually much larger than $d$ (e.g., $d_{ff} = 4d$).  
 
----
+
 
 ### 4. Residual Connection and Layer Normalization  
 Each sub-module (Self-Attention or FFN) is followed by a residual connection and layer normalization:  
@@ -139,7 +139,7 @@ $$
 
 $\mu$ and $\sigma^2$ are the mean and variance of the input vector, and $\gamma, \beta$ are learnable parameters.  
 
----
+
 
 ### 5. Encoder-Decoder Attention  
 The additional attention layer in the decoder uses the encoder’s output $K, V$ and the decoder’s $Q$:  
@@ -148,7 +148,7 @@ $\mathrm{Attention}(Q_{\text{dec}}, K_{\text{enc}}, V_{\text{enc}})$
 
 This allows the decoder to attend to the context of the input sequence.  
 
----
+
 
 ### 6. Output Layer  
 
@@ -160,7 +160,7 @@ $$
 
 Where $z$ is the output of the final decoder layer, $W_{\text{out}} \in \mathbb{R}^{d \times |V|}$.  
 
----
+
 
 ### 7. Output Layer  
 The final decoder layer generates output probabilities via linear transformation and softmax:  
@@ -169,7 +169,7 @@ $P(y_i) = \mathrm{softmax}(z W_{\text{out}} + b_{\text{out}})$
 
 Where $z$ is the output of the final decoder layer, $W_{\text{out}} \in \mathbb{R}^{d \times |V|}$.  
 
----
+
 
 ### 8. Loss Function  
 Training usually uses cross-entropy loss, with the objective of maximizing the probability of the correct output sequence:  
@@ -178,7 +178,7 @@ $\mathcal{L} = -\sum_{i=1}^{T} \log P(y_i \mid y_{<i}, X)$
 
 Where $T$ is the output sequence length, and $y_{<i}$ is the already generated words.  
 
----
+
 
 ### 9. Summary  
 The mathematical core of Transformer lies in:  
@@ -189,8 +189,6 @@ Positional Encoding: Compensating for the lack of sequential order information.
 Residuals and Normalization: Stabilizing training and accelerating convergence.  
 
 ---
-
-
 
 **Full Transformer vs Encoder Transformer**  
 
@@ -203,7 +201,7 @@ Residuals and Normalization: Stabilizing training and accelerating convergence.
 | Suitable tasks | Translation, Summarization         | Classification, Sentiment Analysis        |
 | Input/Output | Sequence→Sequence         | Sequence→Class          |
 
----
+
 
 ## Transformer with Only Encoder  
 ```python
@@ -217,7 +215,3 @@ Model: Transformer with only encoder, for sequence classification
 Decoder: Not included, as sequence generation is not needed
 Flow: Data generation → Preprocessing → Embedding → Positional Encoding → Self-Attention → Pooling → Classification
 This model is suitable for learning Transformer basics, especially Self-Attention and Positional Encoding!
-
-
-
-
