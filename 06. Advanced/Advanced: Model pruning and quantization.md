@@ -10,7 +10,9 @@ Model pruning reduces model size and computational load by removing unimportant 
 <div align="center">
 <img width="400" height="243" alt="image" src="https://github.com/user-attachments/assets/c44a27a2-7b8f-40e7-a521-3fed673c233c" />
 </div>
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 #### Main Methods
 1. **Weight Pruning**:
    - **Description**: Sets weights below a certain threshold in the weight matrix to zero, creating a sparse model.
