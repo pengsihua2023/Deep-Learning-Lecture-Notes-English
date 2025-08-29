@@ -1,15 +1,43 @@
+
 ## Transformer
-<div align="center">
+
+**Transformer** is a deep learning model architecture based on the **Attention Mechanism**, proposed by Vaswani et al. in the 2017 paper *“Attention is All You Need”*. It was originally designed for natural language processing (NLP) tasks but has since been widely applied to computer vision (CV), speech processing, and multimodal learning.
+
+<div align="center">  
 <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/8d064b02-6166-47ec-bfc6-fb031f94192c" />  
-</div>
+</div>  
 
-- Importance: Transformer is the core of modern Natural Language Processing (NLP), powering large models such as ChatGPT, representing the frontier of deep learning.
-- Core concepts:  
-Transformer uses the "attention mechanism" (Attention), focusing on the most important parts of the input (e.g., key words in a sentence).  
-More efficient than RNNs, suitable for handling long sequences.  
-- Applications: Chatbots (e.g., Grok), machine translation, text generation.  
- Why teach: Transformer represents the latest progress in AI.
+### Core Ideas
 
+1. **Self-Attention**:
+   Each element (e.g., a word vector) computes correlations with other elements in the sequence, dynamically capturing contextual information and long-range dependencies.
+
+2. **Positional Encoding**:
+   Since the Transformer does not use recurrence (RNN) or convolution (CNN), positional encoding is introduced explicitly to inject sequence order information.
+
+3. **Multi-Head Attention**:
+   Multiple attention mechanisms are computed in parallel, focusing on different feature subspaces, thereby enhancing the model’s representational power.
+
+4. **Encoder-Decoder Architecture**:
+
+   * **Encoder**: Maps the input sequence into contextual representations.
+   * **Decoder**: Generates the target sequence step by step based on encoder representations and previously generated outputs.
+
+### Common Applications
+
+* **Natural Language Processing (NLP)**: Machine translation (e.g., Google Translate), text generation (GPT series), question answering, text summarization.
+* **Computer Vision (CV)**: Vision Transformer (ViT) for image classification and object detection.
+* **Speech Processing**: Speech recognition and speech synthesis.
+* **Multimodal Learning**: CLIP, DALL·E, GPT-4V, and other cross-modal models.
+
+- Importance: Transformer is the core of modern natural language processing (NLP), powering large models such as ChatGPT and representing the forefront of deep learning.
+- Core Concept:
+  The Transformer uses the “attention mechanism” to focus on the most important parts of the input (e.g., key words in a sentence).
+  It is more efficient than RNNs and well-suited for handling long sequences.
+- Applications: Chatbots (e.g., Grok), machine translation, text generation.
+- Why Teach: The Transformer represents the latest advances in AI.
+
+---
 
 ## Mathematical description of Transformer
 The Transformer architecture is a core model in NLP and deep learning, originally proposed by Vaswani et al. in the 2017 paper *"Attention is All You Need"*. Below is its mathematical description, covering the main components, including input representation, attention mechanism, positional encoding, feed-forward network, and layer normalization.    
