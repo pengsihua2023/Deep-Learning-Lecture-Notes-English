@@ -9,9 +9,12 @@ In this way, the student model can significantly reduce computational cost and s
 <div align="center">
 <img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/2a79095f-2443-4a08-a7fa-a1a091bba957" />
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
+
 ## Basic Principles of Knowledge Distillation
 
 1. **Teacher Model (Teacher)**
