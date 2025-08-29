@@ -1,7 +1,7 @@
 
 * Intermediate Level
 
-  * [Attention Mechanism]（https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate%3A%20Attention%20Mechanism.md））
+  * [Attention Mechanism](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate%3A%20Attention%20Mechanism.md)
   * [BERT Model](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate:%20BERT.md)
   * [Transformer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate%3A%20Transformer.md)
   * [Graph Neural Network (GNN)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/05.%20Intermediate/Intermediate%3A%20Graph%20Neural%20Network(GNN).md)
