@@ -1,10 +1,12 @@
 ## Reinforcement Learning
 
+
+
+Reinforcement learning is a learning method that improves decision-making rules through continuous interaction with the environment using trial and error. At each step, the system makes a decision based on the state of the environment and receives rewards or punishments according to the feedback. Through long-term accumulation and adjustment, reinforcement learning can form an optimal decision-making strategy that maximizes overall rewards.
+
 <div align="center">
 <img width="467" height="312" alt="image" src="https://github.com/user-attachments/assets/97836eac-5fb2-4381-82fa-2e44c19d2f34" />  
 </div>
-
-Reinforcement learning is a learning method that improves decision-making rules through continuous interaction with the environment using trial and error. At each step, the system makes a decision based on the state of the environment and receives rewards or punishments according to the feedback. Through long-term accumulation and adjustment, reinforcement learning can form an optimal decision-making strategy that maximizes overall rewards.
 
 * **Importance**:
   Reinforcement Learning (RL), when combined with neural networks (e.g., DQN, Deep Q-Network), has shown excellent performance in game AI and robotic control.
