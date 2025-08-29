@@ -2,7 +2,7 @@
 ## World Model
 World Model technology refers to the use of artificial intelligence (particularly machine learning and deep learning) to build computational models that simulate, understand, and predict the dynamics of complex environments. It aims to enable AI systems to generate an internal representation (i.e., a "world model") by learning the states, rules, and causal relationships of an environment, thereby supporting reasoning, planning, and decision-making. World Models are widely applied in robotics, autonomous driving, game AI, and scientific simulations, serving as a critical component of AI Agents and autonomous systems. Below is an overview of World Model technology, including core concepts, key methods, application scenarios, challenges, and a simple code example.
 <div align="center">
-<img width="490" height="432" alt="image" src="https://github.com/user-attachments/assets/33e277b6-6e58-46b1-8d35-4b4989fdd37e" />
+<img width="400" height="332" alt="image" src="https://github.com/user-attachments/assets/33e277b6-6e58-46b1-8d35-4b4989fdd37e" />
 </div>
 
 <div align="center">
