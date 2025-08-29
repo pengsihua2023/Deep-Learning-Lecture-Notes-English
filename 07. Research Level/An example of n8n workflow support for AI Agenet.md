@@ -1,5 +1,12 @@
 ## n8n Workflow Support for AI Agents: An Example
 n8n is an open-source workflow automation platform designed for technical teams, combining AI capabilities with business process automation. It allows users to build AI solutions with no-code speed and code flexibility, integrating with any application or API. Since its launch in 2019, n8n has gained rapid popularity, especially in 2025, when it was recognized as a new European unicorn with a valuation exceeding $1 billion. This success is attributed to its innovations in AI agents and automation, such as multi-agent workflows and self-hosting capabilities, making it a preferred tool for developers, IT operations, and AI enthusiasts.
+<div align="center">
+<img width="680" height="330" alt="image" src="https://github.com/user-attachments/assets/1313baf3-eb4c-4d90-96a4-bccfaffc0721" />
+</div>
+
+<div align="center">
+(This figure was obtained from Internet)
+</div>
 
 ### Detailed Overview of n8n
 #### Core Concepts
