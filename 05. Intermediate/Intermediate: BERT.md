@@ -120,7 +120,7 @@ Text classification, question answering, NER, translation, etc.
 
 ---
 
-#### **Specific Implementation: Text Classification + Dataset Loading + Attention Visualization**
+### **Specific Implementation: Text Classification + Dataset Loading + Attention Visualization**
 
 Below is a complete PyTorch code example using the `transformers` library from Hugging Face to implement the BERT model for a **text classification task** (sentiment analysis example with the IMDb dataset), including:
 
@@ -128,7 +128,7 @@ Below is a complete PyTorch code example using the `transformers` library from H
 * BERT model fine-tuning.
 * Attention weight visualization (showing the attention distribution of the `[CLS]` token).
 
-#### 代码示例
+#### 代码
 ```python
 import torch
 from torch.utils.data import Dataset, DataLoader
