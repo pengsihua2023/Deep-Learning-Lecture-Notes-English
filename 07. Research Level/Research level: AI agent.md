@@ -1,6 +1,12 @@
 ## Research level: AI agent
+<div align="center">
 <img width="550" height="270" alt="image" src="https://github.com/user-attachments/assets/45392af5-22a7-4092-9102-587e80f06486" />  
-  
+</div> 
+
+<div align="center">
+(This figure was obtained from Internet)  
+</div> 
+
 An AI Agent (Artificial Intelligence Agent) is an intelligent system capable of perceiving its environment, making autonomous decisions, and taking actions to achieve specific goals. By integrating perception, reasoning, learning, and execution capabilities, AI agents mimic human behavior in complex tasks. AI Agent technology is widely applied in automation, robotics, virtual assistants, and game AI, representing a key direction in the development of artificial intelligence. Below is an overview of AI Agent technology, including core concepts, types, construction methods, application scenarios, and a simple code example.
 
 ---
