@@ -2,9 +2,7 @@
 <div align="center"> 
 <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/313fa320-c931-4fb3-8fcb-5d81de615a21" />
 </div>
-Here’s the translation with all Chinese parts converted to English, while keeping LaTeX math formulas **strictly unchanged**:
 
----
 
 BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model proposed by Google in 2018. It is widely used in natural language processing (NLP) tasks such as text classification, question answering, and named entity recognition. The core of BERT lies in using a **bidirectional Transformer Encoder**, capturing deep semantic information through large-scale unsupervised pre-training, and then fine-tuning to adapt to specific tasks.
 
@@ -108,7 +106,7 @@ $$
 \mathcal{L}_{NSP} = - \big[ y \log P(\text{IsNext}) + (1-y)\log P(\text{NotNext}) \big].
 $$
 
-### (c) Total Loss
+* (c) Total Loss
 
 \$\mathcal{L} = \mathcal{L}\_ {MLM} + \mathcal{L}\_ {NSP}. \$
 
