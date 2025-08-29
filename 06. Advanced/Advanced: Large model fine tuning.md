@@ -1,6 +1,10 @@
-## Advanced: Large language model fine tuning
+## Advanced: Large model fine tuning
 ## Large Model Fine-Tuning
 Large Model Fine-Tuning refers to the process of further training large-scale pre-trained models (e.g., BERT, LLaMA, GPT) on data specific to a particular task or domain, adjusting model parameters to improve performance on the target task. Fine-tuning leverages the general knowledge of pre-trained models, combining it with a small amount of task-specific data to significantly reduce training costs and data requirements while enhancing model performance in specific scenarios.
+
+<div align="center">  
+<img width="600" height="314" alt="image" src="https://github.com/user-attachments/assets/8430a5de-9b99-47c3-97dd-7fb10a20b2db" />
+</div>
 
 ### Core Concepts of Fine-Tuning
 - **Pre-trained Model**: A model trained on large-scale general datasets (e.g., Wikipedia, ImageNet), capturing universal language or visual features.
