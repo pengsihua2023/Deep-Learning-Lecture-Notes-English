@@ -4,7 +4,9 @@ The image above effectively illustrates the attention mechanism, showing how hum
 <div align="center">
 <img width="300" height="179" alt="image" src="https://github.com/user-attachments/assets/a78ff1d6-3d30-43e6-b8e2-40acad211a7f" />
  </div> 
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 - **Importance**:  
 The attention mechanism in Transformers is a cornerstone of modern deep learning, giving rise to models like BERT and GPT, driving advancements in NLP and multimodal tasks.  
 Advanced courses can delve into variants of attention mechanisms (e.g., multi-head attention, self-attention).  
