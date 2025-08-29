@@ -1,7 +1,3 @@
-好的，我已经把你代码里的中文完整翻译成英文，同时保持了原有的 Markdown 格式和排版不变：
-
----
-
 ## Contrastive Learning
 
 **Contrastive Learning** is a type of **Self-Supervised Learning** method. It constructs contrastive tasks between samples, enabling the model to learn more discriminative feature representations.
@@ -64,4 +60,3 @@ The essence of contrastive learning is:
 
 ---
 
-要不要我帮你把中英双语对照的版本也排出来，方便你复习和对比？
