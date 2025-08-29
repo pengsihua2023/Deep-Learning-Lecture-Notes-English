@@ -48,7 +48,9 @@ Model quantization reduces model size and inference time by lowering the precisi
 <div align="center">
 <img width="490" height="210" alt="image" src="https://github.com/user-attachments/assets/cefc6549-7e36-4aae-8f56-cfe40b4efc73" />
 </div>
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 #### Main Methods
 1. **Post-Training Quantization (PTQ)**:
    - **Description**: Applies quantization directly to a pre-trained model without retraining.
