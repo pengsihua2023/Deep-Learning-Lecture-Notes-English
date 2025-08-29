@@ -1,7 +1,7 @@
 ## Advanced: Meta-Learning
 Meta-Learning, also known as "Learning to Learn," is a branch of machine learning aimed at enabling models to quickly adapt to new tasks. By training on multiple related tasks, the model acquires general learning strategies, allowing it to perform well on new tasks, especially with limited data.
 <div align="center">
-<img width="780" height="780" alt="image" src="https://github.com/user-attachments/assets/b4f2b706-60c3-4da3-bccd-6ea4265dad5d" />
+<img width="773" height="508" alt="image" src="https://github.com/user-attachments/assets/60a738f6-bea6-4738-bf3d-b2d5719c20e3" />
 </div>
 
 ### Core Concepts
