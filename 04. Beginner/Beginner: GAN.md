@@ -9,9 +9,11 @@ The generator ultimately produces realistic data (e.g., images, music).
 <div align="center">
  <img width="500" height="210" alt="image" src="https://github.com/user-attachments/assets/8cca8f1f-73ad-4df2-9b66-55353dd7b7c8" />
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
   
 This image appears to illustrate the concept of a Generative Adversarial Network (GAN), a machine learning model. It consists of two main components:  
 1. **Generator**: Represented in cyan on the left, the generator is responsible for creating data samples (e.g., the blocks in the image). Its role is to produce fake data that mimics real data.  
