@@ -44,9 +44,12 @@ $$
  
 Figure 1 Linear Regression
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
+
 #### Model Form
 
 Assume the output is a linear combination of input features:
@@ -86,9 +89,12 @@ $$
 
 Figure 2 Nonlinear Regression
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
+
 When the relationship between features and target is not linear, nonlinear functions \$f(\cdot)\$ can be used.
 
 #### (1). Polynomial Regression
