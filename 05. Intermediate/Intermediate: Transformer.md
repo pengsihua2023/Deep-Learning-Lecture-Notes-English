@@ -30,13 +30,6 @@
 * **Speech Processing**: Speech recognition and speech synthesis.
 * **Multimodal Learning**: CLIP, DALL·E, GPT-4V, and other cross-modal models.
 
-- Importance: Transformer is the core of modern natural language processing (NLP), powering large models such as ChatGPT and representing the forefront of deep learning.
-- Core Concept:
-  The Transformer uses the “attention mechanism” to focus on the most important parts of the input (e.g., key words in a sentence).
-  It is more efficient than RNNs and well-suited for handling long sequences.
-- Applications: Chatbots (e.g., Grok), machine translation, text generation.
-- Why Teach: The Transformer represents the latest advances in AI.
-
 ---
 
 ## Mathematical description of Transformer
