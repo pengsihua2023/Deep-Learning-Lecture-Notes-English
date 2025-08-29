@@ -3,6 +3,9 @@ The Variational Autoencoder (VAE) is a generative deep learning model proposed b
 <div align="center">
 <img width="617" height="376" alt="image" src="https://github.com/user-attachments/assets/da34a994-bb28-42a6-81d9-8e64e091059c" />
 </div>
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 
 ### Core components of VAE include:
 - **Encoder**: Maps input data $x$ to the distribution parameters of the latent space (typically the mean $\mu$ and variance $\sigma^2$ of a Gaussian distribution).
