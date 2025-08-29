@@ -1,3 +1,121 @@
+
+## Knowledge Distillation (Knowledge Distillation)
+
+<div align="center">
+<img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/2a79095f-2443-4a08-a7fa-a1a091bba957" />
+</div>
+
+In deep learning, **Knowledge Distillation (KD)** is a **model compression and transfer learning technique**.
+Its core idea is:
+By training a smaller, lighter model (usually called the **Student Model**), to mimic the output or intermediate representations of a larger, more powerful model (called the **Teacher Model**), so that the student model inherits the knowledge of the teacher model.
+
+In this way, the student model can significantly reduce computational cost and storage requirements while maintaining high accuracy, making it very suitable for deployment in resource-constrained scenarios (such as mobile devices and embedded systems).
+
+---
+
+## Basic Principles of Knowledge Distillation
+
+1. **Teacher Model (Teacher)**
+   Usually a high-performance model trained on large-scale datasets, possibly very large (e.g., BERT, ResNet-152).
+
+2. **Student Model (Student)**
+   Usually a smaller, more efficient model (e.g., small CNN, MobileNet).
+
+3. **Distillation Process (Distillation)**
+
+   * The student model not only learns the **hard labels** of the training data,
+   * But also learns the **soft labels** output by the teacher model.
+
+     * “Soft labels” refer to the probability distribution output by the teacher model during classification, instead of a single correct class label.
+     * Example: If the hard label is “cat”, the teacher model might output `[cat:0.85, dog:0.10, fox:0.05]`, which contains more information about the similarity between classes.
+
+---
+
+## Types of Knowledge Distillation
+
+1. **Offline Distillation**
+   Train the teacher model first, then use it to guide the student model.
+
+2. **Online Distillation**
+   The teacher and student are trained simultaneously, and the teacher may be a dynamically updated ensemble model.
+
+3. **Self-Distillation**
+   The student and teacher share the same architecture, or even share parameters; the model guides itself through different layers or training stages.
+
+4. **Feature Distillation**
+   The student not only learns output probabilities but also mimics the teacher’s intermediate feature representations or attention maps.
+
+---
+
+## Application Scenarios
+
+* **Model Compression**: Enable lightweight models to approach the performance of large models.
+* **Deployment Optimization**: Run efficient models on mobile devices or embedded systems.
+* **Semi-Supervised Learning**: Use teacher model predictions on unlabeled data to generate pseudo-labels to help student training.
+* **Ensemble Simplification**: Distill a large ensemble model into a single student model, reducing inference cost.
+
+---
+
+## Mathematical Description of Knowledge Distillation
+
+### Basic Idea
+
+The goal of knowledge distillation is to reduce model complexity while maintaining accuracy by letting the **Student Model (S)** mimic the output distribution of the **Teacher Model (T)**.
+
+### Mathematical Formulation
+
+#### 1. Softmax and Temperature Scaling
+
+The teacher model’s logits are denoted as \$z^{(T)}\$, and the student model’s logits as \$z^{(S)}\$.
+Through the softmax function with a temperature parameter \$T > 1\$, the probability distribution is smoothed:
+
+$$
+p_i^{(T)} = \frac{\exp\left(\frac{z_i^{(T)}}{T}\right)}{\sum_j \exp\left(\frac{z_j^{(T)}}{T}\right)}, 
+\quad 
+p_i^{(S)} = \frac{\exp\left(\frac{z_i^{(S)}}{T}\right)}{\sum_j \exp\left(\frac{z_j^{(S)}}{T}\right)}.
+$$
+
+When \$T\$ is larger, the distribution becomes smoother and better reflects inter-class relationships.
+
+---
+
+#### 2. Distillation Loss
+
+The student model needs to fit the teacher model’s soft target distribution, usually using **KL divergence**:
+
+$$
+\mathcal{L}_{\text{KD}} = T^2 \cdot \mathrm{KL}\big(p^{(T)} \,\|\, p^{(S)}\big) 
+= T^2 \sum_i p_i^{(T)} \log \frac{p_i^{(T)}}{p_i^{(S)}}.
+$$
+
+Here, \$T^2\$ is a scaling factor to ensure the gradient magnitude is independent of the temperature.
+
+---
+
+#### 3. Total Loss Function
+
+In practice, training usually combines **cross-entropy loss with hard labels** and **distillation loss**:
+
+<img width="300" height="45" alt="image" src="https://github.com/user-attachments/assets/6efedb7f-b924-4cb4-a0df-ba94b8792732" />
+
+Where:
+
+* \$\mathcal{L}\_ {\text {CE}}(y, p^{(S)}\_{T=1}) = - \sum\_i y\_i \log p\_i^{(S)}\$, using the true labels \$y\$;
+* \$\alpha \in \[0,1]\$ controls the weight between true labels and teacher signals.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
 ## Intermediate: Knowledge Distillation
 
 <div align="center">
