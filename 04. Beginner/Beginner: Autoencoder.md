@@ -14,6 +14,8 @@ $$
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
+
 ### 1. Mathematical Description of Autoencoder
 
 Basic StructureAn Autoencoder consists of an Encoder and a Decoder:  
