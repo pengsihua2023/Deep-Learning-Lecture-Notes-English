@@ -9,6 +9,7 @@
 <div align="center">
 <img width="700" height="220" alt="image" src="https://github.com/user-attachments/assets/ecdeb7fe-d4e1-4ef1-b7b9-9e766e6bf9bd" />  
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
