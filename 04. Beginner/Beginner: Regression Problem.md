@@ -41,6 +41,7 @@ $$
 ### 2. Linear Regression
 <div align="center">
 <img width="400" height="264" alt="image" src="https://github.com/user-attachments/assets/3a54ab56-20cb-4780-9d89-7af29f76956f" />    
+ 
 Figure 1 Linear Regression
 </div>
 <div align="center">
