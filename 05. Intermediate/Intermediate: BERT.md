@@ -3,9 +3,12 @@ BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained 
 <div align="center"> 
 <img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/313fa320-c931-4fb3-8fcb-5d81de615a21" />
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
+
 ## Mathematical Description of BERT Model
 
 ### 1. Input Representation
