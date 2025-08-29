@@ -12,7 +12,9 @@ This is a foundational model in deep learning, and understanding it helps grasp 
 <div align="center">
 <img width="700" height="210" alt="image" src="https://github.com/user-attachments/assets/4f07aa2a-dd72-4e95-8543-7f71810d8023" />  
 </div>
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 ## Mathematical Description
 
 ### 1. Network Structure
