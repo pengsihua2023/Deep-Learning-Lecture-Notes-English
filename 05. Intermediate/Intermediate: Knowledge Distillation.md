@@ -1,16 +1,14 @@
 
 ## Knowledge Distillation (Knowledge Distillation)
 
-<div align="center">
-<img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/2a79095f-2443-4a08-a7fa-a1a091bba957" />
-</div>
-
 In deep learning, **Knowledge Distillation (KD)** is a **model compression and transfer learning technique**.
 Its core idea is:
 By training a smaller, lighter model (usually called the **Student Model**), to mimic the output or intermediate representations of a larger, more powerful model (called the **Teacher Model**), so that the student model inherits the knowledge of the teacher model.
 
 In this way, the student model can significantly reduce computational cost and storage requirements while maintaining high accuracy, making it very suitable for deployment in resource-constrained scenarios (such as mobile devices and embedded systems).
-
+<div align="center">
+<img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/2a79095f-2443-4a08-a7fa-a1a091bba957" />
+</div>
 
 ## Basic Principles of Knowledge Distillation
 
