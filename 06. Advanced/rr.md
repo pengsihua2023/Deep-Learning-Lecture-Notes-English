@@ -261,23 +261,6 @@ if __name__ == "__main__":
 ```
 
 
-### Code Explanation
 
-#### 1. Code Goal
-
-* **Task**: Train a DQN model in the CartPole-v1 environment so that the agent learns to balance the pole by pushing the cart left or right, maximizing the balance duration.
-* **Environment**: CartPole-v1 from OpenAI Gym, where the agent observes a 4D state (cart position, velocity, pole angle, angular velocity) and chooses one of two actions (push left or right). Each step that maintains balance yields 1 reward. Max reward is 500 (episode ends when the pole falls or reaches 500 steps).
-* **Data**: Generated in real time from agent-environment interaction (state, action, reward, next state), satisfying the “real data” requirement.
-* **Output**:
-
-  * **Visualization**: Training reward curve saved as `cartpole_rewards.png`.
-  * **Evaluation**: Average reward over 10 test episodes.
-* **Dependencies**: `torch`, `gym`, `numpy`, `matplotlib`.
-
----
-
-The rest of the explanations (code structure, training flow, evaluation, visualization, results, and improvements) are equivalent to your original text, just translated into English.
-
----
 
 
