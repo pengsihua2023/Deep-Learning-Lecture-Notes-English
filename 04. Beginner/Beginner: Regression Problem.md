@@ -41,13 +41,11 @@ $$
 ### 2. Linear Regression
 <div align="center">
 <img width="400" height="264" alt="image" src="https://github.com/user-attachments/assets/3a54ab56-20cb-4780-9d89-7af29f76956f" />    
+Figure 1 Linear Regression
+</div>
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
-
-Figure 1 Linear Regression
-</div>
-
 #### Model Form
 
 Assume the output is a linear combination of input features:
@@ -84,13 +82,12 @@ $$
 ### 3. Nonlinear Regression
 <div align="center">
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/27696c25-d662-48ce-8bf2-0d9538119e8d" />     
-<div align="center">
-(This picture was obtained from the Internet.)
-</div>
 
 Figure 2 Nonlinear Regression
 </div>
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 When the relationship between features and target is not linear, nonlinear functions \$f(\cdot)\$ can be used.
 
 #### (1). Polynomial Regression
