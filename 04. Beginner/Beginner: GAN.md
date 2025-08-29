@@ -1,13 +1,14 @@
 ## Beginner: GAN
+<div align="center">
+ <img width="500" height="210" alt="image" src="https://github.com/user-attachments/assets/8cca8f1f-73ad-4df2-9b66-55353dd7b7c8" />
+</div>
 Generative Adversarial Network (GAN)  
 - Importance: GAN is a flagship generative model, showcasing the creativity of deep learning and ideal for sparking middle school students' interest in AI.  
 - Core Concept:  
 GAN consists of two networks: a generator (creates fake images) and a discriminator (distinguishes real from fake), which "compete" to learn.  
 The generator ultimately produces realistic data (e.g., images, music).  
 - Applications: Generating artwork, restoring old photos, designing game characters.
-<div align="center">
- <img width="500" height="210" alt="image" src="https://github.com/user-attachments/assets/8cca8f1f-73ad-4df2-9b66-55353dd7b7c8" />
-</div>
+
 
 This image appears to illustrate the concept of a Generative Adversarial Network (GAN), a machine learning model. It consists of two main components:  
 1. **Generator**: Represented in cyan on the left, the generator is responsible for creating data samples (e.g., the blocks in the image). Its role is to produce fake data that mimics real data.  
