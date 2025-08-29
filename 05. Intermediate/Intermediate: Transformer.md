@@ -6,7 +6,9 @@
 <div align="center">  
 <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/8d064b02-6166-47ec-bfc6-fb031f94192c" />  
 </div>  
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 ### Core Ideas
 
 1. **Self-Attention**:
