@@ -5,7 +5,9 @@ In a graph, nodes (vertices) represent entities, and edges represent relationshi
 <div align="center">
 <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/6c67a274-3a8c-4282-80ab-076bf0d47b61" /> 
 </div>
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 ### Core Ideas
 
 1. **Message Passing**:
