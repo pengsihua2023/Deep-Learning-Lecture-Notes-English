@@ -41,7 +41,9 @@ $$
 ### 2. Linear Regression
 <div align="center">
 <img width="400" height="264" alt="image" src="https://github.com/user-attachments/assets/3a54ab56-20cb-4780-9d89-7af29f76956f" />    
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 
 Figure 1 Linear Regression
 </div>
@@ -82,7 +84,9 @@ $$
 ### 3. Nonlinear Regression
 <div align="center">
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/27696c25-d662-48ce-8bf2-0d9538119e8d" />     
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 
 Figure 2 Nonlinear Regression
 </div>
