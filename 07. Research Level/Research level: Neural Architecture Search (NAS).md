@@ -1,6 +1,6 @@
 ## Research level: Neural Architecture Search (NAS)
 <div align="center">
-<img width="700" height="322" alt="image" src="https://github.com/user-attachments/assets/033aa71c-7a94-40d5-8003-51504694a7fa" />
+<img width="490" height="222" alt="image" src="https://github.com/user-attachments/assets/033aa71c-7a94-40d5-8003-51504694a7fa" />
 </div> 
 
 <div align="center">
