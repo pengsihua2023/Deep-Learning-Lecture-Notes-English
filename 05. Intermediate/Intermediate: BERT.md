@@ -1,84 +1,129 @@
 BERT: Bidirectional Encoder Representations from Transformers  
 image  
-BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model proposed by Google in 2018, widely used in natural language processing (NLP) tasks such as text classification, question answering, and named entity recognition. The core of BERT is the use of a bidirectional Transformer Encoder, which captures deep semantic information through large-scale unsupervised pre-training, and then fine-tunes it to adapt to specific tasks.  
+BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model proposed by Google in 2018, widely used in natural language processing (NLP) tasks such as text classification, question answering, named entity recognition, etc. The core of BERT is the use of a bidirectional Transformer Encoder, which captures deep semantic information through large-scale unsupervised pre-training, and then fine-tunes it for specific tasks.  
 
-Mathematical Description of BERT Model  
-1. Input Representation  
-For the input sequence  
+## Mathematical Description of the BERT Model  
 
-x = x₁, x₂, …, xₙ,  
+### 1. Input Representation  
+For an input sequence  
+
+$$
+x = x_1, x_2, …, x_n,
+$$
 
 the input vector of BERT consists of word embeddings, position embeddings, and segment embeddings:  
 
-hᵢ(0) = E(xᵢ) + P(i) + S(sᵢ),  
+$$
+h_i^{(0)} = E(x_i) + P(i) + S(s_i),
+$$
 
 where:  
 
-E(xᵢ): Word embedding vector with dimension d.  
-P(i): Position embedding.  
-S(sᵢ): Sentence segment embedding (used to distinguish between sentence A/B).  
+- \(E(x_i)\): Word embedding vector, dimension \(d\).  
+- \(P(i)\): Position embedding.  
+- \(S(s_i)\): Sentence segment embedding (used to distinguish between sentence A/B).  
 
-2. Transformer Encoder Layer  
-BERT is composed of L stacked Transformer Encoders. The input to the l-th layer is h₁(l−1), …, hₙ(l−1), and the output is h₁(l), …, hₙ(l).  
+---
 
-(a) Multi-Head Self-Attention  
+### 2. Transformer Encoder Layer  
+BERT is composed of \(L\) stacked Transformer Encoders. The input to the \(l\)-th layer is  
+
+$$
+h_1^{(l-1)}, …, h_n^{(l-1)},
+$$
+
+and the output is  
+
+$$
+h_1^{(l)}, …, h_n^{(l)}.
+$$
+
+#### (a) Multi-Head Self-Attention  
 First, compute the Query, Key, and Value vectors for each token:  
 
-Q = H(l−1)W_Q,  
-K = H(l−1)W_K,  
-V = H(l−1)W_V,  
+$$
+Q = H^{(l-1)} W_Q, \quad K = H^{(l-1)} W_K, \quad V = H^{(l-1)} W_V,
+$$
 
-where H(l−1) ∈ Rⁿ×d, and projection matrices W_Q, W_K, W_V ∈ Rᵈ×dₖ.  
+where \(H^{(l-1)} \in \mathbb{R}^{n \times d}\), projection matrices  
+\(W_Q, W_K, W_V \in \mathbb{R}^{d \times d_k}\).  
 
 Single-head attention:  
 
-Attention(Q, K, V) = softmax(QKᵀ / √dₖ)V.  
+$$
+Attention(Q, K, V) = softmax \left( \frac{QK^\top}{\sqrt{d_k}} \right) V.
+$$
 
 Multi-head attention:  
 
-MultiHead(Q, K, V) = Concat(head₁, …, headₕ)W_O,  
+$$
+MultiHead(Q, K, V) = Concat(head_1, …, head_h) W_O,
+$$
 
-headᵢ = Attention(QW_Q(i), KW_K(i), VW_V(i)).  
+$$
+head_i = Attention(QW_Q^{(i)}, KW_K^{(i)}, VW_V^{(i)}).
+$$
 
-(b) Feed Forward Network  
+#### (b) Feed Forward Network (FFN)  
 Each position independently passes through a two-layer feedforward network:  
 
-FFN(h) = GELU(hW₁ + b₁)W₂ + b₂.  
+$$
+FFN(h) = GELU(hW_1 + b_1) W_2 + b_2.
+$$
 
-3. Residual Connection and Layer Normalization  
-Each sub-layer has residual and normalization:  
+---
 
-H~(l) = LayerNorm(H(l−1) + MultiHead(Q, K, V)),  
+### 3. Residual Connection and Layer Normalization  
+Each sub-layer has residual connection and normalization:  
 
-H(l) = LayerNorm(H~(l) + FFN(H~(l))).  
+$$
+\tilde{H}^{(l)} = LayerNorm \big( H^{(l-1)} + MultiHead(Q, K, V) \big),
+$$
 
-4. Pre-training Objectives  
+$$
+H^{(l)} = LayerNorm \big( \tilde{H}^{(l)} + FFN(\tilde{H}^{(l)}) \big).
+$$
+
+---
+
+### 4. Pre-training Objectives  
 BERT has two main pre-training tasks:  
 
-(a) Masked Language Model (MLM)  
-Randomly mask 15% of tokens in the input, predict the masked words:  
+#### (a) Masked Language Model (MLM)  
+Randomly mask 15% of the tokens in the input, predict the masked words:  
 
-L_MLM = − ∑ᵢ∈M log P(xᵢ | x\M),  
+$$
+L_{MLM} = - \sum_{i \in M} \log P(x_i \mid x \setminus M),
+$$
 
-where M is the set of masked positions.  
+where \(M\) is the set of masked positions.  
 
-(b) Next Sentence Prediction (NSP)  
-Determine whether the two input sentences are consecutive:  
+#### (b) Next Sentence Prediction (NSP)  
+Determine whether two input sentences are consecutive:  
 
-L_NSP = − [y log P(IsNext) + (1−y) log P(NotNext)].  
+$$
+L_{NSP} = - \big[ y \log P(IsNext) + (1-y) \log P(NotNext) \big].
+$$
 
-(c) Total Loss  
-L = L_MLM + L_NSP.  
+#### (c) Total Loss  
+$$
+L = L_{MLM} + L_{NSP}.
+$$
 
-Application Scenarios:  
+---
+
+### Application Scenarios  
 Text classification, question answering, NER, translation, etc.  
 
-Concrete Example Implementation: Text Classification + Dataset Loading + Attention Visualization  
-Below is a complete PyTorch code example that uses Hugging Face's transformers library to implement the BERT model for a text classification task (sentiment analysis on the IMDb dataset), including:  
+---
+
+## Concrete Example Implementation: Text Classification + Dataset Loading + Attention Visualization  
+
+Below is a complete PyTorch code example using Hugging Face’s `transformers` library to implement the BERT model for a text classification task (sentiment analysis on the IMDb dataset), including:  
 
 - Dataset loading (IMDb dataset, simplified version).  
 - Fine-tuning the BERT model.  
-- Attention weight visualization (showing attention distribution of the [CLS] token).  
+- Attention weight visualization (showing the attention distribution of the [CLS] token).  
 
 ---
 
@@ -182,3 +227,4 @@ plt.title('Attention Weights (Last Layer, Head 1)')
 plt.xlabel('Tokens')
 plt.ylabel('Tokens')
 plt.show()
+
