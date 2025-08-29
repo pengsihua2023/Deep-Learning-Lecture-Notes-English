@@ -184,3 +184,5 @@ Test Reward: 1.00
 - **Complex Agent**: Combine with deep reinforcement learning (e.g., DQN, PPO) or large language models (e.g., GPT) to build more powerful agents.
 - **Multimodal**: Integrate vision and language processing modules to develop versatile agents.
 - **Multi-Agent Systems**: Implement collaborative or competitive agents to simulate complex interactions.
+- Reference at YouTube：
+https://www.youtube.com/watch?v=F8NKVhkZZWI
