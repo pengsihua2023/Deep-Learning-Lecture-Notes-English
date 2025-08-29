@@ -2,9 +2,10 @@
 Self-Supervised Learning (SSL) is a machine learning paradigm that automatically generates pseudo-labels (pretext tasks) from unlabeled data for training, thereby learning useful representations without requiring manually annotated labels. Unlike traditional unsupervised learning, which typically discovers patterns directly from data (e.g., clustering), self-supervised learning is akin to "supervising" tasks it generates itself. Compared to supervised learning, it can better utilize vast amounts of unlabeled data and is widely applied in fields like computer vision and natural language processing.
 <div align="center">
 <img width="560" height="350" alt="image" src="https://github.com/user-attachments/assets/b83a577d-dfaa-42be-b580-00ea417fb3bd" />
+</div>
+<div align="center">
 (This picture was obtained from the Internet.)
 </div>
-
 Contrastive Learning is a prominent type of self-supervised learning. It learns representations by pulling similar samples (positive pairs) closer together and pushing dissimilar samples (negative pairs) farther apart, as seen in algorithms like SimCLR or MoCo.
 
 Based on mainstream classifications, self-supervised learning can be divided into several categories. These classifications are based on task design and learning mechanisms, may overlap, but help in understanding the concept.
