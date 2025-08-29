@@ -1,4 +1,4 @@
-# Federated Learning
+# Advanced: Federated Learning
 
 Federated Learning is a distributed machine learning method designed to allow multiple devices or clients (such as mobile phones, computers, or servers) to collaboratively train a shared machine learning model without sharing raw data. It distributes the model training process across clients, and only aggregates model updates (such as gradients or parameters) on a central server, thereby protecting data privacy.
 
@@ -137,57 +137,10 @@ The typical training process is:
 
 ---
 
-## Advanced: Federated Learning
-Federated Learning is a distributed machine learning approach that enables multiple devices or clients (e.g., smartphones, computers, or servers) to collaboratively train a shared machine learning model without sharing raw data. It distributes the model training process to individual clients, with only model updates (e.g., gradients or parameters) aggregated on a central server, thereby protecting data privacy.  
 
-### Core Concepts
-- **Local Training**: Each client trains the model on its local dataset, generating model updates (e.g., weights or gradients).
-- **Model Aggregation**: The central server collects updates from clients (without raw data) and updates the global model using methods like weighted averaging.
-- **Privacy Protection**: Raw data remains on the client side, reducing the risk of data leakage.
-- **Communication Efficiency**: Model updates are transmitted between clients and the server, requiring optimization of communication costs.
-
-### Main Types of Federated Learning
-1. **Horizontal Federated Learning**:
-   - Clients have data with the same feature space but different samples (e.g., behavioral data from different users’ smartphones).
-   - Common in mobile devices, IoT, and similar scenarios.
-2. **Vertical Federated Learning**:
-   - Clients have data with the same samples but different features (e.g., data about the same user from a bank and a hospital).
-   - Requires cryptographic techniques (e.g., secure multi-party computation) to align samples and train collaboratively.
-3. **Federated Transfer Learning**:
-   - Combines transfer learning to handle scenarios where clients have both different data and feature spaces.
-
-### Workflow (Using Horizontal Federated Learning as an Example)
-1. The central server initializes a global model and distributes it to clients.
-2. Each client trains the model on its local data, computing updates (e.g., gradients).
-3. Clients upload their updates to the server (without uploading data).
-4. The server aggregates the updates (e.g., via weighted averaging) to update the global model.
-5. Repeat steps 1-4 until the model converges.
-
-### Application Scenarios
-- **Mobile Devices**: For example, smartphone keyboard prediction (Google Gboard) trains models on user devices, protecting input privacy.
-- **Healthcare**: Hospitals collaboratively train disease prediction models without sharing local data.
-- **Finance**: Banks jointly build risk control models while safeguarding customer privacy.
-- **IoT**: Smart devices (e.g., cameras) collaboratively optimize models.
-
-### Advantages and Challenges
-- **Advantages**:
-  - **Privacy Protection**: Data stays local, complying with privacy regulations like GDPR.
-  - **Distributed Computing**: Leverages client computational resources, reducing server load.
-  - **Broad Applicability**: Suitable for data silo scenarios (e.g., cross-institutional collaboration).
-- **Challenges**:
-  - **Communication Overhead**: Frequent transmission of model updates can incur high communication costs.
-  - **Data Heterogeneity**: Non-IID (non-independent and identically distributed) data across clients may degrade model performance.
-  - **Security**: Must defend against malicious attacks or inference attacks on model updates.
-  - **Computational Resources**: Client devices (e.g., smartphones) often have limited computational capabilities.
-
-### Differences from Transfer Learning and Meta-Learning
-- **Transfer Learning**: Transfers knowledge from a source task to a target task, typically without distributed training or privacy protection.
-- **Meta-Learning**: Focuses on learning strategies to quickly adapt to new tasks, emphasizing model generalization rather than distributed training or privacy.
-- **Federated Learning**: Emphasizes distributed training and data privacy, with models updated collaboratively across multiple parties, ideal for data-sensitive scenarios.
-
-### Simple Code Example (Horizontal Federated Learning with PyTorch)
-Below is a simple example of horizontal federated learning, simulating multiple clients collaboratively training a classification model.
 ## Code
+Simple Code Example (Horizontal Federated Learning with PyTorch)
+Below is a simple example of horizontal federated learning, simulating multiple clients collaboratively training a classification model.
 
 ```python
 import torch
