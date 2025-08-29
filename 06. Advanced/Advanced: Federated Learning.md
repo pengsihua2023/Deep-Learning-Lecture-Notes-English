@@ -1,3 +1,142 @@
+# Federated Learning
+
+Federated Learning is a distributed machine learning method designed to allow multiple devices or clients (such as mobile phones, computers, or servers) to collaboratively train a shared machine learning model without sharing raw data. It distributes the model training process across clients, and only aggregates model updates (such as gradients or parameters) on a central server, thereby protecting data privacy.
+
+## Core Concepts
+
+* **Local Training**: Each client trains the model on its local dataset and generates model updates (e.g., weights or gradients).
+* **Model Aggregation**: The central server collects updates from clients (without raw data) and updates the global model using weighted averaging or other methods.
+* **Privacy Protection**: Raw data always remains on the client side, reducing the risk of data leakage.
+* **Communication Efficiency**: Model updates need to be transmitted between clients and the server, so communication costs must be optimized.
+
+## Main Types of Federated Learning
+
+1. **Horizontal Federated Learning**:
+
+   * Clients have data with the same feature space but different samples (e.g., user behavior data on different mobile phones).
+   * Common in scenarios such as mobile devices and IoT.
+2. **Vertical Federated Learning**:
+
+   * Clients have data with the same samples but different features (e.g., a bank and a hospital with data on the same user).
+   * Requires encryption techniques (such as secure multi-party computation) to align samples and train collaboratively.
+3. **Federated Transfer Learning**:
+
+   * Combines transfer learning to handle scenarios where both client data and feature spaces differ.
+
+## Workflow (Example: Horizontal Federated Learning)
+
+1. The central server initializes the global model and distributes it to clients.
+2. Each client trains the model on its local data and computes updates (e.g., gradients).
+3. Clients upload updates to the server (without uploading raw data).
+4. The server aggregates updates (e.g., weighted averaging) to update the global model.
+5. Steps 1–4 are repeated until the model converges.
+
+## Application Scenarios
+
+* **Mobile Devices**: e.g., predictive keyboards on smartphones (Google Gboard), training on user devices to protect input privacy.
+* **Healthcare**: Collaboration between hospitals to train disease prediction models while keeping data local.
+* **Finance**: Banks jointly build risk control models while protecting customer privacy.
+* **IoT**: Smart devices (e.g., cameras) collaboratively optimize models.
+
+---
+
+## Mathematical Description of Federated Learning
+
+### 1. Problem Definition
+
+In federated learning, suppose there are \$N\$ clients (participants), each client \$i\$ holds its own local dataset:
+
+<img width="280" height="45" alt="image" src="https://github.com/user-attachments/assets/edf86e1d-b949-46ed-bd03-196d1b51bf5a" />
+
+The total amount of data is:
+
+\$n = \sum\_{i=1}^N n\_i\$
+
+We aim to learn a shared global model parameter \$\mathbf{w} \in \mathbb{R}^d\$ **without centralizing data**, such that the expected loss across all distributed data is minimized.
+
+### 2. Global Objective Function
+
+Define the local empirical risk function of each client:
+
+$$
+F_i(\mathbf{w}) = \frac{1}{n_i}\sum_{j=1}^{n_i}\ell\big(f(x_{i,j};\mathbf{w}),\, y_{i,j}\big)
+$$
+
+The global objective function is the weighted sum of all client losses:
+
+$$
+F(\mathbf{w}) = \sum_{i=1}^N \frac{n_i}{n} F_i(\mathbf{w})
+$$
+
+Thus, the optimization problem of federated learning is:
+
+$$
+\mathbf{w}^* = \arg\min_{\mathbf{w}} F(\mathbf{w})
+$$
+
+### 3. Optimization Process (FedAvg Algorithm)
+
+#### 3.1 Initialization
+
+The server initializes the global model parameters:
+
+\$\mathbf{w}^0 \in \mathbb{R}^d\$
+
+#### 3.2 Client Update
+
+At round \$t\$, each selected client \$i\$ starts from \$\mathbf{w}^t\$ and performs \$E\$ steps of local stochastic gradient descent (SGD):
+
+$$
+\mathbf{w}_{i}^{t+1} \leftarrow \mathbf{w}_i^t - \eta \nabla \tilde{F}_i(\mathbf{w}_i^t;\,\xi_i^t)
+$$
+
+Where:
+
+* \$\eta\$ is the learning rate
+* \$\xi\_i^t\$ is a mini-batch sampled from \$\mathcal{D}\_i\$
+* \$\nabla \tilde{F}\_i\$ represents the gradient approximation based on this mini-batch
+
+#### 3.3 Parameter Aggregation
+
+The server collects updates from clients and performs weighted averaging:
+
+$$
+\mathbf{w}^{t+1} = \sum_{i=1}^N \frac{n_i}{n}\,\mathbf{w}_i^{t+1}
+$$
+
+### 4. Extensions with Regularization and Noise
+
+In practical deep learning, it is common to add **L2 regularization** (weight decay) and **noise perturbation** (for differential privacy protection or improved generalization).
+
+#### 4.1 Local Objective with Regularization
+
+$$
+F_i^\lambda(\mathbf{w}) = F_i(\mathbf{w}) + \frac{\lambda}{2}\|\mathbf{w}\|^2
+$$
+
+#### 4.2 Update Rule with Noise
+
+$$
+\mathbf{w}_i^{t+1} = \mathbf{w}_i^t - \eta\big(\nabla \tilde{F}_i(\mathbf{w}_i^t;\xi_i^t) + \lambda \mathbf{w}_i^t + \mathbf{z}_i^t\big)
+$$
+
+Where \$\mathbf{z}\_i^t \sim \mathcal{N}(0,\sigma^2 I)\$ is noise.
+
+### 5. Summary
+
+The mathematical essence of federated learning is **distributed weighted empirical risk minimization**:
+
+\$\min\_{\mathbf{w}} \sum\_{i=1}^N \frac{n\_i}{n} F\_i(\mathbf{w})\$
+
+The typical training process is:
+
+1. The server initializes the model;
+2. Clients perform multiple SGD updates on local data;
+3. The server performs weighted averaging of client models (FedAvg);
+4. Repeat iterations until convergence.
+
+---
+
 ## Advanced: Federated Learning
 Federated Learning is a distributed machine learning approach that enables multiple devices or clients (e.g., smartphones, computers, or servers) to collaboratively train a shared machine learning model without sharing raw data. It distributes the model training process to individual clients, with only model updates (e.g., gradients or parameters) aggregated on a central server, thereby protecting data privacy.  
 
