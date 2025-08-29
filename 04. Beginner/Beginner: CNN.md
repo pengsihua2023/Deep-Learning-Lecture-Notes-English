@@ -11,7 +11,9 @@ Convolutional Neural Network (CNN)
 <div align="center">
   <img width="708" height="353" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />
 </div>
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 
 ## Mathematical Description of Convolutional Neural Network (CNN)
 
