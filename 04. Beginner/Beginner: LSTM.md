@@ -11,7 +11,9 @@
     
 <img width="400" height="3000" alt="image" src="https://github.com/user-attachments/assets/76881c31-2af5-45ce-b881-26dfae4ab2e1" />  
 </div>
-
+<div align="center">
+(These two pictures were obtained from the Internet.)
+</div>
 
 ## 2. Core Concept
 
