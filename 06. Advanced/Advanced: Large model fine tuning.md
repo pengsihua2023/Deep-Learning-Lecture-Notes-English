@@ -4,7 +4,9 @@ Large Model Fine-Tuning refers to the process of further training large-scale pr
 <div align="center">  
 <img width="420" height="214" alt="image" src="https://github.com/user-attachments/assets/8430a5de-9b99-47c3-97dd-7fb10a20b2db" />
 </div>
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 ### Core Concepts of Fine-Tuning
 - **Pre-trained Model**: A model trained on large-scale general datasets (e.g., Wikipedia, ImageNet), capturing universal language or visual features.
 - **Fine-Tuning Objective**: Adapt the pre-trained model to a specific task (e.g., text classification, image recognition) or domain (e.g., medical, financial) by adjusting some or all parameters.
