@@ -51,7 +51,6 @@ In this way, the student model can significantly reduce computational cost and s
 * **Semi-Supervised Learning**: Use teacher model predictions on unlabeled data to generate pseudo-labels to help student training.
 * **Ensemble Simplification**: Distill a large ensemble model into a single student model, reducing inference cost.
 
-
 ## Mathematical Description of Knowledge Distillation
 
 ### Basic Idea
@@ -97,7 +96,7 @@ Where:
 * \$\mathcal{L}\_ {\text {CE}}(y, p^{(S)}\_{T=1}) = - \sum\_i y\_i \log p\_i^{(S)}\$, using the true labels \$y\$;
 * \$\alpha \in \[0,1]\$ controls the weight between true labels and teacher signals.
 
----
+## Code
 
 Here is a minimal PyTorch-based Knowledge Distillation example using a real dataset (MNIST handwritten digit dataset) to implement knowledge distillation from a larger teacher model (CNN) to a smaller student model (MLP). The task is digit classification, with knowledge distillation guiding the student model’s learning via the teacher model’s soft labels. Results will be demonstrated by evaluating classification accuracy and visualizing the student model’s prediction confusion matrix.  
 
