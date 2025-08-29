@@ -3,6 +3,7 @@ The Variational Autoencoder (VAE) is a generative deep learning model proposed b
 <div align="center">
 <img width="617" height="376" alt="image" src="https://github.com/user-attachments/assets/da34a994-bb28-42a6-81d9-8e64e091059c" />
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
