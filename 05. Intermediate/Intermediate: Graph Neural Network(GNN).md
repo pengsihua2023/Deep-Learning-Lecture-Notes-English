@@ -1,3 +1,32 @@
+## Graph Neural Network (GNN)
+
+**Graph Neural Network (GNN)** is a neural network model specifically designed for processing graph-structured data.
+In a graph, nodes (vertices) represent entities, and edges represent relationships between entities. Unlike traditional neural networks, GNNs can capture **dependencies between nodes** and the **topological structure of the graph**, thereby learning effective representations (embeddings) of nodes, edges, or the entire graph.
+
+### Core Ideas
+
+1. **Message Passing**:
+   Each node collects information from its neighboring nodes and updates its representation by combining it with its own features.
+
+2. **Aggregation**:
+   Use a function (such as sum, mean, or max pooling) to aggregate neighbor information, ensuring that the result is insensitive to the order of neighboring nodes.
+
+3. **Update**:
+   Combine the aggregated neighbor information with the node’s own features, and update the node representation through a neural network (e.g., MLP).
+
+4. **Propagation**:
+   Repeat the above process over multiple layers so that nodes can capture information from farther neighbors.
+
+### Common Tasks
+
+* **Node Classification**: Predict the category of a node, such as user interest labels in a social network.
+* **Link Prediction**: Predict missing or potential future edges in the graph, such as “friend recommendations” in a recommendation system.
+* **Graph Classification**: Classify an entire graph, such as predicting the drug activity of a molecular structure graph.
+
+---
+
+
+
 ## Intermediate: Graph Neural Network(GNN)
 <div align="center">
 <img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/6c67a274-3a8c-4282-80ab-076bf0d47b61" /> 
