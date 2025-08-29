@@ -11,7 +11,6 @@ By training a smaller, lighter model (usually called the **Student Model**), to 
 
 In this way, the student model can significantly reduce computational cost and storage requirements while maintaining high accuracy, making it very suitable for deployment in resource-constrained scenarios (such as mobile devices and embedded systems).
 
----
 
 ## Basic Principles of Knowledge Distillation
 
@@ -29,7 +28,6 @@ In this way, the student model can significantly reduce computational cost and s
      * “Soft labels” refer to the probability distribution output by the teacher model during classification, instead of a single correct class label.
      * Example: If the hard label is “cat”, the teacher model might output `[cat:0.85, dog:0.10, fox:0.05]`, which contains more information about the similarity between classes.
 
----
 
 ## Types of Knowledge Distillation
 
@@ -45,7 +43,6 @@ In this way, the student model can significantly reduce computational cost and s
 4. **Feature Distillation**
    The student not only learns output probabilities but also mimics the teacher’s intermediate feature representations or attention maps.
 
----
 
 ## Application Scenarios
 
@@ -54,7 +51,6 @@ In this way, the student model can significantly reduce computational cost and s
 * **Semi-Supervised Learning**: Use teacher model predictions on unlabeled data to generate pseudo-labels to help student training.
 * **Ensemble Simplification**: Distill a large ensemble model into a single student model, reducing inference cost.
 
----
 
 ## Mathematical Description of Knowledge Distillation
 
@@ -77,7 +73,6 @@ $$
 
 When \$T\$ is larger, the distribution becomes smoother and better reflects inter-class relationships.
 
----
 
 #### 2. Distillation Loss
 
@@ -90,7 +85,6 @@ $$
 
 Here, \$T^2\$ is a scaling factor to ensure the gradient magnitude is independent of the temperature.
 
----
 
 #### 3. Total Loss Function
 
@@ -105,24 +99,7 @@ Where:
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-## Intermediate: Knowledge Distillation
-
-<div align="center">
-<img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/2a79095f-2443-4a08-a7fa-a1a091bba957" />
-</div>
-
-Write a minimal PyTorch-based Knowledge Distillation example using a real dataset (MNIST handwritten digit dataset) to implement knowledge distillation from a larger teacher model (CNN) to a smaller student model (MLP). The task is digit classification, with knowledge distillation guiding the student model’s learning via the teacher model’s soft labels. Results will be demonstrated by evaluating classification accuracy and visualizing the student model’s prediction confusion matrix.  
+Here is a minimal PyTorch-based Knowledge Distillation example using a real dataset (MNIST handwritten digit dataset) to implement knowledge distillation from a larger teacher model (CNN) to a smaller student model (MLP). The task is digit classification, with knowledge distillation guiding the student model’s learning via the teacher model’s soft labels. Results will be demonstrated by evaluating classification accuracy and visualizing the student model’s prediction confusion matrix.  
 
 ```python
 import torch
