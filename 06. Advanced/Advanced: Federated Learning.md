@@ -4,9 +4,12 @@ Federated Learning is a distributed machine learning method designed to allow mu
 <div align="center">
 <img width="600" height="314" alt="image" src="https://github.com/user-attachments/assets/93f48676-6f4c-4b71-affa-08d500cce16d" />
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
+
 ## Core Concepts
 
 * **Local Training**: Each client trains the model on its local dataset and generates model updates (e.g., weights or gradients).
