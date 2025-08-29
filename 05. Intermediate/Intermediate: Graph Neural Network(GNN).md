@@ -2,6 +2,9 @@
 
 **Graph Neural Network (GNN)** is a neural network model specifically designed for processing graph-structured data.
 In a graph, nodes (vertices) represent entities, and edges represent relationships between entities. Unlike traditional neural networks, GNNs can capture **dependencies between nodes** and the **topological structure of the graph**, thereby learning effective representations (embeddings) of nodes, edges, or the entire graph.
+<div align="center">
+<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/6c67a274-3a8c-4282-80ab-076bf0d47b61" /> 
+</div>
 
 ### Core Ideas
 
@@ -23,23 +26,6 @@ In a graph, nodes (vertices) represent entities, and edges represent relationshi
 * **Link Prediction**: Predict missing or potential future edges in the graph, such as “friend recommendations” in a recommendation system.
 * **Graph Classification**: Classify an entire graph, such as predicting the drug activity of a molecular structure graph.
 
----
-
-
-
-## Intermediate: Graph Neural Network(GNN)
-<div align="center">
-<img width="600" height="200" alt="image" src="https://github.com/user-attachments/assets/6c67a274-3a8c-4282-80ab-076bf0d47b61" /> 
-</div>
-
-- **Importance**:  
-  GNNs are specialized for handling graph-structured data (e.g., social networks, molecular structures) and are widely applied in recommendation systems, chemical modeling, and knowledge graphs.  
-  They are key to extending deep learning to non-Euclidean data (e.g., graphs, networks), representing a cutting-edge direction in modern AI.  
-- **Core Concept**:  
-  A graph consists of nodes (vertices) and edges (connections). GNNs use "message passing" to allow nodes to aggregate information from their neighbors, learning both the graph's structure and features.  
-  **Analogy**: Like "information spreading in a social circle," each node (person) updates its state based on information from friends.  
-- **Applications**: Recommendation systems (e.g., Netflix recommendations), molecular design (drug discovery), traffic network analysis.
-  
 ---
 ## Mathematical Description of Graph Neural Networks
 
