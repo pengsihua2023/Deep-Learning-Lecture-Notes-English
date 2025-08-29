@@ -2,7 +2,7 @@
 ## 
 AI for Science (AI4Science) refers to the interdisciplinary field that leverages artificial intelligence techniques (particularly machine learning and deep learning) to accelerate scientific discovery, optimize experimental design, and address complex scientific problems. By combining AI's powerful computational capabilities with traditional scientific methods, it enhances research efficiency and precision in fields such as physics, chemistry, biology, astronomy, and materials science. Below is an overview of AI4Science, including core concepts, key methods, application scenarios, challenges, and a simple code example.
 <div align="center">
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/21f64e06-8b2a-4454-aaf0-3103ee79b03f" />
+<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/21f64e06-8b2a-4454-aaf0-3103ee79b03f" />
 </div>
 
 <div align="center">
