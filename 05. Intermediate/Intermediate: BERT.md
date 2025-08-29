@@ -68,7 +68,7 @@ $$
 \text{FFN}(h) = \text{GELU}(h W_1 + b_1) W_2 + b_2.
 $$
 
----
+
 
 ### 3. Residual Connection and Layer Normalization
 
@@ -82,7 +82,7 @@ $$
 H^{(l)} = \text{LayerNorm}(\tilde{H}^{(l)} + \text{FFN}(\tilde{H}^{(l)})).
 $$
 
----
+
 
 ### 4. Pre-training Objectives
 
