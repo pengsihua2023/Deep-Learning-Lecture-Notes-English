@@ -7,6 +7,9 @@ Model Pruning and Quantization are two key techniques for optimizing deep learni
 
 #### Introduction
 Model pruning reduces model size and computational load by removing unimportant or redundant parts of a neural network (e.g., weights, neurons, or channels). The goal is to create a lighter model while retaining performance close to the original model.
+<div align="center">
+<img width="400" height="243" alt="image" src="https://github.com/user-attachments/assets/c44a27a2-7b8f-40e7-a521-3fed673c233c" />
+</div>
 
 #### Main Methods
 1. **Weight Pruning**:
