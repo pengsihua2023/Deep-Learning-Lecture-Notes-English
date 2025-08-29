@@ -6,9 +6,10 @@ Reinforcement learning is a learning method that improves decision-making rules 
 
 <div align="center">
 <img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/7380370c-baa5-466d-978d-76a504616754" />
-
 </div>
-
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
 * **Importance**:
   Reinforcement Learning (RL), when combined with neural networks (e.g., DQN, Deep Q-Network), has shown excellent performance in game AI and robotic control.
   It is the core of AI decision-making, demonstrating the application of neural networks in dynamic environments.
