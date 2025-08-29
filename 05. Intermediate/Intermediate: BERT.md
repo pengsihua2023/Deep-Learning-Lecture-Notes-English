@@ -28,7 +28,7 @@ where:
 * \$P(i)\$: position embedding.
 * \$S(s\_i)\$: sentence segment embedding (used to distinguish sentence A/B).
 
----
+
 
 ### 2. Transformer Encoder Layer
 
@@ -232,7 +232,7 @@ plt.show()
 ```
 
 
-##### **Code Explanation**
+### **Code Explanation**
 
 * **Dataset Loading**:
 
