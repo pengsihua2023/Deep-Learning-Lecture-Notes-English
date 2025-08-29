@@ -10,9 +10,12 @@ Model pruning reduces model size and computational load by removing unimportant 
 <div align="center">
 <img width="400" height="243" alt="image" src="https://github.com/user-attachments/assets/c44a27a2-7b8f-40e7-a521-3fed673c233c" />
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
+
 #### Main Methods
 1. **Weight Pruning**:
    - **Description**: Sets weights below a certain threshold in the weight matrix to zero, creating a sparse model.
@@ -48,9 +51,12 @@ Model quantization reduces model size and inference time by lowering the precisi
 <div align="center">
 <img width="490" height="210" alt="image" src="https://github.com/user-attachments/assets/cefc6549-7e36-4aae-8f56-cfe40b4efc73" />
 </div>
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
+
+
 #### Main Methods
 1. **Post-Training Quantization (PTQ)**:
    - **Description**: Applies quantization directly to a pre-trained model without retraining.
