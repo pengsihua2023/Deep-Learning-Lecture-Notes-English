@@ -1,4 +1,4 @@
-
+## L1 Norm Regularization
 
 What is L1 norm regularization?
 L1 norm regularization (also known as Lasso regularization) is a commonly used regularization technique in machine learning and deep learning to prevent model overfitting and promote parameter sparsity. Unlike L2 norm regularization (Ridge regularization), L1 regularization adds the L1 norm of the model parameters (i.e., the sum of the absolute values of the weights) as a penalty term to the loss function, which tends to push some weights toward zero, thereby generating a sparse model.
