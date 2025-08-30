@@ -243,7 +243,7 @@ Actual results may vary due to random initialization.
 - **Feature dimension**: `nn.LayerNorm` requires specifying the normalization dimension (e.g., 128) to match the input.  
 - **Computation overhead**: LN has slightly higher computation cost than BN for high-dimensional features, but generally negligible.  
 - **Combination with other regularization**: Can be used with Dropout, L1/L2 regularization (as described earlier).  
-```
+
 
 
 
