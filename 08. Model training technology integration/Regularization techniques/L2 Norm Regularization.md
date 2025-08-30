@@ -1,9 +1,9 @@
 ## L2 Norm Regularization
-### Mathematical Definition of L2 Norm Regularization
+### What is L2 Norm Regularization?
 
-L2 norm regularization (also known as Weight Decay) is a commonly used regularization technique in machine learning and deep learning to prevent model overfitting. Its core idea is to add a penalty term to the loss function, constraining the size of model parameters (weights), thereby improving the generalization ability of the model.
+L2 norm regularization (also known as Weight Decay) is a commonly used regularization technique in machine learning and deep learning to prevent model overfitting. Its core idea is to add a penalty term to the loss function to constrain the size of model parameters (weights), thereby improving the generalization ability of the model.
 
-#### Core principle
+#### Core Principle
 - **Loss function modification**: Add an L2 norm penalty term to the original loss function (such as mean squared error or cross-entropy):
 
 $$
@@ -18,21 +18,22 @@ Where:
 * $\lambda$ is the hyperparameter controlling the strength of the regularization penalty.  
 
 - **Effect**:  
-  - L2 regularization tends to make weights smaller (but not exactly zero), resulting in a smoother model and reducing overfitting to training data.  
+  - L2 regularization tends to make weights smaller (but not exactly zero), making the model smoother and reducing overfitting to training data.  
   - It encourages the model to learn smaller weights, lowering model complexity and preventing overfitting to noise.  
 
 - **Difference from L1 regularization**:  
+
 * L1 regularization (Lasso) uses $\sum |w_i|$, which tends to produce sparse weights (some weights are exactly 0).  
 * L2 regularization (Ridge) uses $\sum w_i^2$, which tends to spread out the weight values, keeping all weights small.  
 
-#### Application scenarios
+#### Application Scenarios
 - In deep neural networks (such as CNN, RNN, Transformer), L2 regularization is commonly used to prevent overfitting.  
 - Combined with other regularization methods such as Dropout and Batch Normalization.  
-- Hyperparameter $\lambda$ is usually tuned via cross-validation or Bayesian optimization (as mentioned previously).  
+- Hyperparameter $\lambda$ is usually tuned via cross-validation or Bayesian optimization (as described previously).  
 
 ---
 
-### Python code example
+### Python Code Example
 
 Below is an example of implementing L2 norm regularization using PyTorch, showing how to apply weight decay during neural network training. The example is based on a simple fully connected network trained on the MNIST handwritten digit classification task.
 
@@ -102,4 +103,66 @@ epochs = 5
 for epoch in range(1, epochs + 1):
     train(epoch)
     test()
+````
+
+---
+
+### Code Explanation
+
+1. **Model definition**:
+
+   * `SimpleNet` is a simple fully connected neural network for MNIST classification (28x28 pixel input, 10-class output).
+   * Contains two linear layers and ReLU activation.
+
+2. **Dataset**:
+
+   * MNIST dataset is loaded with PyTorch `torchvision`, batch size = 64.
+   * Preprocessing only includes converting to tensor (`ToTensor`).
+
+3. **L2 regularization**:
+
+* In the optimizer, L2 regularization is achieved via `weight_decay=1e-4`.
+* PyTorch’s `weight_decay` parameter automatically adds an L2 penalty in the optimizer update step, equivalent to adding the following term to the loss function:
+
+$$
+\lambda \sum w_i^2
+$$
+
+* Mathematically, the SGD weight update becomes:
+
+$$
+w \leftarrow w - \eta \left( \frac{\partial \text{Loss}}{\partial w} + \lambda w \right)
+$$
+
+Where \$\eta\$ is the learning rate, and \$\lambda\$ is `weight_decay`.
+
+4. **Training and testing**:
+
+   * Train for 5 epochs, printing average loss each time.
+   * During testing, classification accuracy is computed to evaluate performance.
+
+5. **Example output**:
+
+   ```
+   Epoch 1, Average Loss: 0.8923
+   Test Accuracy: 92.15%
+   Epoch 2, Average Loss: 0.4125
+   Test Accuracy: 94.30%
+   ...
+   Epoch 5, Average Loss: 0.2987
+   Test Accuracy: 95.80%
+   ```
+
+   Actual results may vary slightly due to random initialization.
+
+---
+
+### Practical Application Scenarios
+
+* **Deep learning**: L2 regularization is often used in CNNs, RNNs, Transformers, etc., to prevent overfitting.
+* **Hyperparameter selection**: $\lambda$ (e.g., 1e-4) is usually tuned via cross-validation or Bayesian optimization, with a typical range of 1e-5 to 1e-2.
+* **Combined with other regularization**: L2 regularization is often combined with Dropout, BatchNorm, etc., for better results.
+* **Limitations of weight decay**: For certain tasks (e.g., sparse models), L1 regularization or Elastic Net (L1+L2) may be more suitable.
+
+
 
