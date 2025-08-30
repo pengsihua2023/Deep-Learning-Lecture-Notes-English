@@ -14,6 +14,11 @@ First author：Mingxing Tan
 <img width="700" height="370" alt="image" src="https://github.com/user-attachments/assets/f88060f1-8ac4-4b2c-8cc7-6186af74255c" />  
 </div>
 
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
+
+
 ## Code description
 This code implements a **simplified EfficientNet model** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
 
