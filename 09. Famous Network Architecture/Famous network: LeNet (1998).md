@@ -12,6 +12,11 @@
 <img width="700" height="260" alt="image" src="https://github.com/user-attachments/assets/f2ccce70-ad11-40d2-bf71-3651aa4fd10b" />  
 </div>
 
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
+
+
 ## Code description
 
 This code implements a **LeNet model** for the handwritten digit classification task on the **MNIST dataset**. The main functionalities are as follows:
