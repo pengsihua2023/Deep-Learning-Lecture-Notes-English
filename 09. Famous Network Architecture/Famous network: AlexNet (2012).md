@@ -13,6 +13,11 @@
 <img width="700" height="250" alt="image" src="https://github.com/user-attachments/assets/7b145c0e-205a-4c61-ad7f-b477203e8db6" />    
 </div>
 
+<div align="center">
+(These figures were obtained from the Internet.)
+</div>
+
+
 ### Code
 This code implements a **simplified AlexNet convolutional neural network** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
 
