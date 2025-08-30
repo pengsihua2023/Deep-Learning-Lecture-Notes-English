@@ -25,6 +25,11 @@ Diffusion models learn data distributions through a "noise-adding and denoising"
 <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/427d35b9-10d1-4bca-b74c-b5e166d7613d" />
 </div>
 
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
+
+
 ## Code description
 This code implements a simple **Denoising Diffusion Probabilistic Model (DDPM)** using the PyTorch library, with the following main functionalities:  
 
