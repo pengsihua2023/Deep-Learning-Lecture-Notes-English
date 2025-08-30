@@ -51,8 +51,8 @@ $$
 
 Below is a simple PyTorch example implementing Batch Normalization on the MNIST handwritten digit classification task. The code adds BN layers to a fully connected neural network, combined with Adam optimizer and early stopping (as mentioned earlier).
 
-```
 
+```python
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -69,7 +69,7 @@ self.bn1 = nn.BatchNorm1d(128)      # BatchNorm layer
 self.fc2 = nn.Linear(128, 10)       # Output: 10 classes
 self.relu = nn.ReLU()
 
-```
+
 def forward(self, x):
     x = x.view(-1, 28 * 28)  # Flatten input
     x = self.fc1(x)
@@ -77,7 +77,7 @@ def forward(self, x):
     x = self.relu(x)
     x = self.fc2(x)
     return x
-```
+
 
 # Step 2: Load MNIST dataset and split into train/validation
 
@@ -108,7 +108,7 @@ self.counter = 0
 self.best\_model\_state = None
 self.early\_stop = False
 
-```
+
 def __call__(self, val_loss, model):
     if val_loss < self.best_loss - self.delta:
         self.best_loss = val_loss
@@ -118,7 +118,7 @@ def __call__(self, val_loss, model):
         self.counter += 1
         if self.counter >= self.patience:
             self.early_stop = True
-```
+
 
 # Step 5: Training and validation functions
 
@@ -166,12 +166,12 @@ train\_loss = train(epoch)
 val\_loss = validate()
 print(f'Epoch {epoch}, Train Loss: {train\_loss:.4f}, Val Loss: {val\_loss:.4f}')
 
-```
+
 early_stopping(val_loss, model)
 if early_stopping.early_stop:
     print("Early stopping triggered!")
     break
-```
+
 
 # Restore best model
 
@@ -209,7 +209,7 @@ print(f'Test Accuracy: {test\_accuracy:.2f}%')
    - Early stopping (`EarlyStopping` class) monitors validation loss and saves the best model.  
 
 5. **Example output**:  
-```
+
 
 Epoch 1, Train Loss: 0.2987, Val Loss: 0.1654
 Epoch 2, Train Loss: 0.1234, Val Loss: 0.1321
@@ -220,10 +220,10 @@ Early stopping triggered!
 Restored best model from early stopping.
 Test Accuracy: 97.20%
 
-```
+
 Actual results may vary due to random initialization.  
 
----
+
 
 ### Key Points
 - **Placement of BatchNorm**: Usually placed after linear/conv layers and before activation functions.  
@@ -233,7 +233,7 @@ Actual results may vary due to random initialization.
 - **Batch size**: Very small batches (<16) may cause unstable statistics; recommended batch size ≥ 32.  
 - **Learnable parameters**: `nn.BatchNorm1d` automatically maintains `gamma` and `beta`, which are learned through the optimizer.  
 
----
+
 
 ### Practical Application Scenarios
 - **Deep learning**: Widely used in CNNs (e.g., ResNet), Transformers (e.g., BERT), significantly improves training speed and stability.  
@@ -245,8 +245,4 @@ Actual results may vary due to random initialization.
 - **Alternatives**: LayerNorm, GroupNorm are better suited for small-batch or sequential tasks.  
 - **Initialization**: BN is less sensitive to parameter initialization but proper setup is still required.  
 
-
-
-
-要不要我也帮你把 **Layer Normalization (LN)** 的那一段中文翻译成英文，保持和这份 **Batch Normalization (BN)** 一样的结构，方便对比？
 
