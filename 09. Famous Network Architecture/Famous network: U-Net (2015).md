@@ -11,6 +11,11 @@
 <img width="700" height="350" alt="image" src="https://github.com/user-attachments/assets/00b53895-4271-48df-abc5-f39e671ec419" />
 </div>
 
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
+
+
 ## Code description
 The code implements a simplified but effective U-Net image segmentation model, specifically designed for the semantic segmentation task on the CIFAR-10 dataset.  
 ### Core Functionalities
