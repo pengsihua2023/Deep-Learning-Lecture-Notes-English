@@ -15,6 +15,10 @@
   
 </div>
 
+<div align="center">
+(These pictures were obtained from the Internet.)
+</div>
+
 ## Code description 
 
 ```
