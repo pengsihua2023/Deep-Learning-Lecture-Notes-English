@@ -18,7 +18,7 @@ ResNet introduces "residual connections" (skip connections), enabling the networ
 </div>
 
 <div align="center">
-(This picture was obtained from the Internet.)
+(These pictures were obtained from the Internet.)
 </div>
 
 
