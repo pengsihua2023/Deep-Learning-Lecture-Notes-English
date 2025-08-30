@@ -17,6 +17,11 @@ ResNet introduces "residual connections" (skip connections), enabling the networ
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/ee800edc-db6e-4cde-84d9-0d396ca69e58" />  
 </div>
 
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
+
+
 ## Code
 
 This code implements a **simplified ResNet model** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
