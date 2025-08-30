@@ -245,7 +245,5 @@ Actual results may vary due to random initialization.
 - **Combination with other regularization**: Can be used with Dropout, L1/L2 regularization (as described earlier).  
 ```
 
----
 
-要不要我帮你也把 **BatchNorm (BN)** 和 **LayerNorm (LN)** 的这两份翻译整理成一个对照表，方便快速比较？
 
