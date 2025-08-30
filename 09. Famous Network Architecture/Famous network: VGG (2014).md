@@ -11,6 +11,11 @@
 <img width="700" height="430" alt="image" src="https://github.com/user-attachments/assets/af706248-9b28-4017-8adf-6604784dcbac" />
  </div>
 
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
+
+
 ## Code description
 
 This code implements a **simplified VGG-11 model** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
