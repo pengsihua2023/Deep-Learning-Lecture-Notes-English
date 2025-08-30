@@ -14,6 +14,11 @@
 <img width="800" height="190" alt="image" src="https://github.com/user-attachments/assets/7944d7cd-6b8f-4753-a453-38146ed9b160" />  
 </div>
 
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
+
+
 ## Code Description
 This code implements a **simplified Inception model** (based on the GoogLeNet Inception architecture) for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
 
