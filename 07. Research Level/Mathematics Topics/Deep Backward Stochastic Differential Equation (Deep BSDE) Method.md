@@ -164,19 +164,20 @@ plt.show()
 
 ## Code Explanation
 
-1. **ZNet**: 神经网络逼近 \$Z\_t(t, x)\$（梯度），输入为时间 \$t\$ 和位置 \$x\$。
+1. **ZNet**: The neural network approximates \$Z\_t(t, x)\$ (the gradient), with inputs being time \$t\$ and position \$x\$.
 
-2. **DeepBSDE**: 包含初始 \$Y\_0\$（可学习参数）和 \$Z\$ 网络。模拟 Brownian 路径（前向 SDE，这里 \$\mu = 0, \sigma = 1\$），然后前向迭代 \$Y\_t\$，使用 Euler 方案。
+2. **DeepBSDE**: Includes the initial \$Y\_0\$ (a learnable parameter) and the \$Z\$ network. Simulates Brownian paths (forward SDE, here \$\mu = 0, \sigma = 1\$), then performs forward iteration of \$Y\_t\$ using the Euler scheme.
 
-3. **loss**: 计算终端 MSE 损失 \$\mathbb{E}\left\[ \lvert Y\_T - g(X\_T)\rvert^2 \right]\$ 的期望。
+3. **loss**: Computes the terminal MSE loss expectation \$\mathbb{E}\left\[ \lvert Y\_T - g(X\_T)\rvert^2 \right]\$.
 
-4. **train**: 每轮生成新路径（随机步长），计算损失，反向传播优化。运行后， \$Y\_0\$ 收敛到 \$u(0,0)\$。
+4. **train**: Each epoch generates new paths (random steps), computes the loss, and applies backpropagation optimization. After training, \$Y\_0\$ converges to \$u(0,0)\$.
 
-5. **扩展**: 对于高维，只需增大 \$d\$；对于完整 \$u(t,x)\$ ，可固定 \$t,x\$ 并模拟从那里开始，或使用多层网络。
+5. **Extension**: For high dimensions, simply increase \$d\$; for the full solution \$u(t,x)\$, one can fix \$t,x\$ and simulate starting from there, or use multi-layer networks.
 
 
+This example is the simplest demonstration (1D, nonlinear); in practical applications, variance reduction techniques (such as importance sampling) or multi-layer Z-networks can be added. Running the code requires a PyTorch environment, and after training the loss decreases, with \$Y\_0\$ approaching the true value (for this PDE, around \$0.8\$).
 
-这个例子是最简单的演示（1D，非线性）；实际应用中可添加方差减少技术（如重要采样）或多层 Z 网络。运行代码需要 PyTorch 环境，训练后损失下降， \$Y\_0\$ 接近真实值（对于此 PDE，约 \$0.8\$ ）。
+
 
 
 
