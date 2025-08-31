@@ -446,55 +446,55 @@ import torch.nn as nn
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 1. 定义神经网络（添加可学习参数 nu）
+# 1. Define neural network (add learnable parameter nu)
 class PINN(nn.Module):
     def __init__(self):
         super(PINN, self).__init__()
         self.net = nn.Sequential(
-            nn.Linear(2, 20),  # 输入 (x, t)
+            nn.Linear(2, 20),  # Input (x, t)
             nn.Tanh(),
             nn.Linear(20, 20),
             nn.Tanh(),
-            nn.Linear(20, 1)  # 输出 u(x, t)
+            nn.Linear(20, 1)  # Output u(x, t)
         )
-        self.nu = nn.Parameter(torch.tensor(0.1))  # 初始猜测 nu，可学习
+        self.nu = nn.Parameter(torch.tensor(0.1))  # Initial guess for nu, learnable
 
     def forward(self, x, t):
         inputs = torch.cat([x, t], dim=1)
         return self.net(inputs)
 
-# 2. 定义损失函数（添加观测损失）
+# 2. Define loss function (add observation loss)
 def compute_loss(model, x_f, t_f, x_i, t_i, u_i, x_b, t_b, u_b, x_o, t_o, u_o):
     x_f, t_f = x_f.requires_grad_(True), t_f.requires_grad_(True)
     u = model(x_f, t_f)
     
-    # PDE 残差
+    # PDE residual
     u_t = torch.autograd.grad(u, t_f, grad_outputs=torch.ones_like(u), create_graph=True)[0]
     u_x = torch.autograd.grad(u, x_f, grad_outputs=torch.ones_like(u), create_graph=True)[0]
     u_xx = torch.autograd.grad(u_x, x_f, grad_outputs=torch.ones_like(u_x), create_graph=True)[0]
     pde_residual = u_t + u * u_x - model.nu * u_xx
     loss_pde = torch.mean(pde_residual ** 2)
     
-    # 初始条件
+    # Initial condition
     u_init = model(x_i, t_i)
     loss_init = torch.mean((u_init - u_i) ** 2)
     
-    # 边界条件
+    # Boundary condition
     u_bc = model(x_b, t_b)
     loss_bc = torch.mean((u_bc - u_b) ** 2)
     
-    # 观测数据损失
+    # Observation data loss
     u_obs = model(x_o, t_o)
     loss_obs = torch.mean((u_obs - u_o) ** 2)
     
-    # 总损失
+    # Total loss
     return loss_pde + loss_init + loss_bc + loss_obs
 
-# 3. 准备数据（添加观测数据）
-N_f, N_i, N_b, N_o = 2000, 100, 100, 50  # 添加观测点
-true_nu = 0.01 / np.pi  # 真实 nu
+# 3. Prepare data (add observation data)
+N_f, N_i, N_b, N_o = 2000, 100, 100, 50  # Add observation points
+true_nu = 0.01 / np.pi  # True nu
 
-# PDE、初始、边界数据（同之前一维示例）
+# PDE, initial, and boundary data (same as previous 1D example)
 x_f = torch.rand(N_f, 1) * 2 - 1
 t_f = torch.rand(N_f, 1)
 x_i = torch.rand(N_i, 1) * 2 - 1
@@ -504,17 +504,17 @@ x_b = torch.cat([torch.ones(N_b//2, 1), -torch.ones(N_b//2, 1)])
 t_b = torch.rand(N_b, 1)
 u_b = torch.zeros(N_b, 1)
 
-# 观测数据（模拟：使用真实解 + 噪声）
+# Observation data (simulation: true solution + noise)
 x_o = torch.rand(N_o, 1) * 2 - 1
 t_o = torch.rand(N_o, 1)
-# 模拟观测 u_o（假设有解析解或数值解，这里简化用 sin 近似 + 噪声）
+# Simulated observation u_o (assume analytical or numerical solution exists; here simplified using sin + noise)
 u_o = -torch.sin(np.pi * x_o) * torch.exp(-true_nu * np.pi**2 * t_o) + 0.01 * torch.randn(N_o, 1)
 
-# 4. 训练模型
+# 4. Train model
 model = PINN()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 losses = []
-nu_history = []  # 记录 nu 估计
+nu_history = []  # Record nu estimation
 
 for epoch in range(2000):
     optimizer.zero_grad()
@@ -526,7 +526,7 @@ for epoch in range(2000):
     if epoch % 200 == 0:
         print(f"Epoch {epoch}, Loss: {loss.item():.6f}, Estimated nu: {model.nu.item():.6f}")
 
-# 5. 可视化
+# 5. Visualization
 plt.figure(figsize=(12, 4))
 plt.subplot(1, 3, 1)
 plt.plot(losses)
@@ -542,7 +542,7 @@ plt.ylabel('nu')
 plt.title('nu Estimation')
 plt.legend()
 
-# 动画可视化：u(x, t) 随时间变化
+# Animation visualization: u(x, t) changes over time
 fig, ax = plt.subplots()
 x_test = torch.linspace(-1, 1, 100).reshape(-1, 1)
 def animate(t_frame):
@@ -555,9 +555,10 @@ def animate(t_frame):
     ax.set_ylim(-1.5, 1.5)
     ax.legend()
 ani = FuncAnimation(fig, animate, frames=50, interval=100)
-plt.close(fig)  # 防止静态显示
-ani.save('burgers_animation.gif', writer='imagemagick')  # 保存为 GIF（需安装 imagemagick）
-plt.show()  # 或直接显示动画
+plt.close(fig)  # Prevent static display
+ani.save('burgers_animation.gif', writer='imagemagick')  # Save as GIF (imagemagick required)
+plt.show()  # Or directly show animation
+
 ```
 
 ##### **Code Explanation**
