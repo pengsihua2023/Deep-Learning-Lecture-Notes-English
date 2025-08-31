@@ -3,7 +3,7 @@
 
 ## Overview of Initialization Methods
 
-### Overview of Model Initialization Methods in Deep Learning
+
 
 In deep learning, the initialization of model parameters (weights and biases) has an important impact on training convergence speed, stability, and final performance. Proper initialization methods can avoid gradient vanishing or explosion and ensure good gradient propagation at the early stages of training. Below is an overview of common initialization methods in deep learning, along with their core ideas and applicable scenarios.
 
