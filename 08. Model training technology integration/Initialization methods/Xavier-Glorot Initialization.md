@@ -1,5 +1,4 @@
 
-
 ## Uniform-Normal Initialization (Xavier-Glorot Initialization)
 
 ### Principles and Usage of Xavier/Glorot Initialization with Uniform/Normal Distribution
@@ -59,11 +58,11 @@ $$
 
 ---
 
-#### **PyTorch Usage**
+### PyTorch Usage
 
 PyTorch provides the built-in `torch.nn.init` module, supporting both Xavier uniform and normal initialization. Below is a minimal code example showing how to use Xavier initialization in fully connected and convolutional layers.
 
-##### **Code Example**
+### Code Example
 
 ```python
 import torch
@@ -105,7 +104,7 @@ print("FC layer weight std:", model.fc.weight.std().item())
 ```
 
 
-#### Code Explanation
+### Code Explanation
 
 * **Model**:
 
