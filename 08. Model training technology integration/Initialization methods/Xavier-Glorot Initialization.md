@@ -26,15 +26,16 @@ where \$\mathrm{fan}*{in}\$ is the number of input neurons and \$\mathrm{fan}*{o
 
 * **Normal Initialization**: Weights are sampled from a normal distribution with mean 0 and standard deviation:
 
+
 $$
-\sigma = \sqrt{\frac{2}{\mathrm{fan}_{in} + \mathrm{fan}_{out}}}
+\sigma = \sqrt{\frac{2}{\text{fan}_ {\text{in}} + \text{fan}_{\text{out}}}}
 $$
 
 $$
 W \sim \mathcal{N}(0, \sigma^2)
 $$
 
----
+
 
 3. **Applicable Scenarios**:
 
