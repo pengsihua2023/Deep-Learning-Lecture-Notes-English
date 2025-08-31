@@ -4,7 +4,7 @@ The Dicke Model is a theoretical framework in quantum optics and condensed matte
 ### Key Components of the Dicke Model
 <img width="984" height="252" alt="image" src="https://github.com/user-attachments/assets/31b564b9-2c01-49a2-a86e-1500b37793cb" />
 
-1. **Two-Level Systems**: A collection of $N$ two-level systems (e.g., atoms with ground and excited states), often modeled as spin-$\tfrac{1}{2}$ particles.
+1. **Two-Level Systems**: A collection of $N$ two-level systems (e.g., atoms with ground and excited states), often modeled as spin- $\tfrac{1}{2}$ particles.
 
 2. **Cavity Field**: A single bosonic mode (e.g., a photon field in a cavity), described by creation $(a^\dagger)$ and annihilation $(a)$ operators.
 
