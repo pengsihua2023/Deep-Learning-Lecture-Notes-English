@@ -36,12 +36,12 @@
     
   * PINN Topics
     * ODE and inverse problems
-      * [Solving first-order ordinary differential equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/ODE%20and%20inverse%20problems/Solving%20first-order%20ordinary%20differential%20equations%20based%20on%20the%20DeepXDE%20library.md)
-      * [Solving second-order ordinary differential equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/ODE%20and%20inverse%20problems/Solving%20second-order%20ordinary%20differential%20equations%20based%20on%20the%20DeepXDE%20library.md)
+      - [Solving first-order ordinary differential equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/ODE%20and%20inverse%20problems/Solving%20first-order%20ordinary%20differential%20equations%20based%20on%20the%20DeepXDE%20library.md)
+      - [Solving second-order ordinary differential equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/ODE%20and%20inverse%20problems/Solving%20second-order%20ordinary%20differential%20equations%20based%20on%20the%20DeepXDE%20library.md)
     * PDE and inverse problems
-      * [First-Order Partial Differential Equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PDE%20and%20inverse%20problems/First-Order%20Partial%20Differential%20Equations.md)
-      * [First-order PDE in 2D Space](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PDE%20and%20inverse%20problems/First-order%20partial%20differential%20equations%20in%20two-dimensional%20space.md)
-      * [Solving Navier-Stokes Equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PDE%20and%20inverse%20problems/PINN%3A%20Solving%20Navier-Stokes%20Equations.md)
+      - [First-Order Partial Differential Equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PDE%20and%20inverse%20problems/First-Order%20Partial%20Differential%20Equations.md)
+      - [First-order PDE in 2D Space](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PDE%20and%20inverse%20problems/First-order%20partial%20differential%20equations%20in%20two-dimensional%20space.md)
+      - [Solving Navier-Stokes Equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PDE%20and%20inverse%20problems/PINN%3A%20Solving%20Navier-Stokes%20Equations.md)
     * Special Topic on Virus Transmission Dynamics
     * [PINN introduction](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PINN%20introduction.md)
     * [PINN-related libraries](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PINN-related%20libraries.md)
