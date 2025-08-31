@@ -33,3 +33,11 @@
 
     * [DeepMD-kit Library for Simulating Macroscopic Thermo-Mechanical Processes of Copper Metal](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Chemistry%20and%20Materials%20Science%20Topics/DeepMD-kit%20Library%20for%20Simulating%20Macroscopic%20Thermo-Mechanical%20Processes%20of%20Copper%20Metal.md)
     * [DeepMD-kit Library for Simulating Molecular Dynamics of Gas-Phase Water Molecules (H₂O)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Chemistry%20and%20Materials%20Science%20Topics/DeepMD-kit%20Library%20for%20Simulating%20Molecular%20Dynamics%20of%20Gas-Phase%20Water%20Molecules%20(H%E2%82%82O).md)
+    
+  * PINN Topics
+    * ODE and inverse problems
+    * PDE and inverse problems
+    * Special Topic on Virus Transmission Dynamics
+    * [PINN introduction](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PINN%20introduction.md)
+    * [PINN-related libraries](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PINN-related%20libraries.md)
+    * [PINN: Physics-Informed Neural Networks](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PINN%3A%20Physics-Informed%20Neural%20Networks.md)
