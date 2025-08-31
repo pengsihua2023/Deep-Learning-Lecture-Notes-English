@@ -33,6 +33,18 @@ Where:
 ### Key Phenomena
 <img width="1001" height="406" alt="image" src="https://github.com/user-attachments/assets/a2511f42-5ea3-4c56-9e16-ecf2a0747f9d" />
 
+1. **Superradiance**: When $N$ atoms couple strongly to the cavity, they can emit light collectively, leading to an enhanced emission rate proportional to $N^2$ (superradiant phase).
+
+2. **Dicke Superradiant Phase Transition**: In the thermodynamic limit $(N \to \infty)$, the model exhibits a quantum phase transition at a critical coupling strength $g_c$. Below $g_c$, the system is in a normal phase (no photons, atoms in ground state). Above $g_c$, it enters a superradiant phase with a macroscopic population of photons and coherent atomic excitation.
+
+   * Critical coupling:
+
+   $$
+   g_c = \sqrt{\omega_c \omega_0}/2
+   $$
+
+3. **Open System Dynamics**: In realistic settings (e.g., including dissipation as in the code example you provided), the model is extended to include cavity losses $(\kappa)$ and atomic decoherence, often studied using master equations (like in QuTiP simulations).
+
 
 ### Applications
 - **Quantum Optics**: Describes atom-cavity interactions in experiments like cavity QED or circuit QED (e.g., superconducting qubits in microwave cavities).
