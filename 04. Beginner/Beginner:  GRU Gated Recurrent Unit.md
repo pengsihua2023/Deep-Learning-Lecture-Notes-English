@@ -399,5 +399,8 @@ if __name__ == "__main__":
 GRU learns the periodic pattern of the sine wave through its update and reset gates.
 <div align="center">
 <img width="520" height="120" alt="image" src="https://github.com/user-attachments/assets/c7071ed2-599e-4654-8796-e9581545b06e" />
-<img width="500" height="330" alt="image" src="https://github.com/user-attachments/assets/bd3d6abc-faf1-447f-bad0-91b884b31959" />
+
+
+   
+ <img width="500" height="330" alt="image" src="https://github.com/user-attachments/assets/bd3d6abc-faf1-447f-bad0-91b884b31959" />
 </div>
