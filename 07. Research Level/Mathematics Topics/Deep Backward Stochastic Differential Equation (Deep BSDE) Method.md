@@ -74,6 +74,90 @@ u(1,x) = \cos\left(\tfrac{\pi x}{2}\right).
 $$
 
 This is a simplified version of the Allen-Cahn equation variant, with the true solution approximating a smooth function. The code includes neural network definition, path simulation, and training loop.
+```python
+import torch
+import torch.nn as nn
+import numpy as np
+import matplotlib.pyplot as plt
 
+# Neural network to approximate Z_t (gradient process), 
+# can be shared or independent across time steps
+class ZNet(nn.Module):
+    def __init__(self, d=1, hidden_size=32):  # d is dimension, here 1D
+        super(ZNet, self).__init__()
+        self.fc1 = nn.Linear(d + 1, hidden_size)  # input (t, x)
+        self.fc2 = nn.Linear(hidden_size, hidden_size)
+        self.fc_out = nn.Linear(hidden_size, d)   # output Z \in \mathbb{R}^d
+    
+    def forward(self, t, x):
+        inp = torch.cat([t, x], dim=1)
+        h = torch.relu(self.fc1(inp))
+        h = torch.relu(self.fc2(h))
+        return self.fc_out(h)
 
+# Deep BSDE solver
+class DeepBSDE:
+    def __init__(self, d=1, T=1.0, N=20, batch_size=256, lr=0.01):
+        self.d = d  # dimension
+        self.T = T  # terminal time
+        self.N = N  # number of time steps
+        self.dt = T / N
+        self.batch_size = batch_size
+        self.y0 = nn.Parameter(torch.tensor([0.5]))  # initial Y0 (u(0,0))
+        self.z_net = ZNet(d=d)  # shared Z network
+        self.optimizer = torch.optim.Adam(list(self.z_net.parameters()) + [self.y0], lr=lr)
+    
+    def f(self, y):  # nonlinear term f(y) = y^3
+        return y ** 3
+    
+    def g(self, x):  # terminal condition g(x) = cos(pi x / 2)
+        return torch.cos(np.pi * x / 2)
+    
+    def simulate_paths(self, x0=0.0):
+        # Simulate Brownian paths
+        dw = torch.sqrt(torch.tensor(self.dt)) * torch.randn((self.batch_size, self.N, self.d))
+        x = torch.zeros((self.batch_size, self.N+1, self.d))
+        x[:, 0, :] = x0
+        for n in range(self.N):
+            x[:, n+1, :] = x[:, n, :] + dw[:, n, :]  # sigma=1, mu=0
+        return x, dw
+    
+    def loss(self, x, dw):
+        y = self.y0.repeat(self.batch_size, 1)  # Y_0
+        t = torch.zeros((self.batch_size, 1))
+        for n in range(self.N):
+            z = self.z_net(t, x[:, n, :])  # Z_n
+            y = y - self.f(y) * self.dt + torch.sum(z * dw[:, n, :], dim=1, keepdim=True)
+            t = t + self.dt
+        return torch.mean((y - self.g(x[:, -1, :])) ** 2)
+    
+    def train(self, epochs=2000, x0=0.0):
+        losses = []
+        for epoch in range(epochs):
+            x, dw = self.simulate_paths(x0)
+            loss_val = self.loss(x, dw)
+            self.optimizer.zero_grad()
+            loss_val.backward()
+            self.optimizer.step()
+            losses.append(loss_val.item())
+            if epoch % 200 == 0:
+                print(f"Epoch {epoch}, Loss: {loss_val.item():.4f}, y0: {self.y0.item():.4f}")
+        return losses
+
+# Main program
+dbsde = DeepBSDE(d=1, T=1.0, N=50, batch_size=512, lr=0.005)
+losses = dbsde.train()
+
+# Test: estimate u(0,0)
+print(f"Estimated u(0,0): {dbsde.y0.item()}")
+
+# Visualize training loss
+plt.plot(losses)
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.show()
+
+# Note: To visualize u(t,x), one needs to evaluate at multiple points, 
+# but here the focus is on y0
+```
 
