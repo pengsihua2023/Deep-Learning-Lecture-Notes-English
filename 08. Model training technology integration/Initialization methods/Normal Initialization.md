@@ -140,7 +140,12 @@ print("FC layer weight std:", model.fc.weight.std().item())
 
    * `std=0.01` is common, but may be too small for deep networks, causing gradient vanishing.
    * Alternatives: try `std=0.1` or standard deviations based on Xavier/He formulas. 
-     e.g.,  $\sqrt{\frac{2}{\text{fan\_in} \cdot \text{fan\_out}}}$ 
+     e.g.,
+     
+     $$
+     \sqrt{\frac{2}{\text{fan\_in} \cdot \text{fan\_out}}}
+    $$
+
 2. **Activation Function Matching**:
 
    * Normal initialization is suitable for `tanh` or `sigmoid`.
