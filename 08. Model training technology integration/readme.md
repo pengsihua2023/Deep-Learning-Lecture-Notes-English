@@ -51,7 +51,7 @@
   * SparseAdam Optimizer
   * ASGD Optimizer (Averaged Stochastic Gradient Descent)
 
-* Overview of Initialization Methods
+* [Overview of Initialization Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Initialization%20Method%20Overview.md)
 
   * Uniform/Normal Distribution Initialization (Xavier/Glorot Initialization)
   * Initialization Considering ReLU Variance (He Initialization)
