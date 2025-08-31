@@ -29,12 +29,12 @@
   * [Early Stopping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Early%20Stopping.md)
   * [Noise Injection to Inputs/Weights](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Noise%20Injection%20to%20Inputs-Weights.md)
   * [Dropout (Randomly Dropping Neurons)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Dropout.md)
-* Overview of Learning Rate Adjustment Methods
+* [Overview of Learning Rate Adjustment Methods]()
 
-  * Dynamic Learning Rate Adjustment (Learning Rate Scheduling)
-  * Automatic Learning Rate Reduction Based on Loss Monitoring (ReduceLROnPlateau)
-  * Adaptive Learning Rate (Adam Optimizer)
-  * Adaptive Learning Rate (RMSprop)
+  * [Dynamic Learning Rate Adjustment (Learning Rate Scheduling)]()
+  * [Automatic Learning Rate Reduction Based on Loss Monitoring (ReduceLROnPlateau)]()
+  * [Adaptive Learning Rate (Adam Optimizer)]()
+  * [Adaptive Learning Rate (RMSprop)]()
 
 * Overview of Optimizers
 
