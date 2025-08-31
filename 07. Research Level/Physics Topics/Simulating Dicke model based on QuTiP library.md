@@ -14,7 +14,21 @@ The Dicke Model is a theoretical framework in quantum optics and condensed matte
 
 ### Hamiltonian
 <img width="1006" height="465" alt="image" src="https://github.com/user-attachments/assets/8c1c16f7-a269-4f9c-b2b7-fa1ff138fa10" />
-  
+
+The Dicke Model Hamiltonian is typically written as (in the rotating-wave approximation):
+
+$$
+H = \omega_c a^\dagger a + \omega_0 \sum_{i=1}^{N} \frac{\sigma_z^i}{2} + g \sum_{i=1}^{N} \left( \sigma_+^i a + \sigma_-^i a^\dagger \right)
+$$
+
+Where:
+
+* $\omega_c$: Frequency of the cavity mode.
+* $\omega_0$: Transition frequency of the two-level systems.
+* $a^\dagger, a$: Creation and annihilation operators for the cavity photons.
+* $\sigma_z^i, \sigma_+^i, \sigma_-^i$: Pauli operators for the $i$-th two-level system (representing energy, raising, and lowering operators).
+* $g$: Coupling strength between the atoms and the cavity field.
+
 
 ### Key Phenomena
 <img width="1001" height="406" alt="image" src="https://github.com/user-attachments/assets/a2511f42-5ea3-4c56-9e16-ecf2a0747f9d" />
