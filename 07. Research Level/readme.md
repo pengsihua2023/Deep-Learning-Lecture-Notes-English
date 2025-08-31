@@ -35,6 +35,8 @@
     * [DeepMD-kit Library for Simulating Molecular Dynamics of Gas-Phase Water Molecules (H₂O)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Chemistry%20and%20Materials%20Science%20Topics/DeepMD-kit%20Library%20for%20Simulating%20Molecular%20Dynamics%20of%20Gas-Phase%20Water%20Molecules%20(H%E2%82%82O).md)
     
   * PINN Topics
+    * PIKAN
+      - [Solving SEIR kinetic equations based on PIKAN]()
     * ODE and inverse problems
       - [Solving first-order ordinary differential equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/ODE%20and%20inverse%20problems/Solving%20first-order%20ordinary%20differential%20equations%20based%20on%20the%20DeepXDE%20library.md)
       - [Solving second-order ordinary differential equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/ODE%20and%20inverse%20problems/Solving%20second-order%20ordinary%20differential%20equations%20based%20on%20the%20DeepXDE%20library.md)
