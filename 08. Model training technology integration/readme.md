@@ -56,7 +56,7 @@
   * Uniform/Normal Distribution Initialization (Xavier/Glorot Initialization)
   * Initialization Considering ReLU Variance (He Initialization)
   * Uniform Distribution Initialization
-  * Normal Distribution Initialization
+  * [Normal Distribution Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Normal%20Initialization.md)
   * Uniform Variant of He Initialization (Kaiming Uniform)
   * Layer-Sequential Unit-Variance Initialization (LSUV)
   * Zero Initialization
