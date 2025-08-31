@@ -6,13 +6,13 @@ In deep learning, the **learning rate** is a key hyperparameter that controls th
 
 ### 1. **Non-Adaptive Learning Rate Adjustment Methods**
 
-Non-adaptive methods adjust the learning rate based on predefined rules or schedules, without relying on historical gradient information. These methods are often used with simple optimizers (such as SGD).
+Non-adaptive methods typically adjust the learning rate based on predefined rules or scheduling strategies, without relying on historical gradient information. These methods are often used with simple optimizers (such as SGD).
 
 #### (1) **Fixed Learning Rate**
 
 * **Description**: Uses a constant learning rate throughout training.
 * **Advantages**: Simple and easy to implement, suitable for simple tasks.
-* **Disadvantages**: Cannot adapt to complex optimization problems, prone to oscillations or slow convergence.
+* **Disadvantages**: Difficult to adapt to complex optimization problems, prone to oscillations or slow convergence.
 * **Applicable Scenarios**: Small datasets or tasks with simple model structures.
 * **PyTorch Example**:
 
@@ -26,7 +26,7 @@ Adjusts the learning rate over time using predefined rules. Common schedulers in
 
 * **Step Decay**:
 
-  * Learning rate decays by a fixed ratio after certain steps (epochs or iterations).
+  * Reduces the learning rate by a fixed factor after certain steps (epochs or iterations).
 
 - Formula:
 
@@ -59,7 +59,7 @@ scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.95)
 
 * **Cosine Annealing**:
 
-  * Learning rate decreases following a cosine function, gradually approaching a minimum value.
+  * Learning rate follows a cosine function, gradually decreasing to a minimum value.
   * Suitable for exploring global optima and fine-tuning.
   * PyTorch Example:
 
@@ -77,53 +77,51 @@ scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=50)
 scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=10)
 ```
 
-* **Advantages**: Flexible, adjusts learning rate according to training progress; suitable for various tasks.
-* **Disadvantages**: Requires manual tuning of scheduler parameters (e.g., step size, decay factor), often needs experimentation.
-* **Applicable Scenarios**: Used with SGD or other non-adaptive optimizers, widely applied in image classification, object detection, etc.
+* **Advantages**: Flexible, adapts the learning rate based on training progress; suitable for many tasks.
+* **Disadvantages**: Requires manual tuning of scheduling parameters (e.g., step size, decay factor), often requires experimentation.
+* **Applicable Scenarios**: Combined with SGD or other non-adaptive optimizers, widely used in image classification, object detection, etc.
 
 #### (3) **Warm-up**
 
 * **Description**: Gradually increases the learning rate during the early phase of training, starting from a small value to avoid initial oscillations.
+
 * **Implementation**:
 
-```
-<img width="579" height="52" alt="image" src="https://github.com/user-attachments/assets/5a5065a6-9176-4415-925f-65b339a61c48" />  
-```
+* Linear warm-up: The learning rate increases linearly from \$\eta\_0\$ to \$\eta\_{\text{max}}\$, then transitions into the normal schedule.
 
-```
- - Commonly used in large models or complex tasks (e.g., Transformers).  
-```
-
-* **PyTorch Example** (custom implementation):
+  * Commonly used in large models or complex tasks (e.g., Transformer).
+  * **PyTorch Example** (custom implementation):
 
 ```python
 scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda epoch: min(epoch / 10.0, 1.0))
 ```
 
 * **Advantages**: Stabilizes early training, suitable for large models.
-* **Disadvantages**: Requires additional configuration of warm-up steps.
+* **Disadvantages**: Requires additional warm-up step configuration.
 
-
+---
 
 ### 2. **Adaptive Learning Rate Adjustment Methods**
 
-Adaptive methods compute learning rates dynamically for each parameter by analyzing gradient history (e.g., mean, variance). These methods are usually embedded in optimizers. Popular optimizers like Adam already include adaptive mechanisms. Below are common adaptive optimizers and their learning rate principles:
+Adaptive learning rate methods compute the learning rate dynamically for each parameter by analyzing gradient history (e.g., mean, variance). These methods are typically embedded in optimizers. Popular optimizers such as Adam already include adaptive mechanisms. Below are common adaptive optimizers and their principles:
 
 #### (1) **Adagrad**
 
-* **Principle**: Adjusts learning rate based on the cumulative sum of squared gradients.
+* **Principle**: Adjusts the learning rate based on the cumulative sum of squared gradients.
 
-   <img width="348" height="89" alt="image" src="https://github.com/user-attachments/assets/0bbd0119-128c-4562-8d73-b0ff7e691116" />  
+$$
+\theta_{t+1} = \theta_t - \frac{\eta}{\sqrt{\sum_{i=1}^t g_i^2} + \epsilon} \, g_t
+$$
 
-* **Features**: Learning rate decreases for frequently updated parameters; well-suited for sparse data.
-* **Disadvantages**: Monotonic decrease in learning rate may cause premature stopping.
+* **Features**: Reduces the learning rate for frequently updated parameters, suitable for sparse data.
+* **Disadvantages**: Learning rate decreases monotonically, may stop learning too early.
 * **Applicable Scenarios**: Sparse feature optimization such as word embeddings in NLP.
 
 #### (2) **RMSProp**
 
-* **Principle**: Uses exponential moving average of squared gradients.
+* **Principle**: Uses the exponential moving average of squared gradients.
 
-   <img width="639" height="89" alt="image" src="https://github.com/user-attachments/assets/820e3e07-39b7-4b2a-b8cc-aebf5953617f" />  
+<img width="420" height="55" alt="image" src="https://github.com/user-attachments/assets/ed3cbd24-eeef-4af6-a37d-78b186a07ea7" />  
 
 * **Features**: Prevents overly fast decay of learning rate in Adagrad; suitable for non-stationary problems.
 * **Applicable Scenarios**: Sequence models such as RNNs.
@@ -132,9 +130,17 @@ Adaptive methods compute learning rates dynamically for each parameter by analyz
 
 * **Principle**: Combines first-order momentum (mean of gradients) and second-order momentum (variance of gradients).
 
-   <img width="599" height="132" alt="image" src="https://github.com/user-attachments/assets/02552104-9b48-4218-9298-41cd3605ab6d" />  
+$$
+m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t, 
+\quad 
+v_t = \beta_2 v_{t-1} + (1 - \beta_2) g_t^2
+$$
 
-* **Features**: Highly adaptive, default parameters often work well, fast convergence.
+$$
+\theta_{t+1} = \theta_t - \eta \cdot \frac{\hat{m}_t}{\sqrt{\hat{v}_t} + \epsilon}
+$$
+
+* **Features**: Strong adaptability, default parameters usually work well, fast convergence.
 * **Applicable Scenarios**: Almost all deep learning tasks (e.g., CNNs, Transformers).
 
 #### (4) **AdamW**
@@ -159,7 +165,7 @@ Adaptive methods compute learning rates dynamically for each parameter by analyz
 * **Principle**: Improves Adam by retaining the maximum second-order moment, avoiding convergence issues.
 * **Features**: More stable in certain non-convex problems.
 
-
+---
 
 ### 3. **Combining Schedulers with Adaptive Optimizers**
 
@@ -188,11 +194,11 @@ for epoch in range(epochs):
     scheduler.step()  # Update learning rate
 ```
 
-
+---
 
 ### 4. **Recommendations for Choosing Learning Rate Adjustment Methods**
 
-* **Simple tasks or large-scale data**: Use SGD + a scheduler (e.g., StepLR or ReduceLROnPlateau).
+* **Simple tasks or large-scale data**: Use SGD + a learning rate scheduler (e.g., StepLR or ReduceLROnPlateau).
 * **Complex non-convex problems**: Prefer Adam or AdamW for strong adaptability and fast convergence.
 * **Sparse data**: Adagrad or SparseAdam are more suitable.
 * **Large model training**: Combine Warm-up and Cosine Annealing (e.g., Transformer).
@@ -204,25 +210,28 @@ In binary classification tasks, Adam is often the default choice due to its robu
 * **SGD + StepLR**: Useful for large-scale data, where schedulers provide fine-grained control.
 * **Cosine Annealing**: Enhances convergence quality when combined with Adam.
 
-
+---
 
 ### 5. **Notes**
 
 * **Initial Learning Rate**: Adaptive optimizers (e.g., Adam) are less sensitive to initial learning rate (commonly 0.001 or 0.0001), while non-adaptive methods (e.g., SGD) require careful tuning.
-* **Hyperparameters**: Both schedulers and adaptive optimizers require tuning (e.g., decay rate, step size), best optimized experimentally.
+* **Hyperparameters**: Both schedulers and adaptive optimizers require hyperparameter tuning (e.g., decay rate, step size), best optimized experimentally.
 * **Computation Overhead**: Adaptive optimizers (e.g., Adam) require storing momentum terms, increasing memory usage, while SGD is lighter.
 * **Validation Monitoring**: When using ReduceLROnPlateau, ensure validation loss or metrics are monitored.
 
-
+---
 
 ### Summary
 
 Learning rate adjustment methods in deep learning can be divided into:
 
-* **Non-adaptive**: Fixed learning rates or schedulers (e.g., Step Decay, Cosine Annealing, Warm-up), based on predefined rules.
+* **Non-adaptive**: Fixed learning rate or schedulers (e.g., Step Decay, Cosine Annealing, Warm-up), based on predefined rules.
 * **Adaptive**: Dynamically adjusted learning rates using gradient history (e.g., Adam, RMSProp, Adagrad).
 
 The two can also be combined (e.g., Adam + Cosine Annealing). Method selection depends on task complexity, data scale, and model type. Adam and AdamW are currently the most widely used methods, suitable for most deep learning tasks, while schedulers add flexibility for non-adaptive optimizers (like SGD).
+
+
+
 
 
 
