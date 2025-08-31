@@ -71,7 +71,7 @@
   * Adding Small Adapter Layers (Adapter Modules)
   * Model Pruning (Removing Unimportant Weights)
 
-* Summary of Model Evaluation Methods
+* [Summary of Model Evaluation Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20evaluation%20methods/Summary%20of%20Model%20Evaluation%20Methods.md)
 
 * Overview of Model Interpretation Methods
 
