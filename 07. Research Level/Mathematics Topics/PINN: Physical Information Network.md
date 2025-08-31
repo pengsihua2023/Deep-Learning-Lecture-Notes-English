@@ -124,57 +124,57 @@ import torch
 import torch.nn as nn
 import numpy as np
 
-# 1. 定义神经网络
+# 1. Define neural network
 class PINN(nn.Module):
     def __init__(self):
         super(PINN, self).__init__()
         self.net = nn.Sequential(
-            nn.Linear(2, 20),  # 输入 (x, t)
+            nn.Linear(2, 20),  # Input (x, t)
             nn.Tanh(),
             nn.Linear(20, 20),
             nn.Tanh(),
-            nn.Linear(20, 1)  # 输出 u(x, t)
+            nn.Linear(20, 1)  # Output u(x, t)
         )
 
     def forward(self, x, t):
         inputs = torch.cat([x, t], dim=1)
         return self.net(inputs)
 
-# 2. 定义损失函数
+# 2. Define loss function
 def compute_loss(model, x_f, t_f, x_i, t_i, u_i, x_b, t_b, u_b, nu=0.01/np.pi):
-    x_f, t_f = x_f.requires_grad_(True), t_f.requires_grad_(True)  # 需要计算导数
+    x_f, t_f = x_f.requires_grad_(True), t_f.requires_grad_(True)  # derivatives required
     u = model(x_f, t_f)
     
-    # PDE 残差
+    # PDE residual
     u_t = torch.autograd.grad(u, t_f, grad_outputs=torch.ones_like(u), create_graph=True)[0]
     u_x = torch.autograd.grad(u, x_f, grad_outputs=torch.ones_like(u), create_graph=True)[0]
     u_xx = torch.autograd.grad(u_x, x_f, grad_outputs=torch.ones_like(u_x), create_graph=True)[0]
     pde_residual = u_t + u * u_x - nu * u_xx
     loss_pde = torch.mean(pde_residual ** 2)
     
-    # 初始条件
+    # Initial condition
     u_init = model(x_i, t_i)
     loss_init = torch.mean((u_init - u_i) ** 2)
     
-    # 边界条件
+    # Boundary condition
     u_bc = model(x_b, t_b)
     loss_bc = torch.mean((u_bc - u_b) ** 2)
     
-    # 总损失
+    # Total loss
     return loss_pde + loss_init + loss_bc
 
-# 3. 准备数据
+# 3. Prepare data
 N_f, N_i, N_b = 2000, 100, 100
 x_f = torch.rand(N_f, 1) * 2 - 1  # x in [-1, 1]
 t_f = torch.rand(N_f, 1)  # t in [0, 1]
-x_i = torch.rand(N_i, 1) * 2 - 1  # 初始条件 x
+x_i = torch.rand(N_i, 1) * 2 - 1  # initial condition x
 t_i = torch.zeros(N_i, 1)  # t = 0
 u_i = -torch.sin(np.pi * x_i)  # u(x, 0) = -sin(πx)
 x_b = torch.cat([torch.ones(N_b//2, 1), -torch.ones(N_b//2, 1)])  # x = ±1
 t_b = torch.rand(N_b, 1)  # t in [0, 1]
 u_b = torch.zeros(N_b, 1)  # u(±1, t) = 0
 
-# 4. 训练模型
+# 4. Train model
 model = PINN()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 for epoch in range(1000):
@@ -185,11 +185,12 @@ for epoch in range(1000):
     if epoch % 100 == 0:
         print(f"Epoch {epoch}, Loss: {loss.item()}")
 
-# 5. 测试预测
+# 5. Test prediction
 x_test = torch.linspace(-1, 1, 100).reshape(-1, 1)
 t_test = torch.ones(100, 1) * 0.5  # t = 0.5
 u_pred = model(x_test, t_test)
-print("预测结果形状:", u_pred.shape)  # 输出：torch.Size([100, 1])
+print("Prediction shape:", u_pred.shape)  # Output: torch.Size([100, 1])
+
 ```
 
 ##### **Code Explanation**
