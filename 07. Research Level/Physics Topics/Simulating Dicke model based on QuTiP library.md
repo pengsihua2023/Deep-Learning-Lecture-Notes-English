@@ -39,9 +39,7 @@ Where:
 
    * Critical coupling:
 
-   $$
-   g_c = \sqrt{\omega_c \omega_0}/2
-   $$
+$g_c = \sqrt{\omega_c \omega_0}/2$ 
 
 3. **Open System Dynamics**: In realistic settings (e.g., including dissipation as in the code example you provided), the model is extended to include cavity losses $(\kappa)$ and atomic decoherence, often studied using master equations (like in QuTiP simulations).
 
