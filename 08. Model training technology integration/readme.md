@@ -31,10 +31,10 @@
   * [Dropout (Randomly Dropping Neurons)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Dropout.md)
 * [Overview of Learning Rate Adjustment Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/Overview%20of%20Learning%20Rate%20Adjustment%20Methods.md)
 
-  * [Dynamic Learning Rate Adjustment (Learning Rate Scheduling)]()
-  * [Automatic Learning Rate Reduction Based on Loss Monitoring (ReduceLROnPlateau)]()
-  * [Adaptive Learning Rate (Adam Optimizer)]()
-  * [Adaptive Learning Rate (RMSprop)]()
+  * [Dynamic Learning Rate Adjustment (Learning Rate Scheduling)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/StepLR%20scheduler%20adjusts%20learning%20rate.md)
+  * [Automatic Learning Rate Reduction Based on Loss Monitoring (ReduceLROnPlateau)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/ReduceLROnPlateau.md)
+  * [Adaptive Learning Rate (Adam Optimizer)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/Adam%20optimizer%20adjusts%20learning%20rate.md)
+  * [Adaptive Learning Rate (RMSprop)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/RMSprop%20adaptive%20learning%20rate.md)
 
 * Overview of Optimizers
 
