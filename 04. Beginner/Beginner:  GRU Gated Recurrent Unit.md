@@ -397,7 +397,8 @@ if __name__ == "__main__":
 
 ### Training Results
 GRU learns the periodic pattern of the sine wave through its update and reset gates.
-<img width="1124" height="404" alt="image" src="https://github.com/user-attachments/assets/7edf7421-1de7-49db-a6ad-59f663023739" />
+<img width="520" height="120" alt="image" src="https://github.com/user-attachments/assets/c7071ed2-599e-4654-8796-e9581545b06e" />
+
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/bd3d6abc-faf1-447f-bad0-91b884b31959" />
 
