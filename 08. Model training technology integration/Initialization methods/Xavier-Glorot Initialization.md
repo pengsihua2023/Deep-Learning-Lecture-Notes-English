@@ -1,7 +1,7 @@
 
 ## Uniform-Normal Initialization (Xavier-Glorot Initialization)
 
-### Principles and Usage of Xavier/Glorot Initialization with Uniform/Normal Distribution
+
 
 #### **Principle**
 
