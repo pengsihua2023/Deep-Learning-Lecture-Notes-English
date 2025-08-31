@@ -104,7 +104,8 @@ print("FC layer weight mean:", model.fc.weight.mean().item())
 print("FC layer weight std:", model.fc.weight.std().item())
 ```
 
-##### **Code Explanation**
+
+#### Code Explanation
 
 * **Model**:
 
