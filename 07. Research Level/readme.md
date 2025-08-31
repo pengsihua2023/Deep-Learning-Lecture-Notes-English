@@ -36,7 +36,7 @@
     
   * PINN Topics
     * PIKAN
-      - [Solving SEIR kinetic equations based on PIKAN]()
+      - [Solving SEIR kinetic equations based on PIKAN](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PKAN/Solving%20SEIR%20kinetic%20equations%20based%20on%20PIKAN.md)
     * ODE and inverse problems
       - [Solving first-order ordinary differential equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/ODE%20and%20inverse%20problems/Solving%20first-order%20ordinary%20differential%20equations%20based%20on%20the%20DeepXDE%20library.md)
       - [Solving second-order ordinary differential equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/ODE%20and%20inverse%20problems/Solving%20second-order%20ordinary%20differential%20equations%20based%20on%20the%20DeepXDE%20library.md)
