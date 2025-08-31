@@ -17,7 +17,7 @@
 * **Uniform Initialization**: Weights are sampled from the following uniform distribution:
 
 $$
-W \sim U\left(-\sqrt{\frac{6}{\mathrm{fan}_{in} + \mathrm{fan}_{out}}},  \sqrt{\frac{6}{\mathrm{fan}_{in} + \mathrm{fan}_{out}}}\right)
+W \sim U\left(-\sqrt{\frac{6}{\mathrm{fan}_ {in} + \mathrm{fan}_{out}}},  \sqrt {\frac{6}{\mathrm{fan}_{in} + \mathrm{fan}_{out}}}\right)
 $$
 
 where \$\mathrm{fan}*{in}\$ is the number of input neurons and \$\mathrm{fan}*{out}\$ is the number of output neurons.
