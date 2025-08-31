@@ -315,30 +315,30 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-# 1. 定义神经网络
+# 1. Define neural network
 class PINN(nn.Module):
     def __init__(self):
         super(PINN, self).__init__()
         self.net = nn.Sequential(
-            nn.Linear(2, 50),  # 输入 (x, y)
+            nn.Linear(2, 50),  # Input (x, y)
             nn.Tanh(),
             nn.Linear(50, 50),
             nn.Tanh(),
             nn.Linear(50, 50),
             nn.Tanh(),
-            nn.Linear(50, 1)  # 输出 u(x, y)
+            nn.Linear(50, 1)  # Output u(x, y)
         )
 
     def forward(self, x, y):
         inputs = torch.cat([x, y], dim=1)
         return self.net(inputs)
 
-# 2. 定义损失函数
+# 2. Define loss function
 def compute_loss(model, x_f, y_f, x_b, y_b, u_b):
-    x_f, y_f = x_f.requires_grad_(True), y_f.requires_grad_(True)  # 需要计算导数
+    x_f, y_f = x_f.requires_grad_(True), y_f.requires_grad_(True)  # derivatives required
     u = model(x_f, y_f)
     
-    # PDE 残差：Laplace 方程 u_xx + u_yy = 0
+    # PDE residual: Laplace equation u_xx + u_yy = 0
     u_x = torch.autograd.grad(u, x_f, grad_outputs=torch.ones_like(u), create_graph=True)[0]
     u_y = torch.autograd.grad(u, y_f, grad_outputs=torch.ones_like(u), create_graph=True)[0]
     u_xx = torch.autograd.grad(u_x, x_f, grad_outputs=torch.ones_like(u_x), create_graph=True)[0]
@@ -346,22 +346,22 @@ def compute_loss(model, x_f, y_f, x_b, y_b, u_b):
     pde_residual = u_xx + u_yy
     loss_pde = torch.mean(pde_residual ** 2)
     
-    # 边界条件
+    # Boundary condition
     u_bc = model(x_b, y_b)
     loss_bc = torch.mean((u_bc - u_b) ** 2)
     
-    # 总损失
-    return loss_pde + 10 * loss_bc  # 增加边界权重以加强约束
+    # Total loss
+    return loss_pde + 10 * loss_bc  # Increase boundary weight to strengthen constraint
 
-# 3. 准备数据
-N_f = 10000  # PDE 内部采样点
-N_b = 400    # 边界采样点 (每边 100 点)
+# 3. Prepare data
+N_f = 10000  # PDE interior sampling points
+N_b = 400    # Boundary sampling points (100 points per side)
 
-# PDE 内部点
+# PDE interior points
 x_f = torch.rand(N_f, 1)
 y_f = torch.rand(N_f, 1)
 
-# 边界点
+# Boundary points
 x_b_left = torch.zeros(N_b//4, 1)  # x=0
 y_b_left = torch.rand(N_b//4, 1)
 u_b_left = torch.zeros(N_b//4, 1)  # u=0
@@ -382,10 +382,10 @@ x_b = torch.cat([x_b_left, x_b_right, x_b_bottom, x_b_top], dim=0)
 y_b = torch.cat([y_b_left, y_b_right, y_b_bottom, y_b_top], dim=0)
 u_b = torch.cat([u_b_left, u_b_right, u_b_bottom, u_b_top], dim=0)
 
-# 4. 训练模型
+# 4. Train model
 model = PINN()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-losses = []  # 记录损失
+losses = []  # record loss
 
 for epoch in range(5000):
     optimizer.zero_grad()
@@ -396,8 +396,8 @@ for epoch in range(5000):
     if epoch % 500 == 0:
         print(f"Epoch {epoch}, Loss: {loss.item():.6f}")
 
-# 5. 可视化
-# 绘制损失曲线
+# 5. Visualization
+# Plot loss curve
 plt.figure(figsize=(10, 5))
 plt.subplot(1, 2, 1)
 plt.plot(losses)
@@ -405,7 +405,7 @@ plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.title('Training Loss')
 
-# 绘制预测解热图
+# Plot predicted solution heatmap
 nx, ny = 100, 100
 x_grid = torch.linspace(0, 1, nx).reshape(-1, 1)
 y_grid = torch.linspace(0, 1, ny).reshape(-1, 1)
