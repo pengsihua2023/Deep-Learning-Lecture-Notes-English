@@ -9,13 +9,14 @@
 
   * Mathematics Topics
 
-    * [PINN: Physics-Informed Neural Networks]()
-    * [PINN: Solving Navier-Stokes Equations]()
-    * [Neural Operators]()
-    * [Deep Galerkin Method (DGM)]()
-    * [Deep Ritz Method (DRM)]()
-    * [Deep Backward Stochastic Differential Equation (Deep BSDE) Method]()
-    * [Discontinuous Galerkin (DG) Based Neural Networks]()
+    * [AR-SPINN Mathematical Description](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Mathematics%20Topics/AR-SPINN.md)
+    * [PINN: Physics-Informed Neural Networks](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Mathematics%20Topics/PINN%3A%20Physical%20Information%20Network.md)
+    * [PINN: Solving Navier-Stokes Equations](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Mathematics%20Topics/PINN%3A%20Solving%20the%20Navier-Stokes%20Equations.md)
+    * [Neural Operators](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Mathematics%20Topics/Neural%20Operators.md)
+    * [Deep Galerkin Method (DGM)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Mathematics%20Topics/Deep%20Galerkin%20Method%20(DGM).md)
+    * [Deep Ritz Method (DRM)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Mathematics%20Topics/Deep%20Ritz%20Method%20(DRM).md)
+    * [Deep Backward Stochastic Differential Equation (Deep BSDE) Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Mathematics%20Topics/Deep%20Backward%20Stochastic%20Differential%20Equation%20(Deep%20BSDE)%20Method.md)
+    * [Discontinuous Galerkin (DG) Based Neural Networks](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/Mathematics%20Topics/Discontinuous%20Galerkin%20(DG)%20Based%20Neural%20Networks.md)
 
   * Physics Topics
 
