@@ -36,15 +36,15 @@
   * [Adaptive Learning Rate (Adam Optimizer)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/Adam%20optimizer%20adjusts%20learning%20rate.md)
   * [Adaptive Learning Rate (RMSprop)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/RMSprop%20adaptive%20learning%20rate.md)
 
-* Overview of Optimizers
+* [Overview of Optimizers](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Optimizer%20Overview.md)
 
-  * Adam Optimizer
-  * Adam Variant (AdamW)
-  * SGD Optimizer (Stochastic Gradient Descent)
+  * [Adam Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Adam%20Optimizer.md)
+  * [Adam Variant (AdamW)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/AdamW%20optimizer.md)
+  * [SGD Optimizer (Stochastic Gradient Descent)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/SGD%20optimizer.md)
   * RMSProp Optimizer (Root Mean Square Propagation)
-  * Adagrad Optimizer (Adaptive Gradient Algorithm)
-  * Adadelta Optimizer
-  * AMSGrad Optimizer
+  * [Adagrad Optimizer (Adaptive Gradient Algorithm)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Adagrad%20optimizer.md)
+  * [Adadelta Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Adadelta%20Optimizer.md)
+  * [AMSGrad Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/AMSGrad%20optimizer.md)
   * Nadam Optimizer
   * L-BFGS Optimizer (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)
   * Rprop Optimizer (Resilient Backpropagation)
