@@ -1,7 +1,3 @@
-好的，以下是完整的翻译结果（保留了原有的格式和排版，只将中文翻译为英文）：
-
----
-
 ## PINN: Physics-Informed Neural Networks
 
 ### Principles and Usage
@@ -277,11 +273,4 @@ In Burgers equation, assume viscosity coefficient \$\nu\$ is unknown. Use observ
 * **Visualization**: Use `FuncAnimation` for dynamic PDEs, heatmaps for steady-state.
 * **Optimization**: If convergence is slow, try L-BFGS or more sample points.
 * **Running**: Code requires PyTorch, NumPy, Matplotlib. Animations require imagemagick for GIF output.
-
----
-
-要不要我帮你把代码部分也翻译注释（目前我只翻译了正文和说明，代码保持原样未改动）？
-
-
-
 
