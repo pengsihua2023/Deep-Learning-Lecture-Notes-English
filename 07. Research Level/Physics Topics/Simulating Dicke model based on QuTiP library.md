@@ -2,7 +2,6 @@
 The Dicke Model is a theoretical framework in quantum optics and condensed matter physics that describes the collective interaction between a large number of two-level quantum systems (e.g., atoms or qubits) and a single quantized mode of an electromagnetic field (e.g., a cavity photon mode). It was introduced by Robert H. Dicke in 1954 to study cooperative phenomena like superradiance, where atoms emit light coherently due to their collective coupling to the field.
 
 ### Key Components of the Dicke Model
-<img width="984" height="252" alt="image" src="https://github.com/user-attachments/assets/31b564b9-2c01-49a2-a86e-1500b37793cb" />
 
 1. **Two-Level Systems**: A collection of $N$ two-level systems (e.g., atoms with ground and excited states), often modeled as spin- $\tfrac{1}{2}$ particles.
 
@@ -13,7 +12,6 @@ The Dicke Model is a theoretical framework in quantum optics and condensed matte
 
 
 ### Hamiltonian
-<img width="1006" height="465" alt="image" src="https://github.com/user-attachments/assets/8c1c16f7-a269-4f9c-b2b7-fa1ff138fa10" />
 
 The Dicke Model Hamiltonian is typically written as (in the rotating-wave approximation):
 
@@ -31,7 +29,6 @@ Where:
 
 
 ### Key Phenomena
-<img width="1001" height="406" alt="image" src="https://github.com/user-attachments/assets/a2511f42-5ea3-4c56-9e16-ecf2a0747f9d" />
 
 1. **Superradiance**: When $N$ atoms couple strongly to the cavity, they can emit light collectively, leading to an enhanced emission rate proportional to $N^2$ (superradiant phase).
 
