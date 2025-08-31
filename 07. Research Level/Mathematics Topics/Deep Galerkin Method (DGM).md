@@ -132,7 +132,7 @@ plt.show()
 
 ### Code Explanation
 
-1. **DGMNet**: A simple fully connected network with tanh activations, input 1D (\$x\$), output 1D (\$u(x)\$).
+1. **DGMNet**: A simple fully connected network with tanh activations, input 1D (\$x\$), output 1D ( \$u(x)\$ ).
 2. **pde\_residual**: Uses automatic differentiation to compute the second derivative and calculate the PDE residual.
 3. **boundary\_loss**: Directly enforces boundary conditions (hard constraint, could also be soft).
 4. **train**: Each epoch randomly samples interior points, computes the loss (interior residual + boundary loss), and optimizes the network. After training, the loss decreases, and the predicted curve approaches the true solution.
