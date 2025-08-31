@@ -143,7 +143,7 @@ print("FC layer weight std:", model.fc.weight.std().item())
      e.g.,
      
 $$
-\sqrt{\frac{2}{\text{fan\_in} \cdot \text{fan\_out}}}
+\sqrt{\frac{2}{\text{fan_in} \cdot \text{fan_out}}}
 $$
 
 2. **Activation Function Matching**:
