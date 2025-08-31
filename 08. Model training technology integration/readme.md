@@ -53,7 +53,7 @@
 
 * [Overview of Initialization Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Initialization%20Method%20Overview.md)
 
-  * Uniform/Normal Distribution Initialization (Xavier/Glorot Initialization)
+  * [Uniform/Normal Distribution Initialization (Xavier/Glorot Initialization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Xavier-Glorot%20Initialization.md)
   * Initialization Considering ReLU Variance (He Initialization)
   * Uniform Distribution Initialization
   * [Normal Distribution Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Normal%20Initialization.md)
