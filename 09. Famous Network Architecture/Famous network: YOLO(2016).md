@@ -10,13 +10,10 @@
 **Key Points to Master**: Single-stage detection, anchor box mechanism.  
 <div align="center">
 <img width="600" height="182" alt="image" src="https://github.com/user-attachments/assets/0a0b8862-4b86-418e-b20a-4f6269e012d7" />  
-   
-<img width="720" height="300" alt="image" src="https://github.com/user-attachments/assets/1ffaba0a-8dcb-4b09-af4e-35ce97b62b48" />  
-  
 </div>
 
 <div align="center">
-(These pictures were obtained from the Internet.)
+(This picture was obtained from the Internet.)
 </div>
 
 ## Code description 
