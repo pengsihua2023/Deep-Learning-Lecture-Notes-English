@@ -10,5 +10,5 @@
 - [09. Famous network architecture](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/09.%20Famous%20Network%20Architecture)
 - [10. Commonly used datasets](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/10.%20Commonly%20used%20datasets)
 - [11. Intermediate Mathematics Knowledge](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/tree/main/11.%20Intermediate%20Mathematics%20Knowledge)
-<img width="800" height="270" alt="image" src="https://github.com/user-attachments/assets/b55e4c9a-d57b-4e01-b577-182539d41bd1" />
+
 
