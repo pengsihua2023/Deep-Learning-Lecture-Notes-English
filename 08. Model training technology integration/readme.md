@@ -46,7 +46,7 @@
   * [Adadelta Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Adadelta%20Optimizer.md)
   * [AMSGrad Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/AMSGrad%20optimizer.md)
   * Nadam Optimizer
-  * L-BFGS Optimizer (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)
+  * [L-BFGS Optimizer (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/L-BFGS%20Optimizer.md)
   * Rprop Optimizer (Resilient Backpropagation)
   * SparseAdam Optimizer
   * ASGD Optimizer (Averaged Stochastic Gradient Descent)
