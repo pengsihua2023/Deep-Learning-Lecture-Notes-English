@@ -402,5 +402,6 @@ GRU learns the periodic pattern of the sine wave through its update and reset ga
 
 
    
- <img width="500" height="330" alt="image" src="https://github.com/user-attachments/assets/bd3d6abc-faf1-447f-bad0-91b884b31959" />
+<img width="500" height="320" alt="image" src="https://github.com/user-attachments/assets/d4268ee7-9b72-4432-aa52-41a54596e4bd" />
+>
 </div>
