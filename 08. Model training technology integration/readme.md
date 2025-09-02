@@ -17,6 +17,7 @@
   * [Efficient Attention Computation (Flash Attention)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Efficient%20Attention%20Computation%20(Flash%20Attention).md)
   * [Hyperparameter Search](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Hyperparameter%20Search%20(Bayesian%20Optimization).md) 
   * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
+  * [ReduceLROnPlateau]()
 
 
 
