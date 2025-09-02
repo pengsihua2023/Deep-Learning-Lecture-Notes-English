@@ -1,3 +1,20 @@
+
+
+
+$$
+\hat{y}_i = \frac {\exp(y_i)}{\sum_{j=1}^{k} \exp(y_j)}
+$$
+
+---
+
+### 含义
+
+* $\hat{y}_i$：类别 $i$ 的预测概率
+* $y_i$：类别 $i$ 的原始得分（logit）
+* $k$：类别总数
+* 分母：对所有类别得分取指数后求和，作为归一化项
+
+
 ## CNN
 
 Convolutional Neural Network (CNN)
