@@ -109,8 +109,6 @@ where \$W \in \mathbb{R}^{k \times d}\$, \$\mathbf{b} \in \mathbb{R}^k\$.
 
 In classification tasks, the final output is a probability distribution through Softmax:
 
-![Softmax formula](https://latex.codecogs.com/png.latex?\hat{y}_i%20=%20\frac{\exp\(y_i\)}{\sum_{j=1}^{k}%20\exp\(y_j\)})
-
 <img width="158" height="70" alt="image" src="https://github.com/user-attachments/assets/320009e3-033a-435b-99dc-7ddd3e375e15" />
 
 ---
