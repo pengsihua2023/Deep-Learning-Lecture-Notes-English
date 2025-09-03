@@ -70,7 +70,7 @@
   * [Restarted LoRA (ReLoRA)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/ReLoRA.md)
   * [Quantization + LoRA (QLoRA)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/QLoRA.md)
   * [Differential Pruning (Diff Pruning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Differential%20Pruning.md)
-  * Adding Small Adapter Layers (Adapter Modules)
+  * 
   * [Model Pruning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Model%20Pruning.md)
   * [Adapter Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Adapter%20Fine-tuning.md)
 
