@@ -8,15 +8,15 @@
 
 * **LoRA**: For a weight matrix \$W \in \mathbb{R}^{d \times k}\$, it applies low-rank decomposition
 
-  $$
-  \Delta W = B A, \quad B \in \mathbb{R}^{d \times r}, A \in \mathbb{R}^{r \times k}, \; r \ll \min(d,k)
-  $$
+$$
+\Delta W = B A, \quad B \in \mathbb{R}^{d \times r}, A \in \mathbb{R}^{r \times k}, \; r \ll \min(d,k)
+$$
 
 * **LoHA**: Based on low-rank decomposition, introduces a Hadamard product (element-wise multiplication) to enhance parameterization ability:
 
-  $$
-  \Delta W = (B A) \odot (D C)
-  $$
+$$
+\Delta W = (B A) \odot (D C)
+$$
 
   Where:
 
