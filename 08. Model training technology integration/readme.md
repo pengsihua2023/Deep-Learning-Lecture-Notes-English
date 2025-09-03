@@ -74,6 +74,7 @@
   * [P-Tuning Fine-Tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/P-Tuning.md)
   * [Model Pruning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Model%20Pruning.md)
   * [Adapter Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Adapter%20Fine-tuning.md)
+  * [Prefix Tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Prefix%20Tuning.md)
   * [ Comparison of Five Model Fine-Tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Performance%20Comparison%20of%20Five%20Strategies.md)
   * [PEFT Library overview](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/PEFT%20Library%20overview.md)
 
