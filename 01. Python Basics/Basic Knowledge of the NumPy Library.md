@@ -11,7 +11,7 @@ In deep learning, NumPy is a fundamental tool for data preprocessing, input prep
 ---
 ### Essential NumPy Knowledge for Deep Learning
 In deep learning, NumPy is primarily used for **data preprocessing**, **tensor operations**, and **debugging**. Below are the key NumPy concepts to master, with practical applications in deep learning:
-#### 1. **Array Creation and Basic Operations**
+#### 📖 1. **Array Creation and Basic Operations**
    - **Creating Arrays**:
      - From lists or tuples: `np.array([1, 2, 3])`.
      - Special arrays:
@@ -43,7 +43,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
        image = np.random.rand(28, 28) # 28x28 image
        flat_image = image.flatten() # Flatten to 784-dimensional vector
        ```
-#### 2. **Array Indexing and Slicing**
+#### 📖 2. **Array Indexing and Slicing**
    - **Indexing**: Access specific elements, e.g., `array[0, 1]`.
    - **Slicing**: Access subarrays, e.g., `array[0:2, 1:3]`.
    - **Boolean Indexing**: Filter data with conditions, e.g., `array[array > 0]`.
@@ -53,7 +53,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
      dataset = np.random.rand(100, 10) # 100 samples, 10 features
      positive_samples = dataset[dataset[:, 0] > 0.5] # Filter samples where first column > 0.5
      ```
-#### 3. **Array Operations and Broadcasting**
+#### 📖 3. **Array Operations and Broadcasting**
    - **Basic Operations**: Supports element-wise operations (addition, subtraction, multiplication, division), e.g., `array1 + array2`.
    - **Broadcasting**: Enables operations on arrays of different shapes by automatically expanding dimensions.
      - Example: Scalar and array operations, e.g., `array + 5`.
@@ -65,7 +65,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
      std = np.std(data, axis=0) # Compute standard deviation per feature
      normalized_data = (data - mean) / std # Standardization (broadcasting)
      ```
-#### 4. **Mathematical and Statistical Functions**
+#### 📖 4. **Mathematical and Statistical Functions**
    - **Basic Mathematical Functions**: `np.sin()`, `np.exp()`, `np.log()`, etc.
    - **Statistical Functions**:
      - `np.mean()`: Mean.
@@ -79,7 +79,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
      softmax = np.exp(logits) / np.sum(np.exp(logits), axis=1, keepdims=True)
      print(softmax) # Normalize to probability distribution
      ```
-#### 5. **Linear Algebra Operations**
+#### 📖 5. **Linear Algebra Operations**
    - **Matrix Operations**:
      - `np.dot()`: Matrix dot product.
      - `np.matmul()` or `@`: Matrix multiplication.
@@ -92,7 +92,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
      inputs = np.random.randn(32, 10) # 32 samples
      output = inputs @ weights # Forward propagation: matrix multiplication
      ```
-#### 6. **Random Number Generation**
+#### 📖 6. **Random Number Generation**
    - **Random Number Module**: `np.random` provides various random number generation methods.
      - `np.random.seed()`: Set a random seed for reproducible results.
      - `np.random.randn()`: Normal distribution random numbers.
@@ -105,7 +105,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
      indices = np.arange(100)
      np.random.shuffle(indices) # Shuffle dataset indices
      ```
-#### 7. **Array Concatenation and Splitting**
+#### 📖 7. **Array Concatenation and Splitting**
    - **Concatenation**:
      - `np.concatenate()`: Concatenate along a specified axis.
      - `np.vstack()`: Vertical stacking.
@@ -117,7 +117,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
      batch2 = np.random.rand(16, 10)
      combined = np.vstack((batch1, batch2)) # Combine into 32x10
      ```
-#### 8. **Interaction with Deep Learning Frameworks**
+#### 📖 8. **Interaction with Deep Learning Frameworks**
    - NumPy arrays can be directly converted to TensorFlow’s `tf.Tensor` or PyTorch’s `torch.Tensor`.
      ```python
      import torch
@@ -127,7 +127,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
      tf_tensor = tf.convert_to_tensor(np_array) # Convert to TensorFlow tensor
      ```
    - Note: Deep learning framework tensors typically run on GPUs, while NumPy arrays are CPU-based, so ensure data types and devices are compatible.
-#### 9. **Performance Optimization Techniques**
+#### 📖 9. **Performance Optimization Techniques**
    - **Vectorized Operations**: Avoid Python loops by using NumPy’s vectorized operations.
      ```python
      # Slow: Python loop
@@ -139,7 +139,7 @@ In deep learning, NumPy is primarily used for **data preprocessing**, **tensor o
      ```
    - **Memory Efficiency**: Use `copy=False` to avoid unnecessary data copying.
    - **Data Types**: Choose appropriate `dtype` (e.g., `float32` instead of `float64`) to save memory.
-#### 10. **Debugging and Visualization**
+#### 📖 10. **Debugging and Visualization**
    - **Shape Checking**: Use `array.shape` to ensure correct data shapes.
    - **Partial Data Inspection**: Use slicing to view large arrays, e.g., `array[:5]`.
    - **Integration with Matplotlib**: Visualize data (e.g., images or loss curves).
