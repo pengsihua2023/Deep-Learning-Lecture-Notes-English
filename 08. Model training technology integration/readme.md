@@ -78,5 +78,6 @@
   * Saliency Maps
   * Integrated Gradients
   * Grad-CAM
+  * Grad-CAM++
   * DeepLIFT
   * Attention Visualization
