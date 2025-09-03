@@ -26,7 +26,7 @@
   * [Layer Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Layer%20Normalization.md)
   * [Early Stopping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Early%20Stopping.md)
   * [Noise Injection to Inputs/Weights](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Noise%20Injection%20to%20Inputs-Weights.md)
-  * [Dropout (Randomly Dropping Neurons)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Dropout.md)
+  * [Dropout](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Dropout.md)
 * [Overview of Learning Rate Adjustment Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/Overview%20of%20Learning%20Rate%20Adjustment%20Methods.md)
 
   * [StepLR](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/StepLR.md)
