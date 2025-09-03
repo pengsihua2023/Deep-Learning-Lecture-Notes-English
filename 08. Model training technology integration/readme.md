@@ -61,13 +61,18 @@
 
 * Overview of Model Fine-Tuning Techniques
 
-  * Low-Rank Adaptation (LoRA)
-  * Prompt Tuning
-  * Restarted LoRA (ReLoRA)
-  * Quantization + LoRA (QLoRA)
-  * Differential Pruning (Diff Pruning)
+  * [Low-Rank Adaptation (LoRA)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/LoRA.md)
+  * [LoHA Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/LoHA.md)
+  * [LoKr Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/LoKr.md)
+  * [IA³ Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/IA%C2%B3.md)
+  * [Adapter Modules Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Adapter%20Module%20Fine-tuning.md)
+  * [Prompt Tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Prompt%20Tuning.md)
+  * [Restarted LoRA (ReLoRA)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/ReLoRA.md)
+  * [Quantization + LoRA (QLoRA)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/QLoRA.md)
+  * [Differential Pruning (Diff Pruning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Differential%20Pruning.md)
   * Adding Small Adapter Layers (Adapter Modules)
-  * Model Pruning (Removing Unimportant Weights)
+  * [Model Pruning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Model%20Pruning.md)
+  * [Adapter Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Adapter%20Fine-tuning.md)
 
 * [Summary of Model Evaluation Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20evaluation%20methods/Summary%20of%20Model%20Evaluation%20Methods.md)
 
