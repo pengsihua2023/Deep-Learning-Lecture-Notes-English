@@ -3,7 +3,7 @@
 
 * Key Technologies and Techniques
 
-  * [Automatic Mixed Precision (AMP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Automatic%20Mixed%20Precision%20(AMP).md)
+  * [Automatic Mixed Precision (AMP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Automatic%20Mixed%20Precision.md)
   * [Curriculum Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Curriculum%20Learning.md)
   * [Optuna Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Optuna%20Hyperparameter%20Optimization.md)
   * [Ray Tune Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Ray%20Tune%20Hyperparameter%20Optimization%20Method.md)
