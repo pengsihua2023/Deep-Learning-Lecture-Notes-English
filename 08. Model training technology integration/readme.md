@@ -16,7 +16,7 @@
   * [Gradient Accumulation](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Gradient%20Accumulation.md)
   * [Efficient Attention Computation (Flash Attention)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Flash%20Attention.md)
   * [Hyperparameter Search](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Hyperparameter%20Search.md) 
-  * [Multi-Model Ensemble (Ensemble Learning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Multi-Model%20Ensemble%20(Ensemble%20Learning).md)
+  * [Multi-Model Ensemble](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Multi-Model%20Ensemble.md)
 
 * [Overview of Regularization Techniques](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Overview%20of%20Regularization%20Techniques.md)
 
