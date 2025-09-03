@@ -26,7 +26,7 @@ $$
 2. **He Uniform (Uniform distribution version)**
 
 $$
-W \sim U\left(-\sqrt{\frac{6}{n_\text{in}}}, \; \sqrt{\frac{6}{n_\text{in}}}\right)
+W \sim U\left(-\sqrt{\frac{6}{n_\text{in}}},  \sqrt{\frac{6}{n_\text{in}}}\right)
 $$
 
 Where:
