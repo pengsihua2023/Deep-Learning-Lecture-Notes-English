@@ -54,7 +54,7 @@ Where:
 Only these scaling parameters are trained:
 
 $$
-\mathcal{L} = \mathcal{L}_{task}(f(x; \theta, l_k, l_v, l_{ff}))
+\mathcal{L} = \mathcal{L}_ {task}(f(x; \theta, l_k, l_v, l_{ff}))
 $$
 
 $\theta\$ is fixed (frozen), and only \$l\_k, l\_v, l\_{ff}\$ are updated.
