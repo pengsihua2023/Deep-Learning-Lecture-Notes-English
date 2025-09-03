@@ -1,6 +1,6 @@
+## ReduceLROnPlateau
 
-
-## Automatically Reduce Learning Rate on Plateau
+Automatically Reduce Learning Rate on Plateau.  
 
 ### What is Automatically Reducing Learning Rate on Plateau (ReduceLROnPlateau)?
 
