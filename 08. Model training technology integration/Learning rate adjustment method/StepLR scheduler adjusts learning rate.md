@@ -1,31 +1,48 @@
+# StepLR
 
-## Dynamic Learning Rate Adjustment
+StepLR is a **Learning Rate Scheduler** commonly used in deep learning training. Its function is to proportionally decay the learning rate at fixed interval periods. This method is often seen in the PyTorch framework.
 
-### What is Dynamic Learning Rate Adjustment (Learning Rate Scheduling)?
+## Definition
 
-Dynamic Learning Rate Adjustment (Learning Rate Scheduling) is an optimization technique in deep learning that dynamically changes the learning rate during training according to certain strategies. This helps accelerate convergence, avoid oscillations, and improve model performance. The learning rate determines the step size of parameter updates, and a proper scheduling strategy allows for rapid loss reduction in the early stages of training and fine-tuning in later stages to approach the optimal solution.
+The basic idea of `StepLR` is:
+During training, after every fixed number of epochs, the learning rate is multiplied by a decay factor γ (gamma), thereby gradually reducing the learning rate and helping the model converge better.
 
-#### Core Principle
+## Mathematical Description
 
-* **Initial Learning Rate**: Usually set relatively high (e.g., 0.01 or 0.001) for faster optimization.
-* **Adjustment Strategy**: Adjust the learning rate based on epochs, loss, or performance metrics.
-* **Common Scheduling Methods**:
+Set:
 
-  * **Step Decay**: Reduce the learning rate every fixed number of epochs (e.g., multiply by 0.1 every 5 epochs).
-  * **Exponential Decay**: The learning rate decreases exponentially.
-  * **Cosine Annealing**: The learning rate follows a cosine function for smooth variation.
-  * **Adaptive Adjustment**: For example, ReduceLROnPlateau based on validation loss.
+* Initial learning rate: \$\eta\_0\$
+* Decay factor: \$\gamma \in (0, 1)\$
+* Step size: \$s\$ (how many epochs between each decay)
+* Current epoch: \$t\$
 
-#### Advantages
+Then, the learning rate at epoch \$t\$ is:
 
-* **Accelerated Convergence**: High learning rate at the beginning for fast loss reduction, low learning rate later for fine-tuning.
-* **Prevents Oscillation**: Avoids high learning rates causing oscillations around the optimal solution.
-* **Improved Performance**: Dynamic adjustment helps the model find better local optima.
+$$
+\eta_t = \eta_0 \cdot \gamma^{\left\lfloor \frac{t}{s} \right\rfloor}
+$$
 
-#### Limitations
+Where:
 
-* **Hyperparameter Selection**: Scheduling parameters (e.g., step size, decay rate) require tuning.
-* **Task Dependency**: Different tasks may require different scheduling methods.
+* \$\left\lfloor \cdot \right\rfloor\$ denotes the floor function.
+* When \$t < s\$, the learning rate remains \$\eta\_0\$;
+* When \$s \leq t < 2s\$, the learning rate becomes \$\eta\_0 \cdot \gamma\$;
+* When \$2s \leq t < 3s\$, the learning rate becomes \$\eta\_0 \cdot \gamma^2\$, and so on.
+
+## Example
+
+If:
+
+* \$\eta\_0 = 0.1\$
+* \$\gamma = 0.5\$
+* \$s = 10\$
+
+Then:
+
+* epoch 0–9: \$\eta\_t = 0.1\$
+* epoch 10–19: \$\eta\_t = 0.05\$
+* epoch 20–29: \$\eta\_t = 0.025\$
+* epoch 30–39: \$\eta\_t = 0.0125\$, and so on.
 
 ---
 
