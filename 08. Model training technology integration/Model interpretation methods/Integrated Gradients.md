@@ -32,9 +32,10 @@ Explanation:
 
 * Transition the input from baseline to actual input along a straight-line path:
 
-  $$
-  x(\alpha) = x' + \alpha(x - x')
-  $$
+$$
+x(\alpha) = x' + \alpha(x - x')
+$$
+
 * Sample multiple points along the path, compute gradients, and accumulate their average.
 * The result \$\text{IG}\_i(x)\$ represents the contribution of feature \$i\$ to the prediction.
 
