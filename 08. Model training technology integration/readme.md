@@ -43,11 +43,11 @@
   * [Adagrad Optimizer (Adaptive Gradient Algorithm)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Adagrad%20optimizer.md)
   * [Adadelta Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Adadelta%20Optimizer.md)
   * [AMSGrad Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/AMSGrad%20optimizer.md)
-  * Nadam Optimizer
+  * [Nadam Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Nadam%20optimizer.md)
   * [L-BFGS Optimizer (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/L-BFGS%20Optimizer.md)
-  * Rprop Optimizer (Resilient Backpropagation)
-  * SparseAdam Optimizer
-  * ASGD Optimizer (Averaged Stochastic Gradient Descent)
+  * [Rprop Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Rprop%20optimizer.md)
+  * [SparseAdam Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/SparseAdam%20optimizer.md)
+  * [ASGD Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/ASGD%20optimizer.md)
 
 * [Overview of Initialization Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Initialization%20Method%20Overview.md)
 
