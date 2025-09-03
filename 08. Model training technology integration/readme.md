@@ -11,7 +11,7 @@
   * [Min-Max Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Min-Max%20Normalization.md)
   * [Z-score Standardization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Z-score%20Standardization.md)
   * [Mixed Precision Training](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Mixed%20Precision%20Training.md)
-  * [Multi-GPU Parallel Training](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Multi-GPU%20Parallel%20Training%20(Distributed%20Data%20Parallel%2C%20DDP).md)
+  * [Multi-GPU Parallel Training](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Multi-GPU%20Parallel%20Training.md)
   * [Gradient Clipping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Gradient%20Clipping.md)
   * [Gradient Accumulation](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Gradient%20Accumulation.md)
   * [Efficient Attention Computation (Flash Attention)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Efficient%20Attention%20Computation%20(Flash%20Attention).md)
