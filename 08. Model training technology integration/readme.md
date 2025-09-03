@@ -27,12 +27,13 @@
   * [Early Stopping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Early%20Stopping.md)
   * [Noise Injection to Inputs/Weights](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Noise%20Injection%20to%20Inputs-Weights.md)
   * [Dropout](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Dropout.md)
-* [Overview of Learning Rate Adjustment Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/Overview%20of%20Learning%20Rate%20Adjustment%20Methods.md)
 
+   
+* [Overview of Learning Rate Adjustment Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/Overview%20of%20Learning%20Rate%20Adjustment%20Methods.md)
   * [StepLR](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/StepLR.md)
   * [ReduceLROnPlateau](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/ReduceLROnPlateau.md)
-  * [Adaptive Learning Rate (Adam Optimizer)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/Adam%20optimizer%20adjusts%20learning%20rate.md)
-  * [Adaptive Learning Rate (RMSprop)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/RMSprop%20adaptive%20learning%20rate.md)
+  * [Adam Optimizer)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/Adam%20optimizer.md)
+  * [RMSprop](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Learning%20rate%20adjustment%20method/RMSprop%20adaptive%20learning%20rate.md)
 
 * [Overview of Optimizers](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Optimizer%20Overview.md)
 
