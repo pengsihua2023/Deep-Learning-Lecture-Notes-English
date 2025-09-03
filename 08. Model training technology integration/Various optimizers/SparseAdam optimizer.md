@@ -102,4 +102,26 @@ print(embedding.weight[input_ids[0]])
 2. **SparseAdam** only updates embeddings corresponding to tokens that appear in the current batch.
 3. Embeddings for tokens not seen in this batch remain unchanged, making the training more efficient.
 
+---
+
+## Adam vs SparseAdam Comparison
+
+| Feature             | **Adam**                                                                                       | **SparseAdam**                                                                                                      |
+| ------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Use case**        | General-purpose optimizer, suitable for all parameters (dense gradients).                      | Specifically designed for **sparse gradients** (e.g., `nn.Embedding(sparse=True)`).                                 |
+| **Update method**   | Updates **all parameters** with first- and second-moment estimates, even if the gradient is 0. | Only updates **parameters with nonzero gradients** and their momentum terms; untouched parameters remain unchanged. |
+| **Memory overhead** | Must maintain momentum states for all parameters.                                              | Maintains momentum states only for nonzero indices, making it more memory- and compute-efficient.                   |
+| **Convergence**     | May be inefficient and slow in sparse scenarios.                                               | Faster in sparse scenarios, significantly reducing useless updates.                                                 |
+| **Typical use**     | CNNs, RNNs, Transformers, and other general tasks.                                             | Word embeddings, large-scale NLP vocabularies (hundreds of thousands or even millions of tokens).                   |
+| **PyTorch usage**   | `optim.Adam(model.parameters(), lr=...)`                                                       | `optim.SparseAdam(embedding.parameters(), lr=...)` — supported only for sparse parameters.                          |
+
+---
+
+👉 **Summary**:
+
+* If model parameters are **dense** (e.g., convolution layers, fully connected layers), use **Adam**.
+* If model parameters are **sparse** (especially embedding layers), use **SparseAdam** for higher efficiency.
+
+
+
 
