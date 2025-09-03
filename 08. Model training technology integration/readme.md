@@ -20,8 +20,8 @@
 
 * [Overview of Regularization Techniques](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Overview%20of%20Regularization%20Techniques.md)
 
-  * [L1 Norm Regularization (L1 Regularization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/L1%20Norm%20Regularization.md)
-  * [L2 Norm Regularization (L2 Regularization, Weight Decay)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/L2%20Norm%20Regularization.md)
+  * [L1 Norm Regularization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/L1%20Norm%20Regularization.md)
+  * [L2 Norm Regularization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/L2%20Norm%20Regularization.md)
   * [Batch Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Batch%20Normalization.md)
   * [Layer Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Layer%20Normalization.md)
   * [Early Stopping](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Regularization%20techniques/Early%20Stopping.md)
