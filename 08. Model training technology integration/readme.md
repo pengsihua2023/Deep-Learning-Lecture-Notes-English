@@ -59,7 +59,7 @@
   * [LSUV Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/LSUV.md)
   * [Zero Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Zero%20Initialization.md)
 
-* Overview of Model Fine-Tuning Techniques
+* [Overview of Model Fine-Tuning Techniques](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Overview%20of%20Model%20Fine-tuning%20Techniques.md)
 
   * [Low-Rank Adaptation (LoRA)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/LoRA.md)
   * [LoHA Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/LoHA.md)
