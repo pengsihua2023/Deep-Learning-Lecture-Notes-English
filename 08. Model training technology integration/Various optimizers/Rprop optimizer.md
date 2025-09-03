@@ -42,7 +42,7 @@ $$
 $$
 
 ```
- and set $g_t = 0$ (to avoid oscillations).  
+ and set  $g_t = 0$ (to avoid oscillations).  
 ```
 
 * Otherwise (if gradient is 0), keep step size unchanged.
