@@ -79,5 +79,4 @@
   * Integrated Gradients
   * Grad-CAM
   * DeepLIFT
-  * t-SNE
   * Attention Visualization
