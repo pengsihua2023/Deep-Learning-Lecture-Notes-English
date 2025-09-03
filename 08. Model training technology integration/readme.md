@@ -5,7 +5,7 @@
 
   * [Automatic Mixed Precision (AMP)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Automatic%20Mixed%20Precision%20(AMP).md)
   * [Curriculum Learning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Curriculum%20Learning.md)
-  * [Optuna Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Optuna%20Hyperparameter%20Optimization%20Method.md)
+  * [Optuna Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Optuna%20Hyperparameter%20Optimization.md)
   * [Ray Tune Hyperparameter Optimization Method](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Ray%20Tune%20Hyperparameter%20Optimization%20Method.md)
   * [Two methods for dealing with class imbalance](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Two%20methods%20for%20dealing%20with%20class%20imbalance%3A%20weighted%20loss%20function%20and%20oversampling.md)
   * [Min-Max Normalization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Key%20technologies/Min-Max%20Normalization.md)
