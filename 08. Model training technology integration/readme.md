@@ -51,8 +51,7 @@
   * [ASGD Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/ASGD%20optimizer.md)
 
 * [Overview of Initialization Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Initialization%20Method%20Overview.md)
-
-  * [Uniform/Normal Distribution Initialization (Xavier/Glorot Initialization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Xavier-Glorot%20Initialization.md)
+  * [Xavier/Glorot Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Xavier-Glorot%20Initialization.md)
   * [He Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/He%20Initialization.md)
   * [Uniform Distribution Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Uniform%20Initialization.md)
   * [Normal Distribution Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Normal%20Initialization.md)
