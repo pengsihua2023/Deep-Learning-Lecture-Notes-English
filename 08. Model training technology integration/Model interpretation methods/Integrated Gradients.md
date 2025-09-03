@@ -24,9 +24,7 @@ Let:
 * Model function: \$F(x)\$
 * Integrated Gradient for the \$i\$-th input feature:
 
-$$
-IG_i(x) = (x_i - x'_i) \times \int_{\alpha=0}^{1} \frac{\partial F\big(x' + \alpha (x - x')\big)}{\partial x_i} d\alpha
-$$
+$IG_i(x) = (x_i - x'_i) \times \int_{\alpha=0}^{1} \frac{\partial F\big(x' + \alpha (x - x')\big)}{\partial x_i} d\alpha$
 
 Explanation:
 
