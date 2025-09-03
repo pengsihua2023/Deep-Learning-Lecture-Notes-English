@@ -52,12 +52,12 @@
 * [Overview of Initialization Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Initialization%20Method%20Overview.md)
 
   * [Uniform/Normal Distribution Initialization (Xavier/Glorot Initialization)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Xavier-Glorot%20Initialization.md)
-  * Initialization Considering ReLU Variance (He Initialization)
-  * Uniform Distribution Initialization
+  * [He Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/He%20Initialization.md)
+  * [Uniform Distribution Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Uniform%20Initialization.md)
   * [Normal Distribution Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Normal%20Initialization.md)
-  * Uniform Variant of He Initialization (Kaiming Uniform)
-  * Layer-Sequential Unit-Variance Initialization (LSUV)
-  * Zero Initialization
+  * [Kaiming Uniform Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Kaiming%20Uniform%20Initialization-8.md)
+  * [LSUV Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/LSUV.md)
+  * [Zero Initialization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Initialization%20methods/Zero%20Initialization.md)
 
 * Overview of Model Fine-Tuning Techniques
 
