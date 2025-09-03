@@ -83,10 +83,10 @@
 * [Overview of Model Interpretation Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/Overview%20of%20Model%20Interpretation%20Methods.md)
 
   * [SHAP](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/SHAP.md)
-  * LIME
-  * Saliency Maps
-  * Integrated Gradients
-  * Grad-CAM
-  * Grad-CAM++
-  * DeepLIFT
-  * Attention Visualization
+  * [LIME](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/LIME.md)
+  * [Saliency Maps](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/Saliency%20Maps.md)
+  * [Integrated Gradients](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/Integrated%20Gradients.md)
+  * [Grad-CAM](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/Grad-CAM.md)
+  * [Grad-CAM++](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/Grad-CAM%2B%2B.md)
+  * [DeepLIFT](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/DeepLIFT.md)
+  * [Attention Visualization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/Attention%20Visualization.md)
