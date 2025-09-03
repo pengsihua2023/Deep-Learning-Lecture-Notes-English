@@ -1,6 +1,4 @@
-
-
-## Adaptive Learning Rate (Adam Optimizer)
+## Adam Optimizer: Adaptive Learning Rate
 
 ### What is Adaptive Learning Rate (Adam Optimizer)?
 
