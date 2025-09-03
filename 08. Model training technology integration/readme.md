@@ -44,7 +44,7 @@
   * [Adadelta Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Adadelta%20Optimizer.md)
   * [AMSGrad Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/AMSGrad%20optimizer.md)
   * [Nadam Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Nadam%20optimizer.md)
-  * [L-BFGS Optimizer (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/L-BFGS%20Optimizer.md)
+  * [L-BFGS Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/L-BFGS%20Optimizer.md)
   * [Rprop Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/Rprop%20optimizer.md)
   * [SparseAdam Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/SparseAdam%20optimizer.md)
   * [ASGD Optimizer](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Various%20optimizers/ASGD%20optimizer.md)
