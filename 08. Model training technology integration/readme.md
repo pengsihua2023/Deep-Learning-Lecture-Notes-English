@@ -70,9 +70,12 @@
   * [Restarted LoRA (ReLoRA)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/ReLoRA.md)
   * [Quantization + LoRA (QLoRA)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/QLoRA.md)
   * [Differential Pruning (Diff Pruning)](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Differential%20Pruning.md)
-  * 
+  * [P-Tuning v2](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/P-Tuning%20v2.md)
+  * [P-Tuning Fine-Tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/P-Tuning.md)
   * [Model Pruning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Model%20Pruning.md)
   * [Adapter Fine-tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Adapter%20Fine-tuning.md)
+  * [ Comparison of Five Model Fine-Tuning](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/Performance%20Comparison%20of%20Five%20Strategies.md)
+  * [PEFT Library overview](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20fine-tuning%20techniques/PEFT%20Library%20overview.md)
 
 * [Summary of Model Evaluation Methods](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20evaluation%20methods/Summary%20of%20Model%20Evaluation%20Methods.md)
 
