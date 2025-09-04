@@ -1,7 +1,7 @@
 
 # Saliency Maps Model Interpretation Method
 
-## 1. Definition
+## 📖 1. Definition
 
 **Saliency Map** is a **gradient-based model interpretation method**, originally used for image classification.
 It measures which input features are most important to the model’s prediction by computing the **gradient magnitude of the output prediction with respect to the input pixels**.
@@ -11,9 +11,9 @@ It measures which input features are most important to the model’s prediction 
 
 This method is suitable for **neural network image models**, and can also be extended to text and tabular tasks.
 
----
 
-## 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 Let:
 
@@ -33,9 +33,9 @@ Where:
 
 Finally, the saliency map \$M(x)\$ can be visualized as a heatmap to show the regions the model focuses on.
 
----
 
-## 3. Minimal Code Example
+
+## 📖 3. Minimal Code Example
 
 Generate a saliency map on MNIST using **PyTorch**:
 
@@ -88,24 +88,23 @@ plt.imshow(saliency, cmap="hot")
 plt.show()
 ```
 
----
 
-## Results Explanation
+
+## 📖 Results Explanation
 
 * **Left image**: Original MNIST digit (e.g., “7”).
 * **Right image**: Saliency map, showing which pixels contribute most to predicting “7” (usually the digit’s edges).
 
----
 
-## Summary
+
+## 📖 Summary
 
 * **Definition**: Saliency Maps explain model predictions using input gradients.
 * **Formula**: \$M(x) = \left| \frac{\partial S\_c(x)}{\partial x} \right|\$.
 * **Code**: Just a few PyTorch gradient operations are needed to generate saliency maps.
 
----
 
-## Saliency Maps / LIME / SHAP Comparison
+## 📖 Saliency Maps / LIME / SHAP Comparison
 
 | Feature              | **Saliency Maps**                                                             | **LIME**                                                                  | **SHAP**                                                                                            |
 | -------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -117,9 +116,8 @@ plt.show()
 | **Cost**             | Low (just one backpropagation)                                                | Medium (sampling + linear model fitting)                                  | High (exact Shapley is exponential; approximations exist)                                           |
 | **Use cases**        | Computer vision (image classification, medical imaging)                       | General (NLP, tabular, images)                                            | High-risk tasks (finance, healthcare) requiring reliable explanations                               |
 
----
 
-## Final Summary
+## 📖 Final Summary
 
 * **Saliency Maps**: Gradient-based, good for image models, fast but unstable.
 * **LIME**: Sampling + interpretable model, intuitive and flexible but potentially unstable.
