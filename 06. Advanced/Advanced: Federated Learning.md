@@ -10,14 +10,14 @@ Federated Learning is a distributed machine learning method designed to allow mu
 </div>
 
 
-## Core Concepts
+## 📖 Core Concepts
 
 * **Local Training**: Each client trains the model on its local dataset and generates model updates (e.g., weights or gradients).
 * **Model Aggregation**: The central server collects updates from clients (without raw data) and updates the global model using weighted averaging or other methods.
 * **Privacy Protection**: Raw data always remains on the client side, reducing the risk of data leakage.
 * **Communication Efficiency**: Model updates need to be transmitted between clients and the server, so communication costs must be optimized.
 
-## Main Types of Federated Learning
+## 📖 Main Types of Federated Learning
 
 1. **Horizontal Federated Learning**:
 
@@ -31,7 +31,7 @@ Federated Learning is a distributed machine learning method designed to allow mu
 
    * Combines transfer learning to handle scenarios where both client data and feature spaces differ.
 
-## Workflow (Example: Horizontal Federated Learning)
+## 📖 Workflow (Example: Horizontal Federated Learning)
 
 1. The central server initializes the global model and distributes it to clients.
 2. Each client trains the model on its local data and computes updates (e.g., gradients).
@@ -39,16 +39,15 @@ Federated Learning is a distributed machine learning method designed to allow mu
 4. The server aggregates updates (e.g., weighted averaging) to update the global model.
 5. Steps 1–4 are repeated until the model converges.
 
-## Application Scenarios
+## 📖 Application Scenarios
 
 * **Mobile Devices**: e.g., predictive keyboards on smartphones (Google Gboard), training on user devices to protect input privacy.
 * **Healthcare**: Collaboration between hospitals to train disease prediction models while keeping data local.
 * **Finance**: Banks jointly build risk control models while protecting customer privacy.
 * **IoT**: Smart devices (e.g., cameras) collaboratively optimize models.
 
----
 
-## Mathematical Description of Federated Learning
+## 📖 Mathematical Description of Federated Learning
 
 ### 1. Problem Definition
 
@@ -146,7 +145,7 @@ The typical training process is:
 ---
 
 
-## Code
+## 📖 Code
 Simple Code Example (Horizontal Federated Learning with PyTorch)
 Below is a simple example of horizontal federated learning, simulating multiple clients collaboratively training a classification model.
 
@@ -262,7 +261,7 @@ if __name__ == "__main__":
 ```
 
 
-### Code Explanation
+## 📖 Code Explanation
 1. **Task**: Perform handwritten digit classification on the MNIST dataset, simulating federated learning with 10 clients.
 2. **Model**: `SimpleNet` is a two-layer fully connected network used for classifying 10 digits.
 3. **Federated Learning Process**:
@@ -286,7 +285,7 @@ Test Accuracy: 0.8923
 
 This indicates the global model's classification accuracy on the test set.
 
-### Extensions
+## 📖 Extensions
 - **Non-IID Data**: Simulate non-IID distributions by sorting or grouping data.
 - **Privacy Enhancement**: Add differential privacy or cryptographic techniques (e.g., secure multi-party computation).
 - **Complex Models**: Replace with more complex models (e.g., CNN) or use real-world datasets.
