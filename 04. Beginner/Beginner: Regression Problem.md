@@ -155,7 +155,7 @@ where \$\theta\$ denotes the set of all parameters.
 --- 
 
 ## 📖 First version of code 
-- First version of code
+
 ```python
 import tensorflow as tf
 from tensorflow.keras import layers, models
