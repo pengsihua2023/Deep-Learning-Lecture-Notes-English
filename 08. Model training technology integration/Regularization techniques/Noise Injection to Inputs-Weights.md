@@ -1,8 +1,8 @@
 ## Noise Injection to Inputs/Weights
-### What is Noise Injection?
+### 📖 What is Noise Injection?
 Noise Injection is a regularization technique in deep learning that enhances model generalization by adding random noise to input data, weights, or other intermediate representations during training. Similar to Dropout (which sets activations to zero), Noise Injection introduces random perturbations instead.
 
-#### Core Principle
+### 📖 Core Principle
 - **Input Noise**: Random noise (e.g., Gaussian noise) is added to input data (e.g., images, text), simulating uncertainty or noise to force the model to learn robust features.
 - **Weight Noise**: Random perturbations are added to model weights, increasing randomness in parameter updates and preventing over-reliance on specific weights.
 - **Effects**:
@@ -10,23 +10,23 @@ Noise Injection is a regularization technique in deep learning that enhances mod
   - Enhances robustness to data or weight perturbations, similar to data augmentation.
   - Simulates real-world noisy data (e.g., sensor noise, blurry images).
 
-#### Advantages
+### 📖 Advantages
 - **Improved Robustness**: Makes the model less sensitive to input variations or noise.
 - **Regularization Effect**: Reduces overfitting, similar to L1/L2 regularization or Dropout.
 - **Simple Implementation**: Easily added to existing models without complex changes.
 
-#### Limitations
+### 📖 Limitations
 - **Noise Strength**: Excessive noise may corrupt useful information; insufficient noise may have limited effect.
 - **Task Dependency**: Some tasks (e.g., high-precision image classification) may be sensitive to noise.
 - **Computational Overhead**: Noise addition slightly increases computation, though typically negligible.
 
-#### Applications
+### 📖 Applications
 - **Input Noise**: Image classification (Gaussian or salt-and-pepper noise), speech processing (background noise).
 - **Weight Noise**: Neural network training, especially to prevent overfitting on small datasets.
 
 ---
 
-### Python Code Example
+### 📖 Python Code Example
 Below is a simple PyTorch example implementing Noise Injection for the MNIST handwritten digit classification task, demonstrating how to add Gaussian noise to inputs and weights, combined with Adam optimizer and early stopping (referencing prior discussions).
 
 ```python
@@ -157,9 +157,9 @@ test_accuracy = test()
 print(f'Test Accuracy: {test_accuracy:.2f}%')
 ```
 
----
 
-### Code Explanation
+
+### 📖 Code Explanation
 1. **Model Definition**:
    - `NoiseInjectionNet` is a fully connected neural network with MNIST 28x28 pixel inputs and 10-class outputs.
    - Input noise is implemented in the `forward` function using `torch.randn_like(x) * noise_std` with a standard deviation of `input_noise_std=0.1`.
@@ -189,9 +189,9 @@ print(f'Test Accuracy: {test_accuracy:.2f}%')
    ```
    Actual values vary due to random initialization and noise.
 
----
 
-### Key Points
+
+### K📖 ey Points
 - **Input Noise**: Added in `forward` using Gaussian noise to simulate data perturbations (e.g., image noise).
 - **Weight Noise**: Applied before optimization to increase randomness in parameter updates.
 - **Training/Testing Behavior**:
@@ -199,15 +199,15 @@ print(f'Test Accuracy: {test_accuracy:.2f}%')
   - Testing: Noise is disabled for stable predictions.
 - **Noise Strength**: `input_noise_std` and `weight_noise_std` require tuning; excessive noise may corrupt information.
 
----
 
-### Practical Applications
+
+### 📖 Practical Applications
 - **Image Processing**: Input noise simulates blur or salt-and-pepper noise, improving robustness to real-world data.
 - **Small Datasets**: Weight noise, like Dropout, prevents overfitting.
 - **Speech/Time Series**: Noise simulates background noise or sensor errors.
 - **Combination with Other Regularizations**: Can be used with Dropout, L1/L2 regularization, BatchNorm, or LayerNorm (as in prior discussions).
 
-#### Considerations
+### 📖 Considerations
 - **Noise Type**: Gaussian noise is most common, but uniform noise or other distributions can be used.
 - **Strength Tuning**: Noise standard deviation should be tuned experimentally (e.g., 0.01 to 0.5).
 - **Task Sensitivity**: Image tasks tolerate higher noise; text tasks require caution.
