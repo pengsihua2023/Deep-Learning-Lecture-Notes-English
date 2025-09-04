@@ -1,4 +1,4 @@
-## Advanced: Model pruning and quantization
+# Advanced: Model pruning and quantization
 Model Pruning and Quantization are two key techniques for optimizing deep learning models, aimed at reducing computational complexity and resource demands while maintaining performance as much as possible. These techniques are particularly important for deploying large models on resource-constrained devices (e.g., mobile devices, edge devices). Below is an overview, methods, applications, and a code example for both.
 
 ---
