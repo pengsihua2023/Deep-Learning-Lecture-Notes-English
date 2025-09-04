@@ -1,6 +1,6 @@
 # Long Short-Term Memory (LSTM) Study Notes
 
-## 1. Introduction
+## 📖 1. Introduction
 
 **Long Short-Term Memory (LSTM)** is a special type of Recurrent Neural Network (RNN) designed to solve the **vanishing gradient problem** of standard RNNs.
 
@@ -17,7 +17,7 @@
 </div>
 
 
-## 2. Core Concept
+## 📖 2. Core Concept
 
 LSTM introduces a **gating mechanism** that regulates the flow of information:
 
@@ -29,7 +29,7 @@ Through these gates, LSTMs effectively retain useful information and mitigate gr
 
 
 
-## 3. LSTM Cell Structure
+## 📖 3. LSTM Cell Structure
 
 At each time step $t$, an LSTM cell receives:
 
@@ -46,7 +46,7 @@ The structure consists of:
 
 
 
-## 4. Mathematical Formulation
+## 📖 4. Mathematical Formulation
 
 ### (1) Forget Gate
 
@@ -91,7 +91,7 @@ $$
 
 
 
-## 5. Parameters
+## 📖 5. Parameters
 
 * $W_f, W_i, W_c, W_o$: Weight matrices
 * $b_f, b_i, b_c, b_o$: Bias terms
@@ -100,7 +100,7 @@ $$
 
 ---
 
-## 6. PyTorch Implementation
+## 📖 6. PyTorch Implementation
 
 ```python
 class SimpleLSTM(nn.Module):
@@ -127,7 +127,7 @@ class SimpleLSTM(nn.Module):
 
 ---
 
-## 7. Training & Results
+## 📖 7. Training & Results
 
 * **Loss function:** Binary Cross-Entropy (BCELoss)
 * **Optimizer:** Adam
@@ -141,9 +141,8 @@ class SimpleLSTM(nn.Module):
 **Loss Curve:**
 The training loss steadily decreases, confirming model convergence.
 
----
 
-## 8. Key Takeaways
+## 📖 8. Key Takeaways
 
 * LSTM is a powerful extension of RNN for handling **long-term dependencies**.
 * The **gating mechanism** (forget, input, output) is crucial for controlling information flow.
