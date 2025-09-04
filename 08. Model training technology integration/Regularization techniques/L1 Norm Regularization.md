@@ -10,26 +10,26 @@ $$
 Loss_{\text{regularized}} = Loss_{\text{original}} + \lambda \sum_i |w_i|
 $$
 
-- **Where**:
+#### **Where**:
 
 * $Loss_{\text{original}}$ is the original loss (such as mean squared error or cross-entropy).
 * $w_i$ are model parameters (e.g., weights).
 * $|w_i|$ is the absolute value of the weight, $\sum |w_i|$ is the L1 norm.
 * $\lambda$ is the hyperparameter controlling the strength of regularization.
 
-- **Effect:**
+#### **Effect:**
 
 * L1 regularization tends to set unimportant weights to zero, generating a sparse model (i.e., feature selection effect).
 * Sparsity helps reduce model complexity, improve interpretability, and reduce overfitting risk.
 * Compared with L2 regularization (which makes weights smaller but nonzero), L1 regularization is more suitable for scenarios requiring sparse solutions.
 
-- **Differences with L2 regularization:**
+#### **Differences with L2 regularization:**
 
 * L2 regularization $\left(\sum w_i^2\right)$ makes weights tend toward small values, keeping all weights nonzero.
 * L1 regularization $\left(\sum |w_i|\right)$, due to its non-differentiability (at zero), can push some weights exactly to zero.
 * L1 regularization is more effective in high-dimensional data (e.g., feature selection), while L2 regularization is more suitable for smooth weight distributions.
 
-- **Applications**
+#### **Applications**
 
 * **Feature selection:** In machine learning (such as linear regression, logistic regression), L1 regularization can automatically select important features.
 * **Neural networks:** In deep learning, L1 regularization can be used to sparsify networks (such as convolutional or fully connected layers).
