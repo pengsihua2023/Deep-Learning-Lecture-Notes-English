@@ -16,7 +16,7 @@
 
 ---
 
-## 📖 Introduction
+## 📖 1. Introduction
 
 **Transfer Learning** is a machine learning technique where knowledge or model parameters learned from one task/domain (*source*) are applied to another related but different task/domain (*target*).
 
@@ -29,7 +29,7 @@ It helps improve learning efficiency and performance, especially when the target
 (This picture was obtained from the Internet.)
 </div>
 
-## 📖 Core Concepts
+## 📖 2. Core Concepts
 
 * **Source Task and Target Task**:
 
@@ -47,7 +47,7 @@ It helps improve learning efficiency and performance, especially when the target
 
 
 
-## 📖 Main Approaches
+## 📖 3. Main Approaches
 
 1. **Feature Extraction**
 
@@ -67,7 +67,7 @@ It helps improve learning efficiency and performance, especially when the target
 
 
 
-## 📖 Application Scenarios
+## 📖 4. Application Scenarios
 
 * **Computer Vision**: Image classification, object detection using pretrained models (ResNet, VGG).
 * **Natural Language Processing**: Text classification, machine translation with pretrained models (BERT, LLaMA).
@@ -75,7 +75,7 @@ It helps improve learning efficiency and performance, especially when the target
 
 
 
-## 📖 Advantages and Challenges
+## 📖 5. Advantages and Challenges
 
 ### Advantages
 
@@ -91,14 +91,14 @@ It helps improve learning efficiency and performance, especially when the target
 
 
 
-## 📖 Difference from Meta-Learning
+## 📖 6. Difference from Meta-Learning
 
 * **Transfer Learning**: Focuses on reusing pretrained model knowledge; usually unidirectional (source → target).
 * **Meta-Learning**: Focuses on “learning to learn,” enabling models to quickly adapt to new tasks through multi-task training.
 
 ---
 
-## 📖 PyTorch Code Example
+## 📖 7. PyTorch Code Example
 
 Here is a simple example using **ResNet18 pretrained on ImageNet** for transfer learning on the CIFAR10 dataset:
 
