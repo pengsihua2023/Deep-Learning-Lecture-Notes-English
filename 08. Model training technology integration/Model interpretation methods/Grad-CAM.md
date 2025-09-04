@@ -1,7 +1,7 @@
 
 # Grad-CAM Model Interpretation Method (Gradient-weighted Class Activation Mapping)
 
-## 1. Definition
+## 📖 1. Definition
 
 **Grad-CAM** is a method for **visualizing the basis of neural network predictions**, commonly used for explaining CNN image classification models.
 
@@ -11,9 +11,9 @@
 
 Compared with **Saliency Maps**, Grad-CAM produces smoother and more human-interpretable results.
 
----
 
-## 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 Let:
 
@@ -37,9 +37,9 @@ $$
 
 3. **Upsample** to the input image size and overlay it on the image.
 
----
 
-## 3. Minimal Code Example
+
+## 📖 3. Minimal Code Example
 
 Implementing Grad-CAM on ResNet18 using **PyTorch**:
 
@@ -110,16 +110,16 @@ plt.imshow(cam.detach().numpy(), cmap='jet', alpha=0.5)  # Overlay heatmap
 plt.show()
 ```
 
----
 
-## Results Explanation
+
+## 📖 Results Explanation
 
 * **Left image**: the original input image (e.g., a cat).
 * **Right image**: the Grad-CAM heatmap, where red regions indicate the parts the model focuses on most (e.g., the cat’s face).
 
----
 
-## Summary
+
+## 📖 Summary
 
 * **Grad-CAM definition**: a gradient-based class activation visualization method to explain CNN predictions.
 * **Formula**: \$\alpha\_k^c = \frac{1}{H \times W}\sum\_{i,j} \frac{\partial y^c}{\partial A^k\_{ij}},; L^c = ReLU(\sum\_k \alpha\_k^c A^k)\$.
