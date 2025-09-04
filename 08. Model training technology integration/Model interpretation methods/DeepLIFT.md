@@ -1,7 +1,7 @@
 
 # DeepLIFT Model Interpretation Method
 
-## 1. Definition
+## 📖 1. Definition
 
 **DeepLIFT (Deep Learning Important FeaTures)** is a **model interpretation method**. It compares the differences in activations of a neural network under a **reference input** and an **actual input**, and assigns contribution values of each input feature to the output.
 
@@ -12,9 +12,9 @@ Unlike gradient-based methods, DeepLIFT uses **difference propagation rules (res
 * Reference point (baseline) = the model’s output on some “neutral input” (e.g., all-zero vector, mean input).
 * DeepLIFT explanation result = the **decomposed contribution of changes** in prediction caused by the actual input relative to the reference input.
 
----
 
-## 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 ### 2.1 Basic Idea
 
@@ -47,9 +47,9 @@ During layer-by-layer propagation in the neural network, DeepLIFT defines severa
 
 * **RevealCancel Rule**: Used to capture nonlinear interactions among inputs by comparing the independent contributions of positive and negative parts.
 
----
 
-## 3. Simple Code Example
+
+## 📖 3. Simple Code Example
 
 We use `captum` (PyTorch’s interpretability library) to demonstrate how to apply DeepLIFT.
 
@@ -92,9 +92,9 @@ Attributions: tensor([[ 0.12,  0.45,  0.33]], grad_fn=<...>)
 
 Here, `Attributions` are the contribution values assigned by DeepLIFT to each feature. Their sum equals the difference between the prediction and the baseline.
 
----
 
-## 4. Summary
+
+## 📖 4. Summary
 
 * **Definition**: DeepLIFT assigns prediction contributions by comparing input with reference input.
 
