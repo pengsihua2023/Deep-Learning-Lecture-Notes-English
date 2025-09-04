@@ -198,7 +198,10 @@ Test Loss: 28.6256, Test MAE: 2.9774
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 30ms/step  
 Predictions for first 5 test samples: [21.798922 21.89294  20.243843 33.85427  21.61176 ]  
 Actual values: [18.2 21.4 21.5 36.4 20.2]  
-- Second version of code
+
+---
+
+## 📖 Second version of code
 ```python
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
@@ -241,7 +244,9 @@ Test Loss: 28.6987, Test MAE: 3.1621
 Predictions for first 5 test samples: [19.722134 21.551369 19.76431  34.056454 22.540033]  
 Actual values: [18.2 21.4 21.5 36.4 20.2]  
 
-- Third version of code
+---
+
+## 📖 Third version of code
 ```python
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
@@ -302,7 +307,9 @@ Test Loss: 25.8082, Test MAE: 2.9562
 Predictions for first 5 test samples: [19.786161 21.211859 19.15384  34.56086  20.987986]  
 Actual values: [18.2 21.4 21.5 36.4 20.2]  
 
-- Fourth version of code
+---
+
+## 📖 Fourth version of code
 ```python
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
@@ -356,6 +363,7 @@ y_pred = model.predict(X_test[:5])
 print("Predictions for first 5 test samples:", y_pred.flatten())
 print("Actual values:", y_test[:5])
 ```
+
 ## 📖 training results
 Epoch 87/1000
 41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step - loss: 5.1438 - mae: 1.6906 - val_loss: 6.9840 - val_mae: 1.8983  
@@ -363,7 +371,10 @@ Test Loss: 26.1492, Test MAE: 3.0013
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 30ms/step  
 Predictions for first 5 test samples: [20.502605 21.119947 19.357008 34.657536 21.160563]  
 Actual values: [18.2 21.4 21.5 36.4 20.2]  
-- Fifth version of code
+
+---
+
+## 📖 Fifth version of code
 ```python
 import tensorflow as tf
 from tensorflow.keras import layers, models, regularizers
