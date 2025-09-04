@@ -11,9 +11,9 @@
 
 Unlike traditional “discrete prompts,” P-Tuning prompts are **continuous differentiable vectors** that can be directly optimized through gradient descent.
 
----
 
-## 🔢 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 Assume:
 
@@ -49,9 +49,9 @@ Where:
 * \$\theta\$ is fixed (model parameters frozen).
 * Only \$P\$ is updated through backpropagation.
 
----
 
-## 💻 3. Simple Code Example
+
+## 📖 3. Simple Code Example
 
 Here is a simplified **P-Tuning implementation** based on Hugging Face `transformers` (text classification as an example):
 
@@ -108,9 +108,9 @@ logits = model(**inputs)
 print(logits)
 ```
 
----
 
-## ✅ Summary
+
+## 📖 Summary
 
 * **Definition**: Insert continuous learnable prompt vectors before the input sequence, freeze the pre-trained model, and only optimize prompt parameters.
 * **Mathematical Form**: \$\mathcal{L}(P) = - \sum \log p(y \mid \[P; X]; \theta)\$.
