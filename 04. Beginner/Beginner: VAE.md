@@ -8,7 +8,7 @@ The Variational Autoencoder (VAE) is a generative deep learning model proposed b
 (This picture was obtained from the Internet.)
 </div>
 
-### Core components of VAE include:
+### 📖 Core components of VAE include:
 - **Encoder**: Maps input data $x$ to the distribution parameters of the latent space (typically the mean $\mu$ and variance $\sigma^2$ of a Gaussian distribution).
 - **Sampling**: Samples latent variables $z$ from the latent distribution using the reparameterization trick to make the sampling process differentiable.
 - **Decoder**: Reconstructs the output data $x'$ from the latent variable $z$, aiming to make $x'$ as close as possible to $x$.
@@ -16,7 +16,7 @@ The Variational Autoencoder (VAE) is a generative deep learning model proposed b
 
 The advantage of VAE lies in its ability to generate a continuous latent space, supporting interpolation and the creation of new samples. It is commonly used in image generation, data augmentation, and other fields. Compared to GANs (Generative Adversarial Networks), VAE training is more stable, but the generated samples may be blurrier.
 
-### Mathematical Description
+### 📖 Mathematical Description
 
 The goal of VAE is to maximize the marginal likelihood $p(x)$, which is typically intractable to compute directly. Therefore, the Evidence Lower Bound (ELBO) is used as a proxy optimization objective. Assumptions:
 
@@ -60,14 +60,14 @@ $$
 
 ---
 
-### Code Explanation
+### 📖 Code Explanation
 The following is a minimal VAE implementation using PyTorch for the MNIST dataset (28x28 grayscale images). It uses a simple multilayer perceptron (MLP) as the encoder and decoder, with a latent dimension of 2 (for visualization purposes). The code is consolidated into a single module, including model definition, loss function, training loop, and sample generation. Running it requires installing PyTorch and torchvision (`pip install torch torchvision`).  
 
 - **Runtime Environment**: Ensure GPU support to accelerate training (the code automatically detects the device).  
 - **Extensions**: This code is a simplified version for understanding VAE principles. In practice, convolutional neural networks (CNNs) can replace MLPs, the latent dimension can be increased, or hyperparameters can be tuned for better performance.  
 - **Sample Generation**: After training, uncomment the `save_image` section to save generated MNIST image samples.
 
-### Code
+### 📖 Code
 ```python
 import torch
 import torch.nn as nn
