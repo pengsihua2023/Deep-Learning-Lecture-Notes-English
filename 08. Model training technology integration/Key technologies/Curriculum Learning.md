@@ -1,24 +1,23 @@
 ## Curriculum Learning
-### What is Curriculum Learning?
+### 📖 What is Curriculum Learning?
 **Curriculum Learning** is a machine learning training strategy inspired by the human learning curriculum. It organizes training data **in order from easy to difficult**, gradually increasing task complexity to improve model training efficiency and performance. The core idea is to let the model learn simple samples or tasks first, then progressively transition to more complex ones, avoiding being overwhelmed by difficult samples early on.
 
-#### Core Features:
+### 📖 Core Features:
 1. **From Easy to Difficult**: Training data is provided in stages based on difficulty, allowing the model to master simple patterns before tackling complex ones.
 2. **Improved Convergence**: Gradual learning helps the model find the global optimum more easily, avoiding local optima.
 3. **Applicable Scenarios**: Commonly used in deep learning tasks like image classification, object detection, and natural language processing, especially when data distributions are complex or tasks are highly challenging.
 
-#### Advantages:
+### 📖 Advantages:
 - Accelerates convergence, reducing training time.
 - Enhances model generalization, particularly on difficult tasks.
 - Mimics human learning, making it intuitive.
 
-#### Challenges:
+### 📖 Challenges:
 - Requires defining a “difficulty” standard (which may be subjective or task-dependent).
 - Implementation may need additional data preprocessing or scheduling logic.
 
----
 
-### Principles of Curriculum Learning
+### 📖 Principles of Curriculum Learning
 1. **Defining Difficulty**:
    - Difficulty can be based on sample characteristics (e.g., image resolution, sentence length, task complexity) or model prediction difficulty (e.g., loss value, confidence score).
    - For example, in image classification, low-resolution or clear images may be considered “easy” samples, while high-resolution or blurry images are “difficult.”
@@ -33,7 +32,7 @@
 
 ---
 
-### Simple Code Example: Curriculum Learning with PyTorch
+### 📖 Simple Code Example: Curriculum Learning with PyTorch
 Below is a simple example demonstrating how to implement Curriculum Learning in PyTorch. Using the **MNIST dataset**, we assume “difficulty” is based on the pixel mean of images (lower mean implies darker images, which are assumed harder to recognize). The model trains on easy (bright) samples first, then progressively includes harder (darker) samples.
 
 ```python
@@ -130,9 +129,9 @@ with torch.no_grad():
 print(f"Test Accuracy: {correct / total * 100:.2f}%")
 ```
 
----
 
-### Code Explanation
+
+### 📖 Code Explanation
 1. **Difficulty Definition**:
    - Uses pixel mean as a difficulty metric (simplistic assumption: darker images are harder to recognize).
    - The `compute_difficulty` function calculates the pixel mean for each image as a difficulty score.
@@ -151,16 +150,16 @@ print(f"Test Accuracy: {correct / total * 100:.2f}%")
    - The training loop is similar to standard training, but data is introduced progressively by difficulty.
    - The model is evaluated on the test set to assess performance.
 
----
 
-### Key Points
+
+### 📖 Key Points
 1. **Difficulty Standard**: This example uses pixel mean as difficulty. In practice, you can customize it based on the task (e.g., sentence length, noise level, loss value).
 2. **Scheduling Strategy**: This example uses fixed stage transitions. In practice, you can dynamically adjust based on model convergence.
 3. **Extensibility**: Can be combined with AMP (Automatic Mixed Precision) to further accelerate training by adding `torch.cuda.amp.autocast()` and `GradScaler` to the training loop (see previous AMP example).
 
----
 
-### Practical Effects
+
+### 📖 Practical Effects
 - **Convergence Speed**: Curriculum Learning often accelerates model convergence, especially on complex datasets.
 - **Generalization**: Learning from easy to difficult improves model performance on challenging samples.
 - **Flexibility**: Difficulty definitions and scheduling strategies can be tailored to specific tasks.
