@@ -113,7 +113,7 @@ $$
 
 \$\mathcal{L} = \mathcal{L}\_ {MLM} + \mathcal{L}\_ {NSP}. \$
 
-### Applicable Scenarios:
+## 📖 Applicable Scenarios:
 
 Text classification, question answering, NER, translation, etc.
 
