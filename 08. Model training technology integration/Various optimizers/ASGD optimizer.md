@@ -1,7 +1,7 @@
 
 # ASGD (Averaged Stochastic Gradient Descent) Optimizer
 
-## 1. Definition
+## 📖 1. Definition
 
 **ASGD (Averaged Stochastic Gradient Descent)** is an improved version of **SGD**, with the core idea:
 
@@ -13,9 +13,9 @@
 
 Its typical applications include convex optimization tasks (e.g., linear models, logistic regression), where it converges faster and achieves better solutions.
 
----
 
-## 2. Mathematical Formulation
+
+## 📖 2. Mathematical Formulation
 
 Let:
 
@@ -47,9 +47,9 @@ $$
 
 This smooths out the oscillations of SGD and improves convergence stability.
 
----
 
-## 3. Minimal Code Example
+
+## 📖 3. Minimal Code Example
 
 Using **PyTorch** to implement a minimal ASGD training on a linear model:
 
@@ -92,9 +92,9 @@ w, b = model.linear.weight.item(), model.linear.bias.item()
 print(f"Learned parameters: w = {w:.2f}, b = {b:.2f}")
 ```
 
----
 
-### Explanation
+
+### 📖 Explanation
 
 1. `torch.optim.ASGD` internally implements parameter averaging.
 2. `lr=0.05` is the learning rate, adjustable depending on the task.
