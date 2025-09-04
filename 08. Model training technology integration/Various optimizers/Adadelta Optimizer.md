@@ -2,7 +2,7 @@
 
 ### Principle and Usage of the Adadelta Optimizer
 
-#### **Principle**
+#### 📖 **Principle**
 
 Adadelta (Adaptive Delta) is an adaptive learning rate optimization algorithm designed to address the issue in Adagrad where the learning rate monotonically decreases towards zero over time. It is an improved version of Adagrad, combining the ideas of momentum and adaptive learning rate, and is suitable for optimizing deep learning models. The core principles of Adadelta are as follows:
 
@@ -54,12 +54,11 @@ $$
    * Slightly higher computational complexity than SGD.
    * Hyperparameters \$\rho\$ and \$\epsilon\$ must be carefully chosen (default values usually work well).
 
-#### **Use Cases**
+#### 📖 **Use Cases**
 
 * Suitable for optimizing deep learning models (such as CNNs and RNNs), especially in tasks with sparse data or highly variable gradients.
 * Commonly used in image classification, text classification, and similar tasks, particularly when reducing the need for manual learning rate tuning.
 
----
 
 #### **PyTorch Usage**
 
@@ -97,7 +96,7 @@ optimizer.step()  # Update parameters
 print(f"Loss: {loss.item()}")
 ```
 
-##### **Code Explanation**
+##### 📖 **Code Explanation**
 
 * **Model**: Uses pretrained ResNet18, replacing the last layer for a 10-class classification task.
 * **Optimizer**: `optim.Adadelta` initialization, parameters include:
@@ -111,7 +110,7 @@ print(f"Loss: {loss.item()}")
 
 
 
-#### **Notes**
+#### 📖 **Notes**
 
 1. **Hyperparameters**:
 
@@ -132,7 +131,7 @@ print(f"Loss: {loss.item()}")
 
 
 
-#### **Summary**
+#### 📖 **Summary**
 
 Adadelta is an efficient adaptive optimizer that dynamically adjusts the learning rate using EMA, making it suitable for deep learning tasks. PyTorch’s `optim.Adadelta` is simple and easy to use, requiring only model parameters and a few hyperparameters to get started.
 
