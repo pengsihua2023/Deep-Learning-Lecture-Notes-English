@@ -1,9 +1,9 @@
 ## L1 Norm Regularization
 
-What is L1 norm regularization?
+### 📖 What is L1 norm regularization?  
 L1 norm regularization (also known as Lasso regularization) is a commonly used regularization technique in machine learning and deep learning to prevent model overfitting and promote parameter sparsity. Unlike L2 norm regularization (Ridge regularization), L1 regularization adds the L1 norm of the model parameters (i.e., the sum of the absolute values of the weights) as a penalty term to the loss function, which tends to push some weights toward zero, thereby generating a sparse model.
 
-Core principle
+### 📖 Core principle
 **Modification of loss function:** L1 regularization adds an L1 norm penalty term to the original loss function:
 
 $$
@@ -29,13 +29,14 @@ Where:
 * L1 regularization $\left(\sum |w_i|\right)$, due to its non-differentiability (at zero), can push some weights exactly to zero.
 * L1 regularization is more effective in high-dimensional data (e.g., feature selection), while L2 regularization is more suitable for smooth weight distributions.
 
-Applications
+### 📖 Applications
 
 * **Feature selection:** In machine learning (such as linear regression, logistic regression), L1 regularization can automatically select important features.
 * **Neural networks:** In deep learning, L1 regularization can be used to sparsify networks (such as convolutional or fully connected layers).
 * **Model compression:** Sparse models are easier to prune or quantize, suitable for resource-constrained devices.
+---
 
-Python code example
+### 📖 Python code example
 Below is an example of implementing L1 norm regularization using PyTorch, based on the MNIST handwritten digit classification task. L1 regularization usually needs to be manually added to the loss function, since PyTorch optimizers (such as SGD, Adam) support `weight_decay` (corresponding to L2 regularization) but do not directly support L1 regularization.
 
 ```python
@@ -111,7 +112,7 @@ for epoch in range(1, epochs + 1):
     test()
 ```
 
-Explanation of the code
+### 📖 Explanation of the code
 
 * **Model definition:**
   SimpleNet is a simple fully connected neural network, with MNIST’s 28x28 pixel images as input, and 10-class classification as output.
@@ -167,7 +168,7 @@ L1 regularization increases the proportion of zero weights, especially when `l1_
 
 ---
 
-**Comparison between L1 and L2 regularization**
+### 📖 **Comparison between L1 and L2 regularization**
 
 * **L1 regularization:**
 
@@ -181,9 +182,8 @@ L1 regularization increases the proportion of zero weights, especially when `l1_
   * Suitable for scenarios requiring stable gradient updates.
   * PyTorch supports it directly via `weight_decay`.
 
----
 
-**Combining L1 and L2 (Elastic Net)**
+### 📖 **Combining L1 and L2 (Elastic Net)**
 
 Both L1 and L2 regularization can be used simultaneously to form Elastic Net regularization:
 
@@ -196,9 +196,9 @@ l2_norm = sum(p.pow(2.0).sum() for p in model.parameters())
 loss = loss + l1_lambda * l1_norm + l2_lambda * l2_norm
 ```
 
----
 
-**Practical application scenarios**
+
+### 📖 **Practical application scenarios**
 
 * **Feature selection:** In traditional machine learning (e.g., logistic regression), L1 regularization is used to select important features.
 * **Neural network compression:** L1 regularization can generate sparse networks, making pruning or deployment on resource-limited devices easier.
