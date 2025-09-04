@@ -14,9 +14,9 @@
   * Does not rely on complex LSTM/MHA structures (simpler than P-Tuning v1).
   * Applicable to various PLMs (GPT, BERT, T5).
 
----
 
-## 🔢 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 Let:
 
@@ -52,9 +52,9 @@ $$
 
 That is: freeze \$\theta\$, only train prefix parameters \${P^l}\$.
 
----
 
-## 💻 3. Simple Code Demonstration
+
+## 📖 3. Simple Code Demonstration
 
 Below is a **simplified Hugging Face implementation of P-Tuning v2** (showing only core logic):
 
@@ -124,9 +124,9 @@ logits = model(**inputs)
 print(logits)
 ```
 
----
 
-## ✅ Summary
+
+## 📖 Summary
 
 * **Definition**: P-Tuning v2 injects prefix vectors into **each Transformer layer**, training only prefix parameters while freezing the model.
 * **Mathematical Form**: Add prefix Q/K/V in each self-attention layer, optimize \${P^l}\$.
