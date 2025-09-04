@@ -1,7 +1,7 @@
 
 # Integrated Gradients (IG) Model Interpretation Method
 
-## 1. Definition
+## 📖 1. Definition
 
 **Integrated Gradients (IG)** is a gradient-based **model interpretation method** proposed by Sundararajan et al. in 2017.
 Its core idea is:
@@ -13,9 +13,9 @@ This solves two problems of **ordinary gradient methods**:
 * Gradients may approach 0 in saturation regions (though features still have influence).
 * Single-point gradients may be unstable.
 
----
 
-## 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 Let:
 
@@ -40,7 +40,7 @@ $$
 
 ---
 
-## 3. Simple Code Example (PyTorch + Captum)
+## 📖 3. Simple Code Example (PyTorch + Captum)
 
 We use the `captum` library to implement **Integrated Gradients**.
 
@@ -92,7 +92,7 @@ We can see:
 
 ---
 
-## 4. Summary
+## 📖 4. Summary
 
 * **Definition**: IG explains feature contributions to predictions by integrating gradients.
 
