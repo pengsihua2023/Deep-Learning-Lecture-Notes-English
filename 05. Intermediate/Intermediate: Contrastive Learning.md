@@ -1,4 +1,4 @@
-## Contrastive Learning
+# Contrastive Learning
 
 **Contrastive Learning** is a type of **Self-Supervised Learning** method. It constructs contrastive tasks between samples, enabling the model to learn more discriminative feature representations.
 
@@ -9,7 +9,7 @@ The core idea is:
 
 This learning approach usually does not require manual labels. Instead, it automatically generates **positive pairs** and **negative pairs** through data augmentation or contextual information.
 
-### Formal Definition
+## 📖 Formal Definition
 
 Given a sample \$x\$, two views \$x\_i, x\_j\$ are obtained via data augmentation (such as image rotation, cropping, noise injection, etc.). They are regarded as **positive pairs**; views from other samples (such as \$x\_k\$) are **negative samples**.
 
@@ -25,13 +25,13 @@ The objective is to learn an encoder \$f(\cdot)\$ that maps samples to the featu
 
 Here, \$\text{sim}(\cdot,\cdot)\$ is usually **cosine similarity** or **inner product**.
 
-### Typical Methods
+## 📖 Typical Methods
 
 * **SimCLR**: Constructs positive and negative pairs through large-scale data augmentation and trains with the InfoNCE loss.
 * **MoCo** (Momentum Contrast): Introduces a momentum update mechanism to maintain a large dynamic negative sample queue.
 * **BYOL** (Bootstrap Your Own Latent): Does not explicitly use negative samples, but learns through the interaction of two networks (online network & target network).
 
-### Summary
+## 📖 Summary
 
 The essence of contrastive learning is:
 
@@ -63,12 +63,11 @@ The essence of contrastive learning is:
   Image classification (SimCLR, MoCo): Achieve high-accuracy classification with limited labeled data.
   Multimodal learning (CLIP): Image-text retrieval, image generation (e.g., DALL·E).
 
----
 
-## Mathematical Description of Contrastive Learning
+## 📖 Mathematical Description of Contrastive Learning
 The mathematical description of contrastive learning usually starts from the objective of "representation learning." The core idea is: **bring semantically similar samples closer and push semantically dissimilar samples apart**. Below is a more systematic mathematical formalization:
 
-## 1. Representation Function
+### 1. Representation Function
 
 Suppose we have a sample set $\mathcal{X} = \{x_1, x_2, \dots, x_N\}$  
 
@@ -78,12 +77,12 @@ to map samples into a feature space: $z_i = f_\theta(x_i), \quad z_i \in \mathbb
 
 Normalization constraint $\|z_i\|_2 = 1$ is usually applied so that the representations lie on the unit hypersphere.  
 
-## 2. Positive and Negative Samples
+### 2. Positive and Negative Samples
 
 * **Positive pair**: comes from the same semantic category or different augmented (data augmentation) versions of the same sample, e.g. $(x_i, x_j^+)$.
 * **Negative pair**: comes from different semantic categories, e.g. $(x_i, x_k^-)$.
 
-## 3. Similarity Measure
+### 3. Similarity Measure
 
 A common choice is cosine similarity:
 
@@ -91,7 +90,7 @@ $\text{sim}(z_i, z_j) = \frac{z_i^\top z_j}{\|z_i\|\|z_j\|}$
 
 If normalized, this simplifies to $\text{sim}(z_i, z_j) = z_i^\top z_j$.
 
-## 4. Loss Function (InfoNCE Example)
+### 4. Loss Function (InfoNCE Example)
 
 The commonly used objective in contrastive learning is the **InfoNCE loss**.  
 Let the positive sample for the $i$-th instance be $z_j^+$ and the others be negative samples $\{z_k^-\}$, then the loss is:
@@ -104,13 +103,13 @@ where:
 * The numerator corresponds to the **positive pair**;
 * The denominator includes all candidates (positive + negative), usually with **softmax normalization**.
 
-## 5. Overall Loss
+### 5. Overall Loss
 
 For a batch of samples, take the average:
 
 $\mathcal{L} = \frac{1}{N} \sum_{i=1}^N \mathcal{L}_i$
 
-## 6. Summary
+### 6. Summary
 
 * The core mathematical formulation of contrastive learning is the **normalized softmax log-likelihood objective (InfoNCE)**;
 * Optimization goal: maximize similarity of positive pairs, minimize similarity of negative pairs;
@@ -118,7 +117,7 @@ $\mathcal{L} = \frac{1}{N} \sum_{i=1}^N \mathcal{L}_i$
 
 ---
 
-## Code
+## 📖 Code
 Here is a minimal PyTorch-based Contrastive Learning example using a real dataset (MNIST handwritten digit dataset) to implement contrastive learning for learning image feature embeddings. The model will use a SimCLR-style contrastive loss (NT-Xent), aiming to make embeddings of images of the same digit closer and embeddings of different digits farther apart. Results will be demonstrated by visualizing the embedding space (using t-SNE dimensionality reduction) and evaluating k-NN classification accuracy.
 
 ```python
@@ -271,7 +270,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### Code Description:
+## 📖 Code Description:
 1. **Dataset**:
    - Uses the MNIST handwritten digit dataset (60,000 training samples, 10,000 test samples).
    - Applies data augmentation (random cropping and rotation) during training to generate two views for contrastive learning.
@@ -294,12 +293,12 @@ if __name__ == "__main__":
    - Requires `torch`, `torchvision`, `sklearn`, and `matplotlib` (`pip install torch torchvision scikit-learn matplotlib`).
    - MNIST dataset is automatically downloaded to the `./data` directory.
 
-### Results:
+## 📖 Results:
 - Outputs the average loss per training epoch.
 - Generates `mnist_embeddings.png`, showing the distribution of different digit classes in the embedding space (ideally, same-class digits cluster together, and different classes are separated).
 - Outputs k-NN classification accuracy, reflecting the quality of the embedding space.
 - Runtime is long (due to t-SNE and k-NN computation); can run on CPU but faster on GPU.
 
-### Notes:
+## 📖 Notes:
 - The scatter plot is saved in the working directory and can be viewed with an image viewer; colors represent different digit classes.
 - The model is simple, suitable for demonstrating contrastive learning concepts; for practical applications, consider increasing network depth or tuning hyperparameters.
