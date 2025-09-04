@@ -122,7 +122,7 @@ plt.show()
 
 
 
-## 📖 Summary
+## 📖 4. Summary
 
 * **Grad-CAM**: Based on first-order gradients, focuses on main target regions.
 * **Grad-CAM++**: Combines second- and third-order gradients, enabling finer-grained explanations of multiple targets or detailed features.
@@ -130,7 +130,7 @@ plt.show()
 
 
 
-## 📖 Grad-CAM vs Grad-CAM++ Comparison
+## 5. 📖 Grad-CAM vs Grad-CAM++ Comparison
 
 | Feature                    | **Grad-CAM**                                                                                                     | **Grad-CAM++**                                                                                                                                                                                                                                                                |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -143,7 +143,7 @@ plt.show()
 | **Applications**           | Image classification, object localization                                                                        | Medical imaging, small object detection, multi-instance target explanation                                                                                                                                                                                                    |
 
 
-## 📖 Final Summary
+## 📖 6. Final Summary
 
 * **Grad-CAM**: Simple, fast, suitable for general image classification tasks.
 * **Grad-CAM++**: More precise, capable of explaining multiple targets and fine details, but with higher computational cost.
