@@ -2,12 +2,12 @@
 
 RMSProp (Root Mean Square Propagation) is a commonly used **adaptive learning rate optimizer**, mainly for training neural networks. It is an improvement of the Adagrad optimizer, proposed by Geoffrey Hinton in 2012.
 
-## Background
+## 📖 Background
 
 * **Problem of Adagrad**: Adagrad continuously accumulates the sum of squared gradients, causing the learning rate to monotonically decrease over time, eventually becoming too small and affecting training.
 * **Improvement of RMSProp**: RMSProp uses an **Exponential Moving Average (EMA)** to record the historical squared gradients instead of simple accumulation, so that the learning rate does not shrink indefinitely.
 
-## Algorithm Principle
+## 📖 Algorithm Principle
 
 For each parameter \$\theta\$, at the \$t\$-th update:
 
@@ -24,9 +24,9 @@ where \$\rho\$ is usually 0.9.
 * \$\eta\$: global learning rate (usually around 0.001).
 * \$\epsilon\$: a constant to prevent division by zero (e.g., \$1e-8\$).
 
----
 
-## Features
+
+## 📖 Features
 
 * Advantages
 
@@ -39,14 +39,14 @@ where \$\rho\$ is usually 0.9.
 - Still requires manual selection of the initial learning rate.
 - In some tasks, the convergence speed may not be as good as Adam.
 
-## Application Scenarios
+## 📖 Application Scenarios
 
 * Training RNN, LSTM, and other models in deep learning.
 * One of the optimizer choices for image, speech, and other tasks.
 
 ---
 
-## Example of Using RMSProp in PyTorch
+## 📖 Example of Using RMSProp in PyTorch
 
 ```python
 import torch
@@ -86,7 +86,7 @@ for epoch in range(10):
     print(f"Epoch [{epoch+1}/10], Loss: {loss.item():.4f}")
 ```
 
-## Key Notes
+## 📖 Key Notes
 
 * `optim.RMSprop()` is the built-in RMSProp optimizer in PyTorch.
 * Important parameters:
