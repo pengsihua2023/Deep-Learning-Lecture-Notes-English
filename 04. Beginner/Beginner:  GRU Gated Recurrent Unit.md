@@ -39,7 +39,8 @@ The reset gate controls the degree of combination between the current input and 
 ### 3. Candidate Hidden State ($\tilde{h}_t$):
 <div align="center">
 <img width="280" height="35" alt="image" src="https://github.com/user-attachments/assets/5debf918-f924-4f59-be30-f3094a401580" /> 
-</div
+</div>
+
 The candidate hidden state is obtained by adjusting the historical information with the reset gate and combining it with the current input. $\odot$ denotes element-wise multiplication, and $\tanh$ is the activation function.
 
 
