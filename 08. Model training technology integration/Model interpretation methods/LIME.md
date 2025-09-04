@@ -1,7 +1,7 @@
 
 # LIME Model Interpretation Method (Local Interpretable Model-agnostic Explanations)
 
-## 1. Definition
+## 📖 1. Definition
 
 **LIME** is a **model-agnostic** local interpretability method used to explain the predictions of any black-box model.
 Core idea:
@@ -17,7 +17,7 @@ Core idea:
 
 ---
 
-## 2. Mathematical Description
+## 📖 2. Mathematical Description
 
 Let:
 
@@ -41,7 +41,7 @@ Ultimately, the parameters of \$g\$ represent the local explanation around input
 
 ---
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 We use the `lime` library to explain the prediction of an sklearn logistic regression classifier.
 
@@ -98,7 +98,7 @@ Explanation: Around this sample, the model’s prediction is mainly influenced b
 
 ---
 
-## Summary
+## 📖 Summary
 
 * **LIME definition**: explains black-box predictions through local perturbations + fitting a simple model.
 * **Formula**: \$\arg\min\_g \sum\_i \pi\_x(z\_i),(f(z\_i)-g(z\_i))^2 + \Omega(g)\$.
@@ -170,7 +170,7 @@ Explanation:
 
 ---
 
-## Summary
+## 📖 Summary
 
 * **LIME for text**: perturbs text (deleting/replacing words) and observes prediction changes to identify the most influential words.
 * **Output**: lists positive/negative important words, helping interpret model decisions.
@@ -259,14 +259,14 @@ For example:
 
 ---
 
-## Summary
+## 📖 Summary
 
 * **LIME for images**: perturbs different regions (e.g., masking superpixels) and observes prediction changes, identifying regions most relied upon by the model.
 * **Benefit**: does not depend on specific model structures (works with CNNs, Transformers, etc.), truly **model-agnostic**.
 
 ---
 
-## LIME Comparison Across Text / Images / Tabular
+## 📖 LIME Comparison Across Text / Images / Tabular
 
 | Data Type        | Perturbation Method                                               | Interpretable Model               | Explanation Output                                             | Application Scenarios                                              |
 | ---------------- | ----------------------------------------------------------------- | --------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -276,7 +276,7 @@ For example:
 
 ---
 
-## Summary
+## 📖 Summary
 
 * **Tabular data** → LIME tells you which features (age, income, blood pressure, etc.) influence the prediction most around a sample.
 * **Text data** → LIME tells you which words/phrases push the prediction (e.g., “great” or “terrible” in sentiment analysis).
@@ -284,7 +284,7 @@ For example:
 
 ---
 
-## 🔹 LIME vs SHAP Comparison
+## 📖  LIME vs SHAP Comparison
 
 | Feature              | **LIME**                                                            | **SHAP**                                                                                          |   |      |   |                                  |
 | -------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | - | ---- | - | -------------------------------- |
@@ -300,7 +300,7 @@ For example:
 
 ---
 
-## Final Summary
+## 📖 Final Summary
 
 * **LIME**: intuitive, fast, model-agnostic, but explanations can be unstable. Best for quick exploration and debugging.
 * **SHAP**: Shapley-based, mathematically guaranteed, more stable and trustworthy, but computationally expensive. Best for high-reliability applications.
