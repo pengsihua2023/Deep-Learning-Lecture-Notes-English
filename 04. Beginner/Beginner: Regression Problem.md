@@ -1,5 +1,5 @@
 # Beginner: Regression Problem
-## Mathematical Description of Regression
+## 📖 Mathematical Description of Regression
 
 ### 1. General Regression Problem
 
@@ -154,7 +154,7 @@ where \$\theta\$ denotes the set of all parameters.
 
 --- 
 
-## First version of code 
+## 📖 First version of code 
 - First version of code
 ```python
 import tensorflow as tf
@@ -192,7 +192,7 @@ model.fit(X_train, y_train, epochs=200, batch_size=32, validation_split=0.2, cal
 loss, mae = model.evaluate(X
 
 ```
-### Training results
+## 📖 Training results
 11/11 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - loss: 5.4454 - mae: 1.7790 - val_loss: 7.5367 - val_mae: 1.9705  
 Test Loss: 28.6256, Test MAE: 2.9774  
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 30ms/step  
@@ -234,7 +234,7 @@ model.compile(optimizer=optimizer, loss='mse', metrics=['mae'])
 early_stopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', patience=20, restore_best_weights=True)
 model.fit(X_train, y_train, epochs=300, batch_size=16, validation_split=0.
 ```
-### training results
+## 📖 training results
 21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - loss: 15.5459 - mae: 2.9512 - val_loss: 7.5879 - val_mae: 1.8665  
 Test Loss: 28.6987, Test MAE: 3.1621  
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 31ms/step  
@@ -295,7 +295,7 @@ y_pred = model.predict(X_test[:5])
 print("Predictions for first 5 test samples:", y_pred.flatten())
 print("Actual values:", y_test[:5])
 ```
-### training results
+## 📖 training results
 21/21 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - loss: 5.3365 - mae: 1.8211 - val_loss: 6.4201 - val_mae: 1.7893  
 Test Loss: 25.8082, Test MAE: 2.9562  
 1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 33ms/step  
@@ -356,7 +356,7 @@ y_pred = model.predict(X_test[:5])
 print("Predictions for first 5 test samples:", y_pred.flatten())
 print("Actual values:", y_test[:5])
 ```
-### training results
+## 📖 training results
 Epoch 87/1000
 41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 1ms/step - loss: 5.1438 - mae: 1.6906 - val_loss: 6.9840 - val_mae: 1.8983  
 Test Loss: 26.1492, Test MAE: 3.0013  
@@ -440,7 +440,7 @@ plt.legend()
 plt.grid(True)
 plt.show()
 ```
-### training results
+## 📖 training results
 Epoch 88/1000  
 41/41 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - loss: 6.0396 - mae: 1.7683 - val_loss: 6.8140 - val_mae: 1.9475  
 Test Loss: 27.4981, Test MAE: 3.0507  
