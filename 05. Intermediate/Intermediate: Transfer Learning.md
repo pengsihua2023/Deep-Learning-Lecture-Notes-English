@@ -16,7 +16,7 @@
 
 ---
 
-## Introduction
+## 📖 Introduction
 
 **Transfer Learning** is a machine learning technique where knowledge or model parameters learned from one task/domain (*source*) are applied to another related but different task/domain (*target*).
 
@@ -29,7 +29,7 @@ It helps improve learning efficiency and performance, especially when the target
 (This picture was obtained from the Internet.)
 </div>
 
-## Core Concepts
+## 📖 Core Concepts
 
 * **Source Task and Target Task**:
 
@@ -45,9 +45,9 @@ It helps improve learning efficiency and performance, especially when the target
 
   * Adjusting pretrained model parameters on the target task with slight modifications to adapt to the new domain.
 
----
 
-## Main Approaches
+
+## 📖 Main Approaches
 
 1. **Feature Extraction**
 
@@ -65,17 +65,17 @@ It helps improve learning efficiency and performance, especially when the target
    * Adjust the model to minimize domain gaps when source and target distributions differ (e.g., adversarial training).
    * **When to use**: Cross-domain tasks such as natural → medical images.
 
----
 
-## Application Scenarios
+
+## 📖 Application Scenarios
 
 * **Computer Vision**: Image classification, object detection using pretrained models (ResNet, VGG).
 * **Natural Language Processing**: Text classification, machine translation with pretrained models (BERT, LLaMA).
 * **Other Fields**: Speech recognition (acoustic models), robotics control, etc.
 
----
 
-## Advantages and Challenges
+
+## 📖 Advantages and Challenges
 
 ### Advantages
 
@@ -89,16 +89,16 @@ It helps improve learning efficiency and performance, especially when the target
 * **Overfitting**: Fine-tuning with limited data can cause overfitting.
 * **Domain Gap**: Requires techniques to handle distribution differences between domains.
 
----
 
-## Difference from Meta-Learning
+
+## 📖 Difference from Meta-Learning
 
 * **Transfer Learning**: Focuses on reusing pretrained model knowledge; usually unidirectional (source → target).
 * **Meta-Learning**: Focuses on “learning to learn,” enabling models to quickly adapt to new tasks through multi-task training.
 
 ---
 
-## PyTorch Code Example
+## 📖 PyTorch Code Example
 
 Here is a simple example using **ResNet18 pretrained on ImageNet** for transfer learning on the CIFAR10 dataset:
 
@@ -155,7 +155,7 @@ if __name__ == "__main__":
     train_model(model, trainloader)
 ```
 
----
+
 
 ### Code Explanation
 
@@ -164,14 +164,14 @@ if __name__ == "__main__":
 3. **Training**: Use SGD optimizer; update only the fully connected layer’s weights.
 4. **Data**: CIFAR10 dataset resized to `224x224` to match ResNet input.
 
----
+
 
 ### Requirements
 
 * **Hardware**: GPU recommended for faster training.
 * **Data**: CIFAR10 dataset is automatically downloaded.
 
----
+
 
 ### Example Output
 
