@@ -1,5 +1,6 @@
 
-# Grad-CAM Model Interpretation Method (Gradient-weighted Class Activation Mapping)
+# Grad-CAM Model Interpretation Method 
+(Gradient-weighted Class Activation Mapping)  
 
 ## 📖 1. Definition
 
