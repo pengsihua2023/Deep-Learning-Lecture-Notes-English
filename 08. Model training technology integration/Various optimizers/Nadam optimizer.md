@@ -97,7 +97,7 @@ print("Optimized parameter:", theta)
 
 This code drives parameter \$\theta\$ closer to 0 (the minimum of \$f(x)=x^2\$).
 
----
+
 
 ## 📖 PyTorch Nadam Example
 
