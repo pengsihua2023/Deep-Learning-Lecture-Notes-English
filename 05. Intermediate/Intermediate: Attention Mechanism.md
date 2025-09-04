@@ -166,7 +166,7 @@ $$
 
 ---
 
-## 📖 Code  
+# Code  
 Add visualization of attention weights using a heatmap to display the attention weight matrix for the first sample, aiding in intuitively understanding how the attention mechanism focuses on relationships between different words. The code is based on the IMDb dataset and implements a simple Scaled Dot-Product Attention using PyTorch. Since you requested visualization, a heatmap will be generated to show the attention weights.
 
 ```python
@@ -262,7 +262,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## 📖 Summary:
+# Summary:
 1. **Dataset**: Continues using the first 1000 reviews from the IMDb dataset, with sequence length reduced to 20 for clearer heatmap visualization.
 2. **Visualization**: Adds a `plot_attention_weights` function, using `seaborn` to draw a heatmap of attention weights for the first sample, saved as `attention_heatmap.png`.
 3. **Heatmap Content**:
@@ -271,11 +271,11 @@ if __name__ == "__main__":
    - The heatmap intuitively shows which words the Attention mechanism focuses on more in relation to others.
 4. **Dependencies**: Requires installation of `datasets`, `torchtext`, `matplotlib`, and `seaborn` (`pip install datasets torchtext matplotlib seaborn`).
 
-## 📖 Execution Results:
+# Execution Results:
 - The program processes 1000 IMDb reviews, outputting dataset information, tensor shapes, and attention weight shapes.
 - Generates a heatmap file `attention_heatmap.png`, displaying the attention weight matrix for the first review.
 - Each cell in the heatmap represents the attention weight of a query word for a key word, with brighter colors indicating larger weights.
 
-## 📖 Notes:
+# Notes:
 - The heatmap file is saved in the working directory and can be opened with an image viewer.
 - With the sequence length limited to 20, the heatmap shows attention relationships for the first 20 words, making it suitable for intuitive analysis.
