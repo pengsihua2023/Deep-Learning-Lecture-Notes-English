@@ -8,7 +8,7 @@ Early Stopping is a regularization technique commonly used in deep learning trai
 - **Early Stopping Condition**: If the validation performance does not improve (e.g., validation loss stops decreasing) for a specified number of epochs (patience), training is stopped.
 - **Save Best Model**: Record the model weights with the best validation performance for restoration at the end of training.
 
-### Advantages
+### 📖 Advantages
 - **Prevents Overfitting**: Avoids excessive optimization on the training set, which can degrade generalization performance.
 - **Saves Time**: Reduces unnecessary training epochs, improving efficiency.
 - **Simple and Effective**: Requires minimal hyperparameter tuning and is easy to implement.
