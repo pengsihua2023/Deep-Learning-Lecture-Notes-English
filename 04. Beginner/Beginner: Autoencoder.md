@@ -80,15 +80,12 @@ $$
 $$
 
 ### 6. Applications  
- 
- 
-
 
 * **Dimensionality reduction**: $z$ is used for feature extraction or data compression.
 * **Denoising**: Recover $x$ from $\tilde{x}$.
 * **Anomaly detection**: Samples with large reconstruction error may be anomalies.
 
-## Code
+### 7. Code
 ```python
 import torch
 import torch.nn as nn
@@ -239,7 +236,7 @@ if __name__ == "__main__":
         plt.savefig(f'results/loss_curve_{epoch}.png')
         plt.close()
 ```
-## Results
+### 8. Results
 ====> Epoch: 9 Average training loss: 69.1569   
 ====> Test set loss: 69.0569  
 Train Epoch: 10 [0/60000 (0%)]  Loss: 71.628830    
