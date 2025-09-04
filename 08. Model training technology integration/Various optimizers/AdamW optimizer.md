@@ -1,11 +1,11 @@
 
 ## Adam Variant (AdamW)
 
-### What is Adam Variant (AdamW)?
+### 📖 What is Adam Variant (AdamW)?
 
 AdamW (Adaptive Moment Estimation with Weight Decay) is a variant of the Adam optimizer that improves how Adam handles regularization, especially L2 regularization or weight decay. AdamW decouples weight decay from the adaptive learning rate, addressing the suboptimal behavior of the original Adam when applying weight decay. This makes it converge faster and generalize better in many tasks.
 
-#### Core Principle
+### 📖 Core Principle
 
 The Adam optimizer combines first-order momentum (mean of gradients) and second-order momentum (mean of squared gradients) to adjust the learning rate (see Adam section above). Original Adam incorporates weight decay directly into the gradient update, which is equivalent to adding an L2 regularization term to the loss function:
 
@@ -47,20 +47,20 @@ $$
 
 AdamW directly applies decay \$\lambda \theta\_t\$ to parameters rather than incorporating it into the gradients, better balancing optimization and regularization.
 
-#### Advantages
+### 📖 Advantages
 
 * **Better regularization**: Decoupled weight decay improves generalization, superior to L2 regularization in original Adam.
 * **Faster convergence**: In many tasks (e.g., Transformers, CNNs), AdamW is more stable than Adam.
 * **Widespread adoption**: AdamW is the default optimizer in modern deep learning (e.g., BERT, GPT).
 
-#### Limitations
+### 📖 Limitations
 
 * **Hyperparameter sensitivity**: The weight decay coefficient \$\lambda\$ requires tuning.
 * **Memory requirements**: Same as Adam, needs to store first and second moment estimates.
 
 ---
 
-### Python Code Example
+### 📖 Python Code Example
 
 Below is a minimal PyTorch example demonstrating the use of AdamW for training on the MNIST handwritten digit classification task. The code is kept simple and focuses on the AdamW implementation.
 
@@ -129,7 +129,7 @@ for epoch in range(1, epochs + 1):
 ```
 
 
-### Code Explanation
+### 📖 Code Explanation
 
 1. **Model definition**:
 
@@ -167,7 +167,7 @@ for epoch in range(1, epochs + 1):
 
 
 
-### Key Points
+### 📖 Key Points
 
 * **Decoupled weight decay**: AdamW applies decay directly on parameters (`λθ`), rather than embedding it in gradients, achieving better results than Adam’s L2 regularization.
 * **Hyperparameters**:
@@ -178,13 +178,13 @@ for epoch in range(1, epochs + 1):
 
 
 
-### Practical Applications
+### 📖 Practical Applications
 
 * **Transformer Models**: AdamW is the standard optimizer for BERT, GPT, and similar architectures due to its superior regularization.
 * **Deep Learning**: Suitable for CNNs, RNNs, and other tasks, particularly when strong regularization is needed.
 * **Combination with Other Techniques**: Can be used alongside Dropout, BatchNorm, ReduceLROnPlateau, etc.
 
-#### Notes
+#### 📖 Notes
 
 * **Weight decay tuning**: `weight_decay` should be tuned using cross-validation or Bayesian optimization.
 * **Learning rate**: AdamW is sensitive to learning rate and can be combined with learning rate schedulers (e.g., ReduceLROnPlateau).
