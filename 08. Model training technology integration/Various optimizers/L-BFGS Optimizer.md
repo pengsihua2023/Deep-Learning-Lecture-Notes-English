@@ -1,13 +1,13 @@
 
 # L-BFGS Optimizer
 
-## Introduction
+## 📖 Introduction
 
 L-BFGS (Limited-memory Broyden–Fletcher–Goldfarb–Shanno) is a Quasi-Newton optimization method. It accelerates gradient descent by approximating the inverse of the Hessian matrix, remaining efficient even in high-dimensional problems, while requiring only limited memory. Therefore, it is suitable for large-scale unconstrained optimization problems.
 
----
 
-## Mathematical Description
+
+## 📖 Mathematical Description
 
 1. **Optimization Objective**
    L-BFGS is used to solve unconstrained optimization problems:
@@ -59,7 +59,7 @@ $$
 
 
 
-## Core Idea
+## 📖 Core Idea
 
 1. **Basic Principle**
 
@@ -73,7 +73,7 @@ $$
 
 
 
-## Features and Advantages
+## 📖 Features and Advantages
 
 * **Memory-friendly**: Only stores limited historical information, suitable for high-dimensional optimization problems.
 * **Fast convergence**: Utilizes second-order information, with convergence speed close to Newton’s method.
@@ -81,7 +81,7 @@ $$
 
 ---
 
-## Example Application
+## 📖 Example Application
 
 Using L-BFGS in PyTorch:
 
@@ -104,9 +104,9 @@ for i in range(20):
 
 > Note: The `closure` function must be defined, because L-BFGS evaluates the objective function and gradient multiple times per iteration.
 
----
 
-## Applicable Scenarios and Limitations
+
+## 📖 Applicable Scenarios and Limitations
 
 * **Applicable**: Optimization problems with small to medium-scale dense data.
 * **Limitations**:
