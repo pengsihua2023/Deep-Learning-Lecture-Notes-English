@@ -196,7 +196,7 @@ print(f"Test Accuracy: {correct / total * 100:.2f}%")
 3. **Training**: The sampler balances the data distribution, so no changes to the loss function are needed.
 4. **Evaluation**: Validate model performance on the test set.
 
----
+
 
 ### Key Points
 1. **Weighted Loss**:
@@ -209,7 +209,6 @@ print(f"Test Accuracy: {correct / total * 100:.2f}%")
    - Can combine with **Curriculum Learning** (train on balanced easy samples first), **AMP** (to speed up training), or **Optuna/Ray Tune** (to optimize hyperparameters).
    - The example can incorporate `torch.cuda.amp` or Optuna for learning rate tuning.
 
----
 
 ### Practical Effects
 - **Weighted Loss**: Improves minority class (e.g., classes 1-9) prediction accuracy with minimal impact on the majority class.
