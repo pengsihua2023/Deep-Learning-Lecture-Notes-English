@@ -1,15 +1,15 @@
 ## Overview of Regularization Techniques
-### What Are Regularization Techniques in Deep Learning?
+### 📖 What Are Regularization Techniques in Deep Learning?
 Regularization techniques are methods used in deep learning to **prevent model overfitting** and improve generalization. Overfitting occurs when a model performs well on training data but poorly on test or new data because it has overlearned the noise or specific patterns in the training data. Regularization introduces constraints or randomness during training to limit model complexity or enhance robustness, thereby improving performance on unseen data.
 
-#### Core Objectives of Regularization
+### 📖 Core Objectives of Regularization
 - **Reduce Overfitting**: Ensure the model generalizes to unseen data, not just fits the training data.
 - **Control Model Complexity**: Prevent the model from learning overly complex patterns (e.g., excessive or large weights).
 - **Enhance Robustness**: Make the model less sensitive to data noise, weight perturbations, or training variations.
 
----
 
-### Common Regularization Techniques
+
+### 📖 Common Regularization Techniques
 Below are commonly used regularization techniques in deep learning (many have been detailed in previous responses):
 1. **L1/L2 Regularization**:
    - Adds a penalty on the weight norm to the loss function (L1: sum of absolute values, L2: sum of squares).
@@ -37,16 +37,15 @@ Below are commonly used regularization techniques in deep learning (many have be
    - Typically refers to L2 regularization, implemented in PyTorch optimizers via `weight_decay`.
    - Controls weight magnitudes to prevent overfitting due to large weights.
 
----
 
-### Why Is Regularization Needed?
+### 📖 Why Is Regularization Needed?
 - **Overfitting Phenomenon**: Deep neural networks with large parameter counts can memorize noise or specific patterns in training data.
 - **High-Dimensional Complex Models**: Models like Transformers or ResNets have high capacity, requiring regularization to limit complexity.
 - **Small Datasets**: Regularization is critical when data is limited.
 
 ---
 
-### Python Code Example
+### 📖 Python Code Example
 Below is a comprehensive example demonstrating how to combine multiple regularization techniques (L2 regularization, Dropout, BatchNorm, early stopping) in a PyTorch MNIST handwritten digit classification task. For simplicity, only some techniques are implemented; refer to prior responses for full implementations.
 
 ```python
@@ -172,9 +171,9 @@ test_accuracy = test()
 print(f'Test Accuracy: {test_accuracy:.2f}%')
 ```
 
----
 
-### Code Explanation
+
+### 📖 Code Explanation
 1. **Model Definition**:
    - `RegularizedNet` includes Dropout (rate 0.5) and BatchNorm, applied to fully connected layers.
    - Input is MNIST 28x28 pixel images, output is 10-class classification.
@@ -203,9 +202,8 @@ print(f'Test Accuracy: {test_accuracy:.2f}%')
    ```
    Actual values may vary due to random initialization.
 
----
 
-### Comprehensive Analysis
+### 📖 Comprehensive Analysis
 - **L1/L2 Regularization**: Controls weight magnitudes; L1 promotes sparsity, L2 promotes smoothness.
 - **Dropout**: Randomly drops neurons, simulating ensemble learning.
 - **BatchNorm/LayerNorm**: Normalizes activations, accelerates training, and indirectly regularizes.
@@ -213,13 +211,13 @@ print(f'Test Accuracy: {test_accuracy:.2f}%')
 - **Early Stopping**: Prevents overtraining and saves resources.
 - **Data Augmentation**: Increases data diversity, indirectly regularizing.
 
-#### Choosing Regularization Techniques
+### 📖 Choosing Regularization Techniques
 - **Small Datasets**: Prioritize Dropout, L1/L2 regularization, and data augmentation.
 - **Sequence Models**: LayerNorm is preferred over BatchNorm, common in Transformers.
 - **Large Models**: BatchNorm suits CNNs, combined with early stopping and weight decay.
 - **Noisy Data**: Noise Injection enhances robustness.
 
-#### Considerations
+### 📖 Considerations
 - **Regularization Strength**: Parameters like Dropout’s \( p \) or L2’s \( \lambda \) require tuning via cross-validation or Bayesian optimization.
 - **Combining Techniques**: Multiple regularization methods can be used together but must be balanced to avoid underfitting.
 - **Task Dependency**: Different tasks (e.g., image processing, NLP) may require tailored regularization strategies.
