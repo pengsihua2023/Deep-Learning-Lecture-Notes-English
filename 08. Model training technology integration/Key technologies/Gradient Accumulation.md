@@ -1,15 +1,15 @@
 ## Gradient Accumulation
-### What is Gradient Accumulation?
+### 📖 What is Gradient Accumulation?
 Gradient Accumulation is a technique used in deep learning training to simulate large batch size training when memory is limited. It accumulates gradients from multiple mini-batches and performs a parameter update only after a certain number of accumulations, achieving an effect equivalent to large batch training.
-#### Core Concept
+### 📖 Core Concept
 - In normal training, gradients are computed and model parameters are updated immediately for each mini-batch.
 - In gradient accumulation, gradients from multiple mini-batches are computed and accumulated (without updating parameters), and a single parameter update is performed after the specified number of accumulations.
 - This method effectively reduces memory usage while retaining the benefits of large batch training (e.g., more stable gradient estimation).
-#### Usage Scenarios
+### 📖 Usage Scenarios
 - **Memory Constraints**: When the model or data is too large to load a large batch into GPU at once.
 - **Improve Training Stability**: Large batch training typically provides smoother gradient updates.
 - **Distributed Training**: Gradient accumulation can simulate large batch training across devices.
-#### Formula
+### 📖 Formula
 Assume:
 - Batch size is \( B \).
 - Mini-batch size is \( b \).
@@ -19,7 +19,7 @@ Gradient accumulation is equivalent to:
 2. Accumulate gradients: \( G = \frac{1}{n} \sum_{i=1}^n g_i \).
 3. Update model parameters using the accumulated gradient \( G \).
 ---
-### Python Code Example (Based on PyTorch)
+### 📖 Python Code Example (Based on PyTorch)
 Below is an example implementing gradient accumulation using PyTorch, demonstrating how to simulate large batch effects in small batch training.
 ```python
 import torch
@@ -82,8 +82,8 @@ def train_with_gradient_accumulation():
 # Run training
 train_with_gradient_accumulation()
 ```
----
-### Code Explanation
+
+### 📖 Code Explanation
 1. **Model and Hyperparameters**:
    - Defines a simple fully connected neural network `SimpleNet`.
    - Target batch size is 32, but assuming memory limits allow only mini-batches of 8, set `accumulation_steps=4` (i.e., \( 32 \div 8 = 4 \)).
@@ -98,8 +98,8 @@ train_with_gradient_accumulation()
    - Final loss is divided by the number of mini-batches to get the average loss.
 4. **Output**:
    - Prints the average loss for each epoch, simulating large batch training effects.
----
-### Example Output
+
+### 📖 Example Output
 Running the code may produce output like:
 ```
 Epoch 1, Loss: 1.2345
@@ -109,8 +109,8 @@ Epoch 4, Loss: 0.8765
 Epoch 5, Loss: 0.7654
 ```
 Actual loss values will vary due to random initialization.
----
-### Comparison with Normal Training
+
+### 📖 Comparison with Normal Training
 For comparison, here is a normal training version without gradient accumulation:
 ```python
 # Normal training (without gradient accumulation)
@@ -127,15 +127,15 @@ def train_without_gradient_accumulation():
 optimizer = optim.SGD(model.parameters(), lr=learning_rate)  # Reset optimizer
 train_without_gradient_accumulation()
 ```
-#### Differences
+### 📖 Differences
 - **Normal Training**: Processes the entire batch (32 samples) at once and updates parameters directly.
 - **Gradient Accumulation**: Processes 8 samples in 4 passes, accumulates gradients, and updates parameters, equivalent to a batch size of 32.
 ---
-### Practical Application Scenarios
+### 📖 Practical Application Scenarios
 1. **Memory Constraints**: When training large models on a single GPU where memory is insufficient for large batches.
 2. **Distributed Training**: Simulates global large batch effects in multi-GPU training.
 3. **Improve Performance**: Large batch training is usually more stable, and gradient accumulation indirectly achieves this advantage.
-#### Notes
+### 📖 Notes
 - **Choosing Accumulation Steps**: `accumulation_steps` should be set reasonably based on memory and target batch size.
 - **Loss Scaling**: Divide the loss by `accumulation_steps` when computing to ensure averaged gradients.
 - **Computational Overhead**: Gradient accumulation increases computation time due to multiple forward and backward passes.
