@@ -1,6 +1,6 @@
 # Rprop (Resilient Backpropagation) Optimizer
 
-## 1. Definition
+## 📖 1. Definition
 
 **Rprop (Resilient Backpropagation)** is an optimization algorithm based on the **sign of gradients**, originally designed for training feedforward neural networks.
 Its core ideas are:
@@ -11,9 +11,9 @@ Its core ideas are:
 
 Unlike SGD or Adam, Rprop does not directly scale updates by gradient values. Instead, it maintains an **independent step size Δ** and adjusts it dynamically according to the gradient sign.
 
----
 
-## 2. Mathematical Formulation
+
+## 📖 2. Mathematical Formulation
 
 Let:
 
@@ -55,7 +55,7 @@ $$
 
 ---
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 A minimal Rprop implementation using **NumPy**:
 
@@ -97,7 +97,7 @@ After running, parameter \$\theta\$ will gradually converge to 0 (the minimum of
 
 ---
 
-## PyTorch Rprop Example
+## 📖 PyTorch Rprop Example
 
 ```python
 import torch
@@ -140,7 +140,7 @@ print(f"Learned parameters: w = {w:.2f}, b = {b:.2f}")
 
 ---
 
-### Explanation
+## 📖 Explanation
 
 1. **Model**: `SimpleModel` defines a one-layer linear regression model.
 2. **Data**: Training target is `y = 2x + 3` with added noise.
