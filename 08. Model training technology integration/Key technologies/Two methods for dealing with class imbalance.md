@@ -1,5 +1,5 @@
 ## Two methods for dealing with class imbalance: weighted loss function and oversampling
-### What is Class Imbalance and How to Address It?
+### 📖 What is Class Imbalance and How to Address It?
 **Class imbalance** refers to an uneven distribution of classes in a dataset for classification tasks, where some classes have significantly more samples than others (e.g., 90% belong to class A, 10% to class B). This can cause models to favor the majority class, neglecting the minority class, and reducing performance. Common methods to handle class imbalance in deep learning include:
 1. **Resampling**:
    - **Oversampling**: Increase minority class samples (e.g., by duplication or generating new samples like SMOTE).
@@ -15,9 +15,8 @@
 
 The following focuses on two of the most common and easy-to-implement methods: **weighted loss function** and **oversampling**, with simple code examples.
 
----
 
-### Method 1: Weighted Loss Function
+### 📖 Method 1: Weighted Loss Function
 #### Principle
 In the loss function (e.g., cross-entropy loss), assign different weights to classes, giving higher weights to minority class samples to encourage the model to focus on them. Weights are typically calculated as the inverse of class frequencies.
 
@@ -109,7 +108,7 @@ print(f"Test Accuracy: {correct / total * 100:.2f}%")
 
 ---
 
-### Method 2: Oversampling
+### 📖 Method 2: Oversampling
 #### Principle
 Increase the frequency of minority class samples in training by repeatedly sampling them, balancing the dataset. This can be achieved using `WeightedRandomSampler` to sample based on weights.
 
