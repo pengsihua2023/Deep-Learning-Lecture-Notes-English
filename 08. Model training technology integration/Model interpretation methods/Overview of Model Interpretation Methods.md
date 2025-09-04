@@ -14,7 +14,7 @@ Interpretation tools for deep learning models are used to reveal the prediction 
 
 The following tools are divided into four categories: feature-based, gradient-based, surrogate model-based, and visualization tools. Each tool comes with a minimal PyTorch example.
 
-#### 1. **SHAP (SHapley Additive exPlanations)**
+#### 📖 1. **SHAP (SHapley Additive exPlanations)**
 
 * **Principle**: Based on game theory Shapley values, quantifies each feature's contribution (pixels, tokens, etc.) to predictions; model-agnostic.
 * **Scenarios**: Image, text, tabular data; provides both local and global explanations.
@@ -41,7 +41,7 @@ shap_values = explainer.shap_values(X)
 shap.image_plot(shap_values, X.numpy())
 ```
 
-#### 2. **LIME (Local Interpretable Model-agnostic Explanations)**
+#### 📖 2. **LIME (Local Interpretable Model-agnostic Explanations)**
 
 * **Principle**: Perturbs inputs locally and fits a simple model (e.g., linear regression) to approximate the complex model, estimating feature importance.
 * **Scenarios**: Image, text; good for quick local explanations.
@@ -73,7 +73,7 @@ explanation = explainer.explain_instance(X, predict_fn, top_labels=5)
 explanation.show_in_notebook()
 ```
 
-#### 3. **Saliency Maps**
+#### 📖 3. **Saliency Maps**
 
 * **Principle**: Computes input gradients to generate heatmaps highlighting regions most important to prediction.
 * **Scenarios**: Image, text; quick local explanations.
@@ -106,7 +106,7 @@ plt.axis('off')
 plt.show()
 ```
 
-#### 4. **Integrated Gradients**
+#### 📖 4. **Integrated Gradients**
 
 * **Principle**: Integrates gradients along a path from a baseline input to target input, addressing gradient saturation.
 * **Scenarios**: Image, text, time-series; suitable for deep models.
@@ -136,7 +136,7 @@ plt.axis('off')
 plt.show()
 ```
 
-#### 5. **Grad-CAM (Gradient-weighted Class Activation Mapping)**
+#### 📖 5. **Grad-CAM (Gradient-weighted Class Activation Mapping)**
 
 * **Principle**: Uses gradients from the last CNN conv layer to create class activation maps, highlighting important regions.
 * **Scenarios**: Image classification, object detection; CNN-specific.
@@ -165,7 +165,7 @@ plt.axis('off')
 plt.show()
 ```
 
-#### 6. **DeepLIFT (Deep Learning Important FeaTures)**
+#### 📖 6. **DeepLIFT (Deep Learning Important FeaTures)**
 
 * **Principle**: Compares activations between input and baseline, decomposing outputs into feature contributions.
 * **Scenarios**: Image, text; deep models.
@@ -195,7 +195,7 @@ plt.axis('off')
 plt.show()
 ```
 
-#### 7. **t-SNE (Dimensionality Reduction Visualization)**
+#### 📖 7. **t-SNE (Dimensionality Reduction Visualization)**
 
 * **Principle**: Reduces high-dimensional features (e.g., hidden outputs) to 2D for scatterplot visualization.
 * **Scenarios**: Analyze learned representations, check class separability.
@@ -226,7 +226,7 @@ plt.scatter(tsne_result[:, 0], tsne_result[:, 1])
 plt.show()
 ```
 
-#### 8. **Attention Visualization (for Transformer Models)**
+#### 📖 8. **Attention Visualization (for Transformer Models)**
 
 * **Principle**: Visualizes Transformer attention weights, showing which inputs are emphasized.
 * **Scenarios**: Transformer models (e.g., ViT), image or text tasks.
