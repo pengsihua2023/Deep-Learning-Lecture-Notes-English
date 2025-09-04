@@ -118,14 +118,14 @@ Since \$h\_t\$ depends on \$h\_{t-1}\$, gradients propagate through repeated mul
 * **Exploding gradients**: gradients become too large, leading to unstable training.
 
 
-### 📖 Solutions
+### 📖 6. Solutions
 
 * **Gradient clipping** (limit gradient magnitude);
 * **More advanced architectures**: such as LSTM and GRU.
 
 ---
 
-### 📖 Code (Pytorch)
+### 📖 7. Code (Pytorch)
 
 ```python
 import torch
