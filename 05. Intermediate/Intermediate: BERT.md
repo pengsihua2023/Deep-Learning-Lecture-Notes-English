@@ -292,9 +292,9 @@ plt.show()
    * BERT is computationally intensive, GPU execution is recommended.
    * Batch size and sequence length (`max_length`) should be adjusted based on hardware.
 
----
 
-#### **Extensions**
+
+## 📖 Extensions
 
 1. **Multi-task Learning**:
 
@@ -310,9 +310,9 @@ plt.show()
 
    * Estimate BERT parameters (e.g., attention weights) using observed data.
 
----
 
-#### **Summary**
+
+## 📖 Summary
 
 BERT models semantics through a bidirectional Transformer. After pre-training, it can be fine-tuned for specific tasks. The code above demonstrates text classification on the IMDb dataset, including dataset loading, fine-tuning, and attention visualization.
 
