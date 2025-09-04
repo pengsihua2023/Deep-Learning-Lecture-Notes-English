@@ -2,7 +2,7 @@
 
 In deep learning, besides the **Adam optimizer**, there are many other optimizers that are widely used. Each optimizer has its own unique characteristics and applicable scenarios, suitable for different types of problems and models. Below is a list of common optimizers in deep learning with brief descriptions:
 
-### 1. **SGD (Stochastic Gradient Descent)**
+### 📖 1. **SGD (Stochastic Gradient Descent)**
 
 * **Description**: The most basic optimizer, updating parameters in the opposite direction of the gradient. Optionally, momentum can be added to accelerate convergence.
 * **Formula**:
@@ -29,7 +29,7 @@ $$
   optimizer = torch.optim.SGD(model.parameters(), lr=0.01, momentum=0.9)
   ```
 
-### 2. **RMSProp (Root Mean Square Propagation)**
+### 📖 2. **RMSProp (Root Mean Square Propagation)**
 
 * **Description**: Adjusts the learning rate using the exponential moving average of squared gradients, suitable for non-stationary objectives.
 * **Formula**:
@@ -50,7 +50,7 @@ $$
 
     optimizer = torch.optim.RMSprop(model.parameters(), lr=0.01, alpha=0.99)
 
-### 3. **Adagrad (Adaptive Gradient Algorithm)**
+### 📖 3. **Adagrad (Adaptive Gradient Algorithm)**
 
 * **Description**: Adjusts the learning rate adaptively based on the historical sum of squared gradients, suitable for sparse data.
 * **Formula**:
@@ -70,7 +70,7 @@ $$
   optimizer = torch.optim.Adagrad(model.parameters(), lr=0.01)
   ```
 
-### 4. **Adadelta**
+### 📖 4. **Adadelta**
 
 * **Description**: An improvement of Adagrad, using a moving window of squared gradients to avoid infinite decay of the learning rate.
 
@@ -91,7 +91,7 @@ $$
   optimizer = torch.optim.Adadelta(model.parameters(), lr=1.0, rho=0.9)
   ```
 
-### 5. **AdamW (Adam with Weight Decay)**
+### 📖 5. **AdamW (Adam with Weight Decay)**
 
 * **Description**: A variant of Adam, with weight decay (an improved form of L2 regularization), better for regularized models.
 * **Characteristics**:
@@ -105,7 +105,7 @@ $$
   optimizer = torch.optim.AdamW(model.parameters(), lr=0.001, weight_decay=0.01)
   ```
 
-### 6. **AMSGrad**
+### 📖 6. **AMSGrad**
 
 * **Description**: A variant of Adam, fixes convergence issues by keeping the maximum of past squared gradients.
 * **Characteristics**:
@@ -119,7 +119,7 @@ $$
   optimizer = torch.optim.Adam(model.parameters(), lr=0.001, amsgrad=True)
   ```
 
-### 7. **Nadam**
+### 📖 7. **Nadam**
 
 * **Description**: Combines Adam with Nesterov momentum, “anticipating” gradient updates.
 * **Characteristics**:
@@ -133,7 +133,7 @@ $$
   optimizer = torch.optim.NAdam(model.parameters(), lr=0.002)
   ```
 
-### 8. **L-BFGS (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)**
+### 📖 8. **L-BFGS (Limited-memory Broyden–Fletcher–Goldfarb–Shanno)**
 
 * **Description**: A second-order optimization algorithm, based on quasi-Newton methods, suitable for small-batch data.
 * **Characteristics**:
@@ -147,7 +147,7 @@ $$
   optimizer = torch.optim.LBFGS(model.parameters(), lr=0.01)
   ```
 
-### 9. **Rprop (Resilient Backpropagation)**
+### 📖 9. **Rprop (Resilient Backpropagation)**
 
 * **Description**: Updates parameters using only the sign of the gradient (not magnitude), suitable for noisy data.
 * **Characteristics**:
@@ -161,7 +161,7 @@ $$
   optimizer = torch.optim.Rprop(model.parameters(), lr=0.01)
   ```
 
-### 10. **SparseAdam**
+### 📖 10. **SparseAdam**
 
 * **Description**: A variant of Adam, designed for sparse tensors.
 * **Characteristics**:
@@ -175,7 +175,7 @@ $$
   optimizer = torch.optim.SparseAdam(model.parameters(), lr=0.001)
   ```
 
-### 11. **ASGD (Averaged Stochastic Gradient Descent)**
+### 📖 11. **ASGD (Averaged Stochastic Gradient Descent)**
 
 * **Description**: A variant of SGD, improves stability by averaging historical parameters.
 * **Characteristics**:
@@ -189,7 +189,7 @@ $$
   optimizer = torch.optim.ASGD(model.parameters(), lr=0.01)
   ```
 
-### Tips for Choosing an Optimizer
+### 📖 Tips for Choosing an Optimizer
 
 * **Default choice**: Adam or AdamW are the most commonly used, as their adaptiveness and robustness suit most tasks.
 * **Need regularization**: Prefer AdamW.
@@ -198,7 +198,7 @@ $$
 * **Complex non-convex problems**: Try Nadam or AMSGrad.
 * **Small datasets**: L-BFGS may be more suitable.
 
-### Optimizer Choice
+### 📖 Optimizer Choice
 
 Adam is a common choice for binary classification tasks because it is insensitive to the initial learning rate and converges quickly. If convergence issues arise in binary classification tasks, consider:
 
@@ -206,7 +206,7 @@ Adam is a common choice for binary classification tasks because it is insensitiv
 * **SGD+momentum**: If the model is simple or the dataset is large.
 * **RMSProp**: If the data is noisy or the model is sequence-based (e.g., RNN).
 
-### Summary
+### 📖 Summary
 
 There are many types of optimizers in deep learning, mainly including SGD, Adam, RMSProp, Adagrad, Adadelta, AdamW, Nadam, etc. Each optimizer differs in learning rate adjustment, convergence speed, and applicable scenarios. The choice of optimizer should be based on task type, dataset size, and model complexity.
 
