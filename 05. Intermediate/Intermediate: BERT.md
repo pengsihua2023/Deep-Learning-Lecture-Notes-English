@@ -9,7 +9,7 @@ BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained 
 </div>
 
 
-## Mathematical Description of BERT Model
+## 📖 Mathematical Description of BERT Model
 
 ### 1. Input Representation
 
@@ -119,7 +119,7 @@ Text classification, question answering, NER, translation, etc.
 
 ---
 
-## **Specific Implementation: Text Classification + Dataset Loading + Attention Visualization**
+## 📖 Specific Implementation: Text Classification + Dataset Loading + Attention Visualization
 
 Below is a complete PyTorch code example using the `transformers` library from Hugging Face to implement the BERT model for a **text classification task** (sentiment analysis example with the IMDb dataset), including:
 
@@ -231,7 +231,7 @@ plt.show()
 ```
 
 
-### **Code Explanation**
+## 📖 Code Explanation
 
 * **Dataset Loading**:
 
@@ -263,9 +263,9 @@ plt.show()
   * Predicted sentiment (positive/negative).
   * Attention heatmap showing attention weights of `[CLS]` and other tokens.
 
----
 
-#### **Notes**
+
+## 📖 Notes
 
 1. **Environment**:
 
