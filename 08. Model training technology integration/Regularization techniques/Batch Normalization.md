@@ -211,17 +211,17 @@ print(f'Test Accuracy: {test\_accuracy:.2f}%')
 5. **Example output**:  
 
 
-Epoch 1, Train Loss: 0.2987, Val Loss: 0.1654
-Epoch 2, Train Loss: 0.1234, Val Loss: 0.1321
-Epoch 3, Train Loss: 0.0987, Val Loss: 0.1105
-Epoch 4, Train Loss: 0.0765, Val Loss: 0.1123
-Epoch 5, Train Loss: 0.0654, Val Loss: 0.1132
-Early stopping triggered!
-Restored best model from early stopping.
-Test Accuracy: 97.20%
+Epoch 1, Train Loss: 0.2987, Val Loss: 0.1654  
+Epoch 2, Train Loss: 0.1234, Val Loss: 0.1321  
+Epoch 3, Train Loss: 0.0987, Val Loss: 0.1105  
+Epoch 4, Train Loss: 0.0765, Val Loss: 0.1123  
+Epoch 5, Train Loss: 0.0654, Val Loss: 0.1132  
+Early stopping triggered!  
+Restored best model from early stopping.  
+Test Accuracy: 97.20%  
 
 
-Actual results may vary due to random initialization.  
+Actual results may vary due to random initialization.    
 
 
 
