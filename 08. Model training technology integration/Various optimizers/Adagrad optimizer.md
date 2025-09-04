@@ -134,7 +134,7 @@ print(f"Loss: {loss.item()}")
 
 
 
-#### **Summary**
+#### 📖 **Summary**
 
 Adagrad is an adaptive learning rate optimizer that dynamically adjusts the learning rate through the accumulation of squared gradients, making it especially suitable for sparse data tasks. PyTorch’s `optim.Adagrad` implementation is simple and only requires specifying the learning rate and a few additional parameters. Compared to SGD, Adagrad reduces the need for learning rate tuning; compared to Adadelta, Adagrad is simpler but may stop optimizing due to overly rapid learning rate decay.
 
