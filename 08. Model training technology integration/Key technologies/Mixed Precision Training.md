@@ -1,7 +1,7 @@
 ## Mixed Precision Training
-### What is Mixed Precision Training?
+### 📖 What is Mixed Precision Training?
 **Mixed Precision Training (MPT)** is a deep learning training technique that combines low-precision (e.g., half-precision floating-point, FP16) and high-precision (e.g., single-precision floating-point, FP32) computations to accelerate training, reduce memory usage, and maintain model accuracy and stability as much as possible. It is particularly effective on hardware that supports FP16 computations, such as NVIDIA GPUs.
-#### Core Features:
+### 📖 Core Features:
 - **Applicable Scenarios**: Suitable for deep learning tasks like image classification, object detection, and natural language processing, especially for large-scale models (e.g., Transformers).
 - **Principle**:
   - Uses FP16 for most computations (e.g., forward and backward propagation) to speed up operations and reduce memory demands.
@@ -14,8 +14,8 @@
 - **Disadvantages**:
   - Requires hardware supporting FP16 (e.g., NVIDIA Volta or Ampere GPUs).
   - May require tuning the loss scaling factor to ensure stability.
----
-### Principles of Mixed Precision Training
+
+### 📖 Principles of Mixed Precision Training
 1. **FP16 Computations**:
    - Forward and backward propagation use FP16 to reduce computational load and memory usage.
    - Model weights and activations are stored in FP16.
@@ -27,7 +27,7 @@
 4. **Automatic Management**:
    - Modern frameworks (e.g., PyTorch’s `torch.cuda.amp`) automatically handle FP16/FP32 switching and loss scaling.
 ---
-### Simple Code Example: Mixed Precision Training with PyTorch
+### 📖 Simple Code Example: Mixed Precision Training with PyTorch
 Below is a simple example demonstrating how to implement mixed precision training in PyTorch using `torch.cuda.amp` to train a simple neural network on the MNIST dataset.
 ```python
 import torch
@@ -92,8 +92,8 @@ with torch.no_grad():
         total += target.size(0)
 print(f"Test Accuracy: {correct / total * 100:.2f}%")
 ```
----
-### Code Explanation
+
+### 📖 Code Explanation
 1. **Model Definition**:
    - Defines a simple fully connected neural network for MNIST classification (input 28x28, output 10 classes).
 2. **Data Loading**:
@@ -107,8 +107,8 @@ print(f"Test Accuracy: {correct / total * 100:.2f}%")
    - `scaler.step(optimizer)` and `scaler.update()` perform optimization steps and update the scaling factor.
 5. **Testing**:
    - Evaluates model accuracy on the test set without AMP (testing typically uses FP32).
----
-### Key Points
+
+### 📖 Key Points
 1. **Automatic Precision Management**:
    - `autocast` automatically selects FP16 or FP32, reducing manual intervention.
 2. **Loss Scaling**:
@@ -118,8 +118,8 @@ print(f"Test Accuracy: {correct / total * 100:.2f}%")
 4. **Extensibility**:
    - Can be combined with **Curriculum Learning** (refer to previous examples for gradually introducing complex data), **Optuna/Ray Tune** (for hyperparameter optimization), or **class imbalance handling** (e.g., weighted loss).
    - The example can incorporate `MinMaxScaler` or `StandardScaler` for input data preprocessing (refer to previous examples).
----
-### Practical Effects
+
+### 📖 Practical Effects
 - **Training Speed**: On FP16-supporting GPUs (e.g., NVIDIA A100), training speed can improve by 1.5-3 times.
 - **Memory Savings**: FP16 uses half the memory, allowing larger models or batch sizes.
 - **Accuracy Preservation**: With loss scaling, model accuracy is typically close to FP32 (error <1%).
