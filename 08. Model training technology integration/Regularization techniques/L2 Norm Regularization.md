@@ -17,7 +17,7 @@ Where:
 * $\|w_i\|_2^2$ is the L2 norm of the weights (i.e., the sum of squares of weights).  
 * $\lambda$ is the hyperparameter controlling the strength of the regularization penalty.  
 
-- **Effect**:  
+### 📖 **Effect**:  
   - L2 regularization tends to make weights smaller (but not exactly zero), making the model smoother and reducing overfitting to training data.  
   - It encourages the model to learn smaller weights, lowering model complexity and preventing overfitting to noise.  
 
@@ -26,7 +26,7 @@ Where:
 * L1 regularization (Lasso) uses $\sum |w_i|$, which tends to produce sparse weights (some weights are exactly 0).  
 * L2 regularization (Ridge) uses $\sum w_i^2$, which tends to spread out the weight values, keeping all weights small.  
 
-#### Application Scenarios
+### 📖 Application Scenarios
 - In deep neural networks (such as CNN, RNN, Transformer), L2 regularization is commonly used to prevent overfitting.  
 - Combined with other regularization methods such as Dropout and Batch Normalization.  
 - Hyperparameter $\lambda$ is usually tuned via cross-validation or Bayesian optimization (as described previously).  
