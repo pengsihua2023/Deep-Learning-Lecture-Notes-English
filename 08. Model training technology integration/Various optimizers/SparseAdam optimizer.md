@@ -1,7 +1,7 @@
 
 # SparseAdam Optimizer
 
-## 1. Definition
+## 📖 1. Definition
 
 **SparseAdam** is a variant of **Adam** specifically designed for scenarios with **sparse gradients**, with a typical application being the **embedding layer** (e.g., training word embeddings in NLP).
 
@@ -12,9 +12,9 @@ Standard Adam maintains first- and second-moment estimates (`m, v`) for all para
 
 Therefore, in large-scale sparse gradient scenarios (such as vocabularies with millions of tokens), SparseAdam can significantly improve efficiency.
 
----
 
-## 2. Mathematical Formulation
+
+## 📖 2. Mathematical Formulation
 
 Let:
 
@@ -59,9 +59,9 @@ $$
 
 Here \$i\$ indicates that only the parameters corresponding to **non-zero gradients** are updated.
 
----
 
-## 3. Minimal Code Example
+
+## 📖 3. Minimal Code Example
 
 Using **PyTorch’s SparseAdam** on an embedding layer:
 
@@ -94,17 +94,15 @@ print("Updated embedding vectors (partial):")
 print(embedding.weight[input_ids[0]])
 ```
 
----
 
-### Explanation
+## 📖 Explanation
 
 1. **Embedding layer** is set with `sparse=True`, so its gradient is sparse.
 2. **SparseAdam** only updates embeddings corresponding to tokens that appear in the current batch.
 3. Embeddings for tokens not seen in this batch remain unchanged, making the training more efficient.
 
----
 
-## Adam vs SparseAdam Comparison
+## 📖 Adam vs SparseAdam Comparison
 
 | Feature             | **Adam**                                                                                       | **SparseAdam**                                                                                                      |
 | ------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -115,9 +113,9 @@ print(embedding.weight[input_ids[0]])
 | **Typical use**     | CNNs, RNNs, Transformers, and other general tasks.                                             | Word embeddings, large-scale NLP vocabularies (hundreds of thousands or even millions of tokens).                   |
 | **PyTorch usage**   | `optim.Adam(model.parameters(), lr=...)`                                                       | `optim.SparseAdam(embedding.parameters(), lr=...)` — supported only for sparse parameters.                          |
 
----
 
-👉 **Summary**:
+
+## 📖 **Summary**:
 
 * If model parameters are **dense** (e.g., convolution layers, fully connected layers), use **Adam**.
 * If model parameters are **sparse** (especially embedding layers), use **SparseAdam** for higher efficiency.
