@@ -1,5 +1,6 @@
 
-# LIME Model Interpretation Method (Local Interpretable Model-agnostic Explanations)
+# LIME Model Interpretation Method
+(Local Interpretable Model-agnostic Explanations)  
 
 ## 📖 1. Definition
 
