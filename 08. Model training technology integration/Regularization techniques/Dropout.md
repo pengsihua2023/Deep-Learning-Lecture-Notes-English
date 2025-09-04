@@ -1,8 +1,8 @@
 ## Dropout (Randomly Dropping Neurons)
-### What is Random Neuron Dropout (Dropout)?
+### 📖 What is Random Neuron Dropout (Dropout)?
 Dropout is a widely used regularization technique in deep learning to prevent neural network overfitting. Its core idea is to randomly “drop” (set to zero) a portion of neurons’ activations during training, reducing inter-neuron dependencies and improving model generalization.
 
-#### Core Principle
+### 📖 Core Principle
 - **Training Phase**:
   - In each training batch, neurons’ outputs are randomly set to zero with probability \( p \) (dropout rate).
   - Remaining neurons’ outputs are scaled by \( 1/(1-p) \) to maintain expected output.
@@ -12,17 +12,17 @@ Dropout is a widely used regularization technique in deep learning to prevent ne
   - Dropout effectively samples “random subnetworks” during training, resembling ensemble learning and reducing overfitting.
   - It forces the network to learn robust features, not reliant on specific neurons.
 
-#### Hyperparameters
+### 📖 Hyperparameters
 - **Dropout Rate \( p \)**: Typically set to 0.2–0.5 (0.5 is common for fully connected layers, lower like 0.2 for convolutional layers).
 - **Placement**: Dropout is usually applied after activation functions in fully connected or convolutional layers.
 
-#### Advantages and Limitations
+### 📖 Advantages and Limitations
 - **Advantages**: Simple, effective, significantly reduces overfitting, especially in deep networks.
 - **Limitations**: Increases training time (due to randomness), may not suit small datasets or simple models.
 
 ---
 
-### Python Code Example
+### 📖 Python Code Example
 Below is a simple PyTorch example implementing Dropout for the MNIST handwritten digit classification task, demonstrating how to add a Dropout layer to a fully connected neural network.
 
 ```python
@@ -94,9 +94,9 @@ for epoch in range(1, epochs + 1):
     test()
 ```
 
----
 
-### Code Explanation
+
+### 📖 Code Explanation
 1. **Model Definition**:
    - `DropoutNet` is a fully connected neural network with MNIST 28x28 pixel inputs and 10-class outputs.
    - A `nn.Dropout(p=0.5)` layer is added after the first fully connected layer (`fc1`), randomly dropping 50% of neurons.
@@ -121,9 +121,9 @@ for epoch in range(1, epochs + 1):
    ```
    Actual values vary due to random initialization and Dropout randomness.
 
----
 
-### Key Points of Dropout
+
+### 📖 Key Points of Dropout
 - **Training vs. Testing Behavior**:
   - Training: Randomly drops neurons, scales outputs by \( 1/(1-p) \).
   - Testing: All neurons participate, no scaling (equivalent to expected output).
@@ -134,14 +134,14 @@ for epoch in range(1, epochs + 1):
   - Dropout can be combined with L1/L2 regularization (as in prior discussion) to further improve generalization.
   - Example: Add L2 regularization with `optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-4)`.
 
----
 
-### Practical Applications
+
+### 📖 Practical Applications
 - **Deep Learning**: Dropout is widely used in fully connected layers, convolutional layers, and even Transformers (e.g., BERT’s Feed-Forward layers).
 - **Overfitting Issues**: Dropout significantly improves test performance for small datasets or complex models.
 - **Combination with Other Regularizations**: Often used with L1/L2 regularization, Batch Normalization, etc.
 
-#### Considerations
+### 📖 Considerations
 - **Dropout Rate Tuning**: High \( p \) may lead to underfitting; low \( p \) may provide insufficient regularization.
 - **Training/Testing Modes**: Always use `model.train()` for training and `model.eval()` for testing.
 - **Applicable Scenarios**: Dropout is more effective in deep networks; simple models may not require it.
