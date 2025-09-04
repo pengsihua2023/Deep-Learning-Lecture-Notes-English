@@ -1,6 +1,6 @@
 # Nadam Optimizer
 
-## 1. Definition
+## 📖 1. Definition
 
 **Nadam (Nesterov-accelerated Adaptive Moment Estimation)** is a commonly used deep learning optimization algorithm that combines the ideas of **Adam** and **Nesterov momentum**.
 
@@ -9,9 +9,9 @@
 
 Nadam introduces Nesterov momentum into the Adam update rule, thus leveraging look-ahead gradient correction while retaining adaptive learning rates.
 
----
 
-## 2. Mathematical Formulation
+
+## 📖 2. Mathematical Formulation
 
 Let:
 
@@ -99,7 +99,7 @@ This code drives parameter \$\theta\$ closer to 0 (the minimum of \$f(x)=x^2\$).
 
 ---
 
-## PyTorch Nadam Example
+## 📖 PyTorch Nadam Example
 
 ```python
 import torch
@@ -140,9 +140,9 @@ w, b = model.linear.weight.item(), model.linear.bias.item()
 print(f"Learned parameters: w = {w:.2f}, b = {b:.2f}")
 ```
 
----
 
-### Code Explanation
+
+## 📖 Code Explanation
 
 1. **Model**: a simple linear model `y = wx + b`.
 2. **Data**: input `x` is randomly generated, output `y` follows the true function `2x + 3` with small noise added.
