@@ -11,7 +11,7 @@ In a graph, nodes (vertices) represent entities, and edges represent relationshi
 </div>
 
 
-### Core Ideas
+## 📖 Core Ideas
 
 1. **Message Passing**:
    Each node collects information from its neighboring nodes and updates its representation by combining it with its own features.
@@ -25,14 +25,14 @@ In a graph, nodes (vertices) represent entities, and edges represent relationshi
 4. **Propagation**:
    Repeat the above process over multiple layers so that nodes can capture information from farther neighbors.
 
-### Common Tasks
+## 📖 Common Tasks
 
 * **Node Classification**: Predict the category of a node, such as user interest labels in a social network.
 * **Link Prediction**: Predict missing or potential future edges in the graph, such as “friend recommendations” in a recommendation system.
 * **Graph Classification**: Classify an entire graph, such as predicting the drug activity of a molecular structure graph.
 
----
-## Mathematical Description of Graph Neural Networks
+
+## 📖 Mathematical Description of Graph Neural Networks
 
 ### 1. Basic Structure of a Graph
 
@@ -108,7 +108,7 @@ The general mathematical definition of a GNN can be summarized as:
 ---
 
 
-## Code
+## 📖 Code
 Write a minimal Graph Neural Network (GNN) example based on PyTorch and PyTorch Geometric, using a real dataset (Cora dataset, a common benchmark for graph classification). The model will implement a simple Graph Convolutional Network (GCN) for node classification. Results will be demonstrated by visualizing node embeddings (using t-SNE dimensionality reduction) and evaluating classification accuracy.
 
 ```python
@@ -205,7 +205,7 @@ if __name__ == "__main__":
 
 ```
 
-### Code Description:
+## 📖 Code Description:
 1. **Dataset**:
    - Uses the Cora dataset (2,708 nodes, 7 classes, 1,433-dimensional features, representing academic papers and their citation relationships).
    - Each node is a paper, features are bag-of-words representations, edges are citation relationships, and the task is to predict paper categories.
@@ -229,12 +229,12 @@ if __name__ == "__main__":
    - Requires `torch`, `torch_geometric`, `sklearn`, and `matplotlib` (`pip install torch torch-geometric scikit-learn matplotlib`).
    - The Cora dataset is automatically downloaded to the `./data` directory.
 
-### Results:
+## 📖 Results:
 - Outputs training loss and validation accuracy every 50 epochs.
 - Outputs final classification accuracy on the test set.
 - Generates `cora_embeddings.png`, showing the 2D distribution of node embeddings, with colors representing different classes.
 - The scatter plot reflects whether the GNN learns meaningful embeddings (same-class nodes should be close, different-class nodes should be separated).
 
-### Notes:
+## 📖 Notes:
 - The scatter plot is saved in the working directory and can be viewed with an image viewer.
 - The model is simple (two-layer GCN), suitable for demonstrating GNN concepts; for practical applications, consider adding more layers or using advanced GNN variants (e.g., GAT).
