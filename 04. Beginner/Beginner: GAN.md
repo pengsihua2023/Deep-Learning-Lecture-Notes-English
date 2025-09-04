@@ -1,6 +1,6 @@
-## Beginner: GAN
+# Beginner: GAN
 
-Generative Adversarial Network (GAN)  
+## 📖 Generative Adversarial Network (GAN)  
 - Importance: GAN is a flagship generative model, showcasing the creativity of deep learning and ideal for sparking middle school students' interest in AI.  
 - Core Concept:  
 GAN consists of two networks: a generator (creates fake images) and a discriminator (distinguishes real from fake), which "compete" to learn.  
@@ -20,7 +20,7 @@ This image appears to illustrate the concept of a Generative Adversarial Network
 2. **Discriminator**: Represented in red on the right, the discriminator evaluates the received data, determining whether it is "real" (authentic data) or "fake" (generated data). The green labels "real" and "fake" indicate the discriminator's classification results.  
 In a GAN, the generator and discriminator are trained simultaneously through a competitive process: the generator improves by attempting to deceive the discriminator, while the discriminator improves by better distinguishing real data from fake data. This iterative process continues until the generator can produce highly realistic data.
 
-## Mathematical Description of GAN
+## 📖 Mathematical Description of GAN
 1. Basic Structure  
 GAN consists of two models:  
 Generator (G): maps random noise $z$ (usually sampled from a standard normal distribution or a uniform distribution) into the data space, generating fake samples $G(z)$ that attempt to mimic the distribution of real data $P_{data}$.  
@@ -105,7 +105,7 @@ $$
 The training process involves alternating optimization, with challenges in balancing the performance of both sides and avoiding mode collapse or gradient issues. Improvements such as WGAN enhance training stability by replacing the distance metric or introducing regularization.
 
 
-## Code(Pytorch)
+## 📖 Code(Pytorch)
 
 ```python
 import torch
@@ -277,7 +277,7 @@ if __name__ == "__main__":
     plot_final_results()
 ```
 
-## Training results
+## 📖 Training results
 Epoch [45/50], D Loss: 0.3414, G Loss: 2.7712   
 Epoch [50/50], D Loss: 0.3680, G Loss: 2.7854   
 
