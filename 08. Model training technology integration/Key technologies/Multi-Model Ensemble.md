@@ -1,8 +1,8 @@
 ## Multi-Model Ensemble (Ensemble Learning)
 ## Ensemble Learning
-### What is Ensemble Learning?
+### 📖 What is Ensemble Learning?
 **Ensemble Learning** is a machine learning technique that improves overall performance by combining the prediction results of multiple base models (weak learners). It is based on the idea of "collective intelligence," where the combination of multiple models is often more accurate and robust than a single model, especially when handling complex tasks.
-#### Core Features:
+### 📖 Core Features:
 - **Applicable Scenarios**: Tasks such as classification, regression, and anomaly detection, particularly suitable for situations with high data noise or models prone to overfitting.
 - **Common Methods**:
   - **Bagging**: Train multiple models in parallel (e.g., random forests), each using a subset of the data, and predict via voting or averaging.
@@ -15,15 +15,15 @@
 - **Disadvantages**:
   - High computational overhead, longer training time.
   - Complex models, not easy to interpret.
----
-### Principles of Ensemble Learning
+
+### 📖 Principles of Ensemble Learning
 1. **Diversity**: Create diverse base models through data sampling (e.g., bootstrapping), feature subsets, or different algorithms.
 2. **Combined Prediction**: Base models learn independently or sequentially, with combination methods including voting (for classification), averaging (for regression), or meta-model learning.
 3. **Error Reduction**: Individual models may have high errors, but ensembles can average errors, reduce variance (Bagging) or bias (Boosting).
 4. **Mathematical Foundation**: Based on statistics, the error rate of the ensemble model is lower than the average error of individual models (Condorcet's Jury Theorem).
 The principle is essentially to reduce the weaknesses of individual models through "majority rule" or weighted fusion, achieving "1+1>2."
 ---
-### Simple Code Example: Voting Ensemble with Scikit-learn
+### 📖 Simple Code Example: Voting Ensemble with Scikit-learn
 Below is a simple example using Scikit-learn's VotingClassifier to implement soft voting ensemble (combining logistic regression, decision tree, and SVM) on the Iris dataset.
 ```python
 from sklearn.datasets import load_iris
@@ -53,8 +53,8 @@ print(f"Ensemble Model Accuracy: {accuracy_score(y_test, y_pred) * 100:.2f}%")
 ```
 Ensemble Model Accuracy: 100.00%
 ```
----
-### Code Explanation
+
+### 📖 Code Explanation
 1. **Data Loading**:
    - Uses the Iris dataset (4 features, 3 classes), splits into training/test sets.
 2. **Base Model Definition**:
@@ -66,8 +66,8 @@ Ensemble Model Accuracy: 100.00%
    - `fit` trains all base models, `predict` combines predictions.
 5. **Evaluation**:
    - Calculates test set accuracy to demonstrate the ensemble effect.
----
-### Key Points
+
+### 📖 Key Points
 1. **Voting Method**:
    - 'hard': Majority vote; 'soft': Average probabilities, more accurate.
 2. **Base Model Selection**:
@@ -75,8 +75,8 @@ Ensemble Model Accuracy: 100.00%
 3. **Integration with Other Methods**:
    - Can combine with **Curriculum Learning** (integrate simple models first), **AMP** (accelerate training), or **Optuna** (optimize base model hyperparameters).
    - The example can add `StandardScaler` for feature preprocessing (refer to previous examples).
----
-### Practical Effects
+
+### 📖 Practical Effects
 - **Performance Improvement**: Ensembles typically increase accuracy by 5-10% and reduce overfitting (e.g., random forests are more robust on noisy data).
 - **Robustness**: Stronger against outliers and noise, better generalization.
 - **Applicability**: Common in Kaggle competitions, with libraries like XGBoost implementing advanced ensembles.
