@@ -23,7 +23,7 @@ The attention mechanism allows models to focus on the most important parts of th
 
 The core idea of the Attention mechanism is: **assign different weights to different elements in an information sequence, thereby highlighting "important" information and suppressing "irrelevant" information**.
 
-## 1. Input Representation
+## 📖 1. Input Representation
 
 Given an input vector sequence:
 
@@ -46,7 +46,7 @@ Where:
 * $d_k = \frac{d_{\text{model}}}{h}, \quad \text{scaling factor} = \sqrt{d_k}$ .
 
 
-## 2. Attention Scoring Function
+## 📖 2. Attention Scoring Function
 
 Compute **similarity score** to measure the relevance between Query and Key:
 
@@ -56,7 +56,7 @@ $$
 
 Where $\sqrt{d_k}$ is the scaling factor to prevent values from becoming too large.
 
-## 3. Weight Distribution (Softmax)
+## 📖 3. Weight Distribution (Softmax)
 
 Convert all scores into a probability distribution:
 
@@ -66,7 +66,7 @@ $$
 
 Where $\alpha_{ij}$ denotes the attention weight of the $i$-th Query on the $j$-th Key.
 
-## 4. Context Vector (Weighted Sum)
+## 📖 4. Context Vector (Weighted Sum)
 
 Weight the Value vectors according to the attention weights:
 
@@ -76,7 +76,7 @@ $$
 
 Obtaining the final context representation $z_i$.
 
-## 5. Matrix Form (Scaled Dot-Product Attention)
+## 📖 5. Matrix Form (Scaled Dot-Product Attention)
 
 The above steps can be written in a compact matrix form:
 
@@ -84,7 +84,7 @@ $$
 \text{Attention}(Q,K,V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right) V
 $$
 
-## 6. Self-Attention
+## 📖 6. Self-Attention
 <div align="center">
 <img width="469" height="220" alt="image" src="https://github.com/user-attachments/assets/a1dae221-067b-4f1c-a57f-caf7af22fbb5" />
 </div>
@@ -115,7 +115,7 @@ $$
 - **Benefit**:  
   Unlike recurrent networks, Self-Attention processes all tokens in parallel, making it highly efficient and effective at capturing long-range dependencies.
 
-## 7. Multi-Head Attention
+## 📖 7. Multi-Head Attention
 <div align="center">
 <img width="560" height="380" alt="image" src="https://github.com/user-attachments/assets/f2c01db3-28ea-4724-9a03-538cda1ebeb3" />
 </div>
@@ -149,7 +149,7 @@ with $W_i^Q, W_i^K, W_i^V \in \mathbb{R}^{d_{\text{model}} \times d_k}$ and $W^O
 - **Benefit**:  
   Multi-Head Attention enriches the model’s representational power and helps capture diverse relationships in the data.
 
-## 8. Summary
+## 📖 8. Summary
 
 * **Query–Key**: decides what to attend to;
 * **Softmax weights**: distribute attention;
@@ -166,7 +166,7 @@ $$
 
 ---
 
-## Code  
+## 📖 Code  
 Add visualization of attention weights using a heatmap to display the attention weight matrix for the first sample, aiding in intuitively understanding how the attention mechanism focuses on relationships between different words. The code is based on the IMDb dataset and implements a simple Scaled Dot-Product Attention using PyTorch. Since you requested visualization, a heatmap will be generated to show the attention weights.
 
 ```python
@@ -262,7 +262,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### Summary:
+## 📖 Summary:
 1. **Dataset**: Continues using the first 1000 reviews from the IMDb dataset, with sequence length reduced to 20 for clearer heatmap visualization.
 2. **Visualization**: Adds a `plot_attention_weights` function, using `seaborn` to draw a heatmap of attention weights for the first sample, saved as `attention_heatmap.png`.
 3. **Heatmap Content**:
@@ -271,11 +271,11 @@ if __name__ == "__main__":
    - The heatmap intuitively shows which words the Attention mechanism focuses on more in relation to others.
 4. **Dependencies**: Requires installation of `datasets`, `torchtext`, `matplotlib`, and `seaborn` (`pip install datasets torchtext matplotlib seaborn`).
 
-### Execution Results:
+## 📖 Execution Results:
 - The program processes 1000 IMDb reviews, outputting dataset information, tensor shapes, and attention weight shapes.
 - Generates a heatmap file `attention_heatmap.png`, displaying the attention weight matrix for the first review.
 - Each cell in the heatmap represents the attention weight of a query word for a key word, with brighter colors indicating larger weights.
 
-### Notes:
+## 📖 Notes:
 - The heatmap file is saved in the working directory and can be opened with an image viewer.
 - With the sequence length limited to 20, the heatmap shows attention relationships for the first 20 words, making it suitable for intuitive analysis.
