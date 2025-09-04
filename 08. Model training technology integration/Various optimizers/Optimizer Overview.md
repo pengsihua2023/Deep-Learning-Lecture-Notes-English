@@ -42,7 +42,6 @@ $$
   * Reduces update magnitude for large gradients, avoiding oscillations.
   * Hyperparameters (e.g., \$\rho\$ and \$\epsilon\$) require careful tuning.
 
----
 
 * **Use Case**: Commonly used in RNNs and sequence models.
 
