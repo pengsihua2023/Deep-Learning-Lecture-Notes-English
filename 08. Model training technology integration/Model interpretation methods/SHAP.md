@@ -1,13 +1,13 @@
 
 # SHAP (SHapley Additive exPlanations) Model Interpretation Method
 
-## 1. What is SHAP?
+## 📖 1. What is SHAP?
 
 SHAP (SHapley Additive exPlanations) is a commonly used **model interpretation method**, based on the concept of **Shapley values** in game theory.
 It quantifies the contribution of each input feature to the prediction result, making “black-box models” (such as deep learning, tree models, and ensemble methods) more transparent.
 
 
-## 2. Why do we need SHAP?
+## 📖 2. Why do we need SHAP?
 
 * **Developers**: Help discover feature importance and debug the model.
 * **Users/Business stakeholders**: Improve trust and understand prediction results.
@@ -16,7 +16,7 @@ It quantifies the contribution of each input feature to the prediction result, m
 Example: In a medical prediction model, SHAP can explain why the prediction for “a certain patient is high risk,” possibly because of high blood pressure or older age.
 
 
-## 3. Core Principles of SHAP
+## 📖 3. Core Principles of SHAP
 
 ### 3.1 Based on Shapley Values
 
@@ -47,7 +47,7 @@ SHAP values satisfy the following properties:
 3. **Additivity**: Contribution values are linearly additive.
 
 
-## 4. Applications of SHAP in Deep Learning
+## 📖 4. Applications of SHAP in Deep Learning
 
 * **Local explanation**: Explaining the prediction of a single sample.
 * **Global explanation**: Summarizing feature importance across all samples.
@@ -55,7 +55,7 @@ SHAP values satisfy the following properties:
 * **Business applications**: Interpretable AI in high-risk domains such as healthcare and finance.
 
 
-## 5. Visualization Methods
+## 📖 5. Visualization Methods
 
 SHAP provides multiple intuitive visualizations:
 
@@ -64,7 +64,7 @@ SHAP provides multiple intuitive visualizations:
 * **Dependence Plot**: Relationship between feature values and their contributions.
 
 
-## 6. Practical Code Example (PyTorch + SHAP)
+## 📖 6. Practical Code Example (PyTorch + SHAP)
 
 Below is a **complete Notebook Demo** showing how to train a model and interpret it with SHAP.
 
@@ -172,7 +172,7 @@ shap.dependence_plot(
 
 
 
-## 7. Summary
+## 📖 7. Summary
 
 * **SHAP = Shapley values + model interpretation**
 * It can explain single samples (local) and the entire model (global)
