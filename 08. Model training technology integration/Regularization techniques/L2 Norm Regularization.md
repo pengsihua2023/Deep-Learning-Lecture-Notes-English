@@ -1,9 +1,9 @@
 ## L2 Norm Regularization
-### What is L2 Norm Regularization?
+### 📖 What is L2 Norm Regularization?
 
 L2 norm regularization (also known as Weight Decay) is a commonly used regularization technique in machine learning and deep learning to prevent model overfitting. Its core idea is to add a penalty term to the loss function to constrain the size of model parameters (weights), thereby improving the generalization ability of the model.
 
-#### Core Principle
+### 📖 Core Principle
 - **Loss function modification**: Add an L2 norm penalty term to the original loss function (such as mean squared error or cross-entropy):
 
 $$
@@ -33,7 +33,7 @@ Where:
 
 ---
 
-### Python Code Example
+### 📖 Python Code Example
 
 Below is an example of implementing L2 norm regularization using PyTorch, showing how to apply weight decay during neural network training. The example is based on a simple fully connected network trained on the MNIST handwritten digit classification task.
 
@@ -105,9 +105,9 @@ for epoch in range(1, epochs + 1):
     test()
 ````
 
----
 
-### Code Explanation
+
+### 📖 Code Explanation
 
 1. **Model definition**:
 
@@ -157,7 +157,7 @@ Where \$\eta\$ is the learning rate, and \$\lambda\$ is `weight_decay`.
 
 ---
 
-### Practical Application Scenarios
+### 📖 Practical Application Scenarios
 
 * **Deep learning**: L2 regularization is often used in CNNs, RNNs, Transformers, etc., to prevent overfitting.
 * **Hyperparameter selection**: $\lambda$ (e.g., 1e-4) is usually tuned via cross-validation or Bayesian optimization, with a typical range of 1e-5 to 1e-2.
