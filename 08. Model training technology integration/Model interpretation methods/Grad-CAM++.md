@@ -1,7 +1,7 @@
 
 # Grad-CAM++ Model Interpretation Method
 
-## 1. Definition
+## 📖 1. Definition
 
 **Grad-CAM++** is an improved method over **Grad-CAM**.
 
@@ -9,9 +9,9 @@
 * But in many cases, the target class may be determined by **multiple different regions** (e.g., an image containing several cats);
 * Grad-CAM++ uses **higher-order gradient information** (not just first-order gradients) to assign weights more precisely, producing clearer and finer-grained heatmaps.
 
----
 
-## 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 Let:
 
@@ -37,9 +37,9 @@ $$
 
 Compared with Grad-CAM, it incorporates **second- and third-order gradient terms**, making weight assignment more reasonable.
 
----
 
-## 3. Minimal Code Example (PyTorch)
+
+## 📖 3. Minimal Code Example (PyTorch)
 
 ```python
 import torch
@@ -120,17 +120,17 @@ plt.imshow(cam.detach().numpy(), cmap='jet', alpha=0.5)
 plt.show()
 ```
 
----
 
-## Summary
+
+## 📖 Summary
 
 * **Grad-CAM**: Based on first-order gradients, focuses on main target regions.
 * **Grad-CAM++**: Combines second- and third-order gradients, enabling finer-grained explanations of multiple targets or detailed features.
 * **Applications**: Image classification, object detection, medical image analysis, and other tasks requiring precise localization.
 
----
 
-## Grad-CAM vs Grad-CAM++ Comparison
+
+## 📖 Grad-CAM vs Grad-CAM++ Comparison
 
 | Feature                    | **Grad-CAM**                                                                                                     | **Grad-CAM++**                                                                                                                                                                                                                                                                |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -142,9 +142,8 @@ plt.show()
 | **Computational Cost**     | Low (requires only first-order gradients)                                                                        | Higher (requires second- and third-order gradients)                                                                                                                                                                                                                           |
 | **Applications**           | Image classification, object localization                                                                        | Medical imaging, small object detection, multi-instance target explanation                                                                                                                                                                                                    |
 
----
 
-## Final Summary
+## 📖 Final Summary
 
 * **Grad-CAM**: Simple, fast, suitable for general image classification tasks.
 * **Grad-CAM++**: More precise, capable of explaining multiple targets and fine details, but with higher computational cost.
