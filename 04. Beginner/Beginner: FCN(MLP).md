@@ -20,7 +20,7 @@ This is a foundational model in deep learning, and understanding it helps grasp 
 
 ## Mathematical Description
 
-### 1. Network Structure
+### 📖 1. Network Structure
 
 A typical fully connected neural network consists of several **layers**:
 
@@ -32,7 +32,7 @@ In a fully connected structure, **each neuron in a given layer is connected to a
 
 
 
-### 2. Mathematical Notation
+### 📖 2. Mathematical Notation
 
 Let:
 
@@ -62,7 +62,7 @@ $$
 
 
 
-### 3. Forward Propagation
+### 📖 3. Forward Propagation
 
 The input layer is defined as:
 
@@ -92,7 +92,7 @@ $$
 
 
 
-### 4. Loss Function
+### 📖 4. Loss Function
 
 During training, given target output $\mathbf{y}$, common loss functions include:
 
@@ -110,7 +110,7 @@ $$
 
 
 
-### 5. Parameter Update (Backpropagation + Gradient Descent)
+### 📖 5. Parameter Update (Backpropagation + Gradient Descent)
 
 By backpropagation, we compute the gradients of the loss function with respect to the parameters:
 
@@ -132,7 +132,7 @@ where $\eta$ is the learning rate.
 
 
 
-### Summary
+### 📖 6. Summary
 
 In summary, a fully connected neural network can be abstracted as:
 
