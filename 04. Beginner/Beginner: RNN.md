@@ -19,7 +19,7 @@ RNN: The basic recurrent neural network unit processes the input \$x\_t\$ and th
 
 
 
-### 1. Basic Structure of RNN
+### 📖 1. Basic Structure of RNN
 
 RNNs are neural networks specialized in processing sequential data by introducing hidden states to capture temporal dependencies in sequences.
 The core idea: the output at the current time depends not only on the current input but also on the previous hidden state.
@@ -61,7 +61,7 @@ $$
 
 
 
-### 2. Forward Propagation
+### 📖 2. Forward Propagation
 
 RNNs iteratively compute hidden states and outputs through time steps. For a sequence \$x\_1, x\_2, \ldots, x\_T\$, the forward propagation process is:
 
@@ -74,7 +74,7 @@ RNNs iteratively compute hidden states and outputs through time steps. For a seq
 
 
 
-### 3. Loss Function
+### 📖 3. Loss Function
 
 RNNs typically use a loss function to measure the gap between predicted outputs and true labels. For sequence prediction tasks, cross-entropy loss (classification) or mean squared error (regression) is commonly used. The total loss is the sum of losses over all time steps:
 
@@ -86,7 +86,7 @@ where \$L\_t\$ is the loss at time step \$t\$, \$\hat{y}\_t\$ is the predicted o
 
 
 
-### 4. Backpropagation Through Time (BPTT)
+### 📖 4. Backpropagation Through Time (BPTT)
 
 RNN training unfolds along time steps through backpropagation, known as **BPTT**. The goal is to minimize the loss function \$L\$ by updating weights \$W\_{xh}, W\_{hh}, W\_{hy}\$ and biases \$b\_h, b\_y\$ via gradient descent.
 
@@ -110,7 +110,7 @@ Gradients for \$W\_{hh}, W\_{hy}, b\_h, b\_y\$ are calculated similarly.
 
 
 
-### 5. Vanishing / Exploding Gradient Problem
+### 📖 5. Vanishing / Exploding Gradient Problem
 
 Since \$h\_t\$ depends on \$h\_{t-1}\$, gradients propagate through repeated multiplications with the matrix \$W\_{hh}\$, which can lead to:
 
@@ -118,14 +118,14 @@ Since \$h\_t\$ depends on \$h\_{t-1}\$, gradients propagate through repeated mul
 * **Exploding gradients**: gradients become too large, leading to unstable training.
 
 
-### Solutions
+### 📖 Solutions
 
 * **Gradient clipping** (limit gradient magnitude);
 * **More advanced architectures**: such as LSTM and GRU.
 
 ---
 
-## Code (Pytorch)
+### 📖 Code (Pytorch)
 
 ```python
 import torch
@@ -258,7 +258,7 @@ if __name__ == "__main__":
     plot_loss_curve(loss_list)
     plot_confusion_matrix(pred, true)
 ```
-## Training Results
+### 📖 Training Results
 
 Training started...
 Epoch \[5/20], Loss: 0.6591
@@ -277,7 +277,8 @@ Figure 2 Training Loss Curve
   
 Figure 3 Confusion Matrix  
 
-## Code Function Overview
+### 📖 Code Function Overview
+
 
 This code implements the following functions:
 
