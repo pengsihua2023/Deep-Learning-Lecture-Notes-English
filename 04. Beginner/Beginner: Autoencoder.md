@@ -54,7 +54,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 * **Optimization**: Adjust parameters $\theta = $
     { $\{W_e, b_e, W_d, b_d}$ } via gradient descent to minimize $\mathcal{L}$.
 
-### 4📖 . Regularization Variants
+### 📖 4. Regularization Variants
   
   - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in $z$.  
 
