@@ -1,4 +1,4 @@
-## Advanced: Meta-Learning
+# Advanced: Meta-Learning
 Meta-Learning, also known as "Learning to Learn," is a branch of machine learning aimed at enabling models to quickly adapt to new tasks. By training on multiple related tasks, the model acquires general learning strategies, allowing it to perform well on new tasks, especially with limited data.
 <div align="center">
 <img width="380" height="240" alt="image" src="https://github.com/user-attachments/assets/60a738f6-bea6-4738-bf3d-b2d5719c20e3" />
@@ -9,25 +9,28 @@ Meta-Learning, also known as "Learning to Learn," is a branch of machine learnin
 </div>
 
 
-### Core Concepts
+## 📖 Core Concepts
 - **Objective**: Instead of optimizing for a specific task, meta-learning focuses on learning how to learn efficiently. For example, it automatically adjusts model parameters, hyperparameters, or learning rules.
 - **Key Feature**: Meta-learning typically involves training on a "task set," where each task includes a support set (for rapid learning) and a query set (for performance evaluation).
 
-### Main Methods of Meta-Learning
+## 📖 Main Methods of Meta-Learning
 1. **Optimization-Based Methods**: Such as MAML (Model-Agnostic Meta-Learning), which optimizes initial model parameters to adapt to new tasks with few gradient updates.
 
 2. **Metric-Based Methods**: Such as Prototypical Networks, which perform classification by learning similarities between data points.
 3. **Model-Based Methods**: Utilize memory mechanisms or recurrent networks to store learning experiences.
 
-### Application Scenarios
+## 📖 Application Scenarios
 - **Few-Shot Learning**: Completing classification or regression tasks with only a few samples.
 - **Transfer Learning**: Rapid adaptation to new environments, such as robot control or personalized recommendations.
 - **Hyperparameter Optimization**: Automatically tuning hyperparameters like learning rate.
 
-### Advantages and Challenges
+## 📖 Advantages and Challenges
 - **Advantages**: Enables rapid adaptation in data-scarce scenarios, mimicking human learning capabilities.
 - **Challenges**: High computational cost, limited task generalization, and integration with large-scale pre-trained models requires further exploration.
 
+---
+
+## 📖 Code
 Below is an example implementation of Few-Shot classification using Python, PyTorch, and Prototypical Networks. Prototypical Networks is a metric-based meta-learning method suitable for Few-Shot classification tasks. This example uses a simple 2D point classification task to demonstrate how meta-learning achieves Few-Shot classification.
 
 ```python
@@ -164,7 +167,7 @@ if __name__ == "__main__":
 ```
 
 
-### Code Description
+## 📖 Code Description
 1. **Task**: The code implements a simple 2D point classification task, where each task consists of `n_way` classes, with each class having `k_shot` support samples and `k_query` query samples. Data points are generated around random centers to simulate classification tasks.
 2. **Model**: `ProtoNet` is a three-layer fully connected network that maps inputs to an embedding space for prototype and distance calculations.
 3. **Prototypical Networks Algorithm**:
@@ -191,7 +194,7 @@ Test Accuracy on new task: 0.8933
 ```
 This indicates the model’s classification accuracy on a new task.
 
-### Extensions
+## 📖 Extensions
 - **Dataset**: This example uses synthetic data but can be adapted for real datasets (e.g., Omniglot or miniImageNet).
 - **Hyperparameters**: Adjust `n_way`, `k_shot`, `k_query`, or network architecture to suit different scenarios.
 - **Visualization**: Add matplotlib code to visualize the embedding space or classification results.
