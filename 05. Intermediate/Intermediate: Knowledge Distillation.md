@@ -1,5 +1,5 @@
 
-## Knowledge Distillation (Knowledge Distillation)
+# Knowledge Distillation
 
 In deep learning, **Knowledge Distillation (KD)** is a **model compression and transfer learning technique**.
 Its core idea is:
@@ -15,7 +15,7 @@ In this way, the student model can significantly reduce computational cost and s
 </div>
 
 
-## Basic Principles of Knowledge Distillation
+## 📖 Basic Principles of Knowledge Distillation
 
 1. **Teacher Model (Teacher)**
    Usually a high-performance model trained on large-scale datasets, possibly very large (e.g., BERT, ResNet-152).
@@ -32,7 +32,7 @@ In this way, the student model can significantly reduce computational cost and s
      * Example: If the hard label is “cat”, the teacher model might output `[cat:0.85, dog:0.10, fox:0.05]`, which contains more information about the similarity between classes.
 
 
-## Types of Knowledge Distillation
+## 📖 Types of Knowledge Distillation
 
 1. **Offline Distillation**
    Train the teacher model first, then use it to guide the student model.
@@ -47,14 +47,14 @@ In this way, the student model can significantly reduce computational cost and s
    The student not only learns output probabilities but also mimics the teacher’s intermediate feature representations or attention maps.
 
 
-## Application Scenarios
+## 📖 Application Scenarios
 
 * **Model Compression**: Enable lightweight models to approach the performance of large models.
 * **Deployment Optimization**: Run efficient models on mobile devices or embedded systems.
 * **Semi-Supervised Learning**: Use teacher model predictions on unlabeled data to generate pseudo-labels to help student training.
 * **Ensemble Simplification**: Distill a large ensemble model into a single student model, reducing inference cost.
 
-## Mathematical Description of Knowledge Distillation
+## 📖 Mathematical Description of Knowledge Distillation
 
 ### Basic Idea
 
@@ -99,7 +99,7 @@ Where:
 * \$\mathcal{L}\_ {\text {CE}}(y, p^{(S)}\_{T=1}) = - \sum\_i y\_i \log p\_i^{(S)}\$, using the true labels \$y\$;
 * \$\alpha \in \[0,1]\$ controls the weight between true labels and teacher signals.
 
-## Code
+## 📖 Code
 
 Here is a minimal PyTorch-based Knowledge Distillation example using a real dataset (MNIST handwritten digit dataset) to implement knowledge distillation from a larger teacher model (CNN) to a smaller student model (MLP). The task is digit classification, with knowledge distillation guiding the student model’s learning via the teacher model’s soft labels. Results will be demonstrated by evaluating classification accuracy and visualizing the student model’s prediction confusion matrix.  
 
@@ -275,7 +275,7 @@ if __name__ == "__main__":
 
 ```
 
-### Code Description:
+## 📖 Code Description:
 1. **Dataset**:
    - Uses the MNIST handwritten digit dataset (60,000 training samples, 10,000 test samples, 28x28 grayscale images, 10 classes).
    - Data is loaded via `torchvision` with standard normalization (`ToTensor`).
@@ -304,13 +304,13 @@ if __name__ == "__main__":
    - Requires `torch`, `torchvision`, `sklearn`, `matplotlib`, and `seaborn` (`pip install torch torchvision scikit-learn matplotlib seaborn`).
    - The MNIST dataset is automatically downloaded to the `./data` directory.
 
-### Results:
+## 📖 Results:
 - Outputs training loss for both teacher and student models (per epoch).
 - Outputs the student model's classification accuracy on the test set.
 - Generates `mnist_confusion_matrix.png`, showcasing the student model's classification performance (confusion matrix).
 - Prints true and predicted labels for the first 5 test samples.
 
-### Notes:
+## 📖 Notes:
 - The confusion matrix is saved in the working directory and can be viewed with an image viewer; darker blue shades indicate higher prediction counts.
 - The models are simple (teacher is a small CNN, student is a small MLP), suitable for demonstrating knowledge distillation concepts; for practical applications, consider increasing model complexity or tuning hyperparame
 
