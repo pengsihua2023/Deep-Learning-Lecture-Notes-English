@@ -33,17 +33,17 @@ $$
 - **Consistency between training and testing**: LN normalization is based on the feature dimensions of a single sample, without requiring global statistics during testing as in BN.  
 - **Applicable scenarios**: LN performs well in sequence models (e.g., RNN, Transformer) or small-batch cases because it does not rely on batch statistics.  
 
-#### Differences from BatchNorm
+### 📖 Differences from BatchNorm
 - **BN**: Normalizes each feature dimension across the batch, depends on batch size, suitable for CNN.  
 - **LN**: Normalizes the feature dimensions of each sample, independent of batch size, suitable for RNN and Transformer.  
 - **Computation axis**: BN normalizes along the batch axis, LN normalizes along the feature axis.  
 
-#### Advantages
+### 📖 Advantages
 - **Independent of batch size**: Suitable for small-batch or single-sample inference (e.g., online learning).  
 - **Stability**: Reduces internal covariate shift, accelerates training, and allows higher learning rates.  
 - **Applicability**: Standard component in Transformers (e.g., BERT, GPT).  
 
-#### Limitations
+### 📖 Limitations
 - **Computation overhead**: May slightly increase computation for high-dimensional features.  
 - **Not suitable for some tasks**: BN usually outperforms LN in convolutional networks.  
 
