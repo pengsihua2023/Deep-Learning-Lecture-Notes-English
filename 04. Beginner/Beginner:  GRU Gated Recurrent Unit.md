@@ -10,15 +10,15 @@ The Gated Recurrent Unit (GRU) is a variant of Recurrent Neural Networks (RNNs) 
 </div>
 
 
-### Core Concept of GRU
+### 📖 Core Concept of GRU
 GRU controls the flow and forgetting of information through an update gate and a reset gate, effectively capturing long-term dependencies in sequences. Compared to LSTM, GRU combines the forget gate and input gate into a single update gate, simplifying the structure while retaining strong modeling capabilities.
 
-### GRU Working Mechanism
+### 📖 GRU Working Mechanism
  
 A GRU unit at each time step receives the current input $x_t$ and the hidden state of the previous time step $h_{t-1}$, and outputs a new hidden state $h_t$. Its core formulas are as follows:
 
 
-### 1. Update Gate ($z_t$):
+#### 1. Update Gate ($z_t$):
   
 $$
 z_t = \sigma(W_z \cdot [h_{t-1}, x_t] + b_z)
@@ -27,7 +27,7 @@ $$
 The update gate determines how much of the hidden state information from the previous time step is retained, and how much new information is accepted. $\sigma$ is the sigmoid activation function, with outputs in the range $[0, 1]$.
 
 
-### 2. Reset Gate ($r_t$):
+#### 2. Reset Gate ($r_t$):
 
 $$
 r_t = \sigma(W_r \cdot [h_{t-1}, x_t] + b_r)
@@ -36,7 +36,7 @@ $$
 The reset gate controls the degree of combination between the current input and the previous hidden state, and is used to decide how much past information to forget.
 
 
-### 3. Candidate Hidden State ($\tilde{h}_t$):
+#### 3. Candidate Hidden State ($\tilde{h}_t$):
 <div align="center">
 <img width="280" height="35" alt="image" src="https://github.com/user-attachments/assets/5debf918-f924-4f59-be30-f3094a401580" /> 
 </div>
@@ -44,7 +44,7 @@ The reset gate controls the degree of combination between the current input and 
 The candidate hidden state is obtained by adjusting the historical information with the reset gate and combining it with the current input. $\odot$ denotes element-wise multiplication, and $\tanh$ is the activation function.
 
 
-### 4. Final Hidden State ($h_t$):
+#### 4. Final Hidden State ($h_t$):
 
 $$
 h_t = (1 - z_t) \odot h_{t-1} + z_t \odot \tilde{h}_t
@@ -52,31 +52,31 @@ $$
 
 The final hidden state is obtained by weighting and combining the previous hidden state and the candidate hidden state through the update gate.
 
-### GRU Characteristics
+### 📖 GRU Characteristics
 - **Simplified Structure**: Compared to LSTM, GRU has only two gates (update gate and reset gate), fewer parameters, and higher computational efficiency.
 - **Long-Term Dependencies**: Through its gating mechanism, GRU effectively captures dependencies in long sequences, mitigating the vanishing gradient problem.
 - **Flexibility**: GRU is suitable for various sequence modeling tasks, such as natural language processing (NLP) and time series forecasting.
 
-### Comparison of GRU and LSTM
+### 📖 Comparison of GRU and LSTM
 - **Similarities**: Both use gating mechanisms to address RNN gradient issues and are suitable for long-sequence tasks.
 - **Differences**:
   - GRU has a simpler structure, fewer parameters, and faster training speed.
   - LSTM has a separate memory cell, suitable for more complex tasks but with higher computational cost.
   - In practice, the performance of GRU and LSTM varies by task, and the choice depends on the specific scenario.
 
-### Application Scenarios
+### 📖 Application Scenarios
 GRU is widely used in:
 - **Natural Language Processing**: Machine translation, text generation, sentiment analysis.
 - **Time Series Analysis**: Stock price prediction, weather forecasting.
 - **Speech Processing**: Speech recognition, speech synthesis.
 
-### Summary
+### 📖 Summary
 GRU is an efficient, simplified variant of RNNs that achieves selective information transfer and forgetting through update and reset gates. While maintaining strong sequence modeling capabilities, it reduces computational complexity, making it an ideal choice for many sequence tasks.
 
-## Example
+### 📖 Example
 Below is a simple GRU example using Python, PyTorch, and a real dataset (sine wave sequence) to demonstrate its principles, with visualization of prediction results using Matplotlib. The example uses sine wave data for sequence prediction, where the GRU learns the sequence pattern and predicts subsequent values. The code includes data preparation, GRU model definition, training, and visualization.
 
-### Description
+#### Description
 **Dataset**: Uses a sine wave (sin(t)) as real data, generating 1000 points. Each sample contains 10 consecutive points as input to predict the next point.
 - **GRU Model**:
   - Input size: 1 (univariate time series).
@@ -86,7 +86,7 @@ Below is a simple GRU example using Python, PyTorch, and a real dataset (sine wa
 - **Training**: Uses the Adam optimizer and Mean Squared Error (MSE) loss function, trained for 100 epochs.
 - **Visualization**: Uses Matplotlib to plot true values (solid blue line) and predicted values (dashed red line), demonstrating GRU’s ability to fit the sine wave pattern.
 
-## Code
+### 📖 Code
 ```python
 # Fix OpenMP error - must be before all other imports
 import os
@@ -396,7 +396,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### Training Results
+### 📖 Training Results
 GRU learns the periodic pattern of the sine wave through its update and reset gates.
 <div align="center">
 <img width="520" height="120" alt="image" src="https://github.com/user-attachments/assets/c7071ed2-599e-4654-8796-e9581545b06e" />
