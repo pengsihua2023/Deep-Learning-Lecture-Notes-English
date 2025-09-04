@@ -3,7 +3,7 @@
 
 ### Principle and Usage
 
-#### **Principle**
+#### 📖 **Principle**
 
 Adagrad (Adaptive Gradient Algorithm) is an adaptive learning rate optimization algorithm specifically designed for handling sparse data and convex optimization problems. It adjusts the learning rate of each parameter based on the accumulation of historical gradients, so that frequently updated parameters have smaller learning rates, while sparsely updated parameters maintain larger learning rates. The core principles of Adagrad are as follows:
 
@@ -61,7 +61,7 @@ $$
 
 ---
 
-#### **PyTorch Usage**
+#### 📖 **PyTorch Usage**
 
 PyTorch provides a built-in `torch.optim.Adagrad` optimizer, which is very simple to use. Below is a minimal code example showing how to train a simple CNN with Adagrad for an image classification task.
 
@@ -97,7 +97,7 @@ optimizer.step()  # Update parameters
 print(f"Loss: {loss.item()}")
 ```
 
-##### **Code Explanation**
+#### 📖 **Code Explanation**
 
 * **Model**: Uses pretrained ResNet18, replacing the last layer for a 10-class classification task.
 * **Optimizer**: `optim.Adagrad` initialization, parameters include:
@@ -110,7 +110,7 @@ print(f"Loss: {loss.item()}")
 
 
 
-#### **Notes**
+#### 📖 **Notes**
 
 1. **Hyperparameters**:
 
