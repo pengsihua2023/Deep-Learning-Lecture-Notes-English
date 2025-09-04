@@ -36,7 +36,7 @@ $$
 2. **Averaged parameters update** (starting from some iteration \$t\_0\$):
 
 $$
-\bar{\theta}_{t+1} = \frac{1}{t - t_0 + 1} \sum_{k=t_0}^{t} \theta_k
+\bar{\theta}_ {t+1} = \frac{1}{t - t_0 + 1} \sum_{k=t_0}^{t} \theta_k
 $$
 
 The final model parameters are:
