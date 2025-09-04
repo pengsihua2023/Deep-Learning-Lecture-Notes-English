@@ -1,10 +1,10 @@
 
 ## Layer Normalization of Input
-### What is Layer Normalization?
+### 📖 What is Layer Normalization?
 
 Layer Normalization (LN) is a regularization technique used in deep learning to normalize the inputs of neural networks, especially suitable for Recurrent Neural Networks (RNN) and Transformer models. Unlike Batch Normalization (BN), LN normalizes **the feature dimensions of a single sample** at each layer instead of across the batch. This makes LN insensitive to batch size, particularly suitable for small-batch or sequential tasks.
 
-#### Core Principle
+### 📖 Core Principle
 
 For the input $x \in \mathbb{R}^d$ of each sample ($d$ is the feature dimension, such as hidden layer size), LN performs the following steps:
 
@@ -49,7 +49,7 @@ $$
 
 ---
 
-### Python Code Example
+### 📖 Python Code Example
 
 Below is a simple PyTorch example implementing Layer Normalization, based on the MNIST handwritten digit classification task. The code adds LN layers to a fully connected neural network, combined with Adam optimizer and early stopping (as described earlier).
 
@@ -224,7 +224,7 @@ Actual results may vary due to random initialization.
 
 ---
 
-### Key Points
+### 📖 Key Points
 - **LN placement**: Usually after linear or convolutional layers and before activation functions.  
 - **Batch independence**: LN normalizes each sample independently, suitable for small-batch or single-sample inference.  
 - **Learnable parameters**: `nn.LayerNorm` automatically maintains `gamma` and `beta`, which are learned via the optimizer.  
@@ -234,12 +234,12 @@ Actual results may vary due to random initialization.
 
 ---
 
-### Practical Application Scenarios
+### 📖 Practical Application Scenarios
 - **Transformer models**: LN is a standard component in Transformers (e.g., BERT, GPT), typically used after Multi-Head Attention and Feed-Forward layers.  
 - **Sequential tasks**: LN is more stable than BN in models like RNN and LSTM.  
 - **Small-batch scenarios**: LN is suitable for online learning or when batch size = 1.  
 
-#### Notes
+### 📖 Notes
 - **Feature dimension**: `nn.LayerNorm` requires specifying the normalization dimension (e.g., 128) to match the input.  
 - **Computation overhead**: LN has slightly higher computation cost than BN for high-dimensional features, but generally negligible.  
 - **Combination with other regularization**: Can be used with Dropout, L1/L2 regularization (as described earlier).  
