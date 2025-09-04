@@ -1,4 +1,4 @@
-## Advanced: Large model fine tuning
+# Advanced: Large model fine tuning
 Large Model Fine-Tuning refers to the process of further training large-scale pre-trained models (e.g., BERT, LLaMA, GPT) on data specific to a particular task or domain, adjusting model parameters to improve performance on the target task. Fine-tuning leverages the general knowledge of pre-trained models, combining it with a small amount of task-specific data to significantly reduce training costs and data requirements while enhancing model performance in specific scenarios.
 
 <div align="center">  
@@ -10,13 +10,13 @@ Large Model Fine-Tuning refers to the process of further training large-scale pr
 </div>
 
 
-### Core Concepts of Fine-Tuning
+## 📖 Core Concepts of Fine-Tuning
 - **Pre-trained Model**: A model trained on large-scale general datasets (e.g., Wikipedia, ImageNet), capturing universal language or visual features.
 - **Fine-Tuning Objective**: Adapt the pre-trained model to a specific task (e.g., text classification, image recognition) or domain (e.g., medical, financial) by adjusting some or all parameters.
 - **Data Efficiency**: Fine-tuning typically requires only a small amount of labeled data, saving resources compared to training from scratch.
 - **Overfitting Risk**: Due to the large number of parameters in large models, fine-tuning with insufficient data can lead to overfitting.
 
-### Main Fine-Tuning Techniques
+## 📖 Main Fine-Tuning Techniques
 1. **Full Fine-Tuning**:
    - **Description**: Adjusts all parameters of the pre-trained model to optimize the entire network for the target task.
    - **Applicable Scenarios**: When there is sufficient target task data and the task differs significantly from the pre-training data.
@@ -56,7 +56,7 @@ Large Model Fine-Tuning refers to the process of further training large-scale pr
    - **Disadvantages**: Requires domain-specific data, potentially increasing preprocessing costs.
    - **Example**: Continuing pre-training BERT on legal documents before fine-tuning for legal text classification.
 
-### Fine-Tuning Workflow
+## 📖 Fine-Tuning Workflow
 1. **Select Pre-trained Model**: Choose an appropriate model based on the task type (e.g., BERT for NLP, ResNet for computer vision).
 2. **Prepare Dataset**: Collect labeled data for the target task, applying data augmentation if necessary.
 3. **Modify Model Structure**: Adjust the model’s output layer (e.g., classification head) based on task requirements.
@@ -64,12 +64,12 @@ Large Model Fine-Tuning refers to the process of further training large-scale pr
 5. **Train and Evaluate**: Fine-tune on the training set, tune hyperparameters on the validation set, and evaluate performance on the test set.
 6. **Deploy**: Deploy the fine-tuned model to the production environment.
 
-### Application Scenarios
+## 📖 Application Scenarios
 - **Natural Language Processing**: Text classification, named entity recognition, machine translation, dialogue systems.
 - **Computer Vision**: Image classification, object detection, image segmentation.
 - **Cross-Domain Tasks**: Medical image diagnosis, legal document analysis, financial risk modeling.
 
-### Advantages and Challenges
+## 📖 Advantages and Challenges
 - **Advantages**:
   - Leverages universal knowledge from pre-trained models, reducing data and computational requirements.
   - Quickly adapts to specific tasks, improving performance.
@@ -79,8 +79,8 @@ Large Model Fine-Tuning refers to the process of further training large-scale pr
   - **Computational Resources**: Full fine-tuning requires significant GPU/TPU resources.
   - **Catastrophic Forgetting**: Fine-tuning may degrade the pre-trained model’s general knowledge.
   - **Domain Gap**: Large differences between the source model and target task may require additional processing.
-
-### Simple Code Example (Fine-Tuning with PyTorch and LoRA)
+---
+## 📖 Simple Code Example (Fine-Tuning with PyTorch and LoRA)
 Below is an example of fine-tuning a pre-trained BERT model for text classification using LoRA, based on Hugging Face’s `transformers` library.
 ## Code
 ```python
@@ -140,7 +140,7 @@ print(f"Evaluation Results: {eval_results}")
 
 ```
 
-### Code Explanation
+## 📖 Code Explanation
 1. **Task**: Perform sentiment classification (positive/negative) on the IMDB dataset using LoRA to fine-tune BERT.
 2. **Model**: Load the pre-trained `bert-base-uncased` model, add a LoRA adapter, and fine-tune only the low-rank matrices of the attention modules.
 3. **Dataset**: IMDB sentiment analysis dataset, with text tokenized and preprocessed.
@@ -162,7 +162,7 @@ Epoch 2: Loss: 0.2345, Accuracy: 0.8900
 Evaluation Results: {'eval_loss': 0.2100, 'eval_accuracy': 0.9050}
 ```
 
-### Comparison with Meta-Learning and Federated Learning
+## 📖 Comparison with Meta-Learning and Federated Learning
 - **Meta-Learning**: Focuses on learning strategies to quickly adapt to new tasks, emphasizing model generalization, while fine-tuning optimizes for a specific task.
 - **Federated Learning**: Involves distributed training to protect data privacy; fine-tuning can be part of its local training process.
 - **Large Model Fine-Tuning**: Focuses on adapting pre-trained models, emphasizing parameter efficiency and task-specific optimization.
