@@ -1,4 +1,4 @@
-## Dataset Introduction: CIFAR-10 Dataset
+# Dataset Introduction: CIFAR-10 Dataset
 The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton from the University of Toronto, released in 2009. Designed for image classification tasks, it is suitable for developing and testing machine learning and deep learning algorithms. Its moderate scale and ease of processing make it an entry-level dataset, commonly used in teaching and research.
 
 ### Dataset Overview
