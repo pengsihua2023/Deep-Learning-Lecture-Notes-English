@@ -1,5 +1,3 @@
-
-
 # Model Pruning
 
 ## 📖 1. Definition
