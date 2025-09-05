@@ -1,7 +1,7 @@
-## Hyperparameter Search (Bayesian Optimization)
-### 📖 What is Bayesian Optimization?
+# Hyperparameter Search (Bayesian Optimization)
+## 📖 What is Bayesian Optimization?
 Bayesian Optimization is a probabilistic model-based global optimization algorithm commonly used for hyperparameter tuning in machine learning. It is particularly suited for scenarios where evaluating the target function is computationally expensive, such as training a deep learning model. Unlike grid search or random search, Bayesian optimization builds a surrogate model (typically a Gaussian Process) to model the distribution of the target function and uses an acquisition function (e.g., Expected Improvement) to intelligently select the next hyperparameter point to evaluate, efficiently exploring the hyperparameter space.
-### 📖 Core Principle
+## 📖 Core Principle
 - **Surrogate Model**: Uses a Gaussian Process or other probabilistic model to fit the performance of evaluated points, predicting the mean and uncertainty of unevaluated points.
 - **Acquisition Function**: Calculates the "value" of each potential point based on the surrogate model, balancing exploration (high uncertainty points) and exploitation (points predicted to perform well).
 - **Iterative Process**:
@@ -13,7 +13,7 @@ Bayesian Optimization is a probabilistic model-based global optimization algorit
 - **Disadvantages**: The computational overhead of the surrogate model may increase in very high dimensions; requires defining reasonable hyperparameter boundaries.
 Bayesian optimization is widely used for tuning models like XGBoost and neural networks, significantly reducing search time and improving performance.
 ---
-### 📖 Python Code Example
+## 📖 Python Code Example
 Below is an example of Bayesian optimization for hyperparameter search using the `skopt` library’s `BayesSearchCV` in Python. The example tunes hyperparameters (e.g., learning rate, max depth) for an XGBoost classifier on the digits dataset. Note: Running this code requires installing `skopt` and `xgboost` (`pip install scikit-optimize xgboost`) and ensuring base libraries like `numpy` and `sklearn` are available.
 ```python
 import numpy as np
@@ -57,7 +57,7 @@ print(f"Best Accuracy: {best_score:.4f}")
 test_score = optimizer.score(X_test, y_test)
 print(f"Test Set Accuracy: {test_score:.4f}")
 ```
-### 📖 Code Explanation
+## 📖 Code Explanation
 1. **Data Preparation**: Loads the sklearn digits dataset and splits it into training/test sets.
 2. **Search Space**: Defines the range and distribution type (continuous, discrete) for hyperparameters.
 3. **Optimizer Initialization**: `BayesSearchCV` encapsulates the Bayesian optimization process, using a Gaussian Process as the surrogate model.
