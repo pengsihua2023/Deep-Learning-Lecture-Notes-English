@@ -1,4 +1,4 @@
-## Beginner: RNN
+# Beginner: RNN
 ### Recurrent Neural Network
 * Importance: RNNs are suitable for processing sequential data (such as text and speech) and are fundamental in natural language processing and time series prediction.
 * Core Concepts:
