@@ -2,7 +2,7 @@
 ### What is Scikit-learn?
 Scikit-learn is an open-source Python library for machine learning, offering simple and efficient tools for data mining and analysis. Built on NumPy, SciPy, and Matplotlib, it supports tasks such as classification, regression, clustering, dimensionality reduction, model selection, and data preprocessing. While primarily designed for traditional machine learning algorithms, Scikit-learn remains a vital tool in deep learning for **data preprocessing**, **feature engineering**, **model evaluation**, and **auxiliary modeling**. It integrates seamlessly with deep learning frameworks like TensorFlow and PyTorch, especially for data preparation and model performance evaluation.
 
-#### Core Features of Scikit-learn:
+## Core Features of Scikit-learn:
 - **Unified Interface**: All models follow a consistent API with methods like `fit`, `predict`, and `transform`.
 - **Rich Functionality**: Offers tools for preprocessing, feature selection, model evaluation, and pipelines.
 - **High Performance**: Leverages NumPy and SciPy for optimized performance.
@@ -16,7 +16,7 @@ In deep learning, Scikit-learn is primarily used for:
 
 ---
 
-### Scikit-learn Knowledge Essential for Deep Learning
+## Scikit-learn Knowledge Essential for Deep Learning
 Below are the key Scikit-learn skills to master for deep learning, with practical applications and code examples. These cover data preparation, feature engineering, model evaluation, and auxiliary tasks relevant to deep learning workflows.
 
 #### 1. **Data Preprocessing**
@@ -206,9 +206,9 @@ While deep learning relies on neural networks, Scikit-learn’s traditional mode
     print(f1_score(y_test, y_pred, average='macro'))
     ```
 
----
 
-### Typical Scikit-learn Use Cases in Deep Learning
+
+## Typical Scikit-learn Use Cases in Deep Learning
 1. **Data Preprocessing**:
    - Standardize features (e.g., image pixel values, numerical features).
    - Encode categorical variables (e.g., one-hot encoding for labels).
@@ -227,9 +227,9 @@ While deep learning relies on neural networks, Scikit-learn’s traditional mode
 6. **Pipeline Building**:
    - Combine preprocessing and modeling steps to streamline workflows.
 
----
 
-### Summary of Core Scikit-learn Functions to Master
+
+## Summary of Core Scikit-learn Functions to Master
 The following are the most commonly used Scikit-learn functions for deep learning, recommended for mastery:
 - **Preprocessing**:
   - Standardization: `StandardScaler`, `MinMaxScaler`.
@@ -251,9 +251,8 @@ The following are the most commonly used Scikit-learn functions for deep learnin
 - **Hyperparameter Tuning**:
   - `GridSearchCV`, `RandomizedSearchCV`.
 
----
 
-### Learning Recommendations
+## Learning Recommendations
 - **Practice**: Use Scikit-learn to process real datasets (e.g., Kaggle’s Titanic or MNIST) for preprocessing, splitting, and evaluation.
 - **Read Documentation**: The official Scikit-learn documentation (scikit-learn.org) offers detailed tutorials and examples.
 - **Integrate with Deep Learning**: Use Scikit-learn for data preprocessing, feed data into TensorFlow/PyTorch models, and evaluate results with Scikit-learn metrics.
