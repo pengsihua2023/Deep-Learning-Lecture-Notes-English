@@ -1,5 +1,4 @@
-
-## SGD Optimizer (Stochastic Gradient Descent)
+# SGD Optimizer (Stochastic Gradient Descent)
 
 
 ## 📖 **Principle**
