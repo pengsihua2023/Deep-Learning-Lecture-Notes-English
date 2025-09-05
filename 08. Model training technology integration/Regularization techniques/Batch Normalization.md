@@ -1,10 +1,10 @@
 
-## Batch Normalization of Input
-### 📖 What is Batch Normalization?
+# Batch Normalization of Input
+## 📖 What is Batch Normalization?
 
 Batch Normalization (BN) is a widely used regularization technique in deep learning. By normalizing the inputs at each layer, BN accelerates training and improves model stability. BN normalizes activations within each mini-batch so that their mean is 0 and variance is 1, then applies a linear transformation with learnable scaling and shifting parameters.
 
-### 📖 Core Principle
+## 📖 Core Principle
 
 For the input (activation) $x$ of each layer, BN performs the following steps:
 
@@ -35,19 +35,19 @@ $$
 - **Training phase**: Use the statistics (mean and variance) of the current batch for normalization.  
 - **Testing phase**: Use global mean and variance accumulated during training (usually via exponential moving average).  
 
-### 📖 Advantages
+## 📖 Advantages
 - **Accelerates training**: Reduces Internal Covariate Shift, stabilizes training, and allows higher learning rates.  
 - **Regularization effect**: Like Dropout, BN introduces randomness from batches, reducing overfitting.  
 - **Less initialization dependency**: Less sensitive to parameter initialization, simplifies hyperparameter tuning.  
 
-### 📖 Limitations
+## 📖 Limitations
 - **Batch size dependency**: Small batches may cause unstable statistics; proper batch size is needed.  
 - **Inference overhead**: Requires maintaining global statistics during inference, adding slight computation.  
 - **Not suitable for certain tasks**: e.g., online learning or very small batch sizes.  
 
 ---
 
-### 📖 Python Code Example
+## 📖 Python Code Example
 
 Below is a simple PyTorch example implementing Batch Normalization on the MNIST handwritten digit classification task. The code adds BN layers to a fully connected neural network, combined with Adam optimizer and early stopping (as mentioned earlier).
 
@@ -186,9 +186,7 @@ print(f'Test Accuracy: {test\_accuracy:.2f}%')
 
 ```
 
-
-
-### 📖 Code Explanation
+## 📖 Code Explanation
 
 1. **Model definition**:  
    - `BatchNormNet` is a fully connected neural network with MNIST 28x28 pixel input and 10-class output.  
@@ -225,7 +223,7 @@ Actual results may vary due to random initialization.
 
 
 
-### 📖 Key Points
+## 📖 Key Points
 - **Placement of BatchNorm**: Usually placed after linear/conv layers and before activation functions.  
 - **Training vs Testing behavior**:  
 - Training: Compute batch mean and variance, update global statistics.  
@@ -235,12 +233,12 @@ Actual results may vary due to random initialization.
 
 
 
-### 📖 Practical Application Scenarios
+## 📖 Practical Application Scenarios
 - **Deep learning**: Widely used in CNNs (e.g., ResNet), Transformers (e.g., BERT), significantly improves training speed and stability.  
 - **Combined with other regularization**: Can be used together with Dropout, L1/L2 regularization (as mentioned earlier).  
 - **Large model training**: Reduces internal covariate shift when training with high learning rates or complex models.  
 
-### 📖 Notes
+## 📖 Notes
 - **Batch size**: Very small batch size may degrade BN performance.  
 - **Alternatives**: LayerNorm, GroupNorm are better suited for small-batch or sequential tasks.  
 - **Initialization**: BN is less sensitive to parameter initialization but proper setup is still required.  
