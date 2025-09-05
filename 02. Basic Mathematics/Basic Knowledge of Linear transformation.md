@@ -1,9 +1,8 @@
-## Linear Transformation
+# Linear Transformation
 A linear transformation is a core concept in **linear algebra**, essentially a class of functions that preserve the "linear structure."
 
----
 
-## 1. Definition
+## 📖 1. Definition
 
 Let $V, W$ be vector spaces over the same field $\mathbb{F}$, and consider the mapping
 
@@ -21,7 +20,7 @@ then $T$ is called a **linear transformation**.
 
 
 
-## 2. Intuitive Understanding
+## 📖 2. Intuitive Understanding
 
 The "linearity" of a linear transformation is reflected in the following two aspects:
 
@@ -38,7 +37,7 @@ In other words, **a linear transformation does not destroy the addition and scal
 
 
 
-## 3. Matrix Representation
+## 📖 3. Matrix Representation
 
 In the finite-dimensional case, any linear transformation can be represented by a matrix.
 
@@ -53,7 +52,7 @@ where $x \in \mathbb{R}^n$.
 
 
 
-## 4. Common Examples
+## 📖 4. Common Examples
 
 1. **Scaling**:
 
@@ -87,7 +86,7 @@ ${T(x,y) = (x,0)}$
 
 
 
-## 5. Comparison with Nonlinear Mappings
+## 📖 5. Comparison with Nonlinear Mappings
 
 For example $T(x) = x^2$ is not a linear transformation, because
 
@@ -97,5 +96,5 @@ $$
 
 
 
-## Summary
+## 📖 Summary
 A linear transformation is a **mapping that preserves vector addition and scalar multiplication**. In linear algebra, it is equivalent to matrix multiplication and serves as an important tool in the study of geometric transformations, signal processing, machine learning, and other fields.
