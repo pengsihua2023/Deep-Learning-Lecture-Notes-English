@@ -1,12 +1,10 @@
+# Adaptive Learning Rate (RMSprop)
 
-
-## Adaptive Learning Rate (RMSprop)
-
-### What is Adaptive Learning Rate (RMSprop, Optimizer)?
+## 📖 What is Adaptive Learning Rate (RMSprop, Optimizer)?
 
 RMSprop (Root Mean Square Propagation) is a commonly used adaptive learning rate optimization algorithm in deep learning. It aims to accelerate the convergence of gradient descent by adaptively adjusting the learning rate. It is particularly suitable for handling non-stationary objective functions (such as loss functions in neural networks) by dynamically adjusting each parameter’s learning rate based on the exponential moving average of the squared gradients. RMSprop is one of the predecessors of the Adam optimizer, simple yet efficient.
 
-#### Core Principle
+## 📖 Core Principle
 
 RMSprop scales the learning rate by maintaining the exponential moving average of squared gradients. The detailed steps are:
 
@@ -28,27 +26,27 @@ $$
 * \$\epsilon\$: A small constant (commonly \$1\text{e-}8\$) to prevent division by zero.
 * \$\sqrt{E\[g^2]\_t}\$: The root mean square (RMS) of the squared gradients, used to adaptively scale the learning rate.
 
----
 
-#### Advantages
+
+## 📖 Advantages
 
 * **Adaptivity**: Dynamically adjusts the learning rate based on gradient magnitudes, suitable for sparse or noisy gradients.
 * **Simple and Efficient**: Faster convergence than SGD and easy to implement.
 * **Stability**: Smooths gradient fluctuations through exponential moving average, reducing oscillations.
 
-#### Limitations
+## 📖 Limitations
 
 * **Lack of Momentum**: Unlike Adam, RMSprop does not use first-order momentum, which may result in slower convergence in some tasks.
 * **Hyperparameter Sensitivity**: Initial learning rate and decay rate need careful tuning.
 
-#### Comparison with Adam
+## 📖 Comparison with Adam
 
 * **RMSprop**: Uses only the second-order moment (mean of squared gradients) to scale the learning rate.
 * **Adam**: Combines first-order moment (momentum) and second-order moment, typically converging faster (see Adam optimizer section).
 
 ---
 
-### Python Code Example
+## 📖 Python Code Example
 
 Below is a minimal PyTorch example demonstrating how to use RMSprop for the MNIST handwritten digit classification task. The code is kept simple, focusing on the RMSprop implementation.
 
@@ -116,9 +114,9 @@ for epoch in range(1, epochs + 1):
     test()
 ```
 
----
 
-### Code Explanation
+
+## 📖 Code Explanation
 
 1. **Model Definition**:
 
@@ -154,9 +152,9 @@ for epoch in range(1, epochs + 1):
 
    Actual results may vary due to random initialization.
 
----
 
-### Key Points
+
+## 📖 Key Points
 
 * **Adaptivity**: RMSprop dynamically adjusts learning rates based on squared gradients, suitable for non-stationary loss functions.
 * **Hyperparameters**:
@@ -165,15 +163,15 @@ for epoch in range(1, epochs + 1):
   * `alpha=0.9`: Controls historical gradient weighting, commonly between 0.9–0.99.
 * **Comparison with Adam**: RMSprop only uses the second-order moment, while Adam also incorporates the first-order moment, leading to faster convergence but slightly higher memory cost.
 
----
 
-### Practical Applications
+
+## 📖 Practical Applications
 
 * **Deep Learning**: Suitable for CNNs, RNNs, especially in tasks with sparse or noisy gradients.
 * **Alternative to Adam**: Simpler computation, suitable for resource-constrained scenarios.
 * **Combination with Other Techniques**: Can be combined with Dropout, BatchNorm, or learning rate schedulers (e.g., ReduceLROnPlateau).
 
-#### Notes
+## 📖 Notes
 
 * **Learning Rate Tuning**: `lr` should be adjusted depending on the task, typically ranging from 1e-4 to 1e-2.
 * **Decay Rate**: If `alpha` is too high, the optimizer may be insensitive to new gradients; if too low, training may become unstable.
