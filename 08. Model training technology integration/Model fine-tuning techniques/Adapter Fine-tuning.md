@@ -1,6 +1,6 @@
 # Adapter Fine-tuning
 
-## 1. Definition
+## 📖 1. Definition
 
 **Adapter fine-tuning** is an efficient parameter tuning method, commonly used for large-scale pre-trained models (such as BERT, GPT, etc.).
 Core idea:
@@ -15,7 +15,7 @@ Core idea:
 
 This greatly reduces the number of parameters that need to be trained, while maintaining model performance.
 
-## 2. Mathematical Formula
+## 📖 2. Mathematical Formula
 
 Let:
 
@@ -39,7 +39,7 @@ Where:
 
 During training **only \$W\_{down}, W\_{up}\$ are updated**, while the rest of the model parameters remain frozen.
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 Write a minimal Adapter layer in **PyTorch** and insert it into a model:
 
@@ -83,7 +83,7 @@ out = layer(x)
 print("Output shape:", out.shape)
 ```
 
-## Explanation
+## 📖 Explanation
 
 1. **Adapter**: Two fully connected layers form a down–up bottleneck.
 2. **Residual connection**: Ensures the original model structure is not broken.
