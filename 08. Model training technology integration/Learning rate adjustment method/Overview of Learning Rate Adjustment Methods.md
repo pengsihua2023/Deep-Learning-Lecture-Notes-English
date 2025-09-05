@@ -1,10 +1,8 @@
-
-
-## Overview of Learning Rate Adjustment Methods
+# Overview of Learning Rate Adjustment Methods
 
 In deep learning, the **learning rate** is a key hyperparameter that controls the step size when the optimizer updates model parameters. A learning rate that is too high may cause the model to diverge or oscillate, while a learning rate that is too low may result in slow convergence or getting stuck in local optima. Therefore, learning rate adjustment methods are crucial in the optimization process, either dynamically or pre-defined, to improve training efficiency and model performance. Below is an overview of learning rate adjustment methods in deep learning, covering **non-adaptive** and **adaptive** approaches, as well as related strategies and implementations.
 
-### 1. **Non-Adaptive Learning Rate Adjustment Methods**
+## 📖 1. **Non-Adaptive Learning Rate Adjustment Methods**
 
 Non-adaptive methods typically adjust the learning rate based on predefined rules or scheduling strategies, without relying on historical gradient information. These methods are often used with simple optimizers (such as SGD).
 
@@ -99,9 +97,9 @@ scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda epoch:
 * **Advantages**: Stabilizes early training, suitable for large models.
 * **Disadvantages**: Requires additional warm-up step configuration.
 
----
 
-### 2. **Adaptive Learning Rate Adjustment Methods**
+
+## 📖 2. **Adaptive Learning Rate Adjustment Methods**
 
 Adaptive learning rate methods compute the learning rate dynamically for each parameter by analyzing gradient history (e.g., mean, variance). These methods are typically embedded in optimizers. Popular optimizers such as Adam already include adaptive mechanisms. Below are common adaptive optimizers and their principles:
 
@@ -165,9 +163,9 @@ $$
 * **Principle**: Improves Adam by retaining the maximum second-order moment, avoiding convergence issues.
 * **Features**: More stable in certain non-convex problems.
 
----
 
-### 3. **Combining Schedulers with Adaptive Optimizers**
+
+## 📖 3. **Combining Schedulers with Adaptive Optimizers**
 
 Although adaptive optimizers (e.g., Adam) already adjust learning rates dynamically, they can still be combined with schedulers for further optimization. Examples:
 
@@ -194,9 +192,8 @@ for epoch in range(epochs):
     scheduler.step()  # Update learning rate
 ```
 
----
 
-### 4. **Recommendations for Choosing Learning Rate Adjustment Methods**
+## 📖 4. **Recommendations for Choosing Learning Rate Adjustment Methods**
 
 * **Simple tasks or large-scale data**: Use SGD + a learning rate scheduler (e.g., StepLR or ReduceLROnPlateau).
 * **Complex non-convex problems**: Prefer Adam or AdamW for strong adaptability and fast convergence.
@@ -212,16 +209,16 @@ In binary classification tasks, Adam is often the default choice due to its robu
 
 ---
 
-### 5. **Notes**
+## 📖 5. **Notes**
 
 * **Initial Learning Rate**: Adaptive optimizers (e.g., Adam) are less sensitive to initial learning rate (commonly 0.001 or 0.0001), while non-adaptive methods (e.g., SGD) require careful tuning.
 * **Hyperparameters**: Both schedulers and adaptive optimizers require hyperparameter tuning (e.g., decay rate, step size), best optimized experimentally.
 * **Computation Overhead**: Adaptive optimizers (e.g., Adam) require storing momentum terms, increasing memory usage, while SGD is lighter.
 * **Validation Monitoring**: When using ReduceLROnPlateau, ensure validation loss or metrics are monitored.
 
----
 
-### Summary
+
+## 📖 6. Summary
 
 Learning rate adjustment methods in deep learning can be divided into:
 
