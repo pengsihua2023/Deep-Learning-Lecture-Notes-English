@@ -1,8 +1,6 @@
-
-
 # Prefix Tuning Fine-Tuning
 
-## 1. Definition
+## 📖 1. Definition
 
 **Prefix Tuning** is a Parameter-Efficient Fine-Tuning (PEFT) method.
 Core idea:
@@ -13,9 +11,9 @@ Core idea:
 
 In this way, Prefix Tuning can greatly reduce the number of trainable parameters, and for different tasks, only a small prefix needs to be stored to achieve transfer.
 
----
 
-## 2. Mathematical Formulation
+
+## 📖 2. Mathematical Formulation
 
 Let the input of a Transformer attention layer be **query**, **key**, and **value**:
 
@@ -46,7 +44,7 @@ During training, only \${P\_k^l, P\_v^l}\$ are updated, while the original \$W\_
 
 ---
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 Here is a minimal **Prefix Tuning** example in PyTorch (adding prefix in a Transformer layer):
 
@@ -98,9 +96,8 @@ Output shape: torch.Size([10, 2, 128])
 
 This shows that the Prefix Tuning layer runs correctly.
 
----
 
-## Summary
+## 📖 Summary
 
 * **Prefix Tuning**: Introduces prefix key/value before the attention layer, without modifying original weights.
 * **Advantages**: Greatly reduces trainable parameters, allows easy multi-task sharing of pre-trained models.
@@ -114,7 +111,7 @@ $$
 
 Now, here is a full example of **Prefix Tuning fine-tuning with Hugging Face PEFT** on BERT, demonstrated with a small text classification task (SST-2 sentiment classification).
 
-## Prefix Tuning with Hugging Face PEFT
+## 📖 Prefix Tuning with Hugging Face PEFT
 
 ```python
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, TrainingArguments, Trainer
@@ -181,9 +178,9 @@ pred = outputs.logits.argmax(dim=-1).item()
 print(f"Input: {text} → Predicted class: {pred}")
 ```
 
----
 
-## Explanation
+
+## 📖 Explanation
 
 1. **Prefix Tuning configuration**
 
