@@ -1,21 +1,5 @@
 # Transfer Learning Tutorial
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Core Concepts](#core-concepts)
-3. [Main Approaches](#main-approaches)
-4. [Application Scenarios](#application-scenarios)
-5. [Advantages and Challenges](#advantages-and-challenges)
-6. [Difference from Meta-Learning](#difference-from-meta-learning)
-7. [PyTorch Code Example](#pytorch-code-example)
-
-   * [Code Explanation](#code-explanation)
-   * [Requirements](#requirements)
-   * [Example Output](#example-output)
-
----
-
 ## 📖 1. Introduction
 
 **Transfer Learning** is a machine learning technique where knowledge or model parameters learned from one task/domain (*source*) are applied to another related but different task/domain (*target*).
