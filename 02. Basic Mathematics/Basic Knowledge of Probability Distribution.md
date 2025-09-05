@@ -1,7 +1,7 @@
 
 # Basics of Probability Distribution
 
-## 1. Mathematical Definition
+## 📖 1. Mathematical Definition
 
 * **Discrete random variable** (e.g., dice, coin toss):
   Probability Mass Function (PMF):
@@ -30,7 +30,7 @@
 
 
 
-## 2. Common Probability Distributions
+## 📖 2. Common Probability Distributions
 
 * Bernoulli distribution:
 
