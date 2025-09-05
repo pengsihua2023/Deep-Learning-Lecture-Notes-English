@@ -55,7 +55,7 @@ The true solution is:
 $$
 u(x) = \sin(\pi x).
 $$
-
+### Code
 The code includes neural network definition, loss computation, and training loop.
 
 ```python
