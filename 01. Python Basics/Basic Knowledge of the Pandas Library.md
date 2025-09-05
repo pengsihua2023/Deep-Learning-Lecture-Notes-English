@@ -1,5 +1,6 @@
 # Python Basics: Fundamentals of the Pandas Library
-What is Pandas?Pandas is an open-source Python library designed for data analysis and manipulation, specifically for handling structured data such as tabular data and time series. Built on top of NumPy, it provides efficient and flexible data structures and tools for data manipulation, widely used in data preprocessing, exploratory data analysis (EDA), and preparing data for deep learning. Pandas is a core library in data science and machine learning workflows, seamlessly integrating with NumPy, Matplotlib, and deep learning frameworks like TensorFlow and PyTorch.  
+## 📖 What is Pandas?
+Pandas is an open-source Python library designed for data analysis and manipulation, specifically for handling structured data such as tabular data and time series. Built on top of NumPy, it provides efficient and flexible data structures and tools for data manipulation, widely used in data preprocessing, exploratory data analysis (EDA), and preparing data for deep learning. Pandas is a core library in data science and machine learning workflows, seamlessly integrating with NumPy, Matplotlib, and deep learning frameworks like TensorFlow and PyTorch.  
 
 ## 📖 Core Features of Pandas:
 - **Core Data Structures**:
