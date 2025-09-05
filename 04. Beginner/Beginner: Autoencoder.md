@@ -1,4 +1,4 @@
-## Autoencoder
+# Autoencoder
 
 - Importance:An Autoencoder is an unsupervised learning model used for data compression, denoising, or feature learning.It is a precursor to generative models (e.g., GANs) and is widely used in data preprocessing and anomaly detection.  
 - Core Concept:An Autoencoder consists of an encoder (compresses data) and a decoder (reconstructs data), with the goal of making the output as close as possible to the input.Analogy: Like a "data compressor," it compresses a large file and then decompresses it, striving to preserve the original.  
@@ -16,12 +16,12 @@ $$
 </div>
 
 
-### 📖 1. Mathematical Description of Autoencoder
+## 📖 1. Mathematical Description of Autoencoder
 
 Basic StructureAn Autoencoder consists of an Encoder and a Decoder:  
 * **Encoder**: Map the input $x \in \mathbb{R}^d$ to a low-dimensional latent representation $z \in \mathbb{R}^m$ (usually $m < d$).
 * **Decoder**: Reconstruct $z$ into output $\hat{x} \in \mathbb{R}^d$, with the goal that $\hat{x} \approx x$.
-### 📖 2. Mathematical Expression  
+## 📖 2. Mathematical Expression  
 
 Here’s the English translation of the Chinese text, keeping the formulas in LaTeX unchanged:
 
@@ -41,7 +41,7 @@ $$
 
 where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th elements of the input and the reconstructed output, respectively.  
 
-### 📖 3. Parameterization  
+## 📖 3. Parameterization  
 
 * **Encoder**: $f(x) = \sigma(W_e x + b_e)$
 
@@ -54,7 +54,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 * **Optimization**: Adjust parameters $\theta = $
     { $\{W_e, b_e, W_d, b_d}$ } via gradient descent to minimize $\mathcal{L}$.
 
-### 📖 4. Regularization Variants
+## 📖 4. Regularization Variants
   
   - Sparse Autoencoder: Add a sparsity penalty to encourage fewer neuron activations in $z$.  
 
@@ -71,7 +71,7 @@ where $n$ is the number of samples, and $x_i$ and $\hat{x}_i$ are the $i$-th ele
 
   $$\mathcal{L}(x, g(f(\tilde{x})))$$
 
-### 📖 5. Optimization  
+## 📖 5. Optimization  
   
 Optimized via backpropagation:   
   
@@ -79,13 +79,13 @@ $$
 \theta^{*} = \arg \min_{\theta} \frac{1}{n} \sum_{i=1}^{n} \mathcal{L}\bigl(x_i, g(f(x_i))\bigr)
 $$
 
-### 📖 6. Applications  
+## 📖 6. Applications  
 
 * **Dimensionality reduction**: $z$ is used for feature extraction or data compression.
 * **Denoising**: Recover $x$ from $\tilde{x}$.
 * **Anomaly detection**: Samples with large reconstruction error may be anomalies.
 
-### 📖 7. Code
+## 📖 7. Code
 ```python
 import torch
 import torch.nn as nn
@@ -236,7 +236,7 @@ if __name__ == "__main__":
         plt.savefig(f'results/loss_curve_{epoch}.png')
         plt.close()
 ```
-### 📖 8. Results
+## 📖 8. Results
 ====> Epoch: 9 Average training loss: 69.1569   
 ====> Test set loss: 69.0569  
 Train Epoch: 10 [0/60000 (0%)]  Loss: 71.628830    
