@@ -1,4 +1,4 @@
-## Overview of Regularization Techniques
+# Overview of Regularization Techniques
 ### 📖 What Are Regularization Techniques in Deep Learning?
 Regularization techniques are methods used in deep learning to **prevent model overfitting** and improve generalization. Overfitting occurs when a model performs well on training data but poorly on test or new data because it has overlearned the noise or specific patterns in the training data. Regularization introduces constraints or randomness during training to limit model complexity or enhance robustness, thereby improving performance on unseen data.
 
