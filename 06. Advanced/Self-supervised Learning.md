@@ -1,6 +1,6 @@
 # Advanced: Self-Supervised Learning
 
-## Introduction
+## 📖 Introduction
 Self-Supervised Learning (SSL) is a machine learning paradigm that automatically generates pseudo-labels (pretext tasks) from unlabeled data for training, thereby learning useful representations without requiring manually annotated labels. Unlike traditional unsupervised learning, which typically discovers patterns directly from data (e.g., clustering), self-supervised learning is akin to "supervising" tasks it generates itself. Compared to supervised learning, it can better utilize vast amounts of unlabeled data and is widely applied in fields like computer vision and natural language processing.
 <div align="center">
 <img width="560" height="350" alt="image" src="https://github.com/user-attachments/assets/b83a577d-dfaa-42be-b580-00ea417fb3bd" />
@@ -13,7 +13,7 @@ Self-Supervised Learning (SSL) is a machine learning paradigm that automatically
 
 Contrastive Learning is a prominent type of self-supervised learning. It learns representations by pulling similar samples (positive pairs) closer together and pushing dissimilar samples (negative pairs) farther apart, as seen in algorithms like SimCLR or MoCo.
 
-## Classifications of self-supervised learning
+## 📖 Classifications of self-supervised learning
 
 Based on mainstream classifications, self-supervised learning can be divided into several categories. These classifications are based on task design and learning mechanisms, may overlap, but help in understanding the concept.
 
@@ -27,7 +27,7 @@ Based on mainstream classifications, self-supervised learning can be divided int
 
 These types are not strictly mutually exclusive, and many modern methods (e.g., in vision or NLP) combine multiple mechanisms. For instance, in research from 2024–2025, self-supervised learning is increasingly applied to multimodal settings (e.g., extensions of CLIP) and federated learning scenarios.
 
-## Self-Supervised Learning Example
+## 📖 Self-Supervised Learning Example
 **Rotation Prediction Example**  
 - **Core Idea**: Predict the rotation angle of an image.  
 - **Loss Function**: Cross-entropy loss.  
@@ -40,7 +40,7 @@ These types are not strictly mutually exclusive, and many modern methods (e.g., 
 - **Feature Learning**: Learn general-purpose feature representations.  
 - **Downstream Tasks**: Apply learned representations to practical tasks.
 
-## Code
+### Code
 ```python
 import os
 import sys
@@ -310,7 +310,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## Training Results
+## 📖 Training Results
 Epoch 10/10, Batch 850, Loss: 0.0013, Acc: 99.67%  
 Epoch 10/10, Batch 900, Loss: 0.0102, Acc: 99.67%  
 Epoch 10/10, Average Loss: 0.0091, Average Acc: 99.68%, LR: 0.000490  
