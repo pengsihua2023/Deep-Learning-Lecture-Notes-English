@@ -1,10 +1,9 @@
-## PINN: Solving Navier-Stokes Equations
+# PINN: Solving Navier-Stokes Equations
 
-Yes, Physics-Informed Neural Networks (PINNs) can be used to solve the **Navier-Stokes equations**, which are a set of nonlinear partial differential equations describing fluid motion, widely applied in fluid dynamics, weather forecasting, aerospace, and more. PINNs embed the residuals of the Navier-Stokes equations, initial conditions, and boundary conditions into the neural network’s loss function, and use automatic differentiation to compute derivatives to approximate the solution. Below is a detailed introduction, including principles, implementation, and a simple PyTorch code example for solving the 2D incompressible Navier-Stokes equations with visualization.
+Physics-Informed Neural Networks (PINNs) can be used to solve the **Navier-Stokes equations**, which are a set of nonlinear partial differential equations describing fluid motion, widely applied in fluid dynamics, weather forecasting, aerospace, and more. PINNs embed the residuals of the Navier-Stokes equations, initial conditions, and boundary conditions into the neural network’s loss function, and use automatic differentiation to compute derivatives to approximate the solution. Below is a detailed introduction, including principles, implementation, and a simple PyTorch code example for solving the 2D incompressible Navier-Stokes equations with visualization.
 
----
 
-### 1. **Introduction to Navier-Stokes Equations**
+## 📖 1. Introduction to Navier-Stokes Equations*
 
 The Navier–Stokes equations describe the fluid velocity field \$\mathbf{u} = (u, v)\$ and the pressure field \$p\$. For 2D incompressible fluids, the equations take the form:
 
@@ -50,9 +49,9 @@ $$
 
 or Neumann conditions.
 
----
 
-### 2. **Principles of PINNs for Navier-Stokes**
+
+## 📖 2. Principles of PINNs for Navier-Stokes
 
 PINNs approximate the velocity fields \$u(x,y,t), v(x,y,t)\$ and pressure field \$p(x,y,t)\$ via neural networks, solving as follows:
 
@@ -71,7 +70,7 @@ PINNs approximate the velocity fields \$u(x,y,t), v(x,y,t)\$ and pressure field 
 
 ---
 
-### 3. **Simple Code Example: 2D Navier-Stokes Equations**
+## 📖 3. Simple Code Example: 2D Navier-Stokes Equations
 
 Below is a simplified PyTorch example solving the 2D incompressible Navier–Stokes equations in a rectangular domain $\[0,1] \times \[0,1]\$, over $\[0,1]\$ in time. We assume:
 
@@ -235,7 +234,7 @@ plt.show()
 ```
 
 
-#### **Code Explanation**
+## 📖 Code Explanation
 
 * **Network:**
 
@@ -263,9 +262,8 @@ plt.show()
   * Loss curve: shows convergence.
   * Animation: heatmap of \$u(x, y, t)\$ evolving in time, saved as GIF.
 
----
 
-#### **Notes**
+## 📖 Notes
 
 1. **Computational complexity**:
 
@@ -294,7 +292,9 @@ plt.show()
 * **Complex geometries**: Define more complex boundaries (e.g., circular obstacles).
 * **3D problems**: Extend input \$(x, y, z, t)\$, output \$(u, v, w, p)\$.
 
-**Extension: Inverse Problems**
+---
+
+# Extension: Inverse Problems
 To estimate \$\nu\$, modify the `PINN` class:
 
 ```python
@@ -318,7 +318,7 @@ In `compute_loss`, use `model.nu` and add observation data loss (similar to earl
 
 ---
 
-#### **Conclusion**
+## 📖 Conclusion
 
 PINNs can effectively solve Navier-Stokes equations. The code embeds residuals of the momentum and continuity equations, combined with initial and boundary conditions, to approximate velocity and pressure fields. The example demonstrates a basic 2D implementation with visualization.
 
