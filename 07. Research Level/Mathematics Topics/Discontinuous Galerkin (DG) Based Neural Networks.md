@@ -1,5 +1,5 @@
-## Discontinuous Galerkin (DG) Based Neural Networks
-
+# Discontinuous Galerkin (DG) Based Neural Networks
+## 📖 Introduction
 Discontinuous Galerkin (DG) Based Neural Networks is a novel hybrid method that combines the Discontinuous Galerkin (DG) method (a numerical technique for solving partial differential equations (PDEs) that allows solutions to be discontinuous across element boundaries) with neural networks, for efficient PDE solving, especially in high-dimensional, nonlinear, or discontinuous problems. It parameterizes trial functions with neural networks, or enriches DG basis functions, to capture complex dynamics while preserving DG’s locality and flexibility. This method excels at handling complex geometries, perturbations, or steady-state problems, and has been applied to Poisson equations, heat equations, and hyperbolic balance laws.
 
 Typical variants include:
@@ -8,9 +8,9 @@ Typical variants include:
 * **Local Randomized Neural Networks with DG (LRNN-DG)**: Combines randomized NNs in subdomains coupled with DG, improving efficiency.
 * **DG-PINNs**: Uses Physics-Informed Neural Networks (PINNs) to enrich DG basis functions, achieving approximately well-balanced properties for balance laws.
 
----
 
-### Mathematical Description
+
+## 📖 Mathematical Description
 
 Consider a general PDE, e.g., the Poisson equation:
 
@@ -56,7 +56,7 @@ In DG-PINNs, DG basis functions are enriched with PINN-based corrections: standa
 
 ---
 
-### Code Implementation
+## 📖 Code Implementation
 
 Below is a simple PyTorch implementation of a 1D DGNet example for solving the Poisson equation:
 
@@ -77,7 +77,7 @@ u(x) = \sin(\pi x).
 $$
 
 We divide the domain into 4 elements, each with an independent shallow NN (single hidden layer), using the IPDG weak formulation as the loss. Test functions are piecewise linear polynomials (\$k=1\$), and integration is approximated via Monte Carlo sampling.
-
+### Code 
 ```python
 import torch
 import torch.nn as nn
@@ -171,7 +171,7 @@ plt.show()
 ```
 
 
-### Code Explanation
+## 📖 Code Explanation
 
 1. **LocalNN**: Independent shallow NN (tanh activation) per element.
 2. **DGNet**: Combines local NNs and evaluates piecewise.
