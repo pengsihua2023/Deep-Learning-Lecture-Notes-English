@@ -1,15 +1,15 @@
 
 # Kaiming Uniform Initialization
-## Definition
+## 📖 Definition
 
 **Kaiming Uniform Initialization** is the **uniform distribution version** of He Initialization, used for ReLU and its variants (such as ReLU, LeakyReLU).
 Its goal is to **keep the output variance of each layer stable during forward propagation**, avoiding gradient vanishing or explosion.
 
 Kaiming Initialization was proposed by Kaiming He et al. in the 2015 paper *Delving Deep into Rectifiers*.
 
----
 
-## Mathematical Description
+
+## 📖 Mathematical Description
 
 Suppose the input dimension of a layer is \$n\_\text{in}\$ (i.e., \$fan\_\text{in}\$, the number of input neurons), then the weights \$W\$ are drawn from the interval:
 
@@ -32,7 +32,7 @@ $$
 
 This range is larger than Xavier Uniform, because ReLU discards half of the inputs (negative values become 0), so the variance of the weights needs to be larger.
 
-## Simplest Code Example
+## 📖 Simplest Code Example
 
 ### PyTorch Implementation
 
