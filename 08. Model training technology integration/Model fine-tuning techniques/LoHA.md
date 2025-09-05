@@ -89,7 +89,7 @@ Execution result: `Output shape: torch.Size([2, 5])`, indicating that the LoHA l
 
 
 
-📖 Summary:
+## 📖 Summary:
 
 * **LoRA**: Low-rank additive update \$\Delta W = BA\$.
 * **LoHA**: Low-rank + Hadamard update \$\Delta W = (BA) \odot (DC)\$, providing stronger representational power.
