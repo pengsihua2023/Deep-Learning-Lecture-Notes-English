@@ -1,15 +1,10 @@
+# PINN: Physics-Informed Neural Networks
 
-
-
-## PINN: Physics-Informed Neural Networks
-
-### Principles and Usage
-
-#### **Introduction**
+## 📖 Introduction
 
 Physics-Informed Neural Networks (PINNs) are a neural network framework that combines deep learning and physical laws, used for solving Partial Differential Equations (PDEs) or simulating physical systems. PINNs embed physical equations (such as governing equations, initial conditions, and boundary conditions) into the neural network loss function and approximate PDE solutions by optimizing network parameters. Compared with traditional numerical methods (such as finite difference, finite element), PINNs do not require mesh discretization, making them suitable for high-dimensional or complex geometrical problems.
 
-#### **Principles**
+## 📖 Principles
 
 1. **Core Idea**:
 
@@ -87,9 +82,8 @@ where \$\lambda\_1, \lambda\_2, \lambda\_3\$ are weights to balance the componen
    * Data-driven physical modeling (e.g., incorporating experimental data).
    * Inverse problems (e.g., parameter estimation).
 
----
 
-#### **PyTorch Usage**
+## 📖 PyTorch Usage
 
 Below is a simple PyTorch code example showing how to solve the 1D Burgers equation with PINNs.
 
@@ -118,7 +112,7 @@ where \$\nu = \frac{0.01}{\pi}\$ is viscosity.
 
 ---
 
-##### **Code Example**
+### 📖 Code Example
 
 ```python
 import torch
@@ -193,8 +187,9 @@ u_pred = model(x_test, t_test)
 print("Prediction shape:", u_pred.shape)  # Output: torch.Size([100, 1])
 ```
 
+---
 
-## 1. **Multi-dimensional PDE Example: 2D Heat Conduction (Laplace Equation Variant)**
+# 1. Multi-dimensional PDE Example: 2D Heat Conduction (Laplace Equation Variant)
 
 2D heat conduction equation (simplified Laplace equation):
 
@@ -210,9 +205,8 @@ $$
 
 This is a steady-state problem (no time dimension). PINN solves it by minimizing residuals.
 
----
 
-### **Code Example**
+## 📖 Code Example
 
 ```python
 import torch
@@ -330,7 +324,7 @@ plt.show()
 ```
 
 
-##### **Code Explanation**
+### 📖 Code Explanation
 
 * **Network**: A 3-layer fully connected network using Tanh activation to ensure smoothness.
 * **Loss**: PDE residuals (second-order derivatives) and boundary condition loss, with boundary weight set to 10 to strengthen constraints.
@@ -338,16 +332,15 @@ plt.show()
 * **Training**: 5000 iterations with loss curve recording.
 * **Visualization**: Loss curve + 2D heatmap of the predicted solution, using `imshow` to display the temperature distribution.
 
+---
 
 
-
-## 2. **Inverse Problem Example: Parameter Estimation**
+# Inverse Problem Example: Parameter Estimation
 
 In the Burgers equation, assume viscosity coefficient \$\nu\$ is unknown. Use observation data to estimate \$\nu\$ by adding observation loss and treating \$\nu\$ as a learnable parameter.
 
----
 
-### **Code Example**
+## 📖 Code Example
 
 ```python
 import torch
@@ -470,14 +463,14 @@ plt.show()
 ```
 
 
-##### **Code Explanation**
+### 📖 Code Explanation
 
 * **Network**: Add `self.nu` as a learnable parameter (initialized as 0.1).
 * **Loss**: Add observation loss `loss_obs`, using simulated observation data (true solution + noise).
 * **Training**: Record `nu_history` to estimate nu.
 * **Visualization**: Loss curve, nu estimation curve, and animation of \$u(x, t)\$ (saved as GIF).
 
-#### 3. **Notes and Extensions**
+## 📖 Notes and Extensions
 
 * **Multi-dimensional PDEs**: For 3D or higher dimensions, change the input layer to `nn.Linear(3, ...)` or more, and ensure sampling points are evenly distributed.
 * **Inverse problems**: Observation data can come from experiments or simulations; for more complex parameters (e.g., functional parameters), additional networks can be used.
