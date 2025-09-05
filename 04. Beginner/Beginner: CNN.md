@@ -1,4 +1,4 @@
-## CNN
+# CNN
 
 Convolutional Neural Network (CNN)
 
@@ -17,13 +17,13 @@ Convolutional Neural Network (CNN)
 </div>
 
 
-## Mathematical Description of Convolutional Neural Network (CNN)
+## 📖 Mathematical Description of Convolutional Neural Network (CNN)
 
 The core of CNN consists of the following basic operations: **Convolutional Layer**, **Activation Function**, **Pooling Layer**, and finally the **Fully Connected Layer**. We describe them one by one.
 
 
 
-### 📖 1. Convolutional Layer
+### 1. Convolutional Layer
 
 Let the input feature map be
 
@@ -58,7 +58,7 @@ The specific dimensions depend on stride and padding.
 
 
 
-### 📖 2. Activation Function
+### 2. Activation Function
 
 A commonly used activation function is ReLU (Rectified Linear Unit):
 
@@ -74,7 +74,7 @@ $$
 
 
 
-### 📖 3. Pooling Layer
+### 3. Pooling Layer
 
 The pooling operation is used to reduce the size of the feature map.
 For example, in Max Pooling:
@@ -87,7 +87,7 @@ where \$p\_h, p\_w\$ are the pooling window sizes, and \$s\$ is the stride.
 
 
 
-### 📖 4. Fully Connected Layer
+### 4. Fully Connected Layer
 
 After several layers of convolution and pooling, we obtain a flattened feature vector:
 
@@ -105,7 +105,7 @@ where \$W \in \mathbb{R}^{k \times d}\$, \$\mathbf{b} \in \mathbb{R}^k\$.
 
 
 
-### 📖 5. Classification Layer (Softmax)
+### 5. Classification Layer (Softmax)
 
 In classification tasks, the final output is a probability distribution through Softmax:
 
@@ -115,7 +115,7 @@ In classification tasks, the final output is a probability distribution through 
 
 
 
-### 📖 6. Code
+### 6. Code
 ```python
 import torch
 import torch.nn as nn
@@ -225,7 +225,7 @@ if __name__ == "__main__":
     test_model()
 ```
 
-### 📖 7. Training Results
+### 7. Training Results
 Epoch [10/10], Step [600], Loss: 0.4115  
 Epoch [10/10], Step [700], Loss: 0.4196  
 
