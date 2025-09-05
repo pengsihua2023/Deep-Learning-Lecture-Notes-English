@@ -1,9 +1,9 @@
-## Automatic Mixed Precision (AMP)
+# Automatic Mixed Precision (AMP)
 "Automatic Mixed Precision (AMP)" is a technique in deep learning that **automatically uses different numerical precisions (FP16 and FP32) for computation**, aiming to **accelerate training and reduce memory usage while maintaining model accuracy**.
 
 
 
-### 📖 1. Background
+## 📖 1. Background
 Common floating-point precisions in deep learning include:
 * **FP32 (Single Precision Floating-Point)**: The standard format for training, offering a wide numerical range and good stability, but with slower computation and higher memory usage.
 * **FP16 (Half Precision Floating-Point)**: Lower precision, faster computation, and less memory usage, but prone to overflow, underflow, or rounding errors.
@@ -11,7 +11,7 @@ Switching all computations to FP16 may cause training to fail due to these issue
 
 
 
-### 📖 2. Core Concept of AMP
+## 📖 2. Core Concept of AMP
 AMP works by:
 * Using **FP16 in operations suitable for it** (e.g., matrix multiplications, convolutions) → speeds up computation and saves memory.
 * Retaining **FP32 in operations requiring high precision** (e.g., loss calculation, gradient accumulation, softmax, batch norm) → ensures numerical stability.
@@ -20,7 +20,7 @@ This achieves both speed and stability.
 
 
 
-### 📖 3. Implementation in Mainstream Frameworks
+## 📖 3. Implementation in Mainstream Frameworks
 * **PyTorch**:
   Provides `torch.cuda.amp` with `autocast` and `GradScaler` for AMP.
   ```python
@@ -41,14 +41,14 @@ This achieves both speed and stability.
 
 
 
-### 📖 4. Advantages of AMP
+## 📖 4. Advantages of AMP
 - Faster training (especially on GPU Tensor Cores).
 - Lower memory usage, enabling larger batch sizes or models.
 - Maintains nearly identical convergence accuracy.
 
 ---
 
-### 📖 5. Code Example
+## 📖 5. Code Example
 A minimal **PyTorch + AMP** example, demonstrating automatic mixed precision with a **fully connected network trained on MNIST**.
 ```python
 import torch
@@ -101,7 +101,7 @@ for epoch in range(1, 3):  # Run 2 epochs for demonstration
 ```
 
 
-### 📖 6. Key Points:
+## 📖 6. Key Points:
 1. **`torch.cuda.amp.autocast()`**
    * Automatically selects FP16 or FP32 during forward propagation.
    * For example, convolutions and matrix multiplications use FP16 for speed and memory savings, while loss calculations remain in FP32 for stability.
