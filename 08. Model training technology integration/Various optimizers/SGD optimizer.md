@@ -1,9 +1,8 @@
 
 ## SGD Optimizer (Stochastic Gradient Descent)
 
-### Principle and Usage
 
-#### 📖 **Principle**
+## 📖 **Principle**
 
 SGD (Stochastic Gradient Descent) is a classic optimization algorithm widely used in training deep learning models. Its core idea is to compute the gradient of the loss function with respect to model parameters and update the parameters in the opposite direction of the gradient to minimize the loss. The "stochastic" nature of SGD comes from the fact that each update uses only one sample or a mini-batch of data, rather than the entire dataset, which accelerates computation.
 
@@ -54,7 +53,7 @@ Where \$\gamma\$ is the momentum coefficient (typically 0.9), and \$v\_t\$ is th
 
 ---
 
-#### 📖 **PyTorch Usage**
+## 📖 **PyTorch Usage**
 
 PyTorch provides a built-in `torch.optim.SGD` optimizer, supporting both vanilla SGD and the momentum variant. Below is a minimal code example showing how to use SGD to train a simple CNN for an image classification task.
 
@@ -90,7 +89,7 @@ optimizer.step()  # Update parameters
 print(f"Loss: {loss.item()}")
 ```
 
-#### 📖 **Code Explanation**
+## 📖 **Code Explanation**
 
 * **Model**: Pretrained ResNet18 with the last layer replaced to fit a 10-class classification task.
 * **Optimizer**: `optim.SGD` initialization includes:
@@ -103,7 +102,7 @@ print(f"Loss: {loss.item()}")
 
 
 
-#### 📖 **Notes**
+## 📖 **Notes**
 
 1. **Hyperparameters**:
 
