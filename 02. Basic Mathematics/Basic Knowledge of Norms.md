@@ -1,10 +1,8 @@
-## Mathematical Fundamentals: Basics of Norms
+# Mathematical Fundamentals: Basics of Norms
 
-### What is a Norm?
+## 📖 What is a Norm?
 
 A **norm** is a function in mathematics used to measure the "size" or "length" of a vector or matrix. It has properties such as non-negativity, homogeneity (absolute scalability), and the triangle inequality. Norms are widely used in mathematics, physics, and computer science, for example, in measuring errors, optimization problems, or regularization in machine learning.
-
----
 
 For a vector
 
@@ -102,7 +100,7 @@ Represents the square root of the sum of squares of all matrix elements.
 
 ---
 
-### Python Code to Compute Various Norms
+## 📖 Python Code to Compute Various Norms
 
 Here is a Python code example (using NumPy) to compute common norms:
 
@@ -179,9 +177,9 @@ L∞ Norm: 4.0
 Frobenius Norm: 5.477225575051661
 ```
 
----
 
-### Notes
+
+## 📖 Notes
 
 * **Code Implementation**: The above code defines functions to compute \$L\_1, L\_2, L\_\infty, L\_0\$ norms as well as arbitrary \$L\_p\$ norms, and includes the matrix Frobenius norm. It also verifies results using NumPy’s `np.linalg.norm` function.
 
@@ -189,4 +187,4 @@ Frobenius Norm: 5.477225575051661
 
 * **Extensibility**: By modifying the value of \$p\$, arbitrary \$L\_p\$ norms can be computed. The code is general and extensible.
 
----
+
