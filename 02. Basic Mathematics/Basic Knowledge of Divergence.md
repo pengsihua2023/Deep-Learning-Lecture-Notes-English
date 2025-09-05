@@ -1,22 +1,5 @@
 
 # Basics of Divergence
-## Table of Contents
-
-1. [What is Divergence?](#1-what-is-divergence)
-
-   * (1) Kullback–Leibler Divergence
-   * (2) Jensen–Shannon Divergence
-   * (3) Wasserstein Distance
-2. [Applications in Deep Learning](#2-applications-in-deep-learning)
-
-   * (1) Loss Functions
-   * (2) Generative Models
-   * (3) Distribution Matching
-   * (4) Reinforcement Learning
-3. [Divergence comparison](#3-Comparison-of-Divergences)
-
----
-
 ## 📖 1. What is Divergence?
 
 In mathematics and information theory, **divergence** usually refers to a measure of the difference between two probability distributions.
