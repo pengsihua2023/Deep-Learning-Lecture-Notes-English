@@ -36,7 +36,6 @@ $$
 \|x + y\| \leq \|x\| + \|y\|, \quad \forall x, y \in \mathbb{R}^n
 $$
 
----
 
 ### Common \$L\_p\$ Norm
 
@@ -44,9 +43,9 @@ $$
 \lVert x \rVert_p = \left( \sum_{i=1}^n \lvert x_i \rvert^p \right)^{\frac{1}{p}}, \quad p \ge 1
 $$
 
----
 
-### Mathematical Descriptions of Common Norms
+
+## 📖 Mathematical Descriptions of Common Norms
 
 #### 1. \$L\_1\$ Norm (Manhattan Norm)
 
