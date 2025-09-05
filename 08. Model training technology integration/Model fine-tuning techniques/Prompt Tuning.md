@@ -15,7 +15,7 @@
 
 
 
-##📖 2. Mathematical Formulation
+## 📖 2. Mathematical Formulation
 
 Let:
 
