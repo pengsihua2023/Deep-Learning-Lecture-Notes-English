@@ -1,4 +1,4 @@
-## Noise Injection to Inputs/Weights
+# Noise Injection to Inputs/Weights
 ### 📖 What is Noise Injection?
 Noise Injection is a regularization technique in deep learning that enhances model generalization by adding random noise to input data, weights, or other intermediate representations during training. Similar to Dropout (which sets activations to zero), Noise Injection introduces random perturbations instead.
 
