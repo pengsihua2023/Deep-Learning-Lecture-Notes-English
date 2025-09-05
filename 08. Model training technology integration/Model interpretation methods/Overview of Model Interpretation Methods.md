@@ -1,9 +1,9 @@
 # Overview of Deep Learning Model Interpretation Methods
-## Introduction
+## 📖 Introduction
 
 Interpretation tools for deep learning models are used to reveal the prediction process, feature importance, or internal mechanisms of the model. Below are common deep learning model interpretation tools, along with concise **PyTorch** code examples demonstrating their usage in image classification tasks (based on CNNs such as ResNet). The code relies on mainstream libraries (`torch`, `shap`, `captum`, etc.) to ensure simplicity and accessibility for quick adoption. Each tool includes principles, applicable scenarios, pros and cons, and comparisons with SHAP. Since text classification (e.g., BERT) requires extra tokenization handling, image classification is the focus here. If text classification examples are needed, please specify further.
 
-## Assumptions
+## 📖 Assumptions
 
 * **Environment**: Python 3.x with `torch`, `torchvision`, `shap`, `captum`, `lime` installed (`pip install torch torchvision shap captum lime`).
 * **Task**: Image classification using a pretrained ResNet18 model.
@@ -11,11 +11,11 @@ Interpretation tools for deep learning models are used to reveal the prediction 
 * **Data**: Input image shape (batch, channels, height, width), e.g., (1, 3, 224, 224).
 * **Note**: Input images are assumed to be preprocessed (normalized, resized, etc.) and provided as tensors.
 
-## I. **Deep Learning Model Interpretation Tools with PyTorch Code Examples**
+## 📖 I. **Deep Learning Model Interpretation Tools with PyTorch Code Examples**
 
 The following tools are divided into four categories: feature-based, gradient-based, surrogate model-based, and visualization tools. Each tool comes with a minimal PyTorch example.
 
-#### 📖 1. **SHAP (SHapley Additive exPlanations)**
+#### 1. **SHAP (SHapley Additive exPlanations)**
 
 * **Principle**: Based on game theory Shapley values, quantifies each feature's contribution (pixels, tokens, etc.) to predictions; model-agnostic.
 * **Scenarios**: Image, text, tabular data; provides both local and global explanations.
@@ -42,7 +42,7 @@ shap_values = explainer.shap_values(X)
 shap.image_plot(shap_values, X.numpy())
 ```
 
-#### 📖 2. **LIME (Local Interpretable Model-agnostic Explanations)**
+#### 2. **LIME (Local Interpretable Model-agnostic Explanations)**
 
 * **Principle**: Perturbs inputs locally and fits a simple model (e.g., linear regression) to approximate the complex model, estimating feature importance.
 * **Scenarios**: Image, text; good for quick local explanations.
@@ -74,7 +74,7 @@ explanation = explainer.explain_instance(X, predict_fn, top_labels=5)
 explanation.show_in_notebook()
 ```
 
-#### 📖 3. **Saliency Maps**
+#### 3. **Saliency Maps**
 
 * **Principle**: Computes input gradients to generate heatmaps highlighting regions most important to prediction.
 * **Scenarios**: Image, text; quick local explanations.
@@ -107,7 +107,7 @@ plt.axis('off')
 plt.show()
 ```
 
-#### 📖 4. **Integrated Gradients**
+#### 4. **Integrated Gradients**
 
 * **Principle**: Integrates gradients along a path from a baseline input to target input, addressing gradient saturation.
 * **Scenarios**: Image, text, time-series; suitable for deep models.
@@ -137,7 +137,7 @@ plt.axis('off')
 plt.show()
 ```
 
-#### 📖 5. **Grad-CAM (Gradient-weighted Class Activation Mapping)**
+#### 5. **Grad-CAM (Gradient-weighted Class Activation Mapping)**
 
 * **Principle**: Uses gradients from the last CNN conv layer to create class activation maps, highlighting important regions.
 * **Scenarios**: Image classification, object detection; CNN-specific.
@@ -166,7 +166,7 @@ plt.axis('off')
 plt.show()
 ```
 
-#### 📖 6. **DeepLIFT (Deep Learning Important FeaTures)**
+#### 6. **DeepLIFT (Deep Learning Important FeaTures)**
 
 * **Principle**: Compares activations between input and baseline, decomposing outputs into feature contributions.
 * **Scenarios**: Image, text; deep models.
@@ -196,7 +196,7 @@ plt.axis('off')
 plt.show()
 ```
 
-#### 📖 7. **t-SNE (Dimensionality Reduction Visualization)**
+#### 7. **t-SNE (Dimensionality Reduction Visualization)**
 
 * **Principle**: Reduces high-dimensional features (e.g., hidden outputs) to 2D for scatterplot visualization.
 * **Scenarios**: Analyze learned representations, check class separability.
@@ -227,7 +227,7 @@ plt.scatter(tsne_result[:, 0], tsne_result[:, 1])
 plt.show()
 ```
 
-#### 📖 8. **Attention Visualization (for Transformer Models)**
+#### 8. **Attention Visualization (for Transformer Models)**
 
 * **Principle**: Visualizes Transformer attention weights, showing which inputs are emphasized.
 * **Scenarios**: Transformer models (e.g., ViT), image or text tasks.
@@ -256,7 +256,7 @@ plt.axis('off')
 plt.show()
 ```
 
-### II. **Tool Comparison Summary**
+## 📖 II. **Tool Comparison Summary**
 
 | Tool                    | Type           | Applicable Models | Pros                                | Cons                       | Compared to SHAP                    |
 | ----------------------- | -------------- | ----------------- | ----------------------------------- | -------------------------- | ----------------------------------- |
@@ -269,7 +269,7 @@ plt.show()
 | t-SNE                   | Visualization  | Any model         | Global representation visualization | No per-sample explanation  | SHAP gives per-feature attributions |
 | Attention Visualization | Visualization  | Transformer       | Intuitive via attention             | Limited interpretability   | SHAP more precise decomposition     |
 
-### III. **Considerations**
+## 📖 III. **Considerations**
 
 * **Data Preprocessing**: Images should be normalized (mean \[0.485, 0.456, 0.406], std \[0.229, 0.224, 0.225]), reshaped to (3, 224, 224).
 * **Model Mode**: Ensure `.eval()` mode to avoid dropout effects.
@@ -277,7 +277,7 @@ plt.show()
 * **Visualization**: Examples show basic plots; use `seaborn` or `matplotlib` for enhanced heatmaps.
 * **Extension to Text Tasks**: For BERT, requires tokenization; SHAP and LIME adapt well, Attention Visualization is common.
 
-### IV. **Summary**
+## 📖 IV. **Summary**
 
 These tools cover the main deep learning model interpretation methods, with PyTorch-based, easy-to-use examples. SHAP provides the most comprehensive explanations but at high computational cost; LIME and Saliency Maps are good for quick debugging; Grad-CAM and Integrated Gradients are tailored for deep learning; t-SNE and Attention Visualization are suited for analyzing representations.
 
