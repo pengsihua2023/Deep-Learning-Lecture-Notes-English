@@ -37,7 +37,7 @@ $$
 $$
 
 
-### Common \$L\_p\$ Norm
+#### Common \$L\_p\$ Norm
 
 $$
 \lVert x \rVert_p = \left( \sum_{i=1}^n \lvert x_i \rvert^p \right)^{\frac{1}{p}}, \quad p \ge 1
