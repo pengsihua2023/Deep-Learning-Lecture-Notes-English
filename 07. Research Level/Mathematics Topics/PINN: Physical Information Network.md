@@ -1,12 +1,11 @@
-## PINN: Physics-Informed Neural Networks
+# PINN: Physics-Informed Neural Networks
 
-### Principles and Usage
 
-#### **Introduction**
+## 📖 Introduction
 
 Physics-Informed Neural Networks (PINNs) are a neural network framework that combines deep learning with physical laws to solve partial differential equations (PDEs) or simulate physical systems. PINNs embed physical equations (such as governing equations, initial conditions, and boundary conditions) into the loss function of the neural network, and approximate the solution of PDEs by optimizing network parameters. Compared with traditional numerical methods (such as finite difference or finite element), PINNs do not require discretization of the grid and are suitable for high-dimensional or complex geometry problems.
 
-#### **Principles**
+## 📖 Principles
 
 1. **Core Idea**:
 
@@ -86,9 +85,8 @@ where \$\lambda\_1, \lambda\_2, \lambda\_3\$ are weights to balance the parts.
    * Data-driven physical modeling (e.g. with experimental data).
    * Inverse problems (e.g. parameter estimation).
 
----
 
-#### **PyTorch Usage**
+## 📖 PyTorch Usage
 
 The following is a minimal PyTorch code example showing how to use PINNs to solve the 1D Burgers equation (a nonlinear PDE), along with explanations.
 
@@ -117,7 +115,7 @@ where \$\nu = \frac{0.01}{\pi}\$ is the viscosity coefficient.
 
 ---
 
-##### **Code Example**
+### 📖 Code Example
 
 ```python
 import torch
@@ -193,7 +191,7 @@ print("Prediction shape:", u_pred.shape)  # Output: torch.Size([100, 1])
 
 ```
 
-##### **Code Explanation**
+### 📖 Code Explanation
 
 * **Model**:
 
@@ -272,15 +270,15 @@ plt.xlabel('x'); plt.ylabel('u'); plt.legend(); plt.show()
 
 ---
 
-#### **Summary**
+## 📖 Summary
 
 PINNs are a powerful method for solving PDEs or modeling physical systems by embedding physical equations into neural network loss functions. PyTorch implementation is straightforward, using autograd for PDE residuals and optimization with initial and boundary conditions. The example demonstrates basic application to Burgers equation.
 
 ---
 
-## Multi-Dimensional PDEs, Inverse Problems, and Visualization
+# Multi-Dimensional PDEs, Inverse Problems, and Visualization
 
-### More Detailed PINN Code Examples
+## 📖 More Detailed PINN Code Examples
 
 Based on the previous introduction and 1D Burgers equation, here are more detailed examples covering:
 
@@ -290,7 +288,7 @@ Based on the previous introduction and 1D Burgers equation, here are more detail
 
 These examples are based on PyTorch, with full code including data generation, training loop, loss logging, and visualization. Assumes you have basic PyTorch and Matplotlib environment.
 
-#### 1. **Multi-Dimensional PDE Example: 2D Heat Conduction**
+### 1. **Multi-Dimensional PDE Example: 2D Heat Conduction**
 
 2D heat conduction equation (simplified Laplace):
 
@@ -306,7 +304,7 @@ $$
 
 This is a steady-state problem (no time dimension), solved by minimizing residuals with PINN.
 
-##### **Code Example**
+### 📖 Code Example
 
 ```python
 import torch
@@ -424,7 +422,7 @@ plt.show()
 
 ```
 
-##### **Code Explanation**
+## 📖 Code Explanation
 
 * **Network**: 3 fully connected layers, Tanh activations for smoothness.
 * **Loss**: PDE residual (second derivatives) and boundary condition loss, boundary weighted by 10.
@@ -434,11 +432,11 @@ plt.show()
 
 ---
 
-#### 2. **Inverse Problem Example: Parameter Estimation**
+# Inverse Problem Example: Parameter Estimation
 
 In Burgers equation, assume viscosity coefficient \$\nu\$ is unknown. Use observational data to estimate \$\nu\$. Add observation loss and treat \$\nu\$ as learnable.
 
-##### **Code Example**
+## 📖 Code Example
 
 ```python
 import torch
@@ -561,16 +559,15 @@ plt.show()  # Or directly show animation
 
 ```
 
-##### **Code Explanation**
+## 📖 Code Explanation
 
 * **Network**: Add `self.nu` as learnable parameter (initial 0.1).
 * **Loss**: Add observation loss `loss_obs` using simulated data (true solution + noise).
 * **Training**: Record `nu_history`, estimate \$\nu\$.
 * **Visualization**: Loss curve, \$\nu\$ estimation curve + animation of \$u(x,t)\$ (saved as GIF).
 
----
 
-#### 3. **Notes and Extensions**
+## 📖 Notes and Extensions
 
 * **Multi-dimensional PDEs**: For 3D or higher, adjust input layer (e.g. `nn.Linear(3, ...)`) and ensure uniform sampling.
 * **Inverse problems**: Observational data may come from experiments/simulations; for complex parameters (e.g. functional), use additional networks.
