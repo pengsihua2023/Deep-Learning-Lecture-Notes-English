@@ -1,7 +1,7 @@
 
 # He Initialization (also called Kaiming Initialization)
 
-## Definition
+## 📖 Definition
 
 **He Initialization** is a parameter initialization method specifically designed for **ReLU and its variants** (such as ReLU, LeakyReLU, ELU, etc.).
 Its goals are:
@@ -11,9 +11,9 @@ Its goals are:
 
 He initialization was proposed by Kaiming He et al. in 2015 (*Delving Deep into Rectifiers*).
 
----
 
-## Mathematical Description
+
+## 📖 Mathematical Description
 
 Suppose the input dimension of a layer is \$n\_\text{in}\$ (i.e., the number of input neurons), then He initialization has two versions: **Uniform** and **Normal**.
 
@@ -39,7 +39,7 @@ Where:
 
 ---
 
-## Simplest Code Examples
+## 📖 Simplest Code Examples
 
 ### PyTorch Example
 
