@@ -1,10 +1,11 @@
 ## Deep Backward Stochastic Differential Equation (Deep BSDE) Method
+## 📖 Introduction
 
 The Deep Backward Stochastic Differential Equation (Deep BSDE) Method is a deep learning–based numerical method for solving high-dimensional (even hundreds of dimensions) nonlinear parabolic partial differential equations (PDEs), particularly in scenarios where traditional grid-based methods (such as finite differences) fail due to the curse of dimensionality. It was proposed by Jiequn Han, Arnulf Jentzen, and Weinan E in 2017. The method transforms the PDE into a backward stochastic differential equation (BSDE) via the Feynman-Kac theorem, then uses neural networks to approximate the solution and gradient of the BSDE, and trains the model by minimizing the terminal condition loss. Deep BSDE is mesh-free, making it suitable for applications in financial pricing (e.g., high-dimensional Black-Scholes), quantum mechanics, and control problems, but it has high computational cost and its convergence depends on time discretization and network architecture.
 
 Compared with the Deep Galerkin Method (DGM) or Deep Ritz Method (DRM), Deep BSDE is more suitable for time-dependent parabolic PDEs and naturally handles randomness, but requires simulating stochastic paths, which may introduce variance.
 
-### Mathematical Description
+## 📖 Mathematical Description
 
 Consider a general semilinear parabolic PDE:
 
@@ -35,7 +36,6 @@ $$
 
 where \$Y\_t = u(t,X\_t), \quad Z\_t = \[\sigma(t,X\_t)]^\* \nabla\_x u(t,X\_t)\$ (gradient process).
 
----
 
 Deep BSDE approximates the BSDE via time discretization (Euler scheme):
 The time interval $\[0,T]\$ is divided into \$N\$ steps with step size \$\Delta t = T/N\$,
@@ -59,7 +59,7 @@ The expectation is approximated by Monte Carlo sampling (batch simulation of pat
 
 ---
 
-### Code Implementation
+## 📖 Code Implementation
 
 Below is a simple 1D Deep BSDE example implemented in PyTorch, used to solve a nonlinear PDE:
 
@@ -74,7 +74,7 @@ u(1,x) = \cos\left(\tfrac{\pi x}{2}\right).
 $$
 
 This is a simplified version of the Allen-Cahn equation variant, with the true solution approximating a smooth function. The code includes neural network definition, path simulation, and training loop.
-## Code 
+### Code 
 ```python
 import torch
 import torch.nn as nn
@@ -162,7 +162,7 @@ plt.show()
 # but here the focus is on y0
 ```
 
-## Code Explanation
+## 📖 Code Explanation
 
 1. **ZNet**: The neural network approximates \$Z\_t(t, x)\$ (the gradient), with inputs being time \$t\$ and position \$x\$.
 
