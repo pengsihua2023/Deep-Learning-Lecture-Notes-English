@@ -17,7 +17,7 @@
 
 
 
-## 🔢 2. Mathematical Formulation
+## 📖 2. Mathematical Formulation
 
 Let the original model parameters be:
 
@@ -47,7 +47,7 @@ During fine-tuning, \$M\$ is fixed, and only the remaining parameters \$W'\$ are
 
 ---
 
-## 💻 3. Simple Code Demonstration (PyTorch)
+## 📖 3. Simple Code Demonstration (PyTorch)
 
 The following code shows a minimal example of **unstructured pruning + fine-tuning** with PyTorch:
 
@@ -92,9 +92,9 @@ loss.backward()
 optimizer.step()
 ```
 
----
 
-## ✅ Summary
+
+## 📖 Summary
 
 * **Definition**: Model Pruning compresses models by removing unimportant weights/channels, then fine-tunes the remaining parameters.
 * **Mathematical Formulation**: Applies a mask \$M\$ to sparsify parameters \$W\$, optimizing \$\mathcal{L}(W \odot M)\$.
