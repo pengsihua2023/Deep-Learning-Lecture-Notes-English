@@ -1,10 +1,10 @@
-## Adam Optimizer: Adaptive Learning Rate
+# Adam Optimizer: Adaptive Learning Rate
 
-### What is Adaptive Learning Rate (Adam Optimizer)?
+## 📖 What is Adaptive Learning Rate (Adam Optimizer)?
 
 The Adam optimizer (Adaptive Moment Estimation) is a widely used optimization algorithm in deep learning. It combines the advantages of Momentum and RMSProp, adaptively adjusting the learning rate to accelerate gradient descent convergence. It is particularly suitable for handling sparse gradients or noisy optimization problems.
 
-#### Core Principle
+## 📖 Core Principle
 
 Adam dynamically adjusts the learning rate of each parameter by tracking the exponential moving averages of the first moment (mean) and the second moment (variance) of gradients. The main steps are:
 
@@ -30,22 +30,22 @@ Where:
 * \$\beta\_1, \beta\_2\$ : Momentum parameters (commonly 0.9 and 0.999).
 * \$\epsilon\$ : Small constant to prevent division by zero (commonly \$1\text{e-}8\$).
 
----
 
-#### Advantages
+
+## 📖 Advantages
 
 * **Adaptivity**: Automatically adjusts learning rates based on gradient history, no need for manual tuning.
 * **Efficiency**: Suitable for large-scale datasets and complex models (e.g., deep neural networks).
 * **Stability**: Performs well with sparse gradients or noisy optimization problems.
 
-#### Limitations
+## 📖 Limitations
 
 * May not converge to the optimal solution in some tasks compared to SGD + Momentum.
 * Hyperparameters (such as \$\beta\_1, \beta\_2\$) still need careful selection.
 
 ---
 
-### Python Code Example
+## 📖 Python Code Example
 
 Below is a simple PyTorch example using the Adam optimizer to train a fully connected neural network for the MNIST handwritten digit classification task. The code focuses on Adam implementation and remains concise.
 
@@ -116,9 +116,9 @@ for epoch in range(1, epochs + 1):
     test()
 ```
 
----
 
-### Code Explanation
+
+## 📖 Code Explanation
 
 1. **Model Definition**:
 
@@ -156,7 +156,7 @@ for epoch in range(1, epochs + 1):
 
 ---
 
-### Adam vs. SGD
+## 📖 Adam vs. SGD
 
 To demonstrate Adam’s adaptivity, compare with SGD implementation (without momentum):
 
@@ -168,15 +168,15 @@ optimizer = optim.SGD(model.parameters(), lr=0.01)  # Replace Adam
 * **Adam**: Adaptively adjusts learning rates, usually converges faster, less sensitive to initial learning rate.
 * **SGD**: Fixed learning rate, may require manual adjustment or combination with schedulers (e.g., StepLR).
 
----
 
-### Practical Applications
+
+## 📖 Practical Applications
 
 * **Deep Learning**: Adam is the default optimizer for CNNs, RNNs, Transformers, etc., due to fast convergence and stability.
 * **Sparse Data**: Performs well on sparse gradients (e.g., NLP tasks).
 * **Hyperparameter Tuning**: Although Adam is less sensitive to learning rate, tuning `lr`, `betas`, etc. (e.g., via Bayesian optimization) can further improve results.
 
-#### Notes
+## 📖 Notes
 
 * **Learning Rate**: Default `lr=0.001` usually works well, but may require fine-tuning (e.g., \$1\text{e-}4\$ to \$1\text{e-}2\$).
 * **Convergence**: On some tasks, Adam may converge to suboptimal solutions; alternatives include SGD + Momentum or AdamW (improved Adam with L2 regularization).
