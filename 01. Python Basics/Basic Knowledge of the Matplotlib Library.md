@@ -1,7 +1,7 @@
 # Python Basics: Introduction to the Matplotlib Library
-## What is Matplotlib?
+## 📖 What is Matplotlib?
 Matplotlib is a powerful Python library for 2D (and some 3D) plotting, widely used for data visualization. It can generate a variety of static, dynamic, and interactive charts, such as line plots, scatter plots, bar charts, and heatmaps, making it ideal for scientific computing and data analysis. In deep learning, Matplotlib is primarily used for **visualizing data**, **model performance**, and **intermediate results** to understand data distributions, monitor training progress, and aid debugging.
-## Key Features of Matplotlib:
+## 📖 Key Features of Matplotlib:
 - **Flexibility**: Supports a wide range of chart types and customizable styles.
 - **Integration with NumPy/Pandas**: Directly handles NumPy arrays or Pandas DataFrames.
 - **Cross-Platform**: Produces high-quality images suitable for papers, reports, or web applications.
@@ -11,9 +11,9 @@ In deep learning, Matplotlib is commonly used for:
 - Plotting loss or accuracy curves during training.
 - Displaying model predictions (e.g., confusion matrices, feature maps).
 
-## Essential Matplotlib Knowledge for Deep Learning
+## 📖 Essential Matplotlib Knowledge for Deep Learning
 Below are the key Matplotlib concepts to master for deep learning, along with practical use cases and code examples. It’s recommended to become familiar with `matplotlib.pyplot` (commonly aliased as `plt`), as it is the primary interface for Matplotlib.
-#### 📖 1. **Basic Plotting and Customization**
+#### 1. **Basic Plotting and Customization**
    - **Creating Simple Plots**:
      - Use `plt.plot()` for line plots and `plt.scatter()` for scatter plots.
        ```python
@@ -41,7 +41,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
        plt.show()
        ```
      - Deep Learning Use Case: Adding titles and labels to loss curves for clarity.
-#### 📖 2. **Plotting Different Chart Types**
+#### 2. **Plotting Different Chart Types**
    - **Line Plot**:
      - Used to show continuous changes, such as loss or accuracy over epochs.
        ```python
@@ -103,7 +103,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
        plt.show()
        ```
      - Deep Learning Use Case: Evaluating classification model performance.
-#### 📖 3. **Subplots**
+#### 3. **Subplots**
    - Use `plt.subplots()` to create multiple subplots for displaying multiple pieces of information simultaneously.
      ```python
      fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4)) # 1x2 subplots
@@ -117,7 +117,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
      plt.show()
      ```
    - Deep Learning Use Case: Displaying loss and accuracy curves side by side or comparing multiple models.
-#### 📖 4. **Image Display**
+#### 4. **Image Display**
    - Use `plt.imshow()` to display image data, such as input images or convolutional layer feature maps.
      ```python
      image = np.random.rand(28, 28) # Simulate 28x28 grayscale image
@@ -127,7 +127,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
      plt.show()
      ```
    - Deep Learning Use Case: Visualizing MNIST images or convolutional neural network activation maps.
-#### 📖 5. **Customizing Styles**
+#### 5. **Customizing Styles**
    - **Colors and Line Styles**:
      - Color: `color='red'` or `c='r'`.
      - Line style: `linestyle='--'` (dashed), `'-'` (solid).
@@ -143,7 +143,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
    - **Figure Size**:
      - `plt.figure(figsize=(8, 6))` sets the canvas size.
    - Deep Learning Use Case: Creating high-quality plots for reports or papers.
-#### 📖 6. **Saving Plots**
+#### 6. **Saving Plots**
    - Use `plt.savefig()` to save plots as PNG, JPG, PDF, etc.
      ```python
      plt.plot(epochs, train_loss)
@@ -151,7 +151,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
      plt.show()
      ```
    - Deep Learning Use Case: Saving training curves or visualizations for documentation or presentations.
-#### 📖 7. **Integration with Pandas/NumPy**
+#### 7. **Integration with Pandas/NumPy**
    - **Pandas Plotting**:
      - Pandas has a built-in Matplotlib interface: `df.plot()`.
        ```python
@@ -164,7 +164,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
    - **NumPy Arrays**:
      - Matplotlib directly handles NumPy arrays, e.g., `plt.plot(np.array([...]))`.
      - Deep Learning Use Case: Plotting model outputs stored as NumPy arrays (e.g., prediction probabilities).
-#### 📖 8. **Interactive Plotting (Optional)**
+#### 8. **Interactive Plotting (Optional)**
    - Enable interactive mode in Jupyter Notebook: `%matplotlib notebook`.
    - Use `plt.ion()` for interactive plotting to dynamically update charts.
      ```python
@@ -174,7 +174,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
          plt.pause(0.1)
      ```
    - Deep Learning Use Case: Real-time monitoring of loss changes during training (though often replaced by TensorBoard).
-#### 📖 9. **Advanced Visualization (Optional)**
+#### 9. **Advanced Visualization (Optional)**
    - **3D Plotting**:
      - Use `mpl_toolkits.mplot3d` for 3D plots.
        ```python
@@ -197,7 +197,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
        plt.show()
        ```
 ---
-### Typical Matplotlib Use Cases in Deep Learning
+## 📖 Typical Matplotlib Use Cases in Deep Learning
 1. **Data Visualization**:
    - Plot feature distributions (histograms, scatter plots).
    - Display sample images (e.g., MNIST, CIFAR-10).
@@ -214,7 +214,7 @@ Below are the key Matplotlib concepts to master for deep learning, along with pr
 5. **Result Presentation**:
    - Generate high-quality plots for inclusion in papers or reports.
 ---
-### 📖 Summary of Core Matplotlib Functions to Master
+## 📖 Summary of Core Matplotlib Functions to Master
 The following are the most commonly used Matplotlib functions in deep learning, recommended for mastery:
 - Basic Plotting: `plt.plot`, `plt.scatter`, `plt.bar`, `plt.hist`, `plt.imshow`
 - Plot Customization: `plt.title`, `plt.xlabel`, `plt.ylabel`, `plt.legend`, `plt.grid`
