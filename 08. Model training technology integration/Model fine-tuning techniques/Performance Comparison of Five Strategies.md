@@ -1,6 +1,4 @@
-
-
-# 📊 Comparison of Five Model Fine-Tuning Strategies
+## 📊 Comparison of Five Model Fine-Tuning Strategies
 
 | Method            | Definition                                                                             | Mathematical Formulation                                                            | Advantages                                                   | Disadvantages                                                                         | Applicable Scenarios                                                                 |
 | ----------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -12,7 +10,7 @@
 
 ---
 
-# ✅ Summary
+## 📖 Summary
 
 * If the goal is **minimal parameter overhead**: Prompt Tuning.
 * If the model is small and needs flexible expressiveness: P-Tuning v1.
