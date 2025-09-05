@@ -34,6 +34,7 @@ where \$\kappa\_\phi\$ is a kernel function parameterized by a neural network.
 
 ---
 
+## 📖 Code Implementation
 A classic implementation is the **Fourier Neural Operator (FNO)**, which leverages Fourier transforms to efficiently parameterize \$\mathcal{K}\$ in the frequency domain, avoiding direct integration. Assuming periodic boundary conditions, in the 1D case:
 
 $$
@@ -48,8 +49,7 @@ where:
 
 The strength of FNO lies in resolution-invariance: it can be trained on coarse grids and used on fine grids during inference, since Fourier modes are continuous.
 
----
-## 📖 Code
+### Code
 Below is the simplest 1D FNO example implemented from scratch in PyTorch. The task is to learn a simple operator: mapping the input function \$f(x) = \sin(kx)\$ to its integral form (cumulative integral). The code includes the spectral convolution layer (`SpectralConv1d`) and the FNO model, with synthetic training data.
 
 ```python
