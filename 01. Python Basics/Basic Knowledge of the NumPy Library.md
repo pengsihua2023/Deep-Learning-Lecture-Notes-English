@@ -1,5 +1,5 @@
-## Python Basics: Introduction to the NumPy Library
-### What is NumPy?
+# Python Basics: Introduction to the NumPy Library
+## What is NumPy?
 NumPy (Numerical Python) is an open-source numerical computing library for the Python programming language, widely used in scientific computing, data analysis, and deep learning. It provides efficient multidimensional array (`ndarray`) objects and a rich set of mathematical functions to process large-scale numerical data quickly. NumPy is a core dependency for many Python scientific computing libraries, such as Pandas, SciPy, TensorFlow, and PyTorch.
 #### Key Features of NumPy:
 - **Multidimensional Arrays (`ndarray`)**: Efficient fixed-size multidimensional arrays that support fast vectorized operations.
@@ -9,7 +9,7 @@ NumPy (Numerical Python) is an open-source numerical computing library for the P
 - **Easy Integration**: Seamlessly integrates with deep learning frameworks, with data often passed as NumPy arrays.
 In deep learning, NumPy is a fundamental tool for data preprocessing, input preparation, and tensor operations. Although deep learning frameworks like TensorFlow and PyTorch have their own tensor types, NumPy arrays are commonly used for data loading, preprocessing, and debugging.
 ---
-### Essential NumPy Knowledge for Deep Learning
+## Essential NumPy Knowledge for Deep Learning
 In deep learning, NumPy is primarily used for **data preprocessing**, **tensor operations**, and **debugging**. Below are the key NumPy concepts to master, with practical applications in deep learning:
 #### 📖 1. **Array Creation and Basic Operations**
    - **Creating Arrays**:
