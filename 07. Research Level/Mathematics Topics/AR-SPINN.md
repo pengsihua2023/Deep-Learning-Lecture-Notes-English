@@ -4,8 +4,9 @@
 AR-SPINN combines the dynamics of **Spiking Neurons**, the temporal dependence of **Recurrent Structures (RNN)**, and the **Adaptive Threshold Mechanism**.
 It can be described by the following equations:
 
+## 📖 Mathematical description
 
-## 📖 1. Membrane Potential Dynamics
+### 1. Membrane Potential Dynamics
 
 The membrane potential of neuron \$i\$ at time \$t\$ is updated as:
 
@@ -24,7 +25,7 @@ where:
 
 
 
-## 📖 2. Spiking Function
+### 2. Spiking Function
 
 $$
 s_i(t) = H\big(u_i(t) - \theta_i(t)\big)
@@ -34,7 +35,7 @@ where \$H(\cdot)\$ is the Heaviside step function, and \$\theta\_i(t)\$ is the d
 
 
 
-## 📖 3. Adaptive Threshold Update
+### 3. Adaptive Threshold Update
 
 The threshold dynamically changes with spiking history:
 
