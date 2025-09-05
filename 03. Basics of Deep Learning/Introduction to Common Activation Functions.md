@@ -1,8 +1,7 @@
-## Basics of Deep Learning: Introduction to Common Activation Functions
+# Basics of Deep Learning: Introduction to Common Activation Functions
 
----
 
-## 1. Sigmoid Activation Function
+## 📖 1. Sigmoid Activation Function
 <img width="400" height="270" alt="image" src="https://github.com/user-attachments/assets/ffd061a2-165c-486a-83d0-e93fc62d9979" />
 
 The Sigmoid activation function is a commonly used non-linear activation function, widely applied in neural networks, particularly in binary classification problems. Below is an introduction:
@@ -73,9 +72,9 @@ Due to its limitations, other activation functions like **ReLU** (Rectified Line
 #### **Summary**
 The Sigmoid activation function is a fundamental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to $(0, 1)$ makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models. 
 
----
 
-## 2. ReLU Activation Function  
+
+## 📖 2. ReLU Activation Function  
 
 The **ReLU (Rectified Linear Unit)** activation function is a widely used non-linear activation function in neural networks, particularly in deep learning models like convolutional neural networks (CNNs) and deep neural networks, due to its simplicity and effectiveness.
 <img width="400" height="230" alt="image" src="https://github.com/user-attachments/assets/5d1e30fd-7cc9-4b58-a157-04060102b558" />
@@ -154,9 +153,9 @@ To address ReLU’s limitations, several variants have been developed:
 #### **Summary**
 The ReLU activation function is a cornerstone of modern deep learning due to its simplicity, efficiency, and ability to mitigate vanishing gradient issues. It is primarily used in hidden layers of neural networks, transforming negative inputs to zero and preserving positive inputs. While it has limitations like the dying ReLU problem, its variants (e.g., Leaky ReLU) and careful model design can address these issues, making ReLU a preferred choice for most deep learning architectures.damental tool in neural networks, particularly for binary classification tasks. Its ability to map inputs to \((0, 1)\) makes it ideal for probabilistic outputs, but its limitations, such as vanishing gradients, should be considered when designing deep learning models.
 
----
 
-## 3. Leaky ReLU activation function 
+
+## 📖 3. Leaky ReLU activation function 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/d74f9e07-ac63-4c29-8005-7941914576bb" />  
  
   
@@ -253,9 +252,9 @@ print(output)
 - Leaky ReLU is computationally efficient and helps mitigate issues with vanishing gradients compared to standard ReLU.
 - In practice, frameworks like TensorFlow and PyTorch optimize these operations for GPU acceleration.
 
----
+
   
-## 4. Softmax activation function
+## 📖 4. Softmax activation function
 <img width="384" height="300" alt="image" src="https://github.com/user-attachments/assets/f290108e-edcd-4408-b99e-4a0a35be16a3" />     
 
 ### Mathematical Definition of Softmax
@@ -370,9 +369,9 @@ print(output_batch)
 - **Gradient**: Softmax is differentiable, making it suitable for backpropagation in neural networks.
 - Frameworks like TensorFlow and PyTorch optimize Softmax for GPU acceleration and handle batched inputs efficiently.  
 
----
 
-## 5. Tanh activation function
+
+## 📖 5. Tanh activation function
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/39f4bd79-59bc-437d-8e55-242656ca9ce2" />  
   
 ### Mathematical Definition of Tanh
