@@ -17,7 +17,7 @@
 
 ---
 
-## 1. What is Divergence?
+## 📖 1. What is Divergence?
 
 In mathematics and information theory, **divergence** usually refers to a measure of the difference between two probability distributions.
 
@@ -66,9 +66,9 @@ $W(P, Q) = \inf_{\gamma \in \Pi(P,Q)} \mathbb{E}_{(x,y) \sim \gamma} \big[ \lVer
 * **JS divergence**: A symmetrized variant of KL divergence, commonly employed to quantify similarity between two distributions.  
 * **Wasserstein distance**: A distributional metric based on optimal transport cost, frequently applied in Generative Adversarial Networks (WGANs).  
 
----
 
-## 2. Applications in Deep Learning
+
+## 📖 2. Applications in Deep Learning
 
 ### (1) Loss Functions
 
@@ -120,9 +120,9 @@ In policy optimization methods (e.g., TRPO, PPO), KL divergence is often used to
 $D_{\mathrm{KL}}(\pi_{\text{old}} \parallel \pi_{\text{new}}) \leq \delta$
 
 
----
 
-## 3. Comparison of Divergences
+
+## 📖 3. Comparison of Divergences
 
 | Divergence                | Formula                                                                                                                                            | Properties                                                   | Advantages                                          | Limitations                                                | Applications                                                     |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------- |
@@ -130,7 +130,7 @@ $D_{\mathrm{KL}}(\pi_{\text{old}} \parallel \pi_{\text{new}}) \leq \delta$
 | **Jensen–Shannon (JS)**   | $D_{\mathrm{JS}}(P \Vert Q) = \tfrac{1}{2}D_{\mathrm{KL}}(P \Vert M) + \tfrac{1}{2}D_{\mathrm{KL}}(Q \Vert M) \; M=\tfrac{1}{2}(P+Q)$ | Symmetric, bounded (between 0 and $\log 2$)                  | Symmetry, stability                                 | Gradient vanishing when distributions have no overlap      | Original GAN                                                     |
 | **Wasserstein Distance**  | $W(P,Q)=\inf_{\gamma \in \Pi(P,Q)} \mathbb{E}_{(x,y)\sim\gamma}\left[\lVert x-y\rVert\right]$                                                      | Metric; captures geometric differences between distributions | Smooth gradients even with disjoint distributions   | Computationally more expensive (optimal transport problem) | WGAN, distribution alignment                                     |
 
----
+
 
 
 
