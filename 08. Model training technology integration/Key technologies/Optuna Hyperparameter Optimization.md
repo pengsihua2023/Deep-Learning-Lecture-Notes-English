@@ -1,25 +1,25 @@
-## Optuna Hyperparameter Optimization Method
-### 📖 What is the Optuna Hyperparameter Optimization Method?
+# Optuna Hyperparameter Optimization Method
+## 📖 What is the Optuna Hyperparameter Optimization Method?
 **Optuna** is an open-source hyperparameter optimization framework designed to automatically search for the best hyperparameter combinations for machine learning models. It uses **efficient search algorithms** (e.g., TPE, Tree-structured Parzen Estimator) to explore a defined hyperparameter space and find combinations that optimize a target metric (e.g., model accuracy or loss). Optuna is particularly suited for deep learning and machine learning tasks due to its ease of use, flexibility, and support for parallel optimization.
 
-### 📖 Core Features:
+## 📖 Core Features:
 1. **Automated Search**: Users define the search range for hyperparameters (e.g., learning rate, number of layers), and Optuna automatically tests different combinations.
 2. **Efficient Algorithms**: Uses TPE or enhanced versions of grid/random search, making it more efficient than random search.
 3. **Dynamic Search Space**: Supports conditional hyperparameters (e.g., determining neuron count based on the number of layers).
 4. **Early Stopping**: Uses pruning to terminate underperforming trials, saving computational resources.
 5. **Easy Integration**: Compatible with frameworks like PyTorch, TensorFlow, and Scikit-learn.
 
-### 📖 Advantages:
+## 📖 Advantages:
 - Reduces manual hyperparameter tuning effort.
 - Finds optimal parameters faster than grid or random search.
 - Supports distributed optimization for large-scale experiments.
 
-### 📖 Challenges:
+## 📖 Challenges:
 - Requires defining reasonable hyperparameter ranges.
 - The optimization process may demand significant computational resources.
 
 
-### 📖 Principles of Optuna
+## 📖 Principles of Optuna
 1. **Define Objective Function**:
    - Users create an objective function that takes hyperparameters as input and outputs a metric to optimize (e.g., validation loss).
    - Optuna calls this function with different hyperparameter combinations.
@@ -36,7 +36,7 @@
 
 ---
 
-### 📖 Simple Code Example: Hyperparameter Optimization with PyTorch and Optuna
+## 📖 Simple Code Example: Hyperparameter Optimization with PyTorch and Optuna
 Below is a simple example showing how to use Optuna to optimize hyperparameters (learning rate and hidden layer size) for a PyTorch model on the MNIST dataset.
 
 ```python
@@ -122,7 +122,7 @@ print("  Best hyperparameters: ", trial.params)
 
 
 
-### 📖 Code Explanation
+## 📖 Code Explanation
 1. **Objective Function (`objective`)**:
    - Defines the search space for two hyperparameters:
      - `learning_rate`: In the range `[1e-5, 1e-1]` (logarithmic scale).
@@ -142,7 +142,7 @@ print("  Best hyperparameters: ", trial.params)
 
 
 
-### 📖 Key Points
+## 📖 Key Points
 1. **Search Space**:
    - Users must define reasonable hyperparameter ranges (e.g., learning rate, number of layers, batch size).
    - Optuna supports various types (e.g., floats, integers, categorical variables).
@@ -156,7 +156,7 @@ print("  Best hyperparameters: ", trial.params)
 
 
 
-### 📖 Practical Effects
+## 📖 Practical Effects
 - **Efficiency**: Compared to random search, Optuna typically finds better hyperparameters in fewer trials.
 - **Flexibility**: Supports complex hyperparameter dependencies (e.g., conditional search).
 - **Results**: In the example above, Optuna may find the optimal learning rate and hidden layer size in 10 trials, significantly improving model accuracy.
