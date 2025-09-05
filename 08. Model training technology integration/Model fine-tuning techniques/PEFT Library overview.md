@@ -1,14 +1,12 @@
-
-
-### Introduction to the PEFT Library
+# Introduction to the PEFT Library
+## 📖 Introduction
 
 **PEFT** (Parameter-Efficient Fine-Tuning) is an open-source Python library developed by Hugging Face, focusing on parameter-efficient fine-tuning methods. Its goal is to reduce the computational and storage cost of fine-tuning large pre-trained models (such as Transformer, BERT, GPT, etc.), especially in resource-constrained scenarios or when fast adaptation to multiple downstream tasks is required. PEFT provides implementations of various parameter-efficient fine-tuning techniques, including **LoRA** (Low-Rank Adaptation), **Prefix Tuning**, **Prompt Tuning**, and more.
 
 Below is a detailed introduction to the PEFT library, covering its core features, supported fine-tuning methods, advantages, application scenarios, and a code example related to Prefix Tuning.
 
----
 
-### Core Features
+## 📖 Core Features
 
 The main goal of the PEFT library is to allow users to fine-tune large pre-trained models at an extremely low parameter cost while maintaining performance comparable to full fine-tuning. Its core features include:
 
@@ -19,9 +17,8 @@ The main goal of the PEFT library is to allow users to fine-tune large pre-train
 5. **Model Saving and Loading**: Efficiently stores models containing only fine-tuned parameters, significantly reducing storage requirements.
 6. **Ease of Use**: Provides simple APIs to implement complex fine-tuning logic with minimal code.
 
----
 
-### Supported Fine-Tuning Methods
+## 📖 Supported Fine-Tuning Methods
 
 PEFT library supports the following main parameter-efficient fine-tuning methods:
 
@@ -52,9 +49,8 @@ PEFT library supports the following main parameter-efficient fine-tuning methods
 
    * Variants of LoRA that use different matrix decompositions for further efficiency.
 
----
 
-### Advantages
+## 📖 Advantages
 
 * **Low Resource Requirements**: Only fine-tune a small number of parameters (usually tens of KB to a few MB), suitable for running on regular GPUs or CPUs.
 * **Fast Adaptation**: Different tasks can use independent trainable parameters, no need to retrain the whole model when switching tasks.
@@ -62,9 +58,8 @@ PEFT library supports the following main parameter-efficient fine-tuning methods
 * **Comparable Performance**: On many tasks (such as sentiment analysis, text generation), performance is close to or even better than full fine-tuning.
 * **Open Source and Community Support**: PEFT is open-source (Apache 2.0 license), deeply integrated with the Hugging Face ecosystem, and has an active community.
 
----
 
-### Application Scenarios
+## 📖 Application Scenarios
 
 * **NLP Tasks**: Sentiment analysis, text classification, machine translation, question answering, text generation, etc.
 * **Multi-Task Learning**: Train independent fine-tuning parameters (LoRA or Adapter) for each task to achieve efficient task switching.
@@ -72,15 +67,14 @@ PEFT library supports the following main parameter-efficient fine-tuning methods
 * **Domain Adaptation**: Quickly adapt general pre-trained models to specific domains (e.g., healthcare, legal).
 * **Research and Experimentation**: Quickly test different fine-tuning strategies and explore the effects of parameter-efficient methods.
 
----
 
-### Relationship with Prefix Tuning
+## 📖 Relationship with Prefix Tuning
 
 In your earlier discussion, you focused on **Prefix Tuning**, which is one of the methods supported by PEFT. PEFT simplifies the implementation of Prefix Tuning through the `PrefixTuningConfig` and `get_peft_model` functions, automatically integrating learnable prefixes into the Transformer attention mechanism. Below is a real example based on the IMDB dataset, showing how to implement Prefix Tuning using PEFT for text classification.
 
 ---
 
-### Code Example: Prefix Tuning with PEFT (IMDB Dataset)
+## 📖 Code Example: Prefix Tuning with PEFT (IMDB Dataset)
 
 The following code, based on the previously discussed IMDB dataset, demonstrates how to use the PEFT library to perform Prefix Tuning for sentiment classification.
 
@@ -262,9 +256,7 @@ with torch.no_grad():
    pip install torch transformers peft datasets scikit-learn tqdm
    ```
 
----
-
-### Installing and Using the PEFT Library
+## 📖 Installing and Using the PEFT Library
 
 * **Installation**:
 
@@ -275,9 +267,8 @@ with torch.no_grad():
 * **Supported Models**: Supports nearly all Transformer models in Hugging Face `transformers`.
 * **Version Requirements**: Recommended to use the latest versions (as of August 2025, PEFT>=0.5.0, transformers>=4.30.0).
 
----
 
-### Extensions and Further Needs
+## 📖 Extensions and Further Needs
 
 If you need any of the following, let me know, and I can further customize:
 
