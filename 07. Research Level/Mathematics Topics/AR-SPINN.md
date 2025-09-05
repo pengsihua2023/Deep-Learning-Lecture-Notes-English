@@ -4,9 +4,8 @@
 AR-SPINN combines the dynamics of **Spiking Neurons**, the temporal dependence of **Recurrent Structures (RNN)**, and the **Adaptive Threshold Mechanism**.
 It can be described by the following equations:
 
----
 
-### 1. Membrane Potential Dynamics
+## 📖 1. Membrane Potential Dynamics
 
 The membrane potential of neuron \$i\$ at time \$t\$ is updated as:
 
@@ -23,9 +22,9 @@ where:
 * \$s\_i(t-1)\$: self spike at the previous time step
 * \$v\$: reset value
 
----
 
-### 2. Spiking Function
+
+## 📖 2. Spiking Function
 
 $$
 s_i(t) = H\big(u_i(t) - \theta_i(t)\big)
@@ -33,9 +32,9 @@ $$
 
 where \$H(\cdot)\$ is the Heaviside step function, and \$\theta\_i(t)\$ is the dynamic threshold.
 
----
 
-### 3. Adaptive Threshold Update
+
+## 📖 3. Adaptive Threshold Update
 
 The threshold dynamically changes with spiking history:
 
@@ -51,7 +50,7 @@ where:
 
 ---
 
-# Minimal Python Implementation
+## 📖 Minimal Python Implementation
 
 Below is a minimal **AR-SPINN single-neuron implementation**, to illustrate the core idea:
 
@@ -104,13 +103,12 @@ print("Input sequence:\n", x_seq)
 print("Output spikes:\n", output)
 ```
 
----
 
-### This implementation demonstrates the three core mechanisms of **AR-SPINN**:
+## 📖 This implementation demonstrates the three core mechanisms of **AR-SPINN**:
 
 1. **Temporal Recurrence**: historical dependence introduced via `self.w_rec * s_prev`;
 2. **Spiking Neuron Dynamics**: membrane potential accumulation, decay, reset;
 3. **Adaptive Threshold**: threshold dynamically changes with spiking history.
 
----
+
 
