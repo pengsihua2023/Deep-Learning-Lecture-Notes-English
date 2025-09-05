@@ -33,7 +33,7 @@ Where:
 
 Finally, the saliency map \$M(x)\$ can be visualized as a heatmap to show the regions the model focuses on.
 
-
+---
 
 ## 📖 3. Minimal Code Example
 
