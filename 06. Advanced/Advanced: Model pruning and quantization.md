@@ -3,7 +3,7 @@ Model Pruning and Quantization are two key techniques for optimizing deep learni
 
 ---
 
-### Model Pruning
+## 📖 Model Pruning
 
 #### Introduction
 Model pruning reduces model size and computational load by removing unimportant or redundant parts of a neural network (e.g., weights, neurons, or channels). The goal is to create a lighter model while retaining performance close to the original model.
@@ -16,7 +16,7 @@ Model pruning reduces model size and computational load by removing unimportant 
 </div>
 
 
-#### Main Methods
+### Main Methods
 1. **Weight Pruning**:
    - **Description**: Sets weights below a certain threshold in the weight matrix to zero, creating a sparse model.
    - **Advantages**: High flexibility, applicable to various network architectures.
@@ -32,19 +32,19 @@ Model pruning reduces model size and computational load by removing unimportant 
    - **Description**: Determines pruning targets based on the importance of weights or channels (e.g., L1 norm, gradients).
    - **Example**: Pruning low-importance weights using the L1 norm.
 
-#### Application Scenarios
+### Application Scenarios
 - Reduces model storage requirements, facilitating deployment on edge devices.
 - Lowers inference latency, suitable for real-time applications (e.g., autonomous driving).
 - Reduces energy consumption, ideal for mobile devices or IoT devices.
 
-#### Challenges
+### Challenges
 - **Performance Loss**: Excessive pruning may significantly reduce model accuracy.
 - **Hyperparameter Tuning**: Requires selecting appropriate pruning ratios and thresholds.
 - **Hardware Adaptation**: Sparse models need specialized optimizations to achieve acceleration.
 
----
 
-### Model Quantization
+
+## 📖 Model Quantization
 
 #### Introduction
 Model quantization reduces model size and inference time by lowering the precision of parameters and computations (e.g., from 32-bit floating-point to 8-bit integers) while maintaining performance. Quantization is commonly used to adapt large models to resource-constrained devices.
@@ -55,7 +55,6 @@ Model quantization reduces model size and inference time by lowering the precisi
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
-
 
 #### Main Methods
 1. **Post-Training Quantization (PTQ)**:
@@ -88,7 +87,7 @@ Model quantization reduces model size and inference time by lowering the precisi
 
 ---
 
-### Comparison of Pruning and Quantization
+## 📖 Comparison of Pruning and Quantization
 - **Objective**:
   - Pruning: Reduces the number of model parameters or structural complexity.
   - Quantization: Lowers the precision of parameters and computations.
@@ -99,7 +98,7 @@ Model quantization reduces model size and inference time by lowering the precisi
 
 ---
 
-### Simple Code Example (Pruning and Quantization with PyTorch)
+## 📖 Simple Code Example (Pruning and Quantization with PyTorch)
 
 Below is an example combining weight pruning and post-training quantization, optimizing a simple convolutional neural network using PyTorch on the MNIST dataset.
 ## Code
@@ -217,7 +216,7 @@ if __name__ == "__main__":
 
 ```
 
-### Code Explanation
+## 📖 Code Explanation
 1. **Task**: Perform handwritten digit classification on the MNIST dataset using a simple convolutional neural network.
 2. **Model**: `ConvNet` consists of two convolutional layers and one fully connected layer.
 3. **Pruning**: Use PyTorch's `prune.l1_unstructured` to apply L1 unstructured pruning to convolutional layer weights, removing 50% of the weights.
@@ -249,7 +248,7 @@ Quantized Model Accuracy: 0.9700
 
 
 
-### Summary of Advantages and Challenges
+## 📖 Summary of Advantages and Challenges
 - **Advantages**:
   - **Pruning**: Significantly reduces model size and computational load, suitable for resource-constrained scenarios.
   - **Quantization**: Accelerates inference and reduces power consumption, ideal for edge devices.
@@ -257,7 +256,7 @@ Quantized Model Accuracy: 0.9700
   - **Pruning**: Requires balancing compression rate and accuracy; structured pruning may necessitate network redesign.
   - **Quantization**: Lower precision may lead to performance degradation and requires hardware support.
 
-### Relationship with Other Techniques
+## 📖 Relationship with Other Techniques
 - **Integration with Fine-Tuning**: Pruning and quantization are often applied after fine-tuning to further optimize the model.
 - **Integration with Federated Learning**: In federated learning, pruning and quantization can reduce communication and computational costs for client models.
 - **Unrelated to Meta-Learning**: Meta-learning focuses on rapid adaptation to new tasks, while pruning and quantization focus on model compression and efficiency.
