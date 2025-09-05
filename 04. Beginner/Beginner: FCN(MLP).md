@@ -1,10 +1,10 @@
-## Beginner: FCN(MLP)
-### **Fully Connected Neural Network (MLP)**  
+# Beginner: FCN(MLP)
+#### **Fully Connected Neural Network (MLP)**  
 
-### **Importance**: 
+## 📖 **Importance**: 
 This is a foundational model in deep learning, and understanding it helps grasp core neural network concepts (e.g., neurons, weights, activation functions, gradient descent).  
 
-### **Core Concepts**:  
+## 📖 **Core Concepts**:  
 - A neural network consists of an input layer, hidden layers, and an output layer, functioning like neurons in the brain.  
 - Each neuron receives inputs, computes a weighted sum, and passes it through an activation function (e.g., sigmoid or ReLU) to produce an output.  
 - Training involves adjusting weights through "trial and error" to make predictions closer to actual values (using gradient descent).  
@@ -18,9 +18,9 @@ This is a foundational model in deep learning, and understanding it helps grasp 
 </div>
 
 
-## Mathematical Description
+## 📖 Mathematical Description
 
-### 📖 1. Network Structure
+### 1. Network Structure
 
 A typical fully connected neural network consists of several **layers**:
 
@@ -32,7 +32,7 @@ In a fully connected structure, **each neuron in a given layer is connected to a
 
 
 
-### 📖 2. Mathematical Notation
+### 2. Mathematical Notation
 
 Let:
 
@@ -62,7 +62,7 @@ $$
 
 
 
-### 📖 3. Forward Propagation
+### 3. Forward Propagation
 
 The input layer is defined as:
 
@@ -92,7 +92,7 @@ $$
 
 
 
-### 📖 4. Loss Function
+### 4. Loss Function
 
 During training, given target output $\mathbf{y}$, common loss functions include:
 
@@ -110,7 +110,7 @@ $$
 
 
 
-### 📖 5. Parameter Update (Backpropagation + Gradient Descent)
+### 5. Parameter Update (Backpropagation + Gradient Descent)
 
 By backpropagation, we compute the gradients of the loss function with respect to the parameters:
 
@@ -132,7 +132,7 @@ where $\eta$ is the learning rate.
 
 
 
-### 📖 6. Summary
+### 6. Summary
 
 In summary, a fully connected neural network can be abstracted as:
 
@@ -246,7 +246,7 @@ if __name__ == "__main__":
     test_model()
 
 ```
-## Training Results
+### Training Results
 Epoch [5/5], Step [800], Loss: 0.3124   
 Epoch [5/5], Step [900], Loss: 0.2941   
 
