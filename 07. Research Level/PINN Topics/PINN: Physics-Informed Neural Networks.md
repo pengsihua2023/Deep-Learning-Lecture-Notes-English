@@ -189,8 +189,8 @@ print("Prediction shape:", u_pred.shape)  # Output: torch.Size([100, 1])
 
 ---
 
-# 1. Multi-dimensional PDE Example: 2D Heat Conduction (Laplace Equation Variant)
-
+# Multi-dimensional PDE Example: 2D Heat Conduction (Laplace Equation Variant)
+---
 2D heat conduction equation (simplified Laplace equation):
 
 $$
@@ -334,8 +334,8 @@ plt.show()
 
 ---
 
-
 # Inverse Problem Example: Parameter Estimation
+---
 
 In the Burgers equation, assume viscosity coefficient \$\nu\$ is unknown. Use observation data to estimate \$\nu\$ by adding observation loss and treating \$\nu\$ as a learnable parameter.
 
