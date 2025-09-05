@@ -1,7 +1,7 @@
-## Dataset Introduction: IMDb Dataset
+# Dataset Introduction: IMDb Dataset
 The IMDb (Internet Movie Database) dataset is a widely used public dataset for natural language processing (NLP), primarily for sentiment analysis and text classification tasks. Released in 2011 by Andrew L. Maas and colleagues from Stanford University, it contains movie review texts and their corresponding sentiment labels (positive or negative). Due to its simplicity, moderate scale, and real-world relevance (user reviews), it is considered a standard dataset for NLP research, particularly for beginners and testing sentiment analysis models.
 
-### Dataset Overview
+### 📖 Dataset Overview
 - **Purpose**: To develop and test sentiment analysis algorithms to determine whether movie reviews are positive or negative.
 - **Scale**:
   - Total of 50,000 movie reviews, evenly distributed:
@@ -16,7 +16,7 @@ The IMDb (Internet Movie Database) dataset is a widely used public dataset for n
   - Texts include natural language, slang, spelling errors, and emotional expressions, reflecting authentic user reviews.
 - **License**: Public dataset, freely available for academic and non-commercial use.
 
-### Dataset Structure
+### 📖 Dataset Structure
 - **File Format**:
   - Provided as raw text files (`.txt`) and preprocessed bag-of-words format.
   - Directory structure (for raw text):
@@ -31,7 +31,7 @@ The IMDb (Internet Movie Database) dataset is a widely used public dataset for n
   - Labels: Positive (1) or Negative (0), based on rating thresholds (≥7 for positive, ≤4 for negative).
 - **File Size**: ~80MB compressed, ~200MB uncompressed (raw text).
 
-### Data Collection and Preprocessing
+### 📖 Data Collection and Preprocessing
 - **Source**:
   - Reviews are crawled from the IMDb website, selecting those with clear user ratings.
   - The dataset ensures balanced positive/negative categories and no movie overlap between training and test sets.
@@ -41,7 +41,7 @@ The IMDb (Internet Movie Database) dataset is a widely used public dataset for n
   - Provides a bag-of-words format, converting text to word frequency vectors for traditional machine learning models.
   - Minimal text cleaning is applied, preserving spelling errors, punctuation, and emotional expressions to reflect real user language.
 
-### Applications and Research
+### 📖 Applications and Research
 - **Main Tasks**:
   - Sentiment analysis: Binary classification to predict whether a review is positive or negative.
   - Text classification: Testing word embeddings, RNNs, CNNs, or Transformers on text data.
@@ -59,7 +59,7 @@ The IMDb (Internet Movie Database) dataset is a widely used public dataset for n
   - Transfer learning: Pretrained models are fine-tuned for other text classification tasks.
   - Teaching: Due to its simplicity and clear task, it is often used in NLP courses.
 
-### Obtaining the Dataset
+### 📖 Obtaining the Dataset
 - **Official Website**: http://ai.stanford.edu/~amaas/data/sentiment/
   - Provides downloads for raw text and bag-of-words formats.
 - **Framework Support**:
@@ -90,7 +90,7 @@ The IMDb (Internet Movie Database) dataset is a widely used public dataset for n
     ```
 - **Kaggle**: Offers a simplified version of the IMDb dataset, often used for competitions.
 
-### Notes
+### 📖 Notes
 - **Data Preprocessing**:
   - Requires tokenization, stop-word removal, or standardization (e.g., lowercasing).
   - Long texts may need truncation or padding to fit model inputs.
@@ -107,7 +107,7 @@ The IMDb (Internet Movie Database) dataset is a widely used public dataset for n
   - **Yelp Reviews**: Larger-scale review dataset with multi-class sentiment.
   - **GLUE**: Includes multiple NLP tasks, suitable for comprehensive testing.
 
-### Code Example (Simple LSTM Classification)
+### 📖 Code Example (Simple LSTM Classification)
 The following is a simple PyTorch LSTM model example:
 ```python
 import torch
@@ -166,7 +166,7 @@ for epoch in range(5):
     print(f'Epoch {epoch+1}, Loss: {loss.item():.4f}')
 ```
 
-### Comparison with Other Datasets
+### 📖 Comparison with Other Datasets
 - **With SST**:
   - IMDb is binary classification (positive/negative), while SST supports fine-grained sentiment (5 classes or continuous values).
   - IMDb is larger (50,000 vs SST’s 10,000+), but its task is simpler.
