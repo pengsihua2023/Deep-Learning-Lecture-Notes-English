@@ -1,9 +1,9 @@
 
-## Uniform-Normal Initialization (Xavier-Glorot Initialization)
+# Uniform-Normal Initialization (Xavier-Glorot Initialization)
 
 
 
-#### **Principle**
+## 📖 Principle
 
 **Xavier Initialization** (also known as Glorot Initialization) is a weight initialization method for deep neural networks proposed by Xavier Glorot and Yoshua Bengio in 2010. It was designed to address the problem of gradient vanishing or explosion by ensuring that the network maintains appropriate variance during forward and backward propagation. Xavier initialization has two variants: **Uniform Initialization** and **Normal Initialization**, where weights are sampled from a uniform distribution or a normal distribution, respectively.
 
@@ -61,7 +61,7 @@ $$
 
 ---
 
-### PyTorch Usage
+## 📖 PyTorch Usage
 
 PyTorch provides the built-in `torch.nn.init` module, supporting both Xavier uniform and normal initialization. Below is a minimal code example showing how to use Xavier initialization in fully connected and convolutional layers.
 
@@ -107,7 +107,7 @@ print("FC layer weight std:", model.fc.weight.std().item())
 ```
 
 
-### Code Explanation
+## 📖 Code Explanation
 
 * **Model**:
 
@@ -129,9 +129,9 @@ print("FC layer weight std:", model.fc.weight.std().item())
   * Model outputs a 10-dimensional vector (logits for 10 classes).
   * Prints weight mean and standard deviation, verifying initialization (mean close to 0, std consistent with formula).
 
----
 
-#### **Notes**
+
+## 📖 Notes
 
 1. **Choosing Initialization Type**:
 
@@ -156,9 +156,9 @@ print("FC layer weight std:", model.fc.weight.std().item())
 
    * Check weight distribution (mean close to 0, std consistent with formula) to ensure correctness.
 
----
 
-#### **Summary**
+
+## 📖 Summary
 
 Xavier initialization sets weights within an appropriate range via uniform or normal distribution, based on the input and output dimensions of each layer. This helps maintain stable signal variance, making it suitable for deep learning models. PyTorch provides `torch.nn.init.xavier_uniform_` and `xavier_normal_` for simple implementation, requiring only the target weight tensor. Compared with He initialization, Xavier is more suitable for tanh/sigmoid activation functions.
 
