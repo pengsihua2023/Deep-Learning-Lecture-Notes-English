@@ -55,7 +55,7 @@ $$
 
 Represents the sum of absolute values of all vector components.
 
----
+
 
 #### 2. \$L\_2\$ Norm (Euclidean Norm)
 
@@ -65,7 +65,7 @@ Represents the sum of absolute values of all vector components.
 
 Represents the geometric length of the vector in Euclidean space.
 
----
+
 
 #### 3. \$L\_\infty\$ Norm (Maximum Norm)
 
@@ -75,7 +75,7 @@ Represents the geometric length of the vector in Euclidean space.
 
 Represents the maximum absolute value of vector components.
 
----
+
 
 #### 4. \$L\_0\$ Norm (Non-standard Norm)
 
@@ -85,7 +85,7 @@ Represents the maximum absolute value of vector components.
 
 Represents the number of non-zero elements in the vector (strictly speaking, not a norm because it does not satisfy absolute homogeneity).
 
----
+
 
 #### 5. Matrix Norm (Example: Frobenius Norm)
 
