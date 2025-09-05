@@ -2,12 +2,12 @@
 
 StepLR is a **Learning Rate Scheduler** commonly used in deep learning training. Its function is to proportionally decay the learning rate at fixed interval periods. This method is often seen in the PyTorch framework.
 
-## Definition
+## 📖 Definition
 
 The basic idea of `StepLR` is:
 During training, after every fixed number of epochs, the learning rate is multiplied by a decay factor γ (gamma), thereby gradually reducing the learning rate and helping the model converge better.
 
-## Mathematical Description
+## 📖 Mathematical Description
 
 Set:
 
@@ -46,7 +46,7 @@ Then:
 
 ---
 
-### Python Code Example
+## 📖 Python Code Example
 
 Below is a minimal PyTorch example showing how to use **StepLR** (step decay) scheduler to dynamically adjust the learning rate in an MNIST digit classification task. The code is concise and uses the Adam optimizer.
 
@@ -117,9 +117,9 @@ for epoch in range(1, epochs + 1):
     scheduler.step()  # Update learning rate
 ```
 
----
 
-### Code Explanation
+
+## 📖 Code Explanation
 
 1. **Model Definition**:
 
@@ -157,23 +157,23 @@ for epoch in range(1, epochs + 1):
 
    Actual values may vary due to random initialization.
 
----
 
-### Key Points
+
+## 📖 Key Points
 
 * **Scheduler Call**: `scheduler.step()` is usually called at the end of each epoch to update the learning rate.
 * **StepLR**: Simple and effective, reduces learning rate every fixed number of epochs, suitable for quick experiments.
 * **Learning Rate Change**: Output shows learning rate decreases from 0.001 to 0.00001, with loss stabilizing over time.
 
----
 
-### Practical Applications
+
+## 📖 Practical Applications
 
 * **Deep Learning**: Widely used in CNNs, RNNs, Transformers (e.g., BERT).
 * **Complex Models**: Combined with Adam optimizer (as mentioned earlier), schedulers can improve convergence stability.
 * **With Other Regularization**: Can be combined with Dropout, BatchNorm, L2 regularization, etc.
 
-#### Notes
+## 📖 Notes
 
 * **Scheduling Strategy Choice**: StepLR is simple, while Cosine Annealing or ReduceLROnPlateau offer more flexibility.
 * **Step Size and Decay Rate**: `step_size` and `gamma` need to be tuned based on the task.
