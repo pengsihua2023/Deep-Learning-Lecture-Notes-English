@@ -1,11 +1,11 @@
-## DeepMD-kit for Simulating Macroscopic Thermodynamic Processes of Copper Metal
+# DeepMD-kit for Simulating Macroscopic Thermodynamic Processes of Copper Metal
 A typical real-data example of using DeepMD-kit in materials science is the simulation of copper (Cu) metal. This example is based on a study of large-scale molecular dynamics (MD) simulations, where a Deep Potential (DP) model is trained using ab initio (first-principles) data and then applied on supercomputers for high-accuracy MD simulations. This approach is suitable for studying thermodynamic properties, defect behavior, and other characteristics of metallic materials.
 
-### 1. Data Source
+## 📖 1. Data Source
 - The data originates from an ab initio training dataset generated using a concurrent learning scheme, ensuring uniform accuracy across a wide range of thermodynamic conditions.
 - The dataset includes local environment descriptors, energies, and forces for copper atoms, based on quantum mechanical calculations (e.g., DFT), covering relevant configuration spaces.
 
-### 2. Model Training Process
+## 📖 2. Model Training Process
 - Training is implemented using the DeePMD-kit package, typically taking several hours to a week on a single GPU, depending on data complexity.
 - The model employs a deep neural network (DNN) to fit high-dimensional functions, incorporating symmetry constraints and concurrent learning to minimize dataset requirements.
 - Example command (assuming the data directory is `cu_data`):
@@ -52,7 +52,7 @@ A typical real-data example of using DeepMD-kit in materials science is the simu
   dp freeze -o frozen.pb
   ```
 
-### 3. MD Simulation Details
+## 📖 3. MD Simulation Details
 - **System Scale**: Scalable up to 127.4 million atoms (127,401,984 atoms), with weak scaling tests from 7.96 million to 127.4 million atoms.
 - **Simulation Settings**:
   - Time step: 1.0 fs.
