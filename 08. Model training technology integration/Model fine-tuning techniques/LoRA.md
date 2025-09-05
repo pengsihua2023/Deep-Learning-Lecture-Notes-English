@@ -91,8 +91,8 @@ $$
 * **Code**: PyTorch can implement this via the `LoRALayer` class.
 
 ---
-
 ## 📖 Integrating LoRA into Transformer Attention Layer
+---
 
 ## 1. Concept
 
@@ -177,9 +177,8 @@ print("Output shape:", y.shape)  # (2, 5, 16)
 * **Strong compatibility**: LoRA can be seamlessly inserted into existing Transformer models.
 
 ---
-
 ##  📖 Hugging Face Transformers + LoRA Example
-
+---
 ## 1. Install Dependencies
 
 ```bash
@@ -283,11 +282,11 @@ model.save_pretrained("./lora-bert")
 ```
 
 
-
+---
 ## 📖 Summary
 
 * **LoRA in Hugging Face** is very convenient — just inject with `peft.LoraConfig`.
 * Only trains **Q, V matrices** low-rank updates, greatly reducing parameter count.
 * Can be applied to BERT, GPT-2, T5, and other large models for **efficient fine-tuning**.
-
+---
 
