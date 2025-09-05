@@ -1,8 +1,6 @@
-
-
 # LoRA Fine-tuning (Low-Rank Adaptation)
 
-## 1. Definition
+## 📖 1. Definition
 
 **LoRA** is a **Parameter-Efficient Fine-Tuning (PEFT)** method proposed by Microsoft in 2021.
 
@@ -19,7 +17,7 @@ Core idea:
 
 
 
-## 2. Mathematical Description
+## 📖 2. Mathematical Description
 
 Let the original weight matrix be:
 
@@ -41,9 +39,9 @@ Where:
 
 In Transformers, LoRA is usually applied to **attention projection matrices** \$W\_Q, W\_V\$.
 
+---
 
-
-## 3. Simple Code Example (PyTorch)
+## 📖 3. Simple Code Example (PyTorch)
 
 A minimal implementation of **linear layer + LoRA** in PyTorch:
 
@@ -76,7 +74,7 @@ In practice, LoRA is usually inserted into Transformer **Q (query projection)** 
 
 
 
-## 4. Summary
+## 📖 4. Summary
 
 * **Definition**: LoRA uses low-rank decomposition, training only incremental parameter matrices while freezing original weights.
 * **Formula**:
@@ -94,7 +92,7 @@ $$
 
 ---
 
-# 📘 Integrating LoRA into Transformer Attention Layer
+## 📖 Integrating LoRA into Transformer Attention Layer
 
 ## 1. Concept
 
@@ -113,7 +111,7 @@ $$
 
 * This way, only the **low-rank matrices \$A, B\$** are trained, while original parameters remain frozen.
 
----
+
 
 ## 2. PyTorch Example Code
 
@@ -172,8 +170,6 @@ y = attn(x)
 print("Output shape:", y.shape)  # (2, 5, 16)
 ```
 
-
-
 ## 3. Summary
 
 * **Q and V projection matrices** are replaced with **LoRA versions**, training only low-rank matrices \$A, B\$.
@@ -182,16 +178,13 @@ print("Output shape:", y.shape)  # (2, 5, 16)
 
 ---
 
-#  Hugging Face Transformers + LoRA Example
+##  📖 Hugging Face Transformers + LoRA Example
 
 ## 1. Install Dependencies
 
 ```bash
 pip install transformers datasets peft accelerate
 ```
-
-
-
 ## 2. Load Data & Model
 
 We use **Hugging Face Datasets** to load the `sst2` sentiment classification task, and `bert-base-uncased`.
@@ -212,8 +205,6 @@ encoded_dataset = dataset.map(preprocess, batched=True)
 # Model
 model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
 ```
-
-
 
 ## 3. Configure LoRA
 
@@ -293,7 +284,7 @@ model.save_pretrained("./lora-bert")
 
 
 
-## 🔑 Summary
+## 📖 Summary
 
 * **LoRA in Hugging Face** is very convenient — just inject with `peft.LoraConfig`.
 * Only trains **Q, V matrices** low-rank updates, greatly reducing parameter count.
