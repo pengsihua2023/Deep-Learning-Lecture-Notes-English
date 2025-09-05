@@ -1,6 +1,6 @@
-## Mathematical Fundamentals: Conversion Between Arrays and Tensors
+# Mathematical Fundamentals: Conversion Between Arrays and Tensors
 
-#### **1. In NumPy**
+## 📖 **1. In NumPy**
 In `NumPy`, arrays and tensors are both represented by `numpy.ndarray`, so no explicit conversion is needed; they can be treated as tensors or arrays depending on the context.
 - **From Array to Tensor**:
   - Any `NumPy` array can be directly used as a tensor because `ndarray` supports tensor operations (e.g., matrix multiplication, norm computation).
@@ -36,7 +36,7 @@ In `NumPy`, arrays and tensors are both represented by `numpy.ndarray`, so no ex
     print(tensor_2d.ndim) # 2
     ```
 
-#### **2. In Deep Learning Frameworks (TensorFlow/PyTorch)**
+## 📖 **2. In Deep Learning Frameworks (TensorFlow/PyTorch)**
 In `TensorFlow` or `PyTorch`, tensors (e.g., `tf.Tensor` or `torch.Tensor`) are specialized objects that support features like automatic differentiation. Conversion between arrays and tensors requires explicit operations.
 - **From NumPy Array to Tensor**:
   - `TensorFlow`:
@@ -77,7 +77,7 @@ In `TensorFlow` or `PyTorch`, tensors (e.g., `tf.Tensor` or `torch.Tensor`) are 
   - Ensure data type compatibility during conversion (e.g., `int64`, `float32`).
   - Tensors may include additional properties (e.g., gradients for automatic differentiation), which arrays typically lack.
 
-#### **3. Shape and Rank Conversion**
+## 📖 **3. Shape and Rank Conversion**
 - The rank (dimensions) of arrays and tensors can be adjusted using reshaping (`reshape`) or dimension expansion (`expand_dims`).
 - Example (1st-order to 3rd-order tensor):
   ```python
@@ -95,9 +95,9 @@ In `TensorFlow` or `PyTorch`, tensors (e.g., `tf.Tensor` or `torch.Tensor`) are 
   print(arr_1d.shape) # (24,)
   ```
 
----
 
-### **4. Considerations in Conversion**
+
+## 📖 **4. Considerations in Conversion**
 1. **Data Types**:
    - Ensure data type compatibility during conversion. For example, `NumPy`’s `int64` can be converted to `torch.int64`, but deep learning frameworks may require `float32` for computations.
    - Example:
@@ -128,9 +128,9 @@ In `TensorFlow` or `PyTorch`, tensors (e.g., `tf.Tensor` or `torch.Tensor`) are 
 4. **Shape Consistency**:
    - Conversion does not alter the shape. For example, a 4x3 array remains `(4, 3)` after conversion to a tensor.
 
----
 
-### **5. Summary**
+
+## 📖 **5. Summary**
 - **Can Arrays and Tensors Be Converted?**:
   - **Yes**, in `NumPy`, arrays (`ndarray`) are directly used as tensors without explicit conversion. In deep learning frameworks, conversion is done using `tf.convert_to_tensor` or `torch.from_numpy` (array to tensor) and `.numpy()` (tensor to array).
 - **In NumPy**:
