@@ -1,6 +1,6 @@
 # AMSGrad Optimizer
 
-### Adagrad Optimizer (Adaptive Gradient Algorithm) Principle and Usage
+#### Adagrad Optimizer (Adaptive Gradient Algorithm) Principle and Usage
 
 ## 📖 **Principle**
 
