@@ -279,7 +279,6 @@ plt.show()
 
    * Here analytical forms are used; in practice, experimental or numerical data can be used.
 
----
 
 **4. Visualization:**
 
