@@ -1,7 +1,7 @@
-## Dataset Introduction: MNIST Dataset
+# Dataset Introduction: MNIST Dataset
 The MNIST (Modified National Institute of Standards and Technology) dataset is a classic dataset in the fields of deep learning and computer vision. Created by Yann LeCun and others in 1998, it is widely used for introductory teaching in image classification tasks and as a benchmark for algorithms. It contains handwritten digit images and has become a standard dataset for machine learning research due to its simplicity, moderate scale, and high-quality annotations.
 
-### Dataset Overview
+### 📖 Dataset Overview
 - **Purpose**: Used for developing and testing image classification algorithms, particularly in handwritten digit recognition tasks. It is suitable for beginners and researchers to validate model performance.
 - **Scale**:
   - Total of 70,000 28x28 pixel grayscale images.
@@ -16,7 +16,7 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
   - The data has been preprocessed (such as normalization and centering) to ensure consistency.
 - **License**: Public dataset, free for academic and non-commercial use.
 
-### Dataset Structure
+### 📖 Dataset Structure
 - **File Format**:
   - Provided in binary format (`.gz` compressed) and built-in loading methods in frameworks (such as PyTorch, TensorFlow).
   - Main files:
@@ -29,7 +29,7 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
   - Labels: Integers from 0-9, representing the corresponding digits.
 - **File Size**: Approximately 12MB compressed, about 50MB uncompressed.
 
-### Data Collection and Preprocessing
+### 📖 Data Collection and Preprocessing
 - **Collection**:
   - Images come from NIST's handwritten digit databases, containing digits in various writing styles.
   - The training and test sets come from different groups (high school students and employees), ensuring a certain degree of diversity.
@@ -38,7 +38,7 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
   - Grayscale values are standardized to reduce noise and background interference.
   - The dataset has no significant labeling errors and is of high quality.
 
-### Applications and Research
+### 📖 Applications and Research
 - **Main Tasks**:
   - Image classification: Classify each image as a digit from 0-9.
   - Model testing: Used to validate machine learning algorithms (such as SVM, KNN) and deep learning models (such as MLP, CNN).
@@ -51,7 +51,7 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
   - The data is simple, making it difficult to distinguish the performance of complex models (modern models are prone to overfitting).
   - Real-world scenarios (such as varying lighting, background noise) require more complex datasets (such as Fashion-MNIST).
 
-### Obtaining the Dataset
+### 📖 Obtaining the Dataset
 - **Official Website**: http://yann.lecun.com/exdb/mnist/
   - Provides downloads of the original binary files.
 - **Framework Support**:
@@ -74,7 +74,7 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
     ```
 - **Kaggle**: Provides the MNIST dataset, often used for competitions and teaching.
 
-### Notes
+### 📖 Notes
 - **Data Preprocessing**:
   - Pixel values are usually normalized to [0, 1] or standardized (e.g., mean 0.1307, standard deviation 0.3081).
   - Data augmentation (such as rotation, translation) can improve model robustness, but MNIST typically does not require complex augmentation.
@@ -88,7 +88,7 @@ The MNIST (Modified National Institute of Standards and Technology) dataset is a
   - **Fashion-MNIST**: Same structure as MNIST, but contains 10 categories of fashion items, with higher classification difficulty.
   - **EMNIST**: An extended version of MNIST, including letters and digits, with more categories.
 
-### Code Example (Simple CNN Classification)
+### 📖 Code Example (Simple CNN Classification)
 The following is a simple PyTorch CNN model example:
 ```python
 import torch
@@ -131,7 +131,7 @@ for epoch in range(5): # 5 epochs
     print(f'Epoch {epoch+1}, Loss: {loss.item():.4f}')
 ```
 
-### Comparison with Other Datasets
+### 📖 Comparison with Other Datasets
 - **With CIFAR-10**:
   - MNIST uses grayscale images (1 channel), while CIFAR-10 uses color images (3 channels, 32x32).
   - MNIST has low classification difficulty (99%+ accuracy), while CIFAR-10 is more complex (95%+ accuracy).
