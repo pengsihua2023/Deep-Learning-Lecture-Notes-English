@@ -1,32 +1,32 @@
-## ReduceLROnPlateau
+# ReduceLROnPlateau
 
 Automatically Reduce Learning Rate on Plateau.  
 
-### What is Automatically Reducing Learning Rate on Plateau (ReduceLROnPlateau)?
+## 📖 What is Automatically Reducing Learning Rate on Plateau (ReduceLROnPlateau)?
 
 `ReduceLROnPlateau` is a dynamic learning rate scheduling strategy that decides whether to reduce the learning rate by monitoring validation loss (or other metrics). If the validation loss does not improve within a certain number of epochs (patience), the learning rate is multiplied by a decay factor, helping the model fine-tune optimization and preventing oscillations or early convergence to local minima.
 
-#### Core Principle
+## 📖 Core Principle
 
 * **Monitoring Metric**: Typically validation loss (can also be accuracy, etc.).
 * **Trigger Condition**: If validation loss does not decrease for `patience` consecutive epochs (or does not reach the minimum improvement `min_delta`), the learning rate is reduced.
 * **Learning Rate Adjustment**: New learning rate = Current learning rate × `factor` (e.g., 0.1).
 * **Stopping Condition**: An optional minimum learning rate `min_lr` can be set to avoid excessively small learning rates.
 
-#### Advantages
+## 📖 Advantages
 
 * **Adaptive Adjustment**: Dynamically reduces learning rate based on model performance, suitable for complex tasks.
 * **Prevents Overfitting**: Helps the model find better solutions on the validation set.
 * **Flexibility**: Can monitor any metric (e.g., loss, accuracy).
 
-#### Limitations
+## 📖 Limitations
 
 * **Validation Dependency**: Requires reliable validation dataset.
 * **Hyperparameter Tuning**: `patience`, `factor`, and `min_delta` need proper configuration.
 
 ---
 
-### Python Code Example
+## 📖 Python Code Example
 
 Below is a minimal PyTorch example showing how to use the `ReduceLROnPlateau` scheduler in an MNIST digit classification task to automatically reduce the learning rate based on validation loss. The code is concise and uses the Adam optimizer.
 
@@ -115,9 +115,9 @@ test_accuracy = test()
 print(f'Test Accuracy: {test_accuracy:.2f}%')
 ```
 
----
 
-### Code Explanation
+
+## 📖 Code Explanation
 
 1. **Model Definition**:
 
@@ -158,9 +158,9 @@ print(f'Test Accuracy: {test_accuracy:.2f}%')
 
    Actual results may vary due to random initialization. Note that at epoch 5 the learning rate dropped to 0.0001 because validation loss had not improved for 2 consecutive epochs.
 
----
 
-### Key Points
+
+## 📖 Key Points
 
 * **Dynamic Adjustment**: `ReduceLROnPlateau` automatically reduces learning rate based on validation loss, flexibly adapting to training progress.
 * **Scheduler Call**: `scheduler.step(val_loss)` requires validation loss and should be placed at the end of each epoch.
@@ -170,15 +170,15 @@ print(f'Test Accuracy: {test_accuracy:.2f}%')
   * `factor=0.1`: Reduce learning rate to 1/10 of its current value.
   * `min_lr`: Prevents the learning rate from becoming too small.
 
----
 
-### Practical Applications
+
+## 📖 Practical Applications
 
 * **Complex Models**: Such as Transformer, ResNet. When validation loss fluctuates, `ReduceLROnPlateau` can dynamically adjust learning rate.
 * **With Other Regularization**: Can be combined with Dropout, BatchNorm, or L2 regularization.
 * **Unstable Training**: When loss curves are not smooth, `ReduceLROnPlateau` is more effective than fixed schedulers (e.g., StepLR).
 
-#### Notes
+## 📖 Notes
 
 * **Validation Set Quality**: Ensure the validation set is representative, otherwise false triggers may occur.
 * **Hyperparameter Tuning**: `patience` and `factor` should be tuned based on the task.
