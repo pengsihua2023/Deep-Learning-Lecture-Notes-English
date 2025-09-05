@@ -1,9 +1,9 @@
-## Mathematical Fundamentals: Conversion Between Matrices and Tensors
+# Mathematical Fundamentals: Conversion Between Matrices and Tensors
 In deep learning, conversion between matrices and tensors is a common operation because a matrix is a 2nd-order tensor, while a tensor is a more general multidimensional data structure (encompassing scalars, vectors, matrices, and higher dimensions).
 
----
 
-### **1. Relationship Between Matrices and Tensors**
+
+## 📖 **1. Relationship Between Matrices and Tensors**
 - **Matrix**: A two-dimensional array with shape `(m, n)`, representing a 2nd-order tensor. For example, a 4x3 matrix `[[0 1 0], [1 0 1], [0 0 1], [1 1 0]]` is a 2nd-order tensor with shape `(4, 3)`.
 - **Tensor**: A mathematical object for multidimensional data, with its rank indicating the number of dimensions:
   - 0th-order: Scalar (e.g., `5`).
@@ -15,9 +15,9 @@ In deep learning, conversion between matrices and tensors is a common operation 
   - In `NumPy`, matrices and tensors are both represented by `numpy.ndarray`, requiring no explicit conversion.
   - In deep learning frameworks (e.g., `TensorFlow`, `PyTorch`), tensors are specialized objects (`tf.Tensor` or `torch.Tensor`) that support automatic differentiation and GPU acceleration.
 
----
 
-### **2. Conversion Between Matrices and Tensors**
+
+## 📖 **2. Conversion Between Matrices and Tensors**
 #### **2.1 In NumPy**
 In `NumPy`, matrices (2D arrays) and tensors (`ndarray`) are essentially the same, so a matrix can be directly used as a tensor without explicit conversion.
 - **Matrix as Tensor**:
@@ -106,9 +106,9 @@ In `TensorFlow` and `PyTorch`, tensors are specialized objects supporting automa
       print(matrix.shape) # (4, 3)
       ```
 
----
 
-### **3. Applications in Deep Learning**
+
+## 📖 **3. Applications in Deep Learning**
 Conversion between matrices and tensors is widely used in deep learning for data processing, model training, and optimization. Using the example of a 4x3 matrix:
 - **Feature Matrix**:
   - A 4x3 matrix may represent 4 samples, each with 3 features.
@@ -133,9 +133,9 @@ Conversion between matrices and tensors is widely used in deep learning for data
     print(batch_tensor.shape) # (1, 2, 3)
     ```
 
----
 
-### **4. Considerations**
+
+## 📖 **4. Considerations**
 - **Data Types**:
   - Ensure type compatibility during conversion (e.g., `NumPy`’s `int64` to `torch.float32`).
   - Example:
@@ -158,9 +158,9 @@ Conversion between matrices and tensors is widely used in deep learning for data
 - **Shape Consistency**:
   - Conversion does not alter the shape; a 4x3 matrix remains `(4, 3)` after conversion to a tensor.
 
----
 
-### **5. Summary**
+
+## 📖 **5. Summary**
 - **Matrix and Tensor Conversion**:
   - **NumPy**: Matrices (`ndarray`) are directly used as 2nd-order tensors without conversion; they can be reshaped into higher-order tensors using `.reshape()` or `.expand_dims()`.
   - **Deep Learning Frameworks**:
