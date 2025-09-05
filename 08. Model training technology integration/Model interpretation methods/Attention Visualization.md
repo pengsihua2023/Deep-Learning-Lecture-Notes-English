@@ -1,16 +1,15 @@
-
 # Attention Visualization
 
-## 1. Definition
+## 📖 1. Definition
 
 **Attention Visualization** is a **model interpretability method**. By visualizing the **attention weights** in deep learning models, it helps us understand which parts of the input the model “focuses on” during prediction.
 
 * In **NLP (Natural Language Processing)**: shows the attention relationships between words. For example, in machine translation, it reveals which context words are relied upon when translating a specific word.
 * In **CV (Computer Vision)**: shows the attention distribution over image regions. For example, a Vision Transformer might focus mainly on a cat’s face when recognizing the category “cat”.
 
----
 
-## 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 The formula for calculating attention weights comes from **Scaled Dot-Product Attention**:
 
@@ -36,7 +35,7 @@ as a **heatmap / arrow plot / overlay**, directly illustrating the model’s foc
 
 ---
 
-## 3. Code Examples
+## 📖 3. Code Examples
 
 ### 3.1 Attention Visualization in NLP (Heatmap)
 
@@ -70,7 +69,7 @@ plt.show()
 ---
 
 ### 3.2 Attention Visualization in CV (Overlay)
-
+---
 ```python
 import torch
 import torch.nn as nn
@@ -96,7 +95,7 @@ plt.show()
 
 ---
 
-## 4. Summary
+## 📖 4. Summary
 
 * **Definition of Attention Visualization**: explain where the model “looks” during prediction by displaying attention weights.
 * **Mathematical Description**: based on
