@@ -1,7 +1,7 @@
 # Python Basics: Introduction to the NumPy Library
 ## What is NumPy?
 NumPy (Numerical Python) is an open-source numerical computing library for the Python programming language, widely used in scientific computing, data analysis, and deep learning. It provides efficient multidimensional array (`ndarray`) objects and a rich set of mathematical functions to process large-scale numerical data quickly. NumPy is a core dependency for many Python scientific computing libraries, such as Pandas, SciPy, TensorFlow, and PyTorch.
-#### Key Features of NumPy:
+## Key Features of NumPy:
 - **Multidimensional Arrays (`ndarray`)**: Efficient fixed-size multidimensional arrays that support fast vectorized operations.
 - **Mathematical Operations**: Offers a wide range of mathematical functions (e.g., linear algebra, statistics, Fourier transforms).
 - **Broadcasting**: Enables operations on arrays of different shapes, simplifying code.
