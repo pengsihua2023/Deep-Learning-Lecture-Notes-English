@@ -1,6 +1,6 @@
 
 # Zero Initialization 
-## Definition
+## 📖 Definition
 
 **Zero Initialization** means initializing all **weights and biases of a neural network to 0**.
 
@@ -12,7 +12,7 @@ It is the most naive initialization method, but it is almost never used in deep 
 
 However, **bias initialized to 0** is a common practice, since biases do not cause symmetry issues.
 
-## Mathematical Description
+## 📖 Mathematical Description
 
 Suppose a layer’s parameters are the weight matrix \$W\$ and bias vector \$b\$, then zero initialization is defined as:
 
@@ -28,7 +28,7 @@ $$
 
 If \$f\$ is ReLU / Sigmoid / Tanh, then all neurons output the same value, and learning cannot proceed.
 
-## Simplest Code Example
+## 📖 Simplest Code Example
 
 ### PyTorch Example
 
@@ -64,7 +64,7 @@ y = x.dot(weights.T) + bias
 print("Output:\n", y)
 ```
 
-## Summary
+## 📖 Summary
 
 * **Zero-initialized weights**: Not advisable (causes all neurons to learn the same thing).
 * **Zero-initialized biases**: Common and reasonable.
