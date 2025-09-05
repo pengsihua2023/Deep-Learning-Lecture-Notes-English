@@ -1,9 +1,6 @@
-
-
-
 # Diff Pruning
 
-## 1. Definition
+## 📖 1. Definition
 
 **Diff Pruning** is a **Parameter-Efficient Fine-Tuning (PEFT)** method, first proposed for efficient adaptation of large-scale pre-trained language models (Guo et al., 2021).
 
@@ -27,7 +24,7 @@ to:
 
 
 
-## 2. Mathematical Description
+## 📖 2. Mathematical Description
 
 ### 2.1 Parameter Representation
 
@@ -60,7 +57,7 @@ $$
 
 
 
-## 3. Simple Code Example (PyTorch)
+## 📖 3. Simple Code Example (PyTorch)
 
 Below is a PyTorch implementation of a **linear layer with diff pruning**:
 
@@ -111,7 +108,7 @@ print(model.delta)
 
 
 
-## 4. Summary
+## 📖 4. Summary
 
 * **Definition**: Diff Pruning fine-tunes pre-trained models by learning **sparse diff parameters**.
 * **Mathematical formula**:
