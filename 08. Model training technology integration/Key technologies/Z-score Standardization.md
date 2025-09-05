@@ -1,7 +1,7 @@
-## Z-score Standardization
-### 📖 What is Z-Score Standardization?
+# Z-score Standardization
+## 📖 What is Z-Score Standardization?
 **Z-Score Standardization** (also known as standard score standardization or standard normalization) is a data preprocessing technique used to transform numerical features in a dataset into a standard normal distribution with a mean of 0 and a standard deviation of 1. It eliminates differences in feature scales through linear transformation, making the data more suitable for machine learning models (such as neural networks or SVMs), especially when data distributions have no clear boundaries or are sensitive to outliers.
-### 📖 Core Features:
+## 📖 Core Features:
 - **Applicable Scenarios**: Widely used in machine learning tasks like regression, classification, and clustering, particularly suitable for data distributions close to normal or when comparing relative differences between features.
 - **Formula**: For a feature column X, the standardized value Z = (X - μ) / σ, where μ is the mean and σ is the standard deviation.
 - **Advantages**:
@@ -12,7 +12,7 @@
   - Assumes data approximates a normal distribution; if the distribution is heavily skewed, the effect may not be as good as normalization.
   - Does not guarantee scaling to a fixed range (e.g., [0, 1]).
 
-### 📖 Principles of Z-Score Standardization
+## 📖 Principles of Z-Score Standardization
 1. **Calculate Statistics**:
    - Compute the mean μ and standard deviation σ of the feature column.
    - Mean μ = ΣX / n, standard deviation σ = sqrt(Σ(X - μ)² / n), where n is the number of samples.
@@ -25,7 +25,7 @@
    - Compute μ and σ independently for each feature column to ensure all features have the same distribution characteristics after standardization.
 The principle is essentially to eliminate scale differences through standardization, making feature distributions more uniform and optimizing model training.
 ---
-### 📖 Simple Code Example: Z-Score Standardization with Python and NumPy
+## 📖 Simple Code Example: Z-Score Standardization with Python and NumPy
 Below is a simple example showing how to perform Z-Score standardization on a one-dimensional array.
 ```python
 import numpy as np
@@ -180,7 +180,7 @@ for i in range(5):
     print(f"Standardized: {X_test_scaled[i].round(4)}, Original: {X_test_original[i].round(4)}")
 ```
 
-### 📖 Code Explanation
+## 📖 Code Explanation
 1. **Generate Simulated Dataset**:
    - Create a dataset with 1000 samples, features including age (18-80), income (20k-100k), spending (100-5000), and binary labels (0 or 1, 70% vs 30%).
    - Use Pandas and NumPy for easy data handling.
@@ -196,7 +196,7 @@ for i in range(5):
 5. **Inverse Standardization**:
    - Use `scaler.inverse_transform` to restore original values from the test set, showing before-and-after comparison.
 
-### 📖 Key Points
+## 📖 Key Points
 1. **Multi-Feature Handling**:
    - `StandardScaler` automatically standardizes each feature column independently, ensuring mean=0 and std=1 for each.
    - For example, differences in scales between age (18-80) and income (20k-100k) are eliminated.
@@ -217,7 +217,7 @@ for i in range(5):
      y_train = y_train[mask]
      ```
 
-### 📖 Practical Effects
+## 📖 Practical Effects
 - **Model Performance**: After standardization, feature scales are unified (mean=0, std=1), leading to faster model convergence (typically reducing iterations by 10-20%) and accuracy improvements of 5-15%.
 - **Robustness**: `StandardScaler` handles multi-features automatically, suitable for high-dimensional datasets, and supports inverse standardization for easy result interpretation.
 - **Flexibility**: Can be extended to various data types, such as sensor data or financial metrics, where distributions may vary widely.
