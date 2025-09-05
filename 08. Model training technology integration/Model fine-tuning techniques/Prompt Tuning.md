@@ -13,9 +13,9 @@
   * P-Tuning v1 used LSTM/MHA to model prompts, which was more complex.
 * During training, **only the soft prompt parameters are updated**, while the **entire pre-trained language model is frozen**.
 
----
 
-## 🔢 2. Mathematical Formulation
+
+##📖 2. Mathematical Formulation
 
 Let:
 
@@ -50,7 +50,7 @@ That is: freeze \$\theta\$, only optimize \$P\$.
 
 ---
 
-## 💻 3. Simple Code Demonstration
+## 📖 3. Simple Code Demonstration
 
 Below is a simplified **Prompt Tuning** implementation using Hugging Face + PyTorch (example: text classification):
 
@@ -107,9 +107,9 @@ logits = model(**inputs)
 print(logits)
 ```
 
----
 
-## ✅ Summary
+
+## 📖 Summary
 
 * **Definition**: Prompt Tuning adds a **trainable soft prompt** before the input sequence, freezes the model, and only trains the prompt parameters.
 * **Mathematical Form**: \$\mathcal{L}(P) = - \sum \log p(y \mid \[P; X]; \theta)\$.
