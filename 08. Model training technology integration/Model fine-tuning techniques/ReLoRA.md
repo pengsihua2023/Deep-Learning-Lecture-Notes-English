@@ -1,8 +1,6 @@
-
-
 # ReLoRA (Restarted Low-Rank Adaptation) Fine-Tuning Method
 
-## 1. Definition
+## 📖 1. Definition
 
 **ReLoRA** is an improved fine-tuning method based on **LoRA (Low-Rank Adaptation)**. The core idea is:
 
@@ -14,9 +12,9 @@
 
 In other words, ReLoRA **periodically absorbs what LoRA has learned into the model weights, then gives LoRA a fresh space to continue learning**.
 
----
 
-## 2. Mathematical Formulation
+
+## 📖 2. Mathematical Formulation
 
 Let:
 
@@ -50,7 +48,7 @@ Thus, model weights \$W\$ continuously absorb LoRA’s low-rank improvements, wh
 
 ---
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 Here’s a minimal **PyTorch ReLoRA fine-tuning demo** (illustrating the mechanism, not a full library implementation):
 
@@ -102,9 +100,9 @@ for step in range(steps):
         model.merge_lora()
 ```
 
----
 
-### Explanation
+
+### 📖 Explanation
 
 1. **LoRALinear**: implements a linear layer with LoRA.
 2. **merge\_lora()**: merges \$BA\$ into the main weight \$W\$, then re-initializes \$A, B\$.
@@ -185,9 +183,9 @@ plt.legend()
 plt.show()
 ```
 
----
 
-## Code Explanation
+
+## 📖 Code Explanation
 
 1. **Data**: creates a linear regression task \$y = Wx + \epsilon\$.
 2. **LoRALinear**: same as before, implements LoRA weights.
