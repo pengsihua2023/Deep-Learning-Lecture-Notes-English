@@ -1,25 +1,25 @@
 
-## Early Stopping
-### 📖 What is Early Stopping?
+# Early Stopping
+## 📖 What is Early Stopping?
 Early Stopping is a regularization technique commonly used in deep learning training to prevent overfitting and save computational resources. Its core idea is to monitor performance metrics on a validation set (such as validation loss or accuracy) and terminate training early if the performance does not improve for a certain number of epochs (referred to as the "patience" parameter), typically saving the model parameters with the best validation performance.
 
-### 📖 Core Principles
+## 📖 Core Principles
 - **Monitoring Metric**: After each training epoch, calculate the loss or accuracy on the validation set.
 - **Early Stopping Condition**: If the validation performance does not improve (e.g., validation loss stops decreasing) for a specified number of epochs (patience), training is stopped.
 - **Save Best Model**: Record the model weights with the best validation performance for restoration at the end of training.
 
-### 📖 Advantages
+## 📖 Advantages
 - **Prevents Overfitting**: Avoids excessive optimization on the training set, which can degrade generalization performance.
 - **Saves Time**: Reduces unnecessary training epochs, improving efficiency.
 - **Simple and Effective**: Requires minimal hyperparameter tuning and is easy to implement.
 
-### 📖 Limitations
+## 📖 Limitations
 - **Patience Value Selection**: A patience value that is too small may lead to premature stopping, while a value that is too large may waste computational resources.
 - **Validation Set Dependency**: Requires a reliable validation set; otherwise, stopping decisions may be inaccurate.
 
 ---
 
-### 📖 Python Code Example
+## 📖 Python Code Example
 Below is a simple example of implementing early stopping in PyTorch, based on the MNIST handwritten digit classification task. The code demonstrates how to monitor validation loss during training and stop when performance ceases to improve.
 
 ```python
@@ -144,8 +144,7 @@ print(f'Test Accuracy: {test_accuracy:.2f}%')
 ```
 
 
-
-### 📖 Code Explanation
+## 📖 Code Explanation
 1. **Model Definition**:
    - `SimpleNet` is a simple fully connected neural network with a 28x28 pixel input (MNIST images) and a 10-class output.
 2. **Dataset**:
@@ -176,21 +175,18 @@ print(f'Test Accuracy: {test_accuracy:.2f}%')
    Actual values may vary due to random initialization.
 
 
-
-### 📖 Key Points
+## 📖 Key Points
 - **Validation Set**: Early stopping relies on validation set performance, so the validation set must be representative.
 - **Patience Value**: `patience=3` allows 3 epochs without improvement; larger values are more conservative.
 - **Best Model Restoration**: Uses `model.load_state_dict` to restore the model with the lowest validation loss.
 - **Metric Choice**: The example uses validation loss, but validation accuracy can be used (requires modifying logic to maximize accuracy).
 
-
-
-### 📖 Practical Applications
+## 📖 Practical Applications
 - **Deep Learning**: Early stopping is widely used in training CNNs, RNNs, Transformers, and other models.
 - **Resource Optimization**: Saves time and computational resources in large model training (e.g., BERT).
 - **Combination with Other Regularization**: Can be used alongside Dropout, L1/L2 regularization, gradient clipping, etc.
 
-### 📖 Considerations
+## 📖 Considerations
 - **Validation Set Split**: Ensure proper training/validation set division to avoid data leakage.
 - **Patience Tuning**: Too small a patience value may lead to underfitting; too large may lead to overfitting.
 - **Metric Selection**: Choose loss or accuracy based on the task, noting the optimization direction (minimize loss or maximize accuracy).
