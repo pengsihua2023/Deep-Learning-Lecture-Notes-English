@@ -1,8 +1,11 @@
-## Reinforcement Learning
+# Reinforcement Learning
 
+## 🔹 Definition of Reinforcement Learning (RL)
 
+**Reinforcement Learning (RL)** is a branch of machine learning where an **agent** learns to make decisions by **interacting with an environment**, aiming to maximize some notion of **cumulative reward**.
 
-Reinforcement learning is a learning method that improves decision-making rules through continuous interaction with the environment using trial and error. At each step, the system makes a decision based on the state of the environment and receives rewards or punishments according to the feedback. Through long-term accumulation and adjustment, reinforcement learning can form an optimal decision-making strategy that maximizes overall rewards.
+* The agent doesn’t get explicit instructions on what actions to take.
+* Instead, it **explores actions**, **observes outcomes**, and **adapts** its behavior based on feedback (rewards or penalties).
 
 <div align="center">
 <img width="300" height="290" alt="image" src="https://github.com/user-attachments/assets/7380370c-baa5-466d-978d-76a504616754" />
@@ -13,12 +16,7 @@ Reinforcement learning is a learning method that improves decision-making rules 
 </div>
 
 
-# 🔹 Definition of Reinforcement Learning (RL)
 
-**Reinforcement Learning (RL)** is a branch of machine learning where an **agent** learns to make decisions by **interacting with an environment**, aiming to maximize some notion of **cumulative reward**.
-
-* The agent doesn’t get explicit instructions on what actions to take.
-* Instead, it **explores actions**, **observes outcomes**, and **adapts** its behavior based on feedback (rewards or penalties).
 
 
 
