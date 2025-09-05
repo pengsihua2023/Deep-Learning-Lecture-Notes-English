@@ -1,5 +1,5 @@
-## Graph Neural Network (GNN)
-
+# Graph Neural Network (GNN)
+## 📖 Introduction
 **Graph Neural Network (GNN)** is a neural network model specifically designed for processing graph-structured data.
 In a graph, nodes (vertices) represent entities, and edges represent relationships between entities. Unlike traditional neural networks, GNNs can capture **dependencies between nodes** and the **topological structure of the graph**, thereby learning effective representations (embeddings) of nodes, edges, or the entire graph.
 <div align="center">
