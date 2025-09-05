@@ -1,14 +1,14 @@
 
 
-## Normal Initialization
+# Normal Initialization
 
-### Principles and Usage
 
-#### **Principle**
+
+## 📖 Principle
 
 Normal Initialization is a method of weight initialization in deep neural networks. It initializes model parameters by randomly sampling weights from a normal distribution (Gaussian Distribution). Its goal is to ensure that weights have an appropriate distribution, thereby avoiding gradient vanishing or explosion and promoting stable training of the network.
 
----
+
 
 ### 1. Core Idea:
 
@@ -19,7 +19,7 @@ Normal Initialization is a method of weight initialization in deep neural networ
 
 * A proper standard deviation \$\sigma\$ ensures that the variance of inputs and outputs in each layer remains reasonable, preventing signals from becoming too large or too small in deep networks.
 
----
+
 
 ### 2. Formula:
 
@@ -37,7 +37,7 @@ Where:
 
 * Simple normal initialization usually uses a fixed standard deviation (e.g., 0.01), but its effect may not be as good as Xavier or He initialization.
 
----
+
 
 ### 3. Applicable Scenarios:
 
@@ -63,13 +63,11 @@ Where:
 
 * **Normal Initialization**: Standard deviation is often fixed (e.g., 0.01). It is simple but insensitive to layer size, which may not work well for deep networks.
 
----
-
-#### **PyTorch Usage**
+## 📖 PyTorch Usage
 
 PyTorch’s `torch.nn.init` module provides the `normal_` function for normal initialization. Below is a minimal example showing how to use normal initialization in fully connected and convolutional layers.
 
-##### **Code Example**
+### **Code Example**
 
 ```python
 import torch
@@ -110,7 +108,7 @@ print("FC layer weight mean:", model.fc.weight.mean().item())
 print("FC layer weight std:", model.fc.weight.std().item())
 ```
 
-##### **Code Explanation**
+## 📖 Code Explanation
 
 * **Model**:
 
@@ -132,9 +130,9 @@ print("FC layer weight std:", model.fc.weight.std().item())
   * Model outputs a 10-dimensional vector (logits for 10 classes).
   * Prints weight mean (close to 0) and std (close to 0.01) to verify initialization.
 
----
 
-#### **Notes**
+
+## 📖 Notes
 
 1. **Choosing Standard Deviation**:
 
@@ -156,9 +154,8 @@ print("FC layer weight std:", model.fc.weight.std().item())
 
    * Check weight distribution (mean close to 0, std close to target value) to ensure proper initialization.
 
----
 
-#### **Summary**
+## 📖 Summary
 
 Normal initialization samples weights from a normal distribution $N(0, \sigma^2)$, providing simple initial values for neural networks. PyTorch’s `init.normal_` is convenient—only mean and standard deviation need to be specified. Compared with Xavier initialization, normal initialization is simpler but lacks adaptability, requiring manual tuning of the standard deviation.
 
