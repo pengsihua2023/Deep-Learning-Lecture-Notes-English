@@ -4,7 +4,7 @@
   [Maziar Raissi](https://icqmb.ucr.edu/maziar-raissi) and [George Em Karniadakis](https://engineering.brown.edu/people/george-e-karniadakis)
 </div>
 
----
+
 
 # Introduction to PINN
 
@@ -15,7 +15,7 @@
 
 In this way, PINNs leverage the advantages of data-driven methods while incorporating physical constraints, enabling more reliable solutions when data are scarce or noisy.
 
----
+
 
 ## 1. Basic Idea of PINN
 
@@ -54,7 +54,7 @@ Training is optimizing the neural network parameters \$\theta\$ so that the solu
 
    * With sparse or noisy data, PINN can use PDE physical laws for completion and denoising.
 
----
+
 
 ## 3. Advantages of PINN
 
@@ -63,7 +63,7 @@ Training is optimizing the neural network parameters \$\theta\$ so that the solu
 * **High generality**: Applicable to ODEs, PDEs (including high-dimensional and complex PDEs).
 * **Naturally handles inverse problems**: No need to modify numerical formats, directly infer via the loss function.
 
----
+
 
 ## 4. Challenges of PINN
 
@@ -72,7 +72,7 @@ Training is optimizing the neural network parameters \$\theta\$ so that the solu
 * **Multiscale problems are difficult**: Performance unstable in high-frequency solutions or strongly nonlinear PDEs.
 * **Parameter sensitivity**: Sampling size, network depth, activation functions all affect results.
 
----
+
 
 ## 5. Comparison Between PINN and Traditional Numerical Methods
 
@@ -83,21 +83,19 @@ Training is optimizing the neural network parameters \$\theta\$ so that the solu
 | Efficiency   | Training is costly, inference is fast                                                     | Usually faster and more stable                        |
 | Applications | Sparse data, inverse problems, complex geometry                                           | Engineering simulations, industrial-scale PDE solving |
 
----
 
-## Summary
+
+## 6. Summary
 
 **PINN is a neural network method that integrates physical laws with deep learning, suitable for both forward and inverse problems of PDEs/ODEs. It is particularly advantageous when data are scarce, but training is difficult, and the method is still in the research and exploration stage.**
 
----
+## 7. Links to the Original Papers
 
-Links to the Original Papers
+[Part I on arXiv (2017)] – Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations
 
-\[Part I on arXiv (2017)] – Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations
+[Part II on arXiv (2017)] – Physics Informed Deep Learning (Part II): Data-driven Discovery of Nonlinear Partial Differential Equations
 
-\[Part II on arXiv (2017)] – Physics Informed Deep Learning (Part II): Data-driven Discovery of Nonlinear Partial Differential Equations
-
-\[Journal Publication (2019)] – Physics-informed neural networks: A deep learning framework… in Journal of Computational Physics
+[Journal Publication (2019)] – Physics-informed neural networks: A deep learning framework… in Journal of Computational Physics
 
 ---
 
