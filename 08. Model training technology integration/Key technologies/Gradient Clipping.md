@@ -1,12 +1,12 @@
-## Gradient Clipping
-### 📖 What is Gradient Clipping?
+# Gradient Clipping
+## 📖 What is Gradient Clipping?
 Gradient Clipping is a common optimization technique in deep learning model training used to prevent the problem of gradient explosion. Gradient explosion refers to gradients becoming excessively large during backpropagation, leading to unstable model parameter updates and affecting model convergence or performance.
 Gradient clipping avoids excessive gradient updates by limiting the maximum norm of the gradients (typically the L2 norm). Common methods include:
 1. **Gradient Norm Clipping**: Scales the L2 norm of the gradients to a specified threshold.
 2. **Gradient Value Clipping**: Limits each component of the gradients to a fixed range (e.g., [-threshold, threshold]).
 Gradient clipping is widely used in models prone to gradient explosion, such as recurrent neural networks (RNNs), long short-term memory (LSTM), and others.
 
-### 📖 Python Code Example
+## 📖 Python Code Example
 Below is an example of gradient clipping implemented using PyTorch, demonstrating how to apply **norm clipping** in neural network training.
 ```python
 import torch
@@ -57,7 +57,7 @@ for epoch in range(5):
     print(f"Epoch {epoch+1}, Loss: {loss:.4f}")
 ```
 
-### 📖 Code Explanation
+## 📖 Code Explanation
 1. **Model Definition**:
    - Defines a simple fully connected neural network `SimpleNet` with two linear layers.
    - Input dimension is 10, output dimension is 2.
@@ -72,7 +72,7 @@ for epoch in range(5):
 4. **Output**:
    - Prints the loss value for each iteration to observe the training process.
 ---
-### 📖 Example of Value Clipping
+## 📖 Example of Value Clipping
 If value clipping is needed (limiting each gradient component), use `torch.nn.utils.clip_grad_value_`. Below is the modified code snippet:
 ```python
 # Replace the gradient clipping part in the train_step function
@@ -93,7 +93,7 @@ for epoch in range(5):
     print(f"Epoch {epoch+1}, Loss: {loss:.4f}")
 ```
 
-### 📖 Differences Between the Two Clipping Methods
+## 📖 Differences Between the Two Clipping Methods
 - **Norm Clipping** (`clip_grad_norm_`):
   - Limits the overall L2 norm of the gradients, preserving the gradient direction and only scaling the magnitude.
   - Suitable for scenarios needing control over the overall gradient amplitude.
@@ -102,7 +102,7 @@ for epoch in range(5):
   - Directly clips each gradient component to a specified range (e.g., [-clip_value, clip_value]).
   - May change the gradient direction, suitable for scenarios requiring strict limits on individual values.
 
-### 📖 Practical Application Scenarios
+## 📖 Practical Application Scenarios
 - **RNN/LSTM/GRU**: These models are prone to gradient explosion when handling long sequences, making gradient clipping standard.
 - **Transformer Models**: In training large language models, gradient clipping improves stability.
 - **Hyperparameter Selection**: `clip_value` is typically set between 0.1 and 5.0, adjusted based on the task.
