@@ -4,7 +4,7 @@
 AR-SPINN combines the dynamics of **Spiking Neurons**, the temporal dependence of **Recurrent Structures (RNN)**, and the **Adaptive Threshold Mechanism**.
 It can be described by the following equations:
 
-## 📖 Mathematical description
+## 📖 Mathematical Description
 
 ### 1. Membrane Potential Dynamics
 
