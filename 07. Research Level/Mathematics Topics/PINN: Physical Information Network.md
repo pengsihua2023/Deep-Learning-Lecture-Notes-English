@@ -233,7 +233,6 @@ $$
 
   * Predict the solution at \$t=0.5, x \in \[-1,1]\$, verify output shape.
 
----
 
 #### **Notes**
 
