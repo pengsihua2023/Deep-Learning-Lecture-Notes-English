@@ -120,7 +120,7 @@ $$
 Q^\pi(s,a) = \sum_{s' \in \mathcal{S}} P(s'|s,a) \Big[ R(s,a) + \gamma \sum_{a' \in \mathcal{A}} \pi(a'|s') Q^\pi(s',a') \Big]
 $$
 
----
+
 
 ## Optimality
 
