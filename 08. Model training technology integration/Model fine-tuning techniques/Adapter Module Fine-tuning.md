@@ -1,8 +1,6 @@
-
-
 # Adapter Modules Fine-tuning
 
-## 1. Definition
+## 📖 1. Definition
 
 **Adapter fine-tuning** is a Parameter-Efficient Fine-Tuning (PEFT) method.
 Core idea:
@@ -15,7 +13,7 @@ Core idea:
 
 
 
-## 2. Mathematical Description
+## 📖 2. Mathematical Description
 
 Let the Transformer hidden state vector be \$h \in \mathbb{R}^d\$.
 The core structure of the Adapter is a **down-projection – nonlinearity – up-projection** bottleneck:
@@ -35,7 +33,7 @@ During training, only \${W\_{down}, W\_{up}}\$ are updated, while the original T
 
 
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 Write a minimal Adapter module in **PyTorch** and use it inside a Transformer layer:
 
@@ -89,7 +87,7 @@ This shows the Adapter module works properly.
 
 
 
-## Summary
+## 📖 4. Summary
 
 * **Definition**: Insert small bottleneck layers into Transformer layers and train only the Adapter.
 * **Formula**: \$h' = h + W\_{up},\sigma(W\_{down},h)\$.
@@ -101,7 +99,7 @@ A complete example of Hugging Face Transformers + PEFT Adapter fine-tuning on BE
 
 ---
 
-## Adapter Fine-tuning with Hugging Face PEFT
+## 📖 Adapter Fine-tuning with Hugging Face PEFT
 
 ```python
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, TrainingArguments, Trainer
@@ -170,18 +168,16 @@ pred = outputs.logits.argmax(dim=-1).item()
 print(f"Input: {text} → Predicted class: {pred}")
 ```
 
----
-
-## Explanation
+## 📖 Explanation
 
 1. **AdapterConfig**: Defines bottleneck dimension `r=16`, meaning each Adapter layer has only a small number of trainable parameters.
 2. **Freeze large model**: The PEFT library automatically freezes BERT weights and only trains Adapter parameters.
 3. **Dataset**: SST-2 sentiment classification (binary: positive / negative).
 4. **Efficiency**: Compared with full fine-tuning, Adapter fine-tuning trains <5% parameters, making it very suitable for multi-task transfer.
 
----
 
-## Comparison: Adapter / LoRA / Prefix Tuning
+
+## 📖 Comparison: Adapter / LoRA / Prefix Tuning
 
 | Method            | Core Idea                                                                                                   | Update Formula                                                  | Trainable Parameters                                       | Advantage                                                                                   | Use Cases                                                                 |
 | ----------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -189,9 +185,8 @@ print(f"Input: {text} → Predicted class: {pred}")
 | **LoRA**          | Freeze original weights, add low-rank updates to weight matrices                                            | \$\Delta W = B A\$, effective weight \$W^{eff} = W + \Delta W\$ | \$O(d r + r k)\$                                           | Extremely small parameter count, efficient inference, widely used with quantization (QLoRA) | LLM fine-tuning, instruction tuning, chatbots                             |
 | **Prefix Tuning** | Inject trainable virtual prefix tokens into attention key/value                                             | \$K' = \[P\_k; K], ; V' = \[P\_v; V]\$                          | Proportional to prefix length, independent of model params | Fixed parameter count, decoupled from model size, good for large models                     | Generation tasks (NLG, dialogue, translation), rapid multi-task switching |
 
----
 
-## Final Summary
+## 📖 Final Summary
 
 * **Adapter** → Like a “plugin mini-network”, stable, suitable for classification / sequence labeling tasks.
 * **LoRA** → Low-rank approximation on weight matrices, ultra-efficient, mainstream method for LLMs.
