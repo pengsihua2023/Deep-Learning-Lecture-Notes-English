@@ -1,25 +1,25 @@
-## Ray Tune Hyperparameter Optimization Method
-### 📖 What is the Ray Tune Hyperparameter Optimization Method?
+# Ray Tune Hyperparameter Optimization Method
+## 📖 What is the Ray Tune Hyperparameter Optimization Method?
 **Ray Tune** is an open-source Python library for hyperparameter tuning and experiment management, part of the Ray ecosystem for distributed computing. It enables efficient searching of hyperparameter combinations to optimize machine learning models, supporting scalable execution from single machines to large clusters. Ray Tune integrates with various search algorithms (e.g., grid search, random search, Bayesian optimization via libraries like HyperOpt or Optuna) and is particularly suited for distributed hyperparameter tuning in deep learning and ML tasks.
 
-### 📖 Core Features:
+## 📖 Core Features:
 1. **Automated Search**: Define hyperparameter spaces (e.g., ranges for learning rate or layer sizes), and Ray Tune automatically explores them using specified algorithms.
 2. **Distributed Execution**: Runs trials in parallel across CPUs/GPUs or clusters, making it ideal for large-scale tuning.
 3. **Integration with Algorithms**: Supports advanced optimizers like Population Based Training (PBT), ASHA (Asynchronous Successive Halving Algorithm) for early stopping, and integration with tools like Optuna or Ax.
 4. **Fault Tolerance and Logging**: Handles failures gracefully, logs results (e.g., via TensorBoard), and supports checkpoints.
 5. **Easy Framework Integration**: Works seamlessly with PyTorch, TensorFlow, XGBoost, and more.
 
-### 📖 Advantages:
+## 📖 Advantages:
 - Scales to distributed environments, speeding up tuning for complex models.
 - More efficient than manual or basic searches, with early stopping to save resources.
 - Flexible for experiment tracking and reproducibility.
 
-### 📖 Challenges:
+## 📖 Challenges:
 - Requires installing Ray, which adds overhead for simple, non-distributed tasks.
 - Learning curve for distributed setup; may be overkill for small experiments.
 
 
-### 📖 Principles of Ray Tune
+## 📖 Principles of Ray Tune
 1. **Define Trainable Function**:
    - Create a function that takes a configuration (hyperparameters) and performs training, reporting metrics (e.g., accuracy) via `tune.report()`.
 
@@ -35,7 +35,7 @@
 
 ---
 
-### 📖 Simple Code Example: Hyperparameter Optimization with PyTorch and Ray Tune
+## 📖 Simple Code Example: Hyperparameter Optimization with PyTorch and Ray Tune
 Below is a simple example using Ray Tune to optimize hyperparameters (learning rate and hidden layer size) for a PyTorch model on the MNIST dataset. This demonstrates distributed tuning basics (assumes Ray is installed via `pip install "ray[tune]"`).
 
 ```python
@@ -130,7 +130,7 @@ print(f"Best accuracy: {best_result.metrics['accuracy']:.4f}")
 
 
 
-### 📖 Code Explanation
+## 📖 Code Explanation
 1. **Trainable Function (`train_mnist`)**:
    - Takes a `config` dict with hyperparameters (e.g., `lr`, `hidden_size`).
    - Trains a simple network and reports validation accuracy using `tune.report()` for optimization and pruning.
@@ -147,7 +147,7 @@ print(f"Best accuracy: {best_result.metrics['accuracy']:.4f}")
 
 
 
-### 📖 Key Points
+## 📖 Key Points
 1. **Scalability**: By default local, but add `resources_per_trial={"cpu": 1, "gpu": 1}` to `TuneConfig` for distributed runs on clusters.
 2. **Pruning**: ASHA scheduler stops underperforming trials based on reported metrics.
 3. **Extensibility**: Integrate with Optuna by using `OptunaSearch` in Tune, or combine with Curriculum Learning/AMP by modifying the trainable function (e.g., add `torch.cuda.amp` for mixed precision).
