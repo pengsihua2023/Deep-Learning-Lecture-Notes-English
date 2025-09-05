@@ -1,8 +1,6 @@
-
-
 # LoKr Fine-tuning Method (Low-rank Kronecker Product Adaptation)
 
-## 1. Definition
+## 📖 1. Definition
 
 **LoKr** is a Parameter-Efficient Fine-Tuning (PEFT) method. Similar to **LoRA** and **LoHA**, the core idea is to **freeze the original weights** of pre-trained large models and only learn a low-rank update matrix \$\Delta W\$.
 
@@ -22,7 +20,7 @@ This allows LoKr to represent a large matrix update with fewer parameters, savin
 
 
 
-## 2. Mathematical Formulation
+## 📖 2. Mathematical Formulation
 
 Let the original weight matrix be \$W \in \mathbb{R}^{d \times k}\$, which is frozen. The LoKr low-rank update is:
 
@@ -48,7 +46,7 @@ During training, only \$A, B\$ are updated, and their parameter count is much sm
 
 
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 A minimal **PyTorch** implementation of a LoKr linear layer:
 
@@ -91,7 +89,7 @@ This shows the LoKr layer works correctly.
 
 
 
-## Summary
+## 📖 Summary
 
 * **LoKr** uses the Kronecker product \$(A \otimes B)\$ to construct low-rank updates.
 * This reduces parameter count from \$O(dk)\$ to \$O(mn + pq)\$, while still approximating large matrix updates.
@@ -99,7 +97,7 @@ This shows the LoKr layer works correctly.
 
 
 
-## 🔹 Comparison: LoRA / LoHA / LoKr Fine-tuning Methods
+## 📖 Comparison: LoRA / LoHA / LoKr Fine-tuning Methods
 
 | Method   | Update Formula                   | Extra Parameter Scale                               | Expressive Power                                         | Features                                                                                                 |
 | -------- | -------------------------------- | --------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
@@ -109,7 +107,7 @@ This shows the LoKr layer works correctly.
 
 
 
-## Final Takeaways
+## 📖 Final Takeaways
 
 * **LoRA**: The most basic low-rank approximation, simple and widely applied to LLM fine-tuning.
 * **LoHA**: Extends LoRA with Hadamard product, stronger expressivity, suitable for more complex tasks.
