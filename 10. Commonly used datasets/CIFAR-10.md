@@ -1,7 +1,7 @@
 # Dataset Introduction: CIFAR-10 Dataset
 The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Krizhevsky, Vinod Nair, and Geoffrey Hinton from the University of Toronto, released in 2009. Designed for image classification tasks, it is suitable for developing and testing machine learning and deep learning algorithms. Its moderate scale and ease of processing make it an entry-level dataset, commonly used in teaching and research.
 
-### Dataset Overview
+### 📖 Dataset Overview
 - **Purpose**: Used for developing and evaluating image classification algorithms, particularly for testing convolutional neural networks (CNNs) and other deep learning models.
 - **Scale**:
   - Contains 60,000 32x32 pixel color images (RGB format).
@@ -25,7 +25,7 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
   - Data format: Images stored as numerical arrays, with pixel values ranging from 0-255.
 - **License**: CIFAR-10 is a public dataset, freely available for academic and non-commercial research.
 
-### Dataset Structure
+### 📖 Dataset Structure
 - **File Format**: Stored in Python’s pickle format, typically divided into 6 batch files:
   - Training data: 5 batch files (`data_batch_1` to `data_batch_5`), each containing 10,000 images and labels.
   - Test data: 1 batch file (`test_batch`), containing 10,000 images and labels.
@@ -35,7 +35,7 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
   - Labels are integers from 0-9, corresponding to the 10 categories.
 - **File Size**: Approximately 170MB compressed, about 1GB uncompressed.
 
-### Data Collection
+### 📖 Data Collection
 - **Source**:
   - Images are selected from the “80 Million Tiny Images” dataset, which was collected via internet keyword searches.
   - CIFAR-10 includes 10 carefully chosen categories to ensure image quality and clear categorization.
@@ -43,7 +43,7 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
   - Images are manually screened and verified to ensure accurate category labels.
   - The dataset contains low-resolution images, some of which may be blurry or noisy, increasing classification difficulty.
 
-### Applications and Research
+### 📖 Applications and Research
 - **Main Tasks**:
   - Image classification: Classify each image into one of the 10 categories.
   - Transfer learning: Often used to test small networks or the transfer effects of pretrained models.
@@ -57,7 +57,7 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
   - Inter-class similarity (e.g., cat and dog) increases model differentiation difficulty.
   - Moderate data size is suitable for rapid experimentation but may be insufficient for training complex models.
 
-### Obtaining the Dataset
+### 📖 Obtaining the Dataset
 - **Official Website**: https://www.cs.toronto.edu/~kriz/cifar.html
   - Provides downloads in Python, MATLAB, and binary formats.
 - **Framework Support**:
@@ -82,7 +82,7 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
     ```
 - **Kaggle**: Also provides the CIFAR-10 dataset, suitable for beginners to access quickly.
 
-### Notes
+### 📖 Notes
 - **Data Preprocessing**:
   - Pixel values typically need to be standardized or normalized (e.g., [0, 255] -> [0, 1] or [-1, 1]).
   - Data augmentation (e.g., random cropping, flipping) can significantly improve model performance.
@@ -95,7 +95,7 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
 - **Extension**:
   - CIFAR-100: An extended version of CIFAR-10, with 100 categories and 600 images per category, offering higher classification difficulty.
 
-### Comparison with Other Datasets
+### 📖 Comparison with Other Datasets
 - **With ImageNet**:
   - CIFAR-10 has lower resolution (32x32 vs 224x224) and fewer images (60,000 vs 14 million), suitable for quick experiments.
   - ImageNet has more categories (1000+ vs 10) and more complex tasks.
@@ -103,7 +103,7 @@ The CIFAR-10 dataset is a widely used computer vision dataset created by Alex Kr
   - CIFAR-10 uses color images (RGB), with higher classification difficulty than MNIST (grayscale handwritten digits).
   - Both have similar data scales (60,000 images), but CIFAR-10 is closer to real-world scenarios.
 
-### Code Example (Simple CNN Classification)
+### 📖 Code Example (Simple CNN Classification)
 The following is a simple PyTorch CNN model example:
 ```python
 import torch
