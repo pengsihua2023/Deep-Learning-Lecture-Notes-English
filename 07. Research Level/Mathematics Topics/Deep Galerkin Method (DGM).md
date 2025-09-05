@@ -1,12 +1,11 @@
-## Deep Galerkin Method (DGM)
-
+# Deep Galerkin Method (DGM)
+## 📖 Introduction
 The Deep Galerkin Method (DGM) is a deep learning algorithm for solving partial differential equations (PDEs), especially in high dimensions. It was proposed by Justin Sirignano and Konstantinos Spiliopoulos in 2017, inspired by the classical Galerkin method, but replaces traditional finite-dimensional basis functions with deep neural networks to approximate PDE solutions. DGM trains the network by minimizing the integral form of the PDE residual, avoiding mesh discretization. It is mesh-free and suitable for nonlinear, high-dimensional, and complex-domain PDEs, such as the Black-Scholes equation in finance or fluid dynamics problems.
 
 Similar to Physics-Informed Neural Networks (PINNs), DGM also uses neural networks to represent solutions, but DGM emphasizes Galerkin orthogonality conditions, approximating the loss function through random sampling of the integration domain, which enables efficient handling of high-dimensional problems. It has been extended to various PDEs, such as the Fokker–Planck equation, the Stokes equation, and mean-field games.
 
----
 
-### Mathematical Description
+## 📖 Mathematical Description
 
 Consider a general PDE problem: in the domain \$\Omega \subset \mathbb{R}^d\$, satisfy:
 
@@ -37,7 +36,7 @@ The training process uses stochastic gradient descent (SGD) or Adam optimizer to
 
 ---
 
-### Code Implementation
+## 📖 Code Implementation
 
 Below is a simple PyTorch example of DGM, used to solve the Poisson equation:
 
@@ -130,7 +129,7 @@ plt.show()
 
 
 
-### Code Explanation
+## 📖 Code Explanation
 
 1. **DGMNet**: A simple fully connected network with tanh activations, input 1D (\$x\$), output 1D ( \$u(x)\$ ).
 2. **pde\_residual**: Uses automatic differentiation to compute the second derivative and calculate the PDE residual.
