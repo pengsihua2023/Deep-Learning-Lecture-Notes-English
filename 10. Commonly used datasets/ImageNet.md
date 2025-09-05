@@ -1,7 +1,7 @@
-## Dataset Introduction: ImageNet Dataset
+# Dataset Introduction: ImageNet Dataset
 The ImageNet dataset is a large-scale image dataset initiated in 2009 by Professor Fei-Fei Li’s team at Stanford University and continuously maintained. It is widely used for tasks such as image classification, object detection, and image segmentation in computer vision. As a key benchmark in computer vision research, ImageNet significantly advanced the development of deep learning, particularly convolutional neural networks (CNNs), gaining prominence due to AlexNet’s breakthrough in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2012.
 
-### Dataset Overview
+### 📖 Dataset Overview
 - **Purpose**: To provide a large-scale, annotated image dataset for developing and evaluating algorithms for image classification, object detection, and other computer vision tasks.
 - **Scale**:
   - Contains over 14 million images (as of 2023, with the exact number varying as updates occur).
@@ -13,7 +13,7 @@ The ImageNet dataset is a large-scale image dataset initiated in 2009 by Profess
   - Images are annotated and verified via crowdsourcing platforms like Amazon Mechanical Turk.
 - **License**: ImageNet is freely available for non-commercial research, subject to its terms of use.
 
-### Dataset Structure
+### 📖 Dataset Structure
 The ImageNet dataset is divided into several parts, primarily including:
 - **Full Dataset**:
   - Includes over 14 million images across 21,841 categories.
@@ -30,7 +30,7 @@ The ImageNet dataset is divided into several parts, primarily including:
   - Test set: Image files (early challenges did not provide test set labels; results were submitted for official evaluation).
   - Mapping file: Maps WordNet IDs (synset IDs) to category names.
 
-### Data Collection and Annotation
+### 📖 Data Collection and Annotation
 - **Collection**:
   - Images are crawled from search engines and platforms like Flickr based on WordNet keywords.
   - Categories are defined using WordNet’s semantic hierarchy (e.g., “animal” → “mammal” → “cat”).
@@ -39,7 +39,7 @@ The ImageNet dataset is divided into several parts, primarily including:
   - Bounding boxes for object detection tasks are manually drawn, covering objects in a subset of categories.
   - Annotation quality is improved through multiple rounds of verification and cleaning, with a low error rate (though some noise remains).
 
-### Main Tasks and Challenges
+### 📖 Main Tasks and Challenges
 The ImageNet dataset supports various computer vision tasks:
 1. **Image Classification** (most common with ImageNet-1K):
    - Goal: Classify images into one of 1,000 categories.
@@ -54,7 +54,7 @@ The ImageNet dataset supports various computer vision tasks:
    - Transfer learning: Models pretrained on ImageNet are fine-tuned for other vision tasks.
    - Fine-grained classification: Distinguishing highly similar categories (e.g., different dog breeds).
 
-### ILSVRC (ImageNet Large Scale Visual Recognition Challenge)
+### 📖 ILSVRC (ImageNet Large Scale Visual Recognition Challenge)
 - **Time**: Held annually from 2010 to 2017.
 - **Impact**:
   - In 2012, AlexNet (CNN-based) significantly improved classification performance, marking a breakthrough for deep learning.
@@ -66,7 +66,7 @@ The ImageNet dataset supports various computer vision tasks:
   - Test set: 100,000 images (used for official evaluation).
 - **Categories**: 1,000 categories, covering animals, plants, objects, scenes, etc., based on the WordNet hierarchy.
 
-### Applications and Impact
+### 📖 Applications and Impact
 - **Deep Learning Development**:
   - ImageNet and ILSVRC drove the widespread adoption of CNNs, giving rise to classic models like VGG, ResNet, and EfficientNet.
   - Pretrained models (e.g., ResNet-50) serve as standard starting points for transfer learning.
@@ -79,7 +79,7 @@ The ImageNet dataset supports various computer vision tasks:
   - Annotation noise: Some images may have incorrect labels or ambiguous classifications.
   - Data scale and computational demands: Training on the full dataset requires significant computational resources.
 
-### Obtaining the Dataset
+### 📖 Obtaining the Dataset
 - **Official Website**: http://www.image-net.org/
   - Requires registration and agreement to non-commercial use terms.
   - Provides downloads for the full dataset (~150GB) and the ILSVRC subset (~150GB).
@@ -88,7 +88,7 @@ The ImageNet dataset supports various computer vision tasks:
   - The full dataset requires manual downloading, and some URLs may be invalid.
   - The ILSVRC subset is more accessible and commonly used for academic research.
 
-### Notes
+### 📖 Notes
 - **Data Scale**: The full dataset requires hundreds of GB of storage; beginners are recommended to use the ILSVRC-1K subset.
 - **Category Imbalance**: Some categories have significantly varying numbers of images, which may impact model training.
 - **Ethical Concerns**:
@@ -98,7 +98,7 @@ The ImageNet dataset supports various computer vision tasks:
   - Images typically need resizing (e.g., 224x224 or 256x256) and standardization.
   - Data augmentation (e.g., flipping, cropping) is commonly used to improve model generalization.
 
-### Code Example (Loading ILSVRC-1K)
+### 📖 Code Example (Loading ILSVRC-1K)
 The following is an example of loading ImageNet-1K using PyTorch:
 ```python
 import torch
