@@ -8,9 +8,9 @@
 | **LoRA**          | Insert **low-rank decomposition update** into weight matrix \$W\$: \$\Delta W = AB^T\$ | \$W' = W + AB^T\$, optimize only \$A,B\$                                            | Efficient, combinable with other methods, inference-friendly | Slightly slower convergence on some tasks                                             | Large model fine-tuning (especially generation tasks, e.g., LLaMA, GPT)              |
 | **Model Pruning** | Remove unimportant weights/channels, then fine-tune remaining parameters               | \$W' = W \odot M\$, where \$M \in {0,1}^n\$                                         | Reduces model size, accelerates inference                    | Risk of performance drop, requires fine-tuning                                        | Deployment optimization (mobile/low-compute devices), model compression              |
 
----
 
-## 📖 Summary
+
+# 📖 Summary
 
 * If the goal is **minimal parameter overhead**: Prompt Tuning.
 * If the model is small and needs flexible expressiveness: P-Tuning v1.
