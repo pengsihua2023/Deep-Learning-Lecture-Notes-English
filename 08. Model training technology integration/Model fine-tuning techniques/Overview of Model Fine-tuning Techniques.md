@@ -1,8 +1,6 @@
-
-
 # Overview of Fine-Tuning Techniques
 
-## 1. What is Fine-Tuning?
+## 📖 1. What is Fine-Tuning?
 
 * **Fine-Tuning** refers to the process of taking a **pre-trained model** and further training it with downstream task data so that the model adapts to a specific task.
 * Compared with **training a model from scratch**, fine-tuning usually:
@@ -13,9 +11,9 @@
 
 Fine-tuning is the core approach of modern **Transfer Learning**, especially after the emergence of large-scale pre-trained models (e.g., BERT, GPT, ResNet, Vision Transformer), and has become a standard paradigm.
 
----
 
-## 2. Main Categories of Fine-Tuning Techniques
+
+## 📖 2. Main Categories of Fine-Tuning Techniques
 
 ### (1) Full Fine-Tuning
 
@@ -23,7 +21,7 @@ Fine-tuning is the core approach of modern **Transfer Learning**, especially aft
 * Pros: Flexible, best performance;
 * Cons: Huge number of parameters, high computation/storage cost, not suitable for extremely large models (e.g., 10B+ parameter LLMs).
 
----
+
 
 ### (2) Parameter-Efficient Fine-Tuning (PEFT)
 
@@ -55,23 +53,23 @@ Common methods:
   * **LoHA**: Low-rank + Hadamard product for enhanced expressivity.
   * **LoKr**: Use Kronecker product to construct low-rank updates, further reducing parameters.
 
----
+
 
 ### (3) Partial Layer Freezing
 
 * Method: Only update some layers (e.g., last few), freeze the others.
 * Suitable for tasks with limited data to avoid overfitting.
 
----
+
 
 ### (4) Multi-task & Continual Fine-Tuning
 
 * **Multi-task Fine-Tuning**: A single model adapts to multiple tasks simultaneously.
 * **Continual Fine-Tuning**: Continue training on new tasks while avoiding catastrophic forgetting.
 
----
 
-## 3. Pros and Cons Comparison
+
+## 📖 3. Pros and Cons Comparison
 
 | Method               | Pros                                      | Cons                                          | Suitable Scenarios                |
 | -------------------- | ----------------------------------------- | --------------------------------------------- | --------------------------------- |
@@ -81,9 +79,8 @@ Common methods:
 | Prefix/Prompt Tuning | Decoupled from model size, minimal params | Limited expressivity, may require long prefix | Text generation, dialogue systems |
 | Layer Freezing       | Simple, prevents overfitting              | Limited flexibility, may underperform         | Small tasks with limited data     |
 
----
 
-## 4. Application Scenarios
+## 📖 4. Application Scenarios
 
 * **Natural Language Processing (NLP)**
 
@@ -101,20 +98,15 @@ Common methods:
   * Alignment: RLHF, DPO
   * Industry-specific applications: finance, law, healthcare LLMs
 
----
-
-## Summary
+## 📖 Summary
 
 * **Fine-Tuning** = Adapting downstream tasks based on pre-trained models
 * **Full Fine-Tuning**: Flexible but expensive
 * **PEFT**: Adapter, LoRA, Prefix/Prompt Tuning, QLoRA → mainstream today
 * **Key to choosing method**: task scale, data availability, memory limits, performance requirements
 
----
 
-Fine-Tuning Technical Roadmap (mind map version)
-
-## Fine-Tuning Technical Roadmap
+## 📖 Fine-Tuning Technical Roadmap
 
 ```
 Fine-Tuning
@@ -156,9 +148,8 @@ Fine-Tuning
     └── Instruction Tuning / RLHF / DPO (LLM alignment)
 ```
 
----
 
-## Interpretation
+## 📖 Interpretation
 
 * **Two main branches**: full fine-tuning and parameter-efficient fine-tuning.
 * **PEFT methods**: mainstream for large model fine-tuning, covering Adapter, LoRA, QLoRA, Prefix/Prompt Tuning, etc.
