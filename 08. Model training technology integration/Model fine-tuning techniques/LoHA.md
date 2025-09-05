@@ -1,8 +1,6 @@
-
-
 # LoHA Fine-tuning Method (Low-rank Hadamard Product Approximation)
 
-## 1. Definition
+## 📖 1. Definition
 
 **LoHA** is a Parameter-Efficient Fine-Tuning (PEFT) method. It is similar to **LoRA**, but introduces a **Hadamard element-wise product** in the low-rank decomposition, which enhances representational capacity while maintaining low-rank updates.
 
@@ -26,9 +24,9 @@ $$
 
 Thus, compared with LoRA, LoHA can represent more complex variations with a similar number of parameters.
 
----
 
-## 2. Mathematical Formulation
+
+## 📖 2. Mathematical Formulation
 
 Let the original weight be \$W\$. During LoHA training, \$W\$ is frozen, and only \$\Delta W\$ is trained:
 
@@ -54,7 +52,7 @@ During training, only \$(A, B, C, D)\$ are updated, while the original weight \$
 
 ---
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 A minimal **PyTorch** implementation of a LoHA linear layer:
 
@@ -89,9 +87,9 @@ print("Output shape:", out.shape)
 
 Execution result: `Output shape: torch.Size([2, 5])`, indicating that the LoHA linear layer works correctly.
 
----
 
-✅ Summary:
+
+📖 Summary:
 
 * **LoRA**: Low-rank additive update \$\Delta W = BA\$.
 * **LoHA**: Low-rank + Hadamard update \$\Delta W = (BA) \odot (DC)\$, providing stronger representational power.
