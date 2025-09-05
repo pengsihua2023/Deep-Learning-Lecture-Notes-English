@@ -1,7 +1,7 @@
 
 # LSUV Initialization (Layer-Sequential Unit-Variance Initialization)
 
-## Definition
+## 📖 Definition
 
 **LSUV (Layer-Sequential Unit-Variance Initialization)** is a neural network weight initialization method proposed by Mishkin and Matas in 2015 (paper *All you need is a good init*).
 
@@ -14,9 +14,9 @@ Its core idea is:
 
 This ensures that at the start of training, the output distribution of all layers is relatively stable, avoiding gradient vanishing or explosion.
 
----
 
-## Mathematical Description
+
+## 📖 Mathematical Description
 
 Suppose the output of a layer is:
 
@@ -59,7 +59,7 @@ $$
 
 ---
 
-## Simplest Code Example
+## 📖 Simplest Code Example
 
 ### PyTorch Pseudo Implementation
 
@@ -100,7 +100,6 @@ lsuv_init(net.fc1, x)
 print("After fc1 weight initialization, output variance:", net.fc1(x).var().item())
 ```
 
----
 
 ### NumPy Simplified Version (Single Layer Demonstration)
 
@@ -128,9 +127,9 @@ weights_lsuv = lsuv_init(weights, x)
 print("Output variance after LSUV:", np.var(x.dot(weights_lsuv.T)))
 ```
 
----
 
-✅ Summary:
+
+📖 Summary:
 
 * **LSUV Initialization** = Orthogonal initialization + sequential adjustment of variance to 1;
 * Mathematically, this ensures \$\text{Var}(y) \approx 1\$ by scaling the weights;
