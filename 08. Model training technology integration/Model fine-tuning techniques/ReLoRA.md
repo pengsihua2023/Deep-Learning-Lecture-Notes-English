@@ -193,7 +193,7 @@ plt.show()
 4. **ReLoRA training**: merges LoRA into \$W\$ every `merge_every=50` steps.
 5. **Result**: plots convergence curves for LoRA and ReLoRA.
 
-In practice you’ll see:
+## 📖 In practice you’ll see:
 
 * **LoRA** curve decreases but may converge slowly or plateau;
 * **ReLoRA** curve decreases more steadily and often reaches a lower loss.
