@@ -1,7 +1,7 @@
 
-## Mathematical Fundamentals: Basics of Matrices
+# Mathematical Fundamentals: Basics of Matrices
 
-#### **1. Definition and Basic Concepts of Matrices**
+## 📖 **1. Definition and Basic Concepts of Matrices**
 - **Definition**: A matrix is a two-dimensional numerical array with shape `(m, n)`, representing \( m \) rows and \( n \) columns. It is a core data structure in linear algebra and deep learning.
   - A 4x3 array `[[0 1 0], [1 0 1], [0 0 1], [1 1 0]]` is a matrix with shape `(4, 3)`, potentially representing 4 samples, each with 3 features.
 - **Shape Understanding**:
@@ -10,7 +10,7 @@
   - Example: An input matrix `(100, 10)` (100 samples, 10 features) multiplied by a weight matrix `(10, 5)` yields an output of `(100, 5)`.
 - **Importance**: Matrices are used to represent input data, model parameters, and outputs in deep learning.
 
-#### **2. Core Matrix Operations**
+## 📖 **2. Core Matrix Operations**
 Below are matrix operations commonly used in deep learning, implementable in `NumPy` or deep learning frameworks (e.g., `TensorFlow`, `PyTorch`):
 - **Matrix Multiplication**:
   - A core operation for forward propagation (e.g., fully connected layer: `X @ W`).
@@ -42,7 +42,7 @@ Below are matrix operations commonly used in deep learning, implementable in `Nu
     print(A * B) # Element-wise multiplication: [[5, 12], [21, 32]]
     ```
 
-#### **3. Matrices in Deep Learning**
+## 📖 **3. Matrices in Deep Learning**
 - **Feature Matrix**:
   - Represents input data with shape `(number of samples, number of features)`.
   - A 4x3 matrix may represent 4 samples, each with 3 features (e.g., image features or embedding vectors).
@@ -60,7 +60,7 @@ Below are matrix operations commonly used in deep learning, implementable in `Nu
 - **Gradient Matrix**:
   - Computed during backpropagation to update weights (same shape as the weight matrix), used for parameter optimization.
 
-#### **4. Advanced Matrix Concepts**
+## 📖 **4. Advanced Matrix Concepts**
 The following concepts are more advanced but useful for understanding model optimization and data processing in deep learning:
 - **Inverse and Pseudo-Inverse**:
   - **Inverse Matrix**: Applicable to square matrices (`n x n`), satisfying `A @ A_inv = I` (`np.linalg.inv(A)`).
@@ -91,7 +91,7 @@ The following concepts are more advanced but useful for understanding model opti
     print(np.linalg.norm(A)) # Frobenius norm
     ```
 
-#### **5. Practical Techniques**
+## 📖 **5. Practical Techniques**
 - **Vectorized Operations**:
   - Use `NumPy` or deep learning frameworks (e.g., `TensorFlow`, `PyTorch`) for efficient matrix operations, avoiding explicit loops.
   - Example:
@@ -118,9 +118,8 @@ The following concepts are more advanced but useful for understanding model opti
     print(tensor.shape) # torch.Size([2, 3])
     ```
 
----
 
-### **6. Summary**
+## 📖 **6. Summary**
 - **Must Master**:
   - **Matrix Multiplication** (`X @ W`): Core of forward propagation.
   - **Transpose** (`A.T`): Shape adjustment.
