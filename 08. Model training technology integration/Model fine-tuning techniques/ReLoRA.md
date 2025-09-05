@@ -112,7 +112,7 @@ for step in range(steps):
 ---
 
 ## ReLoRA vs LoRA Convergence Comparison Example
-
+---
 We use a **simple regression task** to compare their loss curves under the same conditions.
 
 ```python
