@@ -1,7 +1,7 @@
-## Fashion-MNIST Dataset
+# Fashion-MNIST Dataset
 The Fashion-MNIST dataset is an image classification dataset released in 2017 by Zalando, a German e-commerce company’s research team. It serves as a direct replacement for the classic MNIST handwritten digit dataset, offering greater classification difficulty while maintaining the same structure. Widely used in machine learning and deep learning research, it is particularly suitable for teaching and benchmarking due to its simplicity, moderate scale, and real-world relevance (fashion items).
 
-### Dataset Overview
+### 📖 Dataset Overview
 - **Purpose**: Used for image classification tasks to test the performance of machine learning and deep learning models (e.g., CNNs) on data more complex than MNIST but still manageable, suitable for beginners and researchers.
 - **Scale**:
   - Total of 70,000 28x28 pixel grayscale images.
@@ -23,7 +23,7 @@ The Fashion-MNIST dataset is an image classification dataset released in 2017 by
   - Each image contains a centered fashion item.
 - **License**: MIT License, freely available for academic and non-commercial use.
 
-### Dataset Structure
+### 📖 Dataset Structure
 - **File Format**:
   - Similar to MNIST, provided in binary format (`.gz` compressed) and supported by built-in loading interfaces in deep learning frameworks.
   - Main files:
@@ -36,7 +36,7 @@ The Fashion-MNIST dataset is an image classification dataset released in 2017 by
   - Labels: Integers from 0-9, corresponding to the 10 fashion item categories.
 - **File Size**: Approximately 30MB compressed, about 100MB uncompressed.
 
-### Data Collection and Preprocessing
+### 📖 Data Collection and Preprocessing
 - **Source**:
   - Images are selected from Zalando’s fashion product catalog, converted to grayscale, and resized to 28x28 pixels.
   - Data is manually curated to ensure clear categories and high image quality.
@@ -45,7 +45,7 @@ The Fashion-MNIST dataset is an image classification dataset released in 2017 by
   - Grayscale values are standardized to reduce background noise.
   - The dataset has accurate labels with minimal noise.
 
-### Applications and Research
+### 📖 Applications and Research
 - **Main Tasks**:
   - Image classification: Classify each image into one of the 10 fashion item categories.
   - Model testing: Used to evaluate the performance of MLP, CNN, Vision Transformer, and other models.
@@ -60,7 +60,7 @@ The Fashion-MNIST dataset is an image classification dataset released in 2017 by
   - Low resolution (28x28) limits detail extraction, requiring models with strong feature extraction capabilities.
   - Moderate data scale is suitable for rapid experimentation but may be insufficient for training very complex models.
 
-### Obtaining the Dataset
+### 📖 Obtaining the Dataset
 - **Official Website**: https://github.com/zalandoresearch/fashion-mnist
   - Provides binary file downloads and detailed documentation.
 - **Framework Support**:
@@ -85,7 +85,7 @@ The Fashion-MNIST dataset is an image classification dataset released in 2017 by
     ```
 - **Kaggle**: Provides the Fashion-MNIST dataset, often used for competitions and teaching.
 
-### Notes
+### 📖 Notes
 - **Data Preprocessing**:
   - Pixel values should be normalized to [0, 1] or standardized (e.g., mean 0.2860, standard deviation 0.3530).
   - Data augmentation (e.g., random flipping, translation, rotation) can significantly improve model robustness.
@@ -104,7 +104,7 @@ The Fashion-MNIST dataset is an image classification dataset released in 2017 by
   - **CIFAR-10**: Color images (32x32), with higher classification difficulty.
   - **EMNIST**: Extended MNIST, including letters and digits, with more categories.
 
-### Code Example (Simple CNN Classification)
+### 📖 Code Example (Simple CNN Classification)
 The following is a simple PyTorch CNN model example:
 ```python
 import torch
@@ -147,7 +147,7 @@ for epoch in range(5): # 5 epochs
     print(f'Epoch {epoch+1}, Loss: {loss.item():.4f}')
 ```
 
-### Comparison with Other Datasets
+### 📖 Comparison with Other Datasets
 - **With MNIST**:
   - Both have the same structure, but Fashion-MNIST’s fashion item classification is more challenging (92-97% vs 99%+ accuracy).
   - Fashion-MNIST is closer to real-world scenarios (e.g., item classification).
