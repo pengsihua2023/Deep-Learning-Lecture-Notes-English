@@ -1,6 +1,6 @@
-## Mathematical Fundamentals: Basics of Arrays
+# Mathematical Fundamentals: Basics of Arrays
 
-### **1. Definition of Arrays**
+## 📖 **1. Definition of Arrays**
 - An **array** is a fundamental data structure in computer science used to store a collection of **ordered** elements that can be accessed via **indices**. Array elements are typically stored in **contiguous memory blocks** to enhance access efficiency.
 - **Key Characteristics**:
   - **Order**: Elements are arranged in a fixed sequence, with indexing starting at 0 (in Python).
@@ -11,9 +11,8 @@
     - **Multi-dimensional array**: Higher dimensions, e.g., a three-dimensional array `[[[1, 2], [3, 4]], [[5, 6], [7, 8]]]`.
   - **Applications**: Storing and manipulating data, such as feature vectors, datasets, image pixels, label sequences, etc.
 
----
 
-### **2. Arrays in Python and NumPy**
+### 📖 **2. Arrays in Python and NumPy**
 In Python, arrays can be implemented using built-in **lists** (`list`) or specialized libraries like `NumPy`. Since the context emphasizes `NumPy`, I’ll focus on `NumPy` arrays:
 - **NumPy Arrays (`numpy.ndarray`)**:
   - `NumPy` provides an efficient multidimensional array object, `ndarray`, designed for scientific computing.
@@ -42,18 +41,18 @@ In Python, arrays can be implemented using built-in **lists** (`list`) or specia
   - Python lists (e.g., `[[1, 2], [3, 4]]`) are general-purpose, allowing mixed data types (e.g., `[1, "a", 3.14]`), but have lower computational efficiency.
   - `NumPy` arrays require homogeneity (same data type), support vectorized operations, and are optimized for numerical computations.
 
----
 
-### **3. Relationship Between Arrays and Tensors**
+
+### 📖 **3. Relationship Between Arrays and Tensors**
 In `NumPy`, arrays and tensors are typically the same in implementation (both represented by `numpy.ndarray`), but they differ in semantics and use:
 - **Array**: A computer science data structure, emphasizing storage and manipulation, suitable for any data type (e.g., numbers, strings).
 - **Tensor**: A mathematical concept in machine learning and linear algebra, emphasizing the algebraic properties of multidimensional data, typically used for numerical computations.
 - **Key Point**: In `NumPy`, any `ndarray` (array) can be treated as a tensor because it supports tensor operations (e.g., dot products, matrix multiplication). In deep learning frameworks, tensors may be specific objects (e.g., `tf.Tensor`), but they can often be converted to/from arrays.
 Thus, array-to-tensor conversion in `NumPy` is nearly seamless, while in deep learning frameworks, explicit conversion may be required.
 
----
 
-### **4. Common Array Operations**
+
+### 📖 **4. Common Array Operations**
 Here are some common operations for `NumPy` arrays, using your 4x3 array as an example:
 - **Indexing and Slicing**:
   ```python
@@ -72,9 +71,9 @@ Here are some common operations for `NumPy` arrays, using your 4x3 array as an e
   print(np.sum(arr, axis=1)) # Sum per row: [1 2 1 2]
   ```
 
----
 
-### **5. Summary**
+
+### 📖 **5. Summary**
 - **What is an Array?**:
   - An array is a computer data structure for storing ordered elements, accessible via indices, ideal for efficient data storage and manipulation.
   - In `NumPy`, arrays are `ndarray` objects, supporting one-dimensional, two-dimensional, or higher-dimensional data, optimized for numerical computations.
