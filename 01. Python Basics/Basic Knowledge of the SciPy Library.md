@@ -1,8 +1,8 @@
-## Python Basics: Fundamentals of the SciPy Library
-### What is SciPy?
+# Python Basics: Fundamentals of the SciPy Library
+## 📖 What is SciPy?
 SciPy is an open-source Python library for scientific computing, built on top of NumPy, offering advanced mathematical, scientific, and engineering computation capabilities. It includes multiple submodules covering optimization, linear algebra, signal processing, statistics, and sparse matrix operations. In deep learning, SciPy plays a supplementary role compared to NumPy, Pandas, or deep learning frameworks like TensorFlow and PyTorch, primarily used for **advanced numerical computations**, **data preprocessing**, **optimization**, and **debugging**. It is particularly valuable in specific scenarios such as custom optimization algorithms, sparse data processing, or statistical analysis.
 
-## Core Features of SciPy:
+## 📖 Core Features of SciPy:
 - **Modular Design**: Includes submodules like `scipy.linalg` (linear algebra), `scipy.optimize` (optimization), and `scipy.sparse` (sparse matrices).
 - **High Performance**: Leverages C/Fortran under the hood, combined with NumPy’s efficient array operations.
 - **Integration with Deep Learning**: SciPy outputs (e.g., NumPy arrays) are directly compatible with deep learning frameworks.
@@ -14,9 +14,9 @@ In deep learning, SciPy is typically used for:
 - Statistical analysis and signal processing (e.g., data preprocessing or feature extraction).
 - Debugging models (e.g., analyzing weight distributions or feature matrices).
 
----
 
-## SciPy Knowledge Essential for Deep Learning
+
+## 📖 SciPy Knowledge Essential for Deep Learning
 Below are the key SciPy skills to master for deep learning, with practical applications and code examples. The focus is on modules and functions relevant to data preprocessing, optimization, and analysis tasks.
 
 #### 1. **Linear Algebra (`scipy.linalg`)**
@@ -171,9 +171,9 @@ SciPy outputs are typically NumPy arrays, which can be directly converted to Ten
     ```
 - **Deep Learning Use Case**: Feed SciPy-processed sparse matrices or optimization results into neural networks.
 
----
 
-### Typical SciPy Use Cases in Deep Learning
+
+## 📖 Typical SciPy Use Cases in Deep Learning
 1. **Data Preprocessing**:
    - Sparse matrix handling: Word frequency matrices in NLP or adjacency matrices in graph data.
    - Signal/image processing: Smooth data or extract features.
@@ -188,9 +188,9 @@ SciPy outputs are typically NumPy arrays, which can be directly converted to Ten
    - Linear algebra: Analyze weight matrix properties.
    - Statistical tests: Compare model outputs or dataset distributions.
 
----
 
-### Summary of Core SciPy Functions to Master
+
+## 📖 Summary of Core SciPy Functions to Master
 The following are the most commonly used SciPy functions for deep learning, recommended for mastery:
 - **Linear Algebra** (`scipy.linalg`):
   - `svd`, `eig`, `solve`, `inv`, `pinv`.
