@@ -268,7 +268,6 @@ plt.plot(x_test, u_pred.detach().numpy(), label='Predicted u(x, 0.5)')
 plt.xlabel('x'); plt.ylabel('u'); plt.legend(); plt.show()
 ```
 
----
 
 ## 📖 Summary
 
