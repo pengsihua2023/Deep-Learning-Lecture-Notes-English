@@ -1,9 +1,9 @@
-## DeepChem Library for Molecular Toxicity Prediction
+# DeepChem Library for Molecular Toxicity Prediction
 The following is a real-world example using the DeepChem library. This example is based on the Tox21 dataset (Toxicology in the 21st Century), a public database containing toxicity measurements for approximately 12,000 compounds across 12 biological targets, sourced from the 2014 Tox21 Data Challenge. The dataset uses SMILES to represent molecular structures and is commonly employed for multitask classification problems in molecular toxicity prediction.
 
 This example demonstrates how to load the Tox21 dataset and train and evaluate two models: GraphConvModel (a graph convolutional model) and RobustMultitaskClassifier (a robust multitask classifier). The code is executable (assuming DeepChem, TensorFlow, and other dependencies are installed) and is derived from DeepChem’s tutorials and documentation. I have combined the code into a complete script and added comments.
 
-### Complete Code Example
+## 📖 Complete Code Example
 ```python
 import deepchem as dc
 from deepchem.models import GraphConvModel, RobustMultitaskClassifier
@@ -40,7 +40,7 @@ print(f"Training set score: {train_score_mtc}")
 print(f"Test set score: {test_score_mtc}")
 ```
 
-### Code Explanation
+## 📖 Code Explanation
 - **Data Loading**: The `dc.molnet.load_tox21()` function loads the Tox21 dataset directly from MoleculeNet. The `featurizer` parameter specifies the molecular featurization method: 'GraphConv' for graph convolutional models and 'ECFP' (Extended-Connectivity Fingerprints) for non-graph models. The dataset is automatically split into training, validation, and test sets.
 - **Model Training**: GraphConvModel is suitable for handling molecular graph structures; RobustMultitaskClassifier is used for multitask learning (12 toxicity targets). Training uses 50 epochs, adjustable as needed.
 - **Evaluation**: ROC-AUC scores are used to assess model performance, suitable for binary classification problems (toxic/non-toxic).
