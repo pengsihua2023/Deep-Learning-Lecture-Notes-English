@@ -94,7 +94,7 @@ $$
 ## 📖 Integrating LoRA into Transformer Attention Layer
 ---
 
-## 1. Concept
+### 1. Concept
 
 * In **Self-Attention**, there are three projection matrices:
 
@@ -113,7 +113,7 @@ $$
 
 
 
-## 2. PyTorch Example Code
+### 2. PyTorch Example Code
 
 ```python
 import torch
@@ -170,7 +170,7 @@ y = attn(x)
 print("Output shape:", y.shape)  # (2, 5, 16)
 ```
 
-## 3. Summary
+### 3. Summary
 
 * **Q and V projection matrices** are replaced with **LoRA versions**, training only low-rank matrices \$A, B\$.
 * **Parameter count greatly reduced**: e.g., \$d=1024, k=1024, r=8\$, LoRA params = \$16k\$, much smaller than full \$1M+\$.
@@ -179,12 +179,12 @@ print("Output shape:", y.shape)  # (2, 5, 16)
 ---
 ##  📖 Hugging Face Transformers + LoRA Example
 ---
-## 1. Install Dependencies
+### 1. Install Dependencies
 
 ```bash
 pip install transformers datasets peft accelerate
 ```
-## 2. Load Data & Model
+### 2. Load Data & Model
 
 We use **Hugging Face Datasets** to load the `sst2` sentiment classification task, and `bert-base-uncased`.
 
@@ -205,7 +205,7 @@ encoded_dataset = dataset.map(preprocess, batched=True)
 model = AutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=2)
 ```
 
-## 3. Configure LoRA
+### 3. Configure LoRA
 
 The `peft` library provides a simple interface.
 
@@ -237,7 +237,7 @@ trainable params: 590,848 || all params: 109,483,778 || trainable%: 0.54
 
 
 
-## 4. Training
+### 4. Training
 
 We use Hugging Face `Trainer` for fine-tuning.
 
@@ -267,7 +267,7 @@ trainer.train()
 
 
 
-## 5. Inference & Save LoRA
+### 5. Inference & Save LoRA
 
 ```python
 # Inference
@@ -281,12 +281,10 @@ print("Prediction:", "Positive" if pred == 1 else "Negative")
 model.save_pretrained("./lora-bert")
 ```
 
-
----
-## 📖 Summary
+### Summary
 
 * **LoRA in Hugging Face** is very convenient — just inject with `peft.LoraConfig`.
 * Only trains **Q, V matrices** low-rank updates, greatly reducing parameter count.
 * Can be applied to BERT, GPT-2, T5, and other large models for **efficient fine-tuning**.
----
+
 
