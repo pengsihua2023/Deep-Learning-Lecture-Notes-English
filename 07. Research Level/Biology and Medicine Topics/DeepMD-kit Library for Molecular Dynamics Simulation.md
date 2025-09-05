@@ -1,16 +1,16 @@
-## DeepMD-kit Library for Molecular Dynamics Simulation
+# DeepMD-kit Library for Molecular Dynamics Simulation
 The following is an example code implementation using DeepMD-kit, based on real data (using a gaseous methane molecule as an example). This example is sourced from the official DeepMD-kit tutorial and uses ab-initio molecular dynamics data (OUTCAR files) generated from VASP as the real data source. The process includes data preparation, model training, freezing, testing, and other steps.
 
-### 1. Data Preparation
+## 📖 1. Data Preparation
 First, you need to download and extract the methane data (real ab-initio trajectory data). Then, use Python code to convert the data into DeepMD-kit format and split it into training and validation sets.
 
-#### Download Data Command:
+### Download Data Command:
 ```
 wget https://dp-public.oss-cn-beijing.aliyuncs.com/community/CH4.tar
 tar xvf CH4.tar
 ```
 
-#### Python Code (Data Preparation, Using dpdata Package):
+### Python Code (Data Preparation, Using dpdata Package):
 ```python
 import dpdata
 import numpy as np
@@ -32,7 +32,7 @@ print('# the validation data contains %d frames' % len(data_validation))
 ```
 **Notes**: The data includes atomic types, coordinates, forces, energy, etc., totaling 200 frames. The training set contains approximately 160 frames, and the validation set contains 40 frames. After export, directories will contain files such as `box.npy`, `coord.npy`, `energy.npy`, `force.npy`, etc.
 
-### 2. Model Configuration (JSON Input File: input.json)
+## 📖 2. Model Configuration (JSON Input File: input.json)
 Create a file named `input.json` with the following content (using the DeepPot-SE descriptor, suitable for the methane system):
 ```json
 {
@@ -96,7 +96,7 @@ Create a file named `input.json` with the following content (using the DeepPot-S
 ```
 **Notes**: `type_map` specifies atomic types (H and C); the descriptor uses the `se_e2_a` type; the training step count is 100,000.
 
-### 3. Train the Model
+## 📖 3. Train the Model
 Start training with the following command:
 ```
 dp train input.json
@@ -107,7 +107,7 @@ dp train --restart model.ckpt input.json
 ```
 **Notes**: Training will generate a `lcurve.out` file to record the loss curve.
 
-### 4. Freeze and Compress the Model
+## 📖 4. Freeze and Compress the Model
 Freeze the model:
 ```
 dp freeze -o graph.pb
@@ -117,14 +117,14 @@ Compress the model (optional, for improved efficiency):
 dp compress -i graph.pb -o graph-compress.pb
 ```
 
-### 5. Test the Model
+## 📖 5. Test the Model
 Test the compressed model on validation data:
 ```
 dp test -m graph-compress.pb -s ../00.data/validation_data -n 40 -d results
 ```
 **Notes**: `-n 40` specifies testing 40 frames, with output including RMSE/MAE metrics for energy and forces.
 
-### 6. Visualize Learning Curve (Optional Python Code)
+## 📖 6. Visualize Learning Curve (Optional Python Code)
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
