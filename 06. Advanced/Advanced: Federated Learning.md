@@ -1,5 +1,5 @@
 # Advanced: Federated Learning
-
+## 📖 Introduction
 Federated Learning is a distributed machine learning method designed to allow multiple devices or clients (such as mobile phones, computers, or servers) to collaboratively train a shared machine learning model without sharing raw data. It distributes the model training process across clients, and only aggregates model updates (such as gradients or parameters) on a central server, thereby protecting data privacy.
 <div align="center">
 <img width="600" height="314" alt="image" src="https://github.com/user-attachments/assets/93f48676-6f4c-4b71-affa-08d500cce16d" />
