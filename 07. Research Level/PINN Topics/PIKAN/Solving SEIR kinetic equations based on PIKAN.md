@@ -1,6 +1,6 @@
 # Solving SEIR Dynamical Equations Based on PIKAN
 
-## 1. SEIR Dynamical Equations
+## 📖 1. SEIR Dynamical Equations
 
 $$
 \begin{aligned}
@@ -11,7 +11,7 @@ $$
 \end{aligned}
 $$
 
-## 2. Neural Network Approximate Solution
+## 📖 2. Neural Network Approximate Solution
 
 Assume the PIKAN / PINN network outputs are:
 
@@ -25,7 +25,7 @@ $$
 \frac{d\hat{S}}{dt},\quad \frac{d\hat{E}}{dt},\quad \frac{d\hat{I}}{dt},\quad \frac{d\hat{R}}{dt}.
 $$
 
-## 3. Definition of Equation Residuals
+## 📖 3. Definition of Equation Residuals
 
 Substitute the predicted values into the SEIR equations to obtain residuals:
 
@@ -38,7 +38,7 @@ r_R(t) &= \frac{d\hat{R}}{dt} - \gamma \hat{I}(t).
 \end{aligned}
 $$
 
-## 4. Physics Residual Loss Function
+## 📖 4. Physics Residual Loss Function
 
 For sampled time points \${t\_i}\_{i=1}^N\$, the physics residual loss is:
 
@@ -46,7 +46,7 @@ $$
 L_{\text{physics}} = \frac{1}{N} \sum_{i=1}^N \Big( r_S(t_i)^2 + r_E(t_i)^2 + r_I(t_i)^2 + r_R(t_i)^2 \Big).
 $$
 
-## 5. Total Loss
+## 📖 5. Total Loss
 
 The complete PIKAN loss function can be written as:
 
