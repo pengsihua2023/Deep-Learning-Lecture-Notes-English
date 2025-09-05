@@ -1,7 +1,7 @@
 ## Python Basics: Classes in Python
 Python is an object-oriented programming (OOP) language, and classes (Class) are one of the core concepts of OOP. They allow you to encapsulate data and behavior together, forming a reusable template. Through classes, you can create objects (instances), which can have their own attributes (data) and methods (functions). Below, I will explain the knowledge of classes in Python in detail from basic to advanced, including definitions, attributes, methods, inheritance, special methods, and more. The explanations will be combined with code examples for easy understanding. If you have a Python environment, you can copy the code and run it for testing.
 
-#### 1. **Basic Concepts of Classes**
+## 1. **Basic Concepts of Classes**
    - **What is a Class?**
      A class is a blueprint or template used to define the common characteristics and behaviors of a category of things. For example, you can define a "Dog" class to describe a dog's attributes (such as name, age) and behaviors (such as barking, running).
      - Object: The result of instantiating a class. For example, creating a specific dog object from the "Dog" class.
@@ -11,7 +11,7 @@ Python is an object-oriented programming (OOP) language, and classes (Class) are
      - Organize Code: Group related data and functions.
      - Simulate the Real World: More intuitively model complex systems.
 
-#### 2. **How to Define a Class**
+## 2. **How to Define a Class**
    - Use the `class` keyword to define a class. Class names usually follow CamelCase naming, with the first letter capitalized.
      Basic Syntax:
      ```python
@@ -34,7 +34,7 @@ Python is an object-oriented programming (OOP) language, and classes (Class) are
      ```
      - Here, `__init__` is a special method used to initialize the object. `self` represents the instance itself and must be the first parameter of the method.
 
-#### 3. **Attributes**
+## 3. **Attributes**
    Attributes are the data part of a class or object, divided into two types: class attributes and instance attributes.
    - **Instance Attributes**:
      Attributes that belong to a specific object, which can differ for each instance. They are usually defined in the `__init__` method using `self.attribute_name`.
@@ -67,7 +67,7 @@ Python is an object-oriented programming (OOP) language, and classes (Class) are
      print(my_dog.get_secret())  # Recommended to access via method
      ```
 
-#### 4. **Methods**
+## 4. **Methods**
    Methods are functions in a class that define behavior.
    - **Instance Methods**:
      Operate on instance attributes, using `self` as the first parameter.
@@ -113,7 +113,7 @@ Python is an object-oriented programming (OOP) language, and classes (Class) are
      print(my_dog)  # Output: Dog named Buddy
      ```
 
-#### 5. **Inheritance**
+## 5. **Inheritance**
    Inheritance allows a class (subclass) to inherit attributes and methods from another class (parent class), enabling code reuse.
    - Basic Syntax: `class SubClass(ParentClass):`
      Example:
@@ -154,7 +154,7 @@ Python is an object-oriented programming (OOP) language, and classes (Class) are
      Objects of different classes can call methods with the same name, but with different behaviors.
      Example: Animal and Bird both have a `move()` method, but implemented differently.
 
-#### 6. **Advanced Topics**
+## 6. **Advanced Topics**
    - **Abstract Classes**:
      Use the `abc` module to define abstract base classes (ABC), forcing subclasses to implement certain methods.
      Example:
@@ -190,7 +190,7 @@ Python is an object-oriented programming (OOP) language, and classes (Class) are
    - **Difference Between Classes and Modules**:
      Classes are objects created at runtime, while modules are files. Classes can be instantiated, modules cannot.
 
-#### 7. **Common Notes and Best Practices**
+## 7. **Common Notes and Best Practices**
    - `self` is required, unless it's a class method or static method.
    - Classes are Objects: In Python, everything is an object, and classes themselves are instances of `type`.
    - Avoid Circular Inheritance.
