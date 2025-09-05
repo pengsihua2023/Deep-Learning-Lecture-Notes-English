@@ -1,15 +1,12 @@
-
-
-
-## Overview of Initialization Methods
+# Overview of Initialization Methods
 
 
 
 In deep learning, the initialization of model parameters (weights and biases) has an important impact on training convergence speed, stability, and final performance. Proper initialization methods can avoid gradient vanishing or explosion and ensure good gradient propagation at the early stages of training. Below is an overview of common initialization methods in deep learning, along with their core ideas and applicable scenarios.
 
----
 
-### 1. **Zero Initialization**
+
+## 📖 1. **Zero Initialization**
 
 * **Principle**: Initialize all weights and biases to 0.
 * **Problems**:
@@ -18,9 +15,9 @@ In deep learning, the initialization of model parameters (weights and biases) ha
   * Gradients update identically, preventing the network from learning effectively.
 * **Applicable Scenarios**: Rarely used for weight initialization, only for specific biases (e.g., biases of fully connected layers).
 
----
 
-### 2. **Random Initialization**
+
+## 📖 2. **Random Initialization**
 
 * **Principle**: Weights are randomly sampled from a uniform or normal distribution, while biases are usually set to small constants (e.g., 0 or 0.1).
 
@@ -33,9 +30,9 @@ In deep learning, the initialization of model parameters (weights and biases) ha
 
 - **Applicable Scenarios**: Simple networks, but parameters need to be manually adjusted to select a suitable range.
 
----
 
-### 3. **Xavier Initialization (Xavier/Glorot Initialization)**
+
+## 📖 3. **Xavier Initialization (Xavier/Glorot Initialization)**
 
 * **Principle**: To maintain consistent gradient variance during forward and backward propagation, weights are sampled from the following distributions:
 
@@ -59,9 +56,9 @@ $$
   * Widely used in fully connected layers and shallow networks.
 - **Limitations**: Less effective for ReLU, as ReLU breaks variance symmetry.
 
----
 
-### 4. **He Initialization**
+
+## 📖 4. **He Initialization**
 
 * **Principle**: Optimized for ReLU activation functions, weights are sampled from the following distributions to maintain gradient variance:
 
@@ -85,9 +82,9 @@ $$
   * Commonly used in deep convolutional neural networks (CNNs) such as ResNet.
 - **Advantages**: Solves the gradient vanishing problem of Xavier in ReLU networks.
 
----
 
-### 5. **Orthogonal Initialization**
+
+## 📖 5. **Orthogonal Initialization**
 
 * **Principle**: Initialize weights as an orthogonal matrix (satisfying \$W^{T} W = I\$), ensuring that the linear transformation of weights preserves signal variance.
 
@@ -99,9 +96,9 @@ $$
   * Also applied in some Transformer models.
 - **Limitations**: Computationally expensive, suitable only for specific scenarios.
 
----
 
-### 6. **Pretrained Initialization**
+
+## 📖 6. **Pretrained Initialization**
 
 * **Principle**: Use model weights pretrained on large datasets (e.g., ImageNet, BERT) as initialization.
 * **Advantages**:
@@ -114,9 +111,8 @@ $$
   * Natural language processing: Pretrained weights of BERT, GPT.
 * **Limitations**: Must be related to the target task; otherwise, results may be poor.
 
----
 
-### 7. **Bias Initialization**
+## 📖 7. **Bias Initialization**
 
 * **Principle**: Biases are usually initialized to small constants (e.g., 0 or 0.1), sometimes adjusted depending on the task.
 * **Special Cases**:
@@ -125,17 +121,16 @@ $$
   * For some activation functions (e.g., ReLU), small positive biases can be set to avoid “dead neurons.”
 * **Applicable Scenarios**: Almost all network layers.
 
----
 
-### 8. **Other Variants**
+
+## 📖 8. **Other Variants**
 
 * **Kaiming Initialization**: Another name for He initialization, the default for ReLU networks in PyTorch.
 * **Truncated Normal**: Truncated normal distribution to limit weights within a range and reduce outliers.
 * **Constant Initialization**: Assign fixed values to certain layers (e.g., convolution kernels), rarely used.
 
----
 
-### Choosing Initialization Methods
+## 📖 Choosing Initialization Methods
 
 * **Activation Functions**:
 
@@ -154,7 +149,7 @@ $$
 
 ---
 
-### Python Code Example
+## 📖 Python Code Example
 
 Below is a simple PyTorch example demonstrating how to apply Xavier and He initialization in the MNIST handwritten digit classification task. The code is kept minimal and uses the AdamW optimizer (as referenced earlier).
 
@@ -231,9 +226,9 @@ for epoch in range(1, epochs + 1):
     test()
 ```
 
----
 
-### Code Explanation
+
+## 📖 Code Explanation
 
 1. **Model Definition**:
 
@@ -267,25 +262,24 @@ for epoch in range(1, epochs + 1):
 
    Actual values vary due to random initialization.
 
----
 
-### Key Points
+## 📖 Key Points
 
 * **Xavier Initialization**: Suitable for tanh/sigmoid, maintains gradient variance.
 * **He Initialization**: Suitable for ReLU, prevents gradient vanishing.
 * **Pretrained Initialization**: Best for transfer learning scenarios.
 * **Bias Initialization**: Usually set to 0 or small constants.
 
----
 
-### Practical Application Scenarios
+
+## 📖 Practical Application Scenarios
 
 * **CNN**: He initialization is common in ResNet, VGG; pretrained initialization is used for transfer learning.
 * **RNN/LSTM**: Orthogonal initialization prevents gradient explosion.
 * **Transformer**: Xavier or pretrained initialization (e.g., BERT weights) is standard.
 * **Combined with Other Techniques**: Can be used with BatchNorm, Dropout, AdamW to reduce sensitivity to initialization.
 
-#### Notes
+## 📖 Notes
 
 * **Activation Function Matching**: Ensure the initialization method matches the activation function.
 * **Initialization Range**: Improper ranges may cause gradient issues and must be validated.
