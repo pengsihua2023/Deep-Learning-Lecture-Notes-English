@@ -1,10 +1,9 @@
-## Neural Operators
-
+# Neural Operators
+## 📖 Introduction
 Neural Operators are a special type of neural network architecture designed to learn mappings between function spaces (i.e., to learn “operators”). Traditional neural networks usually handle point-to-point mappings (e.g., pixel-to-label in image classification), while neural operators can handle function-to-function mappings, such as rapidly approximating solutions to partial differential equations (PDEs) in scientific computing. They are resolution-invariant, meaning that data at one resolution can be used for training, while inference can be performed at different resolutions.
 
----
 
-### Mathematical Description
+## 📖 Mathematical Description
 
 A neural operator aims to approximate an operator \$G : \mathcal{A} \to \mathcal{U}\$, where \$\mathcal{A}\$ and \$\mathcal{U}\$ are Banach spaces (typically function spaces such as \$L^2(D)\$), and \$D \subset \mathbb{R}^d\$ is the domain. Given an input function \$a \in \mathcal{A}\$, the goal is to predict the output function \$u = G(a) \in \mathcal{U}\$.
 
@@ -50,7 +49,7 @@ where:
 The strength of FNO lies in resolution-invariance: it can be trained on coarse grids and used on fine grids during inference, since Fourier modes are continuous.
 
 ---
-
+## 📖 Code
 Below is the simplest 1D FNO example implemented from scratch in PyTorch. The task is to learn a simple operator: mapping the input function \$f(x) = \sin(kx)\$ to its integral form (cumulative integral). The code includes the spectral convolution layer (`SpectralConv1d`) and the FNO model, with synthetic training data.
 
 ```python
@@ -139,7 +138,7 @@ plt.show()
 
 
 
-### Code Explanation
+## 📖 Code Explanation
 
 1. **SpectralConv1d**: Core of FNO. Uses Fourier transform (FFT) to move input into frequency domain, applies learned weights on low-frequency modes, then inverse transform back. Captures global dependencies efficiently.
 2. **FNO1d**: Stacks spectral convolution layers and linear layers with GELU activation. Input is a discretized function (values on grid points), output is also a function.
