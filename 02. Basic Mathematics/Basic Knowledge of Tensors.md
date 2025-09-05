@@ -48,7 +48,7 @@ In Python, tensors are typically implemented using `NumPy` arrays (`numpy.ndarra
     print(tensor.shape) # (2, 3)
     ```
 
----
+
 
 ## 📖 **3. Relationship Between Tensors and Arrays**
 - **Array**: A computer science data structure, emphasizing storage and manipulation, capable of holding any data type (e.g., numbers, strings).
