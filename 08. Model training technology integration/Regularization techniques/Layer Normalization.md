@@ -1,5 +1,5 @@
 
-## Layer Normalization of Input
+# Layer Normalization of Input
 ### 📖 What is Layer Normalization?
 
 Layer Normalization (LN) is a regularization technique used in deep learning to normalize the inputs of neural networks, especially suitable for Recurrent Neural Networks (RNN) and Transformer models. Unlike Batch Normalization (BN), LN normalizes **the feature dimensions of a single sample** at each layer instead of across the batch. This makes LN insensitive to batch size, particularly suitable for small-batch or sequential tasks.
