@@ -1,7 +1,7 @@
-## Multi-GPU Parallel Training (Distributed Data Parallel, DDP)
-### 📖 What is Distributed Data Parallel (DDP)?
+# Multi-GPU Parallel Training (Distributed Data Parallel, DDP)
+## 📖 What is Distributed Data Parallel (DDP)?
 **Distributed Data Parallel (DDP)** is a technique in PyTorch for distributed training, accelerating deep learning model training by processing data in parallel across multiple GPUs or machines. It is an implementation of data parallelism, suitable for large-scale models and datasets, effectively utilizing multi-GPU or distributed environments.
-### 📖 Core Features:
+## 📖 Core Features:
 - **Applicable Scenarios**: Suitable for large-scale deep learning tasks requiring accelerated training, such as image classification and language model training.
 - **Principle**:
   - Splits the dataset into multiple subsets, with each GPU (or process) handling a portion of the data.
@@ -16,7 +16,7 @@
   - Requires multi-GPU or distributed environment support.
   - Communication overhead can be a bottleneck, especially with slow networks.
 
-### 📖 Principles of DDP
+## 📖 Principles of DDP
 1. **Data Sharding**:
    - The dataset is divided into multiple subsets, with each GPU (process) handling a subset (mini-batch).
 2. **Model Replication**:
@@ -30,7 +30,7 @@
 6. **Distributed Initialization**:
    - Initializes the communication backend (e.g., NCCL) using `torch.distributed.init_process_group` to ensure inter-process communication.
 ---
-### 📖 Simple Code Example: DDP Training with PyTorch
+## 📖 Simple Code Example: DDP Training with PyTorch
 Below is a simple example demonstrating how to use DDP in PyTorch to train a simple neural network on multiple GPUs using the MNIST dataset. The code assumes a single-machine multi-GPU environment.
 ```python
 import torch
@@ -102,7 +102,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### 📖 Running the Code
+## 📖 Running the Code
 Run in the command line:
 ```bash
 python -m torch.distributed.launch --nproc_per_node=NUM_GPUS your_script.py
@@ -125,7 +125,7 @@ Where `NUM_GPUS` is the number of available GPUs (e.g., 2). Alternatively, run t
    - Standard training loop computes loss and updates parameters.
    - Destroys the process group after training to release resources.
 
-### 📖 Key Points
+## 📖 Key Points
 1. **Distributed Sampling**:
    - `DistributedSampler` ensures each GPU processes a unique data subset, avoiding duplication.
 2. **Gradient Synchronization**:
@@ -136,7 +136,7 @@ Where `NUM_GPUS` is the number of available GPUs (e.g., 2). Alternatively, run t
 4. **Hardware Requirements**:
    - Requires multiple GPUs or a distributed cluster; NCCL backend optimizes GPU communication.
 
-### 📖 Practical Effects
+## 📖 Practical Effects
 - **Training Speed**: Training time decreases near-linearly with more GPUs (e.g., 2 GPUs yield nearly 2x speedup).
 - **Memory Allocation**: Each GPU processes data shards independently, balancing memory usage.
 - **Accuracy Preservation**: Matches single-GPU training accuracy due to gradient synchronization ensuring model consistency.
