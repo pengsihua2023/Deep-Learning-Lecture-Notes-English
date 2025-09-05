@@ -1,7 +1,7 @@
-## Python Basics: Introduction to the Matplotlib Library
-### What is Matplotlib?
+# Python Basics: Introduction to the Matplotlib Library
+## What is Matplotlib?
 Matplotlib is a powerful Python library for 2D (and some 3D) plotting, widely used for data visualization. It can generate a variety of static, dynamic, and interactive charts, such as line plots, scatter plots, bar charts, and heatmaps, making it ideal for scientific computing and data analysis. In deep learning, Matplotlib is primarily used for **visualizing data**, **model performance**, and **intermediate results** to understand data distributions, monitor training progress, and aid debugging.
-#### Key Features of Matplotlib:
+## Key Features of Matplotlib:
 - **Flexibility**: Supports a wide range of chart types and customizable styles.
 - **Integration with NumPy/Pandas**: Directly handles NumPy arrays or Pandas DataFrames.
 - **Cross-Platform**: Produces high-quality images suitable for papers, reports, or web applications.
@@ -10,8 +10,8 @@ In deep learning, Matplotlib is commonly used for:
 - Visualizing datasets (e.g., images, feature distributions).
 - Plotting loss or accuracy curves during training.
 - Displaying model predictions (e.g., confusion matrices, feature maps).
----
-### Essential Matplotlib Knowledge for Deep Learning
+
+## Essential Matplotlib Knowledge for Deep Learning
 Below are the key Matplotlib concepts to master for deep learning, along with practical use cases and code examples. It’s recommended to become familiar with `matplotlib.pyplot` (commonly aliased as `plt`), as it is the primary interface for Matplotlib.
 #### 📖 1. **Basic Plotting and Customization**
    - **Creating Simple Plots**:
