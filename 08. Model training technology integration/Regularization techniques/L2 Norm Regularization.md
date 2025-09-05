@@ -1,4 +1,4 @@
-## L2 Norm Regularization
+# L2 Norm Regularization
 ### 📖 What is L2 Norm Regularization?
 
 L2 norm regularization (also known as Weight Decay) is a commonly used regularization technique in machine learning and deep learning to prevent model overfitting. Its core idea is to add a penalty term to the loss function to constrain the size of model parameters (weights), thereby improving the generalization ability of the model.
