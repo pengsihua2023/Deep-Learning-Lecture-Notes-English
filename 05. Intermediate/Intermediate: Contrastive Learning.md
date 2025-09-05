@@ -1,5 +1,5 @@
 # Contrastive Learning
-
+## 📖 Introduction
 **Contrastive Learning** is a type of **Self-Supervised Learning** method. It constructs contrastive tasks between samples, enabling the model to learn more discriminative feature representations.
 
 The core idea is:
