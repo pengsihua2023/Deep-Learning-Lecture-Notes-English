@@ -1,12 +1,11 @@
-## Deep Ritz Method (DRM)
-
+# Deep Ritz Method (DRM)
+## 📖 Introduction
 The Deep Ritz Method (DRM) is a deep learning–based numerical method for solving variational problems, especially those arising from the variational formulation of partial differential equations (PDEs). It was proposed by Weinan E and Bing Yu in 2017, inspired by the classical Ritz method, which approximates PDE solutions by minimizing an energy functional. DRM uses deep neural networks as trial functions, and minimizes the variational energy via Monte Carlo sampling of the integrals, making it a mesh-free solver. Compared with Physics-Informed Neural Networks (PINNs), DRM focuses more on the variational weak form, making it suitable for elliptic PDEs (such as the Poisson equation), high-dimensional problems, and nonlinear PDEs. It has natural adaptivity and nonlinear capacity, but may require additional penalty terms for boundary conditions.
 
 The advantage of DRM lies in handling high-dimensional problems (such as option pricing in finance or quantum mechanics) and it has been extended to fractional PDEs, linear elasticity, and more. Its limitations include reliance on the energy functional (not all PDEs have variational forms) and numerical integration errors during training.
 
----
 
-### Mathematical Description
+## 📖 Mathematical Description
 
 Consider a typical elliptic PDE, for example the Poisson equation: in the domain \$\Omega \subset \mathbb{R}^d\$,
 
@@ -49,7 +48,7 @@ and the loss is constructed similarly. Convergence of DRM has been analyzed unde
 
 ---
 
-### Code Implementation
+## 📖 Code Implementation
 
 Below is a simple PyTorch implementation of a 1D DRM example for solving the Poisson equation:
 
@@ -68,7 +67,7 @@ The true solution is:
 $$
 u(x) = \sin(\pi x).
 $$
-
+### Code 
 The code includes neural network definition, variational loss computation, and training loop.
 
 ```python
@@ -143,7 +142,7 @@ plt.show()
 
 
 
-### Code Explanation
+## 📖 Code Explanation
 
 1. **DRMNet**: A simple fully connected network with tanh activations, input 1D (\$x\$), output 1D (\$u(x)\$).
 2. **energy\_loss**: Computes the Monte Carlo approximation of the variational energy using automatic differentiation for gradients.
