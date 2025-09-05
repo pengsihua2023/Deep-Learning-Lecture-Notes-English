@@ -1,8 +1,6 @@
-
-
 # QLoRA (Quantized Low-Rank Adaptation) Fine-Tuning Method
 
-## 1. Definition
+## 📖 1. Definition
 
 **QLoRA (Quantized Low-Rank Adaptation)** is a method proposed in 2023 for efficiently fine-tuning large language models (LLMs). It combines **weight quantization** and **LoRA (Low-Rank Adaptation)**:
 
@@ -14,9 +12,9 @@
   * With almost no performance loss;
   * Efficient and memory-friendly.
 
----
 
-## 2. Mathematical Formulation
+
+## 📖 2. Mathematical Formulation
 
 Let:
 
@@ -39,7 +37,7 @@ During training, only \$A,B\$ are updated while \$\hat{W}\$ remains frozen, thus
 
 ---
 
-## 3. Minimal Code Example
+## 📖 3. Minimal Code Example
 
 A minimal example of QLoRA fine-tuning using the Hugging Face **PEFT** library (assuming a small Transformers model):
 
@@ -82,9 +80,8 @@ outputs = model(**inputs)
 print("Logits shape:", outputs.logits.shape)
 ```
 
----
 
-## Explanation
+## 📖 Explanation
 
 1. **`load_in_4bit=True`** → model weights are loaded in 4-bit, saving memory significantly.
 2. **`prepare_model_for_kbit_training`** → freezes quantized weights and enables gradient support.
@@ -174,9 +171,9 @@ outputs = model.generate(**inputs, max_length=30)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ```
 
----
 
-## Code Explanation
+
+## 📖 Code Explanation
 
 1. **Quantized loading**: `load_in_4bit=True` → uses 4-bit NF4 weights.
 2. **LoRA configuration**: inserts low-rank adapters only in attention layers `q_proj, v_proj`.
