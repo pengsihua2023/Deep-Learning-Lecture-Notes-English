@@ -1,5 +1,3 @@
-
-
 # P-Tuning v2 Fine-Tuning
 
 ## 📖 1. Definition of P-Tuning v2
