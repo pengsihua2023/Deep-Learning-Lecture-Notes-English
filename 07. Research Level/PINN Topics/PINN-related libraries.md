@@ -1,8 +1,8 @@
-## Libraries Related to PINNs
+# Libraries Related to PINNs
 
 Physics-Informed Neural Networks (PINNs) libraries and frameworks are mainly used in deep learning and scientific computing for solving partial differential equations (PDEs), ordinary differential equations (ODEs), and other physics-based modeling problems. Commonly used libraries include:
 
-### Mainstream PINN Libraries
+## 📖 Mainstream PINN Libraries
 
 * **DeepXDE**
   A TensorFlow- and PyTorch-based PINN library that supports ODEs, PDEs, integral equations, and more. Comprehensive features, widely adopted in academia.
@@ -20,7 +20,7 @@ Physics-Informed Neural Networks (PINNs) libraries and frameworks are mainly use
   A Julia-based PINN framework, part of the SciML ecosystem, well-suited for research and numerical computation.
   [NeuralPDE GitHub](https://github.com/SciML/NeuralPDE.jl)
 
-### Support within Broader Deep Learning Ecosystems
+## 📖 Support within Broader Deep Learning Ecosystems
 
 * **PyTorch Lightning + PINN Templates**
   Community-provided templates for training PINNs within the Lightning framework.
@@ -28,7 +28,7 @@ Physics-Informed Neural Networks (PINNs) libraries and frameworks are mainly use
 * **JAX-based PINN Implementations**
   Cutting-edge research implementations leveraging JAX for automatic differentiation and GPU/TPU parallelization.
 
----
+## 📖 A comparison of PINN libraries
 
 The following comparison table summarizes commonly used PINN libraries across **language/backend, domain strengths, equation/constraint support, geometry/data handling, training/engineering support, ecosystem maturity**, and more — to help with selection.
 
@@ -43,5 +43,5 @@ The following comparison table summarizes commonly used PINN libraries across **
 | **FEniCS/FEniCSx + PINN Hybrids**           | Python/C++; FEM ecosystem    | PINNs + FEM coupling, weak-form PDEs                          | Strong/weak forms, detailed PDE constraints                | Mature mesh/solvers; good for complex geometries         | Integrated with FEM workflows                                          | Useful for research & engineering       | LGPL           | High-accuracy PDEs, complex geometries & boundaries            |
 | **TFPINN / Community TF Implementations**   | Python; TensorFlow           | Educational demos                                             | Basic PDE/ODE support                                      | Point-based sampling                                     | Lightweight, teaching-friendly                                         | Scattered, inconsistent updates         | Varies by repo | Beginners, classroom demonstrations                            |
 
----
+
 
