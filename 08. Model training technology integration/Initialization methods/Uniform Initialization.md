@@ -1,11 +1,11 @@
 
 # Uniform Initialization
-## Definition
+## 📖 Definition
 
 **Uniform Initialization** is a parameter initialization method in deep learning. It initializes neural network weights with values randomly sampled from a uniform distribution interval $\[a, b]\$.
 The core idea is to reasonably choose the interval range to avoid gradient vanishing or gradient explosion at the beginning of training.
 
-## Mathematical Description
+## 📖 Mathematical Description
 
 If weights \$W\$ are drawn from a uniform distribution:
 
@@ -42,7 +42,7 @@ $$
 W \sim U\Big(-\sqrt{\frac{6}{n_\text{in}}}, \; \sqrt{\frac{6}{n_\text{in}}}\Big)
 $$
 
-## Simplest Code Example
+## 📖 Simplest Code Example
 
 ### PyTorch Example
 
