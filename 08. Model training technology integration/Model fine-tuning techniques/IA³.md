@@ -1,8 +1,6 @@
-
-
 # IA³ Fine-tuning
 
-## 1. Definition
+## 📖 1. Definition
 
 **IA³ (Infused Adapter by Inhibiting and Amplifying Inner Activations)** is a **Parameter-Efficient Fine-Tuning (PEFT)** method proposed by Liu et al. (2022).
 
@@ -14,9 +12,9 @@ Its core idea:
 
 👉 Simply put: IA³ adds **per-channel scaling factors** to the attention and value projections of each layer, like knobs that adjust signal strength.
 
----
 
-## 2. Mathematical Description
+
+## 📖 2. Mathematical Description
 
 ### 2.1 Attention in Transformer
 
@@ -61,7 +59,7 @@ $\theta\$ is fixed (frozen), and only \$l\_k, l\_v, l\_{ff}\$ are updated.
 
 ---
 
-## 3. Simple Code Example (PyTorch)
+## 📖 3. Simple Code Example (PyTorch)
 
 Here’s a **simplified IA³ attention layer** in PyTorch:
 
@@ -116,9 +114,9 @@ print("Output shape:", out.shape)  # (2, 5, 16)
 
 In real Transformer layers, similar scaling parameters \$l\_{ff}\$ are also added in the FFN (feed-forward network).
 
----
 
-## 4. Summary
+
+## 📖 4. Summary
 
 * **Definition**: IA³ is a parameter-efficient fine-tuning method that introduces scaling vectors into attention and feed-forward layers to adjust activations.
 * **Formulas**:
@@ -138,9 +136,9 @@ $$
   * Performance close to full fine-tuning, especially suitable for large model adaptation.
 * **Code**: Only requires adding trainable scaling vectors in attention and FFN.
 
----
 
-# 📊 Comparison: LoRA vs Diff Pruning vs IA³
+
+## 📊 Comparison: LoRA vs Diff Pruning vs IA³
 
 | Method                                                                      | Definition                                                                                             | Formula                                                                                                                                              | Trainable Parameters                                             | Advantages                                                                         | Disadvantages                                                 | Typical Applications                                 |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------- |
@@ -148,9 +146,9 @@ $$
 | **Diff Pruning**                                                            | Adds diff updates \$\Delta \theta\$ with L1 regularization for sparsity, updating only necessary parts | \$\theta' = \theta + \Delta \theta\$, \$\mathcal{L} = \mathcal{L}\_{task} + \lambda \|\Delta \theta\|\_1\$                                           | Same dimension as original params, but only sparse part retained | Flexible, automatically selects “important params”, interpretable                  | Requires sparsity constraints, may cause training instability | Small models, model compression                      |
 | **IA³**<br>(Infused Adapter by Inhibiting and Amplifying Inner Activations) | Introduces trainable scaling vectors in attention and FFN to amplify/inhibit activations               | \$\text{Attn}(Q,K,V)=\text{softmax}\Big(\frac{Q (K \odot l\_k)^T}{\sqrt{d\_k}}\Big)(V \odot l\_v)\$<br>\$\text{FFN}(X)=(X W\_1 \odot l\_{ff}) W\_2\$ | Only 2–3 vectors per layer, far fewer than weight matrices       | Extremely lightweight, minimal storage, simple to implement                        | Limited to scaling, less expressive                           | Large model quick fine-tuning, low-resource settings |
 
----
 
-## 🔑 Final Takeaways
+
+## 📖 Final Takeaways
 
 * **LoRA**: Best for **large model deployment**, saves many parameters via low-rank updates, most widely used.
 * **Diff Pruning**: Best when **sparsity & interpretability** are needed, automatically identifies critical parameters.
