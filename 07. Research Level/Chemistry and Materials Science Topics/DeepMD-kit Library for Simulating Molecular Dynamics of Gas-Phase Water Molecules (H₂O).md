@@ -1,8 +1,8 @@
 
-## Molecular Dynamics Simulation of Gas-Phase Water Molecules (H₂O) Using DeepMD-kit
+# Molecular Dynamics Simulation of Gas-Phase Water Molecules (H₂O) Using DeepMD-kit
 DeepMD-kit is commonly used in quantum chemistry to simulate systems like gas-phase water molecules (H₂O). This example leverages ab initio molecular dynamics (AIMD) data, generated using density functional theory (DFT) calculations (e.g., via VASP or ABACUS software), to train a Deep Potential (DP) model for efficient simulations with quantum chemical accuracy. The data includes atomic coordinates, forces, energies, and other properties, covering vibrational and rotational modes of water molecules, often used to study hydrogen bond dynamics or reaction pathways.
 
-### 1. Data Source
+## 📖 1. Data Source
 - The data is derived from ab initio trajectories, such as AIMD simulations of water molecules generated from VASP’s OUTCAR file (approximately 200 frames at 300 K). This ensures quantum chemical accuracy (DFT level, e.g., PBE functional).
 - Command to download example data (if available or prepared from tutorials):
   ```
@@ -11,10 +11,10 @@ DeepMD-kit is commonly used in quantum chemistry to simulate systems like gas-ph
   ```
 - Data includes: atomic types (O and H), coordinates, forces, energies, and virial tensors.
 
-### 2. Data Preparation
+## 📖 2. Data Preparation
 Using the `dpdata` package, ab initio data is converted to DeepMD-kit format and split into a training set (approximately 160 frames) and a validation set (40 frames).
 
-#### Python Code (Data Preparation):
+### Python Code (Data Preparation):
 ```python
 import dpdata
 import numpy as np
@@ -43,7 +43,7 @@ print('# the validation data contains %d frames' % len(data_validation))
 
 **Explanation**: Output files include `box.npy`, `coord.npy`, `energy.npy`, `force.npy`, etc. The atomic type file `type.raw` example: `0 1 1` (O as 0, two H as 1).
 
-### 3. Model Configuration (JSON Input File: input.json)
+## 📖 3. Model Configuration (JSON Input File: input.json)
 Create an `input.json` file tailored for the water molecule system, using the DeepPot-SE descriptor (`se_e2_a` type):
 ```json
 {
@@ -108,7 +108,7 @@ Create an `input.json` file tailored for the water molecule system, using the De
 
 **Explanation**: `type_map` specifies atomic types (O and H); training runs for 100,000 steps, with the loss function focusing on energy and forces.
 
-### 4. Model Training
+## 📖 4. Model Training
 Start training with the following command:
 ```
 dp train input.json
@@ -120,7 +120,7 @@ dp train --restart model.ckpt input.json
 
 **Explanation**: Generates an `lcurve.out` file recording the loss curve (e.g., energy error ~1 meV, force error ~100 meV/Å).
 
-### 5. Freezing and Compressing the Model
+## 📖 5. Freezing and Compressing the Model
 Freeze the model:
 ```
 dp freeze -o graph.pb
@@ -130,7 +130,7 @@ Compress the model (optional, for improved efficiency):
 dp compress -i graph.pb -o graph-compress.pb
 ```
 
-### 6. Testing the Model
+## 📖 6. Testing the Model
 Test the compressed model on validation data:
 ```
 dp test -m graph-compress.pb -s ../validation_data -n 40 -d results
@@ -138,7 +138,7 @@ dp test -m graph-compress.pb -s ../validation_data -n 40 -d results
 
 **Explanation**: Outputs RMSE/MAE metrics to verify quantum chemical accuracy.
 
-### 7. Molecular Dynamics Simulation (Integrated with LAMMPS)
+## 📖 7. Molecular Dynamics Simulation (Integrated with LAMMPS)
 Use the trained model for AIMD surrogate simulations. Example LAMMPS input script `in.lammps` (NVT ensemble, 300 K):
 ```
 units metal
