@@ -2,7 +2,7 @@
 ### What is SciPy?
 SciPy is an open-source Python library for scientific computing, built on top of NumPy, offering advanced mathematical, scientific, and engineering computation capabilities. It includes multiple submodules covering optimization, linear algebra, signal processing, statistics, and sparse matrix operations. In deep learning, SciPy plays a supplementary role compared to NumPy, Pandas, or deep learning frameworks like TensorFlow and PyTorch, primarily used for **advanced numerical computations**, **data preprocessing**, **optimization**, and **debugging**. It is particularly valuable in specific scenarios such as custom optimization algorithms, sparse data processing, or statistical analysis.
 
-#### Core Features of SciPy:
+## Core Features of SciPy:
 - **Modular Design**: Includes submodules like `scipy.linalg` (linear algebra), `scipy.optimize` (optimization), and `scipy.sparse` (sparse matrices).
 - **High Performance**: Leverages C/Fortran under the hood, combined with NumPy’s efficient array operations.
 - **Integration with Deep Learning**: SciPy outputs (e.g., NumPy arrays) are directly compatible with deep learning frameworks.
@@ -16,7 +16,7 @@ In deep learning, SciPy is typically used for:
 
 ---
 
-### SciPy Knowledge Essential for Deep Learning
+## SciPy Knowledge Essential for Deep Learning
 Below are the key SciPy skills to master for deep learning, with practical applications and code examples. The focus is on modules and functions relevant to data preprocessing, optimization, and analysis tasks.
 
 #### 1. **Linear Algebra (`scipy.linalg`)**
