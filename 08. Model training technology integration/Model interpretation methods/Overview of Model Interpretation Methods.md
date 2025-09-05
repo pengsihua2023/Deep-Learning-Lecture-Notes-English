@@ -1,8 +1,9 @@
-## Overview of Deep Learning Model Interpretation Methods
+# Overview of Deep Learning Model Interpretation Methods
+## Introduction
 
 Interpretation tools for deep learning models are used to reveal the prediction process, feature importance, or internal mechanisms of the model. Below are common deep learning model interpretation tools, along with concise **PyTorch** code examples demonstrating their usage in image classification tasks (based on CNNs such as ResNet). The code relies on mainstream libraries (`torch`, `shap`, `captum`, etc.) to ensure simplicity and accessibility for quick adoption. Each tool includes principles, applicable scenarios, pros and cons, and comparisons with SHAP. Since text classification (e.g., BERT) requires extra tokenization handling, image classification is the focus here. If text classification examples are needed, please specify further.
 
-### Assumptions
+## Assumptions
 
 * **Environment**: Python 3.x with `torch`, `torchvision`, `shap`, `captum`, `lime` installed (`pip install torch torchvision shap captum lime`).
 * **Task**: Image classification using a pretrained ResNet18 model.
@@ -10,7 +11,7 @@ Interpretation tools for deep learning models are used to reveal the prediction 
 * **Data**: Input image shape (batch, channels, height, width), e.g., (1, 3, 224, 224).
 * **Note**: Input images are assumed to be preprocessed (normalized, resized, etc.) and provided as tensors.
 
-### I. **Deep Learning Model Interpretation Tools with PyTorch Code Examples**
+## I. **Deep Learning Model Interpretation Tools with PyTorch Code Examples**
 
 The following tools are divided into four categories: feature-based, gradient-based, surrogate model-based, and visualization tools. Each tool comes with a minimal PyTorch example.
 
