@@ -1,12 +1,12 @@
-## Summary of Deep Learning Model Evaluation Methods
+# Summary of Deep Learning Model Evaluation Methods
 
 Deep learning model evaluation techniques are mainly used to measure model performance, generalization ability, and effectiveness on specific tasks. Below are some common evaluation techniques covering classification, regression, and generative models, divided into quantitative and qualitative methods:
 
-### I. **Quantitative Evaluation Techniques**
+## 📖 I. **Quantitative Evaluation Techniques**
 
 These techniques evaluate model performance using numerical metrics, commonly applied in classification and regression tasks.
 
-#### 1. **Evaluation Metrics for Classification Tasks**
+### 1. **Evaluation Metrics for Classification Tasks**
 
 * **Accuracy**: The proportion of correctly predicted samples over the total number of samples. Suitable for balanced datasets.
 
@@ -43,7 +43,7 @@ These techniques evaluate model performance using numerical metrics, commonly ap
   * Micro-Average: Aggregates TP, FP, FN across all classes before calculating metrics, favoring larger classes.
   * Weighted-Average: Weighted average of metrics according to class sample sizes.
 
-#### 2. **Evaluation Metrics for Regression Tasks**
+### 2. **Evaluation Metrics for Regression Tasks**
 
 * **Mean Squared Error (MSE)**: The average of the squared differences between predicted and actual values.
 
@@ -75,7 +75,7 @@ Where:
 
   <img width="195" height="52" alt="image" src="https://github.com/user-attachments/assets/b01eb65b-8401-4b57-aa0f-6f1715dd2e33" />  
 
-#### 3. **Evaluation Metrics for Generative Models**
+### 3. **Evaluation Metrics for Generative Models**
 
 * **Generative Adversarial Networks (GANs)**:
 
@@ -88,19 +88,19 @@ Where:
   * **Perplexity**: Evaluates how well a language model predicts the next word; lower indicates better performance.
   * **METEOR**: Improves on BLEU by considering synonyms, stemming, etc.
 
-#### 4. **Cross-Validation**
+### 4. **Cross-Validation**
 
 * **K-Fold Cross-Validation**: Splits dataset into K folds, trains on K-1 and validates on 1, repeating K times and averaging performance.
 * **Leave-One-Out Cross-Validation (LOOCV)**: Each sample is used once as validation; suitable for small datasets but computationally expensive.
 * **Stratified K-Fold**: Ensures class distribution is consistent across folds, suitable for imbalanced datasets.
 
-#### 5. **Other Quantitative Methods**
+### 5. **Other Quantitative Methods**
 
 * **Learning Curves**: Plot training and validation performance versus dataset size to evaluate underfitting or overfitting.
 * **Validation Set Performance**: Uses a separate validation set to evaluate generalization, commonly for hyperparameter tuning.
 * **Test Set Performance**: Final evaluation on unseen data to ensure unbiased results.
 
-### II. **Qualitative Evaluation Techniques**
+## 📖 II. **Qualitative Evaluation Techniques**
 
 Qualitative evaluation relies on subjective analysis or visualization to assess model outputs, suitable for generative tasks or those requiring human judgment.
 
@@ -118,7 +118,7 @@ Qualitative evaluation relies on subjective analysis or visualization to assess 
   * Inspect errors on specific samples to identify failure modes (e.g., bias, edge cases).
   * Analyze confusion matrices to find commonly confused classes.
 
-### III. **Other Advanced Techniques**
+## 📖 III. **Other Advanced Techniques**
 
 * **Adversarial Evaluation**: Test robustness with adversarial examples to see if models are easily fooled.
 * **Transfer Learning Evaluation**: Assess pretrained models on downstream tasks, common in large language or vision models.
@@ -131,7 +131,7 @@ Qualitative evaluation relies on subjective analysis or visualization to assess 
   * Measure performance differences across groups (e.g., gender, race).
   * Metrics include Equal Opportunity Difference or Demographic Parity.
 
-### IV. **Considerations**
+## 📖 IV. **Considerations**
 
 * **Choose Appropriate Metrics**: Select based on task type (classification, regression, generative) and application. For example, medical diagnosis may prioritize recall, while recommender systems may emphasize precision.
 * **Dataset Splitting**: Ensure independence of training, validation, and test sets to avoid data leakage.
