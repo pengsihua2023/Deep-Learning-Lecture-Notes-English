@@ -1,4 +1,4 @@
-## Famous network: ResNet(2015): Residual Network
+# Famous network: ResNet(2015): Residual Network
 - **Proposed by**: Kaiming He (Microsoft Research)
 <div align="center">
   <img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/005ed077-913c-4432-9b16-6e2678626fa7" />
