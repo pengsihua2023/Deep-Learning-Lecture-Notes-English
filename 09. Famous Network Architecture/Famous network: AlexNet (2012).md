@@ -1,5 +1,6 @@
 # Famous Network: AlexNet (2012)
-**Proposed by**: Alex Krizhevsky et al.  
+### 📖 **Proposed by**: 
+Alex Krizhevsky et al.  
 <div align="center">
 <img width="206" height="245" alt="image" src="https://github.com/user-attachments/assets/062a3e51-cb54-4711-adaa-f68671fca005" />    
 </div>
