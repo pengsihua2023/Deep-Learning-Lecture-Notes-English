@@ -1,7 +1,7 @@
 # CNN
 
 Convolutional Neural Network (CNN)
-
+## 📖 Introduction
 * Importance: CNN is the cornerstone of computer vision, widely used in image recognition, autonomous driving, etc. It is suitable for demonstrating the practical power of deep learning.
 * Core concepts:
   CNN uses the “convolution” operation, like a “magnifying glass” scanning the image to extract features (such as edges, shapes).
