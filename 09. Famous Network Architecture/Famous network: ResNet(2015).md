@@ -1,17 +1,21 @@
 # Famous network: ResNet(2015): Residual Network
-- **Proposed by**: Kaiming He (Microsoft Research)
+## 📖 **Proposed by**: 
+Kaiming He (Microsoft Research)
 <div align="center">
   <img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/005ed077-913c-4432-9b16-6e2678626fa7" />
 </div>
 
-- **Features**: Introduces residual connections to address the vanishing gradient problem in deep networks, enabling the construction of networks with hundreds of layers.  
-- **Key Points to Master**: Residual learning, deep network training techniques.  
-- **Importance**:  
+## 📖 **Features**: 
+Introduces residual connections to address the vanishing gradient problem in deep networks, enabling the construction of networks with hundreds of layers.  
+## 📖 **Key Points to Master**: 
+Residual learning, deep network training techniques.  
+## 📖 **Importance**:  
 ResNet is an advanced version of CNNs that uses "residual connections" to mitigate the vanishing gradient problem, allowing the construction of very deep networks (tens to hundreds of layers).  
 It excels in image classification tasks (e.g., ImageNet competition) and serves as a cornerstone of modern computer vision.  
-- **Core Concept**:  
+## 📖 **Core Concept**:  
 ResNet introduces "residual connections" (skip connections), enabling the network to learn "changes" rather than direct outputs, reducing the training difficulty of deep networks.  
-- **Applications**: Image classification, object detection (e.g., object recognition in autonomous driving), facial recognition.
+## 📖 **Applications**: 
+Image classification, object detection (e.g., object recognition in autonomous driving), facial recognition.
 <div align="center">
 <img width="400" height="260" alt="image" src="https://github.com/user-attachments/assets/4c111489-898f-4412-9e70-336ec2320f03" />  
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/ee800edc-db6e-4cde-84d9-0d396ca69e58" />  
@@ -22,7 +26,7 @@ ResNet introduces "residual connections" (skip connections), enabling the networ
 </div>
 
 
-## Code
+## 📖 Code
 
 This code implements a **simplified ResNet model** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
 
@@ -46,7 +50,7 @@ This code implements a **simplified ResNet model** for the image classification 
 
 The code is implemented using TensorFlow/Keras, suitable for CIFAR-10 image classification, outputs a model summary, and performs training to learn image classification features.
 
-## Code
+### Code
 
 ```python
 import tensorflow as tf
