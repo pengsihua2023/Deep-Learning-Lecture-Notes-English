@@ -7,9 +7,12 @@
 First author：Mingxing Tan   
 </div>
 
-**Features**: Balances performance and efficiency through compound scaling (depth, width, resolution), suitable for resource-constrained scenarios.  
-**Applications**: Efficient image classification, embedded devices.  
-**Key Points to Master**: Model scaling strategies, lightweight design.  
+## 📖 **Features**: 
+Balances performance and efficiency through compound scaling (depth, width, resolution), suitable for resource-constrained scenarios.  
+## 📖 **Applications**: 
+Efficient image classification, embedded devices.  
+## 📖 **Key Points to Master**: 
+Model scaling strategies, lightweight design.  
 <div align="center">
 <img width="700" height="370" alt="image" src="https://github.com/user-attachments/assets/f88060f1-8ac4-4b2c-8cc7-6186af74255c" />  
 </div>
