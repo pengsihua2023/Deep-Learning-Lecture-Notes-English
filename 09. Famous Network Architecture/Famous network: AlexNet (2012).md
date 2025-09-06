@@ -18,7 +18,7 @@
 </div>
 
 
-### Code
+### 📖 Code Description
 This code implements a **simplified AlexNet convolutional neural network** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
 
 1. **Model Definition**: Implements an AlexNet model adapted for CIFAR-10, consisting of 5 convolutional layers (`features`) and 3 fully connected layers (`classifier`), using ReLU activation, max pooling, and Dropout regularization, outputting 10-class classification results.
@@ -32,7 +32,7 @@ This code implements a **simplified AlexNet convolutional neural network** for t
 5. **Visualization**: Plots the training loss curve, saved as `alexnet_training_curve.png`, with support for Chinese display (using SimHei font).
 
 The code runs on CPU or GPU, outputs the test set accuracy upon completion, and generates a loss curve plot to analyze the training performance.
-## Code
+## 📖 Code
 ```python
 import torch
 import torch.nn as nn
