@@ -1,4 +1,5 @@
 # Beginner: GRU (Gated Recurrent Unit)
+## 📖 Introduction
 The Gated Recurrent Unit (GRU) is a variant of Recurrent Neural Networks (RNNs) commonly used for processing sequential data, proposed by Kyunghyun Cho et al. in 2014. GRU aims to address the vanishing or exploding gradient problems encountered by traditional RNNs in long sequence processing while simplifying the structure of Long Short-Term Memory (LSTM) networks, offering lower computational complexity and fewer parameters.
 <div align="center">
 <img width="552" height="277" alt="image" src="https://github.com/user-attachments/assets/2c7f3eef-f4be-471c-b7df-cd62b479df28" />
