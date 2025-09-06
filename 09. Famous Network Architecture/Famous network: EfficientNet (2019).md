@@ -1,4 +1,4 @@
-## Famous Network: EfficientNet (2019)
+# Famous Network: EfficientNet (2019)
 **Proposed by**: Google  
 
 <div align="center">  
