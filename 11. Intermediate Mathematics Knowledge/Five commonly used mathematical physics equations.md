@@ -1,7 +1,7 @@
 
 # Five Common Mathematical Physics Equations
 
-## 1. **Laplace / Poisson Equation**
+## 📖 1. **Laplace / Poisson Equation**
 
 **Equation:**
 
@@ -25,9 +25,9 @@ $$
 **Features:**
 Applicable to **steady-state problems** (electric field, temperature field).
 
----
 
-## 2. **Heat Conduction Equation**
+
+## 📖 2. **Heat Conduction Equation**
 
 **Equation:**
 
@@ -54,9 +54,9 @@ $$
 **Features:**
 Temperature/concentration **gradually smooths out over time**, approaching stability.
 
----
 
-## 3. **Wave Equation**
+
+## 📖 3. **Wave Equation**
 
 **Equation:**
 
@@ -83,9 +83,9 @@ $$
 **Features:**
 **Standing wave solutions**, oscillation/wave propagation.
 
----
 
-## 4. **Schrödinger Equation**
+
+## 📖 4. **Schrödinger Equation**
 
 **Equation:**
 
@@ -109,9 +109,9 @@ $$
 **Features:**
 Essentially an **eigenvalue problem** → Energy is **quantized**.
 
----
 
-## 5. **Electromagnetic Wave Equation**
+
+## 📖 5. **Electromagnetic Wave Equation**
 
 **Equation:**
 
@@ -130,9 +130,8 @@ $$
 **Features:**
 Describes light/electromagnetic waves propagating at **the speed of light**.
 
----
 
-# 📊 Summary
+## 📖 Summary
 
 | Equation             | Type       | General Solution Form                   | Features                    |
 | -------------------- | ---------- | --------------------------------------- | --------------------------- |
