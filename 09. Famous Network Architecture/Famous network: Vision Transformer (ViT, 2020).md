@@ -1,4 +1,4 @@
-## Famous network: Vision Transformer (ViT, 2020)
+# Famous network: Vision Transformer (ViT, 2020)
 **Proposed by**: Google  
 <div align="center">
 <img width="220" height="236" alt="image" src="https://github.com/user-attachments/assets/e8b41203-25a3-4583-978d-46f29ea2f38c" />  
