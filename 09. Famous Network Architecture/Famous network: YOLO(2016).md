@@ -1,4 +1,4 @@
-## Famous Network: YOLO (2016)
+# Famous Network: YOLO (2016)
 **Proposed by**: Joseph Redmon et al. (YOLOv1)  
 <div align="center">
 <img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/4a0d197f-c041-496d-b835-620c0a0f6504" />
