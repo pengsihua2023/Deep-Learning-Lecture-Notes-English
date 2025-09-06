@@ -4,9 +4,12 @@
 <img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/79c9b12d-ec4d-4f94-b441-ce9439c70eeb" />    
 </div>
 
-**Features**: One of the earliest convolutional neural networks (CNNs), consisting of convolutional layers, pooling layers, and fully connected layers, designed for handwritten digit recognition. Simple structure, foundational to CNNs.  
-**Applications**: Simple image classification (e.g., MNIST dataset).  
-**Key Points to Master**: Understanding convolutional operations and pooling mechanisms.  
+## 📖 **Features**: 
+One of the earliest convolutional neural networks (CNNs), consisting of convolutional layers, pooling layers, and fully connected layers, designed for handwritten digit recognition. Simple structure, foundational to CNNs.  
+## 📖 **Applications**: 
+Simple image classification (e.g., MNIST dataset).  
+## 📖 **Key Points to Master**: 
+Understanding convolutional operations and pooling mechanisms.  
 <div align="center">
 <img width="700" height="260" alt="image" src="https://github.com/user-attachments/assets/f2ccce70-ad11-40d2-bf71-3651aa4fd10b" />  
 </div>
@@ -16,7 +19,7 @@
 </div>
 
 
-## Code description
+## 📖 Code description
 
 This code implements a **LeNet model** for the handwritten digit classification task on the **MNIST dataset**. The main functionalities are as follows:
 
@@ -40,7 +43,7 @@ This code implements a **LeNet model** for the handwritten digit classification 
    - Selects 8 images from the test set, displays predicted and true labels, and saves the visualization as `lenet_predictions.png`, with support for Chinese display (using SimHei font), showing images in grayscale.
 
 The code runs on CPU or GPU, outputs the test set accuracy upon completion, and generates visualizations of the loss curve and prediction results to analyze model performance and classification effectiveness.
-## Code
+### Code
 
 ```python
 import torch
@@ -181,7 +184,7 @@ if __name__ == "__main__":
     visualize_predictions()
 
 ```
-### Training Results
+## 📖 Training Results
 [Epoch 5, Batch 200] Loss: 0.026  
 [Epoch 5, Batch 400] Loss: 0.036  
 [Epoch 5, Batch 600] Loss: 0.030  
