@@ -5,7 +5,7 @@
 - Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).  
 
 <div align="center">
-<img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/f6e08480-a20a-488d-af52-be84c7c6a392" />  
+<img width="300" height="175" alt="image" src="https://github.com/user-attachments/assets/f6e08480-a20a-488d-af52-be84c7c6a392" />  
 </div>
 
 $$
