@@ -1,12 +1,16 @@
 # Famous network: Vision Transformer (ViT, 2020)
-**Proposed by**: Google  
+## 📖 **Proposed by**: 
+Google  
 <div align="center">
 <img width="220" height="236" alt="image" src="https://github.com/user-attachments/assets/e8b41203-25a3-4583-978d-46f29ea2f38c" />  
 </div>
 
-**Features**: Divides images into patches and processes them with a Transformer, replacing traditional CNNs, suitable for large datasets.  
-**Applications**: Image classification, object detection, image segmentation.  
-**Key Points to Master**: Self-attention mechanism, image patch processing.  
+## 📖 **Features**: 
+Divides images into patches and processes them with a Transformer, replacing traditional CNNs, suitable for large datasets.  
+**Applications**: 
+Image classification, object detection, image segmentation.  
+## 📖 **Key Points to Master**: 
+Self-attention mechanism, image patch processing.  
 
 <div align="center">
 <img width="642" height="488" alt="image" src="https://github.com/user-attachments/assets/c3611f64-f4e1-4f03-bbd6-efd480e0cc6e" />
@@ -16,7 +20,7 @@
 (This picture was obtained from the Internet.)
 </div>
 
-## Code description
+## 📖 Code description
 ```
 Main Functionalities
 1. Vision Transformer Model Implementation
@@ -336,7 +340,7 @@ if __name__ == "__main__":
 
 ```
 
-## Training Results
+## 📖 Training Results
 
 Epoch: 15/15, Batch: 1400/1563, Loss: 0.8820  
 Epoch 15/15:  
