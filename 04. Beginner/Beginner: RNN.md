@@ -277,7 +277,7 @@ Test Accuracy: 79.00%
 <div align="center">   
 Figure 2 Training Loss Curve  
 </div>
-
+  
 <div align="center">
 <img width="420" height="380" alt="image" src="https://github.com/user-attachments/assets/a867e5ef-40d0-461e-b8ac-b2cfb0724f18" />
 </div>   
