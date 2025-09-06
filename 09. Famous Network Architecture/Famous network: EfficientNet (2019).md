@@ -19,7 +19,7 @@ First author：Mingxing Tan
 </div>
 
 
-## Code description
+## 📖 Code description
 This code implements a **simplified EfficientNet model** for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
 
 1. **Model Definition**:
@@ -42,7 +42,7 @@ This code implements a **simplified EfficientNet model** for the image classific
    - Selects 8 images from the test set, displays predicted and true labels, and saves the visualization as `efficientnet_predictions.png`, with support for Chinese display (using SimHei font).
 
 The code runs on CPU or GPU, outputs the test set accuracy upon completion, and generates visualizations of the loss curve and prediction results to analyze model performance and classification effectiveness.
-## Code
+### Code
 ```python
 import torch
 import torch.nn as nn
@@ -213,7 +213,7 @@ if __name__ == "__main__":
 ```
 
 
-## Training Results
+## 📖 Training Results
 
 <img width="1251" height="616" alt="image" src="https://github.com/user-attachments/assets/119877a7-6a80-447d-9326-416810006a9d" />  
 
