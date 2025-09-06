@@ -1,6 +1,5 @@
 # Famous network: Diffusion Models(2020s)
-## Diffusion Models
-- **Proposed by**: Multiple researchers (e.g., DDPM)
+## 📖 **Proposed by**: Multiple researchers (e.g., DDPM)
 <div align="center">
 <img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/06fe6aa7-bb8f-45de-9239-c490de348e6e" />  
   
@@ -13,14 +12,16 @@ The earliest proponent of the theory：Jascha Sohl-Dickstein
 DDPM First author：Jonathan Ho  
 </div> 
 
-- **Features**: Generates high-quality images through a noise-adding and denoising process, surpassing GANs in performance.  
-- **Key Points to Master**: Denoising process, probabilistic modeling.  
-- **Importance**:  
+## 📖 **Features**: 
+Generates high-quality images through a noise-adding and denoising process, surpassing GANs in performance.  
+## 📖 **Key Points to Master**:
+- Denoising process, probabilistic modeling.  
+## 📖 **Importance**:  
 Diffusion models are the latest technology for generating high-quality images, powering generative AI systems like DALL·E 2 and Stable Diffusion.  
 They have surpassed GANs in fields such as image generation and text-to-image, becoming the new benchmark for generative models.  
-- **Core Concept**:  
+## 📖 **Core Concept**:  
 Diffusion models learn data distributions through a "noise-adding and denoising" process, first corrupting data into random noise and then progressively reconstructing it.  
-- **Applications**: Image generation (art, game design), video generation, scientific simulations.
+## 📖 **Applications**: Image generation (art, game design), video generation, scientific simulations.
 <div align="center">
 <img width="700" height="300" alt="image" src="https://github.com/user-attachments/assets/427d35b9-10d1-4bca-b74c-b5e166d7613d" />
 </div>
@@ -30,7 +31,7 @@ Diffusion models learn data distributions through a "noise-adding and denoising"
 </div>
 
 
-## Code description
+## 📖 Code description
 This code implements a simple **Denoising Diffusion Probabilistic Model (DDPM)** using the PyTorch library, with the following main functionalities:  
 
 1. **Data Generation**: Generates 2D normal distribution data (mean [2, 2], standard deviation 0.5) as training and visualization samples.  
@@ -41,7 +42,7 @@ This code implements a simple **Denoising Diffusion Probabilistic Model (DDPM)**
 6. **Visualization**: Uses Matplotlib to plot 2D scatter plots of original and generated data, comparing their distributions.  
 
 The code supports CPU/GPU execution, ensures device consistency, and outputs training loss and the shape of generated samples. The final scatter plot visually demonstrates whether the model successfully learned the data distribution.
-## Code
+### Code
 ```python
 import torch
 import torch.nn as nn
@@ -184,7 +185,7 @@ if __name__ == "__main__":
 ```
 
 
-## Training Results
+## 📖 Training Results
 
 Epoch 700, Loss: 0.1903  
 Epoch 800, Loss: 0.1887  
