@@ -1,6 +1,7 @@
 # Reinforcement Learning
 
-## 📖 Definition of Reinforcement Learning (RL)
+#### Definition of Reinforcement Learning (RL)
+## 📖 Introduction
 
 **Reinforcement Learning (RL)** is a branch of machine learning where an **agent** learns to make decisions by **interacting with an environment**, aiming to maximize some notion of **cumulative reward**.
 
