@@ -1,7 +1,7 @@
 
-## Common Differential Operators
+# Common Differential Operators
 
-### 1. **Gradient**
+### 📖 1. **Gradient**
 
 * Object: Scalar field \$f(x,y,z)\$
 * Definition:
@@ -13,9 +13,9 @@ $$
 * Result: A vector, representing the direction and rate of the fastest change at that point.
 * Example: Gradient of a temperature field → direction of heat conduction.
 
----
 
-### 2. **Divergence**
+
+### 📖 2. **Divergence**
 
 * Object: Vector field \$\vec{A}(x,y,z)\$
 * Definition:
@@ -27,9 +27,9 @@ $$
 * Result: A scalar, describing the intensity of a "source" or "sink" at a point.
 * Example: Divergence of the electric field is related to charge density.
 
----
 
-### 3. **Curl**
+
+### 📖 3. **Curl**
 
 * Object: Vector field \$\vec{A}(x,y,z)\$
 * Definition:
@@ -46,9 +46,9 @@ $$
 * Result: A vector, describing the “rotation tendency” of the field.
 * Example: Magnetic field is the result of the curl of current.
 
----
 
-### 4. **Laplacian**
+
+### 📖 4. **Laplacian**
 
 * Object: Scalar field or vector field
 * Definition:
@@ -60,9 +60,9 @@ $$
 * Result: A scalar (for a scalar field) or a vector (for a vector field).
 * Example: Poisson equation, heat conduction equation, wave equation.
 
----
 
-### 5. **Common Operator Identities in Physics**
+
+### 📖 5. **Common Operator Identities in Physics**
 
 * **\$\nabla \cdot (\nabla \times \vec{A}) = 0\$**
   (The divergence of a curl is always zero)
@@ -75,7 +75,7 @@ $$
 
 <div align="center">
 
-**Summary Table:**
+## 📖 **Summary Table:**
 
 | Operator   | Symbol                    | Input               | Output              | Physical Meaning        |
 | ---------- | ------------------------- | ------------------- | ------------------- | ----------------------- |
@@ -88,9 +88,9 @@ $$
 
 ---
 
-## Vector Differential Operator Identities
+# Vector Differential Operator Identities
 
-### I. Basic Identities
+### 📖 I. Basic Identities
 
 1. **Curl of a gradient is zero**
 
@@ -104,9 +104,9 @@ $$
 
 \$\nabla^2 f = \nabla \cdot (\nabla f)\$
 
----
 
-### II. Common Expansion Formulas
+
+### 📖 II. Common Expansion Formulas
 
 1. **Product rule for gradient**
 
@@ -120,9 +120,9 @@ $$
 
 \$\nabla \times (f \vec{A}) = f(\nabla \times \vec{A}) + \nabla f \times \vec{A}\$
 
----
 
-### III. Identities for Two Vector Fields
+
+### 📖 III. Identities for Two Vector Fields
 
 1. **Divergence of a cross product**
 
@@ -136,9 +136,9 @@ $$
 
 \$\nabla \cdot (\vec{A} f) = (\nabla \cdot \vec{A}) f + \vec{A}\cdot (\nabla f)\$
 
----
 
-### IV. Vector Laplacian
+
+### 📖 IV. Vector Laplacian
 
 For a vector field \$\vec{A}\$, the identity is:
 
