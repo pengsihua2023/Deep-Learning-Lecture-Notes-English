@@ -1,5 +1,4 @@
-## Famous network: Inception (GoogleNet, 2014)
-## Famous Network Architecture: Inception (GoogLeNet, 2014)
+# Famous network: Inception (GoogleNet, 2014)
 **Proposed by**: Google  
 <div align="center">
 <img width="200" height="250" alt="image" src="https://github.com/user-attachments/assets/c4120069-66c0-4625-b257-fc28c310bce6" />   
