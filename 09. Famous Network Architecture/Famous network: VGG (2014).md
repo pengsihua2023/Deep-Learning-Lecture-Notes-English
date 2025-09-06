@@ -1,4 +1,4 @@
-## Famous network: VGG (2014)
+# Famous network: VGG (2014)
 **Proposed by**: Oxford University VGG Team  
 <div align="center">
 <img width="200" height="260" alt="image" src="https://github.com/user-attachments/assets/626157bc-3d32-4b67-b475-0e9c186dd986" />  
