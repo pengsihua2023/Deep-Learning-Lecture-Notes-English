@@ -48,3 +48,5 @@
     * [PINN introduction](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PINN%20introduction.md)
     * [PINN-related libraries](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PINN-related%20libraries.md)
     * [PINN: Physics-Informed Neural Networks](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/07.%20Research%20Level/PINN%20Topics/PINN%3A%20Physics-Informed%20Neural%20Networks.md)
+* LIF Topics
+  [LiF model]()
