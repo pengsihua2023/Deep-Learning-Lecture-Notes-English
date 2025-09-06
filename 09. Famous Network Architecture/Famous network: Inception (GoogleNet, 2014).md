@@ -6,9 +6,12 @@
   First author：Christian Szegedy  
 </div>
 
-**Features**: Inception module processes multi-scale convolutions in parallel, optimizes computational efficiency, and introduces 1x1 convolutions for dimensionality reduction.  
-**Applications**: Image classification, feature extraction.  
-**Key Points to Master**: Multi-scale feature extraction, computational efficiency optimization.  
+## 📖 **Features**: 
+Inception module processes multi-scale convolutions in parallel, optimizes computational efficiency, and introduces 1x1 convolutions for dimensionality reduction.  
+## 📖 **Applications**: 
+Image classification, feature extraction.  
+## 📖 **Key Points to Master**: 
+Multi-scale feature extraction, computational efficiency optimization.  
 <div align="center">
 <img width="800" height="190" alt="image" src="https://github.com/user-attachments/assets/7944d7cd-6b8f-4753-a453-38146ed9b160" />  
 </div>
@@ -18,7 +21,7 @@
 </div>
 
 
-## Code Description
+## 📖 Code Description
 This code implements a **simplified Inception model** (based on the GoogLeNet Inception architecture) for the image classification task on the **CIFAR-10 dataset**. The main functionalities are as follows:
 
 1. **Model Definition**:
@@ -41,7 +44,7 @@ This code implements a **simplified Inception model** (based on the GoogLeNet In
    - Selects 8 images from the test set, displays predicted and true labels, and saves the visualization as `inception_predictions.png`, with support for Chinese display (using SimHei font).
 
 The code runs on CPU or GPU, outputs the test set accuracy upon completion, and generates visualizations of the loss curve and prediction results to analyze model performance and classification effectiveness.
-## Code
+### Code
 
 ```python
 import torch
@@ -215,7 +218,7 @@ if __name__ == "__main__":
 ```
 
 
-## Training Results
+## 📖 Training Results
 <img width="1253" height="612" alt="image" src="https://github.com/user-attachments/assets/1edf2e07-fda4-4094-a3b7-3786cc7dc393" />  
 
 Figure 2: Loss Curve  
