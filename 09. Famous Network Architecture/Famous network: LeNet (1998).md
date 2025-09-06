@@ -1,5 +1,6 @@
 # Famous Network Architecture: LeNet (1998)
-**Proposed by**: Yann LeCun  
+## 📖 **Proposed by**: 
+Yann LeCun  
 <div align="center">
 <img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/79c9b12d-ec4d-4f94-b441-ce9439c70eeb" />    
 </div>
