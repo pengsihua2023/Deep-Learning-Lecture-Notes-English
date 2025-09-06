@@ -1,12 +1,15 @@
 # Famous Network: U-Net (2015)
-**Proposed by**: Olaf Ronneberger et al. 
+## 📖 **Proposed by**: Olaf Ronneberger et al. 
 <div align="center"> 
   <img width="194" height="260" alt="image" src="https://github.com/user-attachments/assets/220a9ffe-af0d-49a4-8eeb-6b1a2d67ba04" />
 </div>
 
-**Features**: Symmetric encoder-decoder structure with skip connections to preserve detailed information, designed specifically for image segmentation.  
-**Applications**: Medical image segmentation, semantic segmentation.  
-**Key Points to Master**: Encoder-decoder architecture, feature fusion.  
+## 📖 **Features**: 
+Symmetric encoder-decoder structure with skip connections to preserve detailed information, designed specifically for image segmentation.  
+## 📖 **Applications**: 
+Medical image segmentation, semantic segmentation.  
+## 📖 **Key Points to Master**: 
+Encoder-decoder architecture, feature fusion.  
 <div align="center">
 <img width="700" height="350" alt="image" src="https://github.com/user-attachments/assets/00b53895-4271-48df-abc5-f39e671ec419" />
 </div>
@@ -16,7 +19,7 @@
 </div>
 
 
-## Code description
+## 📖 Code description
 The code implements a simplified but effective U-Net image segmentation model, specifically designed for the semantic segmentation task on the CIFAR-10 dataset.  
 ### Core Functionalities
 - 1. **Model Architecture (SimpleEffectiveUNet)**  
@@ -44,7 +47,7 @@ The code implements a simplified but effective U-Net image segmentation model, s
    Training Process: Displays prediction results every 5 epochs  
    Final Testing: Comprehensive prediction display for 12 samples  
    Training Curves: Plots of loss and Dice score changes
-## Code
+### Code
 ```
 import torch
 import torch.nn as nn
@@ -467,7 +470,7 @@ if __name__ == "__main__":
 ```
 
 
-## Training Results
+## 📖 Training Results
 
 Epoch: 25/30, Batch: 600/625, Loss: 0.0011  
 Epoch 25/30, Train Loss: 0.0029, Test Dice: 0.9626  
