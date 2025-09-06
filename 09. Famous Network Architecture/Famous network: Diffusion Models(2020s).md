@@ -1,5 +1,6 @@
 # Famous network: Diffusion Models(2020s)
-## 📖 **Proposed by**: Multiple researchers (e.g., DDPM)
+## 📖 **Proposed by**: 
+Multiple researchers (e.g., DDPM)
 <div align="center">
 <img width="220" height="220" alt="image" src="https://github.com/user-attachments/assets/06fe6aa7-bb8f-45de-9239-c490de348e6e" />  
   
