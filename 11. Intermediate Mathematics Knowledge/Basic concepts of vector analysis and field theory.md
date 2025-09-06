@@ -1,5 +1,5 @@
 # Basic concepts of vector analysis and field theory
-## I. Basic Concepts of Vector Analysis
+## 📖 I. Basic Concepts of Vector Analysis
 
 ### 1. Scalars and Vectors
 
@@ -50,9 +50,9 @@ $$
 
 Describes the rotational property of a vector field.
 
----
 
-## II. Integral Theorems
+
+## 📖 II. Integral Theorems
 
 These theorems connect the **differential form** with the **integral form** and form the foundation of field theory.
 
@@ -78,9 +78,9 @@ $$
 \int_{P_1}^{P_2} \nabla f \cdot d\vec{l} = f(P_2) - f(P_1)
 $$
 
----
 
-## III. Basic Concepts of Field Theory
+
+## 📖 III. Basic Concepts of Field Theory
 
 ### 1. Classification of Fields
 
@@ -93,9 +93,9 @@ $$
 * **Magnetic Field**: Produced by current or changing electric field, satisfying \$\nabla \cdot \vec{B} = 0\$.
 * **Maxwell’s Equations**: The core of field theory, unifying electricity and magnetism.
 
----
 
-## IV. Physical Intuition
+
+## 📖 IV. Physical Intuition
 
 * **Divergence > 0**: The point is a "source," e.g., electric charge producing an electric field.
 * **Divergence < 0**: The point is a "sink," e.g., fluid flowing in.
