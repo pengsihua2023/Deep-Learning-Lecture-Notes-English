@@ -1,4 +1,4 @@
-## Famous network: Diffusion Models(2020s)
+# Famous network: Diffusion Models(2020s)
 ## Diffusion Models
 - **Proposed by**: Multiple researchers (e.g., DDPM)
 <div align="center">
