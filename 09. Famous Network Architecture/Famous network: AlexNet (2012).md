@@ -4,9 +4,12 @@
 <img width="206" height="245" alt="image" src="https://github.com/user-attachments/assets/062a3e51-cb54-4711-adaa-f68671fca005" />    
 </div>
 
-**Features**: Introduced ReLU activation function, Dropout regularization, data augmentation, and GPU acceleration, significantly improving performance in the ImageNet competition.  
-**Applications**: Image classification, feature extraction, foundation for transfer learning.  
-**Key Points to Master**: Deep CNN design, overfitting control.  
+### 📖 **Features**: 
+Introduced ReLU activation function, Dropout regularization, data augmentation, and GPU acceleration, significantly improving performance in the ImageNet competition.  
+### 📖 **Applications**: 
+Image classification, feature extraction, foundation for transfer learning.  
+### 📖 **Key Points to Master**: 
+Deep CNN design, overfitting control.  
 <div align="center">
 <img width="700" height="380" alt="image" src="https://github.com/user-attachments/assets/5bd0deb5-051a-43ba-95f7-931fcd671b32" />
 <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/e27296cb-2aee-4389-a119-7c2ac8120d4d" />  
