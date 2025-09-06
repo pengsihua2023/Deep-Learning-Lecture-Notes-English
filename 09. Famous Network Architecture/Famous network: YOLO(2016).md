@@ -20,7 +20,7 @@ Single-stage detection, anchor box mechanism.
 (This picture was obtained from the Internet.)
 </div>
 
-## Code description 
+## 📖 Code description 
 
 ```
 This simple_yolo_fixed.py file implements a minimal YOLO object detection model, designed specifically for educational demonstration and the object detection task on the CIFAR-10 dataset.
@@ -56,7 +56,7 @@ This simple_yolo_fixed.py file implements a minimal YOLO object detection model,
    Comprehensive Testing: Detection results for 8 samples
    Training Curves: Plot of loss function changes
 ```
-## Code
+### Code
 
 ```
 import torch
@@ -532,7 +532,7 @@ if __name__ == "__main__":
 ```
 
 
-## Training Results
+## 📖 Training Results
 
 Epoch: 20/20, Batch: 0/250, Loss: 11.6010  
 Epoch: 20/20, Batch: 100/250, Loss: 10.1258  
