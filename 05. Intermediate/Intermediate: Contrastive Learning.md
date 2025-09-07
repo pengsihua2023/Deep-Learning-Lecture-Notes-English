@@ -44,15 +44,6 @@ The essence of contrastive learning is:
 * It learns feature representations by “bringing similar samples closer, separating dissimilar samples,”
 * It has wide applications in computer vision, natural language processing, speech, etc.
 
-<div align="center">
-<img width="420" height="250" alt="image" src="https://github.com/user-attachments/assets/5d389da9-c6c7-46d5-a1c5-096422a5328b" />
-</div>
-
-<div align="center">
-(This picture was obtained from the Internet.)
-</div>
-
-
 * Importance:
   Contrastive learning is a self-supervised learning method that extracts high-quality feature representations by teaching models to distinguish between “similar” and “dissimilar” data pairs.
   It is the core of modern unsupervised learning, driving successes such as SimCLR, MoCo (computer vision), and CLIP (multimodal learning).
