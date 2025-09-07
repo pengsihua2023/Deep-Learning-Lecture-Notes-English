@@ -6,6 +6,9 @@ Large Model Fine-Tuning refers to the process of further training large-scale pr
 <img width="420" height="214" alt="image" src="https://github.com/user-attachments/assets/8430a5de-9b99-47c3-97dd-7fb10a20b2db" />
 </div>
 
+<img width="600" height="339" alt="image" src="https://github.com/user-attachments/assets/999d47b9-d20f-4c5b-90d9-449403081fef" />
+
+
 <div align="center">
 (This picture was obtained from the Internet.)
 </div>
