@@ -1,6 +1,7 @@
 # DeepChem Library for Molecular Toxicity Prediction
 ## 📖 Introduction
 The following is a real-world example using the DeepChem library. This example is based on the Tox21 dataset (Toxicology in the 21st Century), a public database containing toxicity measurements for approximately 12,000 compounds across 12 biological targets, sourced from the 2014 Tox21 Data Challenge. The dataset uses SMILES to represent molecular structures and is commonly employed for multitask classification problems in molecular toxicity prediction.
+<img width="819" height="438" alt="image" src="https://github.com/user-attachments/assets/6a0b26c8-ef80-4fc5-8612-3f12dc693c23" />
 
 This example demonstrates how to load the Tox21 dataset and train and evaluate two models: GraphConvModel (a graph convolutional model) and RobustMultitaskClassifier (a robust multitask classifier). The code is executable (assuming DeepChem, TensorFlow, and other dependencies are installed) and is derived from DeepChem’s tutorials and documentation. I have combined the code into a complete script and added comments.
 
