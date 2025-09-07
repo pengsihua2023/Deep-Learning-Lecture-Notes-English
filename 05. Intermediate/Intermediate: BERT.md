@@ -2,7 +2,8 @@
 ## 📖 Introduction
 BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained language model proposed by Google in 2018. It is widely used in natural language processing (NLP) tasks such as text classification, question answering, and named entity recognition. The core of BERT lies in using a **bidirectional Transformer Encoder**, capturing deep semantic information through large-scale unsupervised pre-training, and then fine-tuning to adapt to specific tasks.
 <div align="center"> 
-<img width="350" height="280" alt="image" src="https://github.com/user-attachments/assets/313fa320-c931-4fb3-8fcb-5d81de615a21" />
+<img width="570" height="230" alt="image" src="https://github.com/user-attachments/assets/e2f218c5-a3cc-487f-a3b2-eb8da6e8eee1" />
+
 </div>
 
 <div align="center">
