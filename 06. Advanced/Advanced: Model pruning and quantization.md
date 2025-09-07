@@ -53,7 +53,19 @@ Model quantization reduces model size and inference time by lowering the precisi
 </div>
 
 <div align="center">
-(This picture was obtained from the Internet.)
+第一种量化策略（精度降低）
+</div>
+
+<div align="center">
+<img width="490" height="255" alt="image" src="https://github.com/user-attachments/assets/90beb32f-7a5b-4c26-8ad3-4b0625d635f3" />
+</div>
+
+<div align="center">   
+第二种量化策略（模型更轻量化）
+</div>
+
+<div align="center">
+(以上两图均引自Internet.)
 </div>
 
 #### Main Methods
