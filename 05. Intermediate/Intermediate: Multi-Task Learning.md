@@ -16,7 +16,7 @@ Multi-Task Learning (MTL) is a machine learning training paradigm. The core idea
 Given dataset:
 
 $$
-\mathcal{D} = \{(x_i, y_i)\}_{i=1}^N,
+\mathcal{D} = \{(x_i, y_i)\}_{i=1}^N
 $$
 
 * $x_i \in \mathcal{X}$: input features of the $i$-th sample.  
