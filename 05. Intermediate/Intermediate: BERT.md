@@ -7,7 +7,7 @@ BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained 
 </div>
 
 <div align="center">
-(This picture was obtained from BERT paublished paper at https://arxiv.org/abs/1810.04805.)
+(This picture was cited from BERT paublished paper at https://arxiv.org/abs/1810.04805.)
 </div>
 
 
