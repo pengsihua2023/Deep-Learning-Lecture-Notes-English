@@ -9,14 +9,14 @@ The attention mechanism in deep learning is a method that mimics human visual an
 (This figure is cited from the Internet.)
 </div> 
 
-### **Importance**:  
+## 📖 Importance:  
 The attention mechanism in Transformers is a cornerstone of modern deep learning, giving rise to models like BERT and GPT, driving advancements in NLP and multimodal tasks.  
 Advanced courses can delve into variants of attention mechanisms (e.g., multi-head attention, self-attention).  
-### **Core Concepts**:  
+## 📖 Core Concepts:  
 The attention mechanism allows models to focus on the most important parts of the input (e.g., key words in a sentence) by calculating weights through a "query-key-value" mechanism.  
-### **Applications**: Chatbots (e.g., Grok), machine translation, text summarization.  
+## 📖 Applications: 
+Chatbots (e.g., Grok), machine translation, text summarization.    
   
-
 ## 📖 Mathematical Description of Attention Mechanism
 
 The core idea of the Attention mechanism is: **assign different weights to different elements in an information sequence, thereby highlighting "important" information and suppressing "irrelevant" information**.
