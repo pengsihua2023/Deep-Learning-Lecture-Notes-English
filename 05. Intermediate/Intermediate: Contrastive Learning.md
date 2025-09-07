@@ -10,6 +10,7 @@ The core idea is:
 This learning approach usually does not require manual labels. Instead, it automatically generates **positive pairs** and **negative pairs** through data augmentation or contextual information.  
 <div align="center">  
 <img width="560" height="390" alt="image" src="https://github.com/user-attachments/assets/4f14b5b3-0951-4417-b7f1-4a00f3b39683" />
+(This figure was obtained from internet)
 </div>
 
 ## 📖 Formal Definition
