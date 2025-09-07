@@ -1,24 +1,19 @@
 # Intermediate: Attention Mechanism
 ## 📖 Introduction
 The attention mechanism in deep learning is a method that mimics human visual and cognitive systems, allowing neural networks to focus on relevant parts of input data during processing. By introducing the attention mechanism, neural networks can automatically learn to selectively focus on important information in the input, improving model performance and generalization.  
-The image above effectively illustrates the attention mechanism, showing how humans efficiently allocate limited attention resources when viewing an image. The red areas indicate targets that the visual system prioritizes, demonstrating that people tend to focus more attention on human faces.  
-<div align="center">
-<img width="300" height="179" alt="image" src="https://github.com/user-attachments/assets/a78ff1d6-3d30-43e6-b8e2-40acad211a7f" />
- </div> 
- 
-<div align="center">
-(This picture was obtained from the Internet.)
-</div>
+ <div align="center">
+<img width="469" height="220" alt="image" src="https://github.com/user-attachments/assets/d5516323-dabc-4ba8-8c32-d1db9bc8e396" />
+</div> 
 
 
-- **Importance**:  
+
+### **Importance**:  
 The attention mechanism in Transformers is a cornerstone of modern deep learning, giving rise to models like BERT and GPT, driving advancements in NLP and multimodal tasks.  
 Advanced courses can delve into variants of attention mechanisms (e.g., multi-head attention, self-attention).  
-- **Core Concepts**:  
+### **Core Concepts**:  
 The attention mechanism allows models to focus on the most important parts of the input (e.g., key words in a sentence) by calculating weights through a "query-key-value" mechanism.  
-- **Applications**: Chatbots (e.g., Grok), machine translation, text summarization.  
+### **Applications**: Chatbots (e.g., Grok), machine translation, text summarization.  
   
----
 
 ## 📖 Mathematical Description of Attention Mechanism
 
