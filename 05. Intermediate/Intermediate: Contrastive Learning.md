@@ -8,6 +8,7 @@ The core idea is:
 * Push “dissimilar” samples apart (larger embedding distance).
 
 This learning approach usually does not require manual labels. Instead, it automatically generates **positive pairs** and **negative pairs** through data augmentation or contextual information.
+<img width="800" height="556" alt="image" src="https://github.com/user-attachments/assets/4f14b5b3-0951-4417-b7f1-4a00f3b39683" />
 
 ## 📖 Formal Definition
 
