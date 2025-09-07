@@ -5,7 +5,40 @@ The attention mechanism in deep learning is a method that mimics human visual an
 <img width="469" height="220" alt="image" src="https://github.com/user-attachments/assets/d5516323-dabc-4ba8-8c32-d1db9bc8e396" />
 </div> 
 
+<div align="center">
+(This figure is cited from the Internet.)
+</div> 
 
+#### This figure illustrates the core computation process of **Self-Attention Mechanism**.
+
+### 1. Input Representation
+
+* **X**: The input sequence, which can be a sequence of word embeddings for a piece of text, or a sequence of feature vectors for an image.  
+* Each row usually represents an element (e.g., the embedding of a word).
+
+### 2. Linear Transformations to Generate Q, K, V
+
+* **θ(X) → Q (Query)**: Generate the Query matrix through a linear transformation.  
+* **φ(X) → K (Key)**: Generate the Key matrix through a linear transformation, which will later be transposed.  
+* **g(X) → V (Value)**: Generate the Value matrix through a linear transformation.  
+
+These three matrices are the core of the attention mechanism:
+
+* **Q** represents the questions an element is asking (what to focus on).  
+* **K** represents the attributes or indices of an element (what information others can provide).  
+* **V** represents the actual information being carried (the content to be passed).  
+
+### 3. Compute Attention Score
+
+* **Q × Kᵀ**: Compute the similarity between Query and Key.  
+* The resulting matrix is the attention score, indicating the “degree of attention” each element in the input sequence gives to other elements.  
+* Typically, **scaling** and **softmax** are applied to make the scores more stable and interpretable.  
+
+### 4. Weighted Summation
+
+* Use the attention scores to weight **V (Value)**.  
+* The final representation of each element is the weighted sum of the information it “borrows” from other elements.  
+* This step achieves “information aggregation”: each position in the sequence can dynamically attend to and integrate content from other positions.  
 
 ### **Importance**:  
 The attention mechanism in Transformers is a cornerstone of modern deep learning, giving rise to models like BERT and GPT, driving advancements in NLP and multimodal tasks.  
