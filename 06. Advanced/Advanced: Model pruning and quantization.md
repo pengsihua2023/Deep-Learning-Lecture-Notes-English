@@ -56,6 +56,8 @@ Model quantization reduces model size and inference time by lowering the precisi
 The first quantization strategy (reduced precision)
 </div>
 
+---
+
 <div align="center">
 <img width="490" height="255" alt="image" src="https://github.com/user-attachments/assets/90beb32f-7a5b-4c26-8ad3-4b0625d635f3" />
 </div>
@@ -67,6 +69,8 @@ The second quantization strategy (more lightweight model)
 <div align="center">
 (The above two pictures were obtained from the Internet.)
 </div>
+
+---
 
 #### Main Methods
 1. **Post-Training Quantization (PTQ)**:
