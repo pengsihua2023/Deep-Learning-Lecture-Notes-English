@@ -59,7 +59,7 @@ The first quantization strategy (reduced precision)
 ---
 
 <div align="center">
-<img width="490" height="255" alt="image" src="https://github.com/user-attachments/assets/90beb32f-7a5b-4c26-8ad3-4b0625d635f3" />
+<img width="735" height="382" alt="image" src="https://github.com/user-attachments/assets/90beb32f-7a5b-4c26-8ad3-4b0625d635f3" />
 </div>
 
 <div align="center">   
