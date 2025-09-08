@@ -9,6 +9,7 @@
 * The membrane potential \$V(t)\$ gradually accumulates with input current (integrate).
 * The membrane potential simultaneously decays back to the resting potential over time (leaky).
 * When \$V(t)\$ exceeds the threshold \$V\_{th}\$, the neuron fires a spike, and then the membrane potential is reset.
+<img width="850" height="308" alt="image" src="https://github.com/user-attachments/assets/0f6b947c-44bf-4aa6-b402-0e1f017e1db4" />
 
 
 ## 📖 2. Mathematical Description
