@@ -49,7 +49,7 @@ Model pruning reduces model size and computational load by removing unimportant 
 #### Introduction
 Model quantization reduces model size and inference time by lowering the precision of parameters and computations (e.g., from 32-bit floating-point to 8-bit integers) while maintaining performance. Quantization is commonly used to adapt large models to resource-constrained devices.
 <div align="center">
-<img width="490" height="210" alt="image" src="https://github.com/user-attachments/assets/cefc6549-7e36-4aae-8f56-cfe40b4efc73" />
+<img width="735" height="315" alt="image" src="https://github.com/user-attachments/assets/cefc6549-7e36-4aae-8f56-cfe40b4efc73" />
 </div>
 
 <div align="center">
