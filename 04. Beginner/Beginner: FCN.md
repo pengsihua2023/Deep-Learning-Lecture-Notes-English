@@ -4,6 +4,14 @@
 
 A Fully Connected Neural Network (FCNN), also known as a Feedforward Neural Network, is one of the most basic structures in artificial neural networks. In this type of network, **every neuron in one layer is connected to every neuron in the next layer**. That means the output of one layer serves as the weighted input for all neurons in the following layer.
 
+<div align="center">
+<img width="700" height="210" alt="image" src="https://github.com/user-attachments/assets/4f07aa2a-dd72-4e95-8543-7f71810d8023" />  
+</div>
+
+<div align="center">
+(This picture was obtained from the Internet.)
+</div>
+
 ### Structural Features
 
 1. **Input Layer**: Receives the raw data (such as feature vectors).
@@ -25,14 +33,6 @@ $$
 * **Advantages**: Simple structure, highly general, and capable of approximating any continuous function (Universal Approximation Theorem).
 * **Disadvantages**: Large number of parameters (especially with high-dimensional inputs), prone to overfitting, and relatively inefficient to train.
 * **Applications**: Commonly used in early machine learning tasks such as classification and regression, e.g., handwritten digit recognition (MNIST), or structured/tabular data prediction.
-
-<div align="center">
-<img width="700" height="210" alt="image" src="https://github.com/user-attachments/assets/4f07aa2a-dd72-4e95-8543-7f71810d8023" />  
-</div>
-
-<div align="center">
-(This picture was obtained from the Internet.)
-</div>
 
 
 ## 📖 Mathematical Description
