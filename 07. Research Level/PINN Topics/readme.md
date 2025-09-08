@@ -5,4 +5,6 @@
 </div>
 
 ---
-<img width="850" height="353" alt="image" src="https://github.com/user-attachments/assets/07d3d756-c609-499e-a66f-528654cd6fed" />
+<div align="center">
+<img width="1000" height="608" alt="image" src="https://github.com/user-attachments/assets/1c193eb4-bb56-4619-ae69-4d4128bebb84" />
+</div>
