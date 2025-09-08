@@ -8,7 +8,7 @@ Contrastive Learning is a **self-supervised learning method**, whose core idea i
 
 </div>
 
-### Basic Definition
+## 📖 Basic Definition
 
 In contrastive learning, the model maps data samples into a vector space and is trained with the following objectives:
 
@@ -17,18 +17,13 @@ In contrastive learning, the model maps data samples into a vector space and is 
 
 In other words, the goal of contrastive learning is to make the model learn to distinguish between "similar" and "dissimilar," thereby obtaining discriminative feature representations without relying on large amounts of manual labeling.
 
-### Example
+## 📖 Example
 
 Taking images as an example:
 
 * An original image is augmented in different ways (cropping, color distortion) to produce two different views, which form a positive pair.
 * These two images and another image from a different category form a negative pair.
 * The training objective of the model is to bring the positive pair closer together in the representation space while pushing the negative pair farther apart.
-
----
-
-要不要我帮你把这份翻译整理成一个双语对照版本（左边中文，右边英文），方便比对？
-
 
 
 ## 📖 Formal Definition
