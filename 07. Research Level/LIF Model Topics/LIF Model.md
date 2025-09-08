@@ -10,7 +10,7 @@
 * The membrane potential simultaneously decays back to the resting potential over time (leaky).
 * When \$V(t)\$ exceeds the threshold \$V\_{th}\$, the neuron fires a spike, and then the membrane potential is reset.
 <div align="center">
-<img width="4250" height="154" alt="image" src="https://github.com/user-attachments/assets/0f6b947c-44bf-4aa6-b402-0e1f017e1db4" />
+<img width="425" height="154" alt="image" src="https://github.com/user-attachments/assets/0f6b947c-44bf-4aa6-b402-0e1f017e1db4" />
 </div>
 
 ## 📖 2. Mathematical Description
