@@ -4,6 +4,10 @@
 
 Physics-Informed Neural Networks (PINNs) are a neural network framework that combines deep learning and physical laws, used for solving Partial Differential Equations (PDEs) or simulating physical systems. PINNs embed physical equations (such as governing equations, initial conditions, and boundary conditions) into the neural network loss function and approximate PDE solutions by optimizing network parameters. Compared with traditional numerical methods (such as finite difference, finite element), PINNs do not require mesh discretization, making them suitable for high-dimensional or complex geometrical problems.
 
+<div align="center">
+<img width="560" height="355" alt="image" src="https://github.com/user-attachments/assets/1c193eb4-bb56-4619-ae69-4d4128bebb84" />
+</div>
+
 ## 📖 Principles
 
 1. **Core Idea**:
