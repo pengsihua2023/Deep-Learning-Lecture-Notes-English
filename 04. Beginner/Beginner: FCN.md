@@ -1,6 +1,6 @@
 # Beginner: FCN
 #### **Fully Connected Neural Network**  
-### Definition
+## 📖 Definition
 
 A Fully Connected Neural Network (FCNN), also known as a Feedforward Neural Network, is one of the most basic structures in artificial neural networks. In this type of network, **every neuron in one layer is connected to every neuron in the next layer**. That means the output of one layer serves as the weighted input for all neurons in the following layer.
 
@@ -12,7 +12,7 @@ A Fully Connected Neural Network (FCNN), also known as a Feedforward Neural Netw
 (This picture was obtained from the Internet.)
 </div>
 
-### Structural Features
+## 📖 Structural Features
 
 1. **Input Layer**: Receives the raw data (such as feature vectors).
 2. **Hidden Layers**: Consist of multiple neurons that perform weighted summations followed by nonlinear transformations via activation functions, extracting and combining features.
@@ -20,15 +20,7 @@ A Fully Connected Neural Network (FCNN), also known as a Feedforward Neural Netw
 4. **Weights & Biases**: Each connection has a weight parameter, and each neuron usually has a bias term.
 5. **Activation Function**: Introduces nonlinearity in hidden or output layers, allowing the network to approximate complex functions.
 
-### Mathematical Formulation
-
-Suppose the input of the $l$-th layer is $\mathbf{x}^{(l)}$, the weight matrix is $\mathbf{W}^{(l)}$, the bias is $\mathbf{b}^{(l)}$, and the activation function is $f(\cdot)$. Then the output of the $(l+1)$-th layer is:
-
-$$
-\mathbf{x}^{(l+1)} = f(\mathbf{W}^{(l)} \mathbf{x}^{(l)} + \mathbf{b}^{(l)})
-$$
-
-### Characteristics and Applications
+## 📖 Characteristics and Applications
 
 * **Advantages**: Simple structure, highly general, and capable of approximating any continuous function (Universal Approximation Theorem).
 * **Disadvantages**: Large number of parameters (especially with high-dimensional inputs), prone to overfitting, and relatively inefficient to train.
