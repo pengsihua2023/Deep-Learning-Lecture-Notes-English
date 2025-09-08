@@ -1,18 +1,34 @@
 # Contrastive Learning
-## 📖 Introduction
-**Contrastive Learning** is a type of **Self-Supervised Learning** method. It constructs contrastive tasks between samples, enabling the model to learn more discriminative feature representations.
+Contrastive Learning is a **self-supervised learning method**, whose core idea is to learn effective data representations by comparing (contrasting) similarities and differences between samples.
+
 <div align="center">  
 <img width="560" height="390" alt="image" src="https://github.com/user-attachments/assets/4f14b5b3-0951-4417-b7f1-4a00f3b39683" />  
-  
-  (This figure was obtained from internet)
+
+(This image is cited from the Internet)
+
 </div>
 
-The core idea is:
+### Basic Definition
 
-* Pull “similar” samples closer (smaller embedding distance),
-* Push “dissimilar” samples apart (larger embedding distance).
+In contrastive learning, the model maps data samples into a vector space and is trained with the following objectives:
 
-This learning approach usually does not require manual labels. Instead, it automatically generates **positive pairs** and **negative pairs** through data augmentation or contextual information.  
+* **Similar samples (positive pairs)**: should be as close as possible in the vector space;
+* **Dissimilar samples (negative pairs)**: should be as far apart as possible in the vector space.
+
+In other words, the goal of contrastive learning is to make the model learn to distinguish between "similar" and "dissimilar," thereby obtaining discriminative feature representations without relying on large amounts of manual labeling.
+
+### Example
+
+Taking images as an example:
+
+* An original image is augmented in different ways (cropping, color distortion) to produce two different views, which form a positive pair.
+* These two images and another image from a different category form a negative pair.
+* The training objective of the model is to bring the positive pair closer together in the representation space while pushing the negative pair farther apart.
+
+---
+
+要不要我帮你把这份翻译整理成一个双语对照版本（左边中文，右边英文），方便比对？
+
 
 
 ## 📖 Formal Definition
