@@ -39,7 +39,7 @@ where:
    For each head:
 
 $$
-\text{head}_i = \text{softmax}\!\left(\frac{Q_i K^\top}{\sqrt{d_k}}\right)V
+\text{head}_i = \text{softmax}\left(\frac{Q_i K^\top}{\sqrt{d_k}}\right)V
 $$
 
 3. **Concatenation Output**
