@@ -30,7 +30,7 @@ where \$W\_i^Q \in \mathbb{R}^{d\_{\text{model}} \times d\_k}\$, and similarly f
 Attention:
 
 $$
-\text{head}_i = \text{softmax}\!\left(\frac{Q_i K_i^\top}{\sqrt{d_k}}\right)V_i
+\text{head}_i = \text{softmax}\left(\frac{Q_i K_i^\top}{\sqrt{d_k}}\right)V_i
 $$
 
 ### Step 2: Multi-Head Concatenation
