@@ -31,7 +31,7 @@ $$
 2. **Xavier/Glorot Uniform Initialization** (commonly used for Sigmoid/Tanh activations):
 
 $$
-W \sim U\Big(-\sqrt{\frac{6}{n_\text{in}+n_\text{out}}}, \; \sqrt{\frac{6}{n_\text{in}+n_\text{out}}}\Big)
+W \sim U\Big(-\sqrt{\frac{6}{n_\text{in}+n_\text{out}}},  \sqrt{\frac{6}{n_\text{in}+n_\text{out}}}\Big)
 $$
 
 where \$n\_\text{in}\$ is the input dimension and \$n\_\text{out}\$ is the output dimension.
@@ -39,7 +39,7 @@ where \$n\_\text{in}\$ is the input dimension and \$n\_\text{out}\$ is the outpu
 3. **He/Kaiming Uniform Initialization** (commonly used for ReLU activations):
 
 $$
-W \sim U\Big(-\sqrt{\frac{6}{n_\text{in}}}, \; \sqrt{\frac{6}{n_\text{in}}}\Big)
+W \sim U\Big(-\sqrt{\frac{6}{n_\text{in}}},  \sqrt{\frac{6}{n_\text{in}}}\Big)
 $$
 
 ## 📖 Simplest Code Example
