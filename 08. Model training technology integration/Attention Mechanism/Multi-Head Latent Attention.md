@@ -4,7 +4,7 @@
 
 **Multi-Head Latent Attention** is an attention mechanism proposed in some efficient Transformer variants (such as **Perceiver, Perceiver IO, Transformer-XL improvements**, etc.). Its core idea is:
 
-* Instead of performing fully-connected self-attention on all tokens in the input sequence (complexity \$O(n^2)\$), it introduces a set of **latent variables (latent array)** as an intermediate “bottleneck.”
+* Instead of performing fully-connected self-attention on all tokens in the input sequence (complexity \$O(n^2)\$ ), it introduces a set of **latent variables (latent array)** as an intermediate “bottleneck.”
 * The input sequence is projected via attention into a fixed-length latent representation; then the latent representation is used for subsequent cross/self attention processing.
 * The multi-head structure allows the latent space to learn features in parallel from different subspaces.
 
