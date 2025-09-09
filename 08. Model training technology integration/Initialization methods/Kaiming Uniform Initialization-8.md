@@ -27,7 +27,7 @@ $$
 * When \$a = 0\$ (standard ReLU), the formula simplifies to:
 
 $$
-W \sim U\left(-\sqrt{\frac{6}{n_\text{in}}}, \; \sqrt{\frac{6}{n_\text{in}}}\right)
+W \sim U\left(-\sqrt{\frac{6}{n_\text{in}}},  \sqrt{\frac{6}{n_\text{in}}}\right)
 $$
 
 This range is larger than Xavier Uniform, because ReLU discards half of the inputs (negative values become 0), so the variance of the weights needs to be larger.
