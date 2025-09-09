@@ -20,7 +20,7 @@ Typical applications:
 Standard attention:
 
 $$
-\text{Attn}(Q, K, V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}} + M \right)V
+\text{Attn}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}} + M \right)V
 $$
 
 where \$M\$ is the mask matrix. If it is fully-connected attention, \$M=0\$.
@@ -33,7 +33,7 @@ In sparse attention, a **sparse mask matrix** \$M \in {-\infty, 0}^{n \times n}\
 Thus, sparse attention simply adds a mask before softmax:
 
 $$
-\alpha_{ij} = \frac{\exp\!\left(\frac{Q_i K_j^\top}{\sqrt{d_k}} + M_{ij}\right)}{\sum_{j'} \exp\!\left(\frac{Q_i K_{j'}^\top}{\sqrt{d_k}} + M_{ij'}\right)}
+\alpha_{ij} = \frac{\exp\left(\frac{Q_i K_j^\top}{\sqrt{d_k}} + M_{ij}\right)}{\sum_{j'} \exp\!\left(\frac{Q_i K_{j'}^\top}{\sqrt{d_k}} + M_{ij'}\right)}
 $$
 
 Output:
