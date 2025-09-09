@@ -90,3 +90,8 @@
   * [Grad-CAM++](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/Grad-CAM%2B%2B.md)
   * [DeepLIFT](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/DeepLIFT.md)
   * [Attention Visualization](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Model%20interpretation%20methods/Attention%20Visualization.md)
+* Attention Mechanism
+  * [FlashAttention](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Attention%20Mechanism/FlashAttention.md)
+  * [Multi-Head Latent Attention](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Attention%20Mechanism/Multi-Head%20Latent%20Attention.md)
+  * [Multi-Query Attention](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Attention%20Mechanism/Multi-Query%20Attention.md)
+  * [Sparse Attention](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/08.%20Model%20training%20technology%20integration/Attention%20Mechanism/Sparse%20Attention.md)
