@@ -15,7 +15,7 @@ Typical applications:
 
 * Transformer-XL, Longformer, BigBird, Sparse Transformer all use sparse attention to handle long sequences.
 <div align="center">
-<img width="850" height="514" alt="image" src="https://github.com/user-attachments/assets/c2613226-db99-4b71-a008-4abe76462a6a" />
+<img width="450" height="280" alt="image" src="https://github.com/user-attachments/assets/c2613226-db99-4b71-a008-4abe76462a6a" />
 </div>
 
 ## 2. Mathematical Description
