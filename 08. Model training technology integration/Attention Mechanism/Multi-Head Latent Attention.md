@@ -9,6 +9,8 @@
 * The multi-head structure allows the latent space to learn features in parallel from different subspaces.
 
 This is like introducing a set of “memory slots” or “query points” to compress the information of the input sequence while preserving expressive power.
+<img width="663" height="474" alt="image" src="https://github.com/user-attachments/assets/36737170-ecbf-42b3-a200-c0b047184762" />
+
 
 ## 2. Mathematical Description
 
