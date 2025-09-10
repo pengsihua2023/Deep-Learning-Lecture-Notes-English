@@ -1,6 +1,9 @@
 # FlashAttention
 
 It is not a new attention mechanism (unlike MHA/MQA/LHA), but an **efficient attention computation method** that solves the computation and memory bottleneck of Transformer on long sequences.
+<div align="center">
+  <img width="420" height="463" alt="image" src="https://github.com/user-attachments/assets/df33e347-ff65-47a4-827d-9e6a432bfed9" />
+</div>
 
 ## 1. Definition
 
@@ -17,9 +20,7 @@ Thus:
 
 * Time complexity remains \$O(n^2)\$, but **memory complexity is reduced from \$O(n^2)\$ to \$O(n)\$**;
 * It enables GPUs to handle much longer sequences (thousands to tens of thousands of tokens).
-<div align="center">
-  <img width="420" height="463" alt="image" src="https://github.com/user-attachments/assets/df33e347-ff65-47a4-827d-9e6a432bfed9" />
-</div>
+
 
 ## 2. Mathematical Description
 
