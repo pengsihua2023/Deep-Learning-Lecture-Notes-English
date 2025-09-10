@@ -1,6 +1,9 @@
 # Sparse Attention
 
 It is an optimization of standard fully-connected attention, mainly aimed at **reducing computational complexity**.
+<div align="center">
+<img width="650" height="350" alt="image" src="https://github.com/user-attachments/assets/c2613226-db99-4b71-a008-4abe76462a6a" />
+</div>
 
 ## 1. Definition
 
@@ -14,9 +17,7 @@ The core idea of **Sparse Attention** is:
 Typical applications:
 
 * Transformer-XL, Longformer, BigBird, Sparse Transformer all use sparse attention to handle long sequences.
-<div align="center">
-<img width="650" height="350" alt="image" src="https://github.com/user-attachments/assets/c2613226-db99-4b71-a008-4abe76462a6a" />
-</div>
+
 
 ## 2. Mathematical Description
 
