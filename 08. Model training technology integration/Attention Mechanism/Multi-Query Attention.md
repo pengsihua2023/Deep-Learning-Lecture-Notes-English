@@ -16,6 +16,9 @@ Thus:
 * The cost and storage for computing \$K, V\$ are reduced from \$O(h \cdot d)\$ to \$O(d)\$;
 * Attention heads can still capture different features through independent queries \$Q\_i\$;
 * Especially suitable for saving memory and reducing latency during large model inference (used in PaLM, LLaMA, etc.).
+<div align="center">
+<img width="660" height="260" alt="image" src="https://github.com/user-attachments/assets/27daf7ab-99a9-4cf7-853c-682ac6baf531" />
+</div>
 
 ## 2. Mathematical Description
 
