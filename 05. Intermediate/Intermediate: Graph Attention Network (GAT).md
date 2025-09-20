@@ -32,7 +32,7 @@ $$
 4. **Aggregation Update**
 
 $$
-h'_i = \sigma\!\left(\sum_{j \in \mathcal{N}(i)\cup\{i\}} \alpha_{ij}\, z_j \right)
+h'_i = \sigma\left(\sum_{j \in \mathcal{N}(i)\cup\{i\}} \alpha_{ij}\, z_j \right)
 $$
 
 Multi-head attention: repeat the above computation \$H\$ times, then concatenate or average.
