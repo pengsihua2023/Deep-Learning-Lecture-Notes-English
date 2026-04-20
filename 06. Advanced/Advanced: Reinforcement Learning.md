@@ -7,7 +7,6 @@
 * The agent doesn’t get explicit instructions on what actions to take.
 * Instead, it **explores actions**, **observes outcomes**, and **adapts** its behavior based on feedback (rewards or penalties).
 
-![](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/Reinforcement%20Learning.png)
 
 <img src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/Reinforcement%20Learning.png" width="50%">
 
