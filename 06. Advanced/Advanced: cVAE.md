@@ -1,6 +1,6 @@
 
 # ✅ 一、CNN version cVAE
-<img width="480" height="263" alt="image" src="https://github.com/user-attachments/assets/01a72c28-b927-4b6f-8c4e-23e82c05360b" />
+![](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/cVAE.png)
 
 
 ## Code
