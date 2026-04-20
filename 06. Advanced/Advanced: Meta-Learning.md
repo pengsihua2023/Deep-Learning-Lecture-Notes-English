@@ -3,7 +3,7 @@
 Meta-Learning, also known as "Learning to Learn," is a branch of machine learning aimed at enabling models to quickly adapt to new tasks. By training on multiple related tasks, the model acquires general learning strategies, allowing it to perform well on new tasks, especially with limited data.
 
 ![](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/meta-learning.png)
-<img , width=50%>
+<img, src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/meta-learning.pn", width=50%>
 
 ## 📖 Core Concepts
 - **Objective**: Instead of optimizing for a specific task, meta-learning focuses on learning how to learn efficiently. For example, it automatically adjusts model parameters, hyperparameters, or learning rules.
