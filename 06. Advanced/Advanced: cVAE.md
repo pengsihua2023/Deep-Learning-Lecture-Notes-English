@@ -1,8 +1,8 @@
 
-# ✅ 一、CNN版 cVAE
+# ✅ 一、CNN version cVAE
 
 
-## 完整代码
+## Code
 
 ```python
 import torch
