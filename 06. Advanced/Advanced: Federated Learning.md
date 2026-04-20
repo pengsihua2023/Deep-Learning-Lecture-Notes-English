@@ -4,14 +4,6 @@ Federated Learning is a distributed machine learning method designed to allow mu
 
 ![](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/Federated%20Learning.png)
 
-<div align="center">
-<img width="600" height="314" alt="image" src="https://github.com/user-attachments/assets/93f48676-6f4c-4b71-affa-08d500cce16d" />
-</div>
-
-<div align="center">
-(This picture was obtained from the Internet.)
-</div>
-
 
 ## 📖 Core Concepts
 
