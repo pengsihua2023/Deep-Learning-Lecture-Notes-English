@@ -9,6 +9,9 @@
 
 ![](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/Reinforcement%20Learning.png)
 
+<img src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/Reinforcement%20Learning.png" width="50%">
+
+
 ## 📖 Core Elements of RL
 
 1. **Agent** – the learner or decision maker (e.g., a robot, software).
