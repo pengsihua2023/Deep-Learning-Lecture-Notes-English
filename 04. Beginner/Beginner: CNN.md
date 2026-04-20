@@ -116,6 +116,9 @@ In classification tasks, the final output is a probability distribution through 
 
 
 ### 6. Code
+![](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/CIFA10CNN.png)
+
+
 ```python
 import torch
 import torch.nn as nn
