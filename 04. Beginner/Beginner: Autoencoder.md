@@ -11,9 +11,7 @@
 $$
 \text{Figure 1 Autoencoder architecture diagram}
 $$
-<div align="center">
-(This picture was obtained from the Internet.)
-</div>
+
 
 
 ## 📖 1. Mathematical Description of Autoencoder
