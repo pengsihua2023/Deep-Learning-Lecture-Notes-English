@@ -5,7 +5,7 @@
 - Applications: Image denoising, data compression, anomaly detection (e.g., credit card fraud detection).  
 
 <div align="center">
-<img width="420" height="245" alt="image" src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/Autoencoder.png" />  
+<img width="640" height="370" alt="image" src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/Autoencoder.png" />  
 </div>
 
 $$
