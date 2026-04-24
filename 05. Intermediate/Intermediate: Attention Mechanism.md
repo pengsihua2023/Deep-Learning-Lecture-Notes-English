@@ -1,9 +1,6 @@
 # Intermediate: Attention Mechanism
 ## 📖 Introduction
 The attention mechanism in deep learning is a method that mimics human visual and cognitive systems, allowing neural networks to focus on relevant parts of input data during processing. By introducing the attention mechanism, neural networks can automatically learn to selectively focus on important information in the input, improving model performance and generalization.  
- <div align="center">
-<img width="469" height="220" alt="image" src="https://github.com/user-attachments/assets/d5516323-dabc-4ba8-8c32-d1db9bc8e396" />
-</div> 
 
 <img src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/attention.png" >
 
