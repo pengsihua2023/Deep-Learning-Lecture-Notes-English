@@ -5,9 +5,7 @@ The attention mechanism in deep learning is a method that mimics human visual an
 <img width="469" height="220" alt="image" src="https://github.com/user-attachments/assets/d5516323-dabc-4ba8-8c32-d1db9bc8e396" />
 </div> 
 
-<div align="center">
-(This figure is cited from the Internet.)
-</div> 
+<img src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/attention.png" >
 
 ## 📖 Importance  
 The attention mechanism in Transformers is a cornerstone of modern deep learning, giving rise to models like BERT and GPT, driving advancements in NLP and multimodal tasks.  
