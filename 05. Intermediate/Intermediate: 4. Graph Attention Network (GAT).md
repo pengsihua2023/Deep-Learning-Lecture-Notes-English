@@ -1,5 +1,5 @@
 
-# Graph Attention Network (GAT)
+# 4. Graph Attention Network (GAT)
 
 ## I. Definition
 
