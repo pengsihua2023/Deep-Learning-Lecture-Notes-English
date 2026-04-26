@@ -1,5 +1,5 @@
 
-# 4. Graph Attention Network (GAT)
+# Intermediate: 4. Graph Attention Network (GAT)
 
 ## I. Definition
 
