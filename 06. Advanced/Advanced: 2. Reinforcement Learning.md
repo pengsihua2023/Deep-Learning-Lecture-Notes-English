@@ -1,4 +1,4 @@
-# 2. Reinforcement Learning
+# Advanced: 2. Reinforcement Learning
 
 ## 📖 Introduction
 
