@@ -1,4 +1,4 @@
-# CNN
+# Beginner: 2. CNN
 
 Convolutional Neural Network (CNN)
 ## 📖 Introduction
