@@ -1,4 +1,4 @@
-
+# Advanced: 7. cVAE
 # ✅ 一、CNN version cVAE
 ![](https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/cVAE.png)
 
