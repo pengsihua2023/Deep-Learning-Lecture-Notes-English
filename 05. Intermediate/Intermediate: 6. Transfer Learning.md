@@ -1,4 +1,4 @@
-# Transfer Learning Tutorial
+# 6. Transfer Learning Tutorial
 
 ## 📖 1. Introduction
 
