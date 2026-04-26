@@ -1,4 +1,4 @@
-# 7. Contrastive Learning
+# Intermediate: 7. Contrastive Learning
 Contrastive Learning is a **self-supervised learning method**, whose core idea is to learn effective data representations by comparing (contrasting) similarities and differences between samples.
 
 <div align="center">  
