@@ -1,4 +1,4 @@
-# Multi-Task Learning (MTL)
+# Intermediate: 8. Multi-Task Learning (MTL)
 ## 📖 Definition  
 Multi-Task Learning (MTL) is a machine learning training paradigm. The core idea is: a single model learns multiple related tasks simultaneously, instead of training separate models for each task like traditional methods. The model shares most parameters, each task has a specific output head, and multiple objectives are jointly optimized.  
 
