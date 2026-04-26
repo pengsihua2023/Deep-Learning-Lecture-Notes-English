@@ -1,5 +1,4 @@
-# Long Short-Term Memory (LSTM) Study Notes
-
+# Beginner: 6. LSTM (Long Short-Term Memory)
 ## 📖 1. Introduction
 
 **Long Short-Term Memory (LSTM)** is a special type of Recurrent Neural Network (RNN) designed to solve the **vanishing gradient problem** of standard RNNs.
