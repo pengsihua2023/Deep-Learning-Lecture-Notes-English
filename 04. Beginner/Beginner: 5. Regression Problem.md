@@ -1,4 +1,4 @@
-# Beginner: Regression Problem
+# Beginner: 5. Regression Problem
 ## 📖 Mathematical Description of Regression
 
 ### 1. General Regression Problem
