@@ -1,4 +1,4 @@
-# Beginner: GAN
+# Beginner: 7. GAN
 
 ## 📖 Generative Adversarial Network (GAN)  
 - Importance: GAN is a flagship generative model, showcasing the creativity of deep learning and ideal for sparking middle school students' interest in AI.  
