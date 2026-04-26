@@ -1,4 +1,4 @@
-# Beginner: FCN
+# Beginner: 1. FCN
 #### **Fully Connected Neural Network**  
 ## 📖 Definition
 
