@@ -1,4 +1,4 @@
-# 6. Transfer Learning Tutorial
+# Intermediate: 6. Transfer Learning Tutorial
 
 ## 📖 1. Introduction
 
