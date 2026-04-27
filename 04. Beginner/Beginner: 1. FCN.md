@@ -7,7 +7,7 @@ A Fully Connected Neural Network (FCNN), also known as a Feedforward Neural Netw
 <div align="center">
 <img width="700" height="210" alt="image" src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/FCN.png" />  
 </div>
-https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/FCN.png
+
 
 
 <img src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/FCN2.png" >
