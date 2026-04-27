@@ -13,7 +13,6 @@ Convolutional Neural Network (CNN)
   <img width="708" height="353" alt="image" src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/CNN.png" />
 </div>
 
-
 ## 📖 Mathematical Description of Convolutional Neural Network (CNN)
 
 The core of CNN consists of the following basic operations: **Convolutional Layer**, **Activation Function**, **Pooling Layer**, and finally the **Fully Connected Layer**. We describe them one by one.
