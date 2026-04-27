@@ -8,8 +8,8 @@ The Fashion-MNIST dataset is an image classification dataset released in 2017 by
   - Training set: 60,000 images.
   - Test set: 10,000 images.
 - **Categories**: 10 categories, all fashion items, with 6,000 images per category:
-  1. T-shirt/top
-  2. Trouser
+  1.T-shirt/top
+  2.Trouser
   3. Pullover
   4. Dress
   5. Coat
