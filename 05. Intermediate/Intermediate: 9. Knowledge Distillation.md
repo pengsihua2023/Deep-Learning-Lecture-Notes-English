@@ -7,12 +7,10 @@ By training a smaller, lighter model (usually called the **Student Model**), to 
 
 In this way, the student model can significantly reduce computational cost and storage requirements while maintaining high accuracy, making it very suitable for deployment in resource-constrained scenarios (such as mobile devices and embedded systems).
 <div align="center">
-<img width="600" height="240" alt="image" src="https://github.com/user-attachments/assets/2a79095f-2443-4a08-a7fa-a1a091bba957" />
+<img width="600" height="240" alt="image" src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/model-distill.png" />
 </div>
 
-<div align="center">
-(This picture was obtained from the Internet.)
-</div>
+
 
 
 ## 📖 Basic Principles of Knowledge Distillation
