@@ -8,12 +8,9 @@ Convolutional Neural Network (CNN)
   The pooling layer reduces the size of data, retains important information, and decreases computation.
   Finally, the fully connected layer is used for classification or prediction.
 * Applications: Image classification (cat vs. dog recognition), face recognition, medical image analysis.
+  
 <div align="center">
-  <img width="708" height="353" alt="image" src="https://github.com/user-attachments/assets/c404062e-9dc5-4c41-bf8d-93cf080c6181" />
-</div>
-
-<div align="center">
-(This picture was obtained from the Internet.)
+  <img width="708" height="353" alt="image" src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/CNN.png" />
 </div>
 
 
