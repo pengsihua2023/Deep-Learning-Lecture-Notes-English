@@ -5,9 +5,9 @@
 A Fully Connected Neural Network (FCNN), also known as a Feedforward Neural Network, is one of the most basic structures in artificial neural networks. In this type of network, **every neuron in one layer is connected to every neuron in the next layer**. That means the output of one layer serves as the weighted input for all neurons in the following layer.
 
 <div align="center">
-<img width="700" height="210" alt="image" src="https://github.com/user-attachments/assets/4f07aa2a-dd72-4e95-8543-7f71810d8023" />  
+<img width="700" height="210" alt="image" src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/FCN.png" />  
 </div>
-
+https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/FCN.png
 
 
 <img src="https://github.com/pengsihua2023/Deep-Learning-Lecture-Notes-English/blob/main/images/FCN2.png" >
